@@ -75,15 +75,19 @@ vercel          # lần đầu: hỏi link project
 vercel --prod     # deploy production
 ```
 
-### Cấu hình Vercel (mặc định — không cần sửa)
+### Cấu hình Vercel (bắt buộc kiểm tra)
 
 | Setting | Giá trị |
 |---------|---------|
-| Framework Preset | Next.js |
+| Framework Preset | **Next.js** |
 | Build Command | `next build` |
-| Output Directory | `.next` (tự động) |
+| Output Directory | **để trống** (không đặt `public`) |
 | Install Command | `npm install` |
 | Node.js Version | 20.x |
+
+> **Lỗi thường gặp:** `No Output Directory named "public" found`  
+> Nguyên nhân: project cũ deploy HTML tĩnh, Vercel vẫn cấu hình Output Directory = `public`.  
+> Cách sửa: **Settings → General → Build & Development Settings** → Framework Preset = **Next.js** → tắt override **Output Directory** (để trống) → **Redeploy**.
 
 ### Custom domain (tùy chọn)
 
