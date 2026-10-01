@@ -4,7 +4,7 @@
     "week": 1,
     "title": "Chào hỏi và tên",
     "aim": "Nói và viết được lời chào cùng tên của mình.",
-    "rule": "I đi với am. Câu tên: My name is + tên. Viết tên không dấu: An, Minh, Khoa.",
+    "rule": "I đi với am. Giới thiệu tên: My name is + tên. Viết tên không dấu: An, Minh, Khoa.",
     "words": [
       {
         "en": "hello / hi",
@@ -33,10 +33,6 @@
       {
         "en": "my / your",
         "vi": "của tôi / của bạn"
-      },
-      {
-        "en": "what",
-        "vi": "gì"
       },
       {
         "en": "thank you",
@@ -74,7 +70,7 @@
       }
     ],
     "copy": [
-      "Bảng chữ, đọc theo cột phải rồi nhắc lại: A ây, B bi, C xi, D đi, E i, F ép, G gi, H ích, I ai, J giây, K cây, L eo, M em, N en, O âu, P pi, Q kiu, R a, S ét, T ti, U du, V vi, W đắp-liu, X ích-x, Y oai, Z dét.",
+      "Bảng chữ cái: xem hình bên dưới, đọc phiên âm rồi nhắc lại 3 vòng.",
       "Chép 6 câu nghe. Cột trái tiếng Anh, cột phải tiếng Việt."
     ],
     "exercise": [

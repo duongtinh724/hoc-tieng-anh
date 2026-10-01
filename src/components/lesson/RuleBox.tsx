@@ -1,11 +1,18 @@
-import { splitRuleSegments } from "@/lib/format-rule";
+"use client";
+
+import { useState } from "react";
+import type { RuleItem } from "@/types/lesson";
 
 interface RuleBoxProps {
-  rule: string;
+  rules: RuleItem[];
 }
 
-export function RuleBox({ rule }: RuleBoxProps) {
-  const items = splitRuleSegments(rule);
+export function RuleBox({ rules }: RuleBoxProps) {
+  const [openItems, setOpenItems] = useState<Record<number, boolean>>({});
+
+  const toggleItem = (index: number) => {
+    setOpenItems((prev) => ({ ...prev, [index]: !prev[index] }));
+  };
 
   return (
     <div className="rule-box">
@@ -15,17 +22,49 @@ export function RuleBox({ rule }: RuleBoxProps) {
         </span>
         <div>
           <strong>Quy tắc & công thức hôm nay</strong>
-          <p>Ghi nhớ trước khi làm bài — đây là phần quan trọng nhất của ngày.</p>
+          <p>Bấm vào từng quy tắc để xem ví dụ minh họa.</p>
         </div>
       </div>
 
       <ol className="rule-list">
-        {items.map((item, index) => (
-          <li key={item} className="rule-item">
-            <span className="rule-num">{index + 1}</span>
-            <p className="rule-item-text">{item}</p>
-          </li>
-        ))}
+        {rules.map((item, index) => {
+          const isOpen = !!openItems[index];
+
+          return (
+            <li
+              key={`${index}-${item.text.slice(0, 20)}`}
+              className={`rule-item${isOpen ? " rule-item-open" : ""}`}
+            >
+              <button
+                type="button"
+                className="rule-item-toggle"
+                onClick={() => toggleItem(index)}
+                aria-expanded={isOpen}
+              >
+                <span className="rule-num">{index + 1}</span>
+                <span className="rule-item-text">{item.text}</span>
+                <span className="rule-item-chevron" aria-hidden="true">
+                  {isOpen ? "▾" : "▸"}
+                </span>
+              </button>
+
+              {isOpen ? (
+                <div className="rule-item-panel">
+                  <div className="rule-item-example">
+                    <p>
+                      <span className="rule-example-label">Ví dụ:</span> {item.example}
+                    </p>
+                    {item.exampleVi ? (
+                      <p className="rule-item-example-vi">
+                        <span className="rule-example-vi-label">Dịch:</span> {item.exampleVi}
+                      </p>
+                    ) : null}
+                  </div>
+                </div>
+              ) : null}
+            </li>
+          );
+        })}
       </ol>
     </div>
   );

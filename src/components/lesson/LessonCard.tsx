@@ -1,11 +1,13 @@
 "use client";
 
 import type { DayLesson } from "@/types/lesson";
+import { getRulesForDay } from "@/data/curriculum/month-01/day-rules";
 import { SESSION_STEPS } from "@/lib/lesson-steps";
 import { LessonStep } from "@/components/lesson/LessonStep";
 import { ListenList } from "@/components/lesson/ListenList";
 import { RecallSection } from "@/components/lesson/RecallSection";
 import { RuleBox } from "@/components/lesson/RuleBox";
+import { CopySection } from "@/components/lesson/CopySection";
 import { TextListSection } from "@/components/lesson/TextListSection";
 import { WordsList } from "@/components/lesson/WordsList";
 
@@ -45,7 +47,7 @@ export function LessonCard({
             <span className="aim-label">Mục tiêu hôm nay</span>
             <p>{lesson.aim}</p>
           </div>
-          <RuleBox rule={lesson.rule} />
+          <RuleBox rules={getRulesForDay(lesson.day, lesson.rule)} />
         </div>
 
         <div className="session-overview">
@@ -71,7 +73,7 @@ export function LessonCard({
           </LessonStep>
 
           <LessonStep {...SESSION_STEPS[2]}>
-            <TextListSection items={lesson.copy} />
+            <CopySection lesson={lesson} />
           </LessonStep>
 
           <LessonStep {...SESSION_STEPS[3]}>

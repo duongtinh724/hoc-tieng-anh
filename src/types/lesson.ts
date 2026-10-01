@@ -8,6 +8,12 @@ export interface ListenItem {
   vi: string;
 }
 
+export interface RuleItem {
+  text: string;
+  example: string;
+  exampleVi?: string;
+}
+
 export interface DayLesson {
   day: number;
   week: number;

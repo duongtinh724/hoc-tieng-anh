@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" role="img" aria-label="B�ng ch� c�i ti�ng Anh k�m phi�n �m ti�ng Vi�t">
+  <defs>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#15803d"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="920" height="520" rx="16" fill="#f8fafc"/>
+  <rect x="1" y="1" width="918" height="518" rx="15" fill="none" stroke="#86efac" stroke-width="2"/>
+  <rect x="24" y="20" width="872" height="56" rx="10" fill="url(#headerGrad)"/>
+  <text x="460" y="56" text-anchor="middle" fill="#ffffff" font-family="Segoe UI, system-ui, sans-serif" font-size="24" font-weight="700">B�ng ch� c�i ti�ng Anh  Phi�n �m ti�ng Vi�t</text>
+
+  <!-- row template: 13 letters per row -->
+  <!-- Row 1 -->
+  <g font-family="Segoe UI, system-ui, sans-serif">
+    <g transform="translate(24, 96)">
+      <rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/>
+      <text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">A</text>
+      <text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">�y</text>
+    </g>
+    <g transform="translate(92, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">B</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">bi</text></g>
+    <g transform="translate(160, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">C</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">xi</text></g>
+    <g transform="translate(228, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">D</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">i</text></g>
+    <g transform="translate(296, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">E</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">i</text></g>
+    <g transform="translate(364, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">F</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">�p</text></g>
+    <g transform="translate(432, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">G</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">gi</text></g>
+    <g transform="translate(500, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">H</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">�ch</text></g>
+    <g transform="translate(568, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">I</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">ai</text></g>
+    <g transform="translate(636, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">J</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">gi�y</text></g>
+    <g transform="translate(704, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">K</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">c�y</text></g>
+    <g transform="translate(772, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">L</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">eo</text></g>
+    <g transform="translate(840, 96)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">M</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">em</text></g>
+
+    <!-- Row 2 -->
+    <g transform="translate(24, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">N</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">en</text></g>
+    <g transform="translate(92, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">O</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">�u</text></g>
+    <g transform="translate(160, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">P</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">pi</text></g>
+    <g transform="translate(228, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">Q</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">kiu</text></g>
+    <g transform="translate(296, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">R</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">a</text></g>
+    <g transform="translate(364, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">S</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">�t</text></g>
+    <g transform="translate(432, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">T</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">ti</text></g>
+    <g transform="translate(500, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">U</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">du</text></g>
+    <g transform="translate(568, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">V</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">vi</text></g>
+    <g transform="translate(636, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">W</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="13" font-weight="600">�p-liu</text></g>
+    <g transform="translate(704, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">X</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="13" font-weight="600">�ch-x</text></g>
+    <g transform="translate(772, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">Y</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">oai</text></g>
+    <g transform="translate(840, 184)"><rect width="64" height="72" rx="8" fill="#ffffff" stroke="#bbf7d0"/><text x="32" y="34" text-anchor="middle" fill="#14532d" font-size="26" font-weight="800">Z</text><text x="32" y="58" text-anchor="middle" fill="#64748b" font-size="14" font-weight="600">d�t</text></g>
+  </g>
+
+  <rect x="24" y="280" width="872" height="216" rx="12" fill="#ecfdf5" stroke="#86efac"/>
+  <text x="48" y="316" fill="#14532d" font-family="Segoe UI, system-ui, sans-serif" font-size="18" font-weight="700">C�ch h�c</text>
+  <text x="48" y="348" fill="#166534" font-family="Segoe UI, system-ui, sans-serif" font-size="15">1. Nh�n ch� c�i (c�t tr�n) � �c phi�n �m (c�t d��i)</text>
+  <text x="48" y="376" fill="#166534" font-family="Segoe UI, system-ui, sans-serif" font-size="15">2. �c theo h�ng: A �y, B bi, C xi& r�i nh�c l�i 3 v�ng</text>
+  <text x="48" y="404" fill="#166534" font-family="Segoe UI, system-ui, sans-serif" font-size="15">3. Ch�p v�o v�: c�t tr�i ch� c�i, c�t ph�i phi�n �m</text>
+  <text x="48" y="448" fill="#64748b" font-family="Segoe UI, system-ui, sans-serif" font-size="14" font-style="italic">V� d�: W  �p-liu � X  �ch-x � Y  oai � Z  d�t</text>
+</svg>
