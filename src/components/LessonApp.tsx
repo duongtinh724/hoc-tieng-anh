@@ -1,9 +1,15 @@
 "use client";
 
-import { Callout } from "@/components/ui/Callout";
+import { useMemo } from "react";
+import { getWeekOptions, getTotalDays } from "@/data/days";
+import { AppShell } from "@/components/layout/AppShell";
 import { PageHeader } from "@/components/layout/PageHeader";
+import { GuidePanel } from "@/components/guide/GuidePanel";
+import { REVIEW_PLAN_ENABLED } from "@/lib/constants";
+import { ReviewPlanPanel } from "@/components/review/ReviewPlanPanel";
 import { LessonCard } from "@/components/lesson/LessonCard";
-import { DayPills } from "@/components/navigation/DayPills";
+import { DayGrid } from "@/components/navigation/DayGrid";
+import { MonthSelector } from "@/components/navigation/MonthSelector";
 import { WeekPills } from "@/components/navigation/WeekPills";
 import { ProgressBar } from "@/components/stats/ProgressBar";
 import { StatsGrid } from "@/components/stats/StatsGrid";
@@ -13,64 +19,153 @@ export function LessonApp() {
   const {
     hydrated,
     state,
+    doneDays,
+    monthConfig,
     nextDay,
     visibleDays,
     currentLesson,
+    activeSection,
+    setActiveSection,
+    setMonth,
     setWeek,
     setSelectedDay,
     goToNextDay,
     toggleDayDone,
   } = useLessonState();
 
+  const weeks = useMemo(() => getWeekOptions(state.month), [state.month]);
+  const totalDays = getTotalDays(state.month);
+
   if (!hydrated) {
     return (
-      <div className="wrap">
-        <PageHeader />
-        <p className="lead">Đang tải tiến độ...</p>
+      <div className="loading-screen">
+        <p>Đang tải...</p>
       </div>
     );
   }
 
-  const doneCount = state.doneDays.length;
-  const isDone = state.doneDays.includes(currentLesson.day);
+  if (!currentLesson) {
+    return (
+      <div className="loading-screen">
+        <p>Chưa có bài học cho tháng này.</p>
+      </div>
+    );
+  }
+
+  const doneCount = doneDays.length;
+  const isDone = doneDays.includes(currentLesson.day);
+
+  const sidebar = (
+    <>
+      <MonthSelector selectedMonth={state.month} onSelectMonth={setMonth} />
+
+      <div className="sidebar-section">
+        <p className="nav-label">Chọn tuần</p>
+        <WeekPills
+          weeks={weeks}
+          selectedWeek={state.week}
+          onSelectWeek={setWeek}
+        />
+      </div>
+
+      <div className="sidebar-section">
+        <p className="nav-label">Chọn ngày</p>
+        <DayGrid
+          days={visibleDays}
+          selectedDay={state.selectedDay}
+          doneDays={doneDays}
+          onSelectDay={setSelectedDay}
+        />
+      </div>
+
+      <button type="button" className="btn-continue" onClick={goToNextDay}>
+        ▶ Tiếp tục ngày {nextDay}
+      </button>
+
+      <div className="sidebar-progress">
+        <ProgressBar
+          doneCount={doneCount}
+          totalDays={totalDays}
+          monthTitle={monthConfig.title}
+        />
+      </div>
+    </>
+  );
 
   return (
-    <div className="wrap">
-      <PageHeader />
+    <AppShell
+      activeSection={activeSection}
+      onNavigate={setActiveSection}
+      sidebar={sidebar}
+    >
+      {activeSection === "overview" && (
+        <section className="panel overview-panel">
+          <PageHeader monthConfig={monthConfig} />
+          <StatsGrid
+            doneCount={doneCount}
+            totalDays={totalDays}
+            nextDay={nextDay}
+          />
+          <ProgressBar
+            doneCount={doneCount}
+            totalDays={totalDays}
+            monthTitle={monthConfig.title}
+          />
 
-      <StatsGrid doneCount={doneCount} />
-      <ProgressBar doneCount={doneCount} />
+          <div className="overview-bottom">
+            <div className="cta-box">
+              <div>
+                <strong>Bắt đầu học ngay</strong>
+                <p>
+                  Bài chưa xong gần nhất: <strong>Ngày {nextDay}</strong>.
+                  Mỗi buổi gồm 5 mục — làm lần lượt từ trên xuống.
+                </p>
+              </div>
+              <button type="button" className="btn-primary" onClick={goToNextDay}>
+                Học ngày {nextDay}
+              </button>
+            </div>
 
-      <Callout title="Cách dùng một ngày">
-        Phút 0–8: nghe 6 câu, nhắc to 3 vòng. Phút 8–20: chép từ và câu. Phút
-        20–27: làm bài, chưa mở đáp án. Phút 27–30: làm phần «Ba phút cuối».
-        Ngày 7, 14, 21 và 30 dùng cả buổi để kiểm tra.
-      </Callout>
+            <div className="month-goal">
+              <span className="month-goal-label">Mục tiêu {monthConfig.title}</span>
+              <p>{monthConfig.goal}</p>
+            </div>
+          </div>
+        </section>
+      )}
 
-      <h2>Chọn ngày</h2>
-      <p className="lead next-hint">
-        Bài chưa xong gần nhất là ngày {nextDay}. Mở đáp án sau khi đã viết câu
-        trả lời vào vở.
-      </p>
+      {activeSection === "lesson" && (
+        <section className="panel lesson-panel">
+          <div className="lesson-panel-top">
+            <div>
+              <p className="page-eyebrow">
+                {monthConfig.title} · Ngày {currentLesson.day}/{totalDays}
+              </p>
+              <h2 className="lesson-panel-title">Buổi học hôm nay</h2>
+            </div>
+            <button type="button" className="btn-secondary" onClick={goToNextDay}>
+              Ngày {nextDay} →
+            </button>
+          </div>
 
-      <WeekPills
-        selectedWeek={state.week}
-        onSelectWeek={setWeek}
-        onGoToNextDay={goToNextDay}
-      />
+          <LessonCard
+            lesson={currentLesson}
+            isDone={isDone}
+            onToggleDone={(done) => toggleDayDone(currentLesson.day, done)}
+            onGoToNext={goToNextDay}
+          />
+        </section>
+      )}
 
-      <DayPills
-        days={visibleDays}
-        selectedDay={state.selectedDay}
-        doneDays={state.doneDays}
-        onSelectDay={setSelectedDay}
-      />
+      {REVIEW_PLAN_ENABLED && activeSection === "review" && (
+        <ReviewPlanPanel
+          doneDays={doneDays}
+          nextDay={nextDay}
+          onGoToDay={setSelectedDay}
+        />
+      )}
 
-      <LessonCard
-        lesson={currentLesson}
-        isDone={isDone}
-        onToggleDone={(done) => toggleDayDone(currentLesson.day, done)}
-      />
-    </div>
+      {activeSection === "guide" && <GuidePanel />}
+    </AppShell>
   );
 }

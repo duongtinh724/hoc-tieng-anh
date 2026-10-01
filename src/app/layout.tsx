@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bài học tiếng Anh 30 ngày",
+  title: "Tiếng Anh Cùng Huy",
   description:
     "Chương trình học tiếng Anh 30 ngày — 30 phút mỗi ngày, từ số 0.",
 };

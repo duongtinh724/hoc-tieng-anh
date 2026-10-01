@@ -1,20 +1,20 @@
-import { WEEKS } from "@/lib/constants";
+import type { WeekOption } from "@/types/lesson";
 import { Pill } from "@/components/ui/Pill";
 
 interface WeekPillsProps {
+  weeks: WeekOption[];
   selectedWeek: number;
   onSelectWeek: (week: number) => void;
-  onGoToNextDay: () => void;
 }
 
 export function WeekPills({
+  weeks,
   selectedWeek,
   onSelectWeek,
-  onGoToNextDay,
 }: WeekPillsProps) {
   return (
-    <div className="pills">
-      {WEEKS.map((week) => (
+    <div className="week-pills">
+      {weeks.map((week) => (
         <Pill
           key={week.id}
           active={selectedWeek === week.id}
@@ -23,7 +23,6 @@ export function WeekPills({
           {week.label}
         </Pill>
       ))}
-      <Pill onClick={onGoToNextDay}>Ngày tiếp theo</Pill>
     </div>
   );
 }

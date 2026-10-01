@@ -4,9 +4,9 @@ interface RecallSectionProps {
 
 export function RecallSection({ recall }: RecallSectionProps) {
   return (
-    <>
-      <h3>Ba phút cuối</h3>
-      <div className="recall">{recall}</div>
-    </>
+    <div className="recall-box">
+      <span className="recall-label">Nhiệm vụ</span>
+      <p>{recall}</p>
+    </div>
   );
 }

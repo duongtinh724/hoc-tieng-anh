@@ -6,16 +6,23 @@ interface WordsListProps {
 
 export function WordsList({ words }: WordsListProps) {
   return (
-    <>
-      <h3>Từ — chép nghĩa</h3>
-      <ul className="list">
-        {words.map((word) => (
-          <li key={word.en}>
-            <span className="en">{word.en}</span>{" "}
-            <span className="vi">— {word.vi}</span>
-          </li>
-        ))}
-      </ul>
-    </>
+    <div className="vocab-table-wrap">
+      <table className="vocab-table">
+        <thead>
+          <tr>
+            <th>Tiếng Anh</th>
+            <th>Nghĩa tiếng Việt</th>
+          </tr>
+        </thead>
+        <tbody>
+          {words.map((word) => (
+            <tr key={word.en}>
+              <td className="en">{word.en}</td>
+              <td className="vi">{word.vi}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }

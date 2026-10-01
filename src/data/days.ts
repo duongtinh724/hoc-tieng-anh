@@ -1,20 +1,40 @@
-import type { DayLesson } from "@/types/lesson";
-import { TOTAL_DAYS } from "@/lib/constants";
-import daysJson from "./days.json";
+import {
+  getDaysForMonth,
+  getMonthConfig,
+} from "@/data/curriculum";
+import type { DayLesson, WeekOption } from "@/types/lesson";
 
-export const DAYS: DayLesson[] = daysJson as DayLesson[];
-
-export function getDayByNumber(day: number): DayLesson {
-  return DAYS.find((item) => item.day === day) ?? DAYS[0];
+export function getDayByNumber(monthId: number, day: number): DayLesson | null {
+  const days = getDaysForMonth(monthId);
+  return days.find((item) => item.day === day) ?? days[0] ?? null;
 }
 
-export function getDaysByWeek(week: number): DayLesson[] {
-  return week === 0 ? DAYS : DAYS.filter((item) => item.week === week);
+export function getDaysByWeek(monthId: number, week: number): DayLesson[] {
+  const days = getDaysForMonth(monthId);
+  return week === 0 ? days : days.filter((item) => item.week === week);
 }
 
-export function getNextIncompleteDay(doneDays: number[]): number {
-  const next = DAYS.find((item) => !doneDays.includes(item.day));
-  return next ? next.day : TOTAL_DAYS;
+export function getNextIncompleteDay(
+  monthId: number,
+  doneDays: number[],
+): number {
+  const days = getDaysForMonth(monthId);
+  const next = days.find((item) => !doneDays.includes(item.day));
+  const month = getMonthConfig(monthId);
+  return next ? next.day : month.totalDays;
 }
 
-export { TOTAL_DAYS };
+export function getWeekOptions(monthId: number): WeekOption[] {
+  const month = getMonthConfig(monthId);
+  const weeks: WeekOption[] = [{ id: 0, label: "Cả tháng" }];
+
+  for (let i = 1; i <= month.totalWeeks; i += 1) {
+    weeks.push({ id: i, label: `Tuần ${i}` });
+  }
+
+  return weeks;
+}
+
+export function getTotalDays(monthId: number): number {
+  return getMonthConfig(monthId).totalDays;
+}

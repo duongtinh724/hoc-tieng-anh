@@ -1,17 +1,17 @@
 interface TextListSectionProps {
-  title: string;
   items: string[];
+  numbered?: boolean;
 }
 
-export function TextListSection({ title, items }: TextListSectionProps) {
+export function TextListSection({ items, numbered = false }: TextListSectionProps) {
   return (
-    <>
-      <h3>{title}</h3>
-      <ul className="list">
-        {items.map((item, index) => (
-          <li key={`${index}-${item.slice(0, 24)}`}>{item}</li>
-        ))}
-      </ul>
-    </>
+    <ul className={`content-list text-list${numbered ? " text-list--numbered" : ""}`}>
+      {items.map((item, index) => (
+        <li key={`${index}-${item.slice(0, 24)}`}>
+          {numbered && <span className="item-index">{index + 1}</span>}
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
   );
 }
