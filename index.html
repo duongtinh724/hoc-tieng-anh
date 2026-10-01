@@ -1,0 +1,2837 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bài học tiếng Anh 30 ngày</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --surface: #ffffff;
+      --text: #1a1d21;
+      --muted: #5c6570;
+      --border: #e2e6eb;
+      --accent: #2563eb;
+      --accent-soft: #eff6ff;
+      --success: #15803d;
+      --success-soft: #f0fdf4;
+      --warning-soft: #fffbeb;
+      --warning-text: #92400e;
+      --radius: 10px;
+      --shadow: 0 1px 2px rgba(16, 24, 40, 0.06);
+      --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+    h1 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 650;
+      margin: 28px 0 12px;
+    }
+    h3 {
+      font-size: 0.95rem;
+      font-weight: 650;
+      margin: 20px 0 8px;
+      color: var(--text);
+    }
+    .lead { color: var(--muted); margin: 0 0 20px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .stat {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      box-shadow: var(--shadow);
+    }
+    .stat-value { font-size: 1.25rem; font-weight: 700; }
+    .stat-label { font-size: 0.78rem; color: var(--muted); margin-top: 2px; }
+    .progress-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 14px;
+      margin-bottom: 16px;
+    }
+    .progress-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+    .progress-bar {
+      height: 8px;
+      background: var(--border);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--success);
+      width: 0%;
+      transition: width 0.25s ease;
+    }
+    .callout {
+      background: var(--accent-soft);
+      border: 1px solid #bfdbfe;
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      font-size: 0.92rem;
+    }
+    .callout strong { display: block; margin-bottom: 4px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    th, td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th { background: #f9fafb; font-weight: 650; }
+    tr:last-child td { border-bottom: none; }
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .pill {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 6px 14px;
+      font-size: 0.84rem;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .pill:hover { border-color: #cbd5e1; }
+    .pill.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .pill.done:not(.active) {
+      border-color: #86efac;
+      background: var(--success-soft);
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      font-weight: 650;
+      font-size: 0.95rem;
+    }
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .badge.pending { background: #f3f4f6; color: var(--muted); }
+    .badge.done { background: var(--success-soft); color: var(--success); }
+    .card-body { padding: 18px; }
+    .check-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      user-select: none;
+    }
+    .check-row input { width: 18px; height: 18px; accent-color: var(--accent); }
+    .rule {
+      background: var(--warning-soft);
+      color: var(--warning-text);
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-size: 0.9rem;
+      margin: 12px 0 4px;
+    }
+    .list { margin: 0; padding: 0; list-style: none; }
+    .list li {
+      padding: 6px 0;
+      border-bottom: 1px solid #f1f5f9;
+      font-size: 0.92rem;
+    }
+    .list li:last-child { border-bottom: none; }
+    .en { font-weight: 600; color: #1e3a5f; }
+    .vi { color: var(--muted); }
+    .listen-item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 8px;
+    }
+    .speak-btn {
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 6px;
+      padding: 2px 8px;
+      font-size: 0.72rem;
+      cursor: pointer;
+      color: var(--accent);
+    }
+    .speak-btn:hover { background: var(--accent-soft); }
+    .answers-toggle {
+      width: 100%;
+      text-align: left;
+      margin-top: 20px;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #f9fafb;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .answers-toggle:hover { background: #f3f4f6; }
+    .answers {
+      display: none;
+      margin-top: 10px;
+      padding: 12px 14px;
+      background: #f8fafc;
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    .answers.open { display: block; }
+    .recall {
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      padding: 10px 12px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 1.35rem; }
+      .card-header { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Bài học tiếng Anh 30 ngày</h1>
+    <p class="lead">Nam, 15 tuổi, 30 phút mỗi ngày, bắt đầu từ số 0. Mỗi ngày có nghĩa tiếng Việt, 6 câu nghe, phần chép, bài tập và đáp án. Tiến độ được lưu trên trình duyệt này.</p>
+
+    <div class="stats">
+      <div class="stat"><div class="stat-value">30 phút</div><div class="stat-label">Mỗi ngày, một giờ cố định</div></div>
+      <div class="stat"><div class="stat-value" id="doneCount">0/30</div><div class="stat-label">Buổi đã đánh dấu xong</div></div>
+      <div class="stat"><div class="stat-value">12/20</div><div class="stat-label">Mốc đạt bài ngày 30</div></div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-meta"><span>Tiến độ 30 ngày</span><span id="progressLabel">0 / 30 buổi</span></div>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    </div>
+
+    <div class="callout">
+      <strong>Cách dùng một ngày</strong>
+      Phút 0–8: nghe 6 câu, nhắc to 3 vòng. Phút 8–20: chép từ và câu. Phút 20–27: làm bài, chưa mở đáp án. Phút 27–30: làm phần «Ba phút cuối». Ngày 7, 14, 21 và 30 dùng cả buổi để kiểm tra.
+    </div>
+
+    <h2>Chọn ngày</h2>
+    <p class="lead" id="nextHint" style="margin-top:-4px"></p>
+    <div class="pills" id="weekPills"></div>
+    <div class="pills" id="dayPills"></div>
+
+    <div class="card" id="lessonCard"></div>
+  </div>
+
+  <script>
+    const DAYS = [
+  {
+    "day": 1,
+    "week": 1,
+    "title": "Chào hỏi và tên",
+    "aim": "Nói và viết được lời chào cùng tên của mình.",
+    "rule": "I đi với am. Câu tên: My name is + tên. Viết tên không dấu: An, Minh, Khoa.",
+    "words": [
+      {
+        "en": "hello / hi",
+        "vi": "xin chào"
+      },
+      {
+        "en": "I",
+        "vi": "tôi"
+      },
+      {
+        "en": "am",
+        "vi": "là (chỉ đi với I)"
+      },
+      {
+        "en": "you",
+        "vi": "bạn"
+      },
+      {
+        "en": "are",
+        "vi": "là (đi với you)"
+      },
+      {
+        "en": "name",
+        "vi": "tên"
+      },
+      {
+        "en": "my / your",
+        "vi": "của tôi / của bạn"
+      },
+      {
+        "en": "what",
+        "vi": "gì"
+      },
+      {
+        "en": "thank you",
+        "vi": "cảm ơn"
+      },
+      {
+        "en": "nice to meet you",
+        "vi": "rất vui được gặp bạn"
+      }
+    ],
+    "listen": [
+      {
+        "en": "Hello.",
+        "vi": "Xin chào."
+      },
+      {
+        "en": "I am Minh.",
+        "vi": "Tôi là Minh."
+      },
+      {
+        "en": "What is your name?",
+        "vi": "Bạn tên là gì?"
+      },
+      {
+        "en": "My name is Minh.",
+        "vi": "Tên tôi là Minh."
+      },
+      {
+        "en": "Nice to meet you.",
+        "vi": "Rất vui được gặp bạn."
+      },
+      {
+        "en": "Thank you.",
+        "vi": "Cảm ơn."
+      }
+    ],
+    "copy": [
+      "Bảng chữ, đọc theo cột phải rồi nhắc lại: A ây, B bi, C xi, D đi, E i, F ép, G gi, H ích, I ai, J giây, K cây, L eo, M em, N en, O âu, P pi, Q kiu, R a, S ét, T ti, U du, V vi, W đắp-liu, X ích-x, Y oai, Z dét.",
+      "Chép 6 câu nghe. Cột trái tiếng Anh, cột phải tiếng Việt."
+    ],
+    "exercise": [
+      "1. I ___ Minh.",
+      "2. What is your ___?",
+      "3. ___ name is Minh.",
+      "4. Nice to ___ you.",
+      "5. ___ you.",
+      "6. Viết lại 3 câu, đổi Minh thành tên mình: I am ___. / My name is ___. / Nice to meet you."
+    ],
+    "answers": [
+      "1 am",
+      "2 name",
+      "3 My",
+      "4 meet",
+      "5 Thank",
+      "6 I am Nam. / My name is Nam. / Nice to meet you. (đúng nếu thay bằng tên của mình)"
+    ],
+    "recall": "Che vở, nói: Hello. I am ... My name is ... Thank you."
+  },
+  {
+    "day": 2,
+    "week": 1,
+    "title": "Số 0–20 và tuổi",
+    "aim": "Đếm tới 20 và trả lời được mình bao nhiêu tuổi.",
+    "rule": "Tuổi: I am + số + years old. thirteen là 13. thirty là 30, hôm nay chưa dùng thirty.",
+    "words": [
+      {
+        "en": "zero → twenty",
+        "vi": "0 không, 1 one, 2 two, 3 three, 4 four, 5 five, 6 six, 7 seven, 8 eight, 9 nine, 10 ten, 11 eleven, 12 twelve, 13 thirteen, 14 fourteen, 15 fifteen, 16 sixteen, 17 seventeen, 18 eighteen, 19 nineteen, 20 twenty"
+      },
+      {
+        "en": "how old",
+        "vi": "bao nhiêu tuổi"
+      },
+      {
+        "en": "years old",
+        "vi": "tuổi"
+      },
+      {
+        "en": "student",
+        "vi": "học sinh"
+      }
+    ],
+    "listen": [
+      {
+        "en": "How old are you?",
+        "vi": "Bạn bao nhiêu tuổi?"
+      },
+      {
+        "en": "I am fifteen years old.",
+        "vi": "Tôi 15 tuổi."
+      },
+      {
+        "en": "I am a student.",
+        "vi": "Tôi là học sinh."
+      },
+      {
+        "en": "One, two, three, four, five.",
+        "vi": "1, 2, 3, 4, 5."
+      },
+      {
+        "en": "Ten, eleven, twelve.",
+        "vi": "10, 11, 12."
+      },
+      {
+        "en": "Thirteen, fourteen, fifteen, twenty.",
+        "vi": "13, 14, 15, 20."
+      }
+    ],
+    "copy": [
+      "Viết một cột số chữ và một cột số: zero 0 … twenty 20.",
+      "Chép 3 câu: How old are you? / I am fifteen years old. / I am a student."
+    ],
+    "exercise": [
+      "Viết bằng chữ: 1) 3  2) 5  3) 8  4) 11  5) 12  6) 13  7) 15  8) 20",
+      "9. How ___ are you?",
+      "10. I am fifteen ___ ___.",
+      "11. I ___ a student.",
+      "12. Viết câu tuổi thật của mình."
+    ],
+    "answers": [
+      "1 three  2 five  3 eight  4 eleven  5 twelve  6 thirteen  7 fifteen  8 twenty",
+      "9 old",
+      "10 years old",
+      "11 am",
+      "12 I am fifteen years old."
+    ],
+    "recall": "Không nhìn vở: fifteen, twelve, thirteen, student, How old are you?"
+  },
+  {
+    "day": 3,
+    "week": 1,
+    "title": "am, is, are",
+    "aim": "Chọn đúng am, is hoặc are theo chủ ngữ.",
+    "rule": "I → am. He / she / it → is. You / we / they → are.",
+    "words": [
+      {
+        "en": "he / she / it",
+        "vi": "anh ấy, ông ấy / cô ấy, bà ấy / nó (vật)"
+      },
+      {
+        "en": "we / they",
+        "vi": "chúng tôi, chúng ta / họ"
+      },
+      {
+        "en": "boy / girl",
+        "vi": "bạn nam / bạn nữ"
+      },
+      {
+        "en": "friend",
+        "vi": "bạn"
+      },
+      {
+        "en": "teacher",
+        "vi": "giáo viên"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I am a student.",
+        "vi": "Tôi là học sinh."
+      },
+      {
+        "en": "You are a student.",
+        "vi": "Bạn là học sinh."
+      },
+      {
+        "en": "He is a boy.",
+        "vi": "Anh ấy là bạn nam."
+      },
+      {
+        "en": "She is my friend.",
+        "vi": "Cô ấy là bạn của tôi."
+      },
+      {
+        "en": "It is a book.",
+        "vi": "Nó là một quyển sách."
+      },
+      {
+        "en": "They are friends.",
+        "vi": "Họ là bạn."
+      }
+    ],
+    "copy": [
+      "Chép bảng: I am / You are / He is / She is / It is / We are / They are.",
+      "Chép 6 câu nghe."
+    ],
+    "exercise": [
+      "Điền am, is hoặc are:",
+      "1. I ___ Minh.",
+      "2. She ___ a girl.",
+      "3. They ___ friends.",
+      "4. You ___ a student.",
+      "5. He ___ a teacher.",
+      "6. We ___ students.",
+      "7. It ___ a book.",
+      "8. My name ___ Minh.",
+      "Dịch:",
+      "9. Tôi là học sinh.",
+      "10. Cô ấy là bạn của tôi."
+    ],
+    "answers": [
+      "1 am  2 is  3 are  4 are  5 is  6 are  7 is  8 is",
+      "9 I am a student.",
+      "10 She is my friend."
+    ],
+    "recall": "Nói bảng 7 chủ ngữ: I am, You are, He is, She is, It is, We are, They are."
+  },
+  {
+    "day": 4,
+    "week": 1,
+    "title": "This, That và đồ dùng",
+    "aim": "Chỉ đồ vật gần và xa bằng This is / That is.",
+    "rule": "This = vật gần tay. That = vật ở xa. This is a + đồ vật.",
+    "words": [
+      {
+        "en": "this / that",
+        "vi": "cái này (gần) / cái kia (xa)"
+      },
+      {
+        "en": "book",
+        "vi": "sách"
+      },
+      {
+        "en": "pen",
+        "vi": "bút"
+      },
+      {
+        "en": "bag",
+        "vi": "cặp, túi"
+      },
+      {
+        "en": "desk",
+        "vi": "bàn học"
+      },
+      {
+        "en": "chair",
+        "vi": "ghế"
+      },
+      {
+        "en": "ruler",
+        "vi": "thước"
+      },
+      {
+        "en": "class / school",
+        "vi": "lớp / trường"
+      }
+    ],
+    "listen": [
+      {
+        "en": "This is a book.",
+        "vi": "Đây là một quyển sách."
+      },
+      {
+        "en": "This is a pen.",
+        "vi": "Đây là một cây bút."
+      },
+      {
+        "en": "This is my bag.",
+        "vi": "Đây là cặp của tôi."
+      },
+      {
+        "en": "That is a chair.",
+        "vi": "Kia là một cái ghế."
+      },
+      {
+        "en": "That is a desk.",
+        "vi": "Kia là một cái bàn."
+      },
+      {
+        "en": "That is my teacher.",
+        "vi": "Kia là giáo viên của tôi."
+      }
+    ],
+    "copy": [
+      "Chép 8 từ và 6 câu. Chỉ tay vào đồ thật khi đọc This, chỉ ra xa khi đọc That."
+    ],
+    "exercise": [
+      "1. ___ is a book. (cầm sách trên tay)",
+      "2. ___ is a chair. (ghế ở xa)",
+      "3. This is ___ bag. (của tôi)",
+      "4. Dịch: Đây là một cây bút.",
+      "5. Dịch: Kia là giáo viên của tôi.",
+      "6. Dịch: Đây là quyển sách của tôi.",
+      "7. Viết 2 câu This is về đồ thật trên bàn."
+    ],
+    "answers": [
+      "1 This",
+      "2 That",
+      "3 my",
+      "4 This is a pen.",
+      "5 That is my teacher.",
+      "6 This is my book.",
+      "7 Đúng nếu bắt đầu bằng This is a / This is my."
+    ],
+    "recall": "book, pen, bag, desk, this, that."
+  },
+  {
+    "day": 5,
+    "week": 1,
+    "title": "a và an",
+    "aim": "Đặt a hoặc an trước danh từ số ít.",
+    "rule": "Nghe âm đầu. Âm a, e, i, o, u thì dùng an. Âm còn lại dùng a. an hour vì nghe «au». a university vì nghe «diu».",
+    "words": [
+      {
+        "en": "a / an",
+        "vi": "một"
+      },
+      {
+        "en": "apple",
+        "vi": "quả táo"
+      },
+      {
+        "en": "orange",
+        "vi": "quả cam"
+      },
+      {
+        "en": "egg",
+        "vi": "quả trứng"
+      },
+      {
+        "en": "umbrella",
+        "vi": "cái ô"
+      },
+      {
+        "en": "eraser",
+        "vi": "cục tẩy"
+      }
+    ],
+    "listen": [
+      {
+        "en": "a book",
+        "vi": "một quyển sách"
+      },
+      {
+        "en": "a pen",
+        "vi": "một cây bút"
+      },
+      {
+        "en": "a student",
+        "vi": "một học sinh"
+      },
+      {
+        "en": "an apple",
+        "vi": "một quả táo"
+      },
+      {
+        "en": "an egg",
+        "vi": "một quả trứng"
+      },
+      {
+        "en": "an eraser",
+        "vi": "một cục tẩy"
+      }
+    ],
+    "copy": [
+      "Chép hai cột: a book, a pen, a desk, a student, a teacher / an apple, an egg, an orange, an umbrella, an eraser."
+    ],
+    "exercise": [
+      "Điền a hoặc an:",
+      "1. ___ book  2. ___ apple  3. ___ eraser  4. ___ desk  5. ___ orange",
+      "6. ___ teacher  7. ___ egg  8. ___ bag  9. ___ umbrella  10. ___ student",
+      "11. This is ___ apple.",
+      "12. That is ___ pen."
+    ],
+    "answers": [
+      "1 a  2 an  3 an  4 a  5 an  6 a  7 an  8 a  9 an  10 a",
+      "11 an",
+      "12 a"
+    ],
+    "recall": "an apple, an egg, an eraser, a book, a student."
+  },
+  {
+    "day": 6,
+    "week": 1,
+    "title": "Màu và từ sở hữu",
+    "aim": "Nói màu của đồ vật và của ai.",
+    "rule": "Màu đứng sau is: My bag is black. my của tôi, your của bạn, his của nam, her của nữ.",
+    "words": [
+      {
+        "en": "red / blue",
+        "vi": "đỏ / xanh dương"
+      },
+      {
+        "en": "black / white",
+        "vi": "đen / trắng"
+      },
+      {
+        "en": "green / yellow",
+        "vi": "xanh lá / vàng"
+      },
+      {
+        "en": "color",
+        "vi": "màu"
+      },
+      {
+        "en": "my / your / his / her",
+        "vi": "của tôi / của bạn / của anh ấy / của cô ấy"
+      }
+    ],
+    "listen": [
+      {
+        "en": "My bag is black.",
+        "vi": "Cặp của tôi màu đen."
+      },
+      {
+        "en": "Your pen is red.",
+        "vi": "Bút của bạn màu đỏ."
+      },
+      {
+        "en": "His book is blue.",
+        "vi": "Sách của anh ấy màu xanh dương."
+      },
+      {
+        "en": "Her ruler is green.",
+        "vi": "Thước của cô ấy màu xanh lá."
+      },
+      {
+        "en": "What color is it?",
+        "vi": "Nó màu gì?"
+      },
+      {
+        "en": "It is yellow.",
+        "vi": "Nó màu vàng."
+      }
+    ],
+    "copy": [
+      "Chép 6 câu nghe. Gạch chân từ chỉ màu."
+    ],
+    "exercise": [
+      "Dịch:",
+      "1. Cặp của tôi màu đen.",
+      "2. Bút của bạn màu đỏ.",
+      "3. Sách của anh ấy màu xanh dương.",
+      "4. Thước của cô ấy màu xanh lá.",
+      "5. Nó màu gì?",
+      "6. Nó màu trắng.",
+      "7. Viết 2 câu về đồ thật của mình, theo mẫu My ... is ..."
+    ],
+    "answers": [
+      "1 My bag is black.",
+      "2 Your pen is red.",
+      "3 His book is blue.",
+      "4 Her ruler is green.",
+      "5 What color is it?",
+      "6 It is white.",
+      "7 Đúng nếu có My + đồ vật + is + màu."
+    ],
+    "recall": "black, red, blue, my, your, his, her."
+  },
+  {
+    "day": 7,
+    "week": 1,
+    "title": "Kiểm tra tuần 1",
+    "aim": "Làm được 16 ý trong 25 phút, không mở vở.",
+    "rule": "5 phút cuối mới đối đáp án. Câu sai: chép lại câu đúng 3 lần.",
+    "words": [
+      {
+        "en": "Ôn ngày 1–6",
+        "vi": "không học từ mới"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I am Minh.",
+        "vi": "Nhắc lại trước khi làm bài, rồi gấp vở."
+      },
+      {
+        "en": "I am fifteen years old.",
+        "vi": "Nhắc lại."
+      },
+      {
+        "en": "He is a student.",
+        "vi": "Nhắc lại."
+      },
+      {
+        "en": "This is my book.",
+        "vi": "Nhắc lại."
+      },
+      {
+        "en": "This is an apple.",
+        "vi": "Nhắc lại."
+      },
+      {
+        "en": "My bag is black.",
+        "vi": "Nhắc lại."
+      }
+    ],
+    "copy": [
+      "Không chép bài mới. Làm thẳng vào vở kiểm tra."
+    ],
+    "exercise": [
+      "A. Điền am / is / are:",
+      "1. I ___ 15 years old.",
+      "2. She ___ my friend.",
+      "3. They ___ students.",
+      "4. You ___ a boy.",
+      "5. His bag ___ black.",
+      "6. We ___ in class.",
+      "B. Điền a / an:",
+      "7. ___ apple  8. ___ book  9. ___ orange  10. ___ eraser  11. ___ pen  12. ___ egg",
+      "C. Viết 4 câu về mình: tên, tuổi, This is my..., màu của bút hoặc cặp."
+    ],
+    "answers": [
+      "A: 1 am  2 is  3 are  4 are  5 is  6 are",
+      "B: 7 an  8 a  9 an  10 an  11 a  12 an",
+      "C mỗi câu đúng cấu trúc được 1 ý, tối đa 4. Mẫu: I am Minh. I am fifteen years old. This is my bag. My bag is black.",
+      "Mục tiêu: 12/16 ý. Dưới 8: học lại ngày 3 và ngày 5 trước khi sang tuần 2."
+    ],
+    "recall": "Đọc to 4 câu phần C cho một người trong nhà nghe."
+  },
+  {
+    "day": 8,
+    "week": 2,
+    "title": "Gia đình",
+    "aim": "Giới thiệu 5 người trong gia đình bằng He is / She is.",
+    "rule": "Số chục: twenty 20, thirty 30, forty 40, fifty 50, sixty 60. 45 = forty-five.",
+    "words": [
+      {
+        "en": "father / mother",
+        "vi": "bố / mẹ"
+      },
+      {
+        "en": "brother / sister",
+        "vi": "anh hoặc em trai / chị hoặc em gái"
+      },
+      {
+        "en": "parents",
+        "vi": "bố mẹ"
+      },
+      {
+        "en": "family",
+        "vi": "gia đình"
+      },
+      {
+        "en": "grandfather / grandmother",
+        "vi": "ông / bà"
+      },
+      {
+        "en": "forty / fifty",
+        "vi": "40 / 50"
+      }
+    ],
+    "listen": [
+      {
+        "en": "This is my father.",
+        "vi": "Đây là bố tôi."
+      },
+      {
+        "en": "He is forty-five.",
+        "vi": "Ông ấy 45 tuổi."
+      },
+      {
+        "en": "This is my mother.",
+        "vi": "Đây là mẹ tôi."
+      },
+      {
+        "en": "She is a teacher.",
+        "vi": "Bà ấy là giáo viên."
+      },
+      {
+        "en": "They are my parents.",
+        "vi": "Họ là bố mẹ tôi."
+      },
+      {
+        "en": "This is my brother.",
+        "vi": "Đây là anh (em) trai tôi."
+      }
+    ],
+    "copy": [
+      "Vẽ sơ đồ gia đình, ghi từ tiếng Anh dưới mỗi người, rồi chép 6 câu."
+    ],
+    "exercise": [
+      "Dịch:",
+      "1. Đây là bố tôi.",
+      "2. Ông ấy 40 tuổi.",
+      "3. Đây là mẹ tôi.",
+      "4. Bà ấy là giáo viên.",
+      "5. Họ là bố mẹ tôi.",
+      "6. Đây là chị (em) gái tôi.",
+      "7. Viết 3 câu về người thật trong nhà mình."
+    ],
+    "answers": [
+      "1 This is my father.",
+      "2 He is forty.",
+      "3 This is my mother.",
+      "4 She is a teacher.",
+      "5 They are my parents.",
+      "6 This is my sister.",
+      "7 Đúng nếu có This is my / He is / She is."
+    ],
+    "recall": "father, mother, brother, sister, parents, forty."
+  },
+  {
+    "day": 9,
+    "week": 2,
+    "title": "have và has",
+    "aim": "Nói mình có gì, người khác có gì.",
+    "rule": "I, you, we, they + have. He, she, it + has.",
+    "words": [
+      {
+        "en": "have / has",
+        "vi": "có / có (đi với he, she)"
+      },
+      {
+        "en": "two",
+        "vi": "hai"
+      },
+      {
+        "en": "motorbike",
+        "vi": "xe máy"
+      },
+      {
+        "en": "phone",
+        "vi": "điện thoại"
+      },
+      {
+        "en": "bike",
+        "vi": "xe đạp"
+      },
+      {
+        "en": "dog / cat",
+        "vi": "chó / mèo"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I have a brother.",
+        "vi": "Tôi có một người anh (em) trai."
+      },
+      {
+        "en": "I have a phone.",
+        "vi": "Tôi có một chiếc điện thoại."
+      },
+      {
+        "en": "She has a sister.",
+        "vi": "Cô ấy có một người chị (em) gái."
+      },
+      {
+        "en": "He has a bike.",
+        "vi": "Anh ấy có một chiếc xe đạp."
+      },
+      {
+        "en": "My father has a motorbike.",
+        "vi": "Bố tôi có một chiếc xe máy."
+      },
+      {
+        "en": "We have a dog.",
+        "vi": "Chúng tôi có một con chó."
+      }
+    ],
+    "copy": [
+      "Chép quy tắc have/has và 6 câu."
+    ],
+    "exercise": [
+      "Điền have hoặc has:",
+      "1. I ___ a bag.",
+      "2. She ___ a brother.",
+      "3. They ___ a dog.",
+      "4. My father ___ a motorbike.",
+      "5. We ___ a cat.",
+      "6. He ___ two sisters.",
+      "Dịch:",
+      "7. Tôi có một người anh trai.",
+      "8. Cô ấy có một chiếc điện thoại."
+    ],
+    "answers": [
+      "1 have  2 has  3 have  4 has  5 have  6 has",
+      "7 I have a brother.",
+      "8 She has a phone."
+    ],
+    "recall": "have, has, phone, motorbike, brother."
+  },
+  {
+    "day": 10,
+    "week": 2,
+    "title": "I like và He likes",
+    "aim": "Nói mình thích gì và một người khác thích gì.",
+    "rule": "I / you / we / they + like. He / she + likes.",
+    "words": [
+      {
+        "en": "like / likes",
+        "vi": "thích"
+      },
+      {
+        "en": "football",
+        "vi": "bóng đá"
+      },
+      {
+        "en": "music",
+        "vi": "âm nhạc"
+      },
+      {
+        "en": "English / math",
+        "vi": "tiếng Anh / toán"
+      },
+      {
+        "en": "film / game",
+        "vi": "phim / trò chơi"
+      },
+      {
+        "en": "rice / milk / chicken",
+        "vi": "cơm / sữa / thịt gà"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I like football.",
+        "vi": "Tôi thích bóng đá."
+      },
+      {
+        "en": "I like rice.",
+        "vi": "Tôi thích cơm."
+      },
+      {
+        "en": "I like English.",
+        "vi": "Tôi thích tiếng Anh."
+      },
+      {
+        "en": "He likes music.",
+        "vi": "Anh ấy thích âm nhạc."
+      },
+      {
+        "en": "She likes math.",
+        "vi": "Cô ấy thích toán."
+      },
+      {
+        "en": "They like films.",
+        "vi": "Họ thích phim."
+      }
+    ],
+    "copy": [
+      "Chép 6 câu. Khoanh chữ s trong likes."
+    ],
+    "exercise": [
+      "Điền like hoặc likes:",
+      "1. I ___ football.",
+      "2. He ___ music.",
+      "3. They ___ films.",
+      "4. She ___ English.",
+      "5. We ___ rice.",
+      "6. My brother ___ games.",
+      "Dịch:",
+      "7. Tôi thích bóng đá.",
+      "8. Mẹ tôi thích âm nhạc."
+    ],
+    "answers": [
+      "1 like  2 likes  3 like  4 likes  5 like  6 likes",
+      "7 I like football.",
+      "8 My mother likes music."
+    ],
+    "recall": "like, likes, football, rice, music."
+  },
+  {
+    "day": 11,
+    "week": 2,
+    "title": "Một ngày của tôi",
+    "aim": "Kể 7 việc từ sáng đến tối bằng thì hiện tại đơn, ngôi I.",
+    "rule": "Ngôi I không thêm -s. every day đứng cuối câu. at + giờ.",
+    "words": [
+      {
+        "en": "get up",
+        "vi": "thức dậy"
+      },
+      {
+        "en": "go to school",
+        "vi": "đi học"
+      },
+      {
+        "en": "eat breakfast",
+        "vi": "ăn sáng"
+      },
+      {
+        "en": "study",
+        "vi": "học"
+      },
+      {
+        "en": "play",
+        "vi": "chơi"
+      },
+      {
+        "en": "sleep",
+        "vi": "ngủ"
+      },
+      {
+        "en": "homework",
+        "vi": "bài tập"
+      },
+      {
+        "en": "every day",
+        "vi": "mỗi ngày"
+      },
+      {
+        "en": "home",
+        "vi": "nhà"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I get up at six.",
+        "vi": "Tôi dậy lúc 6 giờ."
+      },
+      {
+        "en": "I eat breakfast.",
+        "vi": "Tôi ăn sáng."
+      },
+      {
+        "en": "I go to school.",
+        "vi": "Tôi đi học."
+      },
+      {
+        "en": "I study English.",
+        "vi": "Tôi học tiếng Anh."
+      },
+      {
+        "en": "I play football.",
+        "vi": "Tôi chơi bóng đá."
+      },
+      {
+        "en": "I sleep at ten.",
+        "vi": "Tôi ngủ lúc 10 giờ."
+      }
+    ],
+    "copy": [
+      "Chép 6 câu theo đúng thứ tự sáng → tối. Thêm câu: I do my homework. = Tôi làm bài tập."
+    ],
+    "exercise": [
+      "Dịch, giữ thứ tự:",
+      "1. Tôi thức dậy lúc sáu giờ.",
+      "2. Tôi ăn sáng.",
+      "3. Tôi đi học.",
+      "4. Tôi học tiếng Anh.",
+      "5. Tôi chơi bóng đá.",
+      "6. Tôi làm bài tập.",
+      "7. Tôi ngủ lúc mười giờ.",
+      "8. Tôi học tiếng Anh mỗi ngày."
+    ],
+    "answers": [
+      "1 I get up at six.",
+      "2 I eat breakfast.",
+      "3 I go to school.",
+      "4 I study English.",
+      "5 I play football.",
+      "6 I do my homework.",
+      "7 I sleep at ten.",
+      "8 I study English every day."
+    ],
+    "recall": "get up, go to school, study, play, sleep, every day."
+  },
+  {
+    "day": 12,
+    "week": 2,
+    "title": "Giờ và buổi",
+    "aim": "Gắn việc với giờ và buổi trong ngày.",
+    "rule": "at + giờ. in the morning / afternoon / evening. half past six = 6 giờ 30.",
+    "words": [
+      {
+        "en": "o'clock",
+        "vi": "đúng giờ"
+      },
+      {
+        "en": "half past",
+        "vi": "giờ rưỡi"
+      },
+      {
+        "en": "morning",
+        "vi": "buổi sáng"
+      },
+      {
+        "en": "afternoon",
+        "vi": "buổi chiều"
+      },
+      {
+        "en": "evening",
+        "vi": "buổi tối"
+      },
+      {
+        "en": "at / in",
+        "vi": "vào lúc (giờ) / vào (buổi)"
+      },
+      {
+        "en": "lunch",
+        "vi": "bữa trưa"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I get up at 6 o'clock.",
+        "vi": "Tôi dậy lúc 6 giờ đúng."
+      },
+      {
+        "en": "I eat lunch at half past eleven.",
+        "vi": "Tôi ăn trưa lúc 11 giờ 30."
+      },
+      {
+        "en": "I go to school in the morning.",
+        "vi": "Tôi đi học vào buổi sáng."
+      },
+      {
+        "en": "I play football in the afternoon.",
+        "vi": "Tôi chơi bóng vào buổi chiều."
+      },
+      {
+        "en": "I study in the evening.",
+        "vi": "Tôi học vào buổi tối."
+      },
+      {
+        "en": "I sleep at 10 o'clock.",
+        "vi": "Tôi ngủ lúc 10 giờ đúng."
+      }
+    ],
+    "copy": [
+      "Chép quy tắc at / in và 6 câu. Gạch chân at và in."
+    ],
+    "exercise": [
+      "Điền at hoặc in:",
+      "1. I get up ___ 6.",
+      "2. I study ___ the evening.",
+      "3. I play ___ the afternoon.",
+      "4. I sleep ___ 10 o'clock.",
+      "5. I go to school ___ the morning.",
+      "6. I eat lunch ___ half past eleven.",
+      "Dịch:",
+      "7. Tôi học vào buổi tối.",
+      "8. Tôi dậy lúc 6 giờ đúng."
+    ],
+    "answers": [
+      "1 at  2 in  3 in  4 at  5 in  6 at",
+      "7 I study in the evening.",
+      "8 I get up at 6 o'clock."
+    ],
+    "recall": "at 6 o'clock, half past, in the evening, in the afternoon."
+  },
+  {
+    "day": 13,
+    "week": 2,
+    "title": "Phủ định với don't",
+    "aim": "Đổi câu ngôi I/you/we/they sang câu phủ định.",
+    "rule": "don't đứng ngay trước động từ: don't like, don't play, don't go. I do my homework vẫn là câu khẳng định, do nghĩa là làm.",
+    "words": [
+      {
+        "en": "don't = do not",
+        "vi": "không"
+      },
+      {
+        "en": "watch TV",
+        "vi": "xem tivi"
+      },
+      {
+        "en": "at night",
+        "vi": "vào ban đêm"
+      },
+      {
+        "en": "early / late",
+        "vi": "sớm / muộn"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I don't like milk.",
+        "vi": "Tôi không thích sữa."
+      },
+      {
+        "en": "I don't play games at night.",
+        "vi": "Tôi không chơi trò chơi ban đêm."
+      },
+      {
+        "en": "I don't get up at five.",
+        "vi": "Tôi không dậy lúc 5 giờ."
+      },
+      {
+        "en": "They don't watch TV in the morning.",
+        "vi": "Họ không xem tivi buổi sáng."
+      },
+      {
+        "en": "We don't eat chicken every day.",
+        "vi": "Chúng tôi không ăn thịt gà mỗi ngày."
+      },
+      {
+        "en": "I do my homework in the evening.",
+        "vi": "Tôi làm bài tập vào buổi tối."
+      }
+    ],
+    "copy": [
+      "Chép 6 câu. Với 5 câu đầu, khoanh don't."
+    ],
+    "exercise": [
+      "Đổi sang phủ định:",
+      "1. I like milk.",
+      "2. I play games at night.",
+      "3. I get up at five.",
+      "4. They watch TV in the morning.",
+      "5. We eat chicken every day.",
+      "6. I go to school in the evening.",
+      "7. Viết 2 câu don't về việc mình thật sự không làm."
+    ],
+    "answers": [
+      "1 I don't like milk.",
+      "2 I don't play games at night.",
+      "3 I don't get up at five.",
+      "4 They don't watch TV in the morning.",
+      "5 We don't eat chicken every day.",
+      "6 I don't go to school in the evening.",
+      "7 Đúng nếu có don't + động từ nguyên mẫu."
+    ],
+    "recall": "don't like, don't play, don't watch, at night."
+  },
+  {
+    "day": 14,
+    "week": 2,
+    "title": "Kiểm tra: một ngày của tôi",
+    "aim": "Viết 8 câu về một ngày thật, không nhìn bài cũ.",
+    "rule": "20 phút viết, 5 phút đọc to, 5 phút đối mẫu. Chấm cấu trúc, chưa trừ lỗi chính tả nhỏ.",
+    "words": [
+      {
+        "en": "Ôn ngày 8–13",
+        "vi": "không học từ mới"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I am fifteen years old.",
+        "vi": "Nhắc một vòng rồi gấp vở."
+      },
+      {
+        "en": "I have a brother.",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "I like football.",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "I get up at six o'clock.",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "I study in the evening.",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "I don't play games at night.",
+        "vi": "Nhắc."
+      }
+    ],
+    "copy": [
+      "Không chép. Viết bài thẳng."
+    ],
+    "exercise": [
+      "Viết đúng 8 câu về một ngày của mình. Bài phải có đủ các mảnh sau, mỗi mảnh một câu:",
+      "1. I am + tên",
+      "2. I am ... years old",
+      "3. I have / My father has",
+      "4. I like",
+      "5. I get up at",
+      "6. I go",
+      "7. in the evening",
+      "8. I don't"
+    ],
+    "answers": [
+      "Mẫu, chỉ đối sau khi viết xong:",
+      "I am Minh.",
+      "I am fifteen years old.",
+      "I have a brother.",
+      "I like football.",
+      "I get up at six o'clock.",
+      "I go to school in the morning.",
+      "I study English in the evening.",
+      "I don't play games at night.",
+      "Mỗi câu đúng cấu trúc: 1 điểm. Mục tiêu 6/8. Dưới 4: viết lại bài này vào hôm sau, chưa sang tuần 3."
+    ],
+    "recall": "Đọc cả đoạn một lần, không dừng giữa câu."
+  },
+  {
+    "day": 15,
+    "week": 3,
+    "title": "He và She thêm -s",
+    "aim": "Chia hiện tại đơn với he/she.",
+    "rule": "Hầu hết thêm -s. Tận o, ch, sh, s, x thêm -es: go → goes, watch → watches. Phụ âm + y thành -ies: study → studies. play → plays.",
+    "words": [
+      {
+        "en": "work",
+        "vi": "làm việc"
+      },
+      {
+        "en": "go → goes",
+        "vi": "đi"
+      },
+      {
+        "en": "study → studies",
+        "vi": "học"
+      },
+      {
+        "en": "watch → watches",
+        "vi": "xem"
+      },
+      {
+        "en": "play → plays",
+        "vi": "chơi"
+      },
+      {
+        "en": "live → lives",
+        "vi": "sống"
+      },
+      {
+        "en": "start",
+        "vi": "bắt đầu"
+      }
+    ],
+    "listen": [
+      {
+        "en": "My father works.",
+        "vi": "Bố tôi làm việc."
+      },
+      {
+        "en": "He goes to school.",
+        "vi": "Anh ấy đi học."
+      },
+      {
+        "en": "Minh studies English.",
+        "vi": "Minh học tiếng Anh."
+      },
+      {
+        "en": "She watches TV.",
+        "vi": "Cô ấy xem tivi."
+      },
+      {
+        "en": "He plays football.",
+        "vi": "Anh ấy chơi bóng."
+      },
+      {
+        "en": "My mother lives near the school.",
+        "vi": "Mẹ tôi sống gần trường."
+      }
+    ],
+    "copy": [
+      "Chép 3 dòng quy tắc chính tả và 6 câu. Gạch đuôi -s, -es, -ies."
+    ],
+    "exercise": [
+      "Chia động từ trong ngoặc:",
+      "1. He (get up) at six.",
+      "2. She (go) to school.",
+      "3. My father (work) in the city.",
+      "4. Minh (study) English.",
+      "5. She (watch) TV.",
+      "6. He (play) football.",
+      "7. My mother (live) near the school.",
+      "8. The film (start) at seven."
+    ],
+    "answers": [
+      "1 gets up",
+      "2 goes",
+      "3 works",
+      "4 studies",
+      "5 watches",
+      "6 plays",
+      "7 lives",
+      "8 starts"
+    ],
+    "recall": "goes, studies, watches, plays, works."
+  },
+  {
+    "day": 16,
+    "week": 3,
+    "title": "Câu hỏi Do và Does",
+    "aim": "Hỏi Yes/No và trả lời ngắn.",
+    "rule": "Do + I/you/we/they. Does + he/she/it. Sau Does, động từ bỏ -s: Does he play. Trả lời ngắn nhắc lại Do/Does, không nhắc động từ chính.",
+    "words": [
+      {
+        "en": "Do you...?",
+        "vi": "Bạn có ... không?"
+      },
+      {
+        "en": "Does he...?",
+        "vi": "Anh ấy có ... không?"
+      },
+      {
+        "en": "Yes, I do. / No, I don't.",
+        "vi": "Có. / Không."
+      },
+      {
+        "en": "Yes, he does. / No, he doesn't.",
+        "vi": "Có. / Không."
+      },
+      {
+        "en": "doesn't = does not",
+        "vi": "không (đi với he, she)"
+      }
+    ],
+    "listen": [
+      {
+        "en": "Do you like football?",
+        "vi": "Bạn có thích bóng đá không?"
+      },
+      {
+        "en": "Yes, I do.",
+        "vi": "Có."
+      },
+      {
+        "en": "No, I don't.",
+        "vi": "Không."
+      },
+      {
+        "en": "Does he play football?",
+        "vi": "Anh ấy có chơi bóng không?"
+      },
+      {
+        "en": "Yes, he does.",
+        "vi": "Có."
+      },
+      {
+        "en": "No, he doesn't.",
+        "vi": "Không."
+      }
+    ],
+    "copy": [
+      "Chép 6 câu. Viết thêm một dòng cấm: Does he plays → sai. Does he play → đúng."
+    ],
+    "exercise": [
+      "Viết câu hỏi rồi trả lời về mình hoặc gia đình:",
+      "1. you / like / football",
+      "2. you / study / English / every day",
+      "3. your father / work",
+      "4. your mother / like / music",
+      "5. you / get up / at five",
+      "6. your brother / play / games at night"
+    ],
+    "answers": [
+      "1 Do you like football? Yes, I do. / No, I don't.",
+      "2 Do you study English every day? Yes, I do. / No, I don't.",
+      "3 Does your father work? Yes, he does. / No, he doesn't.",
+      "4 Does your mother like music? Yes, she does. / No, she doesn't.",
+      "5 Do you get up at five? Yes, I do. / No, I don't.",
+      "6 Does your brother play games at night? Yes, he does. / No, he doesn't.",
+      "Nội dung Yes/No theo sự thật. Cấu trúc phải giống dòng trên."
+    ],
+    "recall": "Do you, Does he, I don't, he doesn't."
+  },
+  {
+    "day": 17,
+    "week": 3,
+    "title": "What, Where, When, Who, Why",
+    "aim": "Hỏi và trả lời bằng câu đầy đủ.",
+    "rule": "Trả lời không được mỗi một từ. What cái gì, Where ở đâu, When khi nào, Who ai, Why tại sao, Because bởi vì.",
+    "words": [
+      {
+        "en": "what",
+        "vi": "cái gì"
+      },
+      {
+        "en": "where",
+        "vi": "ở đâu"
+      },
+      {
+        "en": "when",
+        "vi": "khi nào"
+      },
+      {
+        "en": "who",
+        "vi": "ai"
+      },
+      {
+        "en": "why / because",
+        "vi": "tại sao / bởi vì"
+      },
+      {
+        "en": "fun",
+        "vi": "vui"
+      }
+    ],
+    "listen": [
+      {
+        "en": "What do you like?",
+        "vi": "Bạn thích gì?"
+      },
+      {
+        "en": "I like football.",
+        "vi": "Tôi thích bóng đá."
+      },
+      {
+        "en": "Where do you live?",
+        "vi": "Bạn sống ở đâu?"
+      },
+      {
+        "en": "I live near the school.",
+        "vi": "Tôi sống gần trường."
+      },
+      {
+        "en": "When do you get up?",
+        "vi": "Bạn dậy lúc mấy giờ?"
+      },
+      {
+        "en": "Why do you like football? Because it is fun.",
+        "vi": "Vì sao bạn thích bóng? Vì nó vui."
+      }
+    ],
+    "copy": [
+      "Chép 6 câu hỏi và câu trả lời mẫu của Minh."
+    ],
+    "exercise": [
+      "Trả lời về mình bằng câu hoàn chỉnh:",
+      "1. What do you like?",
+      "2. Where do you live?",
+      "3. When do you get up?",
+      "4. Who is your father?",
+      "5. What do you study in the evening?",
+      "6. Why do you like football?"
+    ],
+    "answers": [
+      "Mẫu để đối cấu trúc. Câu của mình đúng nếu cùng kiểu, khác chi tiết vẫn được:",
+      "1 I like football.",
+      "2 I live near the school.",
+      "3 I get up at six.",
+      "4 He is my father. / My father is a worker. (câu có He is hoặc My father is)",
+      "5 I study English in the evening.",
+      "6 Because it is fun."
+    ],
+    "recall": "what, where, when, who, because."
+  },
+  {
+    "day": 18,
+    "week": 3,
+    "title": "Nơi chốn",
+    "aim": "Nói mình sống ở đâu và cái gì ở gần.",
+    "rule": "in + thành phố hoặc nhà. near + địa điểm. far from + địa điểm.",
+    "words": [
+      {
+        "en": "live",
+        "vi": "sống"
+      },
+      {
+        "en": "house",
+        "vi": "ngôi nhà"
+      },
+      {
+        "en": "city / street",
+        "vi": "thành phố / đường"
+      },
+      {
+        "en": "near",
+        "vi": "gần"
+      },
+      {
+        "en": "far from",
+        "vi": "xa"
+      },
+      {
+        "en": "hospital / market / park",
+        "vi": "bệnh viện / chợ / công viên"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I live in Ha Noi.",
+        "vi": "Tôi sống ở Hà Nội."
+      },
+      {
+        "en": "I live in a house.",
+        "vi": "Tôi sống trong một ngôi nhà."
+      },
+      {
+        "en": "I live near the school.",
+        "vi": "Tôi sống gần trường."
+      },
+      {
+        "en": "The market is near my house.",
+        "vi": "Chợ gần nhà tôi."
+      },
+      {
+        "en": "The park is far from my school.",
+        "vi": "Công viên xa trường tôi."
+      },
+      {
+        "en": "The hospital is near the market.",
+        "vi": "Bệnh viện gần chợ."
+      }
+    ],
+    "copy": [
+      "Chép 6 câu. Đổi Ha Noi thành nơi mình ở khi chép câu 1 lần thứ hai."
+    ],
+    "exercise": [
+      "Dịch:",
+      "1. Tôi sống ở Hà Nội.",
+      "2. Tôi sống trong một ngôi nhà.",
+      "3. Tôi sống gần trường.",
+      "4. Chợ gần nhà tôi.",
+      "5. Công viên xa trường tôi.",
+      "6. Bệnh viện gần chợ.",
+      "7. Viết 2 câu về chỗ ở thật, có in và near."
+    ],
+    "answers": [
+      "1 I live in Ha Noi.",
+      "2 I live in a house.",
+      "3 I live near the school.",
+      "4 The market is near my house.",
+      "5 The park is far from my school.",
+      "6 The hospital is near the market.",
+      "7 Đúng nếu một câu có live in, một câu có near."
+    ],
+    "recall": "live, house, near, market, far from."
+  },
+  {
+    "day": 19,
+    "week": 3,
+    "title": "There is và There are",
+    "aim": "Nói trong phòng có gì.",
+    "rule": "There is + một vật. There are + nhiều vật. This is a book = đây là quyển sách. There is a book = có một quyển sách.",
+    "words": [
+      {
+        "en": "there is / there are",
+        "vi": "có một / có nhiều"
+      },
+      {
+        "en": "room",
+        "vi": "phòng"
+      },
+      {
+        "en": "table",
+        "vi": "bàn"
+      },
+      {
+        "en": "window",
+        "vi": "cửa sổ"
+      },
+      {
+        "en": "door",
+        "vi": "cửa"
+      },
+      {
+        "en": "bed",
+        "vi": "giường"
+      },
+      {
+        "en": "lamp",
+        "vi": "đèn"
+      },
+      {
+        "en": "picture / wall",
+        "vi": "bức tranh / tường"
+      }
+    ],
+    "listen": [
+      {
+        "en": "There is a table in the room.",
+        "vi": "Có một cái bàn trong phòng."
+      },
+      {
+        "en": "There is a bed.",
+        "vi": "Có một cái giường."
+      },
+      {
+        "en": "There is a door.",
+        "vi": "Có một cái cửa."
+      },
+      {
+        "en": "There are two windows.",
+        "vi": "Có hai cửa sổ."
+      },
+      {
+        "en": "There are four chairs.",
+        "vi": "Có bốn cái ghế."
+      },
+      {
+        "en": "There are two lamps.",
+        "vi": "Có hai cái đèn."
+      }
+    ],
+    "copy": [
+      "Chép 6 câu. Số ít để cạnh There is, số nhiều để cạnh There are."
+    ],
+    "exercise": [
+      "Dịch:",
+      "1. Có một cái bàn trong phòng.",
+      "2. Có một cái giường.",
+      "3. Có hai cửa sổ.",
+      "4. Có bốn cái ghế.",
+      "Điền is hoặc are:",
+      "5. There ___ a door.",
+      "6. There ___ three books.",
+      "7. There ___ a picture on the wall.",
+      "8. There ___ two beds."
+    ],
+    "answers": [
+      "1 There is a table in the room.",
+      "2 There is a bed.",
+      "3 There are two windows.",
+      "4 There are four chairs.",
+      "5 is  6 are  7 is  8 are"
+    ],
+    "recall": "there is a bed, there are two windows, door, lamp."
+  },
+  {
+    "day": 20,
+    "week": 3,
+    "title": "Giới từ chỉ chỗ",
+    "aim": "Đặt đồ vật vào đúng giới từ.",
+    "rule": "on = trên bề mặt. in = bên trong. under = bên dưới. next to = bên cạnh. behind = đằng sau. at vẫn dành cho giờ.",
+    "words": [
+      {
+        "en": "on",
+        "vi": "trên"
+      },
+      {
+        "en": "in",
+        "vi": "trong"
+      },
+      {
+        "en": "under",
+        "vi": "dưới"
+      },
+      {
+        "en": "next to",
+        "vi": "bên cạnh"
+      },
+      {
+        "en": "behind",
+        "vi": "đằng sau"
+      },
+      {
+        "en": "in front of",
+        "vi": "đằng trước"
+      }
+    ],
+    "listen": [
+      {
+        "en": "The book is on the desk.",
+        "vi": "Sách ở trên bàn."
+      },
+      {
+        "en": "The bag is under the chair.",
+        "vi": "Cặp ở dưới ghế."
+      },
+      {
+        "en": "The lamp is next to the bed.",
+        "vi": "Đèn ở bên cạnh giường."
+      },
+      {
+        "en": "The picture is on the wall.",
+        "vi": "Tranh ở trên tường."
+      },
+      {
+        "en": "The school is behind the market.",
+        "vi": "Trường ở đằng sau chợ."
+      },
+      {
+        "en": "I live in a house.",
+        "vi": "Tôi sống trong một ngôi nhà."
+      }
+    ],
+    "copy": [
+      "Vẽ bàn, ghế, cặp, giường, đèn. Chép câu tương ứng cạnh hình."
+    ],
+    "exercise": [
+      "Điền on, in, under, next to, behind hoặc at:",
+      "1. The book is ___ the desk.",
+      "2. The bag is ___ the chair.",
+      "3. The lamp is ___ the bed.",
+      "4. The picture is ___ the wall.",
+      "5. The school is ___ the market.",
+      "6. I live ___ a house.",
+      "7. I study ___ the evening.",
+      "8. I get up ___ 6 o'clock."
+    ],
+    "answers": [
+      "1 on  2 under  3 next to  4 on  5 behind  6 in  7 in  8 at"
+    ],
+    "recall": "on the desk, under the chair, next to, behind, at 6."
+  },
+  {
+    "day": 21,
+    "week": 3,
+    "title": "Kiểm tra tuần 3",
+    "aim": "Làm 15 ý trong 25 phút.",
+    "rule": "Khoanh câu sai và viết lại câu đúng bên dưới. Đây là cách chữa sẽ dùng khi luyện đề.",
+    "words": [
+      {
+        "en": "Ôn ngày 15–20",
+        "vi": "have/has, -s, do/does, there is/are, giới từ"
+      }
+    ],
+    "listen": [
+      {
+        "en": "She has a sister.",
+        "vi": "Nhắc rồi gấp vở."
+      },
+      {
+        "en": "He goes to school.",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "Do you like football?",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "Does he study English?",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "There are two windows.",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "The book is on the desk.",
+        "vi": "Nhắc."
+      }
+    ],
+    "copy": [
+      "Không chép bài mới."
+    ],
+    "exercise": [
+      "Điền một từ:",
+      "1. She ___ a sister. (have/has)",
+      "2. He ___ to school every day. (go/goes)",
+      "3. ___ you like football? (Do/Does)",
+      "4. ___ he study English? (Do/Does)",
+      "5. There ___ two windows. (is/are)",
+      "6. There ___ a bed. (is/are)",
+      "7. The book is ___ the desk.",
+      "8. I live ___ a house.",
+      "9. I get up ___ six.",
+      "10. They ___ watch TV at night. (don't/doesn't)",
+      "Viết 5 câu về gia đình và phòng của mình. Mỗi câu một ý: has, goes hoặc works, near, there is, on hoặc under."
+    ],
+    "answers": [
+      "1 has  2 goes  3 Do  4 Does  5 are  6 is  7 on  8 in  9 at  10 don't",
+      "Phần viết: 1 điểm mỗi câu đúng cấu trúc, tối đa 5.",
+      "Mục tiêu cả bài 11/15. Dưới 8: làm lại ngày 15 và ngày 16."
+    ],
+    "recall": "Đọc 5 câu phần viết một lượt."
+  },
+  {
+    "day": 22,
+    "week": 4,
+    "title": "can và can't",
+    "aim": "Nói được việc mình làm được và chưa làm được.",
+    "rule": "Sau can và can't là động từ nguyên mẫu: He can swim. He can't cook. Không thêm -s, không thêm to.",
+    "words": [
+      {
+        "en": "can / can't",
+        "vi": "có thể / không thể"
+      },
+      {
+        "en": "swim",
+        "vi": "bơi"
+      },
+      {
+        "en": "ride",
+        "vi": "đi, cưỡi (xe, ngựa)"
+      },
+      {
+        "en": "cook",
+        "vi": "nấu ăn"
+      },
+      {
+        "en": "speak",
+        "vi": "nói"
+      },
+      {
+        "en": "sing / run",
+        "vi": "hát / chạy"
+      },
+      {
+        "en": "well / a little",
+        "vi": "giỏi, tốt / một chút"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I can play football.",
+        "vi": "Tôi chơi bóng được."
+      },
+      {
+        "en": "I can swim.",
+        "vi": "Tôi bơi được."
+      },
+      {
+        "en": "I can't speak English well.",
+        "vi": "Tôi nói tiếng Anh chưa giỏi."
+      },
+      {
+        "en": "I can speak English a little.",
+        "vi": "Tôi nói tiếng Anh một chút."
+      },
+      {
+        "en": "Can you swim?",
+        "vi": "Bạn bơi được không?"
+      },
+      {
+        "en": "Yes, I can. / No, I can't.",
+        "vi": "Có. / Không."
+      }
+    ],
+    "copy": [
+      "Chép 6 câu. Thêm dòng: He can swims là sai. He can swim là đúng."
+    ],
+    "exercise": [
+      "Dịch:",
+      "1. Tôi chơi bóng được.",
+      "2. Tôi bơi được.",
+      "3. Tôi nói tiếng Anh chưa giỏi.",
+      "4. Tôi nói tiếng Anh một chút.",
+      "5. Bạn nấu ăn được không?",
+      "6. He can ___ . (swim/swims)",
+      "7. She can't ___ . (cook/cooks)",
+      "8. Viết 1 câu I can và 1 câu I can't về mình."
+    ],
+    "answers": [
+      "1 I can play football.",
+      "2 I can swim.",
+      "3 I can't speak English well.",
+      "4 I can speak English a little.",
+      "5 Can you cook?",
+      "6 swim",
+      "7 cook",
+      "8 Đúng nếu can/can't + động từ không có -s."
+    ],
+    "recall": "can swim, can't speak, well, a little."
+  },
+  {
+    "day": 23,
+    "week": 4,
+    "title": "Tính từ với be",
+    "aim": "Thêm tính từ vào câu có am/is/are.",
+    "rule": "Tính từ đứng sau am/is/are: He is tall. The bag is new. I am tired.",
+    "words": [
+      {
+        "en": "tall / short",
+        "vi": "cao / thấp"
+      },
+      {
+        "en": "big / small",
+        "vi": "to / nhỏ"
+      },
+      {
+        "en": "new / old",
+        "vi": "mới / cũ, già"
+      },
+      {
+        "en": "good / bad",
+        "vi": "tốt / tệ"
+      },
+      {
+        "en": "happy / tired / hungry",
+        "vi": "vui / mệt / đói"
+      },
+      {
+        "en": "fun",
+        "vi": "vui, thú vị"
+      }
+    ],
+    "listen": [
+      {
+        "en": "He is tall.",
+        "vi": "Anh ấy cao."
+      },
+      {
+        "en": "The school is big.",
+        "vi": "Trường lớn."
+      },
+      {
+        "en": "My bag is new.",
+        "vi": "Cặp của tôi mới."
+      },
+      {
+        "en": "I am tired.",
+        "vi": "Tôi mệt."
+      },
+      {
+        "en": "I am hungry.",
+        "vi": "Tôi đói."
+      },
+      {
+        "en": "Football is fun.",
+        "vi": "Bóng đá vui."
+      }
+    ],
+    "copy": [
+      "Chép 6 câu. Thêm: The house is small. My mother is happy."
+    ],
+    "exercise": [
+      "Dịch:",
+      "1. Anh ấy cao.",
+      "2. Trường lớn.",
+      "3. Cặp của tôi mới.",
+      "4. Tôi mệt.",
+      "5. Tôi đói.",
+      "6. Bóng đá vui.",
+      "7. Ngôi nhà nhỏ.",
+      "8. Mẹ tôi vui."
+    ],
+    "answers": [
+      "1 He is tall.",
+      "2 The school is big.",
+      "3 My bag is new.",
+      "4 I am tired.",
+      "5 I am hungry.",
+      "6 Football is fun.",
+      "7 The house is small.",
+      "8 My mother is happy."
+    ],
+    "recall": "tall, big, small, tired, hungry, new."
+  },
+  {
+    "day": 24,
+    "week": 4,
+    "title": "Danh từ số nhiều",
+    "aim": "Viết đúng dạng số nhiều hay gặp trong đề.",
+    "rule": "Thêm -s. Tận s, x, ch, sh thêm -es. Phụ âm + y thành -ies. Học thuộc: man/men, woman/women, child/children, person/people. people đã là số nhiều.",
+    "words": [
+      {
+        "en": "box → boxes",
+        "vi": "hộp"
+      },
+      {
+        "en": "watch → watches",
+        "vi": "đồng hồ"
+      },
+      {
+        "en": "baby → babies",
+        "vi": "em bé"
+      },
+      {
+        "en": "man → men",
+        "vi": "đàn ông"
+      },
+      {
+        "en": "woman → women",
+        "vi": "phụ nữ"
+      },
+      {
+        "en": "child → children",
+        "vi": "trẻ em"
+      },
+      {
+        "en": "person → people",
+        "vi": "người / mọi người"
+      }
+    ],
+    "listen": [
+      {
+        "en": "There are three books.",
+        "vi": "Có ba quyển sách."
+      },
+      {
+        "en": "There are two boxes.",
+        "vi": "Có hai cái hộp."
+      },
+      {
+        "en": "There are many people.",
+        "vi": "Có nhiều người."
+      },
+      {
+        "en": "The children are at school.",
+        "vi": "Bọn trẻ đang ở trường."
+      },
+      {
+        "en": "two men",
+        "vi": "hai người đàn ông"
+      },
+      {
+        "en": "two women",
+        "vi": "hai người phụ nữ"
+      }
+    ],
+    "copy": [
+      "Chép 7 cặp số ít → số nhiều trong mục từ."
+    ],
+    "exercise": [
+      "Viết số nhiều:",
+      "1. book  2. box  3. child  4. person  5. watch  6. baby  7. man  8. window",
+      "Điền dạng đúng vào câu:",
+      "9. There are many ___ (person).",
+      "10. The ___ are at school. (child)"
+    ],
+    "answers": [
+      "1 books  2 boxes  3 children  4 people  5 watches  6 babies  7 men  8 windows",
+      "9 people",
+      "10 children"
+    ],
+    "recall": "children, people, men, women, boxes."
+  },
+  {
+    "day": 25,
+    "week": 4,
+    "title": "some, any và đồ ăn",
+    "aim": "Dùng some và any trong câu khẳng định, câu hỏi, câu phủ định.",
+    "rule": "some trong câu có. any trong câu hỏi và câu không. rice, milk, water, bread không thêm -s và không dùng a/an.",
+    "words": [
+      {
+        "en": "some / any",
+        "vi": "một ít (câu có) / một ít (câu hỏi, câu không)"
+      },
+      {
+        "en": "rice / bread",
+        "vi": "cơm / bánh mì"
+      },
+      {
+        "en": "milk / water",
+        "vi": "sữa / nước"
+      },
+      {
+        "en": "noodles",
+        "vi": "mì"
+      },
+      {
+        "en": "vegetable / fruit",
+        "vi": "rau / trái cây"
+      },
+      {
+        "en": "egg",
+        "vi": "trứng"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I have some rice.",
+        "vi": "Tôi có một ít cơm."
+      },
+      {
+        "en": "I have some milk.",
+        "vi": "Tôi có một ít sữa."
+      },
+      {
+        "en": "Do you have any bread?",
+        "vi": "Bạn có bánh mì không?"
+      },
+      {
+        "en": "I don't have any water.",
+        "vi": "Tôi không có nước."
+      },
+      {
+        "en": "She doesn't have any bread.",
+        "vi": "Cô ấy không có bánh mì."
+      },
+      {
+        "en": "There is some fruit on the table.",
+        "vi": "Có một ít trái cây trên bàn."
+      }
+    ],
+    "copy": [
+      "Chép quy tắc some/any và 6 câu."
+    ],
+    "exercise": [
+      "Điền some hoặc any:",
+      "1. I have ___ rice.",
+      "2. Do you have ___ milk?",
+      "3. She doesn't have ___ bread.",
+      "4. There is ___ water.",
+      "5. Are there ___ eggs?",
+      "6. They have ___ noodles.",
+      "Dịch:",
+      "7. Tôi có một ít cơm.",
+      "8. Bạn có sữa không?"
+    ],
+    "answers": [
+      "1 some  2 any  3 any  4 some  5 any  6 some",
+      "7 I have some rice.",
+      "8 Do you have any milk?"
+    ],
+    "recall": "some rice, any milk, any bread, water."
+  },
+  {
+    "day": 26,
+    "week": 4,
+    "title": "Thứ trong tuần",
+    "aim": "Nói hôm nay thứ mấy và việc của từng ngày.",
+    "rule": "Viết hoa tên thứ. on + thứ. in the evening vẫn dùng in, không dùng on. yesterday = hôm qua, tháng này chỉ nhận nghĩa, chưa kể chuyện quá khứ.",
+    "words": [
+      {
+        "en": "Monday → Sunday",
+        "vi": "thứ Hai, thứ Ba, thứ Tư, thứ Năm, thứ Sáu, thứ Bảy, Chủ nhật"
+      },
+      {
+        "en": "today / tomorrow",
+        "vi": "hôm nay / ngày mai"
+      },
+      {
+        "en": "yesterday",
+        "vi": "hôm qua"
+      },
+      {
+        "en": "weekend",
+        "vi": "cuối tuần"
+      },
+      {
+        "en": "on",
+        "vi": "vào (một thứ)"
+      }
+    ],
+    "listen": [
+      {
+        "en": "Today is Thursday.",
+        "vi": "Hôm nay là thứ Năm. Khi học ngày khác, đổi đúng thứ."
+      },
+      {
+        "en": "Tomorrow is Friday.",
+        "vi": "Ngày mai là thứ Sáu."
+      },
+      {
+        "en": "I go to school on Monday.",
+        "vi": "Tôi đi học vào thứ Hai."
+      },
+      {
+        "en": "I play football on Sunday.",
+        "vi": "Tôi chơi bóng vào Chủ nhật."
+      },
+      {
+        "en": "I don't go to school on Saturday.",
+        "vi": "Tôi không đi học vào thứ Bảy."
+      },
+      {
+        "en": "I study English in the evening.",
+        "vi": "Tôi học tiếng Anh vào buổi tối."
+      }
+    ],
+    "copy": [
+      "Chép 7 thứ có nghĩa tiếng Việt. Chép 6 câu, sửa câu 1 và câu 2 cho đúng ngày mình đang học."
+    ],
+    "exercise": [
+      "Dịch, câu 1 và 2 đổi đúng lịch thật:",
+      "1. Hôm nay là thứ Năm.",
+      "2. Ngày mai là thứ Sáu.",
+      "3. Tôi đi học vào thứ Hai.",
+      "4. Tôi chơi bóng vào Chủ nhật.",
+      "5. Tôi không đi học vào thứ Bảy.",
+      "Điền on hoặc in:",
+      "6. I study ___ Monday.",
+      "7. I study ___ the evening.",
+      "8. I play football ___ Sunday."
+    ],
+    "answers": [
+      "1 Today is Thursday.",
+      "2 Tomorrow is Friday.",
+      "3 I go to school on Monday.",
+      "4 I play football on Sunday.",
+      "5 I don't go to school on Saturday.",
+      "6 on  7 in  8 on"
+    ],
+    "recall": "Monday, Sunday, Saturday, on, today."
+  },
+  {
+    "day": 27,
+    "week": 4,
+    "title": "Đọc đoạn 70 từ",
+    "aim": "Đọc một đoạn ngắn và trả lời 5 câu bằng câu đầy đủ.",
+    "rule": "Đọc to một lần, đọc thầm một lần, gạch từ đã biết, rồi mới trả lời. Trả lời có chủ ngữ và động từ.",
+    "words": [
+      {
+        "en": "worker",
+        "vi": "công nhân"
+      },
+      {
+        "en": "small",
+        "vi": "nhỏ"
+      },
+      {
+        "en": "but",
+        "vi": "nhưng"
+      },
+      {
+        "en": "at night",
+        "vi": "vào ban đêm"
+      }
+    ],
+    "listen": [
+      {
+        "en": "Minh is fifteen years old.",
+        "vi": "Minh 15 tuổi."
+      },
+      {
+        "en": "He lives in a small house near his school.",
+        "vi": "Anh ấy sống trong một ngôi nhà nhỏ gần trường."
+      },
+      {
+        "en": "His father is a worker.",
+        "vi": "Bố anh ấy là công nhân."
+      },
+      {
+        "en": "His mother is a teacher.",
+        "vi": "Mẹ anh ấy là giáo viên."
+      },
+      {
+        "en": "He plays football in the afternoon.",
+        "vi": "Anh ấy chơi bóng vào buổi chiều."
+      },
+      {
+        "en": "He doesn't play games at night.",
+        "vi": "Anh ấy không chơi trò chơi ban đêm."
+      }
+    ],
+    "copy": [
+      "Chép cả đoạn: Minh is fifteen years old. He is a student. He lives in a small house near his school. He has a father, a mother and a sister. His father is a worker. His mother is a teacher. Minh gets up at six o'clock. He goes to school in the morning. He likes football and he plays football in the afternoon. He studies English in the evening. He doesn't play games at night. He is tired, but he is happy."
+    ],
+    "exercise": [
+      "Trả lời bằng câu đầy đủ:",
+      "1. How old is Minh?",
+      "2. Where does he live?",
+      "3. What does his mother do?",
+      "4. When does he play football?",
+      "5. Does he play games at night?"
+    ],
+    "answers": [
+      "1 He is fifteen years old.",
+      "2 He lives in a small house near his school.",
+      "3 His mother is a teacher.",
+      "4 He plays football in the afternoon.",
+      "5 No, he doesn't."
+    ],
+    "recall": "Đọc lại đoạn một lần, không nhìn nghĩa tiếng Việt."
+  },
+  {
+    "day": 28,
+    "week": 4,
+    "title": "Dạng đúng của từ",
+    "aim": "Đổi từ trong ngoặc sang dạng điền vào câu. Đây là dạng 4 điểm viết của nhiều đề vào 10.",
+    "rule": "Trước chỗ trống có a/the thì thường cần danh từ chỉ người: student, player, teacher, singer. Chỗ trống là hành động của he/she thì cần động từ thêm -s: studies, plays, teaches, sings.",
+    "words": [
+      {
+        "en": "student / study",
+        "vi": "học sinh / học"
+      },
+      {
+        "en": "player / play",
+        "vi": "cầu thủ / chơi"
+      },
+      {
+        "en": "teacher / teach",
+        "vi": "giáo viên / dạy"
+      },
+      {
+        "en": "singer / sing",
+        "vi": "ca sĩ / hát"
+      },
+      {
+        "en": "friend / friendly",
+        "vi": "bạn / thân thiện"
+      },
+      {
+        "en": "worker / work",
+        "vi": "công nhân / làm việc"
+      }
+    ],
+    "listen": [
+      {
+        "en": "He is a student.",
+        "vi": "Anh ấy là học sinh."
+      },
+      {
+        "en": "He studies English.",
+        "vi": "Anh ấy học tiếng Anh."
+      },
+      {
+        "en": "He is a football player.",
+        "vi": "Anh ấy là cầu thủ bóng đá."
+      },
+      {
+        "en": "She is a teacher.",
+        "vi": "Cô ấy là giáo viên."
+      },
+      {
+        "en": "She teaches English.",
+        "vi": "Cô ấy dạy tiếng Anh."
+      },
+      {
+        "en": "Lan is friendly.",
+        "vi": "Lan thân thiện."
+      }
+    ],
+    "copy": [
+      "Chép 6 cặp từ. Bên danh từ ghi «a ___». Bên động từ ghi «He/She ___»."
+    ],
+    "exercise": [
+      "Điền dạng đúng của từ trong ngoặc:",
+      "1. He is a good ___. (study)",
+      "2. He ___ English every day. (study)",
+      "3. Minh is a football ___. (play)",
+      "4. He ___ football on Sunday. (play)",
+      "5. My mother is a ___. (teach)",
+      "6. She ___ English. (teach)",
+      "7. She is a ___. (sing)",
+      "8. Lan is ___. (friend)"
+    ],
+    "answers": [
+      "1 student",
+      "2 studies",
+      "3 player",
+      "4 plays",
+      "5 teacher",
+      "6 teaches",
+      "7 singer",
+      "8 friendly"
+    ],
+    "recall": "student/studies, teacher/teaches, player/plays."
+  },
+  {
+    "day": 29,
+    "week": 4,
+    "title": "Trọng âm và đuôi -s",
+    "aim": "Nghe ra âm tiết nhấn và ba cách đọc đuôi -s.",
+    "rule": "Vỗ tay vào âm tiết in hoa. Đuôi -s: sau p, t, k, f đọc /s/ (books, cats). Sau âm hữu thanh đọc /z/ (dogs, pens). Sau s, ch, sh, x đọc thêm âm /iz/ (watches, boxes).",
+    "words": [
+      {
+        "en": "TEA-cher",
+        "vi": "giáo viên, nhấn âm 1"
+      },
+      {
+        "en": "STU-dent",
+        "vi": "học sinh, nhấn âm 1"
+      },
+      {
+        "en": "ENG-lish",
+        "vi": "tiếng Anh, nhấn âm 1"
+      },
+      {
+        "en": "after-NOON",
+        "vi": "buổi chiều, nhấn âm cuối"
+      },
+      {
+        "en": "fif-TEEN",
+        "vi": "15, nhấn âm 2"
+      },
+      {
+        "en": "ho-TEL",
+        "vi": "khách sạn, nhấn âm 2"
+      }
+    ],
+    "listen": [
+      {
+        "en": "teacher, student, English",
+        "vi": "nhấn âm đầu"
+      },
+      {
+        "en": "afternoon",
+        "vi": "nhấn NOON"
+      },
+      {
+        "en": "fifteen, hotel",
+        "vi": "nhấn âm thứ hai"
+      },
+      {
+        "en": "books, cats",
+        "vi": "đuôi /s/"
+      },
+      {
+        "en": "dogs, pens",
+        "vi": "đuôi /z/"
+      },
+      {
+        "en": "watches, boxes",
+        "vi": "đuôi /iz/"
+      }
+    ],
+    "copy": [
+      "Chép từ kèm âm nhấn viết hoa. Nghe loa điện thoại rồi vỗ đúng âm đó."
+    ],
+    "exercise": [
+      "Chọn từ có trọng âm khác:",
+      "1. teacher / student / English / afternoon",
+      "2. mother / father / fifteen / brother",
+      "3. football / music / hotel / morning",
+      "Xếp vào /s/, /z/ hoặc /iz/: books, dogs, watches, cats, boxes, pens."
+    ],
+    "answers": [
+      "1 afternoon",
+      "2 fifteen",
+      "3 hotel",
+      "/s/: books, cats",
+      "/z/: dogs, pens",
+      "/iz/: watches, boxes"
+    ],
+    "recall": "TEAcher, afterNOON, fifTEEN, books /s/, watches /iz/."
+  },
+  {
+    "day": 30,
+    "week": 4,
+    "title": "Bài kiểm tra 30 ngày",
+    "aim": "Làm bài 20 điểm trong 30 phút. 12/20 là đạt, được sang tháng 2.",
+    "rule": "Không mở vở. Chữa vào hôm sau, 10 phút, trước khi học quá khứ đơn. Phụ huynh đối đáp án. Câu viết chấm đúng cấu trúc.",
+    "words": [
+      {
+        "en": "Ôn cả tháng",
+        "vi": "không học từ mới trong buổi này"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I am fifteen years old.",
+        "vi": "Đọc một vòng 6 câu này, rồi gấp vở làm bài."
+      },
+      {
+        "en": "She has a brother.",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "He plays football.",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "There are two books.",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "I don't watch TV at night.",
+        "vi": "Nhắc."
+      },
+      {
+        "en": "I can swim.",
+        "vi": "Nhắc."
+      }
+    ],
+    "copy": [
+      "Không chép. Làm bài vào một trang mới."
+    ],
+    "exercise": [
+      "A. Điền hoặc chọn (10 điểm):",
+      "1. I ___ fifteen. (am/is)",
+      "2. She ___ a teacher. (am/is)",
+      "3. ___ apple (a/an)",
+      "4. He ___ a brother. (have/has)",
+      "5. Minh ___ football every Sunday. (play/plays)",
+      "6. ___ he like music? (Do/Does)",
+      "7. There ___ two books. (is/are)",
+      "8. I ___ watch TV at night. (don't/doesn't)",
+      "9. The pen is ___ the desk. (on/in)",
+      "10. I can ___. (swim/swims)",
+      "B. Viết 5 câu (5 điểm): tên, tuổi, nơi ở, một việc mỗi ngày, một việc mình không làm.",
+      "C. Đọc lại đoạn Minh ngày 27, che đáp án. Trả lời: Where does Minh live? What does he do in the evening? (2 điểm)",
+      "D. He is a ___ (study). She ___ English. (teach) (3 điểm: student 1 điểm, teaches 2 điểm)"
+    ],
+    "answers": [
+      "A: 1 am  2 is  3 an  4 has  5 plays  6 Does  7 are  8 don't  9 on  10 swim",
+      "B mẫu: I am Minh. I am fifteen years old. I live near the school. I study English every day. I don't play games at night.",
+      "C: He lives in a small house near his school. He studies English in the evening.",
+      "D: student / teaches",
+      "12–14: sang tháng 2. Từ 15: nền tốt. Dưới 12: ôn câu sai, học lại ngày 15, 16 và 19, chưa học thì quá khứ."
+    ],
+    "recall": "Ghi điểm A, B, C, D ra đầu trang để còn biết tháng sau ôn chỗ nào."
+  }
+];
+    const WEEKS = [
+      { id: 0, label: "Cả tháng" },
+      { id: 1, label: "Tuần 1" },
+      { id: 2, label: "Tuần 2" },
+      { id: 3, label: "Tuần 3" },
+      { id: 4, label: "Tuần 4" },
+    ];
+    const STORAGE_KEY = "tieng-anh-30-ngay-v1";
+
+    let state = loadState();
+
+    function loadState() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if (raw) return JSON.parse(raw);
+      } catch (_) {}
+      return { week: 1, selectedDay: 1, doneDays: [] };
+    }
+
+    function saveState() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    }
+
+    function esc(s) {
+      return String(s)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function speak(text) {
+      if (!window.speechSynthesis) return;
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = "en-US";
+      u.rate = 0.85;
+      window.speechSynthesis.speak(u);
+    }
+
+    function getNextDay() {
+      const next = DAYS.find((d) => !state.doneDays.includes(d.day));
+      return next ? next.day : 30;
+    }
+
+    function renderWeekPills() {
+      const el = document.getElementById("weekPills");
+      el.innerHTML = WEEKS.map((w) =>
+        `<button type="button" class="pill${state.week === w.id ? " active" : ""}" data-week="${w.id}">${esc(w.label)}</button>`
+      ).join("") + `<button type="button" class="pill" id="nextDayBtn">Ngày tiếp theo</button>`;
+      el.querySelectorAll("[data-week]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.week = Number(btn.dataset.week);
+          const pool = state.week === 0 ? DAYS : DAYS.filter((d) => d.week === state.week);
+          if (!pool.some((d) => d.day === state.selectedDay)) {
+            state.selectedDay = pool[0].day;
+          }
+          saveState();
+          render();
+        });
+      });
+      document.getElementById("nextDayBtn").addEventListener("click", () => {
+        const day = getNextDay();
+        const found = DAYS.find((d) => d.day === day);
+        state.selectedDay = day;
+        state.week = found.week;
+        saveState();
+        render();
+      });
+    }
+
+    function renderDayPills() {
+      const pool = state.week === 0 ? DAYS : DAYS.filter((d) => d.week === state.week);
+      const el = document.getElementById("dayPills");
+      el.innerHTML = pool.map((d) => {
+        const done = state.doneDays.includes(d.day);
+        const active = state.selectedDay === d.day;
+        return `<button type="button" class="pill${active ? " active" : ""}${done ? " done" : ""}" data-day="${d.day}">${done ? d.day + " xong" : "Ngày " + d.day}</button>`;
+      }).join("");
+      el.querySelectorAll("[data-day]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          state.selectedDay = Number(btn.dataset.day);
+          saveState();
+          render();
+        });
+      });
+    }
+
+    function renderProgress() {
+      const count = state.doneDays.length;
+      document.getElementById("doneCount").textContent = count + "/30";
+      document.getElementById("progressLabel").textContent = count + " / 30 buổi";
+      document.getElementById("progressFill").style.width = (count / 30 * 100) + "%";
+      document.getElementById("nextHint").textContent = "Bài chưa xong gần nhất là ngày " + getNextDay() + ". Mở đáp án sau khi đã viết câu trả lời vào vở.";
+    }
+
+    function renderLesson() {
+      const day = DAYS.find((d) => d.day === state.selectedDay) || DAYS[0];
+      const isDone = state.doneDays.includes(day.day);
+      const card = document.getElementById("lessonCard");
+
+      const wordsHtml = day.words.map((w) => `<li><span class="en">${esc(w.en)}</span> <span class="vi">— ${esc(w.vi)}</span></li>`).join("");
+      const listenHtml = day.listen.map((item, i) => `
+        <li class="listen-item">
+          <span><strong>${i + 1}.</strong> <span class="en">${esc(item.en)}</span> <span class="vi">— ${esc(item.vi)}</span></span>
+          <button type="button" class="speak-btn" data-speak="${esc(item.en)}">Nghe</button>
+        </li>`).join("");
+      const copyHtml = day.copy.map((line) => `<li>${esc(line)}</li>`).join("");
+      const exerciseHtml = day.exercise.map((line) => `<li>${esc(line)}</li>`).join("");
+      const answersHtml = day.answers.map((line) => `<li>${esc(line)}</li>`).join("");
+
+      card.innerHTML = `
+        <div class="card-header">
+          <span>Ngày ${day.day} — ${esc(day.title)}</span>
+          <span class="badge ${isDone ? "done" : "pending"}">${isDone ? "Đã xong" : "Chưa xong"}</span>
+        </div>
+        <div class="card-body">
+          <label class="check-row">
+            <input type="checkbox" id="doneCheck" ${isDone ? "checked" : ""}>
+            Đã học xong ngày này
+          </label>
+          <p>${esc(day.aim)}</p>
+          <div class="rule"><strong>Quy tắc của ngày:</strong> ${esc(day.rule)}</div>
+          <h3>Từ — chép nghĩa</h3>
+          <ul class="list">${wordsHtml}</ul>
+          <h3>Sáu câu nghe, phút 0–8</h3>
+          <ul class="list">${listenHtml}</ul>
+          <h3>Chép vào vở, phút 8–20</h3>
+          <ul class="list">${copyHtml}</ul>
+          <h3>Bài tập, phút 20–27</h3>
+          <ul class="list">${exerciseHtml}</ul>
+          <h3>Ba phút cuối</h3>
+          <div class="recall">${esc(day.recall)}</div>
+          <button type="button" class="answers-toggle" id="answersToggle">Đáp án — mở sau khi làm xong</button>
+          <div class="answers" id="answersBox"><ul class="list">${answersHtml}</ul></div>
+        </div>`;
+
+      document.getElementById("doneCheck").addEventListener("change", (e) => {
+        const checked = e.target.checked;
+        if (checked && !state.doneDays.includes(day.day)) {
+          state.doneDays.push(day.day);
+          state.doneDays.sort((a, b) => a - b);
+        } else if (!checked) {
+          state.doneDays = state.doneDays.filter((n) => n !== day.day);
+        }
+        saveState();
+        renderWeekPills();
+        renderDayPills();
+        renderProgress();
+        renderLesson();
+      });
+
+      card.querySelectorAll("[data-speak]").forEach((btn) => {
+        btn.addEventListener("click", () => speak(btn.dataset.speak));
+      });
+
+      const toggle = document.getElementById("answersToggle");
+      const box = document.getElementById("answersBox");
+      toggle.addEventListener("click", () => {
+        box.classList.toggle("open");
+        toggle.textContent = box.classList.contains("open")
+          ? "Ẩn đáp án"
+          : "Đáp án — mở sau khi làm xong";
+      });
+    }
+
+    function render() {
+      renderProgress();
+      renderWeekPills();
+      renderDayPills();
+      renderLesson();
+    }
+
+    render();
+  </script>
+</body>
+</html>
