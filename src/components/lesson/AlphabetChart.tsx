@@ -33,7 +33,7 @@ function ChartContent() {
           <li>Đọc IPA trước, rồi đọc theo ngoặc tiếng Việt</li>
           <li>Ví dụ: A — <span className="alphabet-ipa-sample">/eɪ/</span>{" "}
             <span className="alphabet-vi-sample">(ây)</span></li>
-          <li>Nhắc lại 3 vòng, rồi chép vào vở</li>
+          <li>Nhắc lại 3 vòng</li>
         </ol>
       </div>
     </div>

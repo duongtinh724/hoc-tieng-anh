@@ -16,8 +16,7 @@ export function CopySection({ lesson }: CopySectionProps) {
           <p className="alphabet-chart-label">Bảng chữ cái</p>
           <AlphabetChart />
           <p className="expandable-image-caption">
-            Đọc theo phiên âm bên dưới mỗi chữ cái, nhắc lại 3 vòng rồi chép vào
-            vở.
+            Đọc theo phiên âm bên dưới mỗi chữ cái, nhắc lại 3 vòng.
           </p>
         </div>
       )}
