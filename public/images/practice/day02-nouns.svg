@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="Danh t� c� b�n � tr��ng">
+  <rect width="480" height="300" fill="#fefce8"/>
+  <text x="240" y="36" text-anchor="middle" fill="#854d0e" font-family="Segoe UI, sans-serif" font-size="16" font-weight="600">Danh t�  school � book � pen � bag</text>
+  <rect x="40" y="60" width="120" height="80" rx="8" fill="#bfdbfe" stroke="#3b82f6"/>
+  <polygon points="40,60 100,20 160,60" fill="#93c5fd"/>
+  <text x="100" y="115" text-anchor="middle" fill="#1e3a8a" font-size="13" font-weight="700">school</text>
+  <rect x="200" y="70" width="70" height="90" rx="4" fill="#fca5a5" stroke="#dc2626"/>
+  <rect x="210" y="80" width="50" height="8" fill="#fff"/>
+  <text x="235" y="175" text-anchor="middle" fill="#991b1b" font-size="13" font-weight="700">book</text>
+  <rect x="310" y="100" width="80" height="12" rx="6" fill="#fde047" stroke="#ca8a04"/>
+  <polygon points="390,106 410,96 410,116" fill="#eab308"/>
+  <text x="350" y="135" text-anchor="middle" fill="#854d0e" font-size="13" font-weight="700">pen</text>
+  <rect x="120" y="190" width="90" height="70" rx="10" fill="#86efac" stroke="#16a34a"/>
+  <rect x="130" y="200" width="70" height="15" rx="4" fill="#4ade80"/>
+  <text x="165" y="278" text-anchor="middle" fill="#166534" font-size="13" font-weight="700">bag</text>
+  <circle cx="360" cy="220" r="30" fill="#fde68a"/>
+  <rect x="332" y="248" width="56" height="40" rx="8" fill="#93c5fd"/>
+  <text x="360" y="305" text-anchor="middle" fill="#1e40af" font-size="12" font-weight="700">student</text>
+  <circle cx="420" cy="60" r="24" fill="#fecaca"/>
+  <rect x="398" y="82" width="44" height="36" rx="6" fill="#c4b5fd"/>
+  <text x="420" y="135" text-anchor="middle" fill="#5b21b6" font-size="12" font-weight="700">teacher</text>
+  <rect x="30" y="200" width="70" height="55" rx="6" fill="#e9d5ff" stroke="#9333ea"/>
+  <polygon points="30,200 65,170 100,200" fill="#d8b4fe"/>
+  <text x="65" y="272" text-anchor="middle" fill="#6b21a8" font-size="12" font-weight="700">house</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="teacher">
+  <rect width="80" height="80" fill="#faf5ff" rx="8"/>
+  <circle cx="40" cy="26" r="16" fill="#fecaca"/>
+  <rect x="22" y="42" width="36" height="30" rx="8" fill="#c4b5fd"/>
+  <rect x="50" y="50" width="20" height="4" fill="#fff"/>
+</svg>

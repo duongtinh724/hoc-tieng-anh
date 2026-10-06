@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="C¥u trúc S + V + O">
+  <rect width="480" height="300" fill="#f0fdf4"/>
+  <text x="240" y="36" text-anchor="middle" fill="#166534" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700">S + V + O</text>
+  <rect x="30" y="65" width="120" height="75" rx="10" fill="#93c5fd" stroke="#2563eb"/>
+  <text x="90" y="95" text-anchor="middle" fill="#1e3a8a" font-size="13" font-weight="600">S</text>
+  <text x="90" y="118" text-anchor="middle" fill="#1e40af" font-size="12">I · We · They</text>
+  <text x="165" y="108" text-anchor="middle" fill="#64748b" font-size="22">+</text>
+  <rect x="180" y="65" width="100" height="75" rx="10" fill="#86efac" stroke="#16a34a"/>
+  <text x="230" y="95" text-anchor="middle" fill="#166534" font-size="13" font-weight="600">V</text>
+  <text x="230" y="118" text-anchor="middle" fill="#15803d" font-size="12">like · study</text>
+  <text x="295" y="108" text-anchor="middle" fill="#64748b" font-size="22">+</text>
+  <rect x="310" y="65" width="140" height="75" rx="10" fill="#fde68a" stroke="#ca8a04"/>
+  <text x="380" y="95" text-anchor="middle" fill="#854d0e" font-size="13" font-weight="600">O</text>
+  <text x="380" y="118" text-anchor="middle" fill="#a16207" font-size="12">music · English</text>
+  <rect x="50" y="170" width="380" height="110" rx="10" fill="#fff" stroke="#bbf7d0"/>
+  <text x="240" y="205" text-anchor="middle" fill="#334155" font-size="14">I like music.</text>
+  <text x="240" y="230" text-anchor="middle" fill="#334155" font-size="14">We study English.</text>
+  <text x="240" y="255" text-anchor="middle" fill="#334155" font-size="14">They play football.</text>
+  <text x="240" y="280" text-anchor="middle" fill="#64748b" font-size="12">O = tân ngï · like WHAT? study WHAT?</text>
+</svg>

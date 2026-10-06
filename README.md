@@ -2,6 +2,8 @@
 
 Ứng dụng học tiếng Anh 30 ngày — 30 phút mỗi ngày, tiến độ lưu trên trình duyệt.
 
+> **AI / Agent:** Đọc [`AGENTS.md`](./AGENTS.md) và [`CURRICULUM-PLAN.md`](./CURRICULUM-PLAN.md) trước khi sửa code hoặc thêm nội dung bài học.
+
 ## Công nghệ
 
 - **Next.js 15** (App Router)

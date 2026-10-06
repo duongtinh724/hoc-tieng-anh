@@ -1,6 +1,8 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
+import { hasPracticeLesson } from "@/data/practice";
+import { PracticePage } from "@/components/practice/PracticePage";
 import { getWeekOptions, getTotalDays } from "@/data/days";
 import { AppShell } from "@/components/layout/AppShell";
 import { PageHeader } from "@/components/layout/PageHeader";
@@ -32,6 +34,7 @@ export function LessonApp() {
     goToNextDay,
     toggleDayDone,
   } = useLessonState();
+  const [practiceOpen, setPracticeOpen] = useState(false);
 
   const weeks = useMemo(() => getWeekOptions(state.month), [state.month]);
   const totalDays = getTotalDays(state.month);
@@ -54,6 +57,7 @@ export function LessonApp() {
 
   const doneCount = doneDays.length;
   const isDone = doneDays.includes(currentLesson.day);
+  const lessonHasPractice = hasPracticeLesson(state.month, currentLesson.day);
 
   const sidebar = (
     <>
@@ -149,12 +153,23 @@ export function LessonApp() {
           </div>
 
           <LessonCard
+            month={state.month}
             lesson={currentLesson}
             isDone={isDone}
+            hasPractice={lessonHasPractice}
             onToggleDone={(done) => toggleDayDone(currentLesson.day, done)}
             onGoToNext={goToNextDay}
+            onStartPractice={() => setPracticeOpen(true)}
           />
         </section>
+      )}
+
+      {practiceOpen && (
+        <PracticePage
+          month={state.month}
+          day={currentLesson.day}
+          onClose={() => setPracticeOpen(false)}
+        />
       )}
 
       {REVIEW_PLAN_ENABLED && activeSection === "review" && (

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="house">
+  <rect width="80" height="80" fill="#fdf4ff" rx="8"/>
+  <rect x="22" y="40" width="36" height="28" rx="4" fill="#e9d5ff" stroke="#9333ea"/>
+  <polygon points="22,40 40,22 58,40" fill="#d8b4fe"/>
+  <rect x="34" y="50" width="12" height="18" fill="#7c3aed"/>
+</svg>

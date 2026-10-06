@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" role="img" aria-label="C¥u trúc S + V">
+  <rect width="480" height="300" fill="#eff6ff"/>
+  <text x="240" y="36" text-anchor="middle" fill="#1e40af" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700">S + V</text>
+  <rect x="60" y="70" width="140" height="80" rx="12" fill="#93c5fd" stroke="#2563eb" stroke-width="2"/>
+  <text x="130" y="105" text-anchor="middle" fill="#1e3a8a" font-size="14" font-weight="600">Subject (S)</text>
+  <text x="130" y="130" text-anchor="middle" fill="#1e40af" font-size="13">I · You · We · They</text>
+  <text x="240" y="118" text-anchor="middle" fill="#64748b" font-size="28" font-weight="700">+</text>
+  <rect x="280" y="70" width="140" height="80" rx="12" fill="#86efac" stroke="#16a34a" stroke-width="2"/>
+  <text x="350" y="105" text-anchor="middle" fill="#166534" font-size="14" font-weight="600">Verb (V)</text>
+  <text x="350" y="130" text-anchor="middle" fill="#15803d" font-size="13">study · go · work · play</text>
+  <rect x="80" y="180" width="320" height="90" rx="10" fill="#fff" stroke="#cbd5e1"/>
+  <text x="240" y="215" text-anchor="middle" fill="#334155" font-size="15">I study.</text>
+  <text x="240" y="240" text-anchor="middle" fill="#334155" font-size="15">We go.</text>
+  <text x="240" y="265" text-anchor="middle" fill="#64748b" font-size="13">I study every day. · We read in the morning.</text>
+</svg>

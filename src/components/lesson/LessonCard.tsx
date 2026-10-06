@@ -1,7 +1,7 @@
 "use client";
 
 import type { DayLesson } from "@/types/lesson";
-import { getRulesForDay } from "@/data/curriculum/month-01/day-rules";
+import { getRulesForDay } from "@/data/curriculum/get-rules";
 import { SESSION_STEPS } from "@/lib/lesson-steps";
 import { LessonStep } from "@/components/lesson/LessonStep";
 import { ListenList } from "@/components/lesson/ListenList";
@@ -12,19 +12,25 @@ import { TextListSection } from "@/components/lesson/TextListSection";
 import { WordsList } from "@/components/lesson/WordsList";
 
 interface LessonCardProps {
+  month: number;
   lesson: DayLesson;
   isDone: boolean;
+  hasPractice: boolean;
   onToggleDone: (done: boolean) => void;
   onGoToNext: () => void;
+  onStartPractice: () => void;
 }
 
 const REVIEW_DAYS = [7, 14, 21, 30];
 
 export function LessonCard({
+  month,
   lesson,
   isDone,
+  hasPractice,
   onToggleDone,
   onGoToNext,
+  onStartPractice,
 }: LessonCardProps) {
   const reviewDay = REVIEW_DAYS.includes(lesson.day);
 
@@ -47,8 +53,20 @@ export function LessonCard({
             <span className="aim-label">Mục tiêu hôm nay</span>
             <p>{lesson.aim}</p>
           </div>
-          <RuleBox rules={getRulesForDay(lesson.day, lesson.rule)} />
+          <RuleBox rules={getRulesForDay(month, lesson.day, lesson.rule)} />
         </div>
+
+        {hasPractice && (
+          <div className="practice-launch-bar">
+            <div>
+              <strong>Luyện tập tương tác</strong>
+              <p>8 bài tập ngắn dựa trên từ vựng và ngữ pháp hôm nay.</p>
+            </div>
+            <button type="button" className="practice-launch-btn" onClick={onStartPractice}>
+              Luyện tập
+            </button>
+          </div>
+        )}
 
         <div className="session-overview">
           <strong>5 mục cần học trong buổi này</strong>
