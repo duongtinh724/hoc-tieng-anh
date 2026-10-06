@@ -12,6 +12,7 @@ import {
   LEGACY_STORAGE_KEY,
   STORAGE_KEY,
 } from "@/lib/constants";
+import { getPracticeCompletionKey } from "@/lib/practice/progress";
 import type { AppSection, LessonState } from "@/types/lesson";
 
 interface LegacyState {
@@ -123,6 +124,20 @@ export function useLessonState() {
     setActiveSection("lesson");
   }, []);
 
+  const recordPracticeCompletion = useCallback((month: number, day: number) => {
+    const key = getPracticeCompletionKey(month, day);
+    setState((prev) => {
+      const completions = prev.practiceCompletions ?? {};
+      return {
+        ...prev,
+        practiceCompletions: {
+          ...completions,
+          [key]: (completions[key] ?? 0) + 1,
+        },
+      };
+    });
+  }, []);
+
   const toggleDayDone = useCallback((day: number, done: boolean) => {
     setState((prev) => {
       const key = String(prev.month);
@@ -171,5 +186,7 @@ export function useLessonState() {
     setSelectedDay,
     goToNextDay,
     toggleDayDone,
+    recordPracticeCompletion,
+    practiceCompletions: state.practiceCompletions ?? {},
   };
 }

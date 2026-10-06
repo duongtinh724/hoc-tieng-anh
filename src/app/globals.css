@@ -1332,6 +1332,36 @@ h3 {
   border-right: 1px solid #f1f5f9;
 }
 
+.vocab-en-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vocab-word-text {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.vocab-dict-link {
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.vocab-dict-link:hover {
+  color: #4338ca;
+  border-bottom-color: #4338ca;
+}
+
+.speak-btn--compact {
+  padding: 4px 8px;
+  min-width: 36px;
+  flex-shrink: 0;
+}
+
 .en {
   font-weight: 700;
   color: #1e3a5f;
@@ -1480,6 +1510,181 @@ h3 {
   border: 1px solid var(--warning-border);
   border-radius: var(--radius-sm);
   padding: 10px 12px;
+}
+
+/* ── Practice menu panel ── */
+
+.practice-menu-panel h2 {
+  margin-bottom: 4px;
+}
+
+.practice-day-list {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.practice-day-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.practice-day-card:hover:not(:disabled) {
+  border-color: #c4b5fd;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+}
+
+.practice-day-card.is-unavailable {
+  opacity: 0.55;
+  cursor: not-allowed;
+  background: #fafbfc;
+}
+
+.practice-day-card-num {
+  flex-shrink: 0;
+  min-width: 72px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--primary);
+}
+
+.practice-day-card-body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.practice-day-card-body strong {
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.practice-day-card-meta {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.practice-day-card-action {
+  flex-shrink: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.practice-day-card--once {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.35);
+}
+
+.practice-day-card--twice {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.35);
+}
+
+.practice-day-card--thrice {
+  border-color: #eab308;
+  box-shadow: 0 0 0 1px rgba(234, 179, 8, 0.4);
+}
+
+.practice-day-card--many {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.35);
+}
+
+.practice-completion-badge {
+  position: relative;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: help;
+}
+
+.practice-completion-badge-num {
+  line-height: 1;
+}
+
+.practice-completion-badge-tip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #1e293b;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+  z-index: 2;
+}
+
+.practice-completion-badge-tip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #1e293b;
+}
+
+.practice-completion-badge:hover .practice-completion-badge-tip,
+.practice-completion-badge:focus-visible .practice-completion-badge-tip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.practice-completion-badge--once {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.practice-completion-badge--twice {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.practice-completion-badge--thrice {
+  background: #fef9c3;
+  color: #a16207;
+}
+
+.practice-completion-badge--many {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.practice-menu-note {
+  margin-top: 20px;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.5;
 }
 
 /* ── Review plan panel ── */

@@ -22,7 +22,7 @@ export function DropdownExercise({ config, state, onSelect }: DropdownExercisePr
     <div className="practice-exercise practice-exercise--split">
       <ScreenInstruction title={config.title} instruction={config.instruction} />
       <div className="practice-split-layout">
-        <PracticeSceneImage image={config.image} />
+        <PracticeSceneImage image={config.image} useDefaultFallback />
         <Card size="small" className="practice-panel-card">
           <ol className="practice-dropdown-list">
             {config.questions.map((question, index) => (

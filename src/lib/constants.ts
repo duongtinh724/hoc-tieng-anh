@@ -16,6 +16,7 @@ export const REVIEW_PLAN_ENABLED = false;
 const ALL_MENU_ITEMS = [
   { id: "overview" as const, label: "Tổng quan", icon: "📊" },
   { id: "lesson" as const, label: "Bài học", icon: "📖" },
+  { id: "practice" as const, label: "Luyện tập", icon: "✏️" },
   { id: "review" as const, label: "Plan ôn tập", icon: "🔄" },
   { id: "guide" as const, label: "Hướng dẫn", icon: "💡" },
 ] as const;

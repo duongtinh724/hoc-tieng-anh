@@ -1,12 +1,11 @@
+import { createShuffledReorderOrder } from "@/lib/practice/shuffle-screen";
 import type { PracticeScreenConfig, ScreenState } from "@/types/practice";
 
 export function createInitialScreenState(
   screen: PracticeScreenConfig,
 ): ScreenState {
   if (screen.type === "reorder") {
-    const order = screen.fixedFirst
-      ? [screen.lines[0].id, ...screen.lines.slice(1).map((line) => line.id)]
-      : screen.lines.map((line) => line.id);
+    const order = createShuffledReorderOrder(screen);
 
     return {
       answers: {},

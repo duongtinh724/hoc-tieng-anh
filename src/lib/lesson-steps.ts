@@ -5,7 +5,7 @@ export const SESSION_STEPS: SessionStepMeta[] = [
     step: 1,
     title: "Từ vựng — chép nghĩa",
     time: "Bước 1",
-    hint: "Đọc từ tiếng Anh, chép nghĩa tiếng Việt vào vở",
+    hint: "Chép nghĩa vào vở. Bấm 🔊 để nghe; bấm từ đơn để tra Oxford (tab mới)",
     variant: "vocab",
   },
   {

@@ -49,14 +49,9 @@ export function MatchExercise({
           return (
             <Card key={pair.id} size="small" className="practice-match-card-ant">
               <div className="practice-match-visual">
-                {pair.imageUrl ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img src={pair.imageUrl} alt={pair.imageAlt} />
-                ) : (
-                  <div className="practice-match-placeholder">
-                    <span>{pair.label ?? pair.imageAlt}</span>
-                  </div>
-                )}
+                <div className="practice-match-placeholder">
+                  <span>{pair.label ?? pair.imageAlt}</span>
+                </div>
               </div>
               <DropSlot
                 id={pair.id}

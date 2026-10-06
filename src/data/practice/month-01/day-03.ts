@@ -175,10 +175,6 @@ export const practiceDay03: PracticeLesson = {
       type: "dropdown",
       title: "Chọn động từ đúng.",
       instruction: "Chọn động từ phù hợp để hoàn thành câu.",
-      image: {
-        url: "/images/practice/day03-verbs.svg",
-        alt: "Động từ cơ bản",
-      },
       questions: [
         {
           id: "q1",

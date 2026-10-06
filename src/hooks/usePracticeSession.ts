@@ -1,10 +1,16 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { getPracticeLesson } from "@/data/practice";
 import {
+  createInitialScreenState,
   createInitialScreenStates,
 } from "@/lib/practice/create-screen-state";
+import {
+  shufflePracticeScreens,
+  shuffleScreen,
+} from "@/lib/practice/shuffle-screen";
+import type { PracticeScreenConfig } from "@/types/practice";
 import { applyAnswerKey } from "@/lib/practice/apply-answer-key";
 import {
   getPendingCount,
@@ -20,17 +26,40 @@ function moveItem<T>(items: T[], from: number, to: number): T[] {
   return next;
 }
 
+function buildShuffledSession(month: number, day: number) {
+  const lesson = getPracticeLesson(month, day);
+  if (!lesson) {
+    return { screens: [] as PracticeScreenConfig[], states: [] as ScreenState[] };
+  }
+
+  const screens = shufflePracticeScreens(lesson.screens);
+  return { screens, states: createInitialScreenStates(screens) };
+}
+
 export function usePracticeSession(month: number, day: number) {
   const lesson = useMemo(() => getPracticeLesson(month, day), [month, day]);
+  const skipDayChangeEffectRef = useRef(true);
+  const [{ screens: shuffledScreens, states: screenStates }, setSession] =
+    useState(() => buildShuffledSession(month, day));
   const [currentScreen, setCurrentScreen] = useState(0);
-  const [screenStates, setScreenStates] = useState<ScreenState[]>(() =>
-    lesson ? createInitialScreenStates(lesson.screens) : [],
-  );
   const [hintOpen, setHintOpen] = useState(false);
   const [selectedWordId, setSelectedWordId] = useState<string | null>(null);
   const [showAnswerKey, setShowAnswerKey] = useState(false);
 
-  const screen = lesson?.screens[currentScreen];
+  useEffect(() => {
+    if (skipDayChangeEffectRef.current) {
+      skipDayChangeEffectRef.current = false;
+      return;
+    }
+
+    setSession(buildShuffledSession(month, day));
+    setCurrentScreen(0);
+    setSelectedWordId(null);
+    setShowAnswerKey(false);
+    setHintOpen(false);
+  }, [month, day]);
+
+  const screen = shuffledScreens[currentScreen];
   const state = screenStates[currentScreen];
 
   const validation = useMemo(() => {
@@ -47,11 +76,12 @@ export function usePracticeSession(month: number, day: number) {
 
   const updateCurrentState = useCallback(
     (updater: (prev: ScreenState) => ScreenState) => {
-      setScreenStates((prev) =>
-        prev.map((entry, index) =>
+      setSession((prev) => ({
+        ...prev,
+        states: prev.states.map((entry, index) =>
           index === currentScreen ? updater(entry) : entry,
         ),
-      );
+      }));
     },
     [currentScreen],
   );
@@ -180,23 +210,30 @@ export function usePracticeSession(month: number, day: number) {
 
   const resetScreen = useCallback(() => {
     if (!lesson) return;
-    setScreenStates((prev) =>
-      prev.map((entry, index) =>
+
+    const reshuffled = shuffleScreen(lesson.screens[currentScreen]);
+    setSession((prev) => ({
+      screens: prev.screens.map((entry, index) =>
+        index === currentScreen ? reshuffled : entry,
+      ),
+      states: prev.states.map((entry, index) =>
         index === currentScreen
-          ? createInitialScreenStates([lesson.screens[index]])[0]
+          ? createInitialScreenState(reshuffled)
           : entry,
       ),
-    );
+    }));
     setSelectedWordId(null);
     setShowAnswerKey(false);
   }, [currentScreen, lesson]);
 
   const goToScreen = useCallback((index: number) => {
     if (!lesson) return;
-    setCurrentScreen(Math.max(0, Math.min(index, lesson.screens.length - 1)));
+    setCurrentScreen(
+      Math.max(0, Math.min(index, shuffledScreens.length - 1)),
+    );
     setSelectedWordId(null);
     setShowAnswerKey(false);
-  }, [lesson]);
+  }, [lesson, shuffledScreens.length]);
 
   const goNext = useCallback(() => {
     if (!screenStates[currentScreen]?.passed) return;
@@ -216,7 +253,8 @@ export function usePracticeSession(month: number, day: number) {
   );
 
   const canCheck = validation.pendingCount === 0 && !state?.passed;
-  const canNext = Boolean(state?.passed) && currentScreen < (lesson?.screens.length ?? 0) - 1;
+  const canNext =
+    Boolean(state?.passed) && currentScreen < shuffledScreens.length - 1;
   const isSelfWriting = screen?.type === "self-writing";
   const canRevealAnswerKey = Boolean(
     !isSelfWriting &&
@@ -224,6 +262,12 @@ export function usePracticeSession(month: number, day: number) {
       !state.passed &&
       !state.answerKeyRevealed &&
       state.wrongAttempts >= 3,
+  );
+
+  const allScreensPassed = useMemo(
+    () =>
+      screenStates.length > 0 && screenStates.every((entry) => entry.passed),
+    [screenStates],
   );
 
   return {
@@ -241,6 +285,7 @@ export function usePracticeSession(month: number, day: number) {
     canNext,
     canRevealAnswerKey,
     isSelfWriting,
+    allScreensPassed,
     setHintOpen,
     setSelectedWordId,
     setShowAnswerKey,

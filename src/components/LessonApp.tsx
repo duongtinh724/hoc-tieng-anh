@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { hasPracticeLesson } from "@/data/practice";
+import { PracticeMenuPanel } from "@/components/practice/PracticeMenuPanel";
 import { PracticePage } from "@/components/practice/PracticePage";
 import { getWeekOptions, getTotalDays } from "@/data/days";
 import { AppShell } from "@/components/layout/AppShell";
@@ -33,8 +33,11 @@ export function LessonApp() {
     setSelectedDay,
     goToNextDay,
     toggleDayDone,
+    recordPracticeCompletion,
+    practiceCompletions,
   } = useLessonState();
   const [practiceOpen, setPracticeOpen] = useState(false);
+  const [practiceDay, setPracticeDay] = useState<number | null>(null);
 
   const weeks = useMemo(() => getWeekOptions(state.month), [state.month]);
   const totalDays = getTotalDays(state.month);
@@ -57,8 +60,6 @@ export function LessonApp() {
 
   const doneCount = doneDays.length;
   const isDone = doneDays.includes(currentLesson.day);
-  const lessonHasPractice = hasPracticeLesson(state.month, currentLesson.day);
-
   const sidebar = (
     <>
       <MonthSelector selectedMonth={state.month} onSelectMonth={setMonth} />
@@ -156,19 +157,35 @@ export function LessonApp() {
             month={state.month}
             lesson={currentLesson}
             isDone={isDone}
-            hasPractice={lessonHasPractice}
             onToggleDone={(done) => toggleDayDone(currentLesson.day, done)}
             onGoToNext={goToNextDay}
-            onStartPractice={() => setPracticeOpen(true)}
           />
         </section>
       )}
 
-      {practiceOpen && (
+      {activeSection === "practice" && (
+        <PracticeMenuPanel
+          monthConfig={monthConfig}
+          week={state.week}
+          practiceCompletions={practiceCompletions}
+          onStartPractice={(day) => {
+            setPracticeDay(day);
+            setPracticeOpen(true);
+          }}
+        />
+      )}
+
+      {practiceOpen && practiceDay !== null && (
         <PracticePage
           month={state.month}
-          day={currentLesson.day}
-          onClose={() => setPracticeOpen(false)}
+          day={practiceDay}
+          onClose={() => {
+            setPracticeOpen(false);
+            setPracticeDay(null);
+          }}
+          onComplete={() =>
+            recordPracticeCompletion(state.month, practiceDay)
+          }
         />
       )}
 

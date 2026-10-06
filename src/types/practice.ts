@@ -151,6 +151,7 @@ export interface ReadingFillExerciseConfig {
   type: "reading-fill";
   title: string;
   instruction: string;
+  image?: { url: string; alt: string };
   passage: string;
   prompts: ReadingPrompt[];
 }

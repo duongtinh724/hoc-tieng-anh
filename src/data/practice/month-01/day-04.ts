@@ -174,10 +174,6 @@ export const practiceDay04: PracticeLesson = {
       type: "dropdown",
       title: "Chọn tính từ đúng.",
       instruction: "Đọc gợi ý tiếng Việt trong ngoặc và chọn tính từ.",
-      image: {
-        url: "/images/practice/day04-adjectives.svg",
-        alt: "Cụm a + adj + noun",
-      },
       questions: [
         {
           id: "q1",

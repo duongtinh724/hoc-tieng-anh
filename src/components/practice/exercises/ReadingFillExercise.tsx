@@ -31,9 +31,7 @@ export function ReadingFillExercise({
       <ScreenInstruction title={config.title} instruction={config.instruction} />
       <div className="practice-reading-layout">
         <div className="practice-reading-passage-col">
-          {config.type === "extended-reading" ? (
-            <PracticeSceneImage image={config.image} />
-          ) : null}
+          {config.image ? <PracticeSceneImage image={config.image} /> : null}
           <Card size="small" className="practice-panel-card practice-passage-card">
           {config.passage.split("\n").map((paragraph, index) => (
             <p key={index}>{paragraph}</p>

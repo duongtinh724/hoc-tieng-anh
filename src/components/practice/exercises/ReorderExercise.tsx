@@ -16,7 +16,7 @@ export function ReorderExercise({ config, state, onMove }: ReorderExerciseProps)
     <div className="practice-exercise practice-exercise--split">
       <ScreenInstruction title={config.title} instruction={config.instruction} />
       <div className="practice-split-layout">
-        <PracticeSceneImage image={config.image} />
+        <PracticeSceneImage image={config.image} useDefaultFallback />
         <SortableReorderList config={config} state={state} onMove={onMove} />
       </div>
     </div>

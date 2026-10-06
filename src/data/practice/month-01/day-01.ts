@@ -169,10 +169,6 @@ export const practiceDay01: PracticeLesson = {
       type: "dropdown",
       title: "Chọn đại từ đúng.",
       instruction: "Đọc gợi ý tiếng Việt và chọn đại từ tiếng Anh.",
-      image: {
-        url: "/images/practice/day01-pronouns.svg",
-        alt: "Sơ đồ đại từ trong lớp",
-      },
       questions: [
         {
           id: "q1",
@@ -246,22 +242,18 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "reorder",
-      title: "Thứ tự 7 đại từ.",
-      instruction: "Sắp xếp các đại từ theo thứ tự trong bài học.",
-      image: {
-        url: "/images/practice/day01-pronouns.svg",
-        alt: "Bảng đại từ",
-      },
+      title: "Sắp xếp hội thoại.",
+      instruction:
+        "Sắp xếp các câu theo đúng thứ tự hội thoại giữa Nam và Lan. Mỗi câu có đại từ I, You, He, She hoặc They.",
+      fixedFirst: true,
       lines: [
-        { id: "r1", text: "I — tôi" },
-        { id: "r2", text: "You — bạn" },
-        { id: "r3", text: "He — anh ấy" },
-        { id: "r4", text: "She — cô ấy" },
-        { id: "r5", text: "It — nó" },
-        { id: "r6", text: "We — chúng tôi" },
-        { id: "r7", text: "They — họ" },
+        { id: "r1", text: "Nam: I study English." },
+        { id: "r2", text: "Lan: You go to school." },
+        { id: "r3", text: "Nam: He read books." },
+        { id: "r4", text: "Lan: She like music." },
+        { id: "r5", text: "Nam: They play football." },
       ],
-      correctOrder: ["r1", "r2", "r3", "r4", "r5", "r6", "r7"],
+      correctOrder: ["r1", "r2", "r3", "r4", "r5"],
     },
     {
       type: "reading-fill",

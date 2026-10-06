@@ -184,10 +184,6 @@ export const practiceDay05: PracticeLesson = {
       type: "dropdown",
       title: "Chọn động từ đúng.",
       instruction: "Hoàn thành câu S + V.",
-      image: {
-        url: "/images/practice/day05-sv.svg",
-        alt: "Cấu trúc S + V",
-      },
       questions: [
         {
           id: "q1",

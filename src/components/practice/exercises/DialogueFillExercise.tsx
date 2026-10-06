@@ -40,7 +40,7 @@ export function DialogueFillExercise({
         onSelect={onSelectWord}
       />
       <div className="practice-split-layout">
-        <PracticeSceneImage image={config.image} />
+        <PracticeSceneImage image={config.image} useDefaultFallback />
         <Card size="small" className="practice-panel-card">
       <div className="practice-dialogue">
         {config.lines.map((line, index) => (

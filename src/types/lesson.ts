@@ -51,9 +51,11 @@ export interface LessonState {
   week: number;
   selectedDay: number;
   progress: Record<string, number[]>;
+  /** Số lần hoàn thành luyện tập — key: "tháng-ngày" (vd. "1-3") */
+  practiceCompletions?: Record<string, number>;
 }
 
-export type AppSection = "overview" | "lesson" | "review" | "guide";
+export type AppSection = "overview" | "lesson" | "practice" | "review" | "guide";
 
 export type StepVariant = "vocab" | "listen" | "copy" | "exercise" | "recall";
 

@@ -182,10 +182,6 @@ export const practiceDay02: PracticeLesson = {
       type: "dropdown",
       title: "Chọn danh từ đúng.",
       instruction: "Đọc gợi ý tiếng Việt và chọn danh từ tiếng Anh.",
-      image: {
-        url: "/images/practice/day02-nouns.svg",
-        alt: "Danh từ ở trường",
-      },
       questions: [
         {
           id: "q1",

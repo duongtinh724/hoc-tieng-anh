@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { Button, Result } from "antd";
 import { HintDrawer } from "@/components/practice/shell/HintDrawer";
 import { PracticeFooter } from "@/components/practice/shell/PracticeFooter";
@@ -13,10 +14,22 @@ interface PracticePageProps {
   month: number;
   day: number;
   onClose: () => void;
+  onComplete?: () => void;
 }
 
-export function PracticePage({ month, day, onClose }: PracticePageProps) {
+export function PracticePage({ month, day, onClose, onComplete }: PracticePageProps) {
   const session = usePracticeSession(month, day);
+  const completionRecordedRef = useRef(false);
+
+  useEffect(() => {
+    completionRecordedRef.current = false;
+  }, [month, day]);
+
+  useEffect(() => {
+    if (!session.allScreensPassed || completionRecordedRef.current) return;
+    completionRecordedRef.current = true;
+    onComplete?.();
+  }, [session.allScreensPassed, onComplete]);
 
   return (
     <PracticeAntdProvider>

@@ -25,3 +25,9 @@ export function getPracticeLesson(
 export function hasPracticeLesson(month: number, day: number): boolean {
   return Boolean(getPracticeLesson(month, day));
 }
+
+export function countPracticeLessons(month: number): number {
+  return Object.keys(PRACTICE_LESSONS).filter((key) =>
+    key.startsWith(`${month}-`),
+  ).length;
+}

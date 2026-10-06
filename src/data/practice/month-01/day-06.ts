@@ -198,10 +198,6 @@ export const practiceDay06: PracticeLesson = {
       type: "dropdown",
       title: "Chọn tân ngữ đúng.",
       instruction: "Hoàn thành câu S + V + O.",
-      image: {
-        url: "/images/practice/day06-svo.svg",
-        alt: "Cấu trúc S + V + O",
-      },
       questions: [
         {
           id: "q1",
