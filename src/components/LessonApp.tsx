@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { PracticeMenuPanel } from "@/components/practice/PracticeMenuPanel";
 import { PracticePage } from "@/components/practice/PracticePage";
 import { getWeekOptions, getTotalDays } from "@/data/days";
@@ -28,6 +28,8 @@ export function LessonApp() {
     currentLesson,
     activeSection,
     setActiveSection,
+    openPracticeDay,
+    setOpenPracticeDay,
     setMonth,
     setWeek,
     setSelectedDay,
@@ -36,9 +38,6 @@ export function LessonApp() {
     recordPracticeCompletion,
     practiceCompletions,
   } = useLessonState();
-  const [practiceOpen, setPracticeOpen] = useState(false);
-  const [practiceDay, setPracticeDay] = useState<number | null>(null);
-
   const weeks = useMemo(() => getWeekOptions(state.month), [state.month]);
   const totalDays = getTotalDays(state.month);
 
@@ -168,23 +167,17 @@ export function LessonApp() {
           monthConfig={monthConfig}
           week={state.week}
           practiceCompletions={practiceCompletions}
-          onStartPractice={(day) => {
-            setPracticeDay(day);
-            setPracticeOpen(true);
-          }}
+          onStartPractice={(day) => setOpenPracticeDay(day)}
         />
       )}
 
-      {practiceOpen && practiceDay !== null && (
+      {openPracticeDay !== null && (
         <PracticePage
           month={state.month}
-          day={practiceDay}
-          onClose={() => {
-            setPracticeOpen(false);
-            setPracticeDay(null);
-          }}
+          day={openPracticeDay}
+          onClose={() => setOpenPracticeDay(null)}
           onComplete={() =>
-            recordPracticeCompletion(state.month, practiceDay)
+            recordPracticeCompletion(state.month, openPracticeDay)
           }
         />
       )}

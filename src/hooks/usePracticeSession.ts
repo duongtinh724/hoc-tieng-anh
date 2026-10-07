@@ -162,9 +162,28 @@ export function usePracticeSession(month: number, day: number) {
   );
 
   const reorderLines = useCallback(
-    (fromIndex: number, toIndex: number) => {
+    (fromIndex: number, toIndex: number, sentenceId?: string) => {
       updateCurrentState((prev) => {
-        if (prev.passed || !prev.order) return prev;
+        if (prev.passed) return prev;
+
+        if (sentenceId && prev.orders) {
+          const order = prev.orders[sentenceId];
+          if (!order) return prev;
+
+          const movingId = order[fromIndex];
+          if (prev.lockedIds.includes(movingId)) return prev;
+
+          return {
+            ...prev,
+            orders: {
+              ...prev.orders,
+              [sentenceId]: moveItem(order, fromIndex, toIndex),
+            },
+            checked: false,
+          };
+        }
+
+        if (!prev.order) return prev;
 
         const movingId = prev.order[fromIndex];
         if (prev.lockedIds.includes(movingId)) return prev;

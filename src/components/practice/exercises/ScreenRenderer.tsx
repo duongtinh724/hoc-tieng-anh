@@ -24,7 +24,7 @@ interface ScreenRendererProps {
   onAssign: (itemId: string, value: string) => void;
   onClear: (itemId: string) => void;
   onTextChange: (itemId: string, value: string) => void;
-  onReorder: (fromIndex: number, toIndex: number) => void;
+  onReorder: (fromIndex: number, toIndex: number, sentenceId?: string) => void;
 }
 
 function renderExercise(props: ScreenRendererProps) {

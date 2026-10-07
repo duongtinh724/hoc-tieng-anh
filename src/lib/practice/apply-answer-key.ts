@@ -1,3 +1,8 @@
+import {
+  getAllReorderLineIds,
+  getReorderSentences,
+  isHorizontalWordReorder,
+} from "@/lib/practice/reorder-utils";
 import { getBlankIds } from "@/lib/practice/validate-screen";
 import type { ItemState, PracticeScreenConfig, ScreenState } from "@/types/practice";
 
@@ -6,6 +11,28 @@ export function applyAnswerKey(
   state: ScreenState,
 ): ScreenState {
   if (screen.type === "reorder") {
+    if (isHorizontalWordReorder(screen)) {
+      const lockedIds = getAllReorderLineIds(screen);
+      const orders = Object.fromEntries(
+        getReorderSentences(screen).map((sentence) => [
+          sentence.id,
+          [...sentence.correctOrder],
+        ]),
+      );
+
+      return {
+        ...state,
+        orders,
+        feedback: Object.fromEntries(
+          lockedIds.map((id) => [id, "locked" as ItemState]),
+        ),
+        lockedIds,
+        checked: true,
+        passed: true,
+        answerKeyRevealed: true,
+      };
+    }
+
     const lockedIds = screen.lines.map((line) => line.id);
     return {
       ...state,

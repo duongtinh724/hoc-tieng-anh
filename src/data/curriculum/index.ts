@@ -1,5 +1,6 @@
 import type { DayLesson, MonthConfig } from "@/types/lesson";
 import month01Days from "./month-01/days.json";
+import month02Days from "./month-02/days.json";
 
 export const MONTHS: MonthConfig[] = [
   {
@@ -19,7 +20,7 @@ export const MONTHS: MonthConfig[] = [
     subtitle: "30 ngày — Grammar core",
     totalDays: 30,
     totalWeeks: 4,
-    status: "coming-soon",
+    status: "available",
     goal: "Day 31–60: Present Simple, Continuous, Past, Future",
   },
   {
@@ -126,6 +127,7 @@ export const MONTHS: MonthConfig[] = [
 
 const DAY_DATA: Record<number, DayLesson[]> = {
   1: month01Days as DayLesson[],
+  2: month02Days as DayLesson[],
 };
 
 export function getMonthConfig(monthId: number): MonthConfig {

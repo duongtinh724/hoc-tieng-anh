@@ -12,6 +12,8 @@ import {
   LEGACY_STORAGE_KEY,
   STORAGE_KEY,
 } from "@/lib/constants";
+import { hasPracticeLesson } from "@/data/practice";
+import { readAppUrl, writeAppUrl } from "@/lib/app-url";
 import { getPracticeCompletionKey } from "@/lib/practice/progress";
 import type { AppSection, LessonState } from "@/types/lesson";
 
@@ -30,24 +32,53 @@ function migrateLegacy(raw: LegacyState): LessonState {
   };
 }
 
+function applyUrlView(raw: LessonState): LessonState {
+  const url = readAppUrl();
+  const month = url.month ?? raw.month;
+  const page = url.page ?? raw.activeSection ?? "lesson";
+  const lessonDay = url.lesson;
+
+  const openPracticeDay =
+    page === "practice" &&
+    typeof lessonDay === "number" &&
+    hasPracticeLesson(month, lessonDay)
+      ? lessonDay
+      : null;
+
+  const selectedDay =
+    page === "lesson" && typeof lessonDay === "number"
+      ? lessonDay
+      : raw.selectedDay;
+  const found = getDayByNumber(month, selectedDay);
+
+  return {
+    ...raw,
+    month,
+    selectedDay: found?.day ?? selectedDay,
+    week: found?.week ?? raw.week,
+    activeSection: openPracticeDay !== null ? "practice" : page,
+    openPracticeDay,
+  };
+}
+
 function loadState(): LessonState {
   if (typeof window === "undefined") return DEFAULT_STATE;
 
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) return JSON.parse(raw) as LessonState;
+    if (raw) return applyUrlView(JSON.parse(raw) as LessonState);
   } catch {
     // ignore invalid stored state
   }
 
   try {
     const legacy = localStorage.getItem(LEGACY_STORAGE_KEY);
-    if (legacy) return migrateLegacy(JSON.parse(legacy) as LegacyState);
+    if (legacy) return applyUrlView(migrateLegacy(JSON.parse(legacy) as LegacyState));
   } catch {
     // ignore invalid legacy state
   }
 
-  return DEFAULT_STATE;
+  return applyUrlView(DEFAULT_STATE);
 }
 
 function getDoneDays(state: LessonState): number[] {
@@ -57,7 +88,7 @@ function getDoneDays(state: LessonState): number[] {
 export function useLessonState() {
   const [state, setState] = useState<LessonState>(DEFAULT_STATE);
   const [hydrated, setHydrated] = useState(false);
-  const [activeSection, setActiveSection] = useState<AppSection>("lesson");
+  const activeSection: AppSection = state.activeSection ?? "lesson";
 
   useEffect(() => {
     setState(loadState());
@@ -67,7 +98,25 @@ export function useLessonState() {
   useEffect(() => {
     if (!hydrated) return;
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    writeAppUrl({
+      month: state.month,
+      page: state.openPracticeDay ? "practice" : (state.activeSection ?? "lesson"),
+      lesson:
+        state.openPracticeDay ??
+        (state.activeSection === "lesson" ? state.selectedDay : null),
+    });
   }, [state, hydrated]);
+
+  useEffect(() => {
+    if (!hydrated) return;
+
+    const onPopState = () => {
+      setState((prev) => applyUrlView(prev));
+    };
+
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, [hydrated]);
 
   const doneDays = getDoneDays(state);
   const monthConfig = getMonthConfig(state.month);
@@ -85,6 +134,22 @@ export function useLessonState() {
       return { ...prev, month, selectedDay };
     });
     setActiveSection("lesson");
+  }, []);
+
+  const setActiveSection = useCallback((section: AppSection) => {
+    setState((prev) => ({
+      ...prev,
+      activeSection: section,
+      openPracticeDay: section === "practice" ? prev.openPracticeDay : null,
+    }));
+  }, []);
+
+  const setOpenPracticeDay = useCallback((day: number | null) => {
+    setState((prev) => ({
+      ...prev,
+      activeSection: "practice",
+      openPracticeDay: day,
+    }));
   }, []);
 
   const setWeek = useCallback((week: number) => {
@@ -181,6 +246,8 @@ export function useLessonState() {
     currentLesson,
     activeSection,
     setActiveSection,
+    openPracticeDay: state.openPracticeDay ?? null,
+    setOpenPracticeDay,
     setMonth,
     setWeek,
     setSelectedDay,

@@ -1,3 +1,7 @@
+import {
+  createInitialReorderOrders,
+  isHorizontalWordReorder,
+} from "@/lib/practice/reorder-utils";
 import { createShuffledReorderOrder } from "@/lib/practice/shuffle-screen";
 import type { PracticeScreenConfig, ScreenState } from "@/types/practice";
 
@@ -5,6 +9,19 @@ export function createInitialScreenState(
   screen: PracticeScreenConfig,
 ): ScreenState {
   if (screen.type === "reorder") {
+    if (isHorizontalWordReorder(screen)) {
+      return {
+        answers: {},
+        orders: createInitialReorderOrders(screen),
+        feedback: {},
+        checked: false,
+        passed: false,
+        lockedIds: [],
+        wrongAttempts: 0,
+        answerKeyRevealed: false,
+      };
+    }
+
     const order = createShuffledReorderOrder(screen);
 
     return {

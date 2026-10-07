@@ -1,38 +1,18 @@
+import { shuffleLineOrder } from "@/lib/practice/reorder-utils";
+import { shuffleArray } from "@/lib/practice/shuffle-array";
 import type { PracticeScreenConfig } from "@/types/practice";
 
-export function shuffleArray<T>(items: T[]): T[] {
-  const next = [...items];
-  for (let i = next.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [next[i], next[j]] = [next[j], next[i]];
-  }
-  return next;
-}
+export { shuffleArray };
 
-function arraysEqual(a: string[], b: string[]): boolean {
-  return a.length === b.length && a.every((value, index) => value === b[index]);
-}
-
-/** Thứ tự ban đầu cho reorder — không để trùng đáp án (trừ khi chỉ có 1 dòng). */
-export function createShuffledReorderOrder(screen: Extract<PracticeScreenConfig, { type: "reorder" }>): string[] {
-  const lineIds = screen.lines.map((line) => line.id);
-
-  if (screen.fixedFirst) {
-    return [lineIds[0], ...shuffleArray(lineIds.slice(1))];
-  }
-
-  if (lineIds.length <= 1) {
-    return lineIds;
-  }
-
-  let order = shuffleArray(lineIds);
-  let attempts = 0;
-  while (arraysEqual(order, screen.correctOrder) && attempts < 8) {
-    order = shuffleArray(lineIds);
-    attempts += 1;
-  }
-
-  return order;
+/** Thứ tự ban đầu cho reorder dọc — không để trùng đáp án (trừ khi chỉ có 1 dòng). */
+export function createShuffledReorderOrder(
+  screen: Extract<PracticeScreenConfig, { type: "reorder" }>,
+): string[] {
+  return shuffleLineOrder(
+    screen.lines.map((line) => line.id),
+    screen.correctOrder,
+    screen.fixedFirst,
+  );
 }
 
 export function shuffleScreen(screen: PracticeScreenConfig): PracticeScreenConfig {

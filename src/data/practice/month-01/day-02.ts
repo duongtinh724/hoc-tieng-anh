@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay02: PracticeLesson = {
-  meta: createPracticeMeta(2, "Danh từ cơ bản"),
+  meta: { ...createPracticeMeta(2, "Danh từ cơ bản"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(2, ""),
     vocabulary: [
@@ -24,72 +24,63 @@ export const practiceDay02: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối danh từ (1).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt. Nhìn hình để nhớ nhanh.",
+      title: "Nối danh từ.",
+      instruction: "Nối danh từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
         { id: "w-book", label: "book" },
         { id: "w-student", label: "student" },
         { id: "w-teacher", label: "teacher" },
         { id: "w-school", label: "school" },
-      ],
-      pairs: [
-        {
-          id: "p-book",
-          imageUrl: "/images/practice/nouns/book.svg",
-          imageAlt: "sách",
-          label: "sách",
-          correctWordId: "w-book",
-        },
-        {
-          id: "p-student",
-          imageUrl: "/images/practice/nouns/student.svg",
-          imageAlt: "học sinh",
-          label: "học sinh",
-          correctWordId: "w-student",
-        },
-        {
-          id: "p-teacher",
-          imageUrl: "/images/practice/nouns/teacher.svg",
-          imageAlt: "giáo viên",
-          label: "giáo viên",
-          correctWordId: "w-teacher",
-        },
-        {
-          id: "p-school",
-          imageUrl: "/images/practice/nouns/school.svg",
-          imageAlt: "trường học",
-          label: "trường học",
-          correctWordId: "w-school",
-        },
-      ],
-    },
-    {
-      type: "match",
-      title: "Nối danh từ (2).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
-      words: [
         { id: "w-house", label: "house" },
         { id: "w-pen", label: "pen" },
         { id: "w-bag", label: "bag" },
       ],
       pairs: [
         {
+          id: "p-book",
+          imageUrl: "/images/practice/nouns-photo/book.jpg",
+          imageAlt: "sách",
+          label: "sách",
+          correctWordId: "w-book",
+        },
+        {
+          id: "p-student",
+          imageUrl: "/images/practice/nouns-photo/student.jpg",
+          imageAlt: "học sinh",
+          label: "học sinh",
+          correctWordId: "w-student",
+        },
+        {
+          id: "p-teacher",
+          imageUrl: "/images/practice/nouns-photo/teacher.jpg",
+          imageAlt: "giáo viên",
+          label: "giáo viên",
+          correctWordId: "w-teacher",
+        },
+        {
+          id: "p-school",
+          imageUrl: "/images/practice/nouns-photo/school.jpg",
+          imageAlt: "trường học",
+          label: "trường học",
+          correctWordId: "w-school",
+        },
+        {
           id: "p-house",
-          imageUrl: "/images/practice/nouns/house.svg",
+          imageUrl: "/images/practice/nouns-photo/house.jpg",
           imageAlt: "nhà",
           label: "nhà",
           correctWordId: "w-house",
         },
         {
           id: "p-pen",
-          imageUrl: "/images/practice/nouns/pen.svg",
+          imageUrl: "/images/practice/nouns-photo/pen.jpg",
           imageAlt: "bút",
           label: "bút",
           correctWordId: "w-pen",
         },
         {
           id: "p-bag",
-          imageUrl: "/images/practice/nouns/bag.svg",
+          imageUrl: "/images/practice/nouns-photo/bag.jpg",
           imageAlt: "cặp",
           label: "cặp",
           correctWordId: "w-bag",
@@ -181,7 +172,7 @@ export const practiceDay02: PracticeLesson = {
     {
       type: "dropdown",
       title: "Chọn danh từ đúng.",
-      instruction: "Đọc gợi ý tiếng Việt và chọn danh từ tiếng Anh.",
+      instruction: "Đọc gợi ý và chọn từ đúng. Có một câu ôn đại từ (ngày 1).",
       questions: [
         {
           id: "q1",
@@ -247,85 +238,99 @@ export const practiceDay02: PracticeLesson = {
             },
           ],
         },
+        {
+          id: "q-review-1",
+          parts: [
+            { kind: "text", value: "Ôn: ___ go to school. (bạn)" },
+            {
+              kind: "select",
+              id: "q-review-1a",
+              options: [
+                { id: "qr1-you", label: "You" },
+                { id: "qr1-book", label: "book" },
+                { id: "qr1-it", label: "It" },
+              ],
+              correctOptionId: "qr1-you",
+            },
+          ],
+        },
       ],
     },
     {
       type: "reorder",
+      layout: "horizontal",
       title: "Sắp xếp câu.",
-      instruction: "Sắp xếp các từ thành câu đúng.",
-      image: {
-        url: "/images/practice/day02-nouns.svg",
-        alt: "Câu với danh từ",
-      },
-      lines: [
-        { id: "r1", text: "We" },
-        { id: "r2", text: "go" },
-        { id: "r3", text: "to" },
-        { id: "r4", text: "school" },
-        { id: "r5", text: "." },
+      instruction: "Kéo các từ theo hàng ngang thành câu có danh từ.",
+      sentences: [
+        {
+          id: "sen-1",
+          label: "Câu 1",
+          lines: [
+            { id: "s1a", text: "We" },
+            { id: "s1b", text: "go" },
+            { id: "s1c", text: "to school" },
+            { id: "s1d", text: "." },
+          ],
+          correctOrder: ["s1a", "s1b", "s1c", "s1d"],
+        },
+        {
+          id: "sen-2",
+          label: "Câu 2",
+          lines: [
+            { id: "s2a", text: "My" },
+            { id: "s2b", text: "pen" },
+            { id: "s2c", text: "." },
+          ],
+          correctOrder: ["s2a", "s2b", "s2c"],
+        },
+        {
+          id: "sen-3",
+          label: "Câu 3",
+          lines: [
+            { id: "s3a", text: "My" },
+            { id: "s3b", text: "book" },
+            { id: "s3c", text: "." },
+          ],
+          correctOrder: ["s3a", "s3b", "s3c"],
+        },
+        {
+          id: "sen-4",
+          label: "Câu 4",
+          lines: [
+            { id: "s4a", text: "Nam" },
+            { id: "s4b", text: "," },
+            { id: "s4c", text: "student" },
+            { id: "s4d", text: "." },
+          ],
+          correctOrder: ["s4a", "s4b", "s4c", "s4d"],
+        },
+        {
+          id: "sen-5",
+          label: "Câu 5",
+          lines: [
+            { id: "s5a", text: "My" },
+            { id: "s5b", text: "bag" },
+            { id: "s5c", text: "." },
+          ],
+          correctOrder: ["s5a", "s5b", "s5c"],
+        },
       ],
-      correctOrder: ["r1", "r2", "r3", "r4", "r5"],
+      lines: [],
+      correctOrder: [],
     },
     {
-      type: "dialogue-fill",
-      title: "Hội thoại ở trường.",
-      instruction: "Hoàn thành hội thoại giữa Nam và Lan. Chỉ điền danh từ.",
-      image: {
-        url: "/images/practice/day02-nouns.svg",
-        alt: "Nam và Lan ở trường",
-      },
-      wordBank: [
-        { id: "wb-school", label: "school" },
-        { id: "wb-pen", label: "pen" },
-        { id: "wb-bag", label: "bag" },
-        { id: "wb-book", label: "book" },
-        { id: "wb-student", label: "student" },
-      ],
-      lines: [
-        {
-          speaker: "Nam",
-          segments: [
-            { kind: "text", value: "We go to " },
-            {
-              kind: "blank",
-              id: "d1",
-              correctWordId: "wb-school",
-              width: "md",
-            },
-            { kind: "text", value: "." },
-          ],
-        },
-        {
-          speaker: "Lan",
-          segments: [
-            { kind: "text", value: "My " },
-            { kind: "blank", id: "d2", correctWordId: "wb-pen", width: "sm" },
-            { kind: "text", value: " and my " },
-            { kind: "blank", id: "d3", correctWordId: "wb-bag", width: "sm" },
-            { kind: "text", value: "." },
-          ],
-        },
-        {
-          speaker: "Nam",
-          segments: [
-            { kind: "text", value: "My " },
-            { kind: "blank", id: "d4", correctWordId: "wb-book", width: "sm" },
-            { kind: "text", value: " — book." },
-          ],
-        },
-        {
-          speaker: "Lan",
-          segments: [
-            { kind: "text", value: "Nam, " },
-            {
-              kind: "blank",
-              id: "d5",
-              correctWordId: "wb-student",
-              width: "md",
-            },
-            { kind: "text", value: "." },
-          ],
-        },
+      type: "reading-fill",
+      title: "Ở trường.",
+      instruction: "Đọc đoạn văn và điền danh từ vào ô trên cùng một dòng.",
+      passage:
+        "Nam and Lan are in class 9A. We go to school. My pen and my bag. My book is on the desk. Nam, student. The teacher is in the classroom.",
+      prompts: [
+        { id: "rf1", label: "We go to ___ . (trường)", correctAnswers: ["school"] },
+        { id: "rf2", label: "My ___ and my bag. (bút)", correctAnswers: ["pen"] },
+        { id: "rf3", label: "My pen and my ___ . (cặp)", correctAnswers: ["bag"] },
+        { id: "rf4", label: "My ___ is on the desk. (sách)", correctAnswers: ["book"] },
+        { id: "rf5", label: "Nam, ___ . (học sinh)", correctAnswers: ["student"] },
+        { id: "rf6", label: "The ___ is in the classroom. (giáo viên)", correctAnswers: ["teacher"] },
       ],
     },
     {

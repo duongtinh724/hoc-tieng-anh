@@ -7,6 +7,7 @@ interface PracticeHeaderProps {
   currentScreen: number;
   totalScreens: number;
   completedScreens: number[];
+  onGoToScreen: (screenNumber: number) => void;
   onClose: () => void;
 }
 
@@ -15,6 +16,7 @@ export function PracticeHeader({
   currentScreen,
   totalScreens,
   completedScreens,
+  onGoToScreen,
   onClose,
 }: PracticeHeaderProps) {
   return (
@@ -39,19 +41,26 @@ export function PracticeHeader({
             ),
           )}
         </nav>
-        <div className="practice-progress-dots" aria-hidden="true">
+        <nav
+          className="practice-progress-dots"
+          aria-label="Chuyển màn luyện tập"
+        >
           {Array.from({ length: totalScreens }, (_, index) => {
             const screenNumber = index + 1;
             const isCurrent = screenNumber === currentScreen;
             const isCompleted = completedScreens.includes(screenNumber);
             return (
-              <span
+              <button
                 key={screenNumber}
+                type="button"
                 className={`practice-dot${isCurrent ? " is-current" : ""}${isCompleted ? " is-complete" : ""}`}
+                aria-label={`Màn ${screenNumber}${isCurrent ? " (đang xem)" : ""}${isCompleted ? " (đã xong)" : ""}`}
+                aria-current={isCurrent ? "step" : undefined}
+                onClick={() => onGoToScreen(screenNumber)}
               />
             );
           })}
-        </div>
+        </nav>
       </div>
 
       <div className="practice-header-actions">

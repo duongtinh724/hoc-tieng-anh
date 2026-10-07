@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay05: PracticeLesson = {
-  meta: createPracticeMeta(5, "Cấu trúc S + V"),
+  meta: { ...createPracticeMeta(5, "Cấu trúc S + V"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(5, ""),
     vocabulary: [
@@ -23,47 +23,13 @@ export const practiceDay05: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối thuật ngữ (1).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Nối từ S + V.",
+      instruction: "Nối từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
         { id: "w-subject", label: "subject (S)" },
         { id: "w-verb", label: "verb (V)" },
         { id: "w-sentence", label: "sentence" },
         { id: "w-simple", label: "simple" },
-      ],
-      pairs: [
-        {
-          id: "p-subject",
-          imageUrl: "/images/practice/day05-sv.svg",
-          imageAlt: "chủ ngữ",
-          label: "chủ ngữ",
-          correctWordId: "w-subject",
-        },
-        {
-          id: "p-verb",
-          imageAlt: "động từ",
-          label: "động từ",
-          correctWordId: "w-verb",
-        },
-        {
-          id: "p-sentence",
-          imageAlt: "câu",
-          label: "câu",
-          correctWordId: "w-sentence",
-        },
-        {
-          id: "p-simple",
-          imageAlt: "đơn giản",
-          label: "đơn giản",
-          correctWordId: "w-simple",
-        },
-      ],
-    },
-    {
-      type: "match",
-      title: "Nối thuật ngữ (2).",
-      instruction: "Nối cụm tiếng Anh với nghĩa tiếng Việt.",
-      words: [
         { id: "w-every", label: "every day" },
         { id: "w-morning", label: "morning" },
         { id: "w-study", label: "study" },
@@ -71,27 +37,59 @@ export const practiceDay05: PracticeLesson = {
       ],
       pairs: [
         {
+          id: "p-subject",
+          imageUrl: "/images/practice/grammar/subject.jpg",
+          imageAlt: "chủ ngữ",
+          label: "chủ ngữ",
+          correctWordId: "w-subject",
+        },
+        {
+          id: "p-verb",
+          imageUrl: "/images/practice/grammar/verb.jpg",
+          imageAlt: "động từ",
+          label: "động từ",
+          correctWordId: "w-verb",
+        },
+        {
+          id: "p-sentence",
+          imageUrl: "/images/practice/grammar/sentence.jpg",
+          imageAlt: "câu",
+          label: "câu",
+          correctWordId: "w-sentence",
+        },
+        {
+          id: "p-simple",
+          imageUrl: "/images/practice/grammar/simple.jpg",
+          imageAlt: "đơn giản",
+          label: "đơn giản",
+          correctWordId: "w-simple",
+        },
+        {
           id: "p-every",
+          imageUrl: "/images/practice/grammar/everyday.jpg",
           imageAlt: "mỗi ngày",
           label: "mỗi ngày",
           correctWordId: "w-every",
         },
         {
           id: "p-morning",
+          imageUrl: "/images/practice/grammar/morning.jpg",
           imageAlt: "buổi sáng",
           label: "buổi sáng",
           correctWordId: "w-morning",
         },
         {
           id: "p-study",
-          imageAlt: "học (động từ)",
-          label: "học (động từ)",
+          imageUrl: "/images/practice/grammar/study.jpg",
+          imageAlt: "học",
+          label: "học",
           correctWordId: "w-study",
         },
         {
           id: "p-go",
-          imageAlt: "đi (động từ)",
-          label: "đi (động từ)",
+          imageUrl: "/images/practice/grammar/go.jpg",
+          imageAlt: "đi",
+          label: "đi",
           correctWordId: "w-go",
         },
       ],
@@ -183,7 +181,7 @@ export const practiceDay05: PracticeLesson = {
     {
       type: "dropdown",
       title: "Chọn động từ đúng.",
-      instruction: "Hoàn thành câu S + V.",
+      instruction: "Hoàn thành câu S + V. Có câu ôn tính từ (ngày 4) và động từ (ngày 3).",
       questions: [
         {
           id: "q1",
@@ -253,96 +251,115 @@ export const practiceDay05: PracticeLesson = {
             { kind: "text", value: "." },
           ],
         },
+        {
+          id: "q-review-4",
+          parts: [
+            { kind: "text", value: "Ôn: a ___ book (tốt)" },
+            {
+              kind: "select",
+              id: "q-review-4a",
+              options: [
+                { id: "qr4-good", label: "good" },
+                { id: "qr4-study", label: "study" },
+                { id: "qr4-big", label: "big" },
+              ],
+              correctOptionId: "qr4-good",
+            },
+          ],
+        },
+        {
+          id: "q-review-3",
+          parts: [
+            { kind: "text", value: "Ôn: They ___ football." },
+            {
+              kind: "select",
+              id: "q-review-3a",
+              options: [
+                { id: "qr3-play", label: "play" },
+                { id: "qr3-good", label: "good" },
+                { id: "qr3-read", label: "read" },
+              ],
+              correctOptionId: "qr3-play",
+            },
+          ],
+        },
       ],
     },
     {
       type: "reorder",
+      layout: "horizontal",
       title: "Sắp xếp câu S + V.",
-      instruction: "Sắp xếp thành câu: I study every day.",
-      image: {
-        url: "/images/practice/day05-sv.svg",
-        alt: "S + V",
-      },
-      lines: [
-        { id: "r1", text: "I" },
-        { id: "r2", text: "study" },
-        { id: "r3", text: "every" },
-        { id: "r4", text: "day" },
-        { id: "r5", text: "." },
+      instruction: "Kéo các từ theo hàng ngang thành câu Chủ ngữ + Động từ.",
+      sentences: [
+        {
+          id: "sen-1",
+          label: "Câu 1",
+          lines: [
+            { id: "s1a", text: "I" },
+            { id: "s1b", text: "study" },
+            { id: "s1c", text: "." },
+          ],
+          correctOrder: ["s1a", "s1b", "s1c"],
+        },
+        {
+          id: "sen-2",
+          label: "Câu 2",
+          lines: [
+            { id: "s2a", text: "You" },
+            { id: "s2b", text: "work" },
+            { id: "s2c", text: "." },
+          ],
+          correctOrder: ["s2a", "s2b", "s2c"],
+        },
+        {
+          id: "sen-3",
+          label: "Câu 3",
+          lines: [
+            { id: "s3a", text: "We" },
+            { id: "s3b", text: "go" },
+            { id: "s3c", text: "to school" },
+            { id: "s3d", text: "." },
+          ],
+          correctOrder: ["s3a", "s3b", "s3c", "s3d"],
+        },
+        {
+          id: "sen-4",
+          label: "Câu 4",
+          lines: [
+            { id: "s4a", text: "They" },
+            { id: "s4b", text: "play" },
+            { id: "s4c", text: "." },
+          ],
+          correctOrder: ["s4a", "s4b", "s4c"],
+        },
+        {
+          id: "sen-5",
+          label: "Câu 5",
+          lines: [
+            { id: "s5a", text: "I" },
+            { id: "s5b", text: "study" },
+            { id: "s5c", text: "every day" },
+            { id: "s5d", text: "." },
+          ],
+          correctOrder: ["s5a", "s5b", "s5c", "s5d"],
+        },
       ],
-      correctOrder: ["r1", "r2", "r3", "r4", "r5"],
+      lines: [],
+      correctOrder: [],
     },
     {
-      type: "dialogue-fill",
+      type: "reading-fill",
       title: "Lịch của Nam.",
-      instruction: "Hoàn thành hội thoại. Chỉ điền động từ hoặc cụm thời gian.",
-      image: {
-        url: "/images/practice/day05-sv.svg",
-        alt: "Nam nói về lịch học",
-      },
-      wordBank: [
-        { id: "wb-study", label: "study" },
-        { id: "wb-work", label: "work" },
-        { id: "wb-go", label: "go" },
-        { id: "wb-play", label: "play" },
-        { id: "wb-read", label: "read" },
-        { id: "wb-every", label: "every day" },
-        { id: "wb-morning", label: "morning" },
-      ],
-      lines: [
-        {
-          speaker: "Nam",
-          segments: [
-            { kind: "text", value: "I " },
-            { kind: "blank", id: "d1", correctWordId: "wb-study", width: "md" },
-            { kind: "text", value: " English." },
-          ],
-        },
-        {
-          speaker: "Lan",
-          segments: [
-            { kind: "text", value: "You " },
-            { kind: "blank", id: "d2", correctWordId: "wb-work", width: "md" },
-            { kind: "text", value: " hard." },
-          ],
-        },
-        {
-          speaker: "Nam",
-          segments: [
-            { kind: "text", value: "We " },
-            { kind: "blank", id: "d3", correctWordId: "wb-go", width: "md" },
-            { kind: "text", value: " to school." },
-          ],
-        },
-        {
-          speaker: "Lan",
-          segments: [
-            { kind: "text", value: "They " },
-            { kind: "blank", id: "d4", correctWordId: "wb-play", width: "md" },
-            { kind: "text", value: " football." },
-          ],
-        },
-        {
-          speaker: "Nam",
-          segments: [
-            { kind: "text", value: "I study " },
-            { kind: "blank", id: "d5", correctWordId: "wb-every", width: "md" },
-            { kind: "text", value: "." },
-          ],
-        },
-        {
-          speaker: "Lan",
-          segments: [
-            { kind: "text", value: "We read in the " },
-            {
-              kind: "blank",
-              id: "d6",
-              correctWordId: "wb-morning",
-              width: "md",
-            },
-            { kind: "text", value: "." },
-          ],
-        },
+      instruction: "Đọc đoạn văn và điền từ vào ô trên cùng một dòng.",
+      passage:
+        "Nam talks about a school day. I study English. You work hard. We go to school. They play football. I study every day. We read in the morning.",
+      prompts: [
+        { id: "rf1", label: "I ___ English. (học)", correctAnswers: ["study"] },
+        { id: "rf2", label: "You ___ hard. (làm việc)", correctAnswers: ["work"] },
+        { id: "rf3", label: "We ___ to school. (đi)", correctAnswers: ["go"] },
+        { id: "rf4", label: "They ___ football. (chơi)", correctAnswers: ["play"] },
+        { id: "rf5", label: "I study ___ . (mỗi ngày)", correctAnswers: ["every day"] },
+        { id: "rf6", label: "We read in the ___ . (buổi sáng)", correctAnswers: ["morning"] },
       ],
     },
     {

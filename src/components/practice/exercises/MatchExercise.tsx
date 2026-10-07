@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Card } from "antd";
 import { DropSlot } from "@/components/practice/shared/DropSlot";
 import { ScreenInstruction } from "@/components/practice/shared/ScreenInstruction";
@@ -24,7 +25,15 @@ export function MatchExercise({
   onAssign,
   onClear,
 }: MatchExerciseProps) {
+  const [flippedIds, setFlippedIds] = useState<Record<string, boolean>>({});
   const usedIds = Object.values(state.answers);
+
+  const toggleFlip = (pairId: string) => {
+    setFlippedIds((current) => ({
+      ...current,
+      [pairId]: !current[pairId],
+    }));
+  };
 
   const handlePairClick = (pairId: string) => {
     if (!selectedWordId) return;
@@ -46,13 +55,40 @@ export function MatchExercise({
       <div className="practice-match-grid">
         {config.pairs.map((pair) => {
           const wordId = state.answers[pair.id];
+          const meaning = pair.label ?? pair.imageAlt;
+          const flipped = Boolean(flippedIds[pair.id]);
+
           return (
             <Card key={pair.id} size="small" className="practice-match-card-ant">
-              <div className="practice-match-visual">
-                <div className="practice-match-placeholder">
-                  <span>{pair.label ?? pair.imageAlt}</span>
+              {pair.imageUrl ? (
+                <button
+                  type="button"
+                  className={`practice-match-flip${flipped ? " is-flipped" : ""}`}
+                  aria-pressed={flipped}
+                  aria-label={
+                    flipped
+                      ? `Đang hiện nghĩa: ${meaning}. Bấm để xem lại ảnh.`
+                      : `Bấm để xem nghĩa tiếng Việt của ảnh ${meaning}.`
+                  }
+                  onClick={() => toggleFlip(pair.id)}
+                >
+                  <span className="practice-match-flip-inner">
+                    <span className="practice-match-flip-face practice-match-flip-front">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={pair.imageUrl} alt={pair.imageAlt} />
+                    </span>
+                    <span className="practice-match-flip-face practice-match-flip-back">
+                      {meaning}
+                    </span>
+                  </span>
+                </button>
+              ) : (
+                <div className="practice-match-visual">
+                  <div className="practice-match-placeholder">
+                    <span>{meaning}</span>
+                  </div>
                 </div>
-              </div>
+              )}
               <DropSlot
                 id={pair.id}
                 value={wordId ? getLabel(wordId) : undefined}

@@ -1,3 +1,8 @@
+import {
+  getAllReorderLineIds,
+  getReorderSentences,
+  isHorizontalWordReorder,
+} from "@/lib/practice/reorder-utils";
 import { SELF_WRITING_ANSWER_ID } from "@/lib/practice/self-writing";
 import type {
   ItemState,
@@ -40,6 +45,9 @@ export function getBlankIds(screen: PracticeScreenConfig): string[] {
           .map((part) => part.id),
       );
     case "reorder":
+      if (isHorizontalWordReorder(screen)) {
+        return getAllReorderLineIds(screen);
+      }
       return screen.lines.map((line) => line.id);
     case "reading-fill":
     case "extended-reading":
@@ -136,6 +144,45 @@ export function validateScreen(
   }
 
   if (screen.type === "reorder") {
+    if (isHorizontalWordReorder(screen)) {
+      const sentences = getReorderSentences(screen);
+      const orders = state.orders ?? {};
+
+      sentences.forEach((sentence) => {
+        const order =
+          orders[sentence.id] ?? sentence.lines.map((line) => line.id);
+
+        sentence.lines.forEach((line, index) => {
+          if (lockedIds.includes(line.id)) {
+            feedback[line.id] = "locked";
+            return;
+          }
+
+          const isCorrect = order[index] === sentence.correctOrder[index];
+          if (isCorrect) {
+            feedback[line.id] = state.checked ? "locked" : "filled";
+            if (state.checked && !lockedIds.includes(line.id)) {
+              lockedIds.push(line.id);
+            }
+          } else if (state.checked) {
+            feedback[line.id] = "incorrect";
+          } else {
+            feedback[line.id] = "filled";
+          }
+        });
+      });
+
+      const allCorrect = sentences.every((sentence) => {
+        const order =
+          orders[sentence.id] ?? sentence.lines.map((line) => line.id);
+        return sentence.correctOrder.every(
+          (lineId, index) => order[index] === lineId,
+        );
+      });
+
+      return { allCorrect, pendingCount: 0, feedback, lockedIds };
+    }
+
     const order = state.order ?? screen.lines.map((line) => line.id);
 
     screen.lines.forEach((line, index) => {

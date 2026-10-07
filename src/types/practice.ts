@@ -130,11 +130,23 @@ export interface ReorderLine {
   text: string;
 }
 
+export interface ReorderSentence {
+  id: string;
+  label?: string;
+  lines: ReorderLine[];
+  correctOrder: string[];
+  fixedFirst?: boolean;
+}
+
 export interface ReorderExerciseConfig {
   type: "reorder";
   title: string;
   instruction: string;
   image?: { url: string; alt: string };
+  /** `horizontal` = kéo từ theo hàng ngang; mặc định `vertical` (hội thoại / câu dọc). */
+  layout?: "horizontal" | "vertical";
+  /** Nhiều câu trên cùng một màn — dùng với `layout: "horizontal"`. */
+  sentences?: ReorderSentence[];
   lines: ReorderLine[];
   correctOrder: string[];
   fixedFirst?: boolean;
@@ -194,6 +206,8 @@ export interface PracticeLesson {
 export interface ScreenState {
   answers: Record<string, string>;
   order?: string[];
+  /** Thứ tự từ theo từng câu — dùng cho reorder ngang nhiều câu. */
+  orders?: Record<string, string[]>;
   feedback: Record<string, ItemState>;
   checked: boolean;
   passed: boolean;

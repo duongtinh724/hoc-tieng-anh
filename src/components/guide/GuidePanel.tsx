@@ -29,7 +29,7 @@ export function GuidePanel() {
           <li>Ngày <strong>7, 14, 21, 30</strong> là ngày kiểm tra — dùng cả buổi để ôn.</li>
           <li>Đọc <strong>Quy tắc & công thức</strong> trước khi làm bài tập.</li>
           <li>Tick «Đã học xong» chỉ khi hoàn thành cả 5 mục.</li>
-          <li>Tháng 2–12 sẽ được mở dần — lộ trình lên đến 1 năm (12 tháng).</li>
+          <li>Tháng 2 đã mở (Present Simple → Past → Future). Tháng 3–12 sẽ được mở dần.</li>
         </ul>
       </div>
     </section>

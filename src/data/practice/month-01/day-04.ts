@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay04: PracticeLesson = {
-  meta: createPracticeMeta(4, "Tính từ cơ bản"),
+  meta: { ...createPracticeMeta(4, "Tính từ cơ bản"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(4, ""),
     vocabulary: [
@@ -24,68 +24,66 @@ export const practiceDay04: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối tính từ (1).",
-      instruction: "Nối tính từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Nối tính từ.",
+      instruction:
+        "Nối tính từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
         { id: "w-good", label: "good" },
         { id: "w-bad", label: "bad" },
         { id: "w-big", label: "big" },
         { id: "w-small", label: "small" },
-      ],
-      pairs: [
-        {
-          id: "p-good",
-          imageUrl: "/images/practice/day04-adjectives.svg",
-          imageAlt: "tốt",
-          label: "tốt",
-          correctWordId: "w-good",
-        },
-        {
-          id: "p-bad",
-          imageAlt: "xấu, tệ",
-          label: "xấu, tệ",
-          correctWordId: "w-bad",
-        },
-        {
-          id: "p-big",
-          imageAlt: "to, lớn",
-          label: "to, lớn",
-          correctWordId: "w-big",
-        },
-        {
-          id: "p-small",
-          imageAlt: "nhỏ",
-          label: "nhỏ",
-          correctWordId: "w-small",
-        },
-      ],
-    },
-    {
-      type: "match",
-      title: "Nối tính từ (2).",
-      instruction: "Nối tính từ tiếng Anh với nghĩa tiếng Việt.",
-      words: [
         { id: "w-new", label: "new" },
         { id: "w-old", label: "old" },
         { id: "w-happy", label: "happy" },
       ],
       pairs: [
         {
+          id: "p-good",
+          imageUrl: "/images/practice/adjectives/good.jpg",
+          imageAlt: "tốt",
+          label: "tốt",
+          correctWordId: "w-good",
+        },
+        {
+          id: "p-bad",
+          imageUrl: "/images/practice/adjectives/bad.jpg",
+          imageAlt: "xấu, tệ",
+          label: "xấu, tệ",
+          correctWordId: "w-bad",
+        },
+        {
+          id: "p-big",
+          imageUrl: "/images/practice/adjectives/big.jpg",
+          imageAlt: "to, lớn",
+          label: "to, lớn",
+          correctWordId: "w-big",
+        },
+        {
+          id: "p-small",
+          imageUrl: "/images/practice/adjectives/small.jpg",
+          imageAlt: "nhỏ",
+          label: "nhỏ",
+          correctWordId: "w-small",
+        },
+        {
           id: "p-new",
+          imageUrl: "/images/practice/adjectives/new.jpg",
           imageAlt: "mới",
           label: "mới",
           correctWordId: "w-new",
         },
         {
           id: "p-old",
+          imageUrl: "/images/practice/adjectives/old.jpg",
           imageAlt: "cũ",
           label: "cũ",
           correctWordId: "w-old",
         },
         {
           id: "p-happy",
-          imageAlt: "vui, hạnh phúc",
-          label: "vui, hạnh phúc",
+          imageUrl: "/images/practice/adjectives/happy.jpg",
+          imageAlt: "vui",
+          label: "vui",
           correctWordId: "w-happy",
         },
       ],
@@ -173,7 +171,7 @@ export const practiceDay04: PracticeLesson = {
     {
       type: "dropdown",
       title: "Chọn tính từ đúng.",
-      instruction: "Đọc gợi ý tiếng Việt trong ngoặc và chọn tính từ.",
+      instruction: "Chọn tính từ đúng. Có câu ôn động từ (ngày 3) và danh từ (ngày 2).",
       questions: [
         {
           id: "q1",
@@ -239,22 +237,98 @@ export const practiceDay04: PracticeLesson = {
             },
           ],
         },
+        {
+          id: "q-review-3",
+          parts: [
+            { kind: "text", value: "Ôn: I ___ English. (học)" },
+            {
+              kind: "select",
+              id: "q-review-3a",
+              options: [
+                { id: "qr3-study", label: "study" },
+                { id: "qr3-good", label: "good" },
+                { id: "qr3-book", label: "book" },
+              ],
+              correctOptionId: "qr3-study",
+            },
+          ],
+        },
+        {
+          id: "q-review-2",
+          parts: [
+            { kind: "text", value: "Ôn: We go to ___ . (trường)" },
+            {
+              kind: "select",
+              id: "q-review-2a",
+              options: [
+                { id: "qr2-school", label: "school" },
+                { id: "qr2-happy", label: "happy" },
+                { id: "qr2-pen", label: "pen" },
+              ],
+              correctOptionId: "qr2-school",
+            },
+          ],
+        },
       ],
     },
     {
       type: "reorder",
+      layout: "horizontal",
       title: "Sắp xếp cụm từ.",
-      instruction: "Sắp xếp thành cụm: a good book.",
-      image: {
-        url: "/images/practice/day04-adjectives.svg",
-        alt: "a + adj + noun",
-      },
-      lines: [
-        { id: "r1", text: "a" },
-        { id: "r2", text: "good" },
-        { id: "r3", text: "book" },
+      instruction: "Kéo các từ theo hàng ngang thành cụm a + tính từ + danh từ.",
+      sentences: [
+        {
+          id: "sen-1",
+          label: "Câu 1",
+          lines: [
+            { id: "s1a", text: "a" },
+            { id: "s1b", text: "good" },
+            { id: "s1c", text: "book" },
+          ],
+          correctOrder: ["s1a", "s1b", "s1c"],
+        },
+        {
+          id: "sen-2",
+          label: "Câu 2",
+          lines: [
+            { id: "s2a", text: "a" },
+            { id: "s2b", text: "big" },
+            { id: "s2c", text: "house" },
+          ],
+          correctOrder: ["s2a", "s2b", "s2c"],
+        },
+        {
+          id: "sen-3",
+          label: "Câu 3",
+          lines: [
+            { id: "s3a", text: "a" },
+            { id: "s3b", text: "small" },
+            { id: "s3c", text: "pen" },
+          ],
+          correctOrder: ["s3a", "s3b", "s3c"],
+        },
+        {
+          id: "sen-4",
+          label: "Câu 4",
+          lines: [
+            { id: "s4a", text: "a" },
+            { id: "s4b", text: "new" },
+            { id: "s4c", text: "bag" },
+          ],
+          correctOrder: ["s4a", "s4b", "s4c"],
+        },
+        {
+          id: "sen-5",
+          label: "Câu 5",
+          lines: [
+            { id: "s5a", text: "happy" },
+            { id: "s5b", text: "students" },
+          ],
+          correctOrder: ["s5a", "s5b"],
+        },
       ],
-      correctOrder: ["r1", "r2", "r3"],
+      lines: [],
+      correctOrder: [],
     },
     {
       type: "reading-fill",

@@ -1,15 +1,19 @@
 import type { PracticeLessonMeta } from "@/types/practice";
 
-export function createPracticeMeta(day: number, title: string): PracticeLessonMeta {
+export function createPracticeMeta(
+  day: number,
+  title: string,
+  month = 1,
+): PracticeLessonMeta {
   return {
-    id: `m01-d${String(day).padStart(2, "0")}`,
-    month: 1,
+    id: `m${String(month).padStart(2, "0")}-d${String(day).padStart(2, "0")}`,
+    month,
     day,
     title,
     breadcrumb: [
       { label: "Từ vựng", highlight: true },
       { label: "Luyện tập" },
-      { label: "Tháng 1" },
+      { label: `Tháng ${month}` },
       { label: `Ngày ${day}` },
     ],
     totalScreens: 8,

@@ -1,5 +1,6 @@
 # Plan Practice — Tháng 1, Ngày 1–3
 
+> **Chuẩn cho mọi bài Practice sau:** [`PRACTICE-STANDARD.md`](./PRACTICE-STANDARD.md) (mẫu = Ngày 3, 7 màn).  
 > Bám [`month-01/days.json`](../src/data/curriculum/month-01/days.json) · UI Practice tiếng Việt · Nội dung Anh
 
 ## Nguyên tắc
@@ -7,22 +8,37 @@
 | # | Quy tắc |
 |---|---------|
 | 1 | **Chỉ** kiến thức đã học trong ngày (không to be trước ngày 8, không -s/he/she chia động từ trước tháng 2) |
-| 2 | Mỗi ngày **8 màn** — đủ dạng bài, không nhồi grammar chưa dạy |
+| 2 | Mỗi ngày **7 màn** theo [`PRACTICE-STANDARD.md`](./PRACTICE-STANDARD.md) — không nhồi grammar chưa dạy |
 | 3 | **5–8 từ** trong gợi ý = từ vựng bài học |
 | 4 | **Hình ảnh** ở màn match / dropdown / dialogue (SVG trong `public/images/practice/`) |
 | 5 | Câu mới **mở rộng ngữ cảnh** (Nam, Lan, lớp 9) nhưng **cùng cấu trúc** bài học |
+| 6 | **Ôn xen kẽ:** Practice ngày **n** trộn thêm vài câu từ ngày **n−1** và **n−2** (ngày 1 chưa có bài trước; ngày 2 chỉ ôn ngày 1). Không dạy kiến thức chưa học. |
 
-## Cấu trúc 8 màn (chung)
+## Ôn lặp lại (spaced review)
 
-| # | Dạng | Vai trò |
-|---|------|---------|
-| 1–2 | **Match** | Từ vựng Anh ↔ Việt (+ hình) |
-| 3 | **Categorize** | Phân loại (người/vật, người/đồ vật, v.v.) |
-| 4 | **Sentence drag** | Điền từ vào câu (chủ điểm ngày) |
-| 5 | **Dropdown** | Chọn đúng từ / đại từ / động từ |
-| 6 | **Reorder** | Sắp xếp từ / câu ngắn |
-| 7 | **Reading fill** | Đoạn ngắn + điền (hoặc **dialogue-fill** nếu phù hợp) |
-| 8 | **Self-writing** | Viết 3–5 câu, có gợi ý mẫu |
+Công thức:
+
+```
+Practice ngày n = nội dung ngày n + vài câu ngẫu nhiên từ (n−1) và (n−2)
+```
+
+- Chỉ lấy kiến thức **đã học**, đúng mức ngày đó (không -s, không to be trước khi bài học đã dạy).
+- **2 câu** trên màn chọn đáp án (dropdown): 1 câu ngày n−1, 1 câu ngày n−2.
+- Thứ tự câu **xáo mỗi lần vào bài**, nên câu ôn không đứng cố định.
+- Ngày 1: không ôn. Ngày 2: một câu đại từ (ngày 1).
+
+| Ngày | Ôn |
+|------|----|
+| 1 | — |
+| 2 | Ngày 1 — đại từ |
+| 3 | Ngày 2 danh từ · Ngày 1 đại từ |
+| 4 | Ngày 3 động từ · Ngày 2 danh từ |
+| 5 | Ngày 4 tính từ · Ngày 3 động từ |
+| 6 | Ngày 5 S+V · Ngày 4 tính từ |
+
+## Cấu trúc màn
+
+Làm theo [`PRACTICE-STANDARD.md`](./PRACTICE-STANDARD.md): **7 màn**, Match gộp 1 slide, reorder ngang, điền cùng dòng, gợi ý viết chỉ sau khi nộp. Bảng 8 màn cũ không còn dùng.
 
 ---
 

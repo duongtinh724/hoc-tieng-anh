@@ -53,6 +53,9 @@ export function PracticePage({ month, day, onClose, onComplete }: PracticePagePr
               currentScreen={session.currentScreen + 1}
               totalScreens={session.lesson.meta.totalScreens}
               completedScreens={session.completedScreens}
+              onGoToScreen={(screenNumber) =>
+                session.goToScreen(screenNumber - 1)
+              }
               onClose={onClose}
             />
 

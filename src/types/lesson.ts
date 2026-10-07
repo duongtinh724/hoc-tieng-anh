@@ -53,6 +53,10 @@ export interface LessonState {
   progress: Record<string, number[]>;
   /** Số lần hoàn thành luyện tập — key: "tháng-ngày" (vd. "1-3") */
   practiceCompletions?: Record<string, number>;
+  /** Tab đang mở — khôi phục sau reload */
+  activeSection?: AppSection;
+  /** Ngày đang mở màn luyện tập full-screen. null = không mở. */
+  openPracticeDay?: number | null;
 }
 
 export type AppSection = "overview" | "lesson" | "practice" | "review" | "guide";

@@ -2,8 +2,13 @@
 
 import { Card, Input } from "antd";
 import { FeedbackIcon } from "@/components/practice/shared/FeedbackIcon";
+import { InlineFillSentence } from "@/components/practice/shared/InlineFillSentence";
 import { PracticeSceneImage } from "@/components/practice/shared/PracticeSceneImage";
 import { ScreenInstruction } from "@/components/practice/shared/ScreenInstruction";
+import {
+  hasInlineBlank,
+  parseInlineBlank,
+} from "@/lib/practice/parse-inline-blank";
 import { getItemState } from "@/lib/practice/validate-screen";
 import type {
   ExtendedReadingExerciseConfig,
@@ -26,22 +31,44 @@ export function ReadingFillExercise({
   state,
   onChange,
 }: ReadingFillExerciseProps) {
+  const useInlineLayout = config.prompts.every((prompt) =>
+    hasInlineBlank(prompt.label),
+  );
+
   return (
     <div className="practice-exercise practice-exercise--reading">
       <ScreenInstruction title={config.title} instruction={config.instruction} />
-      <div className="practice-reading-layout">
+      <div
+        className={`practice-reading-layout${useInlineLayout ? " practice-reading-layout--inline" : ""}`}
+      >
         <div className="practice-reading-passage-col">
           {config.image ? <PracticeSceneImage image={config.image} /> : null}
           <Card size="small" className="practice-panel-card practice-passage-card">
-          {config.passage.split("\n").map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
+            {config.passage.split("\n").map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
           </Card>
         </div>
         <Card size="small" className="practice-panel-card practice-reading-prompts-card">
           <div className="practice-reading-prompts">
             {config.prompts.map((prompt) => {
               const itemState = getItemState(state.feedback, prompt.id);
+              const inlineParts = parseInlineBlank(prompt.label);
+
+              if (inlineParts) {
+                return (
+                  <div key={prompt.id} className="practice-reading-prompt practice-reading-prompt--inline">
+                    <InlineFillSentence
+                      before={inlineParts.before}
+                      after={inlineParts.after}
+                      value={state.answers[prompt.id] ?? ""}
+                      feedbackState={itemState}
+                      onChange={(value) => onChange(prompt.id, value)}
+                    />
+                  </div>
+                );
+              }
+
               return (
                 <label key={prompt.id} className="practice-reading-prompt">
                   <span>{prompt.label}</span>

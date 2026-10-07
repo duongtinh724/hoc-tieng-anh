@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay01: PracticeLesson = {
-  meta: createPracticeMeta(1, "Đại từ nhân xưng"),
+  meta: { ...createPracticeMeta(1, "Đại từ nhân xưng"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(1, ""),
     vocabulary: [
@@ -24,69 +24,66 @@ export const practiceDay01: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối đại từ (1).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt đúng.",
+      title: "Nối đại từ.",
+      instruction: "Nối đại từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
         { id: "w-i", label: "I" },
         { id: "w-you", label: "You" },
         { id: "w-he", label: "He" },
         { id: "w-she", label: "She" },
+        { id: "w-it", label: "It" },
+        { id: "w-we", label: "We" },
+        { id: "w-they", label: "They" },
       ],
       pairs: [
         {
           id: "p-i",
-          imageUrl: "/images/practice/day01-pronouns.svg",
+          imageUrl: "/images/practice/pronouns/i.jpg",
           imageAlt: "tôi",
           label: "tôi",
           correctWordId: "w-i",
         },
         {
           id: "p-you",
+          imageUrl: "/images/practice/pronouns/you.jpg",
           imageAlt: "bạn",
           label: "bạn",
           correctWordId: "w-you",
         },
         {
           id: "p-he",
+          imageUrl: "/images/practice/pronouns/he.jpg",
           imageAlt: "anh ấy",
           label: "anh ấy",
           correctWordId: "w-he",
         },
         {
           id: "p-she",
+          imageUrl: "/images/practice/pronouns/she.jpg",
           imageAlt: "cô ấy",
           label: "cô ấy",
           correctWordId: "w-she",
         },
-      ],
-    },
-    {
-      type: "match",
-      title: "Nối đại từ (2).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt đúng.",
-      words: [
-        { id: "w-we", label: "We" },
-        { id: "w-they", label: "They" },
-        { id: "w-it", label: "It" },
-      ],
-      pairs: [
+        {
+          id: "p-it",
+          imageUrl: "/images/practice/pronouns/it.jpg",
+          imageAlt: "nó (vật, con vật)",
+          label: "nó (vật, con vật)",
+          correctWordId: "w-it",
+        },
         {
           id: "p-we",
+          imageUrl: "/images/practice/pronouns/we.jpg",
           imageAlt: "chúng tôi",
           label: "chúng tôi",
           correctWordId: "w-we",
         },
         {
           id: "p-they",
+          imageUrl: "/images/practice/pronouns/they.jpg",
           imageAlt: "họ",
           label: "họ",
           correctWordId: "w-they",
-        },
-        {
-          id: "p-it",
-          imageAlt: "nó (vật)",
-          label: "nó (vật)",
-          correctWordId: "w-it",
         },
       ],
     },
@@ -242,42 +239,83 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "reorder",
-      title: "Sắp xếp hội thoại.",
-      instruction:
-        "Sắp xếp các câu theo đúng thứ tự hội thoại giữa Nam và Lan. Mỗi câu có đại từ I, You, He, She hoặc They.",
-      fixedFirst: true,
-      lines: [
-        { id: "r1", text: "Nam: I study English." },
-        { id: "r2", text: "Lan: You go to school." },
-        { id: "r3", text: "Nam: He read books." },
-        { id: "r4", text: "Lan: She like music." },
-        { id: "r5", text: "Nam: They play football." },
+      layout: "horizontal",
+      title: "Sắp xếp câu.",
+      instruction: "Kéo các từ theo hàng ngang. Đại từ đứng đầu câu.",
+      sentences: [
+        {
+          id: "sen-1",
+          label: "Câu 1",
+          lines: [
+            { id: "s1a", text: "I" },
+            { id: "s1b", text: "study" },
+            { id: "s1c", text: "English" },
+            { id: "s1d", text: "." },
+          ],
+          correctOrder: ["s1a", "s1b", "s1c", "s1d"],
+        },
+        {
+          id: "sen-2",
+          label: "Câu 2",
+          lines: [
+            { id: "s2a", text: "You" },
+            { id: "s2b", text: "go" },
+            { id: "s2c", text: "to school" },
+            { id: "s2d", text: "." },
+          ],
+          correctOrder: ["s2a", "s2b", "s2c", "s2d"],
+        },
+        {
+          id: "sen-3",
+          label: "Câu 3",
+          lines: [
+            { id: "s3a", text: "He" },
+            { id: "s3b", text: "read" },
+            { id: "s3c", text: "books" },
+            { id: "s3d", text: "." },
+          ],
+          correctOrder: ["s3a", "s3b", "s3c", "s3d"],
+        },
+        {
+          id: "sen-4",
+          label: "Câu 4",
+          lines: [
+            { id: "s4a", text: "She" },
+            { id: "s4b", text: "like" },
+            { id: "s4c", text: "music" },
+            { id: "s4d", text: "." },
+          ],
+          correctOrder: ["s4a", "s4b", "s4c", "s4d"],
+        },
+        {
+          id: "sen-5",
+          label: "Câu 5",
+          lines: [
+            { id: "s5a", text: "They" },
+            { id: "s5b", text: "play" },
+            { id: "s5c", text: "football" },
+            { id: "s5d", text: "." },
+          ],
+          correctOrder: ["s5a", "s5b", "s5c", "s5d"],
+        },
       ],
-      correctOrder: ["r1", "r2", "r3", "r4", "r5"],
+      lines: [],
+      correctOrder: [],
     },
     {
       type: "reading-fill",
       title: "Đọc và điền.",
-      instruction:
-        "Đọc về Nam và 7 đại từ. Trả lời bằng tiếng Anh (viết đúng chữ hoa nếu cần).",
+      instruction: "Đọc đoạn văn và điền đại từ vào ô trên cùng một dòng.",
       passage:
-        "Nam learns seven pronouns in class 9A. I = tôi. You = bạn. He = anh ấy. She = cô ấy. It = nó (a thing or animal). We = chúng tôi. They = họ. Pronouns go at the start of a sentence. Examples: I study. You go. He read. She like. We play. They read.",
+        "Nam learns seven pronouns in class 9A. I study. You go to school. He read books. She like music. It — a cat. We play. They read.",
       prompts: [
-        { id: "rf1", label: "Tôi (tiếng Anh):", correctAnswers: ["I"] },
-        { id: "rf2", label: "Bạn (tiếng Anh):", correctAnswers: ["You"] },
-        { id: "rf3", label: "Anh ấy (tiếng Anh):", correctAnswers: ["He"] },
-        { id: "rf4", label: "Cô ấy (tiếng Anh):", correctAnswers: ["She"] },
-        {
-          id: "rf5",
-          label: "Nó — vật (tiếng Anh):",
-          correctAnswers: ["It"],
-        },
-        {
-          id: "rf6",
-          label: "Chúng tôi (tiếng Anh):",
-          correctAnswers: ["We"],
-        },
-        { id: "rf7", label: "Họ (tiếng Anh):", correctAnswers: ["They"] },
+        { id: "rf1", label: "___ study. (tôi)", correctAnswers: ["I"] },
+        { id: "rf2", label: "___ go to school. (bạn)", correctAnswers: ["You"] },
+        { id: "rf3", label: "___ read books. (anh ấy)", correctAnswers: ["He"] },
+        { id: "rf4", label: "___ like music. (cô ấy)", correctAnswers: ["She"] },
+        { id: "rf5", label: "___ — a cat. (nó)", correctAnswers: ["It"] },
+        { id: "rf6", label: "___ play. (chúng tôi)", correctAnswers: ["We"] },
+        { id: "rf7", label: "___ read. (họ)", correctAnswers: ["They"] },
       ],
     },
     {

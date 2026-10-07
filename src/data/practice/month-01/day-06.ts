@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay06: PracticeLesson = {
-  meta: createPracticeMeta(6, "Cấu trúc S + V + O"),
+  meta: { ...createPracticeMeta(6, "Cấu trúc S + V + O"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(6, ""),
     vocabulary: [
@@ -24,47 +24,12 @@ export const practiceDay06: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối tân ngữ (1).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Nối tân ngữ.",
+      instruction: "Nối từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
-        { id: "w-object", label: "object (O)" },
         { id: "w-music", label: "music" },
         { id: "w-english", label: "English" },
         { id: "w-football", label: "football" },
-      ],
-      pairs: [
-        {
-          id: "p-object",
-          imageUrl: "/images/practice/day06-svo.svg",
-          imageAlt: "tân ngữ",
-          label: "tân ngữ",
-          correctWordId: "w-object",
-        },
-        {
-          id: "p-music",
-          imageAlt: "âm nhạc",
-          label: "âm nhạc",
-          correctWordId: "w-music",
-        },
-        {
-          id: "p-english",
-          imageAlt: "tiếng Anh",
-          label: "tiếng Anh",
-          correctWordId: "w-english",
-        },
-        {
-          id: "p-football",
-          imageAlt: "bóng đá",
-          label: "bóng đá",
-          correctWordId: "w-football",
-        },
-      ],
-    },
-    {
-      type: "match",
-      title: "Nối tân ngữ (2).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
-      words: [
         { id: "w-rice", label: "rice" },
         { id: "w-water", label: "water" },
         { id: "w-homework", label: "homework" },
@@ -72,27 +37,52 @@ export const practiceDay06: PracticeLesson = {
       ],
       pairs: [
         {
+          id: "p-music",
+          imageUrl: "/images/practice/objects/music.jpg",
+          imageAlt: "âm nhạc",
+          label: "âm nhạc",
+          correctWordId: "w-music",
+        },
+        {
+          id: "p-english",
+          imageUrl: "/images/practice/objects/english.jpg",
+          imageAlt: "tiếng Anh",
+          label: "tiếng Anh",
+          correctWordId: "w-english",
+        },
+        {
+          id: "p-football",
+          imageUrl: "/images/practice/objects/football.jpg",
+          imageAlt: "bóng đá",
+          label: "bóng đá",
+          correctWordId: "w-football",
+        },
+        {
           id: "p-rice",
+          imageUrl: "/images/practice/objects/rice.jpg",
           imageAlt: "cơm",
           label: "cơm",
           correctWordId: "w-rice",
         },
         {
           id: "p-water",
+          imageUrl: "/images/practice/objects/water.jpg",
           imageAlt: "nước",
           label: "nước",
           correctWordId: "w-water",
         },
         {
           id: "p-homework",
+          imageUrl: "/images/practice/objects/homework.jpg",
           imageAlt: "bài tập về nhà",
           label: "bài tập về nhà",
           correctWordId: "w-homework",
         },
         {
           id: "p-books",
-          imageAlt: "sách (số nhiều)",
-          label: "sách (số nhiều)",
+          imageUrl: "/images/practice/objects/books.jpg",
+          imageAlt: "sách",
+          label: "sách",
           correctWordId: "w-books",
         },
       ],
@@ -197,7 +187,7 @@ export const practiceDay06: PracticeLesson = {
     {
       type: "dropdown",
       title: "Chọn tân ngữ đúng.",
-      instruction: "Hoàn thành câu S + V + O.",
+      instruction: "Hoàn thành câu S + V + O. Có câu ôn S + V (ngày 5) và tính từ (ngày 4).",
       questions: [
         {
           id: "q1",
@@ -267,23 +257,104 @@ export const practiceDay06: PracticeLesson = {
             { kind: "text", value: "." },
           ],
         },
+        {
+          id: "q-review-5",
+          parts: [
+            { kind: "text", value: "Ôn: I study every ___ ." },
+            {
+              kind: "select",
+              id: "q-review-5a",
+              options: [
+                { id: "qr5-day", label: "day" },
+                { id: "qr5-music", label: "music" },
+                { id: "qr5-good", label: "good" },
+              ],
+              correctOptionId: "qr5-day",
+            },
+          ],
+        },
+        {
+          id: "q-review-4",
+          parts: [
+            { kind: "text", value: "Ôn: a ___ bag (nhỏ)" },
+            {
+              kind: "select",
+              id: "q-review-4a",
+              options: [
+                { id: "qr4-small", label: "small" },
+                { id: "qr4-rice", label: "rice" },
+                { id: "qr4-study", label: "study" },
+              ],
+              correctOptionId: "qr4-small",
+            },
+          ],
+        },
       ],
     },
     {
       type: "reorder",
+      layout: "horizontal",
       title: "Sắp xếp câu S + V + O.",
-      instruction: "Sắp xếp thành câu: We study English.",
-      image: {
-        url: "/images/practice/day06-svo.svg",
-        alt: "S + V + O",
-      },
-      lines: [
-        { id: "r1", text: "We" },
-        { id: "r2", text: "study" },
-        { id: "r3", text: "English" },
-        { id: "r4", text: "." },
+      instruction: "Kéo các từ theo hàng ngang thành câu Chủ ngữ + Động từ + Tân ngữ.",
+      sentences: [
+        {
+          id: "sen-1",
+          label: "Câu 1",
+          lines: [
+            { id: "s1a", text: "I" },
+            { id: "s1b", text: "like" },
+            { id: "s1c", text: "music" },
+            { id: "s1d", text: "." },
+          ],
+          correctOrder: ["s1a", "s1b", "s1c", "s1d"],
+        },
+        {
+          id: "sen-2",
+          label: "Câu 2",
+          lines: [
+            { id: "s2a", text: "We" },
+            { id: "s2b", text: "study" },
+            { id: "s2c", text: "English" },
+            { id: "s2d", text: "." },
+          ],
+          correctOrder: ["s2a", "s2b", "s2c", "s2d"],
+        },
+        {
+          id: "sen-3",
+          label: "Câu 3",
+          lines: [
+            { id: "s3a", text: "They" },
+            { id: "s3b", text: "play" },
+            { id: "s3c", text: "football" },
+            { id: "s3d", text: "." },
+          ],
+          correctOrder: ["s3a", "s3b", "s3c", "s3d"],
+        },
+        {
+          id: "sen-4",
+          label: "Câu 4",
+          lines: [
+            { id: "s4a", text: "I" },
+            { id: "s4b", text: "eat" },
+            { id: "s4c", text: "rice" },
+            { id: "s4d", text: "." },
+          ],
+          correctOrder: ["s4a", "s4b", "s4c", "s4d"],
+        },
+        {
+          id: "sen-5",
+          label: "Câu 5",
+          lines: [
+            { id: "s5a", text: "We" },
+            { id: "s5b", text: "do" },
+            { id: "s5c", text: "homework" },
+            { id: "s5d", text: "." },
+          ],
+          correctOrder: ["s5a", "s5b", "s5c", "s5d"],
+        },
       ],
-      correctOrder: ["r1", "r2", "r3", "r4"],
+      lines: [],
+      correctOrder: [],
     },
     {
       type: "reading-fill",

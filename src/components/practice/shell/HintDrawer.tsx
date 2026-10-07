@@ -1,5 +1,7 @@
 import { CloseOutlined } from "@ant-design/icons";
-import { Button, Card, Tag, Typography } from "antd";
+import { Button, Card, Typography } from "antd";
+import { getOxfordDictionaryUrl, isSingleEnglishWord } from "@/lib/dictionary";
+import { speakEnglish } from "@/lib/speech";
 import type { PracticeHints } from "@/types/practice";
 
 interface HintDrawerProps {
@@ -48,13 +50,36 @@ export function HintDrawer({ open, hints, onClose }: HintDrawerProps) {
 
       {hints.vocabulary && hints.vocabulary.length > 0 ? (
         <Card size="small" title="Từ vựng" className="practice-hint-card">
-          <div className="practice-hint-vocab">
-            {hints.vocabulary.map((word) => (
-              <Tag key={word.en}>
-                {word.en} — {word.vi}
-              </Tag>
-            ))}
-          </div>
+          <ul className="practice-hint-vocab">
+            {hints.vocabulary.map((word) => {
+              const dictionaryWord = word.en.replace(/\s*\([^)]*\)\s*/g, " ").trim();
+              const href = isSingleEnglishWord(dictionaryWord)
+                ? getOxfordDictionaryUrl(dictionaryWord)
+                : `https://www.oxfordlearnersdictionaries.com/search/english/?q=${encodeURIComponent(dictionaryWord)}`;
+
+              return (
+                <li key={word.en} className="practice-hint-vocab-item">
+                  <button
+                    type="button"
+                    className="speak-btn speak-btn--compact"
+                    onClick={() => speakEnglish(dictionaryWord)}
+                    aria-label={`Nghe từ ${dictionaryWord}`}
+                  >
+                    🔊
+                  </button>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="practice-hint-vocab-link"
+                    title="Tra Oxford Learner's Dictionary (mở tab mới)"
+                  >
+                    {word.en}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </Card>
       ) : null}
     </aside>
