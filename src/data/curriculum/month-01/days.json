@@ -3,8 +3,8 @@
     "day": 1,
     "week": 1,
     "title": "Đại từ nhân xưng",
-    "aim": "Nhận biết và dùng đúng I, You, He, She, It, We, They trong câu đơn.",
-    "rule": "I = tôi · You = bạn · He = anh ấy · She = cô ấy · It = nó (vật/động vật) · We = chúng tôi · They = họ. Đại từ đứng đầu câu.",
+    "aim": "Biết chủ ngữ (S) là người hoặc vật đứng đầu câu, và dùng đúng I, You, He, She, It, We, They.",
+    "rule": "S = chủ ngữ, đứng đầu câu. I = tôi · You = bạn · He = anh ấy · She = cô ấy · It = vật · We = chúng tôi · They = họ. Ví dụ: I study English. They play football.",
     "words": [
       {
         "en": "I",
@@ -91,8 +91,8 @@
     "day": 2,
     "week": 1,
     "title": "Danh từ cơ bản",
-    "aim": "Học 6 danh từ thường gặp và dùng trong câu đơn giản.",
-    "rule": "Danh từ = tên người, vật, nơi chốn. Có thể đứng sau đại từ hoặc sau a/an (học sau). Hôm nay: nhận biết nghĩa và đặt câu ngắn.",
+    "aim": "Biết danh từ (Noun) là tên người, vật hoặc nơi, và dùng 6 danh từ hôm nay trong câu ngắn.",
+    "rule": "Noun = danh từ: tên người, vật hoặc nơi. Ví dụ: student (người), book (vật), school (nơi). a book = một quyển sách. I read a book.",
     "words": [
       {
         "en": "book",
@@ -179,8 +179,8 @@
     "day": 3,
     "week": 1,
     "title": "Động từ cơ bản",
-    "aim": "Học 6 động từ và ghép Subject + Verb (chỉ dùng I/You/We/They hôm nay).",
-    "rule": "Động từ = hành động. Cấu trúc: I/You/We/They + V (nguyên mẫu). Ví dụ: I study. We go. He/She/It học đúng chia ở tháng 2.",
+    "aim": "Biết động từ (V) là hành động, và ghép S + V với I, You, We, They.",
+    "rule": "V = động từ, việc ai đó làm. Ví dụ: eat = ăn, study = học. Câu: S đứng trước, V đứng sau. I study. You go to school. Chưa thêm -s với He/She.",
     "words": [
       {
         "en": "eat",
@@ -267,8 +267,8 @@
     "day": 4,
     "week": 1,
     "title": "Tính từ cơ bản",
-    "aim": "Học tính từ mô tả và ghép với danh từ: a good book, a big house.",
-    "rule": "Tính từ đứng TRƯỚC danh từ: a + adj + noun. Ví dụ: a good book, a big house, a small pen.",
+    "aim": "Biết tính từ (Adj) là từ mô tả danh từ, và ghép a + tính từ + danh từ.",
+    "rule": "Adj = tính từ, mô tả danh từ. Ví dụ: big = to, small = nhỏ, good = tốt. Tính từ đứng trước danh từ: a big house, a good book.",
     "words": [
       {
         "en": "good",

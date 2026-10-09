@@ -3,22 +3,77 @@ import { splitRuleSegments } from "@/lib/format-rule";
 
 export const DAY_RULES: Record<number, RuleItem[]> = {
   1: [
-    { text: "I = tôi.", example: "I am Nam.", exampleVi: "Tôi là Nam." },
-    { text: "You = bạn.", example: "You are my friend.", exampleVi: "Bạn là bạn tôi." },
-    { text: "He = anh ấy, She = cô ấy, It = nó/vật.", example: "He is a student." },
-    { text: "We = chúng tôi, They = họ.", example: "They are students." },
+    {
+      text: "S (chủ ngữ) = người hoặc vật làm việc trong câu. S đứng đầu câu.",
+      example: "I study English.",
+      exampleVi: "Tôi học tiếng Anh. I là chủ ngữ.",
+    },
+    {
+      text: "I = tôi. You = bạn. Hai từ này là chủ ngữ.",
+      example: "You go to school.",
+      exampleVi: "Bạn đi học. You là chủ ngữ.",
+    },
+    {
+      text: "He = một bạn trai. She = một bạn gái. It = một vật hoặc con vật.",
+      example: "He like music. It — a book.",
+      exampleVi: "Anh ấy thích nhạc. Nó là một quyển sách. Chưa thêm -s.",
+    },
+    {
+      text: "We = chúng tôi. They = họ. Dùng khi nói về nhiều người.",
+      example: "They play football.",
+      exampleVi: "Họ chơi bóng đá. They là chủ ngữ.",
+    },
   ],
   2: [
-    { text: "Danh từ = người, vật, nơi chốn.", example: "book, student, teacher, house" },
-    { text: "a + danh từ đếm được số ít.", example: "a book = một quyển sách" },
+    {
+      text: "Noun (danh từ) = tên của người, vật hoặc nơi. Danh từ không phải hành động.",
+      example: "student = học sinh, book = sách, school = trường.",
+      exampleVi: "student là người, book là vật, school là nơi.",
+    },
+    {
+      text: "Danh từ có thể đứng sau a, hoặc đứng sau động từ.",
+      example: "a book. I read a book.",
+      exampleVi: "một quyển sách. Tôi đọc sách.",
+    },
+    {
+      text: "a + danh từ đếm được số ít.",
+      example: "a pen, a bag, a house",
+      exampleVi: "một cây bút, một cái cặp, một ngôi nhà.",
+    },
   ],
   3: [
-    { text: "Động từ = hành động.", example: "eat, go, work, study, like" },
-    { text: "S + V: I study. You work.", example: "I study English." },
+    {
+      text: "V (động từ) = hành động hoặc việc ai đó làm.",
+      example: "eat = ăn, go = đi, study = học.",
+      exampleVi: "I eat breakfast. Tôi ăn sáng. eat là động từ.",
+    },
+    {
+      text: "Câu ngắn: S + V. Chủ ngữ đứng trước, động từ đứng ngay sau.",
+      example: "I study. You go to school.",
+      exampleVi: "Tôi học. Bạn đi học.",
+    },
+    {
+      text: "Hôm nay chỉ dùng I, You, We, They + động từ, không thêm -s.",
+      example: "We play football. They like music.",
+      exampleVi: "Chúng tôi chơi bóng. Họ thích nhạc.",
+    },
   ],
   4: [
-    { text: "Tính từ mô tả danh từ.", example: "good, bad, big, small" },
-    { text: "a + adj + noun.", example: "a good book", exampleVi: "một quyển sách hay" },
+    {
+      text: "Adj (tính từ) = từ mô tả danh từ: to, nhỏ, tốt, mới, cũ, vui.",
+      example: "big, small, good, new, old, happy",
+      exampleVi: "big = to, small = nhỏ, good = tốt.",
+    },
+    {
+      text: "Tính từ đứng ngay trước danh từ: a + tính từ + danh từ.",
+      example: "a big house. a good book.",
+      exampleVi: "một ngôi nhà lớn. một quyển sách hay.",
+    },
+    {
+      text: "Tính từ không đứng một mình thành câu. Luôn đi kèm danh từ.",
+      example: "a small pen. happy students.",
+      exampleVi: "một cây bút nhỏ. những học sinh vui.",
+    },
   ],
   5: [
     { text: "Cấu trúc S + V.", example: "I study. / We work." },
