@@ -3,7 +3,9 @@
 import { CategorizeExercise } from "@/components/practice/exercises/CategorizeExercise";
 import { DialogueFillExercise } from "@/components/practice/exercises/DialogueFillExercise";
 import { DropdownExercise } from "@/components/practice/exercises/DropdownExercise";
+import { DictationExercise } from "@/components/practice/exercises/DictationExercise";
 import { MatchExercise } from "@/components/practice/exercises/MatchExercise";
+import { QuizExercise } from "@/components/practice/exercises/QuizExercise";
 import { ReadingFillExercise } from "@/components/practice/exercises/ReadingFillExercise";
 import { ReorderExercise } from "@/components/practice/exercises/ReorderExercise";
 import { SelfWritingExercise } from "@/components/practice/exercises/SelfWritingExercise";
@@ -25,10 +27,13 @@ interface ScreenRendererProps {
   onClear: (itemId: string) => void;
   onTextChange: (itemId: string, value: string) => void;
   onReorder: (fromIndex: number, toIndex: number, sentenceId?: string) => void;
+  onCheck: () => void;
+  quizStarted: boolean;
+  onQuizStart: () => void;
 }
 
 function renderExercise(props: ScreenRendererProps) {
-  const { screen, state, selectedWordId, onSelectWord, onAssign, onClear, onTextChange, onReorder } =
+  const { screen, state, selectedWordId, onSelectWord, onAssign, onClear, onTextChange, onReorder, onCheck, quizStarted, onQuizStart } =
     props;
 
   switch (screen.type) {
@@ -84,6 +89,21 @@ function renderExercise(props: ScreenRendererProps) {
     case "extended-reading":
       return (
         <ReadingFillExercise config={screen} state={state} onChange={onTextChange} />
+      );
+    case "dictation":
+      return (
+        <DictationExercise config={screen} state={state} onChange={onTextChange} />
+      );
+    case "quiz":
+      return (
+        <QuizExercise
+          config={screen}
+          state={state}
+          onSelect={onAssign}
+          onExpire={onCheck}
+          started={quizStarted}
+          onStart={onQuizStart}
+        />
       );
     case "self-writing":
       return (

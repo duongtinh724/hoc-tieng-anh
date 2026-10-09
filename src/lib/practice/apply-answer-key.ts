@@ -92,6 +92,16 @@ export function applyAnswerKey(
         answers[prompt.id] = prompt.correctAnswers[0];
       });
       break;
+    case "dictation":
+      screen.items.forEach((item) => {
+        answers[item.id] = item.text;
+      });
+      break;
+    case "quiz":
+      screen.questions.forEach((question) => {
+        answers[question.id] = question.correctOptionId;
+      });
+      break;
   }
 
   return {

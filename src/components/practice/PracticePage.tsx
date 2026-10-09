@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button, Result } from "antd";
 import { HintDrawer } from "@/components/practice/shell/HintDrawer";
 import { PracticeFooter } from "@/components/practice/shell/PracticeFooter";
@@ -15,14 +15,19 @@ interface PracticePageProps {
   day: number;
   onClose: () => void;
   onComplete?: () => void;
+  onQuizScore?: (score: number) => void;
 }
 
-export function PracticePage({ month, day, onClose, onComplete }: PracticePageProps) {
+export function PracticePage({ month, day, onClose, onComplete, onQuizScore }: PracticePageProps) {
   const session = usePracticeSession(month, day);
   const completionRecordedRef = useRef(false);
+  const quizRecordedRef = useRef(false);
+  const [quizStarted, setQuizStarted] = useState(false);
 
   useEffect(() => {
     completionRecordedRef.current = false;
+    quizRecordedRef.current = false;
+    setQuizStarted(false);
   }, [month, day]);
 
   useEffect(() => {
@@ -30,6 +35,22 @@ export function PracticePage({ month, day, onClose, onComplete }: PracticePagePr
     completionRecordedRef.current = true;
     onComplete?.();
   }, [session.allScreensPassed, onComplete]);
+
+  useEffect(() => {
+    const screen = session.screen;
+    const state = session.state;
+    if (!screen || screen.type !== "quiz" || !state?.checked) {
+      quizRecordedRef.current = false;
+      return;
+    }
+    if (quizRecordedRef.current) return;
+    quizRecordedRef.current = true;
+    const correct = screen.questions.filter(
+      (question) => state.answers[question.id] === question.correctOptionId,
+    ).length;
+    const score = Math.round((correct / screen.questions.length) * 100) / 10;
+    onQuizScore?.(score);
+  }, [onQuizScore, session.screen, session.state]);
 
   return (
     <PracticeAntdProvider>
@@ -69,6 +90,9 @@ export function PracticePage({ month, day, onClose, onComplete }: PracticePagePr
                 onClear={session.clearAnswer}
                 onTextChange={session.setTextAnswer}
                 onReorder={session.reorderLines}
+                onCheck={session.checkAnswers}
+                quizStarted={quizStarted}
+                onQuizStart={() => setQuizStarted(true)}
               />
             </main>
 
@@ -76,14 +100,19 @@ export function PracticePage({ month, day, onClose, onComplete }: PracticePagePr
               currentScreen={session.currentScreen + 1}
               totalScreens={session.lesson.meta.totalScreens}
               pendingCount={session.pendingCount}
-              canCheck={session.canCheck}
+              canCheck={session.isQuiz ? session.canCheck && quizStarted : session.canCheck}
               canNext={session.canNext}
               canRevealAnswerKey={session.canRevealAnswerKey}
               isSelfWriting={session.isSelfWriting}
+              isQuiz={session.isQuiz}
+              showSubmit={!session.isQuiz || quizStarted || Boolean(session.state.passed)}
               passed={session.state.passed}
               answerKeyRevealed={session.state.answerKeyRevealed}
               showAnswerKey={session.showAnswerKey}
-              onReset={session.resetScreen}
+              onReset={() => {
+                setQuizStarted(false);
+                session.resetScreen();
+              }}
               onToggleHint={() => session.setHintOpen(!session.hintOpen)}
               onCheck={session.checkAnswers}
               onRevealAnswerKey={session.revealAnswerKey}

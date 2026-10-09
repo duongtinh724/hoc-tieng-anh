@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay05: PracticeLesson = {
-  meta: createPracticeMeta(5, "Don't / Doesn't", 2),
+  meta: { ...createPracticeMeta(5, "Don't / Doesn't", 2), totalScreens: 9 },
   hints: {
     rules: getRulesForDay(5, ""),
     vocabulary: [
@@ -24,8 +24,8 @@ export const practiceDay05: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối từ (1).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match the words (1).\nNối từ (1).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-dont", label: "don't" },
         { id: "w-doesnt", label: "doesn't" },
@@ -61,8 +61,8 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "match",
-      title: "Nối từ (2).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match the words (2).\nNối từ (2).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-love", label: "love" },
         { id: "w-enjoy", label: "enjoy" },
@@ -91,8 +91,8 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Don't hay Doesn't?",
-      instruction: "Kéo câu phủ định vào đúng nhóm.",
+      title: "Don't or Doesn't?\nDon't hay Doesn't?",
+      instruction: "Drag each negative sentence into the right group.\nKéo câu phủ định vào đúng nhóm.",
       categories: [
         { id: "cat-dont", label: "don't (I/you/we/they)" },
         { id: "cat-doesnt", label: "doesn't (he/she/it)" },
@@ -109,8 +109,8 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Điền don't hoặc doesn't.",
-      instruction: "Kéo don't hoặc doesn't vào chỗ trống.",
+      title: "Fill in don't or doesn't.\nĐiền don't hoặc doesn't.",
+      instruction: "Drag don't or doesn't into the blank.\nKéo don't hoặc doesn't vào chỗ trống.",
       wordBank: [
         { id: "s-dont", label: "don't" },
         { id: "s-doesnt", label: "doesn't" },
@@ -168,8 +168,8 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn don't hoặc doesn't.",
-      instruction: "Hoàn thành câu phủ định Present Simple.",
+      title: "Choose don't or doesn't.\nChọn don't hoặc doesn't.",
+      instruction: "Complete the negative Present Simple sentence.\nHoàn thành câu phủ định Present Simple.",
       questions: [
         {
           id: "q1",
@@ -243,9 +243,9 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "reorder",
-      title: "Sắp xếp hội thoại.",
+      title: "Order the dialogue.\nSắp xếp hội thoại.",
       instruction:
-        "Sắp xếp các câu phủ định theo đúng thứ tự hội thoại giữa Nam và Lan.",
+        "Put the negative lines in order. Nam and Lan are talking.\nSắp xếp các câu phủ định theo đúng thứ tự hội thoại giữa Nam và Lan.",
       fixedFirst: true,
       lines: [
         { id: "r1", text: "Nam: I don't like coffee." },
@@ -258,49 +258,86 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "Sở thích và thói quen.",
+      title: "Likes and habits.\nSở thích và thói quen.",
       instruction:
-        "Đọc đoạn văn và điền don't, doesn't, never, hate, love, enjoy hoặc prefer.",
+        "Read the passage and fill in don't, doesn't, never, hate, love, enjoy, or prefer.\nĐọc đoạn văn và điền don't, doesn't, never, hate, love, enjoy hoặc prefer.",
       passage:
         "Nam talks about likes and dislikes. I don't like coffee — I prefer tea. She doesn't play games. We don't watch TV much. He doesn't eat meat. They don't study on Sunday. I never go to bed late. Some students love music and enjoy football. Nam hates getting up early.",
       prompts: [
         {
           id: "rf1",
-          label: "I ___ like coffee. (phủ định I)",
+          label: "I ___ like coffee.",
           correctAnswers: ["don't"],
         },
         {
           id: "rf2",
-          label: "She ___ play games. (phủ định she)",
+          label: "She ___ play games.",
           correctAnswers: ["doesn't"],
         },
         {
           id: "rf3",
-          label: "We ___ watch TV much. (phủ định we)",
+          label: "We ___ watch TV much.",
           correctAnswers: ["don't"],
         },
         {
           id: "rf4",
-          label: "He ___ eat meat. (phủ định he)",
+          label: "He ___ eat meat.",
           correctAnswers: ["doesn't"],
         },
         {
           id: "rf5",
-          label: "I ___ go to bed late. (không bao giờ)",
+          label: "I ___ go to bed late.",
           correctAnswers: ["never"],
         },
         {
           id: "rf6",
-          label: "I ___ tea. (thích hơn — prefer)",
+          label: "I ___ tea.",
           correctAnswers: ["prefer"],
         },
       ],
     },
     {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "I don't like coffee.",
+          hint: "Tôi không thích cà phê.",
+        },
+        {
+          id: "dic-2",
+          text: "She doesn't play games.",
+          hint: "Cô ấy không chơi game.",
+        },
+        {
+          id: "dic-3",
+          text: "We don't watch TV much.",
+          hint: "Chúng tôi không xem TV nhiều.",
+        },
+        {
+          id: "dic-4",
+          text: "He doesn't eat meat.",
+          hint: "Anh ấy không ăn thịt.",
+        },
+        {
+          id: "dic-5",
+          text: "They don't study on Sunday.",
+          hint: "Họ không học vào Chủ nhật.",
+        },
+        {
+          id: "dic-6",
+          text: "I never go to bed late.",
+          hint: "Tôi không bao giờ đi ngủ muộn.",
+        },
+      ],
+    },
+    {
       type: "self-writing",
-      title: "Viết câu phủ định.",
+      title: "Write negative sentences.\nViết câu phủ định.",
       instruction:
-        "Viết 3 câu phủ định: 2 câu với don't, 1 câu với doesn't. Có thể thêm never.",
+        "Write 3 negative sentences: 2 with don't, 1 with doesn't. You can add never.\nViết 3 câu phủ định: 2 câu với don't, 1 câu với doesn't. Có thể thêm never.",
       promptHints: [
         "I don't like coffee.",
         "She doesn't play games.",

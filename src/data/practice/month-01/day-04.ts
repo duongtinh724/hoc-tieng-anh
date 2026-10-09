@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay04: PracticeLesson = {
-  meta: { ...createPracticeMeta(4, "Tính từ cơ bản"), totalScreens: 7 },
+  meta: { ...createPracticeMeta(4, "Tính từ cơ bản"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(4, ""),
     vocabulary: [
@@ -24,9 +24,9 @@ export const practiceDay04: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối tính từ.",
+      title: "Match the adjectives.\nNối tính từ.",
       instruction:
-        "Nối tính từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
+        "Match each adjective with a picture. Tap the picture to see the Vietnamese meaning.\nNối tính từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
         { id: "w-good", label: "good" },
         { id: "w-bad", label: "bad" },
@@ -90,8 +90,8 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Kích thước hay tính chất?",
-      instruction: "Kéo tính từ vào đúng nhóm.",
+      title: "Size or quality?\nKích thước hay tính chất?",
+      instruction: "Drag each adjective into the right group.\nKéo tính từ vào đúng nhóm.",
       categories: [
         { id: "cat-size", label: "Kích thước" },
         { id: "cat-quality", label: "Tính chất / cảm xúc" },
@@ -108,8 +108,8 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "a + adj + noun.",
-      instruction: "Kéo tính từ vào chỗ trống để tạo cụm danh từ.",
+      title: "a + adjective + noun.\na + adj + noun.",
+      instruction: "Drag the adjective into the blank to make a noun phrase.\nKéo tính từ vào chỗ trống để tạo cụm danh từ.",
       wordBank: [
         { id: "s-good", label: "good" },
         { id: "s-big", label: "big" },
@@ -170,8 +170,8 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn tính từ đúng.",
-      instruction: "Chọn tính từ đúng. Có câu ôn động từ (ngày 3) và danh từ (ngày 2).",
+      title: "Choose the correct adjective.\nChọn tính từ đúng.",
+      instruction: "Choose the correct adjective. Some items review verbs (Day 3) and nouns (Day 2).\nChọn tính từ đúng. Có câu ôn động từ (ngày 3) và danh từ (ngày 2).",
       questions: [
         {
           id: "q1",
@@ -274,8 +274,8 @@ export const practiceDay04: PracticeLesson = {
     {
       type: "reorder",
       layout: "horizontal",
-      title: "Sắp xếp cụm từ.",
-      instruction: "Kéo các từ theo hàng ngang thành cụm a + tính từ + danh từ.",
+      title: "Put the phrase in order.\nSắp xếp cụm từ.",
+      instruction: "Drag the words into a line: a + adjective + noun.\nKéo các từ theo hàng ngang thành cụm a + tính từ + danh từ.",
       sentences: [
         {
           id: "sen-1",
@@ -332,49 +332,86 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "Phòng của Nam.",
+      title: "Nam's room.\nPhòng của Nam.",
       instruction:
-        "Đọc về đồ vật trong phòng Nam. Điền tính từ tiếng Anh (good, bad, big, small, new, old, happy).",
+        "Read about things in Nam's room. Fill in an adjective (good, bad, big, small, new, old, happy).\nĐọc về đồ vật trong phòng Nam. Điền tính từ tiếng Anh (good, bad, big, small, new, old, happy).",
       passage:
         "Nam looks at things in his room. He has a good book on the desk. He has a big bag and a small pen. His bag is new. His old book is on the shelf. Today is not a bad day — Nam and his friends are happy students in class 9A.",
       prompts: [
         {
           id: "rf1",
-          label: "a ___ book on the desk (tốt)",
+          label: "a ___ book on the desk",
           correctAnswers: ["good"],
         },
         {
           id: "rf2",
-          label: "a ___ bag (lớn)",
+          label: "a ___ bag",
           correctAnswers: ["big"],
         },
         {
           id: "rf3",
-          label: "a ___ pen (nhỏ)",
+          label: "a ___ pen",
           correctAnswers: ["small"],
         },
         {
           id: "rf4",
-          label: "His bag is ___ (mới)",
+          label: "His bag is ___",
           correctAnswers: ["new"],
         },
         {
           id: "rf5",
-          label: "His ___ book is on the shelf (cũ)",
+          label: "His ___ book is on the shelf",
           correctAnswers: ["old"],
         },
         {
           id: "rf6",
-          label: "___ students in class 9A (vui)",
+          label: "___ students in class 9A",
           correctAnswers: ["happy"],
         },
       ],
     },
     {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "a good book",
+          hint: "một quyển sách hay",
+        },
+        {
+          id: "dic-2",
+          text: "a bad day",
+          hint: "một ngày tệ",
+        },
+        {
+          id: "dic-3",
+          text: "a big house",
+          hint: "một ngôi nhà lớn",
+        },
+        {
+          id: "dic-4",
+          text: "a small pen",
+          hint: "một cây bút nhỏ",
+        },
+        {
+          id: "dic-5",
+          text: "a new bag",
+          hint: "một cái cặp mới",
+        },
+        {
+          id: "dic-6",
+          text: "happy students",
+          hint: "những học sinh vui vẻ",
+        },
+      ],
+    },
+    {
       type: "self-writing",
-      title: "Viết cụm a + adj + noun.",
+      title: "Write a + adjective + noun phrases.\nViết cụm a + adj + noun.",
       instruction:
-        "Viết 3 cụm tiếng Anh theo mẫu a + tính từ + danh từ về đồ trong phòng hoặc ở trường.",
+        "Write 3 English phrases: a + adjective + noun, about things in a room or at school.\nViết 3 cụm tiếng Anh theo mẫu a + tính từ + danh từ về đồ trong phòng hoặc ở trường.",
       promptHints: [
         "a good book",
         "a big bag",

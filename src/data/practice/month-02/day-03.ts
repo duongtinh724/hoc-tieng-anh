@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay03: PracticeLesson = {
-  meta: createPracticeMeta(3, "He / She / It + động từ -s", 2),
+  meta: { ...createPracticeMeta(3, "He / She / It + động từ -s", 2), totalScreens: 9 },
   hints: {
     rules: getRulesForDay(3, ""),
     vocabulary: [
@@ -24,8 +24,8 @@ export const practiceDay03: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối động từ -s (1).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match -s verbs (1).\nNối động từ -s (1).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-goes", label: "goes" },
         { id: "w-studies", label: "studies" },
@@ -61,8 +61,8 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "match",
-      title: "Nối động từ -s (2).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match -s verbs (2).\nNối động từ -s (2).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-plays", label: "plays" },
         { id: "w-works", label: "works" },
@@ -91,8 +91,8 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Nguyên mẫu hay -s/-es?",
-      instruction: "Kéo động từ vào đúng nhóm.",
+      title: "Base verb or -s/-es?\nNguyên mẫu hay -s/-es?",
+      instruction: "Drag each verb into the right group.\nKéo động từ vào đúng nhóm.",
       categories: [
         { id: "cat-base", label: "Nguyên mẫu (I/You/We/They)" },
         { id: "cat-s", label: "He/She/It (+ -s/-es)" },
@@ -112,8 +112,8 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Điền động từ -s/-es.",
-      instruction: "Kéo động từ đúng vào chỗ trống. Chủ ngữ là He, She hoặc It.",
+      title: "Fill in the -s/-es verb.\nĐiền động từ -s/-es.",
+      instruction: "Drag the correct verb into the blank. The subject is He, She, or It.\nKéo động từ đúng vào chỗ trống. Chủ ngữ là He, She hoặc It.",
       wordBank: [
         { id: "s-goes", label: "goes" },
         { id: "s-studies", label: "studies" },
@@ -175,8 +175,8 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn động từ -s đúng.",
-      instruction: "Hoàn thành câu với He / She / It + V-s.",
+      title: "Choose the correct -s verb.\nChọn động từ -s đúng.",
+      instruction: "Complete the sentence: He / She / It + verb-s.\nHoàn thành câu với He / She / It + V-s.",
       questions: [
         {
           id: "q1",
@@ -250,9 +250,9 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "reorder",
-      title: "Sắp xếp hội thoại.",
+      title: "Order the dialogue.\nSắp xếp hội thoại.",
       instruction:
-        "Sắp xếp các câu theo đúng thứ tự hội thoại về He / She + động từ -s.",
+        "Put the lines in order. The dialogue uses He / She + verb-s.\nSắp xếp các câu theo đúng thứ tự hội thoại về He / She + động từ -s.",
       fixedFirst: true,
       lines: [
         { id: "r1", text: "Nam: He goes to school." },
@@ -265,49 +265,86 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "He và She.",
+      title: "He and She.\nHe và She.",
       instruction:
-        "Đọc đoạn văn và điền động từ (goes, studies, watches, likes, plays, works, teaches).",
+        "Read the passage and fill in a verb (goes, studies, watches, likes, plays, works, teaches).\nĐọc đoạn văn và điền động từ (goes, studies, watches, likes, plays, works, teaches).",
       passage:
         "Lan talks about her friends. He goes to school every day. She studies English with Nam. My teacher teaches math and English. He watches TV at night. She likes music and plays football on Sunday. It often rains in summer. Remember: he, she, it → verb + s or es.",
       prompts: [
         {
           id: "rf1",
-          label: "He ___ to school. (đi)",
+          label: "He ___ to school.",
           correctAnswers: ["goes"],
         },
         {
           id: "rf2",
-          label: "She ___ English. (học)",
+          label: "She ___ English.",
           correctAnswers: ["studies"],
         },
         {
           id: "rf3",
-          label: "My teacher ___ English. (dạy)",
+          label: "My teacher ___ English.",
           correctAnswers: ["teaches"],
         },
         {
           id: "rf4",
-          label: "He ___ TV at night. (xem)",
+          label: "He ___ TV at night.",
           correctAnswers: ["watches"],
         },
         {
           id: "rf5",
-          label: "She ___ music. (thích)",
+          label: "She ___ music.",
           correctAnswers: ["likes"],
         },
         {
           id: "rf6",
-          label: "She ___ football on Sunday. (chơi)",
+          label: "She ___ football on Sunday.",
           correctAnswers: ["plays"],
         },
       ],
     },
     {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "He goes to school.",
+          hint: "Anh ấy đi học.",
+        },
+        {
+          id: "dic-2",
+          text: "She studies English.",
+          hint: "Cô ấy học tiếng Anh.",
+        },
+        {
+          id: "dic-3",
+          text: "It rains a lot.",
+          hint: "Trời mưa nhiều.",
+        },
+        {
+          id: "dic-4",
+          text: "My teacher teaches English.",
+          hint: "Cô giáo dạy tiếng Anh.",
+        },
+        {
+          id: "dic-5",
+          text: "He watches TV at night.",
+          hint: "Anh ấy xem TV buổi tối.",
+        },
+        {
+          id: "dic-6",
+          text: "She likes music.",
+          hint: "Cô ấy thích âm nhạc.",
+        },
+      ],
+    },
+    {
       type: "self-writing",
-      title: "Viết câu He / She + -s.",
+      title: "Write He / She + -s sentences.\nViết câu He / She + -s.",
       instruction:
-        "Viết 3 câu với He hoặc She + động từ có -s/-es (goes, studies, watches, likes, plays, teaches).",
+        "Write 3 sentences with He or She + a verb ending in -s/-es.\nViết 3 câu với He hoặc She + động từ có -s/-es (goes, studies, watches, likes, plays, teaches).",
       promptHints: [
         "He goes to school.",
         "She studies English.",

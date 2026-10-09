@@ -177,6 +177,57 @@ export interface ExtendedReadingExerciseConfig {
   prompts: ReadingPrompt[];
 }
 
+export interface QuizOption {
+  id: string;
+  label: string;
+}
+
+export interface QuizQuestion {
+  id: string;
+  prompt: string;
+  options: QuizOption[];
+  correctOptionId: string;
+  /** Vì sao đáp án đúng — hiện khi câu sai hoặc bỏ trống. */
+  explanation: string;
+  /** Câu được đọc, không hiện chữ trước khi nộp bài. */
+  listenText?: string;
+  section: "grammar" | "listen" | "reading";
+  passageId?: string;
+}
+
+export interface QuizPassage {
+  id: string;
+  title: string;
+  text: string;
+}
+
+export interface QuizExerciseConfig {
+  type: "quiz";
+  title: string;
+  instruction: string;
+  /** Số câu đúng tối thiểu để qua. */
+  passScore?: number;
+  /** Thời gian làm bài, tính bằng giây. */
+  timeLimitSeconds: number;
+  passages?: QuizPassage[];
+  questions: QuizQuestion[];
+}
+
+export interface DictationItem {
+  id: string;
+  /** Câu hoặc từ học sinh phải chép. */
+  text: string;
+  /** Hiện sau 3 lần sai. */
+  hint: string;
+}
+
+export interface DictationExerciseConfig {
+  type: "dictation";
+  title: string;
+  instruction: string;
+  items: DictationItem[];
+}
+
 export interface SelfWritingExerciseConfig {
   type: "self-writing";
   title: string;
@@ -195,6 +246,8 @@ export type PracticeScreenConfig =
   | ReorderExerciseConfig
   | ReadingFillExerciseConfig
   | ExtendedReadingExerciseConfig
+  | DictationExerciseConfig
+  | QuizExerciseConfig
   | SelfWritingExerciseConfig;
 
 export interface PracticeLesson {
@@ -213,6 +266,8 @@ export interface ScreenState {
   passed: boolean;
   lockedIds: string[];
   wrongAttempts: number;
+  /** Số lần sai theo từng câu — dùng cho nghe chép. */
+  attemptCounts?: Record<string, number>;
   answerKeyRevealed: boolean;
 }
 

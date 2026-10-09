@@ -15,6 +15,14 @@ function normalize(value: string): string {
   return value.trim().toLowerCase().replace(/\s+/g, " ");
 }
 
+export function normalizeDictation(value: string): string {
+  return normalize(value).replace(/[.!?,;:'"]/g, "");
+}
+
+export function matchesDictation(value: string, expected: string): boolean {
+  return normalizeDictation(value) === normalizeDictation(expected);
+}
+
 function matchesAny(value: string, options: string[]): boolean {
   const normalized = normalize(value);
   return options.some((option) => normalize(option) === normalized);
@@ -54,6 +62,10 @@ export function getBlankIds(screen: PracticeScreenConfig): string[] {
       return screen.prompts.map((prompt) => prompt.id);
     case "self-writing":
       return [SELF_WRITING_ANSWER_ID];
+    case "dictation":
+      return screen.items.map((item) => item.id);
+    case "quiz":
+      return screen.questions.map((question) => question.id);
     default:
       return [];
   }
@@ -112,6 +124,10 @@ export function isInstantCorrect(
     }
     case "self-writing":
       return itemId === SELF_WRITING_ANSWER_ID && value.trim().length > 0;
+    case "dictation":
+      return false;
+    case "quiz":
+      return false;
     default:
       return false;
   }
@@ -140,6 +156,61 @@ export function validateScreen(
       pendingCount: hasContent ? 0 : 1,
       feedback,
       lockedIds: state.checked && hasContent ? [SELF_WRITING_ANSWER_ID] : [],
+    };
+  }
+
+  if (screen.type === "quiz") {
+    screen.questions.forEach((question) => {
+      const value = state.answers[question.id];
+      if (!value) {
+        feedback[question.id] = state.checked ? "incorrect" : "empty";
+        if (!state.checked) pendingCount += 1;
+        return;
+      }
+      const correct = value === question.correctOptionId;
+      feedback[question.id] = !state.checked ? "filled" : correct ? "correct" : "incorrect";
+    });
+
+    const correctCount = screen.questions.filter(
+      (question) => state.answers[question.id] === question.correctOptionId,
+    ).length;
+    const passScore = screen.passScore ?? screen.questions.length;
+
+    return {
+      allCorrect: state.checked && correctCount >= passScore,
+      pendingCount: state.checked ? 0 : pendingCount,
+      feedback,
+      lockedIds,
+    };
+  }
+
+  if (screen.type === "dictation") {
+    const active = screen.items.find((item) => !state.lockedIds.includes(item.id));
+
+    screen.items.forEach((item) => {
+      if (state.lockedIds.includes(item.id)) {
+        feedback[item.id] = "locked";
+        return;
+      }
+      if (!active || item.id !== active.id) {
+        feedback[item.id] = "empty";
+        return;
+      }
+      const value = state.answers[item.id] ?? "";
+      if (!value.trim()) {
+        feedback[item.id] = "empty";
+        pendingCount += 1;
+        return;
+      }
+      feedback[item.id] =
+        state.checked && !matchesDictation(value, item.text) ? "incorrect" : "filled";
+    });
+
+    return {
+      allCorrect: screen.items.every((item) => state.lockedIds.includes(item.id)),
+      pendingCount,
+      feedback,
+      lockedIds,
     };
   }
 

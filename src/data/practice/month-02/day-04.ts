@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay04: PracticeLesson = {
-  meta: createPracticeMeta(4, "Do / Does", 2),
+  meta: { ...createPracticeMeta(4, "Do / Does", 2), totalScreens: 9 },
   hints: {
     rules: getRulesForDay(4, ""),
     vocabulary: [
@@ -24,8 +24,8 @@ export const practiceDay04: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối từ (1).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match the words (1).\nNối từ (1).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-do", label: "do" },
         { id: "w-does", label: "does" },
@@ -61,8 +61,8 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "match",
-      title: "Nối từ (2).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match the words (2).\nNối từ (2).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-want", label: "want" },
         { id: "w-need", label: "need" },
@@ -91,8 +91,8 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Do hay Does?",
-      instruction: "Kéo câu hỏi vào đúng nhóm Do hoặc Does.",
+      title: "Do or Does?\nDo hay Does?",
+      instruction: "Drag each question into Do or Does.\nKéo câu hỏi vào đúng nhóm Do hoặc Does.",
       categories: [
         { id: "cat-do", label: "Do + I/you/we/they" },
         { id: "cat-does", label: "Does + he/she/it" },
@@ -109,8 +109,8 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Điền Do hoặc Does.",
-      instruction: "Kéo do hoặc does vào chỗ trống đầu câu hỏi.",
+      title: "Fill in Do or Does.\nĐiền Do hoặc Does.",
+      instruction: "Drag do or does into the blank at the start of the question.\nKéo do hoặc does vào chỗ trống đầu câu hỏi.",
       wordBank: [
         { id: "s-do", label: "Do" },
         { id: "s-does", label: "Does" },
@@ -162,8 +162,8 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn Do hoặc Does.",
-      instruction: "Hoàn thành câu hỏi Present Simple.",
+      title: "Choose Do or Does.\nChọn Do hoặc Does.",
+      instruction: "Complete the Present Simple question.\nHoàn thành câu hỏi Present Simple.",
       questions: [
         {
           id: "q1",
@@ -233,9 +233,9 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "reorder",
-      title: "Sắp xếp hội thoại.",
+      title: "Order the dialogue.\nSắp xếp hội thoại.",
       instruction:
-        "Sắp xếp các câu hỏi và trả lời theo đúng thứ tự hội thoại.",
+        "Put the questions and answers in dialogue order.\nSắp xếp các câu hỏi và trả lời theo đúng thứ tự hội thoại.",
       fixedFirst: true,
       lines: [
         { id: "r1", text: "Lan: Do you study English?" },
@@ -249,49 +249,86 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "Hỏi và trả lời.",
+      title: "Questions and answers.\nHỏi và trả lời.",
       instruction:
-        "Đọc đoạn hội thoại và điền do, does, help, know, want, need hoặc understand.",
+        "Read the dialogue and fill in do, does, help, know, want, need, or understand.\nĐọc đoạn hội thoại và điền do, does, help, know, want, need hoặc understand.",
       passage:
         "Nam and Lan practice questions. Do you study English? Yes, I do. Does she like music? Yes, she does. Do they play football? Yes, they do. Does he go to school? No, he doesn't. Do you need help? I want to understand the lesson. Do you know the answer?",
       prompts: [
         {
           id: "rf1",
-          label: "___ you study English? (Do/Does)",
+          label: "___ you study English?",
           correctAnswers: ["Do"],
         },
         {
           id: "rf2",
-          label: "___ she like music? (Do/Does)",
+          label: "___ she like music?",
           correctAnswers: ["Does"],
         },
         {
           id: "rf3",
-          label: "___ they play football? (Do/Does)",
+          label: "___ they play football?",
           correctAnswers: ["Do"],
         },
         {
           id: "rf4",
-          label: "___ he go to school? (Do/Does)",
+          label: "___ he go to school?",
           correctAnswers: ["Does"],
         },
         {
           id: "rf5",
-          label: "Do you ___ help? (cần)",
+          label: "Do you ___ help?",
           correctAnswers: ["need"],
         },
         {
           id: "rf6",
-          label: "I want to ___ the lesson. (hiểu)",
+          label: "I want to ___ the lesson.",
           correctAnswers: ["understand"],
         },
       ],
     },
     {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "Do you study English?",
+          hint: "Bạn có học tiếng Anh không?",
+        },
+        {
+          id: "dic-2",
+          text: "Does she like music?",
+          hint: "Cô ấy có thích nhạc không?",
+        },
+        {
+          id: "dic-3",
+          text: "Do they play football?",
+          hint: "Họ có chơi bóng không?",
+        },
+        {
+          id: "dic-4",
+          text: "Does he go to school?",
+          hint: "Anh ấy có đi học không?",
+        },
+        {
+          id: "dic-5",
+          text: "Do you need help?",
+          hint: "Bạn có cần giúp không?",
+        },
+        {
+          id: "dic-6",
+          text: "Does she understand?",
+          hint: "Cô ấy có hiểu không?",
+        },
+      ],
+    },
+    {
       type: "self-writing",
-      title: "Viết câu hỏi Do / Does.",
+      title: "Write Do / Does questions.\nViết câu hỏi Do / Does.",
       instruction:
-        "Viết 3 câu hỏi: 2 câu với Do, 1 câu với Does. Có thể dùng study, like, play, go, need, understand.",
+        "Write 3 questions: 2 with Do, 1 with Does. You can use study, like, play, go, need, or understand.\nViết 3 câu hỏi: 2 câu với Do, 1 câu với Does. Có thể dùng study, like, play, go, need, understand.",
       promptHints: [
         "Do you study English?",
         "Do they play football?",

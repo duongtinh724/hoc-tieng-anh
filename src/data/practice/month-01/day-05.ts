@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay05: PracticeLesson = {
-  meta: { ...createPracticeMeta(5, "Cấu trúc S + V"), totalScreens: 7 },
+  meta: { ...createPracticeMeta(5, "Cấu trúc S + V"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(5, ""),
     vocabulary: [
@@ -23,8 +23,8 @@ export const practiceDay05: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối từ S + V.",
-      instruction: "Nối từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
+      title: "Match S + V words.\nNối từ S + V.",
+      instruction: "Match each word with a picture. Tap the picture to see the Vietnamese meaning.\nNối từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
         { id: "w-subject", label: "subject (S)" },
         { id: "w-verb", label: "verb (V)" },
@@ -96,8 +96,8 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Chủ ngữ hay động từ?",
-      instruction: "Kéo từ vào đúng nhóm S hoặc V.",
+      title: "Subject or verb?\nChủ ngữ hay động từ?",
+      instruction: "Drag each word into Subject (S) or Verb (V).\nKéo từ vào đúng nhóm S hoặc V.",
       categories: [
         { id: "cat-s", label: "Chủ ngữ (S)" },
         { id: "cat-v", label: "Động từ (V)" },
@@ -116,8 +116,8 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Tạo câu S + V.",
-      instruction: "Kéo động từ hoặc cụm thời gian vào chỗ trống.",
+      title: "Make S + V sentences.\nTạo câu S + V.",
+      instruction: "Drag a verb or a time phrase into the blank.\nKéo động từ hoặc cụm thời gian vào chỗ trống.",
       wordBank: [
         { id: "s-study", label: "study" },
         { id: "s-work", label: "work" },
@@ -180,8 +180,8 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn động từ đúng.",
-      instruction: "Hoàn thành câu S + V. Có câu ôn tính từ (ngày 4) và động từ (ngày 3).",
+      title: "Choose the correct verb.\nChọn động từ đúng.",
+      instruction: "Complete the S + V sentence. Some items review adjectives (Day 4) and verbs (Day 3).\nHoàn thành câu S + V. Có câu ôn tính từ (ngày 4) và động từ (ngày 3).",
       questions: [
         {
           id: "q1",
@@ -288,8 +288,8 @@ export const practiceDay05: PracticeLesson = {
     {
       type: "reorder",
       layout: "horizontal",
-      title: "Sắp xếp câu S + V.",
-      instruction: "Kéo các từ theo hàng ngang thành câu Chủ ngữ + Động từ.",
+      title: "Order an S + V sentence.\nSắp xếp câu S + V.",
+      instruction: "Drag the words into a line: Subject + Verb.\nKéo các từ theo hàng ngang thành câu Chủ ngữ + Động từ.",
       sentences: [
         {
           id: "sen-1",
@@ -349,24 +349,61 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "Lịch của Nam.",
-      instruction: "Đọc đoạn văn và điền từ vào ô trên cùng một dòng.",
+      title: "Nam's schedule.\nLịch của Nam.",
+      instruction: "Read the passage and type the word in the blank on the same line.\nĐọc đoạn văn và điền từ vào ô trên cùng một dòng.",
       passage:
         "Nam talks about a school day. I study English. You work hard. We go to school. They play football. I study every day. We read in the morning.",
       prompts: [
-        { id: "rf1", label: "I ___ English. (học)", correctAnswers: ["study"] },
-        { id: "rf2", label: "You ___ hard. (làm việc)", correctAnswers: ["work"] },
-        { id: "rf3", label: "We ___ to school. (đi)", correctAnswers: ["go"] },
-        { id: "rf4", label: "They ___ football. (chơi)", correctAnswers: ["play"] },
-        { id: "rf5", label: "I study ___ . (mỗi ngày)", correctAnswers: ["every day"] },
-        { id: "rf6", label: "We read in the ___ . (buổi sáng)", correctAnswers: ["morning"] },
+        { id: "rf1", label: "I ___ English.", correctAnswers: ["study"] },
+        { id: "rf2", label: "You ___ hard.", correctAnswers: ["work"] },
+        { id: "rf3", label: "We ___ to school.", correctAnswers: ["go"] },
+        { id: "rf4", label: "They ___ football.", correctAnswers: ["play"] },
+        { id: "rf5", label: "I study ___ .", correctAnswers: ["every day"] },
+        { id: "rf6", label: "We read in the ___ .", correctAnswers: ["morning"] },
+      ],
+    },
+    {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "I study.",
+          hint: "Tôi học.",
+        },
+        {
+          id: "dic-2",
+          text: "You work.",
+          hint: "Bạn làm việc.",
+        },
+        {
+          id: "dic-3",
+          text: "We go.",
+          hint: "Chúng tôi đi.",
+        },
+        {
+          id: "dic-4",
+          text: "They play.",
+          hint: "Họ chơi.",
+        },
+        {
+          id: "dic-5",
+          text: "I study every day.",
+          hint: "Tôi học mỗi ngày.",
+        },
+        {
+          id: "dic-6",
+          text: "We read in the morning.",
+          hint: "Chúng tôi đọc vào buổi sáng.",
+        },
       ],
     },
     {
       type: "self-writing",
-      title: "Viết câu S + V.",
+      title: "Write S + V sentences.\nViết câu S + V.",
       instruction:
-        "Viết 4 câu đơn giản S + V về lịch của Nam: I ..., You ..., We ..., They ...",
+        "Write 4 simple S + V sentences about Nam's day: I ..., You ..., We ..., They ...\nViết 4 câu đơn giản S + V về lịch của Nam: I ..., You ..., We ..., They ...",
       promptHints: [
         "I study.",
         "You work.",

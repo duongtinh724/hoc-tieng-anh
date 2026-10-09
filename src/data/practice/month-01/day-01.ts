@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay01: PracticeLesson = {
-  meta: { ...createPracticeMeta(1, "Đại từ nhân xưng"), totalScreens: 7 },
+  meta: { ...createPracticeMeta(1, "Đại từ nhân xưng"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(1, ""),
     vocabulary: [
@@ -24,8 +24,8 @@ export const practiceDay01: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối đại từ.",
-      instruction: "Nối đại từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
+      title: "Match the pronouns.\nNối đại từ.",
+      instruction: "Match each pronoun with a picture. Tap the picture to see the Vietnamese meaning.\nNối đại từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
         { id: "w-i", label: "I" },
         { id: "w-you", label: "You" },
@@ -89,8 +89,8 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Người hay vật?",
-      instruction: "Kéo thả vào đúng nhóm: đại từ chỉ người hoặc chỉ vật/con vật.",
+      title: "People or things?\nNgười hay vật?",
+      instruction: "Drag each pronoun into the right group: people, or a thing or animal.\nKéo thả vào đúng nhóm: đại từ chỉ người hoặc chỉ vật/con vật.",
       categories: [
         { id: "cat-people", label: "Chỉ người" },
         { id: "cat-thing", label: "Chỉ vật / con vật" },
@@ -107,8 +107,8 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Điền đại từ.",
-      instruction: "Kéo đại từ vào chỗ trống. (Chưa học chia -s với He/She.)",
+      title: "Fill in the pronoun.\nĐiền đại từ.",
+      instruction: "Drag the pronoun into the blank. (No -s with He/She yet.)\nKéo đại từ vào chỗ trống. (Chưa học chia -s với He/She.)",
       wordBank: [
         { id: "s-i", label: "I" },
         { id: "s-you", label: "You" },
@@ -164,8 +164,8 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn đại từ đúng.",
-      instruction: "Đọc gợi ý tiếng Việt và chọn đại từ tiếng Anh.",
+      title: "Choose the correct pronoun.\nChọn đại từ đúng.",
+      instruction: "Read the hint and choose the English pronoun.\nĐọc gợi ý tiếng Việt và chọn đại từ tiếng Anh.",
       questions: [
         {
           id: "q1",
@@ -240,8 +240,8 @@ export const practiceDay01: PracticeLesson = {
     {
       type: "reorder",
       layout: "horizontal",
-      title: "Sắp xếp câu.",
-      instruction: "Kéo các từ theo hàng ngang. Đại từ đứng đầu câu.",
+      title: "Put the words in order.\nSắp xếp câu.",
+      instruction: "Drag the words into a line. The pronoun comes first.\nKéo các từ theo hàng ngang. Đại từ đứng đầu câu.",
       sentences: [
         {
           id: "sen-1",
@@ -304,25 +304,62 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "Đọc và điền.",
-      instruction: "Đọc đoạn văn và điền đại từ vào ô trên cùng một dòng.",
+      title: "Read and fill in.\nĐọc và điền.",
+      instruction: "Read the passage and type the pronoun in the blank on the same line.\nĐọc đoạn văn và điền đại từ vào ô trên cùng một dòng.",
       passage:
         "Nam learns seven pronouns in class 9A. I study. You go to school. He read books. She like music. It — a cat. We play. They read.",
       prompts: [
-        { id: "rf1", label: "___ study. (tôi)", correctAnswers: ["I"] },
-        { id: "rf2", label: "___ go to school. (bạn)", correctAnswers: ["You"] },
-        { id: "rf3", label: "___ read books. (anh ấy)", correctAnswers: ["He"] },
-        { id: "rf4", label: "___ like music. (cô ấy)", correctAnswers: ["She"] },
-        { id: "rf5", label: "___ — a cat. (nó)", correctAnswers: ["It"] },
-        { id: "rf6", label: "___ play. (chúng tôi)", correctAnswers: ["We"] },
-        { id: "rf7", label: "___ read. (họ)", correctAnswers: ["They"] },
+        { id: "rf1", label: "___ study.", correctAnswers: ["I"] },
+        { id: "rf2", label: "___ go to school.", correctAnswers: ["You"] },
+        { id: "rf3", label: "___ read books.", correctAnswers: ["He"] },
+        { id: "rf4", label: "___ like music.", correctAnswers: ["She"] },
+        { id: "rf5", label: "___ — a cat.", correctAnswers: ["It"] },
+        { id: "rf6", label: "___ play.", correctAnswers: ["We"] },
+        { id: "rf7", label: "___ read.", correctAnswers: ["They"] },
+      ],
+    },
+    {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "I",
+          hint: "tôi",
+        },
+        {
+          id: "dic-2",
+          text: "You",
+          hint: "bạn",
+        },
+        {
+          id: "dic-3",
+          text: "He",
+          hint: "anh ấy",
+        },
+        {
+          id: "dic-4",
+          text: "She",
+          hint: "cô ấy",
+        },
+        {
+          id: "dic-5",
+          text: "It",
+          hint: "nó",
+        },
+        {
+          id: "dic-6",
+          text: "We. They.",
+          hint: "chúng tôi. họ.",
+        },
       ],
     },
     {
       type: "self-writing",
-      title: "Viết câu với đại từ.",
+      title: "Write sentences with pronouns.\nViết câu với đại từ.",
       instruction:
-        "Viết 3 câu tiếng Anh có đại từ I, We, They. Có thể thêm động từ đơn: study, go, read, play.",
+        "Write 3 English sentences with I, We, or They. You can use study, go, read, or play.\nViết 3 câu tiếng Anh có đại từ I, We, They. Có thể thêm động từ đơn: study, go, read, play.",
       promptHints: [
         "I + động từ: I study English.",
         "We + động từ: We go to school.",

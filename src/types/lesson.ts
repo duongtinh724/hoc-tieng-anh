@@ -53,6 +53,8 @@ export interface LessonState {
   progress: Record<string, number[]>;
   /** Số lần hoàn thành luyện tập — key: "tháng-ngày" (vd. "1-3") */
   practiceCompletions?: Record<string, number>;
+  /** Điểm bài kiểm tra trên thang 10 — key: "tháng-ngày" */
+  quizScores?: Record<string, number>;
   /** Tab đang mở — khôi phục sau reload */
   activeSection?: AppSection;
   /** Ngày đang mở màn luyện tập full-screen. null = không mở. */

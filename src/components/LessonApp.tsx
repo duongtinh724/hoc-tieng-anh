@@ -37,6 +37,8 @@ export function LessonApp() {
     toggleDayDone,
     recordPracticeCompletion,
     practiceCompletions,
+    quizScores,
+    recordQuizScore,
   } = useLessonState();
   const weeks = useMemo(() => getWeekOptions(state.month), [state.month]);
   const totalDays = getTotalDays(state.month);
@@ -167,6 +169,7 @@ export function LessonApp() {
           monthConfig={monthConfig}
           week={state.week}
           practiceCompletions={practiceCompletions}
+          quizScores={quizScores}
           onStartPractice={(day) => setOpenPracticeDay(day)}
         />
       )}
@@ -178,6 +181,9 @@ export function LessonApp() {
           onClose={() => setOpenPracticeDay(null)}
           onComplete={() =>
             recordPracticeCompletion(state.month, openPracticeDay)
+          }
+          onQuizScore={(score) =>
+            recordQuizScore(state.month, openPracticeDay, score)
           }
         />
       )}

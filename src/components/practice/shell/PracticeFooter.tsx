@@ -14,6 +14,8 @@ interface PracticeFooterProps {
   canNext: boolean;
   canRevealAnswerKey: boolean;
   isSelfWriting: boolean;
+  isQuiz: boolean;
+  showSubmit?: boolean;
   passed: boolean;
   answerKeyRevealed: boolean;
   showAnswerKey: boolean;
@@ -34,6 +36,8 @@ export function PracticeFooter({
   canNext,
   canRevealAnswerKey,
   isSelfWriting,
+  isQuiz,
+  showSubmit = true,
   passed,
   answerKeyRevealed,
   showAnswerKey,
@@ -85,9 +89,11 @@ export function PracticeFooter({
             {canRevealAnswerKey ? (
               <Button onClick={onRevealAnswerKey}>Xem đáp án</Button>
             ) : null}
+            {showSubmit ? (
             <Button type="primary" disabled={!canCheck} onClick={onCheck} size="large">
-              {isSelfWriting ? "Nộp bài" : `Kiểm tra (${pendingCount})`}
+              {isSelfWriting ? "Nộp bài" : isQuiz ? "Nộp bài" : `Kiểm tra (${pendingCount})`}
             </Button>
+            ) : null}
           </Space>
         )}
       </div>

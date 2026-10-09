@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay03: PracticeLesson = {
-  meta: { ...createPracticeMeta(3, "Động từ cơ bản"), totalScreens: 7 },
+  meta: { ...createPracticeMeta(3, "Động từ cơ bản"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(3, ""),
     vocabulary: [
@@ -24,9 +24,9 @@ export const practiceDay03: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối động từ.",
+      title: "Match the verbs.\nNối động từ.",
       instruction:
-        "Nối động từ tiếng Anh với hình ảnh thật. Chọn từ bên trên, bấm vào ô trống dưới hình.",
+        "Match each verb with a picture. Choose a word, then tap the box under the picture.\nNối động từ tiếng Anh với hình ảnh thật. Chọn từ bên trên, bấm vào ô trống dưới hình.",
       words: [
         { id: "w-eat", label: "eat" },
         { id: "w-go", label: "go" },
@@ -90,8 +90,8 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Phân loại động từ.",
-      instruction: "Kéo động từ vào nhóm phù hợp.",
+      title: "Sort the verbs.\nPhân loại động từ.",
+      instruction: "Drag each verb into the right group.\nKéo động từ vào nhóm phù hợp.",
       categories: [
         { id: "cat-study", label: "Học tập & đọc" },
         { id: "cat-fun", label: "Ăn uống & vui chơi" },
@@ -108,8 +108,8 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Điền động từ.",
-      instruction: "Kéo động từ vào chỗ trống. Chỉ dùng I / You / We / They.",
+      title: "Fill in the verb.\nĐiền động từ.",
+      instruction: "Drag the verb into the blank. Use only I / You / We / They.\nKéo động từ vào chỗ trống. Chỉ dùng I / You / We / They.",
       wordBank: [
         { id: "s-study", label: "study" },
         { id: "s-go", label: "go" },
@@ -171,8 +171,8 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn động từ đúng.",
-      instruction: "Chọn từ đúng. Hai câu cuối là ôn danh từ (ngày 2) và đại từ (ngày 1).",
+      title: "Choose the correct verb.\nChọn động từ đúng.",
+      instruction: "Choose the correct word. The last two items review nouns (Day 2) and pronouns (Day 1).\nChọn từ đúng. Hai câu cuối là ôn danh từ (ngày 2) và đại từ (ngày 1).",
       questions: [
         {
           id: "q1",
@@ -279,9 +279,9 @@ export const practiceDay03: PracticeLesson = {
     {
       type: "reorder",
       layout: "horizontal",
-      title: "Sắp xếp câu.",
+      title: "Put the words in order.\nSắp xếp câu.",
       instruction:
-        "Kéo các từ theo chiều ngang để thành câu đúng. Mỗi câu: Chủ ngữ + Động từ (+ tân ngữ).",
+        "Drag the words into a line. Each sentence is Subject + Verb (+ Object).\nKéo các từ theo chiều ngang để thành câu đúng. Mỗi câu: Chủ ngữ + Động từ (+ tân ngữ).",
       sentences: [
         {
           id: "sen-1",
@@ -344,48 +344,85 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "Một ngày của Nam.",
-      instruction: "Đọc đoạn văn và điền động từ đúng (eat, go, study, like, read, play, work).",
+      title: "Nam's day.\nMột ngày của Nam.",
+      instruction: "Read the passage and fill in the verb (eat, go, study, like, read, play, work).\nĐọc đoạn văn và điền động từ đúng (eat, go, study, like, read, play, work).",
       passage:
         "Nam writes about a school day in class 9A. I eat breakfast at 6:30. You go to school at 7. We study English in the first lesson. They like music at break time. I read books in the library. We play football after school.",
       prompts: [
         {
           id: "rf1",
-          label: "I ___ breakfast. (ăn)",
+          label: "I ___ breakfast.",
           correctAnswers: ["eat"],
         },
         {
           id: "rf2",
-          label: "You ___ to school. (đi)",
+          label: "You ___ to school.",
           correctAnswers: ["go"],
         },
         {
           id: "rf3",
-          label: "We ___ English. (học)",
+          label: "We ___ English.",
           correctAnswers: ["study"],
         },
         {
           id: "rf4",
-          label: "They ___ music. (thích)",
+          label: "They ___ music.",
           correctAnswers: ["like"],
         },
         {
           id: "rf5",
-          label: "I ___ books. (đọc)",
+          label: "I ___ books.",
           correctAnswers: ["read"],
         },
         {
           id: "rf6",
-          label: "We ___ football. (chơi)",
+          label: "We ___ football.",
           correctAnswers: ["play"],
         },
       ],
     },
     {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "I eat breakfast.",
+          hint: "Tôi ăn sáng.",
+        },
+        {
+          id: "dic-2",
+          text: "You go to school.",
+          hint: "Bạn đi học.",
+        },
+        {
+          id: "dic-3",
+          text: "We study English.",
+          hint: "Chúng tôi học tiếng Anh.",
+        },
+        {
+          id: "dic-4",
+          text: "They like music.",
+          hint: "Họ thích âm nhạc.",
+        },
+        {
+          id: "dic-5",
+          text: "I read books.",
+          hint: "Tôi đọc sách.",
+        },
+        {
+          id: "dic-6",
+          text: "We play football.",
+          hint: "Chúng tôi chơi bóng đá.",
+        },
+      ],
+    },
+    {
       type: "self-writing",
-      title: "Viết câu I + động từ.",
+      title: "Write I + verb sentences.\nViết câu I + động từ.",
       instruction:
-        "Viết 4 câu về bản thân với I + động từ: eat, go, study, like, read, play, work.",
+        "Write 4 sentences about yourself with I + a verb: eat, go, study, like, read, play, work.\nViết 4 câu về bản thân với I + động từ: eat, go, study, like, read, play, work.",
       promptHints: [
         "I eat breakfast.",
         "I go to school.",

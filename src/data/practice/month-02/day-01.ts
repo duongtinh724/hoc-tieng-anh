@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay01: PracticeLesson = {
-  meta: createPracticeMeta(1, "Present Simple là gì", 2),
+  meta: { ...createPracticeMeta(1, "Present Simple là gì", 2), totalScreens: 9 },
   hints: {
     rules: getRulesForDay(1, ""),
     vocabulary: [
@@ -24,8 +24,8 @@ export const practiceDay01: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối tần suất (1).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match frequency words (1).\nNối tần suất (1).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-every", label: "every day" },
         { id: "w-always", label: "always" },
@@ -61,8 +61,8 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "match",
-      title: "Nối tần suất (2).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match frequency words (2).\nNối tần suất (2).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-often", label: "often" },
         { id: "w-habit", label: "habit" },
@@ -91,8 +91,8 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Tần suất hay khái niệm?",
-      instruction: "Kéo từ vào đúng nhóm.",
+      title: "Frequency or idea?\nTần suất hay khái niệm?",
+      instruction: "Drag each word into the right group.\nKéo từ vào đúng nhóm.",
       categories: [
         { id: "cat-freq", label: "Tần suất (frequency)" },
         { id: "cat-concept", label: "Khái niệm" },
@@ -109,8 +109,8 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Điền tần suất.",
-      instruction: "Kéo cụm tần suất vào chỗ trống trong câu Present Simple.",
+      title: "Fill in the frequency word.\nĐiền tần suất.",
+      instruction: "Drag a frequency phrase into the Present Simple sentence.\nKéo cụm tần suất vào chỗ trống trong câu Present Simple.",
       wordBank: [
         { id: "s-every", label: "every day" },
         { id: "s-usually", label: "usually" },
@@ -163,8 +163,8 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn đúng trong câu.",
-      instruction: "Hoàn thành câu Present Simple.",
+      title: "Choose the correct word.\nChọn đúng trong câu.",
+      instruction: "Complete the Present Simple sentence.\nHoàn thành câu Present Simple.",
       questions: [
         {
           id: "q1",
@@ -238,9 +238,9 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "reorder",
-      title: "Sắp xếp hội thoại.",
+      title: "Order the dialogue.\nSắp xếp hội thoại.",
       instruction:
-        "Sắp xếp các câu theo đúng thứ tự hội thoại về thói quen hàng ngày của Nam và Lan.",
+        "Put the lines in order. Nam and Lan talk about daily habits.\nSắp xếp các câu theo đúng thứ tự hội thoại về thói quen hàng ngày của Nam và Lan.",
       fixedFirst: true,
       lines: [
         { id: "r1", text: "Nam: I study English every day." },
@@ -253,49 +253,86 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "Thói quen của Nam.",
+      title: "Nam's habits.\nThói quen của Nam.",
       instruction:
-        "Đọc đoạn văn và điền từ (every day, usually, sometimes, often, habit, routine).",
+        "Read the passage and fill in a word (every day, usually, sometimes, often, habit, routine).\nĐọc đoạn văn và điền từ (every day, usually, sometimes, often, habit, routine).",
       passage:
         "Nam is a student in class 9A. He has a good study habit. Every day he studies English. He usually gets up at 6 a.m. School starts at 7 a.m. — that is his morning routine. She sometimes reads books after class. They often play football on Sunday. Present Simple describes habits and facts.",
       prompts: [
         {
           id: "rf1",
-          label: "Nam studies English ___. (mỗi ngày)",
+          label: "Nam studies English ___.",
           correctAnswers: ["every day"],
         },
         {
           id: "rf2",
-          label: "He ___ gets up at 6. (thường)",
+          label: "He ___ gets up at 6.",
           correctAnswers: ["usually"],
         },
         {
           id: "rf3",
-          label: "She ___ reads books. (đôi khi)",
+          label: "She ___ reads books.",
           correctAnswers: ["sometimes"],
         },
         {
           id: "rf4",
-          label: "They ___ play football on Sunday. (thường xuyên)",
+          label: "They ___ play football on Sunday.",
           correctAnswers: ["often"],
         },
         {
           id: "rf5",
-          label: "Nam has a good study ___. (thói quen)",
+          label: "Nam has a good study ___.",
           correctAnswers: ["habit"],
         },
         {
           id: "rf6",
-          label: "That is his morning ___. (thói quen hàng ngày)",
+          label: "That is his morning ___.",
           correctAnswers: ["routine"],
         },
       ],
     },
     {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "I study English every day.",
+          hint: "Tôi học tiếng Anh mỗi ngày.",
+        },
+        {
+          id: "dic-2",
+          text: "Nam is a student.",
+          hint: "Nam là học sinh (sự thật).",
+        },
+        {
+          id: "dic-3",
+          text: "School starts at 7 a.m.",
+          hint: "Trường bắt đầu lúc 7 giờ sáng.",
+        },
+        {
+          id: "dic-4",
+          text: "I usually get up at 6.",
+          hint: "Tôi thường dậy lúc 6 giờ.",
+        },
+        {
+          id: "dic-5",
+          text: "She sometimes reads books.",
+          hint: "Cô ấy đôi khi đọc sách.",
+        },
+        {
+          id: "dic-6",
+          text: "They play football on Sunday.",
+          hint: "Họ chơi bóng vào Chủ nhật.",
+        },
+      ],
+    },
+    {
       type: "self-writing",
-      title: "Viết câu Present Simple.",
+      title: "Write Present Simple sentences.\nViết câu Present Simple.",
       instruction:
-        "Viết 3 câu về thói quen của Nam, dùng every day, usually hoặc sometimes.",
+        "Write 3 sentences about Nam's habits. Use every day, usually, or sometimes.\nViết 3 câu về thói quen của Nam, dùng every day, usually hoặc sometimes.",
       promptHints: [
         "I study English every day.",
         "I usually get up at 6.",

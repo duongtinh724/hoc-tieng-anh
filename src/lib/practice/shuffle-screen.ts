@@ -62,6 +62,14 @@ export function shuffleScreen(screen: PracticeScreenConfig): PracticeScreenConfi
       return screen.promptHints
         ? { ...screen, promptHints: shuffleArray(screen.promptHints) }
         : screen;
+    case "quiz":
+      return {
+        ...screen,
+        questions: shuffleArray(screen.questions).map((question) => ({
+          ...question,
+          options: shuffleArray(question.options),
+        })),
+      };
     default:
       return screen;
   }

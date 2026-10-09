@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay06: PracticeLesson = {
-  meta: { ...createPracticeMeta(6, "Cấu trúc S + V + O"), totalScreens: 7 },
+  meta: { ...createPracticeMeta(6, "Cấu trúc S + V + O"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(6, ""),
     vocabulary: [
@@ -24,8 +24,8 @@ export const practiceDay06: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối tân ngữ.",
-      instruction: "Nối từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
+      title: "Match the objects.\nNối tân ngữ.",
+      instruction: "Match each word with a picture. Tap the picture to see the Vietnamese meaning.\nNối từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
         { id: "w-music", label: "music" },
         { id: "w-english", label: "English" },
@@ -89,8 +89,8 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Phân loại tân ngữ.",
-      instruction: "Kéo tân ngữ vào nhóm phù hợp với câu mẫu trong bài học.",
+      title: "Sort the objects.\nPhân loại tân ngữ.",
+      instruction: "Drag each object into the group that matches the example sentence.\nKéo tân ngữ vào nhóm phù hợp với câu mẫu trong bài học.",
       categories: [
         { id: "cat-learn", label: "Học tập (study / do / read)" },
         { id: "cat-fun", label: "Thích & chơi (like / play)" },
@@ -108,8 +108,8 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Điền tân ngữ (O).",
-      instruction: "Kéo tân ngữ vào chỗ trống sau động từ.",
+      title: "Fill in the object.\nĐiền tân ngữ (O).",
+      instruction: "Drag the object into the blank after the verb.\nKéo tân ngữ vào chỗ trống sau động từ.",
       wordBank: [
         { id: "s-music", label: "music" },
         { id: "s-english", label: "English" },
@@ -186,8 +186,8 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn tân ngữ đúng.",
-      instruction: "Hoàn thành câu S + V + O. Có câu ôn S + V (ngày 5) và tính từ (ngày 4).",
+      title: "Choose the correct object.\nChọn tân ngữ đúng.",
+      instruction: "Complete the S + V + O sentence. Some items review S + V (Day 5) and adjectives (Day 4).\nHoàn thành câu S + V + O. Có câu ôn S + V (ngày 5) và tính từ (ngày 4).",
       questions: [
         {
           id: "q1",
@@ -294,8 +294,8 @@ export const practiceDay06: PracticeLesson = {
     {
       type: "reorder",
       layout: "horizontal",
-      title: "Sắp xếp câu S + V + O.",
-      instruction: "Kéo các từ theo hàng ngang thành câu Chủ ngữ + Động từ + Tân ngữ.",
+      title: "Order an S + V + O sentence.\nSắp xếp câu S + V + O.",
+      instruction: "Drag the words into a line: Subject + Verb + Object.\nKéo các từ theo hàng ngang thành câu Chủ ngữ + Động từ + Tân ngữ.",
       sentences: [
         {
           id: "sen-1",
@@ -358,49 +358,86 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "Sở thích của Nam.",
+      title: "Nam's likes.\nSở thích của Nam.",
       instruction:
-        "Đọc đoạn văn và điền tân ngữ (music, English, football, rice, books, homework, water).",
+        "Read the passage and fill in the object (music, English, football, rice, books, homework, water).\nĐọc đoạn văn và điền tân ngữ (music, English, football, rice, books, homework, water).",
       passage:
         "Nam talks about his day in class 9A. I like music. You read books. We study English. They play football. I eat rice and drink water. We do homework after school. Lan likes music too. Nam and Lan study English every day.",
       prompts: [
         {
           id: "rf1",
-          label: "I like ___. (âm nhạc)",
+          label: "I like ___.",
           correctAnswers: ["music"],
         },
         {
           id: "rf2",
-          label: "We study ___. (tiếng Anh)",
+          label: "We study ___.",
           correctAnswers: ["English"],
         },
         {
           id: "rf3",
-          label: "They play ___. (bóng đá)",
+          label: "They play ___.",
           correctAnswers: ["football"],
         },
         {
           id: "rf4",
-          label: "I eat ___. (cơm)",
+          label: "I eat ___.",
           correctAnswers: ["rice"],
         },
         {
           id: "rf5",
-          label: "You read ___. (sách)",
+          label: "You read ___.",
           correctAnswers: ["books"],
         },
         {
           id: "rf6",
-          label: "We do ___. (bài tập về nhà)",
+          label: "We do ___.",
           correctAnswers: ["homework"],
         },
       ],
     },
     {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "I like music.",
+          hint: "Tôi thích âm nhạc.",
+        },
+        {
+          id: "dic-2",
+          text: "You read books.",
+          hint: "Bạn đọc sách.",
+        },
+        {
+          id: "dic-3",
+          text: "We study English.",
+          hint: "Chúng tôi học tiếng Anh.",
+        },
+        {
+          id: "dic-4",
+          text: "They play football.",
+          hint: "Họ chơi bóng đá.",
+        },
+        {
+          id: "dic-5",
+          text: "I eat rice.",
+          hint: "Tôi ăn cơm.",
+        },
+        {
+          id: "dic-6",
+          text: "We do homework.",
+          hint: "Chúng tôi làm bài tập.",
+        },
+      ],
+    },
+    {
       type: "self-writing",
-      title: "Viết câu S + V + O.",
+      title: "Write S + V + O sentences.\nViết câu S + V + O.",
       instruction:
-        "Viết 4 câu về sở thích và thói quen của Nam theo mẫu S + V + O.",
+        "Write 4 S + V + O sentences about what Nam likes and does.\nViết 4 câu về sở thích và thói quen của Nam theo mẫu S + V + O.",
       promptHints: [
         "I like music.",
         "We study English.",

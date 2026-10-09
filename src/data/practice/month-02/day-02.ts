@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay02: PracticeLesson = {
-  meta: createPracticeMeta(2, "I / You / We / They + động từ", 2),
+  meta: { ...createPracticeMeta(2, "I / You / We / They + động từ", 2), totalScreens: 9 },
   hints: {
     rules: getRulesForDay(2, ""),
     vocabulary: [
@@ -24,8 +24,8 @@ export const practiceDay02: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối động từ (1).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match the verbs (1).\nNối động từ (1).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-live", label: "live" },
         { id: "w-work", label: "work" },
@@ -61,8 +61,8 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "match",
-      title: "Nối động từ (2).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match the verbs (2).\nNối động từ (2).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-drink", label: "drink" },
         { id: "w-read", label: "read" },
@@ -91,8 +91,8 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Chủ ngữ hay động từ?",
-      instruction: "Kéo từ vào đúng nhóm: I/You/We/They hoặc động từ nguyên mẫu.",
+      title: "Subject or verb?\nChủ ngữ hay động từ?",
+      instruction: "Drag each word into I/You/We/They or the base verb.\nKéo từ vào đúng nhóm: I/You/We/They hoặc động từ nguyên mẫu.",
       categories: [
         { id: "cat-subj", label: "I / You / We / They" },
         { id: "cat-verb", label: "Động từ (nguyên mẫu)" },
@@ -111,8 +111,8 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Điền động từ nguyên mẫu.",
-      instruction: "Kéo động từ vào chỗ trống. Chủ ngữ là I, You, We hoặc They.",
+      title: "Fill in the base verb.\nĐiền động từ nguyên mẫu.",
+      instruction: "Drag the verb into the blank. The subject is I, You, We, or They.\nKéo động từ vào chỗ trống. Chủ ngữ là I, You, We hoặc They.",
       wordBank: [
         { id: "s-live", label: "live" },
         { id: "s-work", label: "work" },
@@ -174,8 +174,8 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn động từ đúng.",
-      instruction: "Hoàn thành câu với I / You / We / They + động từ nguyên mẫu.",
+      title: "Choose the correct verb.\nChọn động từ đúng.",
+      instruction: "Complete the sentence: I / You / We / They + base verb.\nHoàn thành câu với I / You / We / They + động từ nguyên mẫu.",
       questions: [
         {
           id: "q1",
@@ -249,9 +249,9 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "reorder",
-      title: "Sắp xếp hội thoại.",
+      title: "Order the dialogue.\nSắp xếp hội thoại.",
       instruction:
-        "Sắp xếp các câu theo đúng thứ tự hội thoại. Mỗi câu có I, You, We hoặc They + động từ nguyên mẫu.",
+        "Put the lines in order. Each line uses I, You, We, or They + a base verb.\nSắp xếp các câu theo đúng thứ tự hội thoại. Mỗi câu có I, You, We hoặc They + động từ nguyên mẫu.",
       fixedFirst: true,
       lines: [
         { id: "r1", text: "Nam: I live in Bắc Ninh." },
@@ -264,49 +264,86 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "Một ngày của Nam.",
+      title: "Nam's day.\nMột ngày của Nam.",
       instruction:
-        "Đọc đoạn văn và điền động từ (live, work, play, eat, drink, read, watch).",
+        "Read the passage and fill in a verb (live, work, play, eat, drink, read, watch).\nĐọc đoạn văn và điền động từ (live, work, play, eat, drink, read, watch).",
       passage:
         "Nam and his friends talk about daily life. I live in Bắc Ninh. You work hard at school. We study and read English every day. They play football after class. I eat breakfast at 6 and drink water. In the evening we watch TV together. I, you, we, they — all use the base verb, no -s.",
       prompts: [
         {
           id: "rf1",
-          label: "I ___ in Bắc Ninh. (sống)",
+          label: "I ___ in Bắc Ninh.",
           correctAnswers: ["live"],
         },
         {
           id: "rf2",
-          label: "You ___ hard. (làm việc)",
+          label: "You ___ hard.",
           correctAnswers: ["work"],
         },
         {
           id: "rf3",
-          label: "They ___ football. (chơi)",
+          label: "They ___ football.",
           correctAnswers: ["play"],
         },
         {
           id: "rf4",
-          label: "I ___ breakfast at 6. (ăn)",
+          label: "I ___ breakfast at 6.",
           correctAnswers: ["eat"],
         },
         {
           id: "rf5",
-          label: "I ___ water. (uống)",
+          label: "I ___ water.",
           correctAnswers: ["drink"],
         },
         {
           id: "rf6",
-          label: "We ___ TV in the evening. (xem)",
+          label: "We ___ TV in the evening.",
           correctAnswers: ["watch"],
         },
       ],
     },
     {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "I live in Bắc Ninh.",
+          hint: "Tôi sống ở Bắc Ninh.",
+        },
+        {
+          id: "dic-2",
+          text: "You work hard.",
+          hint: "Bạn làm việc chăm chỉ.",
+        },
+        {
+          id: "dic-3",
+          text: "We study English.",
+          hint: "Chúng tôi học tiếng Anh.",
+        },
+        {
+          id: "dic-4",
+          text: "They play football.",
+          hint: "Họ chơi bóng đá.",
+        },
+        {
+          id: "dic-5",
+          text: "I eat breakfast at 6.",
+          hint: "Tôi ăn sáng lúc 6 giờ.",
+        },
+        {
+          id: "dic-6",
+          text: "We watch TV in the evening.",
+          hint: "Chúng tôi xem TV buổi tối.",
+        },
+      ],
+    },
+    {
       type: "self-writing",
-      title: "Viết câu I / You / We / They.",
+      title: "Write I / You / We / They sentences.\nViết câu I / You / We / They.",
       instruction:
-        "Viết 4 câu: I ..., You ..., We ..., They ... (dùng live, work, play, eat, read hoặc watch).",
+        "Write 4 sentences: I ..., You ..., We ..., They ... Use live, work, play, eat, read, or watch.\nViết 4 câu: I ..., You ..., We ..., They ... (dùng live, work, play, eat, read hoặc watch).",
       promptHints: [
         "I live in Bắc Ninh.",
         "You work hard.",

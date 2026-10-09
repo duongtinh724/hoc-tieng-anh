@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay06: PracticeLesson = {
-  meta: createPracticeMeta(6, "Câu hỏi Present Simple", 2),
+  meta: { ...createPracticeMeta(6, "Câu hỏi Present Simple", 2), totalScreens: 9 },
   hints: {
     rules: getRulesForDay(6, ""),
     vocabulary: [
@@ -24,8 +24,8 @@ export const practiceDay06: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối từ (1).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match the words (1).\nNối từ (1).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-howoften", label: "how often" },
         { id: "w-whattime", label: "what time" },
@@ -61,8 +61,8 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "match",
-      title: "Nối từ (2).",
-      instruction: "Nối từ tiếng Anh với nghĩa tiếng Việt.",
+      title: "Match the words (2).\nNối từ (2).",
+      instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-begin", label: "begin" },
         { id: "w-end", label: "end" },
@@ -91,8 +91,8 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Do hay Does trong câu hỏi Wh-?",
-      instruction: "Kéo câu hỏi vào đúng nhóm do hoặc does.",
+      title: "Do or Does in Wh- questions?\nDo hay Does trong câu hỏi Wh-?",
+      instruction: "Drag each question into do or does.\nKéo câu hỏi vào đúng nhóm do hoặc does.",
       categories: [
         { id: "cat-do", label: "Wh- + do + ..." },
         { id: "cat-does", label: "Wh- + does + ..." },
@@ -109,8 +109,8 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Điền do hoặc does.",
-      instruction: "Kéo do hoặc does vào câu hỏi Wh-.",
+      title: "Fill in do or does.\nĐiền do hoặc does.",
+      instruction: "Drag do or does into the Wh- question.\nKéo do hoặc does vào câu hỏi Wh-.",
       wordBank: [
         { id: "s-do", label: "do" },
         { id: "s-does", label: "does" },
@@ -168,8 +168,8 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn do hoặc does.",
-      instruction: "Hoàn thành câu hỏi Wh- Present Simple.",
+      title: "Choose do or does.\nChọn do hoặc does.",
+      instruction: "Complete the Wh- question in the Present Simple.\nHoàn thành câu hỏi Wh- Present Simple.",
       questions: [
         {
           id: "q1",
@@ -243,9 +243,9 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "reorder",
-      title: "Sắp xếp hội thoại.",
+      title: "Order the dialogue.\nSắp xếp hội thoại.",
       instruction:
-        "Sắp xếp các câu hỏi Wh- và trả lời theo đúng thứ tự hội thoại.",
+        "Put the Wh- questions and answers in dialogue order.\nSắp xếp các câu hỏi Wh- và trả lời theo đúng thứ tự hội thoại.",
       fixedFirst: true,
       lines: [
         { id: "r1", text: "Lan: What do you study?" },
@@ -259,51 +259,88 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "Câu hỏi Wh-.",
+      title: "Wh- questions.\nCâu hỏi Wh-.",
       instruction:
-        "Đọc đoạn văn và điền từ (how often, what time, start, finish, begin, end, exercise).",
+        "Read the passage and fill in a word (how often, what time, start, finish, begin, end, exercise).\nĐọc đoạn văn và điền từ (how often, what time, start, finish, begin, end, exercise).",
       passage:
         "Nam asks questions in class. What do you study? I study English. Where does she live? She lives in Bắc Ninh. When do they play football? On Sunday. What time does school start? School starts at 7 a.m. What time does school finish? School finishes at 5 p.m. How often do you exercise? I exercise every day. Why does he study English? For the exam.",
       prompts: [
         {
           id: "rf1",
-          label: "___ do you exercise? (bao lâu một lần)",
+          label: "___ do you exercise?",
           correctAnswers: ["How often"],
           alternatives: ["how often"],
         },
         {
           id: "rf2",
-          label: "___ does school start? (mấy giờ)",
+          label: "___ does school start?",
           correctAnswers: ["What time"],
           alternatives: ["what time"],
         },
         {
           id: "rf3",
-          label: "School ___ at 7 a.m. (bắt đầu)",
+          label: "School ___ at 7 a.m.",
           correctAnswers: ["starts", "start"],
         },
         {
           id: "rf4",
-          label: "School ___ at 5 p.m. (kết thúc)",
+          label: "School ___ at 5 p.m.",
           correctAnswers: ["finishes", "finish", "ends", "end"],
         },
         {
           id: "rf5",
-          label: "I ___ every day. (tập thể dục)",
+          label: "I ___ every day.",
           correctAnswers: ["exercise"],
         },
         {
           id: "rf6",
-          label: "What ___ you study? (do/does)",
+          label: "What ___ you study?",
           correctAnswers: ["do"],
         },
       ],
     },
     {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "What do you study?",
+          hint: "Bạn học gì?",
+        },
+        {
+          id: "dic-2",
+          text: "Where does she live?",
+          hint: "Cô ấy sống ở đâu?",
+        },
+        {
+          id: "dic-3",
+          text: "When do they play football?",
+          hint: "Họ chơi bóng khi nào?",
+        },
+        {
+          id: "dic-4",
+          text: "What time does school start?",
+          hint: "Trường bắt đầu mấy giờ?",
+        },
+        {
+          id: "dic-5",
+          text: "How often do you exercise?",
+          hint: "Bạn tập thể dục bao lâu một lần?",
+        },
+        {
+          id: "dic-6",
+          text: "Why does he study English?",
+          hint: "Tại sao anh ấy học tiếng Anh?",
+        },
+      ],
+    },
+    {
       type: "self-writing",
-      title: "Viết câu hỏi Wh-.",
+      title: "Write Wh- questions.\nViết câu hỏi Wh-.",
       instruction:
-        "Viết 3 câu hỏi Wh- với do/does: What..., Where... hoặc How often...",
+        "Write 3 Wh- questions with do/does: What..., Where..., or How often...\nViết 3 câu hỏi Wh- với do/does: What..., Where... hoặc How often...",
       promptHints: [
         "What do you study?",
         "Where does she live?",

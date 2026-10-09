@@ -13,6 +13,7 @@ interface PracticeMenuPanelProps {
   monthConfig: MonthConfig;
   week: number;
   practiceCompletions: Record<string, number>;
+  quizScores: Record<string, number>;
   onStartPractice: (day: number) => void;
 }
 
@@ -20,6 +21,7 @@ export function PracticeMenuPanel({
   monthConfig,
   week,
   practiceCompletions,
+  quizScores,
   onStartPractice,
 }: PracticeMenuPanelProps) {
   const days = getDaysByWeek(monthConfig.id, week);
@@ -54,12 +56,15 @@ export function PracticeMenuPanel({
             day.day,
           );
           const tier = getPracticeCompletionTier(completionCount);
+          const isQuiz = practice?.screens.some((screen) => screen.type === "quiz") ?? false;
+          const quizScore = quizScores[`${monthConfig.id}-${day.day}`];
+          const hasQuizScore = isQuiz && quizScore !== undefined;
 
           return (
             <li key={day.day}>
               <button
                 type="button"
-                className={`practice-day-card${available ? "" : " is-unavailable"}${tier !== "none" ? ` practice-day-card--${tier}` : ""}`}
+                className={`practice-day-card${available ? "" : " is-unavailable"}${hasQuizScore ? " practice-day-card--done" : ""}${tier !== "none" ? ` practice-day-card--${tier}` : ""}`}
                 disabled={!available}
                 onClick={() => onStartPractice(day.day)}
               >
@@ -68,11 +73,19 @@ export function PracticeMenuPanel({
                   <strong>{day.title}</strong>
                   <span className="practice-day-card-meta">
                     {available
-                      ? `${practice?.meta.title ?? day.title} · 8 bài`
+                      ? isQuiz
+                        ? `${practice?.meta.title ?? day.title} · 30 câu`
+                        : `${practice?.meta.title ?? day.title} · 8 bài`
                       : "Sắp có"}
                   </span>
                 </span>
-                {available && completionCount > 0 ? (
+                {hasQuizScore ? (
+                  <span
+                    className={`practice-quiz-score-badge${quizScore >= 6 ? " is-pass" : " is-fail"}`}
+                  >
+                    {Number.isInteger(quizScore) ? quizScore : quizScore.toFixed(1)}/10
+                  </span>
+                ) : available && completionCount > 0 ? (
                   <span
                     className={`practice-completion-badge practice-completion-badge--${tier}`}
                     title={getPracticeCompletionTooltip(completionCount)}

@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay02: PracticeLesson = {
-  meta: { ...createPracticeMeta(2, "Danh từ cơ bản"), totalScreens: 7 },
+  meta: { ...createPracticeMeta(2, "Danh từ cơ bản"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(2, ""),
     vocabulary: [
@@ -24,8 +24,8 @@ export const practiceDay02: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Nối danh từ.",
-      instruction: "Nối danh từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
+      title: "Match the nouns.\nNối danh từ.",
+      instruction: "Match each noun with a picture. Tap the picture to see the Vietnamese meaning.\nNối danh từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
         { id: "w-book", label: "book" },
         { id: "w-student", label: "student" },
@@ -89,8 +89,8 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Người hay đồ vật / nơi?",
-      instruction: "Kéo danh từ vào đúng nhóm.",
+      title: "People or things and places?\nNgười hay đồ vật / nơi?",
+      instruction: "Drag each noun into the right group.\nKéo danh từ vào đúng nhóm.",
       categories: [
         { id: "cat-person", label: "Người" },
         { id: "cat-thing", label: "Đồ vật & nơi chốn" },
@@ -107,8 +107,8 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Điền danh từ.",
-      instruction: "Kéo danh từ vào chỗ trống trong câu.",
+      title: "Fill in the noun.\nĐiền danh từ.",
+      instruction: "Drag the noun into the blank.\nKéo danh từ vào chỗ trống trong câu.",
       wordBank: [
         { id: "s-school", label: "school" },
         { id: "s-pen", label: "pen" },
@@ -171,8 +171,8 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Chọn danh từ đúng.",
-      instruction: "Đọc gợi ý và chọn từ đúng. Có một câu ôn đại từ (ngày 1).",
+      title: "Choose the correct noun.\nChọn danh từ đúng.",
+      instruction: "Choose the correct word. One item reviews pronouns from Day 1.\nĐọc gợi ý và chọn từ đúng. Có một câu ôn đại từ (ngày 1).",
       questions: [
         {
           id: "q1",
@@ -259,8 +259,8 @@ export const practiceDay02: PracticeLesson = {
     {
       type: "reorder",
       layout: "horizontal",
-      title: "Sắp xếp câu.",
-      instruction: "Kéo các từ theo hàng ngang thành câu có danh từ.",
+      title: "Put the words in order.\nSắp xếp câu.",
+      instruction: "Drag the words into a line to make a sentence with a noun.\nKéo các từ theo hàng ngang thành câu có danh từ.",
       sentences: [
         {
           id: "sen-1",
@@ -320,24 +320,61 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "reading-fill",
-      title: "Ở trường.",
-      instruction: "Đọc đoạn văn và điền danh từ vào ô trên cùng một dòng.",
+      title: "At school.\nỞ trường.",
+      instruction: "Read the passage and type the noun in the blank on the same line.\nĐọc đoạn văn và điền danh từ vào ô trên cùng một dòng.",
       passage:
         "Nam and Lan are in class 9A. We go to school. My pen and my bag. My book is on the desk. Nam, student. The teacher is in the classroom.",
       prompts: [
-        { id: "rf1", label: "We go to ___ . (trường)", correctAnswers: ["school"] },
-        { id: "rf2", label: "My ___ and my bag. (bút)", correctAnswers: ["pen"] },
-        { id: "rf3", label: "My pen and my ___ . (cặp)", correctAnswers: ["bag"] },
-        { id: "rf4", label: "My ___ is on the desk. (sách)", correctAnswers: ["book"] },
-        { id: "rf5", label: "Nam, ___ . (học sinh)", correctAnswers: ["student"] },
-        { id: "rf6", label: "The ___ is in the classroom. (giáo viên)", correctAnswers: ["teacher"] },
+        { id: "rf1", label: "We go to ___ .", correctAnswers: ["school"] },
+        { id: "rf2", label: "My ___ and my bag.", correctAnswers: ["pen"] },
+        { id: "rf3", label: "My pen and my ___ .", correctAnswers: ["bag"] },
+        { id: "rf4", label: "My ___ is on the desk.", correctAnswers: ["book"] },
+        { id: "rf5", label: "Nam, ___ .", correctAnswers: ["student"] },
+        { id: "rf6", label: "The ___ is in the classroom.", correctAnswers: ["teacher"] },
+      ],
+    },
+    {
+      type: "dictation",
+      title: "Listen and write.\nNghe và chép lại.",
+      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      items: [
+        {
+          id: "dic-1",
+          text: "book",
+          hint: "sách",
+        },
+        {
+          id: "dic-2",
+          text: "student",
+          hint: "học sinh",
+        },
+        {
+          id: "dic-3",
+          text: "teacher",
+          hint: "giáo viên",
+        },
+        {
+          id: "dic-4",
+          text: "house",
+          hint: "nhà",
+        },
+        {
+          id: "dic-5",
+          text: "school",
+          hint: "trường học",
+        },
+        {
+          id: "dic-6",
+          text: "pen and bag",
+          hint: "bút và cặp",
+        },
       ],
     },
     {
       type: "self-writing",
-      title: "Viết câu với danh từ.",
+      title: "Write sentences with nouns.\nViết câu với danh từ.",
       instruction:
-        "Viết 3 câu tiếng Anh có danh từ hôm nay: school, pen, book, bag, house, student, teacher.",
+        "Write 3 English sentences with today's nouns: school, pen, book, bag, house, student, teacher.\nViết 3 câu tiếng Anh có danh từ hôm nay: school, pen, book, bag, house, student, teacher.",
       promptHints: [
         "We go to school.",
         "My pen and my bag.",

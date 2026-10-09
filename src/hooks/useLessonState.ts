@@ -203,6 +203,17 @@ export function useLessonState() {
     });
   }, []);
 
+  const recordQuizScore = useCallback((month: number, day: number, score: number) => {
+    const key = getPracticeCompletionKey(month, day);
+    setState((prev) => ({
+      ...prev,
+      quizScores: {
+        ...(prev.quizScores ?? {}),
+        [key]: score,
+      },
+    }));
+  }, []);
+
   const toggleDayDone = useCallback((day: number, done: boolean) => {
     setState((prev) => {
       const key = String(prev.month);
@@ -255,5 +266,7 @@ export function useLessonState() {
     toggleDayDone,
     recordPracticeCompletion,
     practiceCompletions: state.practiceCompletions ?? {},
+    quizScores: state.quizScores ?? {},
+    recordQuizScore,
   };
 }

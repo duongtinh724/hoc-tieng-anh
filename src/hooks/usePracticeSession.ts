@@ -13,8 +13,14 @@ import {
 import type { PracticeScreenConfig } from "@/types/practice";
 import { applyAnswerKey } from "@/lib/practice/apply-answer-key";
 import {
+  playCompleteSound,
+  playCorrectSound,
+  playWrongSound,
+} from "@/lib/practice-sound";
+import {
   getPendingCount,
   isInstantCorrect,
+  matchesDictation,
   validateScreen,
 } from "@/lib/practice/validate-screen";
 import type { ItemState, PracticeLesson, ScreenState } from "@/types/practice";
@@ -91,9 +97,15 @@ export function usePracticeSession(month: number, day: number) {
       if (!screen) return;
 
       updateCurrentState((prev) => {
-        if (prev.passed) return prev;
+        if (prev.passed || (screen.type === "quiz" && prev.checked)) return prev;
 
         const instant = isInstantCorrect(screen, itemId, value);
+        const gradedNow = screen.type !== "quiz";
+        if (gradedNow && instant && prev.feedback[itemId] !== "correct") {
+          playCorrectSound();
+        } else if (gradedNow && !instant) {
+          playWrongSound();
+        }
         const feedback: Record<string, ItemState> = {
           ...prev.feedback,
           [itemId]: instant ? "correct" : "filled",
@@ -147,6 +159,9 @@ export function usePracticeSession(month: number, day: number) {
 
         const instant =
           value.trim().length > 0 && isInstantCorrect(screen, itemId, value);
+        if (instant && prev.feedback[itemId] !== "correct") {
+          playCorrectSound();
+        }
         return {
           ...prev,
           answers: { ...prev.answers, [itemId]: value },
@@ -201,9 +216,57 @@ export function usePracticeSession(month: number, day: number) {
   const checkAnswers = useCallback(() => {
     if (!screen) return;
 
+    if (screen.type === "dictation") {
+      updateCurrentState((prev) => {
+        if (prev.passed) return prev;
+        const active = screen.items.find((item) => !prev.lockedIds.includes(item.id));
+        if (!active) return prev;
+        const value = prev.answers[active.id] ?? "";
+        if (!value.trim()) return prev;
+
+        if (matchesDictation(value, active.text)) {
+          playCorrectSound();
+          const lockedIds = [...prev.lockedIds, active.id];
+          return {
+            ...prev,
+            lockedIds,
+            checked: true,
+            passed: lockedIds.length === screen.items.length,
+            feedback: { ...prev.feedback, [active.id]: "locked" },
+          };
+        }
+
+        playWrongSound();
+        const attempts = (prev.attemptCounts?.[active.id] ?? 0) + 1;
+        return {
+          ...prev,
+          checked: true,
+          attemptCounts: { ...prev.attemptCounts, [active.id]: attempts },
+          feedback: { ...prev.feedback, [active.id]: "incorrect" },
+        };
+      });
+      return;
+    }
+
+    const isLastScreen = currentScreen === shuffledScreens.length - 1;
+
     updateCurrentState((prev) => {
+      if (prev.passed || (screen.type === "quiz" && prev.checked)) return prev;
+
       const result = validateScreen(screen, { ...prev, checked: true });
       const isSelfWriting = screen.type === "self-writing";
+
+      if (result.allCorrect) {
+        if (isLastScreen || screen.type === "quiz") playCompleteSound();
+        else if (screen.type === "reorder") playCorrectSound();
+      } else if (
+        screen.type === "reorder" ||
+        screen.type === "reading-fill" ||
+        screen.type === "extended-reading" ||
+        screen.type === "quiz"
+      ) {
+        playWrongSound();
+      }
 
       return {
         ...prev,
@@ -212,12 +275,12 @@ export function usePracticeSession(month: number, day: number) {
         feedback: result.feedback,
         lockedIds: result.lockedIds,
         wrongAttempts:
-          isSelfWriting || result.allCorrect
+          isSelfWriting || result.allCorrect || screen.type === "quiz"
             ? prev.wrongAttempts
             : prev.wrongAttempts + 1,
       };
     });
-  }, [screen, updateCurrentState]);
+  }, [currentScreen, screen, shuffledScreens.length, updateCurrentState]);
 
   const revealAnswerKey = useCallback(() => {
     if (!screen) return;
@@ -271,12 +334,17 @@ export function usePracticeSession(month: number, day: number) {
     [screenStates],
   );
 
-  const canCheck = validation.pendingCount === 0 && !state?.passed;
+  const canCheck =
+    screen?.type === "quiz"
+      ? Boolean(state && !state.checked && !state.passed)
+      : validation.pendingCount === 0 && !state?.passed;
   const canNext =
     Boolean(state?.passed) && currentScreen < shuffledScreens.length - 1;
   const isSelfWriting = screen?.type === "self-writing";
   const canRevealAnswerKey = Boolean(
     !isSelfWriting &&
+      screen?.type !== "dictation" &&
+      screen?.type !== "quiz" &&
       state &&
       !state.passed &&
       !state.answerKeyRevealed &&
@@ -304,6 +372,7 @@ export function usePracticeSession(month: number, day: number) {
     canNext,
     canRevealAnswerKey,
     isSelfWriting,
+    isQuiz: screen?.type === "quiz",
     allScreensPassed,
     setHintOpen,
     setSelectedWordId,
