@@ -4,189 +4,368 @@ import { splitRuleSegments } from "@/lib/format-rule";
 export const DAY_RULES: Record<number, RuleItem[]> = {
   1: [
     {
-      text: "S (chủ ngữ) = người hoặc vật làm việc trong câu. S đứng đầu câu.",
-      example: "I study English.",
-      exampleVi: "Tôi học tiếng Anh. I là chủ ngữ.",
+      text: "I = tôi · You = bạn · He = anh ấy · She = cô ấy · It = vật hoặc con vật · We = chúng tôi · They = họ.",
+      example: "I",
+      exampleVi: "tôi",
     },
     {
-      text: "I = tôi. You = bạn. Hai từ này là chủ ngữ.",
-      example: "You go to school.",
-      exampleVi: "Bạn đi học. You là chủ ngữ.",
-    },
-    {
-      text: "He = một bạn trai. She = một bạn gái. It = một vật hoặc con vật.",
-      example: "He like music. It — a book.",
-      exampleVi: "Anh ấy thích nhạc. Nó là một quyển sách. Chưa thêm -s.",
-    },
-    {
-      text: "We = chúng tôi. They = họ. Dùng khi nói về nhiều người.",
-      example: "They play football.",
-      exampleVi: "Họ chơi bóng đá. They là chủ ngữ.",
+      text: "Nhận ra I, you, he, she, it, we, they đứng đầu câu.",
+      example: "You",
+      exampleVi: "bạn",
     },
   ],
   2: [
     {
-      text: "Noun (danh từ) = tên của người, vật hoặc nơi. Danh từ không phải hành động.",
-      example: "student = học sinh, book = sách, school = trường.",
-      exampleVi: "student là người, book là vật, school là nơi.",
+      text: "I + am.\nHe / She / It + is.\nYou / We / They + are.",
+      example: "I am a student.",
+      exampleVi: "Tôi là học sinh.",
     },
     {
-      text: "Danh từ có thể đứng sau a, hoặc đứng sau động từ.",
-      example: "a book. I read a book.",
-      exampleVi: "một quyển sách. Tôi đọc sách.",
-    },
-    {
-      text: "a + danh từ đếm được số ít.",
-      example: "a pen, a bag, a house",
-      exampleVi: "một cây bút, một cái cặp, một ngôi nhà.",
+      text: "Chọn đúng am, is hoặc are sau đại từ.",
+      example: "You are my friend.",
+      exampleVi: "Bạn là bạn tôi.",
     },
   ],
   3: [
     {
-      text: "V (động từ) = hành động hoặc việc ai đó làm.",
-      example: "eat = ăn, go = đi, study = học.",
-      exampleVi: "I eat breakfast. Tôi ăn sáng. eat là động từ.",
+      text: "I am + …\nHe / She / It is + …\nYou / We / They are + …",
+      example: "I am Nam.",
+      exampleVi: "Tôi là Nam.",
     },
     {
-      text: "Câu ngắn: S + V. Chủ ngữ đứng trước, động từ đứng ngay sau.",
-      example: "I study. You go to school.",
-      exampleVi: "Tôi học. Bạn đi học.",
-    },
-    {
-      text: "Hôm nay chỉ dùng I, You, We, They + động từ, không thêm -s.",
-      example: "We play football. They like music.",
-      exampleVi: "Chúng tôi chơi bóng. Họ thích nhạc.",
+      text: "Viết câu khẳng định: đại từ + am/is/are + từ còn lại.",
+      example: "I am fifteen.",
+      exampleVi: "Tôi 15 tuổi.",
     },
   ],
   4: [
     {
-      text: "Adj (tính từ) = từ mô tả danh từ: to, nhỏ, tốt, mới, cũ, vui.",
-      example: "big, small, good, new, old, happy",
-      exampleVi: "big = to, small = nhỏ, good = tốt.",
+      text: "I am not.\nHe / She / It is not (isn't).\nYou / We / They are not (aren't).",
+      example: "I am not sad.",
+      exampleVi: "Tôi không buồn.",
     },
     {
-      text: "Tính từ đứng ngay trước danh từ: a + tính từ + danh từ.",
-      example: "a big house. a good book.",
-      exampleVi: "một ngôi nhà lớn. một quyển sách hay.",
-    },
-    {
-      text: "Tính từ không đứng một mình thành câu. Luôn đi kèm danh từ.",
-      example: "a small pen. happy students.",
-      exampleVi: "một cây bút nhỏ. những học sinh vui.",
+      text: "Thêm not sau am, is, are.",
+      example: "He is not busy.",
+      exampleVi: "Anh ấy không bận.",
     },
   ],
   5: [
-    { text: "Cấu trúc S + V.", example: "I study. / We work." },
-    { text: "Chủ ngữ + động từ (nguyên mẫu).", example: "Nam studies → chưa học -s, dùng: Nam study (luyện cấu trúc)" },
+    {
+      text: "Are you …? — Yes, I am. / No, I'm not.\nIs he / she / it …? — Yes, he is. / No, he isn't.\nAre we / they …? — Yes, they are. / No, they aren't.",
+      example: "Are you a student?",
+      exampleVi: "Bạn là học sinh phải không?",
+    },
+    {
+      text: "Đảo am/is/are lên trước chủ ngữ. Trả lời ngắn Yes hoặc No.",
+      example: "Yes, I am.",
+      exampleVi: "Vâng, tôi là.",
+    },
   ],
   6: [
-    { text: "Cấu trúc S + V + O.", example: "I study English.", exampleVi: "Tôi học tiếng Anh." },
-    { text: "O = tân ngữ (nhận hành động).", example: "We like music." },
+    {
+      text: "I am + tên. I am fifteen years old. I am a student.",
+      example: "I am Nam.",
+      exampleVi: "Tôi là Nam.",
+    },
+    {
+      text: "Nói tên, tuổi và mình là học sinh bằng câu đơn giản.",
+      example: "I am fifteen years old.",
+      exampleVi: "Tôi 15 tuổi.",
+    },
   ],
   7: [
-    { text: "Không mở vở khi làm bài.", example: "Gấp vở trước phần A." },
-    { text: "Mục tiêu ≥ 12/20 ý.", example: "Dưới 10: học lại ngày 3 và ngày 5." },
+    {
+      text: "Ôn I am / You are / He is / We are / They are, phủ định not, câu hỏi đảo am/is/are.",
+      example: "I am a student.",
+      exampleVi: "Tôi là học sinh.",
+    },
+    {
+      text: "Kiểm tra đại từ và to be. Không học từ mới.",
+      example: "Are you happy?",
+      exampleVi: "Bạn vui phải không?",
+    },
   ],
   8: [
-    { text: "I → am.", example: "I am Nam.", exampleVi: "Tôi là Nam." },
-    { text: "He / She / It → is.", example: "She is a teacher." },
-    { text: "You / We / They → are.", example: "They are students." },
+    {
+      text: "Danh từ không phải hành động. student là người, book là vật, school là nơi.",
+      example: "I am a student.",
+      exampleVi: "Tôi là học sinh.",
+    },
+    {
+      text: "Biết danh từ là tên người, vật hoặc nơi.",
+      example: "She is a teacher.",
+      exampleVi: "Cô ấy là giáo viên.",
+    },
   ],
   9: [
-    { text: "I am + danh từ/tính từ.", example: "I am a student.", exampleVi: "Tôi là học sinh." },
-    { text: "You are + ...", example: "You are my friend." },
+    {
+      text: "Một vật: a book.\nNhiều vật: books.\nstudent → students.",
+      example: "It is a book.",
+      exampleVi: "Nó là một quyển sách.",
+    },
+    {
+      text: "Đổi danh từ số ít sang số nhiều bằng -s.",
+      example: "They are books.",
+      exampleVi: "Chúng là những quyển sách.",
+    },
   ],
   10: [
-    { text: "He is / She is / It is.", example: "He is Nam.", exampleVi: "Anh ấy là Nam." },
-    { text: "It is + danh từ.", example: "It is a book.", exampleVi: "Đó là một quyển sách." },
+    {
+      text: "a book, a pen, a student. an apple, an egg.",
+      example: "It is a book.",
+      exampleVi: "Nó là một quyển sách.",
+    },
+    {
+      text: "a trước phụ âm, an trước nguyên âm a, e, i, o, u.",
+      example: "It is a pen.",
+      exampleVi: "Nó là một cây bút.",
+    },
   ],
   11: [
-    { text: "We are / They are.", example: "We are students." },
-    { text: "They are + danh từ số nhiều.", example: "They are teachers." },
+    {
+      text: "The book = quyển sách ấy. I like music = nói chung, không dùng the.",
+      example: "The book is here.",
+      exampleVi: "Quyển sách ở đây.",
+    },
+    {
+      text: "the khi người nghe đã biết vật đó. Không mạo từ khi nói chung.",
+      example: "She is the teacher.",
+      exampleVi: "Cô ấy là giáo viên đó.",
+    },
   ],
   12: [
-    { text: "Phủ định: am/is/are + not.", example: "I am not tired.", exampleVi: "Tôi không mệt." },
-    { text: "Viết tắt: isn't, aren't.", example: "She isn't happy. / They aren't here." },
+    {
+      text: "This/these = gần. That/those = xa.",
+      example: "This is a book.",
+      exampleVi: "Đây là một quyển sách.",
+    },
+    {
+      text: "this/that cho một vật. these/those cho nhiều vật.",
+      example: "That is a pen.",
+      exampleVi: "Kia là một cây bút.",
+    },
   ],
   13: [
-    { text: "Câu hỏi: Am/Is/Are lên đầu.", example: "Are you a student?", exampleVi: "Bạn là học sinh à?" },
-    { text: "Trả lời: Yes, I am. / No, I am not.", example: "Is he Nam? — Yes, he is." },
+    {
+      text: "It is a book. They are books. These are students.",
+      example: "It is a book.",
+      exampleVi: "Nó là một quyển sách.",
+    },
+    {
+      text: "Ghép danh từ, số nhiều và to be trong cùng một câu.",
+      example: "They are books.",
+      exampleVi: "Chúng là sách.",
+    },
   ],
   14: [
-    { text: "Kiểm tra to be — không mở vở.", example: "≥ 12/16 ý để sang tuần 3." },
-    { text: "Sai nhiều → học lại ngày 8 và 12.", example: "Chép lại câu đúng 3 lần." },
+    {
+      text: "Ôn a/an/the, số nhiều, this/that/these/those và to be.",
+      example: "It is an apple.",
+      exampleVi: "Nó là một quả táo.",
+    },
+    {
+      text: "Kiểm tra danh từ và mạo từ. Không học từ mới.",
+      example: "The book is here.",
+      exampleVi: "Quyển sách ở đây.",
+    },
   ],
   15: [
-    { text: "Số ít → số nhiều thường thêm -s.", example: "book → books, pen → pens" },
-    { text: "Bất quy tắc: man → men, child → children.", example: "one child, two children" },
+    {
+      text: "I study. You go. We play. They read.",
+      example: "I study.",
+      exampleVi: "Tôi học.",
+    },
+    {
+      text: "Viết câu ngắn: chủ ngữ rồi đến hành động. Chưa thêm -s.",
+      example: "You go to school.",
+      exampleVi: "Bạn đi học.",
+    },
   ],
   16: [
-    { text: "a + phụ âm (hoặc âm không phải nguyên âm).", example: "a book, a pen, a house" },
+    {
+      text: "I like music. We study English. They play football.",
+      example: "I like music.",
+      exampleVi: "Tôi thích nhạc.",
+    },
+    {
+      text: "Thêm vật sau động từ.",
+      example: "We study English.",
+      exampleVi: "Chúng tôi học tiếng Anh.",
+    },
   ],
   17: [
-    { text: "an + nguyên âm (a, e, i, o, u).", example: "an apple, an egg, an orange" },
-    { text: "an hour (âm câm h).", example: "an hour" },
+    {
+      text: "I have a book. She has a pen.",
+      example: "I have a book.",
+      exampleVi: "Tôi có một quyển sách.",
+    },
+    {
+      text: "I, you, we, they + have. He, she, it + has.",
+      example: "You have a pen.",
+      exampleVi: "Bạn có một cây bút.",
+    },
   ],
   18: [
-    { text: "the = đã biết / duy nhất.", example: "Open the door.", exampleVi: "Mở cái cửa." },
-    { text: "The book is on the desk.", example: "Quyển sách ở trên bàn." },
+    {
+      text: "There is a book. There are pens.",
+      example: "There is a book.",
+      exampleVi: "Có một quyển sách.",
+    },
+    {
+      text: "There is + một vật. There are + nhiều vật.",
+      example: "There are pens.",
+      exampleVi: "Có những cây bút.",
+    },
   ],
   19: [
-    { text: "some = một ít (câu khẳng định).", example: "I have some books." },
-    { text: "any = câu hỏi/phủ định.", example: "Do you have any pens? (học kỹ tháng 2)" },
+    {
+      text: "a big house. This is my book. That is your pen.",
+      example: "It is a big house.",
+      exampleVi: "Đó là ngôi nhà to.",
+    },
+    {
+      text: "Tính từ đứng trước danh từ. my, your, his, her đứng trước danh từ.",
+      example: "It is a small bag.",
+      exampleVi: "Đó là cái cặp nhỏ.",
+    },
   ],
   20: [
-    { text: "This = cái này (gần, số ít).", example: "This is a pen." },
-    { text: "That = cái kia (xa, số ít).", example: "That is a house." },
+    {
+      text: "Dùng I am, She is, I have, There is.",
+      example: "I have a family.",
+      exampleVi: "Tôi có một gia đình.",
+    },
+    {
+      text: "Viết câu đơn về gia đình, trường và nhà.",
+      example: "He is my father.",
+      exampleVi: "Ông ấy là bố tôi.",
+    },
   ],
   21: [
-    { text: "These = những cái này (gần, số nhiều).", example: "These are books." },
-    { text: "Those = những cái kia (xa, số nhiều).", example: "Those are pens." },
+    {
+      text: "Ôn chủ ngữ + động từ, tân ngữ, have/has, There is/are.",
+      example: "I study English.",
+      exampleVi: "Tôi học tiếng Anh.",
+    },
+    {
+      text: "Kiểm tra cấu trúc câu. Không học từ mới.",
+      example: "They play football.",
+      exampleVi: "Họ chơi bóng.",
+    },
   ],
   22: [
-    { text: "What = cái gì.", example: "What is your name?", exampleVi: "Bạn tên là gì?" },
-    { text: "What is + danh từ?", example: "What is this? — This is a book." },
+    {
+      text: "What is this? Who is she? Where is the book?",
+      example: "What is this?",
+      exampleVi: "Đây là cái gì?",
+    },
+    {
+      text: "Hỏi cái gì, ai, ở đâu.",
+      example: "It is a book.",
+      exampleVi: "Nó là quyển sách.",
+    },
   ],
   23: [
-    { text: "Where = ở đâu.", example: "Where is the book?", exampleVi: "Sách ở đâu?" },
-    { text: "Where is + danh từ?", example: "The book is on the desk." },
+    {
+      text: "When is the class? Why are you sad? How are you?",
+      example: "When is the class?",
+      exampleVi: "Lớp học khi nào?",
+    },
+    {
+      text: "Hỏi khi nào, tại sao, như thế nào.",
+      example: "It is in the morning.",
+      exampleVi: "Vào buổi sáng.",
+    },
   ],
   24: [
-    { text: "When = khi nào.", example: "When is your birthday?" },
-    { text: "When + to be / (tháng 2: When do you...?)", example: "When is the test?" },
+    {
+      text: "in the bag. on the bag. at school. under the book.",
+      example: "The pen is in the bag.",
+      exampleVi: "Bút ở trong cặp.",
+    },
+    {
+      text: "in, on, at, under nói vật ở đâu.",
+      example: "The book is on the bag.",
+      exampleVi: "Sách ở trên cặp.",
+    },
   ],
   25: [
-    { text: "Who = ai.", example: "Who is she?", exampleVi: "Cô ấy là ai?" },
-    { text: "Who is + danh từ?", example: "She is my teacher." },
+    {
+      text: "in the morning. on Monday. at 7.",
+      example: "I study in the morning.",
+      exampleVi: "Tôi học vào buổi sáng.",
+    },
+    {
+      text: "in + buổi. on + thứ. at + giờ.",
+      example: "We have class on Monday.",
+      exampleVi: "Chúng tôi có lớp vào thứ Hai.",
+    },
   ],
   26: [
-    { text: "Why = tại sao.", example: "Why are you sad?" },
-    { text: "Trả lời: Because + câu.", example: "Because I am tired." },
+    {
+      text: "Where is the book? What is this? Who is she?",
+      example: "Where is the book?",
+      exampleVi: "Sách ở đâu?",
+    },
+    {
+      text: "Từ để hỏi + am/is/are + chủ ngữ.",
+      example: "What is this?",
+      exampleVi: "Đây là cái gì?",
+    },
   ],
   27: [
-    { text: "How are you? = Bạn khỏe không?", example: "I am fine, thank you." },
-    { text: "How old are you? = Bao nhiêu tuổi?", example: "I am fifteen years old." },
+    {
+      text: "Đọc câu hỏi trước, rồi tìm câu trong đoạn có cùng từ.",
+      example: "I am Nam.",
+      exampleVi: "Tôi là Nam.",
+    },
+    {
+      text: "Đọc một đoạn dễ và trả lời câu hỏi.",
+      example: "I am a student.",
+      exampleVi: "Tôi là học sinh.",
+    },
   ],
   28: [
-    { text: "Ôn toàn tháng 1 — không từ mới.", example: "≥ 16/20 ý trước ngày 29–30." },
+    {
+      text: "Ôn to be, a/an, this/that, have/has, There is, câu hỏi, in/on/at.",
+      example: "I am a student.",
+      exampleVi: "Tôi là học sinh.",
+    },
+    {
+      text: "Kiểm tra 4 tuần đầu. Không học từ mới.",
+      example: "It is a book.",
+      exampleVi: "Nó là quyển sách.",
+    },
   ],
   29: [
-    { text: "30 câu cố định — luyện đọc, điền, dịch.", example: "≥ 24/30 trước ngày 30." },
-    { text: "Where do you live? — học thuộc mẫu câu (giải thích do/does tháng 2).", example: "I live in Bắc Ninh." },
+    {
+      text: "I / You / We / They + động từ. I study every day.",
+      example: "I study every day.",
+      exampleVi: "Tôi học mỗi ngày.",
+    },
+    {
+      text: "Nói việc lặp lại với I, you, we, they. Chưa thêm -s.",
+      example: "You go to school.",
+      exampleVi: "Bạn đi học.",
+    },
   ],
   30: [
-    { text: "Không mở vở.", example: "Gấp vở trước khi làm bài kiểm tra." },
-    { text: "Chỉ kiến thức tháng 1 — không -s, không past, không have/has.", example: "≥ 12/20 sang tháng 2." },
-    { text: "Dưới 12: ôn ngày 8, 16, 22.", example: "Chữa bài 10 phút sáng hôm sau." },
+    {
+      text: "He likes music. She studies English. I like music không thêm -s.",
+      example: "He likes music.",
+      exampleVi: "Anh ấy thích nhạc.",
+    },
+    {
+      text: "Với he, she, it thêm -s. like → likes. study → studies. go → goes.",
+      example: "She studies English.",
+      exampleVi: "Cô ấy học tiếng Anh.",
+    },
   ],
 };
 
 export function getRulesForDay(day: number, fallbackRule: string): RuleItem[] {
   const rules = DAY_RULES[day];
   if (rules) return rules;
-
-  return splitRuleSegments(fallbackRule).map((text) => ({
-    text,
-    example: "—",
-  }));
+  return splitRuleSegments(fallbackRule).map((text) => ({ text, example: "—" }));
 }

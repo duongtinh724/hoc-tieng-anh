@@ -33,7 +33,7 @@ export function ReviewPlanPanel({
     <section className="panel review-panel">
       <h2>Plan ôn tập — Tháng 1</h2>
       <p className="panel-lead">
-        3 lớp ôn: hàng ngày (3 phút cuối) → kiểm tra tuần (ngày 7, 14, 21) →
+        3 lớp ôn: cuối buổi (phút 50–60) → kiểm tra Chủ nhật (ngày 7, 14, 21, 28) →
         kiểm tra tổng (ngày 30).
       </p>
 

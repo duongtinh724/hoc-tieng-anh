@@ -11,7 +11,7 @@ export const MONTHS: MonthConfig[] = [
     totalDays: 30,
     totalWeeks: 4,
     status: "available",
-    goal: "Day 1–30: S+V, To be, mạo từ, Wh- questions (xem CURRICULUM-PLAN.md)",
+    goal: "12/10–10/11: đại từ, to be, danh từ, mạo từ, câu cơ bản, câu hỏi, rồi hiện tại đơn",
   },
   {
     id: 2,

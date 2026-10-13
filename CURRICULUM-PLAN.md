@@ -1,508 +1,471 @@
-# CURRICULUM-PLAN.md — Lộ trình 7 tháng (Day 1 → Day 210)
+# CURRICULUM-PLAN.md — Lộ trình đến kỳ thi lớp 10
 
 > **Tài liệu gốc** cho nội dung bài học. AI đọc file này **cùng** [`AGENTS.md`](./AGENTS.md) trước khi viết thêm ngày mới hoặc sửa curriculum.
 >
-> **Học sinh:** Nam, 15 tuổi, lớp 9 · **Xuất phát:** số 0 · **Thi:** tuyển sinh lớp 10, Bắc Ninh, **5–6/2027**
+> **Học sinh:** Nam, 15 tuổi, lớp 9 · **Xuất phát:** gần như mất gốc · **Bắt đầu:** 12/10/2026
 >
-> **Mục tiêu điểm:** **5–6/10** (ổn định qua nhiều đề, không chỉ một lần)
+> **Mục tiêu điểm:** **5–6/10 ổn định** qua nhiều đề. Đây là mục tiêu phấn đấu, không phải kết quả đảm bảo trước. Theo dõi điểm kiểm tra hằng tuần để chỉnh tốc độ.
 >
-> **Đề tham chiếu:** Trắc nghiệm **40 câu / 60 phút**, có **nghe**, bám THCS (chủ yếu lớp 9). Cấu trúc 2027 có thể điều chỉnh khi Sở ban hành văn bản mới.
+> **Mốc ôn:** 30 tuần (12/10/2026 → 09/05/2027) rồi **16 ngày** cuối (10/05–25/05/2027). Cấu trúc đề 2027–2028 chỉnh khi Sở GD&ĐT công bố. Không mặc định đề năm trước giữ nguyên.
+>
+> **Data app:** `month-01` đang theo plan cũ (Day 1–14). Bài mới viết theo lịch tuần trong file này khi được yêu cầu.
 
 ---
 
-## 1. Nguyên tắc vàng
+## 1. Cấu trúc 60 phút mỗi ngày
 
-### Thứ tự học (bắt buộc)
+Áp dụng cho **mọi tuần**. Ngày ôn và Chủ nhật giảm kiến thức mới, tăng thời gian làm bài.
 
-```
-Câu cơ bản → To be → Present Simple → Present Continuous → Past → Future
-→ Câu hỏi → Modal → Comparison → Present Perfect → Cấu trúc THCS → Luyện đề
-```
+| Phút | Việc |
+|------|------|
+| **10** | **Từ vựng và ôn bài cũ.** Ôn từ đã học, khoảng **5 từ mới**. Giai đoạn đầu ưu tiên nhớ chắc. |
+| **15** | **Ngữ pháp.** Một kiến thức nhỏ, kèm ví dụ dễ hiểu. |
+| **15** | **Bài tập.** Điền từ, chia động từ, sắp xếp câu, trắc nghiệm, sửa lỗi. |
+| **10** | **Kỹ năng đề thi.** Luân phiên phát âm, nghe, đọc hiểu, điền từ, viết lại câu. |
+| **10** | **Nhớ lại và sửa lỗi.** Tự trả lời không nhìn tài liệu, ghi lỗi sai, ôn lại câu sai. |
 
-**Không** bắt đầu bằng 12 thì. **Không** học lan man.
-
-### Quy tắc tiến độ (adaptive)
-
-| Kết quả bài / test | Hành động |
-|--------------------|-----------|
-| **< 50%** | **Không** học bài mới — ôn lại |
-| **50–70%** | Có thể tiếp tục |
-| **> 70%** | Sang kiến thức tiếp theo |
-
-Ví dụ Present Simple: 7 ngày “đóng” kiến thức (học → phủ định → hỏi → bài tập → trộn to be → reading → test).
-
-### Thời gian / tuần
-
-| Ngày | Thời gian |
-|------|-----------|
-| T2–T6 | 30–40 phút |
-| T7 | 45 phút |
-| CN | 30 phút review + test nhẹ |
-
-≈ **4–5 giờ/tuần**. Duy trì **7 tháng** quan trọng hơn nhồi 45 phút/ngày.
-
-### Tỷ lệ nội dung (7 tháng)
-
-| Nội dung | Tỷ trọng |
-|----------|----------|
-| Grammar | 35% |
-| Vocabulary | 25% |
-| Reading | 15% |
-| Listening | 10% |
-| Exercises / Test | 15% |
-
-**Từ vựng mỗi ngày:** **5–8 từ** theo topic — **không** 30–50 từ/ngày.
-
-### 3 tầng
-
-| Tầng | Giai đoạn | Nội dung |
-|------|-----------|----------|
-| **1 — Foundation** | Tháng 1–3 | Từ vựng + Grammar + Reading đơn giản |
-| **2 — Exam Skills** | Tháng 4–5 | Grammar MCQ, Vocab, Word form, Reading, Listening |
-| **3 — Exam Simulation** | Tháng 6–7 | 40 câu / 60 phút → chấm → phân tích lỗi → ôn → đề mới |
-
-### Tỷ lệ học từ Tháng 5
-
-30% Grammar · 30% Vocabulary · 20% Reading · 10% Listening · 10% Test
+Nghe câu ngắn, đoạn đọc dễ và từ vựng cơ bản có từ **tuần 1**. Không dồn đọc, nghe, từ vựng hết về cuối kỳ.
 
 ---
 
-## 2. Grammar priority (target 5–6 điểm)
+## 2. Quy tắc sau mỗi tuần
 
-### 🔴 Priority 1 — bắt buộc chắc
+| Kết quả | Việc làm |
+|---------|----------|
+| **Dưới 50%** | Củng cố. Học lại bằng ví dụ đơn giản, bài dễ hơn, kiểm tra lại sau 1–2 ngày. Không sang chủ đề mới. |
+| **50–69%** | Tiếp tục kèm ôn. Học chủ đề tiếp theo, dành thêm thời gian cho phần chưa vững. |
+| **Từ 70%** | Tạm đạt. Sang bài mới và ôn lại sau vài ngày để kiểm tra trí nhớ. |
 
-To be · Present Simple · Present Continuous · Past Simple · Future · Do/Does/Did · Question words · Articles · Plural · Prepositions · Modal verbs · Comparison
-
-### 🟠 Priority 2
-
-Present Perfect · Gerund/Infinitive · Conjunctions · Relative clauses · Conditional type 1 · Passive voice
-
-### 🟡 Priority 3 — không cày sâu nếu chỉ target 5–6
-
-Reported speech · Relative clauses nâng cao · Conditionals nâng cao
+Quyết định bước tiếp theo bằng kết quả, không chỉ bằng số ngày đã học.
 
 ---
 
-## 3. Mục tiêu đánh giá cuối mỗi tháng
+## 3. Mục tiêu điểm theo giai đoạn
 
-| Tháng | Target |
-|-------|--------|
-| **1** | Không còn 0 điểm với câu cơ bản; làm được What/Where/Who… |
-| **2** | Nhận biết thì, chia động từ, hỏi/phủ định, hiểu câu đơn |
-| **3** | Bài test nền **4/10** |
-| **4** | **4–5/10** |
-| **5** | **5/10** |
-| **6** | **5–6/10** |
-| **7** | **Ổn định 5–6/10** qua nhiều đề |
-
----
-
-## 4. Lộ trình chi tiết Day 1 → Day 210
-
-> Quy ước app: **Tháng 1 = Day 1–30**, **Tháng 2 = Day 31–60**, … **Tháng 7 = Day 181–210**.
+| Thời điểm | Cần đạt |
+|-----------|---------|
+| Cuối 11/2026 | Hiểu câu đơn, to be và các cấu trúc cơ bản |
+| Cuối 12/2026 | Phân biệt các thì cơ bản trong câu đơn |
+| Cuối 01/2027 | Làm được bài tập ngữ pháp nền tảng |
+| Cuối 02/2027 | Nhận diện phần lớn chủ điểm ngữ pháp đã học |
+| Cuối 03/2027 | Bắt đầu làm đọc, điền từ và viết lại câu cơ bản |
+| Cuối 04/2027 | Hoàn thành đề có bấm giờ và tự sửa lỗi |
+| Đầu–giữa 05/2027 | Hướng tới **5–6/10** ổn định qua nhiều đề phù hợp |
+| Trước ngày thi | Củng cố phần dễ lấy điểm, hạn chế lỗi lặp lại |
 
 ---
 
-### THÁNG 1 — XÂY LẠI TỪ CON SỐ 0 (Day 1–30)
+## 4. Lịch 30 tuần
 
-**Sau tháng 1 phải làm được:** What is your name? · Where do you live? · What do you do? · Who is she? · Where is the book?
+Mỗi tuần đủ 7 ngày. **Chủ nhật:** ôn và kiểm tra, không học kiến thức mới.
 
-#### Tuần 1 — Làm quen câu tiếng Anh (Day 1–7)
+### Giai đoạn 1 — Nền tảng từ mất gốc
 
-| Day | Nội dung |
-|-----|----------|
-| 1 | I / You / He / She / It / We / They |
-| 2 | Noun: book, student, teacher, house… |
-| 3 | Verb: eat, go, work, study, like… |
-| 4 | Adjective: good, bad, big, small… |
-| 5 | Cấu trúc S + V |
-| 6 | Cấu trúc S + V + O |
-| 7 | Ôn + 20 câu cơ bản |
+12/10/2026 – 08/11/2026 · Tuần 1–4
 
-*Ví dụ:* I study English. · She likes music. · They play football.
+#### Tuần 1 · 12/10–18/10 — Đại từ và to be
 
-#### Tuần 2 — TO BE (Day 8–14)
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Đại từ nhân xưng: I, you, he, she, it, we, they |
+| Thứ 3 | To be: am, is, are |
+| Thứ 4 | Câu khẳng định với to be |
+| Thứ 5 | Câu phủ định với to be |
+| Thứ 6 | Câu hỏi với to be và câu trả lời ngắn |
+| Thứ 7 | Giới thiệu bản thân bằng câu đơn giản |
+| Chủ nhật | Ôn tập và bài kiểm tra ngắn |
 
-| Day | Nội dung |
-|-----|----------|
-| 8 | am / is / are |
-| 9 | I am / You are |
-| 10 | He is / She is / It is |
-| 11 | We are / They are |
-| 12 | Câu phủ định |
-| 13 | Câu hỏi |
-| 14 | Review + test |
+#### Tuần 2 · 19/10–25/10 — Danh từ và mạo từ
 
-*Ví dụ:* I am a student. · She is beautiful. · They are happy.
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Danh từ chỉ người, vật, địa điểm |
+| Thứ 3 | Danh từ số ít và số nhiều |
+| Thứ 4 | Mạo từ a/an |
+| Thứ 5 | Mạo từ the và trường hợp không dùng mạo từ |
+| Thứ 6 | This, that, these, those |
+| Thứ 7 | Bài tập kết hợp danh từ và to be |
+| Chủ nhật | Ôn tập và kiểm tra |
 
-#### Tuần 3 — Danh từ + mạo từ (Day 15–21)
+#### Tuần 3 · 26/10–01/11 — Cấu trúc câu cơ bản
 
-| Day | Nội dung |
-|-----|----------|
-| 15 | Singular / Plural |
-| 16 | a |
-| 17 | an |
-| 18 | the |
-| 19 | some / any |
-| 20 | this / that |
-| 21 | these / those + review |
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Động từ thường và cấu trúc chủ ngữ + động từ |
+| Thứ 3 | Câu chủ ngữ + động từ + tân ngữ |
+| Thứ 4 | Have/has |
+| Thứ 5 | There is / There are |
+| Thứ 6 | Tính từ cơ bản và tính từ sở hữu |
+| Thứ 7 | Viết câu về gia đình, trường học và nhà ở |
+| Chủ nhật | Ôn tập và kiểm tra |
 
-#### Tuần 4 — Câu hỏi (Day 22–30)
+#### Tuần 4 · 02/11–08/11 — Từ để hỏi và giới từ
 
-| Day | Nội dung |
-|-----|----------|
-| 22 | What |
-| 23 | Where |
-| 24 | When |
-| 25 | Who |
-| 26 | Why |
-| 27 | How |
-| 28 | Review |
-| 29 | 30 câu tổng hợp |
-| 30 | Mini test |
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | What, who, where |
+| Thứ 3 | When, why, how |
+| Thứ 4 | Giới từ chỉ nơi chốn |
+| Thứ 5 | Giới từ chỉ thời gian |
+| Thứ 6 | Trật tự từ trong câu hỏi |
+| Thứ 7 | Đọc đoạn văn ngắn và trả lời câu hỏi đơn giản |
+| Chủ nhật | Kiểm tra tổng hợp nền tảng |
+
+### Giai đoạn 2 — Các thì quan trọng
+
+09/11/2026 – 20/12/2026 · Tuần 5–10
+
+#### Tuần 5 · 09/11–15/11 — Hiện tại đơn
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Cấu trúc câu khẳng định |
+| Thứ 3 | Thêm -s/-es với he, she, it |
+| Thứ 4 | Câu phủ định với do/does |
+| Thứ 5 | Câu hỏi với do/does |
+| Thứ 6 | Trạng từ tần suất và vị trí của chúng |
+| Thứ 7 | Đọc và viết về thói quen hằng ngày |
+| Chủ nhật | Kiểm tra hiện tại đơn |
+
+#### Tuần 6 · 16/11–22/11 — Hiện tại tiếp diễn
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Cấu trúc am/is/are + V-ing |
+| Thứ 3 | Quy tắc thêm -ing |
+| Thứ 4 | Câu phủ định và câu hỏi |
+| Thứ 5 | Từ chỉ thời gian: now, at the moment |
+| Thứ 6 | Phân biệt hiện tại đơn và hiện tại tiếp diễn |
+| Thứ 7 | Mô tả hoạt động trong tranh |
+| Chủ nhật | Kiểm tra hai thì hiện tại |
+
+#### Tuần 7 · 23/11–29/11 — Quá khứ đơn
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Was/were |
+| Thứ 3 | Động từ có quy tắc thêm -ed |
+| Thứ 4 | Động từ bất quy tắc thông dụng |
+| Thứ 5 | Did/didn't trong câu hỏi và phủ định |
+| Thứ 6 | Từ chỉ thời gian quá khứ |
+| Thứ 7 | Viết về ngày hôm qua hoặc cuối tuần trước |
+| Chủ nhật | Kiểm tra quá khứ đơn |
+
+#### Tuần 8 · 30/11–06/12 — Tương lai
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Will và won't |
+| Thứ 3 | Câu hỏi với will |
+| Thứ 4 | Be going to |
+| Thứ 5 | Phân biệt will và be going to ở mức cơ bản |
+| Thứ 6 | Giới từ và cụm từ chỉ thời gian tương lai |
+| Thứ 7 | Viết về kế hoạch cuối tuần |
+| Chủ nhật | Kiểm tra các thì đã học |
+
+#### Tuần 9 · 07/12–13/12 — Củng cố các thì
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Ôn hiện tại đơn |
+| Thứ 3 | Ôn hiện tại tiếp diễn |
+| Thứ 4 | Ôn quá khứ đơn |
+| Thứ 5 | Ôn tương lai |
+| Thứ 6 | Bài tập phân biệt các thì |
+| Thứ 7 | Bài tập trộn các thì |
+| Chủ nhật | Kiểm tra tổng hợp và phân loại lỗi sai |
+
+#### Tuần 10 · 14/12–20/12 — Động từ và cấu trúc câu hỏi
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Ôn do/does/did |
+| Thứ 3 | Câu hỏi Yes/No |
+| Thứ 4 | Câu hỏi Wh- |
+| Thứ 5 | Trật tự từ trong câu khẳng định và phủ định |
+| Thứ 6 | Sửa lỗi sai trong câu |
+| Thứ 7 | Đọc hiểu đoạn ngắn có nhiều thì |
+| Chủ nhật | Kiểm tra tổng hợp |
+
+### Giai đoạn 3 — Ngữ pháp thường gặp trong đề
+
+21/12/2026 – 31/01/2027 · Tuần 11–16
+
+#### Tuần 11 · 21/12–27/12 — Động từ khuyết thiếu
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Can/can't: khả năng |
+| Thứ 3 | Should/shouldn't: lời khuyên |
+| Thứ 4 | Must/mustn't: nghĩa vụ và cấm đoán |
+| Thứ 5 | Have to / don't have to |
+| Thứ 6 | Ôn cấu trúc động từ khuyết thiếu |
+| Thứ 7 | Trắc nghiệm và viết câu |
+| Chủ nhật | Kiểm tra |
+
+#### Tuần 12 · 28/12–03/01 — Giới từ và từ loại cơ bản
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Giới từ thời gian: in/on/at |
+| Thứ 3 | Giới từ nơi chốn |
+| Thứ 4 | Giới từ đi với động từ thông dụng |
+| Thứ 5 | Danh từ và tính từ |
+| Thứ 6 | Động từ và trạng từ |
+| Thứ 7 | Nhận biết từ loại trong câu |
+| Chủ nhật | Kiểm tra và ôn tập |
+
+#### Tuần 13 · 04/01–10/01 — So sánh
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | So sánh hơn với tính từ ngắn |
+| Thứ 3 | So sánh hơn với tính từ dài |
+| Thứ 4 | So sánh nhất |
+| Thứ 5 | Dạng bất quy tắc thông dụng |
+| Thứ 6 | As…as và not as…as |
+| Thứ 7 | So sánh trong câu và đoạn văn |
+| Chủ nhật | Kiểm tra |
+
+#### Tuần 14 · 11/01–17/01 — Danh từ, lượng từ và từ loại
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Some/any |
+| Thứ 3 | Much/many/a lot of |
+| Thứ 4 | Đếm được và không đếm được |
+| Thứ 5 | Đại từ sở hữu và tính từ sở hữu |
+| Thứ 6 | Số nhiều và lỗi thường gặp |
+| Thứ 7 | Điền từ và chọn đáp án |
+| Chủ nhật | Kiểm tra tổng hợp |
+
+#### Tuần 15 · 18/01–24/01 — Hiện tại hoàn thành
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Have/has + V3 |
+| Thứ 3 | Câu phủ định và câu hỏi |
+| Thứ 4 | Ever/never |
+| Thứ 5 | Just/already/yet |
+| Thứ 6 | Since/for |
+| Thứ 7 | Phân biệt quá khứ đơn và hiện tại hoàn thành ở mức cơ bản |
+| Chủ nhật | Kiểm tra |
+
+#### Tuần 16 · 25/01–31/01 — Gerund, infinitive và liên từ
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | V-ing sau một số động từ thường gặp |
+| Thứ 3 | To + V sau một số động từ thường gặp |
+| Thứ 4 | And, but, or, so, because |
+| Thứ 5 | Although và because |
+| Thứ 6 | Nối hai câu đơn thành câu dài hơn |
+| Thứ 7 | Viết lại và hoàn thành câu |
+| Chủ nhật | Kiểm tra |
+
+### Giai đoạn 4 — Hoàn thiện và bắt đầu dạng bài thi
+
+01/02/2027 – 14/03/2027 · Tuần 17–22
+
+#### Tuần 17 · 01/02–07/02 — Mệnh đề quan hệ cơ bản
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Who, which, that |
+| Thứ 3 | Xác định người và vật được nhắc đến |
+| Thứ 4 | Nối hai câu đơn |
+| Thứ 5 | Nhận diện mệnh đề quan hệ trong đoạn văn |
+| Thứ 6 | Chọn đáp án |
+| Thứ 7 | Bài tập tổng hợp |
+| Chủ nhật | Kiểm tra |
+
+#### Tuần 18 · 08/02–14/02 — Câu điều kiện loại 1
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | If + hiện tại đơn |
+| Thứ 3 | Mệnh đề chính với will |
+| Thứ 4 | Câu phủ định và câu hỏi liên quan |
+| Thứ 5 | Phân biệt điều kiện và kết quả |
+| Thứ 6 | Điền từ, chọn đáp án |
+| Thứ 7 | Viết câu điều kiện |
+| Chủ nhật | Kiểm tra |
+
+#### Tuần 19 · 15/02–21/02 — Câu bị động
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Phân biệt chủ động và bị động |
+| Thứ 3 | Cấu trúc be + V3 |
+| Thứ 4 | Bị động ở hiện tại đơn |
+| Thứ 5 | Bị động ở quá khứ đơn |
+| Thứ 6 | Nhận biết chủ ngữ và tân ngữ |
+| Thứ 7 | Chuyển đổi câu đơn giản |
+| Chủ nhật | Kiểm tra |
+
+#### Tuần 20 · 22/02–28/02 — Câu tường thuật cơ bản
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Say và tell |
+| Thứ 3 | Tường thuật câu kể đơn giản |
+| Thứ 4 | Đại từ và từ chỉ thời gian |
+| Thứ 5 | Các thay đổi thì thường gặp |
+| Thứ 6 | Nhận diện câu tường thuật |
+| Thứ 7 | Ôn bị động và câu điều kiện |
+| Chủ nhật | Kiểm tra tổng hợp |
+
+#### Tuần 21 · 01/03–07/03 — Phát âm, từ loại và giao tiếp
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Đuôi -s/-es |
+| Thứ 3 | Đuôi -ed |
+| Thứ 4 | Trọng âm từ thông dụng |
+| Thứ 5 | Danh từ, động từ, tính từ, trạng từ trong ngữ cảnh |
+| Thứ 6 | Câu giao tiếp và đáp lời |
+| Thứ 7 | Trắc nghiệm tổng hợp |
+| Chủ nhật | Kiểm tra theo nhóm dạng đề |
+
+#### Tuần 22 · 08/03–14/03 — Củng cố ngữ pháp trọng tâm
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Các thì cơ bản |
+| Thứ 3 | Giới từ và mạo từ |
+| Thứ 4 | So sánh và động từ khuyết thiếu |
+| Thứ 5 | Hiện tại hoàn thành |
+| Thứ 6 | Câu bị động và câu điều kiện |
+| Thứ 7 | Viết lại câu ở mức cơ bản |
+| Chủ nhật | Kiểm tra tổng hợp, thống kê 5 lỗi sai phổ biến nhất |
+
+### Giai đoạn 5 — Từ vựng, đọc, nghe, bài tập tổng hợp
+
+15/03/2027 – 11/04/2027 · Tuần 23–26
+
+#### Tuần 23 · 15/03–21/03 — Từ vựng theo chủ đề
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Trường học và giáo dục |
+| Thứ 3 | Gia đình và các mối quan hệ |
+| Thứ 4 | Sức khỏe và lối sống |
+| Thứ 5 | Môi trường |
+| Thứ 6 | Công nghệ và cuộc sống |
+| Thứ 7 | Học từ trong câu, không học riêng lẻ |
+| Chủ nhật | Kiểm tra từ vựng và cách dùng |
+
+#### Tuần 24 · 22/03–28/03 — Word form và điền từ
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Nhận diện danh từ, động từ, tính từ, trạng từ |
+| Thứ 3 | Hậu tố thông dụng |
+| Thứ 4 | Chọn từ phù hợp ngữ cảnh |
+| Thứ 5 | Điền từ vào câu |
+| Thứ 6 | Điền từ vào đoạn văn ngắn |
+| Thứ 7 | Trộn từ vựng và ngữ pháp |
+| Chủ nhật | Kiểm tra |
+
+#### Tuần 25 · 29/03–04/04 — Đọc hiểu và nghe cơ bản
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Đọc câu hỏi trước khi đọc đoạn văn |
+| Thứ 3 | Tìm thông tin trực tiếp |
+| Thứ 4 | Xác định ý chính |
+| Thứ 5 | Đoán nghĩa từ dựa vào ngữ cảnh |
+| Thứ 6 | Nghe câu ngắn và nhận diện từ khóa |
+| Thứ 7 | Nghe đoạn ngắn, trả lời câu hỏi |
+| Chủ nhật | Kiểm tra đọc và nghe |
+
+#### Tuần 26 · 05/04–11/04 — Viết lại câu và dạng bài trộn
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Viết lại câu với because/although |
+| Thứ 3 | Viết lại câu so sánh |
+| Thứ 4 | Viết lại câu điều kiện đơn giản |
+| Thứ 5 | Chuyển câu chủ động sang bị động |
+| Thứ 6 | Hoàn thành câu |
+| Thứ 7 | Một phần đề có giới hạn thời gian |
+| Chủ nhật | Kiểm tra tổng hợp |
+
+### Giai đoạn 6 — Luyện theo cấu trúc đề
+
+12/04/2027 – 09/05/2027 · Tuần 27–30
+
+#### Tuần 27 · 12/04–18/04 — Luyện từng dạng câu hỏi
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Phát âm và trọng âm |
+| Thứ 3 | Ngữ pháp và từ vựng |
+| Thứ 4 | Giao tiếp và sắp xếp câu |
+| Thứ 5 | Điền từ vào đoạn văn |
+| Thứ 6 | Đọc hiểu |
+| Thứ 7 | Viết lại hoặc hoàn thành câu |
+| Chủ nhật | Kiểm tra kết hợp các dạng |
+
+#### Tuần 28 · 19/04–25/04 — Luyện đề có hướng dẫn
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Từng nhóm câu hỏi có giới hạn thời gian |
+| Thứ 3 | Đọc câu hỏi và loại trừ đáp án sai |
+| Thứ 4 | Ôn câu sai về ngữ pháp |
+| Thứ 5 | Ôn từ vựng và word form |
+| Thứ 6 | Đọc hiểu và nghe |
+| Thứ 7 | Một đề tổng hợp có bấm giờ |
+| Chủ nhật | Chấm bài và lập danh sách phần yếu |
+
+#### Tuần 29 · 26/04–02/05 — Luyện đề và sửa lỗi
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Kiểm tra ngắn ngữ pháp |
+| Thứ 3 | Kiểm tra từ vựng và phát âm |
+| Thứ 4 | Đọc hiểu và điền từ |
+| Thứ 5 | Luyện nghe |
+| Thứ 6 | Sửa lỗi từ đề trước |
+| Thứ 7 | Đề tổng hợp 60 phút theo cấu trúc phù hợp |
+| Chủ nhật | Phân tích kết quả và chỉnh nội dung ôn |
+
+#### Tuần 30 · 03/05–09/05 — Đánh giá mức sẵn sàng
+
+| Ngày | Nội dung |
+|------|----------|
+| Thứ 2 | Ôn 5 chủ điểm ngữ pháp yếu nhất |
+| Thứ 3 | Ôn từ vựng đã học, không thêm quá nhiều từ mới |
+| Thứ 4 | Phát âm và giao tiếp |
+| Thứ 5 | Đọc hiểu, điền từ |
+| Thứ 6 | Viết lại câu |
+| Thứ 7 | Đề tổng hợp 60 phút |
+| Chủ nhật | Tổng kết chương trình chính, chọn 3 nhóm lỗi cho giai đoạn cuối |
 
 ---
 
-### THÁNG 2 — GRAMMAR CORE (Day 31–60)
-
-#### Tuần 5 — Present Simple (Day 31–37)
-
-| Day | Nội dung |
-|-----|----------|
-| 31 | Present Simple là gì |
-| 32 | I/You/We/They + V |
-| 33 | He/She/It + V-s |
-| 34 | Do / Does |
-| 35 | Don't / Doesn't |
-| 36 | Câu hỏi |
-| 37 | Review |
-
-#### Tuần 6 — Present Continuous (Day 38–44)
-
-| Day | Nội dung |
-|-----|----------|
-| 38 | am/is/are + V-ing |
-| 39 | I am doing |
-| 40 | He is doing |
-| 41 | They are doing |
-| 42 | Phủ định |
-| 43 | Câu hỏi |
-| 44 | Present Simple vs Continuous |
-
-#### Tuần 7 — Past Simple (Day 45–51)
-
-| Day | Nội dung |
-|-----|----------|
-| 45 | Past Simple |
-| 46 | Regular verbs |
-| 47 | Irregular verbs |
-| 48 | was / were |
-| 49 | did |
-| 50 | didn't |
-| 51 | Review |
-
-#### Tuần 8 — Future (Day 52–60)
-
-| Day | Nội dung |
-|-----|----------|
-| 52 | will |
-| 53 | will not |
-| 54 | will questions |
-| 55 | be going to |
-| 56 | will vs going to |
-| 57 | Present Continuous for future |
-| 58 | Review |
-| 59 | 30 câu tổng hợp |
-| 60 | Mini test |
-
----
-
-### THÁNG 3 — HOÀN THIỆN NỀN A1 (Day 61–90)
-
-#### Tuần 9 — can / should / must (Day 61–67)
-
-| Day | Nội dung |
-|-----|----------|
-| 61 | can |
-| 62 | can't |
-| 63 | should |
-| 64 | shouldn't |
-| 65 | must |
-| 66 | have to |
-| 67 | Review |
-
-#### Tuần 10 — Prepositions (Day 68–74)
-
-| Day | Nội dung |
-|-----|----------|
-| 68 | in |
-| 69 | on |
-| 70 | at |
-| 71 | to / from |
-| 72 | for / with |
-| 73 | by |
-| 74 | Review |
-
-*Ví dụ:* at 7 o'clock · on Monday · in 2026
-
-#### Tuần 11 — Adjectives / Adverbs (Day 75–81)
-
-| Day | Nội dung |
-|-----|----------|
-| 75 | adjective |
-| 76 | adverb |
-| 77 | slowly / quickly |
-| 78 | good / well |
-| 79 | adjective position |
-| 80 | adverb position |
-| 81 | Review |
-
-#### Tuần 12 — Comparison (Day 82–90)
-
-| Day | Nội dung |
-|-----|----------|
-| 82 | bigger |
-| 83 | more beautiful |
-| 84 | the biggest |
-| 85 | the most beautiful |
-| 86 | as…as |
-| 87 | less / fewer |
-| 88 | Review |
-| 89 | 30 câu |
-| 90 | Mini test |
-
----
-
-### THÁNG 4 — A2 FOUNDATION (Day 91–120)
-
-#### Tuần 13 — Present Perfect (Day 91–97)
-
-| Day | Nội dung |
-|-----|----------|
-| 91 | have/has + V3 |
-| 92 | ever / never |
-| 93 | already / yet |
-| 94 | just |
-| 95 | since |
-| 96 | for |
-| 97 | Review |
-
-#### Tuần 14 — Gerund / Infinitive (Day 98–104)
-
-| Day | Nội dung |
-|-----|----------|
-| 98 | V-ing |
-| 99 | enjoy + V-ing |
-| 100 | like/love/hate + V-ing |
-| 101 | want + to V |
-| 102 | need + to V |
-| 103 | decide + to V |
-| 104 | Review |
-
-#### Tuần 15 — Conjunctions (Day 105–111)
-
-| Day | Nội dung |
-|-----|----------|
-| 105 | and |
-| 106 | but |
-| 107 | because |
-| 108 | so |
-| 109 | although |
-| 110 | when / while |
-| 111 | Review |
-
-#### Tuần 16 — Relative clauses cơ bản (Day 112–120)
-
-| Day | Nội dung |
-|-----|----------|
-| 112 | who |
-| 113 | which |
-| 114 | that |
-| 115 | where |
-| 116 | when |
-| 117 | Nhận diện relative clause |
-| 118 | Review |
-| 119 | 30 câu |
-| 120 | Mini test |
-
-*Ví dụ:* This is the website which gives the store hours.
-
----
-
-### THÁNG 5 — TẬP TRUNG KIẾN THỨC THI (Day 121–150)
-
-#### Tuần 17 — Conditional (Day 121–127)
-
-| Day | Nội dung |
-|-----|----------|
-| 121 | If |
-| 122 | Type 1 |
-| 123 | Unless |
-| 124 | If + present |
-| 125 | will |
-| 126 | Câu điều kiện trong trắc nghiệm |
-| 127 | Review |
-
-#### Tuần 18 — Passive voice (Day 128–134)
-
-| Day | Nội dung |
-|-----|----------|
-| 128 | Active / Passive |
-| 129 | Present Simple Passive |
-| 130 | Past Simple Passive |
-| 131 | Future Passive |
-| 132 | modal + passive |
-| 133 | Nhận diện passive |
-| 134 | Review |
-
-#### Tuần 19 — Reported speech (Day 135–141)
-
-| Day | Nội dung |
-|-----|----------|
-| 135 | said |
-| 136 | told |
-| 137 | said + that |
-| 138 | Đổi thì cơ bản |
-| 139 | Đổi đại từ |
-| 140 | Bài tập |
-| 141 | Review |
-
-#### Tuần 20–22 — Vocabulary (Day 142–162)
-
-Mỗi ngày **8–10 từ** theo topic:
-
-| Day | Topic |
-|-----|-------|
-| 142 | Family |
-| 143 | School |
-| 144 | Friends |
-| 145 | Food |
-| 146 | Health |
-| 147 | Sports |
-| 148 | Review |
-| 149 | Environment |
-| 150 | Technology |
-| 151 | Travel |
-| 152 | City |
-| 153 | Jobs |
-| 154 | Daily life |
-| 155 | Review |
-| 156 | Education |
-| 157 | Culture |
-| 158 | Festivals |
-| 159 | Weather |
-| 160 | Transportation |
-| 161 | Community |
-| 162 | Review |
-
----
-
-### THÁNG 6 — LUYỆN DẠNG ĐỀ (Day 163–192)
-
-**Không học grammar mới quá nhiều.**
-
-#### Tuần 23 — Grammar questions (Day 163–169)
-
-| Day | Nội dung |
-|-----|----------|
-| 163 | Tenses |
-| 164 | To be |
-| 165 | Modal verbs |
-| 166 | Prepositions |
-| 167 | Articles |
-| 168 | Comparison |
-| 169 | Mixed test |
-
-#### Tuần 24 — Word form (Day 170–176)
-
-| Day | Nội dung |
-|-----|----------|
-| 170 | noun |
-| 171 | verb |
-| 172 | adjective |
-| 173 | adverb |
-| 174 | suffix |
-| 175 | word form exercises |
-| 176 | Review |
-
-#### Tuần 25 — Reading (Day 177–183)
-
-| Day | Nội dung |
-|-----|----------|
-| 177 | Tìm keyword |
-| 178 | Đọc câu hỏi trước |
-| 179 | Tìm thông tin |
-| 180 | True/False |
-| 181 | Vocabulary in context |
-| 182 | Main idea |
-| 183 | Reading test |
-
-#### Tuần 26 — Listening (Day 184–190)
-
-| Day | Nội dung |
-|-----|----------|
-| 184 | Nghe số |
-| 185 | Nghe tên |
-| 186 | Nghe thời gian |
-| 187 | Nghe địa điểm |
-| 188 | Nghe keyword |
-| 189 | Nghe hội thoại ngắn |
-| 190 | Listening test |
-
-*(Day 191–192: buffer / ôn tuần 23–26 tùy tiến độ)*
-
----
-
-### THÁNG 7 — CHIẾN ĐẤU VỚI ĐỀ (Day 193–210 + ôn 5/2027)
-
-**Mục tiêu:** Biến kiến thức thành điểm — **không học lan man**.
-
-| Tuần | Day | Nội dung |
-|------|-----|----------|
-| 27 | 193–199 | Test 1 → chữa → ôn lỗi → grammar/vocab/reading/listening test |
-| 28 | 200–206 | Test 2 → chữa → sửa lỗi từng kỹ năng → Test 3 |
-| 29 | 207–213 | Chữa Test 3 → ôn 20 lỗi hay gặp → mixed → Test 4 |
-| 30 | 214–231 | Chữa Test 4 → ôn tenses/giới từ/modal/vocab → **Full mock test** (lặp chữa–ôn) → Final review |
-
-*Ghi chú:* Plan gốc mở rộng Day 212–231 cho giai đoạn mock dày; trong app có thể gom **Day 193–210** là 18 ngày cốt lõi + ôn nhẹ **tháng 5/2027** trước thi.
-
----
-
-## 5. Cấu trúc mỗi ngày trong app (khi implement)
-
-Mỗi Day N trong `days.json` cần:
-
-| Trường | Mô tả |
-|--------|--------|
-| `day` | 1–30 trong tháng (map → global Day = (month-1)*30 + day) |
-| `title`, `aim`, `rule` | Tiếng Việt, 1 chủ điểm/ngày |
-| `words` | **5–8 từ** (en + vi) |
-| `listen` | 6 câu mẫu |
-| `copy`, `exercise`, `recall` | Theo block 30 phút |
-| `answers` | Cho phụ huynh chấm — **không** hiện UI |
-
-Ngày **7, 14, 21, 30** (cuối tuần / cuối tháng): **review hoặc test**, không từ mới.
-
----
-
-## 6. Đối chiếu với data hiện có trong repo
-
-| Plan mới | Data app | Ghi chú |
-|----------|----------|---------|
-| Tháng 1 Day 1–30 | `month-01/days.json` | ✅ **Đã align** plan gốc |
-| Tháng 2 Day 31–60 | Chưa có | Viết theo plan khi được yêu cầu |
-| Tháng 3–7 | `coming-soon` | Viết theo plan này |
-
----
-
-## 7. Việc AI phải làm khi thêm ngày mới
-
-1. Tra **Day N** trong mục 4 của file này → đúng chủ đề.
-2. Kiểm **Priority 1/2/3** — target 5–6 không đào sâu Priority 3.
-3. **5–8 từ/ngày**, 6 câu listen, review ngày 7/14/21/30.
-4. Không nhảy cóc (vd. Past trước Present Simple).
-5. Tháng 5+: tăng reading/listening/test theo tỷ lệ mục 1.
-
----
-
-*Cập nhật: 10/2026 — Plan 7 tháng Day 1–210, mục tiêu 5–6/10, thi Bắc Ninh.*
+## 5. 16 ngày trước mốc thi
+
+10/05/2027 – 25/05/2027. Không học lại toàn bộ ngữ pháp từ đầu. Mỗi ngày sửa lỗi đang làm mất điểm.
+
+| Ngày | Nội dung |
+|------|----------|
+| 10/05 | Kiểm tra tổng hợp để xác định điểm yếu |
+| 11/05 | Các thì cơ bản và cách chia động từ |
+| 12/05 | Phát âm, trọng âm, đuôi -s/-es và -ed |
+| 13/05 | Từ vựng, word form và giới từ |
+| 14/05 | Câu hỏi giao tiếp và sắp xếp câu |
+| 15/05 | Điền từ vào đoạn văn |
+| 16/05 | Đọc hiểu: tìm thông tin và ý chính |
+| 17/05 | Câu so sánh, điều kiện và bị động |
+| 18/05 | Viết lại câu và hoàn thành câu |
+| 19/05 | Luyện nghe và sửa lỗi nghe |
+| 20/05 | Đề tổng hợp 60 phút |
+| 21/05 | Phân tích đề, chữa từng lỗi sai |
+| 22/05 | Đề tổng hợp thứ hai |
+| 23/05 | Ôn lỗi sai lặp lại nhiều lần |
+| 24/05 | Câu hỏi ngắn theo từng dạng, ôn nhẹ |
+| 25/05 | Ôn công thức và từ vựng quen; chuẩn bị tâm lý, nghỉ ngơi hợp lý |
+
+Ngày luyện đề chỉnh theo cấu trúc chính thức kỳ thi 2027–2028 khi Sở công bố.

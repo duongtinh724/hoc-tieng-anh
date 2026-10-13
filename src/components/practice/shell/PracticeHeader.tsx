@@ -1,5 +1,6 @@
 import { CloseOutlined } from "@ant-design/icons";
 import { Button, Tag, Typography } from "antd";
+import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import type { PracticeBreadcrumbItem } from "@/types/practice";
 
 interface PracticeHeaderProps {
@@ -64,6 +65,7 @@ export function PracticeHeader({
       </div>
 
       <div className="practice-header-actions">
+        <ThemeToggle />
         <Button type="text" icon={<CloseOutlined />} aria-label="Đóng" onClick={onClose} />
       </div>
     </header>

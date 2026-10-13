@@ -40,6 +40,42 @@
   --step-recall-bg: #f0fdf4;
 }
 
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #101613;
+  --surface: #18211c;
+  --surface-2: #212c26;
+  --text: #e8f2ec;
+  --muted: #a3b8ac;
+  --border: #314039;
+  --accent: #7dd3a7;
+  --accent-soft: #1a3328;
+  --accent-dark: #bbf7d0;
+  --success: #4ade80;
+  --success-soft: #143024;
+  --warning-soft: #3a2e14;
+  --warning-border: #a16207;
+  --warning-text: #fde68a;
+  --rule-green: #4ade80;
+  --rule-green-dark: #86efac;
+  --rule-green-soft: #14281e;
+  --rule-green-mid: #1b3a2a;
+  --rule-green-border: #166534;
+  --rule-green-text: #d1fae5;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --step-vocab: #93c5fd;
+  --step-vocab-bg: #1e2a3d;
+  --step-listen: #c4b5fd;
+  --step-listen-bg: #2a2340;
+  --step-copy: #67e8f9;
+  --step-copy-bg: #163038;
+  --step-exercise: #fdba74;
+  --step-exercise-bg: #3a2616;
+  --step-recall: #86efac;
+  --step-recall-bg: #143024;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -174,6 +210,22 @@ button {
 .sidebar-brand span {
   font-size: 0.78rem;
   color: var(--muted);
+}
+
+.theme-toggle {
+  align-self: flex-start;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.practice-header-actions .theme-toggle {
+  white-space: nowrap;
 }
 
 .sidebar-nav {
@@ -828,6 +880,7 @@ h3 {
   font-size: 0.9rem;
   line-height: 1.55;
   color: var(--rule-green-text);
+  white-space: pre-line;
 }
 
 .rule-item-chevron {
@@ -1250,7 +1303,7 @@ h3 {
   height: 40px;
   border: none;
   border-radius: 50%;
-  background: #fff;
+  background: var(--surface);
   color: var(--text);
   font-size: 1.1rem;
   font-weight: 700;
@@ -1263,7 +1316,7 @@ h3 {
   max-height: 85vh;
   overflow: auto;
   border-radius: var(--radius);
-  background: #fff;
+  background: var(--surface);
   box-shadow: var(--shadow-md);
   cursor: default;
 }
@@ -1399,7 +1452,7 @@ h3 {
 
 .speak-btn {
   border: 1px solid #ddd6fe;
-  background: #fff;
+  background: var(--surface);
   border-radius: var(--radius-sm);
   padding: 4px 10px;
   font-size: 0.78rem;
@@ -1534,7 +1587,7 @@ h3 {
   padding: 14px 16px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: #fff;
+  background: var(--surface);
   text-align: left;
   cursor: pointer;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
@@ -1679,7 +1732,7 @@ h3 {
   left: 50%;
   transform: translateX(-50%);
   border: 6px solid transparent;
-  border-top-color: #1e293b;
+  border-top-color: var(--text);
 }
 
 .practice-completion-badge:hover .practice-completion-badge-tip,
@@ -2333,7 +2386,7 @@ h3 {
   position: fixed;
   inset: 0;
   z-index: 200;
-  background: #f4f7fb;
+  background: var(--bg);
 }
 
 .practice-app {
@@ -2341,7 +2394,7 @@ h3 {
   display: grid;
   grid-template-rows: auto 1fr auto;
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-  color: #1e293b;
+  color: var(--text);
 }
 
 .practice-app.hint-open {
@@ -2360,19 +2413,19 @@ h3 {
 
 .practice-header {
   display: grid;
-  grid-template-columns: 180px 1fr 80px;
+  grid-template-columns: 180px 1fr auto;
   align-items: center;
   gap: 12px;
   padding: 14px 24px;
-  border-bottom: 1px solid #e2e8f0;
-  background: #fff;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
   box-shadow: 0 2px 12px rgba(15, 23, 42, 0.05);
 }
 
 .practice-logo {
   font-size: 0.95rem;
   font-weight: 700;
-  color: #1e3a8a;
+  color: var(--accent-dark);
 }
 
 .practice-header-center {
@@ -2430,7 +2483,7 @@ h3 {
 .practice-dot.is-current {
   width: 12px;
   height: 12px;
-  background: #fff;
+  background: var(--surface);
   border: 2px solid #1e3a8a;
 }
 
@@ -2446,10 +2499,10 @@ h3 {
 .practice-main {
   overflow: auto;
   padding: 24px 32px 32px;
-  background: #f4f7fb;
+  background: var(--bg);
   margin: 10px;
   border-radius: 8px;
-  box-shadow: 1px 2px 8px #cdcdcd;
+  box-shadow: var(--shadow-md);
 }
 
 .practice-panel-card {
@@ -2514,12 +2567,12 @@ h3 {
   gap: 8px;
   padding: 8px 14px;
   border-radius: 8px;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid #1e3a8a;
   box-shadow: 0 10px 28px rgba(15, 23, 42, 0.18);
   font-size: 0.92rem;
   font-weight: 600;
-  color: #1e293b;
+  color: var(--text);
   pointer-events: none;
 }
 
@@ -2588,7 +2641,7 @@ h3 {
   height: 32px;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
-  background: #fff;
+  background: var(--surface);
   color: #64748b;
   cursor: grab;
 }
@@ -2616,8 +2669,8 @@ h3 {
   align-items: center;
   gap: 16px;
   padding: 14px 24px;
-  border-top: 1px solid #e2e8f0;
-  background: #fff;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
   box-shadow: 0 -2px 12px rgba(15, 23, 42, 0.05);
 }
 
@@ -2644,7 +2697,7 @@ h3 {
   height: 36px;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
-  background: #fff;
+  background: var(--surface);
   color: #475569;
   cursor: pointer;
 }
@@ -2656,7 +2709,7 @@ h3 {
   padding: 10px 16px;
   border: 1px solid #1e3a8a;
   border-radius: 8px;
-  background: #fff;
+  background: var(--surface);
   color: #1e3a8a;
   font-weight: 600;
   cursor: pointer;
@@ -2708,7 +2761,7 @@ h3 {
 
 .practice-secondary-btn {
   background: #f1f5f9;
-  color: #1e293b;
+  color: var(--text);
 }
 
 .practice-screen-instruction h2 {
@@ -2766,6 +2819,24 @@ h3 {
   gap: 12px;
 }
 
+.practice-dictation-label {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #166534;
+}
+
+.practice-dictation-prompt {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #ecfdf3;
+  border: 1px solid #86efac;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
 .practice-dictation-hint {
   margin: 0;
   padding: 10px 12px;
@@ -2795,7 +2866,7 @@ h3 {
   list-style: none;
   border: 1px solid #e4ebe7;
   border-radius: 14px;
-  background: #fff;
+  background: var(--surface);
   overflow: hidden;
 }
 
@@ -2851,7 +2922,7 @@ h3 {
 }
 
 .practice-quiz-timer.is-expired {
-  background: #fff;
+  background: var(--surface);
   border: 2px solid #dc2626;
   color: #dc2626;
 }
@@ -2903,7 +2974,7 @@ h3 {
   padding: 14px 16px;
   border: 1px solid #e4ebe7;
   border-radius: 12px;
-  background: #fff;
+  background: var(--surface);
 }
 
 .practice-quiz-section li.is-correct {
@@ -2973,8 +3044,8 @@ h3 {
   padding: 8px 14px;
   border: 1px solid #cbd5e1;
   border-radius: 8px;
-  background: #fff;
-  color: #1e293b;
+  background: var(--surface);
+  color: var(--text);
   font-size: 0.92rem;
   cursor: pointer;
 }
@@ -3010,7 +3081,7 @@ h3 {
   border: 1px solid #cbd5e1;
   border-radius: 8px;
   background: #eef2ff;
-  color: #1e293b;
+  color: var(--text);
   font-size: 0.92rem;
   cursor: pointer;
   margin-top: 8px;
@@ -3138,7 +3209,7 @@ h3 {
 }
 
 .practice-match-flip-front {
-  background: #fff;
+  background: var(--surface);
 }
 
 .practice-match-flip-front img,
@@ -3148,14 +3219,14 @@ h3 {
   object-fit: contain;
   object-position: center;
   display: block;
-  background: #fff;
+  background: var(--surface);
 }
 
 .practice-match-flip-back {
   display: grid;
   place-items: center;
   padding: 12px;
-  background: #fff;
+  background: var(--surface);
   color: #0f172a;
   font-size: 1rem;
   font-weight: 600;
@@ -3227,7 +3298,7 @@ h3 {
   padding: 10px 12px;
   border: 1px solid #cbd5e1;
   border-radius: 8px;
-  background: #fff;
+  background: var(--surface);
   font-size: 0.9rem;
 }
 
@@ -3334,7 +3405,7 @@ h3 {
   padding: 12px 14px;
   border: 1px solid #cbd5e1;
   border-radius: 10px;
-  background: #fff;
+  background: var(--surface);
 }
 
 .practice-reorder-item--correct,
@@ -3359,7 +3430,7 @@ h3 {
   height: 22px;
   border: 1px solid #cbd5e1;
   border-radius: 4px;
-  background: #fff;
+  background: var(--surface);
   cursor: pointer;
 }
 
@@ -3417,7 +3488,7 @@ h3 {
   padding: 8px 12px;
   border: 1px solid #cbd5e1;
   border-radius: 999px;
-  background: #fff;
+  background: var(--surface);
   box-shadow: 0 1px 2px rgb(15 23 42 / 6%);
 }
 
@@ -3586,8 +3657,8 @@ h3 {
 .practice-hint-drawer {
   grid-row: 2 / 4;
   grid-column: 2;
-  border-left: 1px solid #e2e8f0;
-  background: #fff;
+  border-left: 1px solid var(--border);
+  background: var(--surface);
   overflow: auto;
   padding: 16px;
 }

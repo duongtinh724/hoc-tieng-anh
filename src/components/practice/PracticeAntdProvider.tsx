@@ -3,17 +3,26 @@
 import { AntdRegistry } from "@ant-design/nextjs-registry";
 import { ConfigProvider, theme } from "antd";
 import type { ReactNode } from "react";
+import { useSyncExternalStore } from "react";
+import { readTheme } from "@/lib/theme";
+
+function subscribe(onChange: () => void) {
+  window.addEventListener("theme-change", onChange);
+  return () => window.removeEventListener("theme-change", onChange);
+}
 
 interface PracticeAntdProviderProps {
   children: ReactNode;
 }
 
 export function PracticeAntdProvider({ children }: PracticeAntdProviderProps) {
+  const mode = useSyncExternalStore(subscribe, readTheme, () => "light" as const);
+
   return (
     <AntdRegistry>
       <ConfigProvider
         theme={{
-          algorithm: theme.defaultAlgorithm,
+          algorithm: mode === "dark" ? theme.darkAlgorithm : theme.defaultAlgorithm,
           token: {
             colorPrimary: "#1e3a8a",
             colorSuccess: "#16a34a",

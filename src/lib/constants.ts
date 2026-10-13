@@ -31,23 +31,28 @@ export const ANNOUNCEMENT_MESSAGES = [
 
 export const GUIDE_STEPS = [
   {
-    time: "0–8 phút",
-    title: "Nghe & nhắc lại",
-    detail: "Nghe 6 câu, nhắc to 3 vòng. Bấm nút «Nghe» để nghe phát âm.",
+    time: "0–10 phút",
+    title: "Từ vựng và ôn bài cũ",
+    detail: "Ôn từ đã học, học khoảng 5 từ mới. Nghe và chép nghĩa.",
   },
   {
-    time: "8–20 phút",
-    title: "Chép vào vở",
-    detail: "Chép từ vựng và câu mẫu. Cột trái tiếng Anh, cột phải tiếng Việt.",
+    time: "10–25 phút",
+    title: "Ngữ pháp",
+    detail: "Đọc quy tắc hôm nay và ví dụ. Nghe 6 câu, nhắc to.",
   },
   {
-    time: "20–27 phút",
+    time: "25–40 phút",
     title: "Làm bài tập",
-    detail: "Làm bài vào vở. Viết câu trả lời trước khi kiểm tra với giáo viên hoặc phụ huynh.",
+    detail: "Điền từ, sắp xếp câu, chọn đáp án. Viết vào vở trước khi đối chiếu.",
   },
   {
-    time: "27–30 phút",
-    title: "Ba phút cuối",
-    detail: "Che vở, nhắc lại từ và câu. Đánh dấu «Đã học xong» khi hoàn thành.",
+    time: "40–50 phút",
+    title: "Kỹ năng đề",
+    detail: "Nghe câu ngắn, đọc đoạn dễ, hoặc viết lại câu.",
+  },
+  {
+    time: "50–60 phút",
+    title: "Nhớ lại và sửa lỗi",
+    detail: "Che vở, tự trả lời. Ghi câu sai để ôn lại.",
   },
 ];

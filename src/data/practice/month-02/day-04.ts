@@ -289,8 +289,8 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "dictation",
-      title: "Listen and write.\nNghe và chép lại.",
-      instruction: "Listen to one sentence, type it, then press Check. A hint appears after 3 wrong tries.\nNghe từng câu, gõ vào ô, rồi bấm Kiểm tra. Sai 3 lần thì hiện gợi ý.",
+      title: "Translate into English.\nDịch sang tiếng Anh.",
+      instruction: "Read the Vietnamese sentence and write it in English. Press Check.\nĐọc câu tiếng Việt rồi viết câu tiếng Anh. Bấm Kiểm tra.",
       items: [
         {
           id: "dic-1",

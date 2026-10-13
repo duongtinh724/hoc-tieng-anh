@@ -3,6 +3,7 @@
 import { useState, type ReactNode } from "react";
 import type { AppSection } from "@/types/lesson";
 import { AnnouncementTicker } from "@/components/layout/AnnouncementTicker";
+import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { SidebarNav } from "@/components/navigation/SidebarNav";
 
 interface AppShellProps {
@@ -55,6 +56,8 @@ export function AppShell({
             <span>30 phút mỗi ngày</span>
           </div>
         </div>
+
+        <ThemeToggle />
 
         <SidebarNav
           activeSection={activeSection}

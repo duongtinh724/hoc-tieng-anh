@@ -19,7 +19,7 @@ interface LessonCardProps {
   onGoToNext: () => void;
 }
 
-const REVIEW_DAYS = [7, 14, 21, 30];
+const REVIEW_DAYS = [7, 14, 21, 28];
 
 export function LessonCard({
   month,
@@ -44,14 +44,6 @@ export function LessonCard({
       </header>
 
       <div className="card-body">
-        <div className="lesson-intro-row">
-          <div className="aim-box">
-            <span className="aim-label">Mục tiêu hôm nay</span>
-            <p>{lesson.aim}</p>
-          </div>
-          <RuleBox rules={getRulesForDay(month, lesson.day, lesson.rule)} />
-        </div>
-
         <div className="session-overview">
           <strong>5 mục cần học trong buổi này</strong>
           <ol className="session-checklist">
@@ -63,6 +55,14 @@ export function LessonCard({
               </li>
             ))}
           </ol>
+        </div>
+
+        <div className="lesson-intro-row">
+          <div className="aim-box">
+            <span className="aim-label">Mục tiêu hôm nay</span>
+            <p>{lesson.aim}</p>
+          </div>
+          <RuleBox rules={getRulesForDay(month, lesson.day, lesson.rule)} />
         </div>
 
         <div className="lesson-steps-grid">
@@ -109,7 +109,7 @@ export function LessonCard({
 
         {reviewDay && (
           <p className="review-note">
-            Ngày kiểm tra: dùng cả 30 phút để làm bài, không học từ mới.
+            Ngày kiểm tra: giảm kiến thức mới, dùng buổi để làm bài và ghi câu sai.
           </p>
         )}
       </div>

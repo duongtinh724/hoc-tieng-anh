@@ -215,9 +215,9 @@ export interface QuizExerciseConfig {
 
 export interface DictationItem {
   id: string;
-  /** Câu hoặc từ học sinh phải chép. */
+  /** Câu tiếng Anh học sinh phải viết. */
   text: string;
-  /** Hiện sau 3 lần sai. */
+  /** Câu tiếng Việt cho sẵn. */
   hint: string;
 }
 
