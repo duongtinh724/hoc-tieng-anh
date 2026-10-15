@@ -244,7 +244,7 @@ export function useLessonState() {
   }, []);
 
   const nextDay = getNextIncompleteDay(state.month, doneDays);
-  const visibleDays = getDaysByWeek(state.month, state.week);
+  const visibleDays = getDaysByWeek(state.month, 0);
   const currentLesson = getDayByNumber(state.month, state.selectedDay);
 
   return {

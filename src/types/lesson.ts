@@ -61,7 +61,7 @@ export interface LessonState {
   openPracticeDay?: number | null;
 }
 
-export type AppSection = "overview" | "lesson" | "practice" | "review" | "guide";
+export type AppSection = "overview" | "lesson" | "practice" | "review" | "guide" | "roadmap";
 
 export type StepVariant = "vocab" | "listen" | "copy" | "exercise" | "recall";
 

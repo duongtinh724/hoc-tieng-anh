@@ -1,9 +1,8 @@
 "use client";
 
-import { useMemo } from "react";
 import { PracticeMenuPanel } from "@/components/practice/PracticeMenuPanel";
 import { PracticePage } from "@/components/practice/PracticePage";
-import { getWeekOptions, getTotalDays } from "@/data/days";
+import { getTotalDays } from "@/data/days";
 import { AppShell } from "@/components/layout/AppShell";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { GuidePanel } from "@/components/guide/GuidePanel";
@@ -12,9 +11,9 @@ import { ReviewPlanPanel } from "@/components/review/ReviewPlanPanel";
 import { LessonCard } from "@/components/lesson/LessonCard";
 import { DayGrid } from "@/components/navigation/DayGrid";
 import { MonthSelector } from "@/components/navigation/MonthSelector";
-import { WeekPills } from "@/components/navigation/WeekPills";
 import { ProgressBar } from "@/components/stats/ProgressBar";
 import { StatsGrid } from "@/components/stats/StatsGrid";
+import { RoadmapPanel } from "@/components/roadmap/RoadmapPanel";
 import { useLessonState } from "@/hooks/useLessonState";
 
 export function LessonApp() {
@@ -31,7 +30,6 @@ export function LessonApp() {
     openPracticeDay,
     setOpenPracticeDay,
     setMonth,
-    setWeek,
     setSelectedDay,
     goToNextDay,
     toggleDayDone,
@@ -40,7 +38,6 @@ export function LessonApp() {
     quizScores,
     recordQuizScore,
   } = useLessonState();
-  const weeks = useMemo(() => getWeekOptions(state.month), [state.month]);
   const totalDays = getTotalDays(state.month);
 
   if (!hydrated) {
@@ -64,15 +61,6 @@ export function LessonApp() {
   const sidebar = (
     <>
       <MonthSelector selectedMonth={state.month} onSelectMonth={setMonth} />
-
-      <div className="sidebar-section">
-        <p className="nav-label">Chọn tuần</p>
-        <WeekPills
-          weeks={weeks}
-          selectedWeek={state.week}
-          onSelectWeek={setWeek}
-        />
-      </div>
 
       <div className="sidebar-section">
         <p className="nav-label">Chọn ngày</p>
@@ -167,7 +155,6 @@ export function LessonApp() {
       {activeSection === "practice" && (
         <PracticeMenuPanel
           monthConfig={monthConfig}
-          week={state.week}
           practiceCompletions={practiceCompletions}
           quizScores={quizScores}
           onStartPractice={(day) => setOpenPracticeDay(day)}
@@ -193,6 +180,15 @@ export function LessonApp() {
           doneDays={doneDays}
           nextDay={nextDay}
           onGoToDay={setSelectedDay}
+        />
+      )}
+
+      {activeSection === "roadmap" && (
+        <RoadmapPanel
+          onOpenDay={(monthId, day) => {
+            if (monthId !== state.month) setMonth(monthId);
+            setSelectedDay(day);
+          }}
         />
       )}
 

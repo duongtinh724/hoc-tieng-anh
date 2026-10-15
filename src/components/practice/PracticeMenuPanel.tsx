@@ -1,6 +1,6 @@
 "use client";
 
-import { getDaysByWeek } from "@/data/days";
+import { getDaysForMonth } from "@/data/curriculum";
 import { hasPracticeLesson, getPracticeLesson } from "@/data/practice";
 import {
   getPracticeCompletionCount,
@@ -11,7 +11,6 @@ import type { MonthConfig } from "@/types/lesson";
 
 interface PracticeMenuPanelProps {
   monthConfig: MonthConfig;
-  week: number;
   practiceCompletions: Record<string, number>;
   quizScores: Record<string, number>;
   onStartPractice: (day: number) => void;
@@ -19,12 +18,11 @@ interface PracticeMenuPanelProps {
 
 export function PracticeMenuPanel({
   monthConfig,
-  week,
   practiceCompletions,
   quizScores,
   onStartPractice,
 }: PracticeMenuPanelProps) {
-  const days = getDaysByWeek(monthConfig.id, week);
+  const days = getDaysForMonth(monthConfig.id);
   const availableCount = days.filter((day) =>
     hasPracticeLesson(monthConfig.id, day.day),
   ).length;
@@ -33,7 +31,6 @@ export function PracticeMenuPanel({
     <section className="panel practice-menu-panel">
       <p className="page-eyebrow">
         {monthConfig.title}
-        {week === 0 ? " · Cả tháng" : ` · Tuần ${week}`}
       </p>
       <h2>Luyện tập theo ngày</h2>
       <p className="panel-lead">
@@ -41,7 +38,7 @@ export function PracticeMenuPanel({
         từ sẽ thay đổi.
         {availableCount > 0
           ? ` Hiện có ${availableCount} ngày trong danh sách bên dưới.`
-          : " Chưa có bài luyện cho tuần này."}
+          : " Chưa có bài luyện cho tháng này."}
       </p>
 
       <ul className="practice-day-list">
@@ -57,6 +54,8 @@ export function PracticeMenuPanel({
           );
           const tier = getPracticeCompletionTier(completionCount);
           const isQuiz = practice?.screens.some((screen) => screen.type === "quiz") ?? false;
+          const isTest = /kiểm tra/i.test(day.title);
+          const isReview = /^ôn/i.test(day.title);
           const quizScore = quizScores[`${monthConfig.id}-${day.day}`];
           const hasQuizScore = isQuiz && quizScore !== undefined;
 
@@ -66,11 +65,22 @@ export function PracticeMenuPanel({
                 type="button"
                 className={`practice-day-card${available ? "" : " is-unavailable"}${hasQuizScore ? " practice-day-card--done" : ""}${tier !== "none" ? ` practice-day-card--${tier}` : ""}`}
                 disabled={!available}
+                title={
+                  isTest
+                    ? `Ngày kiểm tra: ${day.title}`
+                    : isReview
+                      ? `Ngày ôn tập: ${day.title}`
+                      : day.title
+                }
                 onClick={() => onStartPractice(day.day)}
               >
                 <span className="practice-day-card-num">Ngày {day.day}</span>
                 <span className="practice-day-card-body">
-                  <strong>{day.title}</strong>
+                  <strong>
+                    {day.title}
+                    {isTest ? <span className="day-kind-tag is-test">✎ Kiểm tra</span> : null}
+                    {isReview ? <span className="day-kind-tag is-review">↻ Ôn tập</span> : null}
+                  </strong>
                   <span className="practice-day-card-meta">
                     {available
                       ? isQuiz
@@ -108,7 +118,7 @@ export function PracticeMenuPanel({
       </ul>
 
       <p className="practice-menu-note">
-        Dùng menu tuần / ngày bên trái để lọc nhanh. Màu viền: 1 lần xanh da
+        Dùng menu tháng và ngày bên trái để chọn bài. Màu viền: 1 lần xanh da
         trời · 2 lần xanh lá · 3 lần vàng · 4+ lần đỏ.
       </p>
     </section>
