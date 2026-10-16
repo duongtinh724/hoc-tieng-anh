@@ -26,7 +26,9 @@ export function DictationExercise({ config, state, onChange }: DictationExercise
       <ScreenInstruction
         title={config.title}
         instruction={
-          "Read the Vietnamese sentence. Type the English sentence in the box. Then press Check.\nĐọc câu tiếng Việt. Gõ câu tiếng Anh vào ô. Rồi bấm Kiểm tra."
+          config.promptLabel
+            ? config.instruction
+            : "Read the Vietnamese sentence. Type the English sentence in the box. Then press Check.\nĐọc câu tiếng Việt. Gõ câu tiếng Anh vào ô. Rồi bấm Kiểm tra."
         }
       />
       <Typography.Text type="secondary">
@@ -47,18 +49,18 @@ export function DictationExercise({ config, state, onChange }: DictationExercise
 
       {active ? (
         <div className="practice-dictation-card">
-          <p className="practice-dictation-label">Câu tiếng Việt</p>
+          <p className="practice-dictation-label">{config.promptLabel ?? "Câu tiếng Việt"}</p>
           <p className="practice-dictation-prompt">{active.hint}</p>
           <Input
             size="large"
             value={state.answers[active.id] ?? ""}
-            placeholder="Viết câu tiếng Anh"
+            placeholder={config.inputPlaceholder ?? "Viết câu tiếng Anh"}
             status={state.feedback[active.id] === "incorrect" ? "error" : undefined}
             onChange={(event) => onChange(active.id, event.target.value)}
           />
           {state.feedback[active.id] === "incorrect" ? (
             <Typography.Text type="danger">
-              Chưa đúng. Viết lại câu tiếng Anh.
+              Chưa đúng. {config.promptLabel ? "Viết lại câu hỏi." : "Viết lại câu tiếng Anh."}
               {attempts < 3 ? ` Còn ${3 - attempts} lần trước khi có gợi ý.` : ""}
             </Typography.Text>
           ) : null}
@@ -69,7 +71,9 @@ export function DictationExercise({ config, state, onChange }: DictationExercise
           ) : null}
         </div>
       ) : (
-        <Typography.Paragraph>Bạn đã dịch xong các câu. Bấm Tiếp.</Typography.Paragraph>
+        <Typography.Paragraph>
+          {config.doneMessage ?? "Bạn đã dịch xong các câu. Bấm Tiếp."}
+        </Typography.Paragraph>
       )}
     </div>
   );

@@ -35,19 +35,19 @@ export const practiceDay05: PracticeLesson = {
       ],
     },
     {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
+      type: "dictation",
+      title: "Make a question.\nĐặt câu hỏi.",
+      instruction:
+        "Read the sentence. Write a Yes/No question. Put am, is, or are before the subject.\nĐọc câu khẳng định. Viết câu hỏi Yes/No. Đưa am, is hoặc are lên trước chủ ngữ.",
+      promptLabel: "Câu khẳng định",
+      inputPlaceholder: "Viết câu hỏi",
+      doneMessage: "Bạn đã đặt xong các câu hỏi. Bấm Tiếp.",
       items: [
-        { id: "c-1", label: "Are you a student?", correctCategoryId: "cat-a" },
-        { id: "c-2", label: "Yes, I am.", correctCategoryId: "cat-b" },
-        { id: "c-3", label: "Is she happy?", correctCategoryId: "cat-a" },
-        { id: "c-4", label: "No, she isn't.", correctCategoryId: "cat-b" },
-        { id: "c-5", label: "Are they tired?", correctCategoryId: "cat-a" },
+        { id: "q-1", hint: "You are a student.", text: "Are you a student?" },
+        { id: "q-2", hint: "She is happy.", text: "Is she happy?" },
+        { id: "q-3", hint: "They are tired.", text: "Are they tired?" },
+        { id: "q-4", hint: "He is busy.", text: "Is he busy?" },
+        { id: "q-5", hint: "We are here.", text: "Are we here?" },
       ],
     },
     {

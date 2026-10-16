@@ -225,6 +225,12 @@ export interface DictationExerciseConfig {
   type: "dictation";
   title: string;
   instruction: string;
+  /** Nhãn câu cho sẵn. Mặc định: câu tiếng Việt. */
+  promptLabel?: string;
+  /** Placeholder ô viết. */
+  inputPlaceholder?: string;
+  /** Câu khi làm xong hết. */
+  doneMessage?: string;
   items: DictationItem[];
 }
 
