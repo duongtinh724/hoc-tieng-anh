@@ -3,112 +3,232 @@
     "day": 1,
     "week": 1,
     "title": "Đại từ nhân xưng",
-    "aim": "Đại từ nhân xưng là từ đứng thay cho tên người hoặc vật, để biết ai đang được nói đến. Hôm nay học bảy đại từ: I, you, he, she, it, we, they. Chúng thường đứng đầu câu.",
-    "rule": "I = tôi · You = bạn · He = anh ấy · She = cô ấy · It = vật hoặc con vật · We = chúng tôi · They = họ.",
+    "aim": "Biết 7 đại từ nhân xưng đứng làm chủ ngữ.\nThay tên người, vật hoặc nhóm người bằng đúng đại từ.\nViết được câu ngắn: He is a student. They are at home.",
+    "rule": "I = tôi (người nói).\nYou = bạn / các bạn (người nghe).\nHe = anh ấy (một người nam).\nShe = cô ấy (một người nữ).\nIt = nó (đồ vật, con vật, sự việc).\nWe = chúng tôi / chúng ta.\nThey = họ / chúng.",
     "words": [
       {
         "en": "I",
-        "vi": "tôi"
+        "vi": "tôi — người nói"
       },
       {
         "en": "you",
-        "vi": "bạn"
+        "vi": "bạn / các bạn — người nghe"
       },
       {
         "en": "he",
-        "vi": "anh ấy"
+        "vi": "anh ấy — một người nam"
       },
       {
         "en": "she",
-        "vi": "cô ấy"
+        "vi": "cô ấy — một người nữ"
       },
       {
         "en": "it",
-        "vi": "nó"
+        "vi": "nó — đồ vật, con vật, sự việc"
       },
       {
         "en": "we",
-        "vi": "chúng tôi"
+        "vi": "chúng tôi / chúng ta"
       },
       {
         "en": "they",
-        "vi": "họ"
+        "vi": "họ / chúng"
       }
     ],
     "listen": [
       {
-        "en": "I",
-        "vi": "tôi"
+        "en": "Nam is a student. He is a student.",
+        "vi": "Nam là học sinh. Anh ấy là học sinh."
       },
       {
-        "en": "You",
-        "vi": "bạn"
+        "en": "Lan is my friend. She is my friend.",
+        "vi": "Lan là bạn tôi. Cô ấy là bạn tôi."
       },
       {
-        "en": "He",
-        "vi": "anh ấy"
+        "en": "My parents are at home. They are at home.",
+        "vi": "Bố mẹ tôi ở nhà. Họ ở nhà."
       },
       {
-        "en": "She",
-        "vi": "cô ấy"
+        "en": "My brother and I are happy. We are happy.",
+        "vi": "Anh trai tôi và tôi vui. Chúng tôi vui."
       },
       {
-        "en": "It",
-        "vi": "nó"
+        "en": "The book is new. It is new.",
+        "vi": "Quyển sách mới. Nó mới."
       },
       {
-        "en": "They",
-        "vi": "họ"
+        "en": "I am a beginner in English.",
+        "vi": "Tôi mới bắt đầu học tiếng Anh."
       }
     ],
     "copy": [
-      "Chép 7 đại từ và nghĩa.",
-      "Chép 6 câu nghe."
+      "Chép bảng 7 đại từ: từ, nghĩa, dùng để chỉ ai.",
+      "Chép 5 cặp ví dụ: tên hoặc cụm từ → đại từ."
     ],
     "exercise": [
-      "1. ___ = tôi",
-      "2. ___ = bạn",
-      "3. ___ = anh ấy",
-      "4. ___ = cô ấy",
-      "5. ___ = vật",
-      "6. ___ = họ"
+      "Điền I, you, he, she, it, we hoặc they.",
+      "1. Nam is my brother. ___ is 15 years old.",
+      "2. Lan is a teacher. ___ is kind.",
+      "3. My parents are at home. ___ are happy.",
+      "4. My cat is small. ___ is cute.",
+      "5. My friend and I are students. ___ are students.",
+      "6. ___ am a beginner in English.",
+      "7. Tom and Peter are friends. ___ are friends.",
+      "Dịch sang tiếng Anh.",
+      "8. Cô ấy là bạn của tôi.",
+      "9. Họ là học sinh.",
+      "10. Chúng tôi vui vẻ.",
+      "11. Nó là một quyển sách."
     ],
     "answers": [
-      "1 I",
-      "2 You",
-      "3 He",
-      "4 She",
-      "5 It",
-      "6 They"
+      "1 He",
+      "2 She",
+      "3 They",
+      "4 It",
+      "5 We",
+      "6 I",
+      "7 They",
+      "8 She is my friend.",
+      "9 They are students.",
+      "10 We are happy.",
+      "11 It is a book."
     ],
-    "recall": "Che vở, nói 7 đại từ và nghĩa."
+    "recall": "Nói 5 câu về bản thân và gia đình. Ví dụ: I am a student. He is my brother."
   },
   {
     "day": 2,
     "week": 1,
     "title": "To be: am, is, are",
-    "aim": "Động từ to be (am, is, are) nghĩa là “là” hoặc “ở trạng thái nào”. Không phải hành động như ăn hay đi. Dùng để nói mình là ai, đang vui hay mệt. I đi với am, he/she/it đi với is, you/we/they đi với are.",
-    "rule": "I + am.\nHe / She / It + is.\nYou / We / They + are.",
+    "aim": "Chọn đúng am, is hoặc are sau chủ ngữ.\nI đi với am. He, she, it đi với is. You, we, they đi với are.\nNhận ra dạng viết tắt: I'm, she's, they're.",
+    "rule": "I + am. I am happy.\nHe / She / It + is. She is tired.\nYou / We / They + are. They are busy.\nViết tắt: I'm, he's, she's, it's, you're, we're, they're.\nMẹo: I — am. He, she, it — is. You, we, they — are.",
     "words": [
       {
-        "en": "student",
-        "vi": "học sinh"
-      },
-      {
-        "en": "teacher",
-        "vi": "giáo viên"
-      },
-      {
-        "en": "friend",
-        "vi": "bạn"
-      },
-      {
         "en": "happy",
-        "vi": "vui"
+        "vi": "vui vẻ"
       },
       {
         "en": "sad",
         "vi": "buồn"
+      },
+      {
+        "en": "tired",
+        "vi": "mệt"
+      },
+      {
+        "en": "busy",
+        "vi": "bận"
+      },
+      {
+        "en": "hungry",
+        "vi": "đói"
+      },
+      {
+        "en": "thirsty",
+        "vi": "khát"
+      },
+      {
+        "en": "ready",
+        "vi": "sẵn sàng"
+      },
+      {
+        "en": "fine",
+        "vi": "khỏe, ổn"
+      }
+    ],
+    "listen": [
+      {
+        "en": "I am happy.",
+        "vi": "Tôi vui."
+      },
+      {
+        "en": "She is tired.",
+        "vi": "Cô ấy mệt."
+      },
+      {
+        "en": "They are busy.",
+        "vi": "Họ bận."
+      },
+      {
+        "en": "He is hungry.",
+        "vi": "Anh ấy đói."
+      },
+      {
+        "en": "We are ready.",
+        "vi": "Chúng tôi sẵn sàng."
+      },
+      {
+        "en": "You are fine.",
+        "vi": "Bạn khỏe."
+      }
+    ],
+    "copy": [
+      "Chép bảng: I am, He/She/It is, You/We/They are.",
+      "Chép dạng viết tắt: I'm, he's, she's, it's, you're, we're, they're."
+    ],
+    "exercise": [
+      "Điền am, is hoặc are.",
+      "1. I ___ happy.",
+      "2. She ___ a teacher.",
+      "3. They ___ busy.",
+      "4. We ___ ready.",
+      "5. It ___ small.",
+      "6. You ___ my friend.",
+      "7. He ___ tired.",
+      "8. My parents ___ at home.",
+      "9. My brother ___ hungry.",
+      "10. I ___ fine.",
+      "Chọn am, is hoặc are.",
+      "11. He (am / is / are) tall.",
+      "12. We (am / is / are) students.",
+      "13. I (am / is / are) tired.",
+      "14. They (am / is / are) happy.",
+      "15. It (am / is / are) new."
+    ],
+    "answers": [
+      "1 am",
+      "2 is",
+      "3 are",
+      "4 are",
+      "5 is",
+      "6 are",
+      "7 is",
+      "8 are",
+      "9 is",
+      "10 am",
+      "11 is",
+      "12 are",
+      "13 am",
+      "14 are",
+      "15 is"
+    ],
+    "recall": "Nhẩm: I am happy. She is tired. They are busy. I'm, she's, they're."
+  },
+  {
+    "day": 3,
+    "week": 1,
+    "title": "Câu khẳng định với to be",
+    "aim": "Viết câu khẳng định: chủ ngữ + am/is/are + phần còn lại.\nDùng được 3 kiểu: danh từ, tính từ, nơi chốn.\nDịch được câu khẳng định đơn giản.",
+    "rule": "Chủ ngữ + am/is/are + phần còn lại.\n+ danh từ: I am a student.\n+ tính từ: She is happy.\n+ nơi chốn: They are at home.",
+    "words": [
+      {
+        "en": "doctor",
+        "vi": "bác sĩ"
+      },
+      {
+        "en": "beautiful",
+        "vi": "xinh đẹp"
+      },
+      {
+        "en": "at home",
+        "vi": "ở nhà"
+      },
+      {
+        "en": "good",
+        "vi": "tốt"
+      },
+      {
+        "en": "friend",
+        "vi": "bạn"
       }
     ],
     "listen": [
@@ -117,206 +237,156 @@
         "vi": "Tôi là học sinh."
       },
       {
-        "en": "You are my friend.",
-        "vi": "Bạn là bạn tôi."
+        "en": "He is a doctor.",
+        "vi": "Anh ấy là bác sĩ."
       },
       {
-        "en": "He is a student.",
-        "vi": "Anh ấy là học sinh."
+        "en": "She is beautiful.",
+        "vi": "Cô ấy xinh đẹp."
       },
       {
-        "en": "She is a teacher.",
-        "vi": "Cô ấy là giáo viên."
+        "en": "We are at home.",
+        "vi": "Chúng tôi ở nhà."
       },
       {
-        "en": "It is a book.",
-        "vi": "Nó là quyển sách."
+        "en": "They are good friends.",
+        "vi": "Họ là những người bạn tốt."
       },
       {
-        "en": "They are happy.",
-        "vi": "Họ vui."
+        "en": "She is my friend.",
+        "vi": "Cô ấy là bạn tôi."
       }
     ],
     "copy": [
-      "Viết bảng: I am, You are, He is, She is, It is, We are, They are.",
-      "Chép 6 câu nghe."
+      "Chép công thức: chủ ngữ + am/is/are + phần còn lại.",
+      "Chép 3 kiểu: + danh từ, + tính từ, + nơi chốn."
     ],
     "exercise": [
-      "1. I ___ a student.",
-      "2. You ___ my friend.",
-      "3. He ___ happy.",
-      "4. She ___ a teacher.",
-      "5. It ___ a book.",
-      "6. They ___ sad."
+      "Sắp xếp thành câu.",
+      "1. am / I / happy",
+      "2. a student / is / He",
+      "3. at home / are / They",
+      "4. my friend / She / is",
+      "5. tired / We / are",
+      "Dịch sang tiếng Anh.",
+      "6. Tôi là học sinh.",
+      "7. Anh ấy mệt.",
+      "8. Chúng tôi ở nhà.",
+      "9. Cô ấy là giáo viên.",
+      "10. Họ rất vui vẻ."
     ],
     "answers": [
-      "1 am",
-      "2 are",
-      "3 is",
-      "4 is",
-      "5 is",
-      "6 are"
+      "1 I am happy.",
+      "2 He is a student.",
+      "3 They are at home.",
+      "4 She is my friend.",
+      "5 We are tired.",
+      "6 I am a student.",
+      "7 He is tired.",
+      "8 We are at home.",
+      "9 She is a teacher.",
+      "10 They are very happy."
     ],
-    "recall": "Nói: I am, You are, He is, They are."
-  },
-  {
-    "day": 3,
-    "week": 1,
-    "title": "Câu khẳng định với to be",
-    "aim": "Câu khẳng định là câu nói một việc đúng, không phủ định và không hỏi. Với to be, câu có dạng: đại từ + am/is/are + phần còn lại. Ví dụ: I am a student.",
-    "rule": "I am + …\nHe / She / It is + …\nYou / We / They are + …",
-    "words": [
-      {
-        "en": "tired",
-        "vi": "mệt"
-      },
-      {
-        "en": "busy",
-        "vi": "bận"
-      },
-      {
-        "en": "fifteen",
-        "vi": "15"
-      },
-      {
-        "en": "class",
-        "vi": "lớp"
-      },
-      {
-        "en": "happy",
-        "vi": "vui"
-      }
-    ],
-    "listen": [
-      {
-        "en": "I am Nam.",
-        "vi": "Tôi là Nam."
-      },
-      {
-        "en": "I am fifteen.",
-        "vi": "Tôi 15 tuổi."
-      },
-      {
-        "en": "You are busy.",
-        "vi": "Bạn đang bận."
-      },
-      {
-        "en": "She is tired.",
-        "vi": "Cô ấy mệt."
-      },
-      {
-        "en": "We are in class.",
-        "vi": "Chúng tôi đang ở lớp."
-      },
-      {
-        "en": "They are happy.",
-        "vi": "Họ vui."
-      }
-    ],
-    "copy": [
-      "Chép mẫu: I am Nam. I am fifteen. I am a student.",
-      "Chép 6 câu nghe."
-    ],
-    "exercise": [
-      "1. I ___ Nam.",
-      "2. I ___ fifteen.",
-      "3. You ___ busy.",
-      "4. He ___ a student.",
-      "5. We ___ in class.",
-      "6. Viết 2 câu: I am…"
-    ],
-    "answers": [
-      "1 am",
-      "2 am",
-      "3 are",
-      "4 is",
-      "5 are",
-      "6 I am Nam. I am a student."
-    ],
-    "recall": "Nói 3 câu: I am… You are… They are…"
+    "recall": "Viết 5 câu khẳng định về bản thân, gia đình hoặc bạn bè."
   },
   {
     "day": 4,
     "week": 1,
     "title": "Câu phủ định với to be",
-    "aim": "Câu phủ định dùng để nói một việc không đúng. Với to be, thêm not ngay sau am, is hoặc are. Ví dụ: I am not sad. She isn't tired.",
-    "rule": "I am not.\nHe / She / It is not (isn't).\nYou / We / They are not (aren't).",
+    "aim": "Thêm not sau am, is hoặc are để thành câu phủ định.\nDùng isn't và aren't. am not không viết tắt.\nKhông dùng don't hoặc doesn't với to be.",
+    "rule": "Chủ ngữ + am/is/are + not + phần còn lại.\nis not = isn't. are not = aren't.\nam not không có dạng viết tắt thông dụng.\nKhông dùng don't / doesn't với to be.",
     "words": [
       {
-        "en": "sad",
-        "vi": "buồn"
+        "en": "not",
+        "vi": "không"
       },
       {
-        "en": "busy",
-        "vi": "bận"
+        "en": "isn't",
+        "vi": "không phải / không (số ít)"
       },
       {
-        "en": "tired",
-        "vi": "mệt"
+        "en": "aren't",
+        "vi": "không phải / không (số nhiều, you)"
       },
       {
-        "en": "here",
-        "vi": "ở đây"
+        "en": "late",
+        "vi": "muộn, trễ"
       },
       {
-        "en": "there",
-        "vi": "ở đó"
+        "en": "expensive",
+        "vi": "đắt"
       }
     ],
     "listen": [
       {
-        "en": "I am not sad.",
-        "vi": "Tôi không buồn."
+        "en": "I am not tired.",
+        "vi": "Tôi không mệt."
       },
       {
-        "en": "He is not busy.",
-        "vi": "Anh ấy không bận."
+        "en": "He isn't a teacher.",
+        "vi": "Anh ấy không phải giáo viên."
       },
       {
-        "en": "She isn't tired.",
-        "vi": "Cô ấy không mệt."
+        "en": "She isn't at home.",
+        "vi": "Cô ấy không ở nhà."
       },
       {
-        "en": "It is not here.",
-        "vi": "Nó không ở đây."
+        "en": "We aren't busy.",
+        "vi": "Chúng tôi không bận."
       },
       {
-        "en": "We are not there.",
-        "vi": "Chúng tôi không ở đó."
+        "en": "They aren't hungry.",
+        "vi": "Họ không đói."
       },
       {
-        "en": "They aren't tired.",
-        "vi": "Họ không mệt."
+        "en": "It isn't new.",
+        "vi": "Nó không mới."
       }
     ],
     "copy": [
-      "Chép 3 dạng: am not, isn't, aren't.",
-      "Chép 6 câu nghe."
+      "Chép công thức: chủ ngữ + am/is/are + not + phần còn lại.",
+      "Chép: is not → isn't, are not → aren't, am not không viết tắt."
     ],
     "exercise": [
-      "1. I am ___ tired.",
-      "2. She ___ busy.",
-      "3. They ___ here.",
-      "4. It is not ___.",
-      "5. We aren't ___.",
-      "6. Viết 2 câu phủ định."
+      "Viết lại thành câu phủ định.",
+      "1. I am happy.",
+      "2. She is a student.",
+      "3. He is tired.",
+      "4. They are at school.",
+      "5. We are busy.",
+      "6. It is new.",
+      "7. You are late.",
+      "Điền am not, isn't hoặc aren't.",
+      "8. I ___ sad.",
+      "9. He ___ my brother.",
+      "10. They ___ at home.",
+      "11. She ___ busy.",
+      "12. We ___ tired.",
+      "13. It ___ expensive."
     ],
     "answers": [
-      "1 not",
-      "2 isn't",
-      "3 aren't",
-      "4 here",
-      "5 there",
-      "6 I am not busy. I am not sad."
+      "1 I am not happy.",
+      "2 She isn't a student.",
+      "3 He isn't tired.",
+      "4 They aren't at school.",
+      "5 We aren't busy.",
+      "6 It isn't new.",
+      "7 You aren't late.",
+      "8 am not",
+      "9 isn't",
+      "10 aren't",
+      "11 isn't",
+      "12 aren't",
+      "13 isn't"
     ],
-    "recall": "Nói: I am not… She isn't… They aren't…"
+    "recall": "Viết 3 câu về bản thân. Ít nhất một câu dùng isn't hoặc aren't để nói về người khác."
   },
   {
     "day": 5,
     "week": 1,
     "title": "Câu hỏi với to be",
-    "aim": "Câu hỏi Yes/No dùng để hỏi một việc có đúng không, và chờ trả lời Yes hoặc No. Với to be, đưa am, is hoặc are lên trước chủ ngữ. Ví dụ: Are you a student? Yes, I am.",
-    "rule": "Are you …? — Yes, I am. / No, I'm not.\nIs he / she / it …? — Yes, he is. / No, he isn't.\nAre we / they …? — Yes, they are. / No, they aren't.",
+    "aim": "Đưa am, is hoặc are lên trước chủ ngữ để tạo câu hỏi Yes/No.\nTrả lời ngắn bằng Yes hoặc No.\nAre you…? trả lời bằng I, không dùng you.",
+    "rule": "Am / Is / Are + chủ ngữ + …?\nYes, I am. / No, I'm not.\nYes, he is. / No, he isn't.\nYes, she is. / No, she isn't.\nYes, they are. / No, they aren't.\nAre you…? → trả lời I, không trả lời you.",
     "words": [
       {
         "en": "yes",
@@ -327,245 +397,285 @@
         "vi": "không"
       },
       {
-        "en": "student",
-        "vi": "học sinh"
-      },
-      {
         "en": "happy",
         "vi": "vui"
       },
       {
-        "en": "tired",
-        "vi": "mệt"
+        "en": "busy",
+        "vi": "bận"
+      },
+      {
+        "en": "ready",
+        "vi": "sẵn sàng"
       }
     ],
     "listen": [
       {
-        "en": "Are you a student?",
-        "vi": "Bạn là học sinh phải không?"
+        "en": "Are you happy? Yes, I am.",
+        "vi": "Bạn vui không? Vâng, tôi vui."
       },
       {
-        "en": "Yes, I am.",
-        "vi": "Vâng, tôi là."
+        "en": "Are you happy? No, I'm not.",
+        "vi": "Bạn vui không? Không, tôi không vui."
       },
       {
-        "en": "Is she happy?",
-        "vi": "Cô ấy vui phải không?"
+        "en": "Is he a student? Yes, he is.",
+        "vi": "Anh ấy là học sinh không? Vâng."
       },
       {
-        "en": "No, she isn't.",
-        "vi": "Không, cô ấy không."
+        "en": "Is she busy? No, she isn't.",
+        "vi": "Cô ấy bận không? Không."
       },
       {
-        "en": "Are they tired?",
-        "vi": "Họ mệt phải không?"
+        "en": "Are they at home? Yes, they are.",
+        "vi": "Họ ở nhà không? Vâng."
       },
       {
-        "en": "Yes, they are.",
-        "vi": "Vâng, họ mệt."
+        "en": "Are they at home? No, they aren't.",
+        "vi": "Họ ở nhà không? Không."
       }
     ],
     "copy": [
-      "Chép mẫu hỏi và trả lời ngắn.",
-      "Chép 6 câu nghe."
+      "Chép công thức câu hỏi: Am/Is/Are + chủ ngữ + …?",
+      "Chép 4 cặp trả lời ngắn Yes và No."
     ],
     "exercise": [
-      "1. ___ you a student?",
-      "2. Yes, I ___.",
-      "3. ___ he busy?",
-      "4. No, he ___.",
-      "5. ___ they here?",
-      "6. Yes, they ___."
+      "Sắp xếp thành câu hỏi.",
+      "1. you / Are / happy",
+      "2. he / Is / a teacher",
+      "3. they / Are / at home",
+      "4. she / Is / tired",
+      "5. we / Are / late",
+      "Viết câu trả lời ngắn.",
+      "6. Are you a student? (Yes)",
+      "7. Is he tired? (No)",
+      "8. Are they busy? (Yes)",
+      "9. Is she at home? (No)",
+      "10. Are you happy? (No)"
     ],
     "answers": [
-      "1 Are",
-      "2 am",
-      "3 Is",
-      "4 isn't",
-      "5 Are",
-      "6 are"
+      "1 Are you happy?",
+      "2 Is he a teacher?",
+      "3 Are they at home?",
+      "4 Is she tired?",
+      "5 Are we late?",
+      "6 Yes, I am.",
+      "7 No, he isn't.",
+      "8 Yes, they are.",
+      "9 No, she isn't.",
+      "10 No, I'm not."
     ],
-    "recall": "Hỏi và trả lời: Are you a student? Yes, I am."
+    "recall": "Hỏi và trả lời cả Yes lẫn No: Are you busy? Are you ready? Is your best friend happy? Is your English teacher kind? Are your parents at home?"
   },
   {
     "day": 6,
     "week": 1,
     "title": "Giới thiệu bản thân",
-    "aim": "Giới thiệu bản thân là dùng những câu to be đã học để nói về mình: tên, tuổi, mình là học sinh, và người trong gia đình.",
-    "rule": "I am + tên. I am fifteen years old. I am a student.",
+    "aim": "Giới thiệu tên, tuổi, quê và nơi ở bằng câu đơn giản.\nDùng My name is, I am … years old, I am from, I live in.\nNói thêm mình là học sinh, gia đình và sở thích.",
+    "rule": "My name is …\nI am … years old.\nI am from …\nI live in …\nI am a student.\nMy family is …\nMy hobby is …",
     "words": [
       {
-        "en": "father",
-        "vi": "bố"
+        "en": "name",
+        "vi": "tên"
       },
       {
-        "en": "mother",
-        "vi": "mẹ"
+        "en": "years old",
+        "vi": "tuổi"
       },
       {
-        "en": "friend",
-        "vi": "bạn"
+        "en": "from",
+        "vi": "đến từ"
       },
       {
-        "en": "school",
-        "vi": "trường"
+        "en": "live",
+        "vi": "sống"
       },
       {
-        "en": "student",
-        "vi": "học sinh"
+        "en": "family",
+        "vi": "gia đình"
+      },
+      {
+        "en": "hobby",
+        "vi": "sở thích"
+      },
+      {
+        "en": "job",
+        "vi": "công việc"
+      },
+      {
+        "en": "friendly",
+        "vi": "thân thiện"
       }
     ],
     "listen": [
       {
-        "en": "I am Nam.",
-        "vi": "Tôi là Nam."
+        "en": "My name is Nam.",
+        "vi": "Tên tôi là Nam."
       },
       {
         "en": "I am fifteen years old.",
         "vi": "Tôi 15 tuổi."
       },
       {
+        "en": "I am from Vietnam.",
+        "vi": "Tôi đến từ Việt Nam."
+      },
+      {
+        "en": "I live in Hanoi.",
+        "vi": "Tôi sống ở Hà Nội."
+      },
+      {
         "en": "I am a student.",
         "vi": "Tôi là học sinh."
       },
       {
-        "en": "You are my friend.",
-        "vi": "Bạn là bạn tôi."
-      },
-      {
-        "en": "She is my mother.",
-        "vi": "Cô ấy là mẹ tôi."
-      },
-      {
-        "en": "He is my father.",
-        "vi": "Anh ấy là bố tôi."
+        "en": "My hobby is football.",
+        "vi": "Sở thích của tôi là bóng đá."
       }
     ],
     "copy": [
-      "Chép đoạn giới thiệu 4 câu.",
-      "Chép 6 câu nghe."
+      "Chép 7 mẫu: name, years old, from, live, student, family, hobby.",
+      "Chép một đoạn giới thiệu 6 câu của Nam."
     ],
     "exercise": [
-      "Viết:",
-      "1. Tên",
-      "2. Tuổi",
-      "3. Là học sinh",
-      "4. Một câu về bạn",
-      "5. Một câu về mẹ",
-      "6. Một câu về bố"
+      "Viết câu tiếng Anh theo mẫu.",
+      "1. Tên tôi là Nam.",
+      "2. Tôi 15 tuổi.",
+      "3. Tôi đến từ Việt Nam.",
+      "4. Tôi sống ở Hà Nội.",
+      "5. Tôi là học sinh.",
+      "6. Gia đình tôi nhỏ.",
+      "7. Sở thích của tôi là bóng đá.",
+      "8. Viết 4 câu giới thiệu về chính mình."
     ],
     "answers": [
-      "I am Nam.",
-      "I am fifteen years old.",
-      "I am a student.",
-      "You are my friend.",
-      "She is my mother.",
-      "He is my father."
+      "1 My name is Nam.",
+      "2 I am fifteen years old.",
+      "3 I am from Vietnam.",
+      "4 I live in Hanoi.",
+      "5 I am a student.",
+      "6 My family is small.",
+      "7 My hobby is football.",
+      "8 Câu của Nam, phụ huynh chấm."
     ],
-    "recall": "Giới thiệu bản thân 4 câu, không nhìn vở."
+    "recall": "Giới thiệu bản thân 6 câu, không nhìn vở: tên, tuổi, quê, nơi ở, học sinh, sở thích."
   },
   {
     "day": 7,
     "week": 1,
     "title": "Ôn tuần 1",
-    "aim": "Hôm nay không học kiến thức mới. Ôn đại từ và động từ to be: câu khẳng định, câu phủ định và câu hỏi Yes/No.",
-    "rule": "Ôn I am / You are / He is / We are / They are, phủ định not, câu hỏi đảo am/is/are.",
+    "aim": "Ôn đại từ, am/is/are, phủ định, câu hỏi và giới thiệu bản thân.\nKhông học từ mới.\nLàm bài kiểm tra tuần 1 và ghi câu sai.",
+    "rule": "I am. He/She/It is. You/We/They are.\nPhủ định: am not, isn't, aren't. Không dùng don't với to be.\nCâu hỏi: Am/Is/Are + chủ ngữ + …?\nAre you…? → Yes, I am. / No, I'm not.",
     "words": [
       {
-        "en": "student",
-        "vi": "học sinh"
+        "en": "I / you / he / she / it / we / they",
+        "vi": "ôn đại từ"
       },
       {
-        "en": "teacher",
-        "vi": "giáo viên"
+        "en": "am / is / are",
+        "vi": "ôn to be"
       },
       {
-        "en": "happy",
-        "vi": "vui"
+        "en": "am not / isn't / aren't",
+        "vi": "ôn phủ định"
       },
       {
-        "en": "tired",
-        "vi": "mệt"
+        "en": "Yes / No",
+        "vi": "ôn trả lời ngắn"
       },
       {
-        "en": "friend",
-        "vi": "bạn"
+        "en": "My name is",
+        "vi": "ôn giới thiệu"
       }
     ],
     "listen": [
       {
-        "en": "I am a student.",
-        "vi": "Tôi là học sinh."
+        "en": "He is a student.",
+        "vi": "Anh ấy là học sinh."
       },
       {
-        "en": "Are you happy?",
-        "vi": "Bạn vui phải không?"
+        "en": "I am happy. She is tired.",
+        "vi": "Tôi vui. Cô ấy mệt."
       },
       {
-        "en": "She is not tired.",
-        "vi": "Cô ấy không mệt."
+        "en": "They are at home.",
+        "vi": "Họ ở nhà."
       },
       {
-        "en": "They are my friends.",
-        "vi": "Họ là bạn tôi."
+        "en": "I am not tired. They aren't hungry.",
+        "vi": "Tôi không mệt. Họ không đói."
       },
       {
-        "en": "Is he a teacher?",
-        "vi": "Anh ấy là giáo viên phải không?"
+        "en": "Are you a student? Yes, I am.",
+        "vi": "Bạn là học sinh không? Vâng."
       },
       {
-        "en": "Yes, he is.",
-        "vi": "Vâng, anh ấy là."
+        "en": "My name is Nam. I am fifteen years old.",
+        "vi": "Tên tôi là Nam. Tôi 15 tuổi."
       }
     ],
     "copy": [
-      "Không chép bài mới. Nhẩm bảng am/is/are.",
-      "Làm bài kiểm tra ở phần luyện tập."
+      "Không chép bài mới. Nhẩm bảng đại từ và am/is/are.",
+      "Nhẩm một câu khẳng định, một câu phủ định, một câu hỏi."
     ],
     "exercise": [
-      "1. I ___ Nam.",
-      "2. You ___ my friend.",
-      "3. She is ___ tired.",
-      "4. ___ they students?",
-      "5. Yes, they ___.",
-      "6. Viết 3 câu giới thiệu."
+      "1. Nam is my brother. ___ is 15 years old.",
+      "2. I ___ fine.",
+      "3. They ___ at home. (phủ định)",
+      "4. ___ she tired?",
+      "5. Are you happy? (No) → ___",
+      "6. My name ___ Nam.",
+      "7. Viết 4 câu: khẳng định, phủ định, câu hỏi, giới thiệu tên."
     ],
     "answers": [
-      "1 am",
-      "2 are",
-      "3 not",
-      "4 Are",
-      "5 are",
-      "6 I am Nam. I am fifteen. I am a student."
+      "1 He",
+      "2 am",
+      "3 aren't",
+      "4 Is",
+      "5 No, I'm not.",
+      "6 is",
+      "7 Ví dụ: I am a student. She isn't busy. Are they at home? My name is Nam."
     ],
-    "recall": "Làm bài kiểm tra tuần 1. Ghi câu sai."
+    "recall": "Làm bài kiểm tra tuần 1. Ghi câu sai để ôn lại."
   },
   {
     "day": 8,
     "week": 2,
     "title": "Danh từ: người, vật, nơi",
-    "aim": "Danh từ là tên của một người, một vật hoặc một nơi. Danh từ không chỉ hành động. Ví dụ: student là người, book là vật, school là nơi.",
-    "rule": "Danh từ không phải hành động. student là người, book là vật, school là nơi.",
+    "aim": "Nhận ra danh từ là tên người, vật hoặc địa điểm.\nXếp danh từ vào 3 nhóm: người, vật, nơi.\nĐặt danh từ sau am/is/are: I am a student.",
+    "rule": "Người: teacher, student, doctor.\nVật: book, phone, table.\nĐịa điểm: school, hospital, park.\nI am a student. He is a doctor. They are teachers.",
     "words": [
-      {
-        "en": "student",
-        "vi": "học sinh"
-      },
       {
         "en": "teacher",
         "vi": "giáo viên"
       },
       {
-        "en": "book",
-        "vi": "sách"
+        "en": "student",
+        "vi": "học sinh"
       },
       {
-        "en": "pen",
-        "vi": "bút"
+        "en": "doctor",
+        "vi": "bác sĩ"
+      },
+      {
+        "en": "book",
+        "vi": "quyển sách"
+      },
+      {
+        "en": "phone",
+        "vi": "điện thoại"
       },
       {
         "en": "school",
-        "vi": "trường"
+        "vi": "trường học"
+      },
+      {
+        "en": "hospital",
+        "vi": "bệnh viện"
+      },
+      {
+        "en": "park",
+        "vi": "công viên"
       }
     ],
     "listen": [
@@ -574,306 +684,421 @@
         "vi": "Tôi là học sinh."
       },
       {
-        "en": "She is a teacher.",
-        "vi": "Cô ấy là giáo viên."
+        "en": "He is a doctor.",
+        "vi": "Anh ấy là bác sĩ."
       },
       {
-        "en": "It is a book.",
-        "vi": "Nó là quyển sách."
+        "en": "They are teachers.",
+        "vi": "Họ là giáo viên."
       },
       {
-        "en": "It is a pen.",
-        "vi": "Nó là cây bút."
+        "en": "This is a book.",
+        "vi": "Đây là một quyển sách."
       },
       {
-        "en": "We are at school.",
-        "vi": "Chúng tôi ở trường."
+        "en": "The children are at the park.",
+        "vi": "Những đứa trẻ ở công viên."
       },
       {
-        "en": "It is a house.",
-        "vi": "Nó là ngôi nhà."
+        "en": "This is my school.",
+        "vi": "Đây là trường của tôi."
       }
     ],
     "copy": [
-      "Chép 5 danh từ.",
-      "Chép 6 câu nghe."
+      "Chép 3 nhóm: người, vật, địa điểm.",
+      "Chép 3 câu: I am a student. He is a doctor. They are teachers."
     ],
     "exercise": [
-      "Khoanh danh từ:",
-      "1. I am a student.",
-      "2. It is a book.",
-      "3. She is a teacher.",
-      "4. We are at school.",
-      "5. It is a pen.",
-      "6. It is a house."
+      "Phân loại: teacher, park, phone, doctor, school, table, student, hospital, car.",
+      "1. Người: …",
+      "2. Vật: …",
+      "3. Địa điểm: …",
+      "Điền student, doctor, school, book hoặc park.",
+      "4. I read a ___.",
+      "5. He is a ___. He works in a hospital.",
+      "6. My sister is a ___.",
+      "7. The children are at the ___.",
+      "8. This is my ___. (ngôi trường của tôi)",
+      "Dịch.",
+      "9. Tôi là học sinh.",
+      "10. Anh ấy là bác sĩ.",
+      "11. Đây là một quyển sách."
     ],
     "answers": [
-      "1 student",
-      "2 book",
-      "3 teacher",
-      "4 school",
-      "5 pen",
-      "6 house"
+      "1 teacher, doctor, student",
+      "2 phone, table, car",
+      "3 park, school, hospital",
+      "4 book",
+      "5 doctor",
+      "6 student",
+      "7 park",
+      "8 school",
+      "9 I am a student.",
+      "10 He is a doctor.",
+      "11 This is a book."
     ],
-    "recall": "Nói 2 người, 2 vật, 1 nơi."
+    "recall": "Nhìn quanh phòng và nói 5 câu. Ví dụ: This is my phone. The table is big. My book is here."
   },
   {
     "day": 9,
     "week": 2,
-    "title": "Số ít và số nhiều",
-    "aim": "Số ít là một người hoặc một vật. Số nhiều là từ hai trở lên. Danh từ số nhiều thường thêm -s. Ví dụ: a book là một quyển, books là nhiều quyển.",
-    "rule": "Một vật: a book.\nNhiều vật: books.\nstudent → students.",
+    "title": "Danh từ số ít và số nhiều",
+    "aim": "Đổi danh từ số ít sang số nhiều: -s, -es, -ies.\nNhớ child → children, man → men, woman → women, person → people.\nSố nhiều đi với are. Số ít đi với is.",
+    "rule": "Thêm -s: book → books, student → students.\nThêm -es sau -s, -sh, -ch, -x: bus → buses, box → boxes, class → classes.\nPhụ âm + y → -ies: baby → babies.\nBất quy tắc: child → children, man → men, woman → women, person → people.\nThe book is new. The books are new.",
     "words": [
       {
-        "en": "book",
-        "vi": "sách"
+        "en": "book / books",
+        "vi": "một / nhiều sách"
       },
       {
-        "en": "pen",
-        "vi": "bút"
+        "en": "bus / buses",
+        "vi": "xe buýt"
       },
       {
-        "en": "bag",
-        "vi": "cặp"
+        "en": "baby / babies",
+        "vi": "em bé"
       },
       {
-        "en": "student",
-        "vi": "học sinh"
+        "en": "child / children",
+        "vi": "trẻ em"
       },
       {
-        "en": "friend",
-        "vi": "bạn"
+        "en": "man / men",
+        "vi": "đàn ông"
+      },
+      {
+        "en": "woman / women",
+        "vi": "phụ nữ"
+      },
+      {
+        "en": "person / people",
+        "vi": "người / mọi người"
       }
     ],
     "listen": [
       {
-        "en": "It is a book.",
-        "vi": "Nó là một quyển sách."
+        "en": "The book is new.",
+        "vi": "Quyển sách mới."
       },
       {
-        "en": "They are books.",
-        "vi": "Chúng là những quyển sách."
+        "en": "The books are new.",
+        "vi": "Những quyển sách mới."
       },
       {
-        "en": "It is a pen.",
-        "vi": "Nó là một cây bút."
+        "en": "The student is happy.",
+        "vi": "Học sinh vui."
       },
       {
-        "en": "They are pens.",
-        "vi": "Chúng là những cây bút."
+        "en": "The students are happy.",
+        "vi": "Những học sinh vui."
       },
       {
-        "en": "He is a student.",
-        "vi": "Anh ấy là một học sinh."
+        "en": "The child is here.",
+        "vi": "Đứa trẻ ở đây."
       },
       {
-        "en": "They are students.",
-        "vi": "Họ là học sinh."
+        "en": "The children are here.",
+        "vi": "Những đứa trẻ ở đây."
       }
     ],
     "copy": [
-      "Chép 5 cặp số ít và số nhiều.",
-      "Chép 6 câu nghe."
+      "Chép quy tắc -s, -es, -ies và 4 danh từ bất quy tắc.",
+      "Chép 3 cặp số ít / số nhiều với is và are."
     ],
     "exercise": [
-      "Viết số nhiều:",
-      "1. book",
-      "2. pen",
-      "3. bag",
-      "4. student",
-      "5. friend",
-      "6. They are ___."
+      "Viết số nhiều.",
+      "1. book →",
+      "2. bus →",
+      "3. box →",
+      "4. baby →",
+      "5. child →",
+      "6. man →",
+      "7. student →",
+      "8. woman →",
+      "9. class →",
+      "10. person →",
+      "Chọn is hoặc are.",
+      "11. The book ___ new.",
+      "12. The students ___ happy.",
+      "13. The children ___ at home.",
+      "14. My friend ___ busy.",
+      "15. The cars ___ expensive.",
+      "16. The buses ___ full.",
+      "Chuyển sang số nhiều.",
+      "17. The book is old.",
+      "18. The student is tall.",
+      "19. The car is new."
     ],
     "answers": [
       "1 books",
-      "2 pens",
-      "3 bags",
-      "4 students",
-      "5 friends",
-      "6 books"
+      "2 buses",
+      "3 boxes",
+      "4 babies",
+      "5 children",
+      "6 men",
+      "7 students",
+      "8 women",
+      "9 classes",
+      "10 people",
+      "11 is",
+      "12 are",
+      "13 are",
+      "14 is",
+      "15 are",
+      "16 are",
+      "17 The books are old.",
+      "18 The students are tall.",
+      "19 The cars are new."
     ],
-    "recall": "Nói 5 cặp: a book / books."
+    "recall": "Đếm: One book, two books. One chair, three chairs. One student, five students. Rồi nói 5 câu số ít và số nhiều."
   },
   {
     "day": 10,
     "week": 2,
     "title": "Mạo từ a / an",
-    "aim": "A và an là mạo từ, đứng trước danh từ số ít, nghĩa là “một”. A đứng trước phụ âm (a book). An đứng trước nguyên âm a, e, i, o, u (an apple).",
-    "rule": "a book, a pen, a student. an apple, an egg.",
+    "aim": "Dùng a trước âm phụ âm, an trước âm nguyên âm.\nNhìn âm đầu, không chỉ chữ cái: a university, an hour.\nLuôn có a/an trước danh từ đếm được số ít. Không dùng trước số nhiều.",
+    "rule": "a + âm phụ âm: a book, a teacher, a car, a university.\nan + âm nguyên âm: an apple, an egg, an orange, an umbrella, an hour.\nĐúng: I am a student. Sai: I am student.\nKhông dùng a/an trước danh từ số nhiều.",
     "words": [
       {
-        "en": "book",
-        "vi": "sách"
-      },
-      {
-        "en": "pen",
-        "vi": "bút"
-      },
-      {
         "en": "apple",
-        "vi": "táo"
+        "vi": "quả táo"
       },
       {
         "en": "egg",
-        "vi": "trứng"
+        "vi": "quả trứng"
       },
       {
-        "en": "bag",
-        "vi": "cặp"
+        "en": "orange",
+        "vi": "quả cam"
+      },
+      {
+        "en": "umbrella",
+        "vi": "cái ô"
+      },
+      {
+        "en": "hour",
+        "vi": "giờ"
+      },
+      {
+        "en": "university",
+        "vi": "trường đại học"
+      },
+      {
+        "en": "car",
+        "vi": "ô tô"
+      },
+      {
+        "en": "engineer",
+        "vi": "kỹ sư"
       }
     ],
     "listen": [
       {
-        "en": "It is a book.",
-        "vi": "Nó là một quyển sách."
+        "en": "I am a student.",
+        "vi": "Tôi là một học sinh."
       },
       {
-        "en": "It is a pen.",
-        "vi": "Nó là một cây bút."
+        "en": "He is a doctor.",
+        "vi": "Anh ấy là một bác sĩ."
       },
       {
-        "en": "It is an apple.",
-        "vi": "Nó là một quả táo."
+        "en": "This is an apple.",
+        "vi": "Đây là một quả táo."
       },
       {
-        "en": "It is an egg.",
-        "vi": "Nó là một quả trứng."
+        "en": "She has an umbrella.",
+        "vi": "Cô ấy có một chiếc ô."
       },
       {
-        "en": "She is a student.",
-        "vi": "Cô ấy là một học sinh."
+        "en": "He is an engineer.",
+        "vi": "Anh ấy là một kỹ sư."
       },
       {
-        "en": "It is a bag.",
-        "vi": "Nó là một cái cặp."
+        "en": "This is an orange.",
+        "vi": "Đây là một quả cam."
       }
     ],
     "copy": [
-      "Chép quy tắc a / an.",
-      "Chép 6 câu nghe."
+      "Chép: a book, a university, an apple, an hour.",
+      "Chép lỗi: I am student → I am a student."
     ],
     "exercise": [
-      "Điền a hoặc an:",
-      "1. ___ book",
-      "2. ___ apple",
-      "3. ___ pen",
-      "4. ___ egg",
-      "5. ___ student",
-      "6. ___ bag"
+      "Điền a hoặc an.",
+      "1. ___ apple",
+      "2. ___ book",
+      "3. ___ egg",
+      "4. ___ teacher",
+      "5. ___ umbrella",
+      "6. ___ orange",
+      "7. ___ university",
+      "8. ___ hour",
+      "9. ___ car",
+      "10. ___ English teacher",
+      "Sửa lỗi.",
+      "11. I am student.",
+      "12. She is an teacher.",
+      "13. He is a engineer.",
+      "14. This is an book.",
+      "15. It is a apple.",
+      "Dịch.",
+      "16. Tôi là một học sinh.",
+      "17. Đây là một quả cam.",
+      "18. Anh ấy là một kỹ sư.",
+      "19. Đây là một chiếc ô."
     ],
     "answers": [
-      "1 a",
-      "2 an",
-      "3 a",
-      "4 an",
-      "5 a",
-      "6 a"
+      "1 an",
+      "2 a",
+      "3 an",
+      "4 a",
+      "5 an",
+      "6 an",
+      "7 a",
+      "8 an",
+      "9 a",
+      "10 an",
+      "11 I am a student.",
+      "12 She is a teacher.",
+      "13 He is an engineer.",
+      "14 This is a book.",
+      "15 It is an apple.",
+      "16 I am a student.",
+      "17 This is an orange.",
+      "18 He is an engineer.",
+      "19 This is an umbrella."
     ],
-    "recall": "Nói 3 cụm với a và 2 cụm với an."
+    "recall": "Nói 5 câu: This is a book. This is an apple. It is a chair."
   },
   {
     "day": 11,
     "week": 2,
     "title": "Mạo từ the",
-    "aim": "The cũng là mạo từ, dùng khi người nghe đã biết đúng vật đó. Ví dụ: The book is here. Khi nói chung chung thì không dùng mạo từ: I like music.",
-    "rule": "The book = quyển sách ấy. I like music = nói chung, không dùng the.",
+    "aim": "Dùng a/an lần đầu, the khi đã biết là vật nào.\nKhông dùng mạo từ khi nói chung: I like dogs.\nKhông dùng mạo từ với water, English khi nói chung.",
+    "rule": "I have a book. The book is blue.\nClose the door.\nNói chung: I like dogs. Water is important. English is useful.\nThe books on the table are mine.",
     "words": [
       {
-        "en": "book",
-        "vi": "sách"
+        "en": "the",
+        "vi": "cái / người đã biết"
       },
       {
-        "en": "teacher",
-        "vi": "giáo viên"
-      },
-      {
-        "en": "school",
-        "vi": "trường"
+        "en": "dog",
+        "vi": "con chó"
       },
       {
         "en": "water",
         "vi": "nước"
       },
       {
-        "en": "music",
-        "vi": "nhạc"
+        "en": "door",
+        "vi": "cánh cửa"
+      },
+      {
+        "en": "window",
+        "vi": "cửa sổ"
+      },
+      {
+        "en": "table",
+        "vi": "cái bàn"
+      },
+      {
+        "en": "cat",
+        "vi": "con mèo"
+      },
+      {
+        "en": "useful",
+        "vi": "hữu ích"
       }
     ],
     "listen": [
       {
-        "en": "The book is here.",
-        "vi": "Quyển sách ở đây."
+        "en": "I have a book. The book is blue.",
+        "vi": "Tôi có một quyển sách. Quyển sách màu xanh."
       },
       {
-        "en": "She is the teacher.",
-        "vi": "Cô ấy là giáo viên đó."
+        "en": "I have a dog. The dog is small.",
+        "vi": "Tôi có một con chó. Con chó nhỏ."
       },
       {
-        "en": "We are at school.",
-        "vi": "Chúng tôi ở trường."
+        "en": "I like dogs.",
+        "vi": "Tôi thích chó."
       },
       {
-        "en": "I like music.",
-        "vi": "Tôi thích nhạc."
+        "en": "Water is important.",
+        "vi": "Nước rất quan trọng."
       },
       {
-        "en": "The bag is there.",
-        "vi": "Cái cặp ở đó."
+        "en": "English is useful.",
+        "vi": "Tiếng Anh hữu ích."
       },
       {
-        "en": "Water is good.",
-        "vi": "Nước thì tốt."
+        "en": "Please open the window.",
+        "vi": "Làm ơn mở cửa sổ."
       }
     ],
     "copy": [
-      "Chép 2 câu có the và 2 câu không mạo từ.",
-      "Chép 6 câu nghe."
+      "Chép cặp: I have a book. The book is blue.",
+      "Chép 3 câu không mạo từ: I like dogs. Water is important. English is useful."
     ],
     "exercise": [
-      "Điền the hoặc để trống:",
-      "1. ___ book is here.",
-      "2. I like ___ music.",
-      "3. She is ___ teacher.",
-      "4. We are at ___ school.",
-      "5. ___ bag is there.",
-      "6. ___ water is good."
+      "Điền a, an, the hoặc — nếu không cần mạo từ.",
+      "1. I have ___ cat. ___ cat is black.",
+      "2. She is ___ English teacher.",
+      "3. ___ water is important for life.",
+      "4. I like ___ dogs.",
+      "5. Please open ___ window next to you.",
+      "6. He is ___ doctor.",
+      "7. ___ English is useful.",
+      "8. The books are on ___ table.",
+      "Chọn câu đúng.",
+      "9. Nói chó nói chung: I like the dogs. / I like dogs.",
+      "10. She is a teacher. / She is teacher.",
+      "11. Chiếc điện thoại vừa nhắc: The phone is new. / A phone is new."
     ],
     "answers": [
-      "1 The",
-      "2 trống",
-      "3 the",
-      "4 trống",
-      "5 The",
-      "6 trống"
+      "1 a, The",
+      "2 an",
+      "3 —",
+      "4 —",
+      "5 the",
+      "6 a",
+      "7 —",
+      "8 the",
+      "9 I like dogs.",
+      "10 She is a teacher.",
+      "11 The phone is new."
     ],
-    "recall": "Chỉ một vật và nói The … is here."
+    "recall": "Nói 2 câu về một đồ vật: I have a bag. The bag is black. Rồi nói sở thích: I like books. English is interesting."
   },
   {
     "day": 12,
     "week": 2,
     "title": "This, that, these, those",
-    "aim": "This, that, these, those dùng để chỉ vật đang nhìn thấy. This và that cho một vật. These và those cho nhiều vật. Gần dùng this/these, xa dùng that/those.",
-    "rule": "This/these = gần. That/those = xa.",
+    "aim": "This/that cho một vật. These/those cho nhiều vật.\nThis và these là gần. That và those là xa.\nThis/that đi với is. These/those đi với are.",
+    "rule": "This is a pen. (một, gần)\nThat is a bag. (một, xa)\nThese are books. (nhiều, gần)\nThose are chairs. (nhiều, xa)",
     "words": [
       {
-        "en": "book",
-        "vi": "sách"
+        "en": "this",
+        "vi": "này — một, gần"
+      },
+      {
+        "en": "that",
+        "vi": "kia — một, xa"
+      },
+      {
+        "en": "these",
+        "vi": "những cái này — nhiều, gần"
+      },
+      {
+        "en": "those",
+        "vi": "những cái kia — nhiều, xa"
       },
       {
         "en": "pen",
         "vi": "bút"
       },
       {
-        "en": "bag",
-        "vi": "cặp"
-      },
-      {
-        "en": "here",
-        "vi": "ở đây"
-      },
-      {
-        "en": "there",
-        "vi": "ở đó"
+        "en": "chair",
+        "vi": "ghế"
       }
     ],
     "listen": [
@@ -882,199 +1107,273 @@
         "vi": "Đây là một quyển sách."
       },
       {
-        "en": "That is a pen.",
-        "vi": "Kia là một cây bút."
+        "en": "That is a car.",
+        "vi": "Kia là một chiếc ô tô."
       },
       {
-        "en": "These are bags.",
-        "vi": "Đây là những cái cặp."
+        "en": "These are apples.",
+        "vi": "Đây là những quả táo."
       },
       {
-        "en": "Those are books.",
-        "vi": "Kia là những quyển sách."
+        "en": "Those are cars.",
+        "vi": "Kia là những chiếc ô tô."
       },
       {
-        "en": "This is here.",
-        "vi": "Cái này ở đây."
+        "en": "This is a pen.",
+        "vi": "Đây là một chiếc bút."
       },
       {
-        "en": "That is there.",
-        "vi": "Cái kia ở đó."
+        "en": "Those are chairs.",
+        "vi": "Kia là những chiếc ghế."
       }
     ],
     "copy": [
-      "Chép 4 câu this, that, these, those.",
-      "Chép 6 câu nghe."
+      "Chép 4 mẫu: This is, That is, These are, Those are.",
+      "Ghi nhớ: this/that → is, these/those → are."
     ],
     "exercise": [
-      "1. ___ is a book. (gần, một)",
-      "2. ___ is a pen. (xa, một)",
-      "3. ___ are bags. (gần, nhiều)",
-      "4. ___ are books. (xa, nhiều)",
-      "5. This ___ a pen.",
-      "6. Those ___ students."
+      "Điền this, that, these hoặc those.",
+      "1. ___ is my pen. (một chiếc bút ở gần)",
+      "2. ___ is a car over there. (một chiếc ô tô ở xa)",
+      "3. ___ are my books. (nhiều quyển sách ở gần)",
+      "4. ___ are houses over there. (nhiều ngôi nhà ở xa)",
+      "5. ___ is an apple in my hand.",
+      "6. ___ are my friends standing next to me.",
+      "Điền is hoặc are.",
+      "7. This ___ a book.",
+      "8. These ___ my friends.",
+      "9. That ___ a school.",
+      "10. Those ___ cars.",
+      "11. This ___ an orange.",
+      "12. These ___ students.",
+      "Dịch.",
+      "13. Đây là một chiếc bút.",
+      "14. Kia là một ngôi trường.",
+      "15. Đây là những quyển sách.",
+      "16. Kia là những chiếc xe."
     ],
     "answers": [
       "1 This",
       "2 That",
       "3 These",
       "4 Those",
-      "5 is",
-      "6 are"
+      "5 This",
+      "6 These",
+      "7 is",
+      "8 are",
+      "9 is",
+      "10 are",
+      "11 is",
+      "12 are",
+      "13 This is a pen.",
+      "14 That is a school.",
+      "15 These are books.",
+      "16 Those are cars."
     ],
-    "recall": "Chỉ đồ gần và xa: This is… / That is…"
+    "recall": "Chỉ đồ vật gần và xa, nói ít nhất 6 câu với this, that, these, those."
   },
   {
     "day": 13,
     "week": 2,
     "title": "Danh từ và to be",
-    "aim": "Ghép danh từ với to be để nói một thứ là gì, và nó là một hay nhiều. Ví dụ: It is a book. They are books.",
-    "rule": "It is a book. They are books. These are students.",
+    "aim": "Ghép danh từ, a/an, this/that và to be trong một câu.\nSố ít dùng a/an và is. Số nhiều dùng are, không dùng a/an.\nViết được câu phủ định và câu hỏi Yes/No.",
+    "rule": "He is a teacher.\nThey are students.\nThis is a book.\nThese are books.\nShe is not a doctor.\nAre they students?",
     "words": [
       {
-        "en": "student",
-        "vi": "học sinh"
+        "en": "a / an",
+        "vi": "một — số ít"
       },
       {
-        "en": "teacher",
-        "vi": "giáo viên"
+        "en": "the",
+        "vi": "đã xác định"
       },
       {
-        "en": "book",
-        "vi": "sách"
+        "en": "this / that",
+        "vi": "một vật"
       },
       {
-        "en": "friend",
-        "vi": "bạn"
+        "en": "these / those",
+        "vi": "nhiều vật"
       },
       {
-        "en": "school",
-        "vi": "trường"
+        "en": "aren't",
+        "vi": "không phải (số nhiều)"
       }
     ],
     "listen": [
       {
-        "en": "It is a book.",
-        "vi": "Nó là một quyển sách."
-      },
-      {
-        "en": "They are books.",
-        "vi": "Chúng là sách."
-      },
-      {
-        "en": "She is a teacher.",
-        "vi": "Cô ấy là giáo viên."
-      },
-      {
-        "en": "We are students.",
-        "vi": "Chúng tôi là học sinh."
-      },
-      {
-        "en": "These are my friends.",
-        "vi": "Đây là bạn tôi."
-      },
-      {
-        "en": "That is a school.",
-        "vi": "Kia là một trường."
-      }
-    ],
-    "copy": [
-      "Chép 6 câu nghe.",
-      "Viết thêm 2 câu của mình."
-    ],
-    "exercise": [
-      "1. It ___ a book.",
-      "2. They ___ books.",
-      "3. This ___ a pen.",
-      "4. Those ___ bags.",
-      "5. She is ___ teacher.",
-      "6. We are ___."
-    ],
-    "answers": [
-      "1 is",
-      "2 are",
-      "3 is",
-      "4 are",
-      "5 a",
-      "6 students"
-    ],
-    "recall": "Nói 4 câu: It is… They are… This is… Those are…"
-  },
-  {
-    "day": 14,
-    "week": 2,
-    "title": "Ôn tuần 2",
-    "aim": "Hôm nay không học kiến thức mới. Ôn danh từ, số ít/số nhiều, a/an/the và this, that, these, those.",
-    "rule": "Ôn a/an/the, số nhiều, this/that/these/those và to be.",
-    "words": [
-      {
-        "en": "book",
-        "vi": "sách"
-      },
-      {
-        "en": "apple",
-        "vi": "táo"
-      },
-      {
-        "en": "pen",
-        "vi": "bút"
-      },
-      {
-        "en": "student",
-        "vi": "học sinh"
-      },
-      {
-        "en": "bag",
-        "vi": "cặp"
-      }
-    ],
-    "listen": [
-      {
-        "en": "It is an apple.",
-        "vi": "Nó là một quả táo."
-      },
-      {
-        "en": "The book is here.",
-        "vi": "Quyển sách ở đây."
-      },
-      {
-        "en": "These are pens.",
-        "vi": "Đây là những cây bút."
+        "en": "He is a teacher.",
+        "vi": "Anh ấy là giáo viên."
       },
       {
         "en": "They are students.",
         "vi": "Họ là học sinh."
       },
       {
-        "en": "That is a bag.",
-        "vi": "Kia là một cái cặp."
+        "en": "This is a book.",
+        "vi": "Đây là một quyển sách."
       },
       {
-        "en": "I like music.",
-        "vi": "Tôi thích nhạc."
+        "en": "These are books.",
+        "vi": "Đây là những quyển sách."
+      },
+      {
+        "en": "She is not a doctor.",
+        "vi": "Cô ấy không phải bác sĩ."
+      },
+      {
+        "en": "Are they students?",
+        "vi": "Họ là học sinh không?"
       }
     ],
     "copy": [
-      "Không chép bài mới.",
-      "Làm bài kiểm tra ở phần luyện tập."
+      "Chép 6 mẫu trong phần quy tắc.",
+      "Nhớ: this/that + is, these/those + are."
     ],
     "exercise": [
-      "1. a hoặc an + apple",
-      "2. a hoặc an + book",
-      "3. This hoặc These + are pens",
-      "4. That hoặc Those + is a bag",
-      "5. The book ___ here.",
-      "6. They ___ students."
+      "Chọn đáp án đúng.",
+      "1. She (is / are) a student.",
+      "2. These (is / are) books.",
+      "3. This is (a / an) apple.",
+      "4. He is (a / an) doctor.",
+      "5. Those (is / are) my friends.",
+      "6. The children (is / are) happy.",
+      "7. They (isn't / aren't) teachers.",
+      "8. (Is / Are) this your phone?",
+      "9. I am (a / an) English student.",
+      "10. That (is / are) a school.",
+      "Sắp xếp.",
+      "11. is / This / a / book",
+      "12. are / Those / students",
+      "13. not / He / a / is / doctor",
+      "14. these / Are / your / books",
+      "15. an / It / orange / is",
+      "Dịch.",
+      "16. Đây là một chiếc điện thoại.",
+      "17. Kia là những chiếc ô tô.",
+      "18. Họ là học sinh.",
+      "19. Cô ấy không phải là giáo viên.",
+      "20. Đây có phải là quyển sách của bạn không?",
+      "21. Những đứa trẻ đang vui vẻ."
     ],
     "answers": [
-      "1 an",
-      "2 a",
-      "3 These",
-      "4 That",
-      "5 is",
-      "6 are"
+      "1 is",
+      "2 are",
+      "3 an",
+      "4 a",
+      "5 are",
+      "6 are",
+      "7 aren't",
+      "8 Is",
+      "9 an",
+      "10 is",
+      "11 This is a book.",
+      "12 Those are students.",
+      "13 He is not a doctor.",
+      "14 Are these your books?",
+      "15 It is an orange.",
+      "16 This is a phone.",
+      "17 Those are cars.",
+      "18 They are students.",
+      "19 She is not a teacher.",
+      "20 Is this your book?",
+      "21 The children are happy."
     ],
-    "recall": "Làm bài kiểm tra tuần 2. Ghi câu sai."
+    "recall": "Nói 6 câu: một câu có a hoặc an, một câu có the, một câu this hoặc that, một câu these hoặc those, một câu phủ định, một câu hỏi."
+  },
+  {
+    "day": 14,
+    "week": 2,
+    "title": "Ôn tuần 2",
+    "aim": "Ôn danh từ, số nhiều, a/an/the và this/that/these/those.\nKhông học từ mới.\nLàm bài kiểm tra tuần 2 và ghi câu sai.",
+    "rule": "Người / vật / nơi.\nbook → books, child → children.\na book, an apple, an hour, a university.\nI have a dog. The dog is small. I like dogs.\nThis is / These are. That is / Those are.",
+    "words": [
+      {
+        "en": "books / children",
+        "vi": "ôn số nhiều"
+      },
+      {
+        "en": "a / an",
+        "vi": "ôn mạo từ không xác định"
+      },
+      {
+        "en": "the",
+        "vi": "ôn mạo từ xác định"
+      },
+      {
+        "en": "this / these",
+        "vi": "ôn gần"
+      },
+      {
+        "en": "that / those",
+        "vi": "ôn xa"
+      }
+    ],
+    "listen": [
+      {
+        "en": "He is a doctor.",
+        "vi": "Anh ấy là bác sĩ."
+      },
+      {
+        "en": "The books are new.",
+        "vi": "Những quyển sách mới."
+      },
+      {
+        "en": "This is an umbrella.",
+        "vi": "Đây là một chiếc ô."
+      },
+      {
+        "en": "I like dogs.",
+        "vi": "Tôi thích chó."
+      },
+      {
+        "en": "Those are my friends.",
+        "vi": "Kia là bạn tôi."
+      },
+      {
+        "en": "They aren't students.",
+        "vi": "Họ không phải học sinh."
+      }
+    ],
+    "copy": [
+      "Không chép bài mới. Nhẩm bảng a/an/the và this/that/these/those."
+    ],
+    "exercise": [
+      "Làm bài kiểm tra 15 câu ở phần luyện tập.",
+      "1. Địa điểm: teacher / hospital / book",
+      "2. Số nhiều của box",
+      "3. I am ___ student.",
+      "4. She is ___ English teacher.",
+      "5. I have a dog. ___ dog is cute.",
+      "6. Chó nói chung",
+      "7. Một sách ở gần",
+      "8. Nhiều xe ở xa",
+      "9. These ___ my books.",
+      "10. He is a doctor. / He is an doctor.",
+      "11. Số nhiều của child",
+      "12. Câu hỏi với these",
+      "13. Phủ định với they",
+      "14. This is an umbrella.",
+      "15. Those are my friends."
+    ],
+    "answers": [
+      "1 hospital",
+      "2 boxes",
+      "3 a",
+      "4 an",
+      "5 The",
+      "6 I like dogs.",
+      "7 This is a book.",
+      "8 Those are cars.",
+      "9 are",
+      "10 He is a doctor.",
+      "11 children",
+      "12 Are these your books?",
+      "13 They aren't students.",
+      "14 This is an umbrella.",
+      "15 Those are my friends."
+    ],
+    "recall": "Làm bài kiểm tra tuần 2. Ghi câu sai để ôn lại."
   },
   {
     "day": 15,

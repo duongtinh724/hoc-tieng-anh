@@ -1,174 +1,166 @@
 import type { RuleItem } from "@/types/lesson";
 import { splitRuleSegments } from "@/lib/format-rule";
 
+function rule(text: string, pairs: [string, string][]): RuleItem {
+  return {
+    text,
+    example: pairs[0][0],
+    exampleVi: pairs[0][1],
+    examples: pairs.map(([en, vi]) => ({ en, vi })),
+  };
+}
+
 export const DAY_RULES: Record<number, RuleItem[]> = {
   1: [
-    {
-      text: "I = tôi · You = bạn · He = anh ấy · She = cô ấy · It = vật hoặc con vật · We = chúng tôi · They = họ.",
-      example: "I",
-      exampleVi: "tôi",
-    },
-    {
-      text: "Nhận ra I, you, he, she, it, we, they đứng đầu câu.",
-      example: "You",
-      exampleVi: "bạn",
-    },
+    rule("Đại từ thay tên khi làm chủ ngữ.", [
+      ["Nam is a student. → He is a student.", "Nam là học sinh. → Anh ấy là học sinh."],
+      ["Lan is my friend. → She is my friend.", "Lan là bạn tôi. → Cô ấy là bạn tôi."],
+      ["The book is new. → It is new.", "Quyển sách mới. → Nó mới."],
+    ]),
+    rule("I — người nói\nYou — người nghe\nHe — một người nam\nShe — một người nữ\nIt — đồ vật, con vật, sự việc\nWe — người nói và người khác\nThey — nhiều người hoặc sự vật", [
+      ["My parents are at home. → They are at home.", "Bố mẹ tôi ở nhà. → Họ ở nhà."],
+      ["My brother and I are happy. → We are happy.", "Anh trai tôi và tôi vui. → Chúng tôi vui."],
+    ]),
   ],
   2: [
-    {
-      text: "I + am.\nHe / She / It + is.\nYou / We / They + are.",
-      example: "I am a student.",
-      exampleVi: "Tôi là học sinh.",
-    },
-    {
-      text: "Chọn đúng am, is hoặc are sau đại từ.",
-      example: "You are my friend.",
-      exampleVi: "Bạn là bạn tôi.",
-    },
+    rule("I + am\nHe / She / It + is\nYou / We / They + are", [
+      ["I am happy.", "Tôi vui."],
+      ["She is tired.", "Cô ấy mệt."],
+      ["They are busy.", "Họ bận."],
+    ]),
+    rule("Viết tắt\nI am → I'm\nHe is → He's\nShe is → She's\nIt is → It's\nYou are → You're\nWe are → We're\nThey are → They're", [
+      ["I'm fine.", "Tôi khỏe."],
+      ["She's tired.", "Cô ấy mệt."],
+      ["They're busy.", "Họ bận."],
+    ]),
   ],
   3: [
-    {
-      text: "I am + …\nHe / She / It is + …\nYou / We / They are + …",
-      example: "I am Nam.",
-      exampleVi: "Tôi là Nam.",
-    },
-    {
-      text: "Viết câu khẳng định: đại từ + am/is/are + từ còn lại.",
-      example: "I am fifteen.",
-      exampleVi: "Tôi 15 tuổi.",
-    },
+    rule("Chủ ngữ + am / is / are + phần còn lại", [
+      ["I am a student.", "Tôi là học sinh."],
+      ["She is happy.", "Cô ấy vui."],
+      ["They are at home.", "Họ ở nhà."],
+    ]),
+    rule("+ danh từ: I am a student.\n+ tính từ: She is happy.\n+ nơi chốn: They are at home.", [
+      ["He is a doctor.", "Anh ấy là bác sĩ."],
+      ["She is beautiful.", "Cô ấy xinh đẹp."],
+      ["We are at home.", "Chúng tôi ở nhà."],
+    ]),
   ],
   4: [
-    {
-      text: "I am not.\nHe / She / It is not (isn't).\nYou / We / They are not (aren't).",
-      example: "I am not sad.",
-      exampleVi: "Tôi không buồn.",
-    },
-    {
-      text: "Thêm not sau am, is, are.",
-      example: "He is not busy.",
-      exampleVi: "Anh ấy không bận.",
-    },
+    rule("Chủ ngữ + am / is / are + not + phần còn lại\nis not → isn't\nare not → aren't\nam not — không viết tắt", [
+      ["I am not tired.", "Tôi không mệt."],
+      ["He isn't a teacher.", "Anh ấy không phải giáo viên."],
+      ["They aren't hungry.", "Họ không đói."],
+    ]),
+    rule("Không dùng don't hoặc doesn't với to be.", [
+      ["She isn't at home.", "Cô ấy không ở nhà."],
+      ["We aren't busy.", "Chúng tôi không bận."],
+    ]),
   ],
   5: [
-    {
-      text: "Are you …? — Yes, I am. / No, I'm not.\nIs he / she / it …? — Yes, he is. / No, he isn't.\nAre we / they …? — Yes, they are. / No, they aren't.",
-      example: "Are you a student?",
-      exampleVi: "Bạn là học sinh phải không?",
-    },
-    {
-      text: "Đảo am/is/are lên trước chủ ngữ. Trả lời ngắn Yes hoặc No.",
-      example: "Yes, I am.",
-      exampleVi: "Vâng, tôi là.",
-    },
+    rule("Câu hỏi: Am / Is / Are + chủ ngữ + …?\nYes, + chủ ngữ + am / is / are.\nNo, + chủ ngữ + am / is / are + not.", [
+      ["Are you happy? — Yes, I am.", "Bạn vui không? — Vâng."],
+      ["Is he a student? — No, he isn't.", "Anh ấy là học sinh không? — Không."],
+      ["Are they at home? — Yes, they are.", "Họ ở nhà không? — Vâng."],
+    ]),
+    rule("Are you …? → trả lời bằng I, không dùng you.", [
+      ["Are you a student? — Yes, I am.", "Bạn là học sinh không? — Vâng, tôi là."],
+      ["Are you happy? — No, I'm not.", "Bạn vui không? — Không, tôi không."],
+    ]),
   ],
   6: [
-    {
-      text: "I am + tên. I am fifteen years old. I am a student.",
-      example: "I am Nam.",
-      exampleVi: "Tôi là Nam.",
-    },
-    {
-      text: "Nói tên, tuổi và mình là học sinh bằng câu đơn giản.",
-      example: "I am fifteen years old.",
-      exampleVi: "Tôi 15 tuổi.",
-    },
+    rule("My name is …\nI am … years old.\nI am from …\nI live in …", [
+      ["My name is Nam.", "Tên tôi là Nam."],
+      ["I am fifteen years old.", "Tôi 15 tuổi."],
+      ["I am from Vietnam.", "Tôi đến từ Việt Nam."],
+      ["I live in Hanoi.", "Tôi sống ở Hà Nội."],
+    ]),
+    rule("I am a student.\nMy family is …\nMy hobby is …", [
+      ["I am a student.", "Tôi là học sinh."],
+      ["My family is small.", "Gia đình tôi nhỏ."],
+      ["My hobby is football.", "Sở thích của tôi là bóng đá."],
+    ]),
   ],
   7: [
-    {
-      text: "Ôn I am / You are / He is / We are / They are, phủ định not, câu hỏi đảo am/is/are.",
-      example: "I am a student.",
-      exampleVi: "Tôi là học sinh.",
-    },
-    {
-      text: "Kiểm tra đại từ và to be. Không học từ mới.",
-      example: "Are you happy?",
-      exampleVi: "Bạn vui phải không?",
-    },
+    rule("Ôn\nI am. He / She / It is. You / We / They are.\nPhủ định: am not, isn't, aren't.\nCâu hỏi: Am / Is / Are + chủ ngữ?", [
+      ["I am a student.", "Tôi là học sinh."],
+      ["She isn't busy.", "Cô ấy không bận."],
+      ["Are you a student? — Yes, I am.", "Bạn là học sinh không? — Vâng."],
+    ]),
+    rule("Giới thiệu\nMy name is …\nI am … years old.\nKhông học từ mới.", [
+      ["My name is Nam.", "Tên tôi là Nam."],
+      ["I am fifteen years old.", "Tôi 15 tuổi."],
+    ]),
   ],
   8: [
-    {
-      text: "Danh từ không phải hành động. student là người, book là vật, school là nơi.",
-      example: "I am a student.",
-      exampleVi: "Tôi là học sinh.",
-    },
-    {
-      text: "Biết danh từ là tên người, vật hoặc nơi.",
-      example: "She is a teacher.",
-      exampleVi: "Cô ấy là giáo viên.",
-    },
+    rule("Danh từ gọi tên người, vật hoặc nơi.\nNgười: teacher, student, doctor\nVật: book, phone, table\nNơi: school, hospital, park", [
+      ["teacher — giáo viên", "người"],
+      ["book — quyển sách", "vật"],
+      ["school — trường học", "nơi"],
+    ]),
+    rule("Chủ ngữ + am / is / are + danh từ", [
+      ["I am a student.", "Tôi là học sinh."],
+      ["He is a doctor.", "Anh ấy là bác sĩ."],
+      ["They are teachers.", "Họ là giáo viên."],
+    ]),
   ],
   9: [
-    {
-      text: "Một vật: a book.\nNhiều vật: books.\nstudent → students.",
-      example: "It is a book.",
-      exampleVi: "Nó là một quyển sách.",
-    },
-    {
-      text: "Đổi danh từ số ít sang số nhiều bằng -s.",
-      example: "They are books.",
-      exampleVi: "Chúng là những quyển sách.",
-    },
+    rule("Số ít = một. Số nhiều = từ hai trở lên.\n+ s: book → books\n+ es: bus → buses, box → boxes\nphụ âm + y → ies: baby → babies", [
+      ["one book → two books", "một sách → hai sách"],
+      ["one bus → two buses", "một xe buýt → hai xe buýt"],
+      ["one baby → two babies", "một em bé → hai em bé"],
+    ]),
+    rule("Bất quy tắc\nchild → children\nman → men\nwoman → women\nperson → people\nSố nhiều đi với are.", [
+      ["The book is new.", "Quyển sách mới."],
+      ["The books are new.", "Những quyển sách mới."],
+      ["The children are here.", "Những đứa trẻ ở đây."],
+    ]),
   ],
   10: [
-    {
-      text: "a book, a pen, a student. an apple, an egg.",
-      example: "It is a book.",
-      exampleVi: "Nó là một quyển sách.",
-    },
-    {
-      text: "a trước phụ âm, an trước nguyên âm a, e, i, o, u.",
-      example: "It is a pen.",
-      exampleVi: "Nó là một cây bút.",
-    },
+    rule("a / an + danh từ đếm được số ít\na + âm phụ âm: a book, a teacher, a university\nan + âm nguyên âm: an apple, an egg, an hour", [
+      ["I am a student.", "Tôi là một học sinh."],
+      ["This is an apple.", "Đây là một quả táo."],
+      ["an hour — h không phát âm", "một giờ"],
+    ]),
+    rule("Sai: I am student.\nĐúng: I am a student.\nKhông dùng a/an trước danh từ số nhiều.", [
+      ["She is a teacher.", "Cô ấy là một giáo viên."],
+      ["books — không nói a books", "những quyển sách"],
+    ]),
   ],
   11: [
-    {
-      text: "The book = quyển sách ấy. I like music = nói chung, không dùng the.",
-      example: "The book is here.",
-      exampleVi: "Quyển sách ở đây.",
-    },
-    {
-      text: "the khi người nghe đã biết vật đó. Không mạo từ khi nói chung.",
-      example: "She is the teacher.",
-      exampleVi: "Cô ấy là giáo viên đó.",
-    },
+    rule("Lần đầu, chưa xác định: a / an\nLần sau, đã biết: the", [
+      ["I have a book. The book is blue.", "Tôi có một quyển sách. Quyển sách màu xanh."],
+      ["I have a dog. The dog is small.", "Tôi có một con chó. Con chó nhỏ."],
+    ]),
+    rule("Nói chung thì không mạo từ.\nI like + danh từ số nhiều\nDanh từ không đếm được đứng một mình", [
+      ["I like dogs.", "Tôi thích chó."],
+      ["Water is important.", "Nước rất quan trọng."],
+      ["English is useful.", "Tiếng Anh hữu ích."],
+    ]),
   ],
   12: [
-    {
-      text: "This/these = gần. That/those = xa.",
-      example: "This is a book.",
-      exampleVi: "Đây là một quyển sách.",
-    },
-    {
-      text: "this/that cho một vật. these/those cho nhiều vật.",
-      example: "That is a pen.",
-      exampleVi: "Kia là một cây bút.",
-    },
+    rule("This + is — một, gần\nThat + is — một, xa\nThese + are — nhiều, gần\nThose + are — nhiều, xa", [
+      ["This is a pen.", "Đây là một chiếc bút."],
+      ["That is a car.", "Kia là một chiếc ô tô."],
+      ["These are books.", "Đây là những quyển sách."],
+      ["Those are cars.", "Kia là những chiếc ô tô."],
+    ]),
   ],
   13: [
-    {
-      text: "It is a book. They are books. These are students.",
-      example: "It is a book.",
-      exampleVi: "Nó là một quyển sách.",
-    },
-    {
-      text: "Ghép danh từ, số nhiều và to be trong cùng một câu.",
-      example: "They are books.",
-      exampleVi: "Chúng là sách.",
-    },
+    rule("Số ít: He is a teacher.\nSố nhiều: They are students.\nThis / That + is + a/an + danh từ\nThese / Those + are + danh từ số nhiều", [
+      ["This is a book.", "Đây là một quyển sách."],
+      ["These are books.", "Đây là những quyển sách."],
+      ["She is not a doctor.", "Cô ấy không phải bác sĩ."],
+      ["Are they students?", "Họ là học sinh không?"],
+    ]),
   ],
   14: [
-    {
-      text: "Ôn a/an/the, số nhiều, this/that/these/those và to be.",
-      example: "It is an apple.",
-      exampleVi: "Nó là một quả táo.",
-    },
-    {
-      text: "Kiểm tra danh từ và mạo từ. Không học từ mới.",
-      example: "The book is here.",
-      exampleVi: "Quyển sách ở đây.",
-    },
+    rule("Ôn, không từ mới\na book / an apple / an hour\nI have a dog. The dog is small.\nThis is … / These are …\nThose are …", [
+      ["He is a doctor.", "Anh ấy là bác sĩ."],
+      ["This is an umbrella.", "Đây là một chiếc ô."],
+      ["Those are my friends.", "Kia là bạn tôi."],
+      ["They aren't students.", "Họ không phải học sinh."],
+    ]),
   ],
   15: [
     {

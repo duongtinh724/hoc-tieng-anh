@@ -60,7 +60,15 @@ export function LessonCard({
         <div className="lesson-intro-row">
           <div className="aim-box">
             <span className="aim-label">Mục tiêu hôm nay</span>
-            <p>{lesson.aim}</p>
+            <ul className="aim-list">
+              {lesson.aim
+                .split("\n")
+                .map((line) => line.trim())
+                .filter(Boolean)
+                .map((line) => (
+                  <li key={line}>{line}</li>
+                ))}
+            </ul>
           </div>
           <RuleBox rules={getRulesForDay(month, lesson.day, lesson.rule)} />
         </div>

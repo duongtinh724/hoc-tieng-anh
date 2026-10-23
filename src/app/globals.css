@@ -828,10 +828,18 @@ h3 {
   color: var(--accent-dark);
 }
 
-.aim-box p {
-  margin: 4px 0 0;
+.aim-list {
+  margin: 6px 0 0;
+  padding-left: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.aim-list li {
   font-size: 0.95rem;
   font-weight: 600;
+  line-height: 1.45;
 }
 
 /* ── Rule box (xanh lá) ── */
@@ -950,7 +958,7 @@ h3 {
 }
 
 .rule-item-example {
-  margin: 0;
+  margin: 0 0 8px;
   padding: 8px 10px;
   background: var(--rule-green-mid);
   border-left: 3px solid var(--rule-green);

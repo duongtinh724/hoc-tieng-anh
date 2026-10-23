@@ -35,15 +35,22 @@ export function HintDrawer({ open, hints, onClose }: HintDrawerProps) {
       {hints.rules && hints.rules.length > 0 ? (
         <Card size="small" title="Quy tắc" className="practice-hint-card">
           <ol className="practice-hint-list">
-            {hints.rules.map((rule) => (
-              <li key={rule.text}>
-                <strong>{rule.text}</strong>
-                <Typography.Paragraph type="secondary" style={{ marginBottom: 0 }}>
-                  Ví dụ: {rule.example}
-                  {rule.exampleVi ? ` — ${rule.exampleVi}` : ""}
-                </Typography.Paragraph>
-              </li>
-            ))}
+            {hints.rules.map((rule) => {
+              const examples = rule.examples?.length
+                ? rule.examples
+                : [{ en: rule.example, vi: rule.exampleVi }];
+              return (
+                <li key={rule.text}>
+                  <strong style={{ whiteSpace: "pre-line" }}>{rule.text}</strong>
+                  {examples.map((example) => (
+                    <Typography.Paragraph key={example.en} type="secondary" style={{ marginBottom: 4 }}>
+                      Ví dụ: {example.en}
+                      {example.vi ? ` — ${example.vi}` : ""}
+                    </Typography.Paragraph>
+                  ))}
+                </li>
+              );
+            })}
           </ol>
         </Card>
       ) : null}

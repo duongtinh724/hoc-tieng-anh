@@ -50,16 +50,21 @@ export function RuleBox({ rules }: RuleBoxProps) {
 
               {isOpen ? (
                 <div className="rule-item-panel">
-                  <div className="rule-item-example">
-                    <p>
-                      <span className="rule-example-label">Ví dụ:</span> {item.example}
-                    </p>
-                    {item.exampleVi ? (
-                      <p className="rule-item-example-vi">
-                        <span className="rule-example-vi-label">Dịch:</span> {item.exampleVi}
+                  {(item.examples?.length
+                    ? item.examples
+                    : [{ en: item.example, vi: item.exampleVi }]
+                  ).map((example) => (
+                    <div key={example.en} className="rule-item-example">
+                      <p>
+                        <span className="rule-example-label">Ví dụ:</span> {example.en}
                       </p>
-                    ) : null}
-                  </div>
+                      {example.vi ? (
+                        <p className="rule-item-example-vi">
+                          <span className="rule-example-vi-label">Dịch:</span> {example.vi}
+                        </p>
+                      ) : null}
+                    </div>
+                  ))}
                 </div>
               ) : null}
             </li>

@@ -67,25 +67,25 @@ Mỗi tuần đủ 7 ngày. **Chủ nhật:** ôn và kiểm tra, không học k
 
 | Ngày | Nội dung |
 |------|----------|
-| Thứ 2 | Đại từ nhân xưng: I, you, he, she, it, we, they |
-| Thứ 3 | To be: am, is, are |
-| Thứ 4 | Câu khẳng định với to be |
-| Thứ 5 | Câu phủ định với to be |
-| Thứ 6 | Câu hỏi với to be và câu trả lời ngắn |
-| Thứ 7 | Giới thiệu bản thân bằng câu đơn giản |
-| Chủ nhật | Ôn tập và bài kiểm tra ngắn |
+| Thứ 2 | Đại từ nhân xưng: I, you, he, she, it, we, they — thay tên người, vật, sự việc |
+| Thứ 3 | To be: I am, he/she/it is, you/we/they are, kèm dạng viết tắt |
+| Thứ 4 | Câu khẳng định: chủ ngữ + am/is/are + danh từ, tính từ hoặc nơi chốn |
+| Thứ 5 | Câu phủ định: am/is/are + not (isn't, aren't). Không dùng don't với to be |
+| Thứ 6 | Câu hỏi Yes/No và trả lời ngắn. Are you…? trả lời bằng I |
+| Thứ 7 | Giới thiệu: My name is, years old, from, live in, family, hobby |
+| Chủ nhật | Ôn đại từ, to be, khẳng định, phủ định, câu hỏi. Không từ mới |
 
 #### Tuần 2 · 19/10–25/10 — Danh từ và mạo từ
 
 | Ngày | Nội dung |
 |------|----------|
-| Thứ 2 | Danh từ chỉ người, vật, địa điểm |
-| Thứ 3 | Danh từ số ít và số nhiều |
-| Thứ 4 | Mạo từ a/an |
-| Thứ 5 | Mạo từ the và trường hợp không dùng mạo từ |
-| Thứ 6 | This, that, these, those |
-| Thứ 7 | Bài tập kết hợp danh từ và to be |
-| Chủ nhật | Ôn tập và kiểm tra |
+| Thứ 2 | Danh từ chỉ người, vật, địa điểm. S + am/is/are + danh từ |
+| Thứ 3 | Số ít và số nhiều: -s/-es/-ies, child/children, man/men. Số nhiều đi với are |
+| Thứ 4 | a trước âm phụ âm, an trước âm nguyên âm (an hour, a university) |
+| Thứ 5 | the khi đã xác định. Không mạo từ khi nói chung (I like dogs. Water is important.) |
+| Thứ 6 | This/that + is. These/those + are |
+| Thứ 7 | Ghép danh từ, a/an, this/that và to be |
+| Chủ nhật | Kiểm tra 15 câu. Không từ mới |
 
 #### Tuần 3 · 26/10–01/11 — Cấu trúc câu cơ bản
 

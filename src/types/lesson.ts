@@ -8,10 +8,17 @@ export interface ListenItem {
   vi: string;
 }
 
+export interface RuleExample {
+  en: string;
+  vi?: string;
+}
+
 export interface RuleItem {
   text: string;
   example: string;
   exampleVi?: string;
+  /** Ví dụ thêm. `example` vẫn là ví dụ đầu. */
+  examples?: RuleExample[];
 }
 
 export interface DayLesson {
