@@ -44,19 +44,6 @@ export function LessonCard({
       </header>
 
       <div className="card-body">
-        <div className="session-overview">
-          <strong>5 mục cần học trong buổi này</strong>
-          <ol className="session-checklist">
-            {SESSION_STEPS.map((step) => (
-              <li key={step.step}>
-                <span className="mini-step">{step.step}</span>
-                <span className="mini-label">{step.title}</span>
-                <span className="mini-time">{step.time}</span>
-              </li>
-            ))}
-          </ol>
-        </div>
-
         <div className="lesson-intro-row">
           <div className="aim-box">
             <span className="aim-label">Mục tiêu hôm nay</span>

@@ -1,0 +1,1933 @@
+{
+  "metadata": {
+    "title": "12 English Tenses + Grammar Extensions + Practice",
+    "title_vi": "12 thì tiếng Anh, quy tắc mở rộng và bài tập",
+    "level": "A2-B1",
+    "language": {
+      "instructions": "vi",
+      "examples": "en",
+      "translations": "vi"
+    },
+    "version": "1.1.0",
+    "counts": {
+      "tenses": 12,
+      "extra_rules": 5,
+      "tense_specific_exercises": 36,
+      "mixed_review_exercises": 36,
+      "total_exercises": 72
+    },
+    "note": "Mỗi cách dùng có một ví dụ. Mọi bài tập là câu trắc nghiệm một đáp án."
+  },
+  "notation": {
+    "S": "Subject — chủ ngữ",
+    "V1": "Động từ nguyên mẫu không to",
+    "V2": "Dạng quá khứ",
+    "V3": "Quá khứ phân từ",
+    "V-ing": "Động từ thêm -ing",
+    "O": "Object — tân ngữ"
+  },
+  "tenses": [
+    {
+      "id": "present_simple",
+      "name": "Present Simple",
+      "name_vi": "Hiện tại đơn",
+      "group": "Present",
+      "forms": {
+        "affirmative": "S + V1(s/es)",
+        "negative": "S + do/does not + V1",
+        "yes_no_question": "Do/Does + S + V1?"
+      },
+      "uses": [
+        {
+          "text": "Thói quen và hành động lặp lại",
+          "example": {
+            "en": "I drink milk every morning.",
+            "vi": "Tôi uống sữa mỗi sáng."
+          }
+        },
+        {
+          "text": "Sự thật hiển nhiên",
+          "example": {
+            "en": "The sun rises in the east.",
+            "vi": "Mặt trời mọc ở hướng đông."
+          }
+        },
+        {
+          "text": "Lịch trình cố định",
+          "example": {
+            "en": "The train leaves at 7 a.m.",
+            "vi": "Tàu khởi hành lúc 7 giờ sáng."
+          }
+        }
+      ],
+      "markers": [
+        "always",
+        "usually",
+        "often",
+        "sometimes",
+        "every day"
+      ],
+      "example": {
+        "en": "I study English every day.",
+        "vi": "Tôi học tiếng Anh mỗi ngày."
+      },
+      "exercise_ids": [
+        "PS1",
+        "PS2",
+        "PS3"
+      ]
+    },
+    {
+      "id": "present_continuous",
+      "name": "Present Continuous",
+      "name_vi": "Hiện tại tiếp diễn",
+      "group": "Present",
+      "forms": {
+        "affirmative": "S + am/is/are + V-ing",
+        "negative": "S + am/is/are not + V-ing",
+        "yes_no_question": "Am/Is/Are + S + V-ing?"
+      },
+      "uses": [
+        {
+          "text": "Hành động đang diễn ra",
+          "example": {
+            "en": "She is reading a book now.",
+            "vi": "Cô ấy đang đọc sách."
+          }
+        },
+        {
+          "text": "Tình huống tạm thời",
+          "example": {
+            "en": "I am staying with my aunt this week.",
+            "vi": "Tuần này tôi ở với dì."
+          }
+        },
+        {
+          "text": "Kế hoạch đã sắp xếp trong tương lai gần",
+          "example": {
+            "en": "We are meeting the teacher tomorrow.",
+            "vi": "Ngày mai chúng tôi gặp giáo viên."
+          }
+        }
+      ],
+      "markers": [
+        "now",
+        "right now",
+        "at the moment"
+      ],
+      "example": {
+        "en": "I am studying English now.",
+        "vi": "Tôi đang học tiếng Anh."
+      },
+      "exercise_ids": [
+        "PC1",
+        "PC2",
+        "PC3"
+      ]
+    },
+    {
+      "id": "present_perfect",
+      "name": "Present Perfect",
+      "name_vi": "Hiện tại hoàn thành",
+      "group": "Present",
+      "forms": {
+        "affirmative": "S + have/has + V3",
+        "negative": "S + have/has not + V3",
+        "yes_no_question": "Have/Has + S + V3?"
+      },
+      "uses": [
+        {
+          "text": "Kinh nghiệm đến hiện tại",
+          "example": {
+            "en": "I have visited Hue.",
+            "vi": "Tôi đã từng đến Huế."
+          }
+        },
+        {
+          "text": "Kết quả hiện tại của hành động quá khứ",
+          "example": {
+            "en": "She has lost her keys.",
+            "vi": "Cô ấy làm mất chìa khóa."
+          }
+        },
+        {
+          "text": "Tình huống bắt đầu trong quá khứ và còn liên hệ đến hiện tại",
+          "example": {
+            "en": "They have lived here since 2020.",
+            "vi": "Họ sống ở đây từ năm 2020."
+          }
+        }
+      ],
+      "markers": [
+        "already",
+        "yet",
+        "just",
+        "ever",
+        "never",
+        "since",
+        "for"
+      ],
+      "example": {
+        "en": "I have finished my work.",
+        "vi": "Tôi đã hoàn thành công việc."
+      },
+      "exercise_ids": [
+        "PP1",
+        "PP2",
+        "PP3"
+      ]
+    },
+    {
+      "id": "present_perfect_continuous",
+      "name": "Present Perfect Continuous",
+      "name_vi": "Hiện tại hoàn thành tiếp diễn",
+      "group": "Present",
+      "forms": {
+        "affirmative": "S + have/has been + V-ing",
+        "negative": "S + have/has not been + V-ing",
+        "yes_no_question": "Have/Has + S + been + V-ing?"
+      },
+      "uses": [
+        {
+          "text": "Nhấn mạnh quá trình hoặc thời lượng kéo dài đến hiện tại",
+          "example": {
+            "en": "I have been waiting for twenty minutes.",
+            "vi": "Tôi đã đợi được hai mươi phút."
+          }
+        },
+        {
+          "text": "Hành động vừa diễn ra và còn dấu hiệu ở hiện tại",
+          "example": {
+            "en": "It has been raining, so the street is wet.",
+            "vi": "Trời vừa mưa nên đường còn ướt."
+          }
+        }
+      ],
+      "markers": [
+        "for",
+        "since",
+        "all day",
+        "lately",
+        "recently"
+      ],
+      "example": {
+        "en": "I have been learning English for six months.",
+        "vi": "Tôi đã học tiếng Anh được sáu tháng."
+      },
+      "exercise_ids": [
+        "PPC1",
+        "PPC2",
+        "PPC3"
+      ]
+    },
+    {
+      "id": "past_simple",
+      "name": "Past Simple",
+      "name_vi": "Quá khứ đơn",
+      "group": "Past",
+      "forms": {
+        "affirmative": "S + V2/ed",
+        "negative": "S + did not + V1",
+        "yes_no_question": "Did + S + V1?"
+      },
+      "uses": [
+        {
+          "text": "Hành động đã xảy ra và kết thúc trong quá khứ",
+          "example": {
+            "en": "I watched a film yesterday.",
+            "vi": "Hôm qua tôi xem một bộ phim."
+          }
+        },
+        {
+          "text": "Các sự việc nối tiếp trong quá khứ",
+          "example": {
+            "en": "She opened the door and walked in.",
+            "vi": "Cô ấy mở cửa rồi bước vào."
+          }
+        }
+      ],
+      "markers": [
+        "yesterday",
+        "last week",
+        "ago",
+        "in 2020"
+      ],
+      "example": {
+        "en": "I went to the park yesterday.",
+        "vi": "Tôi đã đi công viên hôm qua."
+      },
+      "exercise_ids": [
+        "PaS1",
+        "PaS2",
+        "PaS3"
+      ]
+    },
+    {
+      "id": "past_continuous",
+      "name": "Past Continuous",
+      "name_vi": "Quá khứ tiếp diễn",
+      "group": "Past",
+      "forms": {
+        "affirmative": "S + was/were + V-ing",
+        "negative": "S + was/were not + V-ing",
+        "yes_no_question": "Was/Were + S + V-ing?"
+      },
+      "uses": [
+        {
+          "text": "Hành động đang diễn ra tại một thời điểm trong quá khứ",
+          "example": {
+            "en": "I was studying at 8 p.m.",
+            "vi": "Lúc 8 giờ tối tôi đang học."
+          }
+        },
+        {
+          "text": "Hành động nền bị một hành động khác xen vào",
+          "example": {
+            "en": "I was cooking when the phone rang.",
+            "vi": "Tôi đang nấu ăn thì điện thoại reo."
+          }
+        },
+        {
+          "text": "Hai hành động đang diễn ra đồng thời",
+          "example": {
+            "en": "She was reading while he was writing.",
+            "vi": "Cô ấy đang đọc trong khi anh ấy đang viết."
+          }
+        }
+      ],
+      "markers": [
+        "at 8 p.m. yesterday",
+        "while",
+        "when"
+      ],
+      "example": {
+        "en": "I was studying when my friend called.",
+        "vi": "Tôi đang học thì bạn tôi gọi."
+      },
+      "exercise_ids": [
+        "PaC1",
+        "PaC2",
+        "PaC3"
+      ]
+    },
+    {
+      "id": "past_perfect",
+      "name": "Past Perfect",
+      "name_vi": "Quá khứ hoàn thành",
+      "group": "Past",
+      "forms": {
+        "affirmative": "S + had + V3",
+        "negative": "S + had not + V3",
+        "yes_no_question": "Had + S + V3?"
+      },
+      "uses": [
+        {
+          "text": "Hành động xảy ra trước một hành động hoặc mốc khác trong quá khứ",
+          "example": {
+            "en": "The film had started before we arrived.",
+            "vi": "Phim đã bắt đầu trước khi chúng tôi đến."
+          }
+        }
+      ],
+      "markers": [
+        "before",
+        "after",
+        "by the time"
+      ],
+      "example": {
+        "en": "I had finished my work before he arrived.",
+        "vi": "Tôi đã hoàn thành công việc trước khi anh ấy đến."
+      },
+      "exercise_ids": [
+        "PaP1",
+        "PaP2",
+        "PaP3"
+      ]
+    },
+    {
+      "id": "past_perfect_continuous",
+      "name": "Past Perfect Continuous",
+      "name_vi": "Quá khứ hoàn thành tiếp diễn",
+      "group": "Past",
+      "forms": {
+        "affirmative": "S + had been + V-ing",
+        "negative": "S + had not been + V-ing",
+        "yes_no_question": "Had + S + been + V-ing?"
+      },
+      "uses": [
+        {
+          "text": "Nhấn mạnh quá trình hoặc thời lượng trước một mốc quá khứ",
+          "example": {
+            "en": "She had been studying for two hours before dinner.",
+            "vi": "Cô ấy đã học được hai tiếng trước bữa tối."
+          }
+        }
+      ],
+      "markers": [
+        "for",
+        "since",
+        "before",
+        "by the time"
+      ],
+      "example": {
+        "en": "I had been working for two hours before the meeting started.",
+        "vi": "Tôi đã làm việc được hai tiếng trước khi cuộc họp bắt đầu."
+      },
+      "exercise_ids": [
+        "PaPC1",
+        "PaPC2",
+        "PaPC3"
+      ]
+    },
+    {
+      "id": "future_simple",
+      "name": "Future Simple",
+      "name_vi": "Tương lai đơn",
+      "group": "Future",
+      "forms": {
+        "affirmative": "S + will + V1",
+        "negative": "S + will not + V1",
+        "yes_no_question": "Will + S + V1?"
+      },
+      "uses": [
+        {
+          "text": "Dự đoán",
+          "example": {
+            "en": "I think it will be sunny tomorrow.",
+            "vi": "Tôi nghĩ ngày mai trời sẽ nắng."
+          }
+        },
+        {
+          "text": "Lời hứa",
+          "example": {
+            "en": "I will call you tonight.",
+            "vi": "Tối nay tôi sẽ gọi cho bạn."
+          }
+        },
+        {
+          "text": "Quyết định tức thời",
+          "example": {
+            "en": "The phone is ringing. I will answer it.",
+            "vi": "Điện thoại đang reo. Tôi sẽ nghe máy."
+          }
+        }
+      ],
+      "markers": [
+        "tomorrow",
+        "next week",
+        "soon",
+        "I think"
+      ],
+      "example": {
+        "en": "I will call you tomorrow.",
+        "vi": "Tôi sẽ gọi cho bạn ngày mai."
+      },
+      "exercise_ids": [
+        "FS1",
+        "FS2",
+        "FS3"
+      ]
+    },
+    {
+      "id": "future_continuous",
+      "name": "Future Continuous",
+      "name_vi": "Tương lai tiếp diễn",
+      "group": "Future",
+      "forms": {
+        "affirmative": "S + will be + V-ing",
+        "negative": "S + will not be + V-ing",
+        "yes_no_question": "Will + S + be + V-ing?"
+      },
+      "uses": [
+        {
+          "text": "Hành động sẽ đang diễn ra tại một mốc tương lai",
+          "example": {
+            "en": "At 9 tomorrow, I will be sitting in class.",
+            "vi": "9 giờ ngày mai tôi sẽ đang ngồi trong lớp."
+          }
+        }
+      ],
+      "markers": [
+        "at this time tomorrow",
+        "at 8 p.m. tomorrow"
+      ],
+      "example": {
+        "en": "At 8 p.m. tomorrow, I will be studying.",
+        "vi": "Lúc 8 giờ tối mai, tôi sẽ đang học."
+      },
+      "exercise_ids": [
+        "FC1",
+        "FC2",
+        "FC3"
+      ]
+    },
+    {
+      "id": "future_perfect",
+      "name": "Future Perfect",
+      "name_vi": "Tương lai hoàn thành",
+      "group": "Future",
+      "forms": {
+        "affirmative": "S + will have + V3",
+        "negative": "S + will not have + V3",
+        "yes_no_question": "Will + S + have + V3?"
+      },
+      "uses": [
+        {
+          "text": "Hành động sẽ hoàn thành trước một mốc tương lai",
+          "example": {
+            "en": "By 2027, she will have finished grade 9.",
+            "vi": "Đến năm 2027 cô ấy sẽ học xong lớp 9."
+          }
+        }
+      ],
+      "markers": [
+        "by tomorrow",
+        "by Friday",
+        "by the time"
+      ],
+      "example": {
+        "en": "I will have finished the report by Friday.",
+        "vi": "Tôi sẽ hoàn thành báo cáo trước thứ Sáu."
+      },
+      "exercise_ids": [
+        "FP1",
+        "FP2",
+        "FP3"
+      ]
+    },
+    {
+      "id": "future_perfect_continuous",
+      "name": "Future Perfect Continuous",
+      "name_vi": "Tương lai hoàn thành tiếp diễn",
+      "group": "Future",
+      "forms": {
+        "affirmative": "S + will have been + V-ing",
+        "negative": "S + will not have been + V-ing",
+        "yes_no_question": "Will + S + have been + V-ing?"
+      },
+      "uses": [
+        {
+          "text": "Nhấn mạnh thời lượng của một quá trình tính đến mốc tương lai",
+          "example": {
+            "en": "By June, I will have been learning English for eight months.",
+            "vi": "Đến tháng 6 tôi sẽ học tiếng Anh được tám tháng."
+          }
+        }
+      ],
+      "markers": [
+        "for + duration + by + future time"
+      ],
+      "example": {
+        "en": "By next June, I will have been working here for three years.",
+        "vi": "Đến tháng Sáu năm sau, tôi sẽ làm việc ở đây được ba năm."
+      },
+      "exercise_ids": [
+        "FPC1",
+        "FPC2",
+        "FPC3"
+      ]
+    }
+  ],
+  "extra_rules": [
+    {
+      "id": "R1",
+      "title": "Sau giới từ",
+      "rule": "Sau giới từ, thường dùng danh từ hoặc V-ing.",
+      "examples": [
+        {
+          "en": "I am interested in learning English.",
+          "vi": "Tôi hứng thú với việc học tiếng Anh."
+        },
+        {
+          "en": "She is good at speaking English.",
+          "vi": "Cô ấy giỏi nói tiếng Anh."
+        },
+        {
+          "en": "I had breakfast before going to work.",
+          "vi": "Tôi ăn sáng trước khi đi làm."
+        }
+      ],
+      "note": "Học theo cụm từ; chú ý một số cấu trúc đặc biệt."
+    },
+    {
+      "id": "R2",
+      "title": "Sau động từ khuyết thiếu",
+      "rule": "Sau can, could, should, must, may, might, will, dùng V1 không có to.",
+      "examples": [
+        {
+          "en": "I can speak English.",
+          "vi": "Tôi có thể nói tiếng Anh."
+        },
+        {
+          "en": "You should rest.",
+          "vi": "Bạn nên nghỉ ngơi."
+        }
+      ],
+      "note": "Ngoại lệ cấu trúc: ought to + V1; have to + V1."
+    },
+    {
+      "id": "R3",
+      "title": "Động từ chỉ trạng thái",
+      "rule": "Các động từ như know, believe, understand, own, need, prefer thường không dùng ở dạng tiếp diễn khi mang nghĩa trạng thái.",
+      "examples": [
+        {
+          "en": "I have known him for five years.",
+          "vi": "Tôi đã biết anh ấy được năm năm."
+        },
+        {
+          "en": "I understand the question.",
+          "vi": "Tôi hiểu câu hỏi."
+        }
+      ],
+      "note": "Một số động từ như think, have, see có thể dùng tiếp diễn khi nghĩa thay đổi."
+    },
+    {
+      "id": "R4",
+      "title": "Mệnh đề thời gian/điều kiện nói về tương lai",
+      "rule": "Sau when, if, before, after, until, as soon as trong mệnh đề phụ chỉ tương lai, thường dùng hiện tại đơn thay vì will.",
+      "examples": [
+        {
+          "en": "I will call you when I arrive.",
+          "vi": "Tôi sẽ gọi bạn khi tôi đến."
+        },
+        {
+          "en": "If it rains, we will stay home.",
+          "vi": "Nếu trời mưa, chúng tôi sẽ ở nhà."
+        }
+      ],
+      "note": "Mệnh đề chính vẫn có thể dùng will."
+    },
+    {
+      "id": "R5",
+      "title": "Từ khóa không quyết định thì một mình",
+      "rule": "Chọn thì dựa vào ý nghĩa, mốc thời gian, thứ tự sự việc và ngữ cảnh; không chỉ dựa vào từ khóa.",
+      "examples": [
+        {
+          "en": "I worked for two hours yesterday.",
+          "vi": "Hôm qua tôi đã làm việc hai tiếng."
+        },
+        {
+          "en": "I have been working for two hours.",
+          "vi": "Tôi đã làm việc được hai tiếng và có thể vẫn đang làm."
+        }
+      ],
+      "note": "Một cụm như for two hours có thể xuất hiện với nhiều thì."
+    }
+  ],
+  "extensions": {
+    "meaning_patterns": [
+      {
+        "term": "Simple",
+        "memory_tip": "Sự việc, thói quen hoặc sự thật."
+      },
+      {
+        "term": "Continuous",
+        "memory_tip": "Hành động đang diễn ra tại một mốc."
+      },
+      {
+        "term": "Perfect",
+        "memory_tip": "Nhìn một hành động từ một mốc thời gian; có thể nhấn mạnh kết quả, kinh nghiệm hoặc quan hệ thời gian."
+      },
+      {
+        "term": "Perfect Continuous",
+        "memory_tip": "Nhấn mạnh quá trình hoặc thời lượng."
+      }
+    ],
+    "comparisons": [
+      {
+        "pair": "Present Simple vs Present Continuous",
+        "difference": "Thói quen/sự thật so với hành động đang diễn ra hoặc tình huống tạm thời.",
+        "examples": [
+          {
+            "en": "I work from home.",
+            "vi": "Tôi làm việc ở nhà (thói quen/tình trạng)."
+          },
+          {
+            "en": "I am working from home today.",
+            "vi": "Hôm nay tôi đang làm việc ở nhà (tạm thời)."
+          }
+        ]
+      },
+      {
+        "pair": "Past Simple vs Present Perfect",
+        "difference": "Mốc quá khứ đã kết thúc so với kinh nghiệm/kết quả có liên hệ đến hiện tại.",
+        "examples": [
+          {
+            "en": "I visited Thailand in 2024.",
+            "vi": "Tôi đã đến Thái Lan năm 2024."
+          },
+          {
+            "en": "I have visited Thailand twice.",
+            "vi": "Tôi đã đến Thái Lan hai lần."
+          }
+        ]
+      },
+      {
+        "pair": "Past Simple vs Past Continuous",
+        "difference": "Sự việc đã xảy ra so với hành động đang diễn ra tại một mốc quá khứ.",
+        "examples": [
+          {
+            "en": "I cooked dinner.",
+            "vi": "Tôi đã nấu bữa tối."
+          },
+          {
+            "en": "I was cooking when he called.",
+            "vi": "Tôi đang nấu ăn thì anh ấy gọi."
+          }
+        ]
+      },
+      {
+        "pair": "Present Perfect vs Present Perfect Continuous",
+        "difference": "Kết quả/hoàn thành so với nhấn mạnh quá trình/thời lượng; hai thì đôi khi có thể thay thế tùy ngữ cảnh.",
+        "examples": [
+          {
+            "en": "I have written three emails.",
+            "vi": "Tôi đã viết xong ba email."
+          },
+          {
+            "en": "I have been writing emails for an hour.",
+            "vi": "Tôi đã viết email được một tiếng."
+          }
+        ]
+      },
+      {
+        "pair": "Past Perfect vs Past Simple",
+        "difference": "Hành động xảy ra trước một mốc quá khứ so với hành động ở mốc quá khứ đó.",
+        "examples": [
+          {
+            "en": "The train had left before we arrived.",
+            "vi": "Tàu đã rời đi trước khi chúng tôi đến."
+          },
+          {
+            "en": "We arrived at 8.",
+            "vi": "Chúng tôi đến lúc 8 giờ."
+          }
+        ]
+      },
+      {
+        "pair": "Will vs be going to",
+        "difference": "Will thường dùng cho quyết định tức thời, lời hứa và dự đoán; be going to thường dùng cho kế hoạch đã có hoặc dự đoán có bằng chứng.",
+        "examples": [
+          {
+            "en": "I'll answer the phone.",
+            "vi": "Tôi sẽ nghe điện thoại (quyết định lúc nói)."
+          },
+          {
+            "en": "I'm going to study tonight.",
+            "vi": "Tôi dự định học tối nay."
+          }
+        ]
+      },
+      {
+        "pair": "Future Perfect vs Future Perfect Continuous",
+        "difference": "Future Perfect nhấn mạnh việc hoàn thành; Future Perfect Continuous nhấn mạnh thời lượng quá trình đến một mốc tương lai.",
+        "examples": [
+          {
+            "en": "I will have finished the report by Friday.",
+            "vi": "Tôi sẽ hoàn thành báo cáo trước thứ Sáu."
+          },
+          {
+            "en": "By June, I will have been working here for three years.",
+            "vi": "Đến tháng Sáu, tôi sẽ làm việc ở đây được ba năm."
+          }
+        ]
+      }
+    ],
+    "active_passive": {
+      "active_formula": "S + V + O",
+      "passive_formula": "O + be (chia theo thì) + V3 (+ by + agent)",
+      "forms": [
+        {
+          "tense": "Present Simple",
+          "formula": "am/is/are + V3"
+        },
+        {
+          "tense": "Present Continuous",
+          "formula": "am/is/are being + V3"
+        },
+        {
+          "tense": "Past Simple",
+          "formula": "was/were + V3"
+        },
+        {
+          "tense": "Present Perfect",
+          "formula": "have/has been + V3"
+        },
+        {
+          "tense": "Future Simple",
+          "formula": "will be + V3"
+        },
+        {
+          "tense": "Modal verbs",
+          "formula": "modal + be + V3"
+        }
+      ],
+      "example": {
+        "active": "They build this house.",
+        "passive": "This house is built by them.",
+        "vi": "Họ xây ngôi nhà này. → Ngôi nhà này được xây bởi họ."
+      },
+      "note": "Không phải động từ nào cũng chuyển sang bị động tự nhiên; thường cần động từ có tân ngữ."
+    },
+    "grammar_symbols": {
+      "S": "Subject — chủ ngữ",
+      "V1": "Động từ nguyên mẫu không to",
+      "V2": "Dạng quá khứ",
+      "V3": "Quá khứ phân từ",
+      "V-ing": "Động từ thêm -ing",
+      "O": "Object — tân ngữ"
+    },
+    "auxiliary_rules": [
+      "Động từ thường: dùng do/does/did cho câu phủ định và câu hỏi ở các thì tương ứng; sau do/does/did dùng V1.",
+      "Động từ be: thêm not để phủ định; đảo be lên trước chủ ngữ trong câu hỏi.",
+      "Thì hoàn thành: have/has/had + V3; trong câu hỏi, đưa have/has/had lên trước chủ ngữ; phủ định thêm not sau trợ động từ."
+    ],
+    "timelines": [
+      {
+        "concept": "Simple",
+        "visual": "X — một điểm hoặc các điểm lặp lại trên trục thời gian."
+      },
+      {
+        "concept": "Continuous",
+        "visual": "Một đoạn đường nằm ngang bao quanh mốc thời gian."
+      },
+      {
+        "concept": "Perfect",
+        "visual": "Một hành động xảy ra trước mốc tham chiếu; đường nối từ hành động đến mốc."
+      },
+      {
+        "concept": "Perfect Continuous",
+        "visual": "Một đoạn kéo dài từ lúc bắt đầu đến mốc tham chiếu, nhấn mạnh thời lượng."
+      },
+      {
+        "concept": "Future Perfect",
+        "visual": "Hành động kết thúc trước hoặc vào một hạn tương lai."
+      }
+    ],
+    "study_tips": [
+      "Ôn theo nhóm Present → Past → Future.",
+      "Nhớ Simple = sự việc/thói quen; Continuous = đang diễn ra; Perfect = nhìn từ một mốc; Perfect Continuous = quá trình/thời lượng.",
+      "Mỗi ngày tự đặt câu về công việc, gia đình hoặc việc học tiếng Anh.",
+      "Khi chọn thì, tự hỏi: Khi nào? Hành động diễn ra ra sao? Có mốc thời gian nào quan trọng?",
+      "Không chọn thì chỉ dựa vào từ khóa; xét ý nghĩa và ngữ cảnh."
+    ]
+  },
+  "tense_specific_exercises": [
+    {
+      "id": "PS1",
+      "tense": "present_simple",
+      "type": "multiple_choice",
+      "question": "She usually _____ (go) to work by bus.",
+      "answer": "goes",
+      "full_sentence": "She usually goes to work by bus.",
+      "explanation": "Thói quen thường xuyên; chủ ngữ she nên động từ thêm -es.",
+      "options": [
+        "go",
+        "goes",
+        "is going",
+        "went"
+      ]
+    },
+    {
+      "id": "PS2",
+      "tense": "present_simple",
+      "type": "multiple_choice",
+      "question": "My brother _____ football every Saturday.",
+      "options": [
+        "A. play",
+        "B. plays",
+        "C. is playing",
+        "D. played"
+      ],
+      "answer": "B. plays",
+      "full_sentence": "My brother plays football every Saturday.",
+      "explanation": "Every Saturday chỉ thói quen; my brother là ngôi thứ ba số ít."
+    },
+    {
+      "id": "PS3",
+      "tense": "present_simple",
+      "type": "multiple_choice",
+      "question": "Find and correct the error: He don't like coffee.",
+      "answer": "He doesn't like coffee.",
+      "full_sentence": "He doesn't like coffee.",
+      "explanation": "Với he, dùng doesn't; động từ chính giữ V1.",
+      "options": [
+        "He don't like coffee.",
+        "He doesn't like coffee.",
+        "He doesn't likes coffee.",
+        "He not like coffee."
+      ]
+    },
+    {
+      "id": "PC1",
+      "tense": "present_continuous",
+      "type": "multiple_choice",
+      "question": "I _____ (write) an email right now.",
+      "answer": "am writing",
+      "full_sentence": "I am writing an email right now.",
+      "explanation": "Right now chỉ hành động đang diễn ra.",
+      "options": [
+        "write",
+        "am writing",
+        "wrote",
+        "have written"
+      ]
+    },
+    {
+      "id": "PC2",
+      "tense": "present_continuous",
+      "type": "multiple_choice",
+      "question": "Look! The children _____ in the garden.",
+      "options": [
+        "A. play",
+        "B. played",
+        "C. are playing",
+        "D. have played"
+      ],
+      "answer": "C. are playing",
+      "full_sentence": "Look! The children are playing in the garden.",
+      "explanation": "Look! cho biết hành động đang diễn ra."
+    },
+    {
+      "id": "PC3",
+      "tense": "present_continuous",
+      "type": "multiple_choice",
+      "question": "Viết câu dùng Present Continuous với gợi ý: I / study / English / now.",
+      "answer": "I am studying English now.",
+      "full_sentence": "I am studying English now.",
+      "explanation": "Cấu trúc S + am/is/are + V-ing.",
+      "options": [
+        "I study English now.",
+        "I am studying English now.",
+        "I studying English now.",
+        "I have study English now."
+      ]
+    },
+    {
+      "id": "PP1",
+      "tense": "present_perfect",
+      "type": "multiple_choice",
+      "question": "She _____ already _____ (finish) her homework.",
+      "answer": "has already finished",
+      "full_sentence": "She has already finished her homework.",
+      "explanation": "Already thường dùng với hiện tại hoàn thành khi nói về kết quả đến hiện tại.",
+      "options": [
+        "already finished",
+        "has already finished",
+        "have already finish",
+        "already finishes"
+      ]
+    },
+    {
+      "id": "PP2",
+      "tense": "present_perfect",
+      "type": "multiple_choice",
+      "question": "I _____ never _____ to Japan.",
+      "options": [
+        "A. did / go",
+        "B. have / been",
+        "C. am / going",
+        "D. had / go"
+      ],
+      "answer": "B. have / been",
+      "full_sentence": "I have never been to Japan.",
+      "explanation": "Hỏi/nói về kinh nghiệm đến hiện tại dùng Present Perfect."
+    },
+    {
+      "id": "PP3",
+      "tense": "present_perfect",
+      "type": "multiple_choice",
+      "question": "Find and correct the error: I have saw that movie.",
+      "answer": "I have seen that movie.",
+      "full_sentence": "I have seen that movie.",
+      "explanation": "Sau have/has phải dùng V3; see–saw–seen.",
+      "options": [
+        "I have saw that movie.",
+        "I have seen that movie.",
+        "I have see that movie.",
+        "I has seen that movie."
+      ]
+    },
+    {
+      "id": "PPC1",
+      "tense": "present_perfect_continuous",
+      "type": "multiple_choice",
+      "question": "They _____ (work) on this project for three hours, and they are still working.",
+      "answer": "have been working",
+      "full_sentence": "They have been working on this project for three hours, and they are still working.",
+      "explanation": "Nhấn mạnh quá trình kéo dài đến hiện tại.",
+      "options": [
+        "work",
+        "have been working",
+        "are working",
+        "worked"
+      ]
+    },
+    {
+      "id": "PPC2",
+      "tense": "present_perfect_continuous",
+      "type": "multiple_choice",
+      "question": "It _____ all morning, and the ground is still wet.",
+      "options": [
+        "A. rains",
+        "B. rained",
+        "C. has been raining",
+        "D. will rain"
+      ],
+      "answer": "C. has been raining",
+      "full_sentence": "It has been raining all morning, and the ground is still wet.",
+      "explanation": "Quá trình gần đây có dấu hiệu ở hiện tại."
+    },
+    {
+      "id": "PPC3",
+      "tense": "present_perfect_continuous",
+      "type": "multiple_choice",
+      "question": "Viết câu dùng Present Perfect Continuous với gợi ý: We / learn English / since January.",
+      "answer": "We have been learning English since January.",
+      "full_sentence": "We have been learning English since January.",
+      "explanation": "Since + mốc bắt đầu; nhấn mạnh quá trình kéo dài.",
+      "options": [
+        "We learn English since January.",
+        "We have been learning English since January.",
+        "We are learn English since January.",
+        "We learned English since January."
+      ]
+    },
+    {
+      "id": "PaS1",
+      "tense": "past_simple",
+      "type": "multiple_choice",
+      "question": "We _____ (visit) our grandparents last weekend.",
+      "answer": "visited",
+      "full_sentence": "We visited our grandparents last weekend.",
+      "explanation": "Last weekend là thời gian quá khứ đã kết thúc.",
+      "options": [
+        "visit",
+        "visited",
+        "were visiting",
+        "have visited"
+      ]
+    },
+    {
+      "id": "PaS2",
+      "tense": "past_simple",
+      "type": "multiple_choice",
+      "question": "He _____ his keys yesterday.",
+      "options": [
+        "A. loses",
+        "B. has lost",
+        "C. lost",
+        "D. was losing"
+      ],
+      "answer": "C. lost",
+      "full_sentence": "He lost his keys yesterday.",
+      "explanation": "Yesterday thường đi với Past Simple cho sự việc đã kết thúc."
+    },
+    {
+      "id": "PaS3",
+      "tense": "past_simple",
+      "type": "multiple_choice",
+      "question": "Find and correct the error: Did you went to work yesterday?",
+      "answer": "Did you go to work yesterday?",
+      "full_sentence": "Did you go to work yesterday?",
+      "explanation": "Sau did, dùng V1.",
+      "options": [
+        "Did you went to work yesterday?",
+        "Did you go to work yesterday?",
+        "Did you going to work yesterday?",
+        "Do you went to work yesterday?"
+      ]
+    },
+    {
+      "id": "PaC1",
+      "tense": "past_continuous",
+      "type": "multiple_choice",
+      "question": "At 9 p.m. last night, I _____ (watch) a movie.",
+      "answer": "was watching",
+      "full_sentence": "At 9 p.m. last night, I was watching a movie.",
+      "explanation": "Hành động đang diễn ra tại một mốc quá khứ.",
+      "options": [
+        "watch",
+        "was watching",
+        "watched",
+        "am watching"
+      ]
+    },
+    {
+      "id": "PaC2",
+      "tense": "past_continuous",
+      "type": "multiple_choice",
+      "question": "I _____ dinner when the phone rang.",
+      "options": [
+        "A. cooked",
+        "B. was cooking",
+        "C. have cooked",
+        "D. cook"
+      ],
+      "answer": "B. was cooking",
+      "full_sentence": "I was cooking dinner when the phone rang.",
+      "explanation": "Hành động đang diễn ra bị một hành động ngắn xen vào."
+    },
+    {
+      "id": "PaC3",
+      "tense": "past_continuous",
+      "type": "multiple_choice",
+      "question": "Find and correct the error: They was playing badminton at 6 p.m.",
+      "answer": "They were playing badminton at 6 p.m.",
+      "full_sentence": "They were playing badminton at 6 p.m.",
+      "explanation": "They đi với were.",
+      "options": [
+        "They was playing badminton at 6 p.m.",
+        "They were playing badminton at 6 p.m.",
+        "They were play badminton at 6 p.m.",
+        "They are playing badminton at 6 p.m."
+      ]
+    },
+    {
+      "id": "PaP1",
+      "tense": "past_perfect",
+      "type": "multiple_choice",
+      "question": "The train _____ already _____ (leave) when we arrived.",
+      "answer": "had already left",
+      "full_sentence": "The train had already left when we arrived.",
+      "explanation": "Tàu rời đi trước khi chúng tôi đến.",
+      "options": [
+        "already left",
+        "had already left",
+        "has already left",
+        "already leaves"
+      ]
+    },
+    {
+      "id": "PaP2",
+      "tense": "past_perfect",
+      "type": "multiple_choice",
+      "question": "By the time I got to the cinema, the movie _____.",
+      "options": [
+        "A. starts",
+        "B. has started",
+        "C. had started",
+        "D. will start"
+      ],
+      "answer": "C. had started",
+      "full_sentence": "By the time I got to the cinema, the movie had started.",
+      "explanation": "Phim bắt đầu trước một mốc quá khứ."
+    },
+    {
+      "id": "PaP3",
+      "tense": "past_perfect",
+      "type": "multiple_choice",
+      "question": "Viết câu dùng Past Perfect: she / finish work / before her manager arrived.",
+      "answer": "She had finished work before her manager arrived.",
+      "full_sentence": "She had finished work before her manager arrived.",
+      "explanation": "Hành động hoàn thành trước hành động quá khứ khác.",
+      "options": [
+        "She finished work before her manager arrived.",
+        "She had finished work before her manager arrived.",
+        "She has finished work before her manager arrived.",
+        "She was finishing work before her manager arrived."
+      ]
+    },
+    {
+      "id": "PaPC1",
+      "tense": "past_perfect_continuous",
+      "type": "multiple_choice",
+      "question": "He was tired because he _____ (run) for an hour.",
+      "answer": "had been running",
+      "full_sentence": "He was tired because he had been running for an hour.",
+      "explanation": "Quá trình chạy kéo dài trước mốc quá khứ và giải thích trạng thái mệt.",
+      "options": [
+        "ran",
+        "had been running",
+        "was running",
+        "has been running"
+      ]
+    },
+    {
+      "id": "PaPC2",
+      "tense": "past_perfect_continuous",
+      "type": "multiple_choice",
+      "question": "Before the bus came, we _____ for 30 minutes.",
+      "options": [
+        "A. waited",
+        "B. have waited",
+        "C. had been waiting",
+        "D. will wait"
+      ],
+      "answer": "C. had been waiting",
+      "full_sentence": "Before the bus came, we had been waiting for 30 minutes.",
+      "explanation": "Nhấn mạnh thời lượng chờ trước một mốc quá khứ."
+    },
+    {
+      "id": "PaPC3",
+      "tense": "past_perfect_continuous",
+      "type": "multiple_choice",
+      "question": "Viết câu dùng Past Perfect Continuous: I / work / for two hours / before the meeting started.",
+      "answer": "I had been working for two hours before the meeting started.",
+      "full_sentence": "I had been working for two hours before the meeting started.",
+      "explanation": "Had been + V-ing nhấn mạnh quá trình trước mốc quá khứ.",
+      "options": [
+        "I worked for two hours before the meeting started.",
+        "I had been working for two hours before the meeting started.",
+        "I have been working for two hours before the meeting started.",
+        "I was work for two hours before the meeting started."
+      ]
+    },
+    {
+      "id": "FS1",
+      "tense": "future_simple",
+      "type": "multiple_choice",
+      "question": "I think it _____ (rain) tomorrow.",
+      "answer": "will rain",
+      "full_sentence": "I think it will rain tomorrow.",
+      "explanation": "Dự đoán về tương lai.",
+      "options": [
+        "rains",
+        "will rain",
+        "is raining",
+        "rained"
+      ]
+    },
+    {
+      "id": "FS2",
+      "tense": "future_simple",
+      "type": "multiple_choice",
+      "question": "The phone is ringing. I _____ it.",
+      "options": [
+        "A. answer",
+        "B. answered",
+        "C. will answer",
+        "D. have answered"
+      ],
+      "answer": "C. will answer",
+      "full_sentence": "The phone is ringing. I will answer it.",
+      "explanation": "Quyết định tức thời."
+    },
+    {
+      "id": "FS3",
+      "tense": "future_simple",
+      "type": "multiple_choice",
+      "question": "Viết lời hứa dùng will: I / help / you / tomorrow.",
+      "answer": "I will help you tomorrow.",
+      "full_sentence": "I will help you tomorrow.",
+      "explanation": "Will dùng cho lời hứa hoặc quyết định tương lai.",
+      "options": [
+        "I help you tomorrow.",
+        "I will help you tomorrow.",
+        "I am help you tomorrow.",
+        "I helped you tomorrow."
+      ]
+    },
+    {
+      "id": "FC1",
+      "tense": "future_continuous",
+      "type": "multiple_choice",
+      "question": "At this time tomorrow, we _____ (fly) to Bangkok.",
+      "answer": "will be flying",
+      "full_sentence": "At this time tomorrow, we will be flying to Bangkok.",
+      "explanation": "Hành động sẽ đang diễn ra tại mốc tương lai.",
+      "options": [
+        "fly",
+        "will be flying",
+        "will fly",
+        "are flying"
+      ]
+    },
+    {
+      "id": "FC2",
+      "tense": "future_continuous",
+      "type": "multiple_choice",
+      "question": "At 10 a.m. tomorrow, she _____ a meeting.",
+      "options": [
+        "A. attends",
+        "B. attended",
+        "C. will be attending",
+        "D. has attended"
+      ],
+      "answer": "C. will be attending",
+      "full_sentence": "At 10 a.m. tomorrow, she will be attending a meeting.",
+      "explanation": "At 10 a.m. tomorrow là mốc tương lai cụ thể."
+    },
+    {
+      "id": "FC3",
+      "tense": "future_continuous",
+      "type": "multiple_choice",
+      "question": "Viết câu dùng Future Continuous: At 8 p.m. tomorrow / I / study.",
+      "answer": "At 8 p.m. tomorrow, I will be studying.",
+      "full_sentence": "At 8 p.m. tomorrow, I will be studying.",
+      "explanation": "Will be + V-ing diễn tả hành động đang diễn ra trong tương lai.",
+      "options": [
+        "At 8 p.m. tomorrow, I study.",
+        "At 8 p.m. tomorrow, I will be studying.",
+        "At 8 p.m. tomorrow, I studied.",
+        "At 8 p.m. tomorrow, I am study."
+      ]
+    },
+    {
+      "id": "FP1",
+      "tense": "future_perfect",
+      "type": "multiple_choice",
+      "question": "By Friday, I _____ (finish) the report.",
+      "answer": "will have finished",
+      "full_sentence": "By Friday, I will have finished the report.",
+      "explanation": "Hành động sẽ hoàn thành trước hạn Friday.",
+      "options": [
+        "finish",
+        "will have finished",
+        "will finish",
+        "have finished"
+      ]
+    },
+    {
+      "id": "FP2",
+      "tense": "future_perfect",
+      "type": "multiple_choice",
+      "question": "By the time you arrive, we _____ dinner.",
+      "options": [
+        "A. have finished",
+        "B. will have finished",
+        "C. finished",
+        "D. are finishing"
+      ],
+      "answer": "B. will have finished",
+      "full_sentence": "By the time you arrive, we will have finished dinner.",
+      "explanation": "Bữa tối sẽ hoàn thành trước khi bạn đến."
+    },
+    {
+      "id": "FP3",
+      "tense": "future_perfect",
+      "type": "multiple_choice",
+      "question": "Viết câu dùng Future Perfect: By next month / she / save enough money.",
+      "answer": "By next month, she will have saved enough money.",
+      "full_sentence": "By next month, she will have saved enough money.",
+      "explanation": "Will have + V3 diễn tả hoàn tất trước mốc tương lai.",
+      "options": [
+        "By next month, she saves enough money.",
+        "By next month, she will have saved enough money.",
+        "By next month, she saved enough money.",
+        "By next month, she is saving enough money."
+      ]
+    },
+    {
+      "id": "FPC1",
+      "tense": "future_perfect_continuous",
+      "type": "multiple_choice",
+      "question": "By June, I _____ (work) here for three years.",
+      "answer": "will have been working",
+      "full_sentence": "By June, I will have been working here for three years.",
+      "explanation": "Nhấn mạnh thời lượng tính đến mốc June.",
+      "options": [
+        "work",
+        "will have been working",
+        "will work",
+        "have been working"
+      ]
+    },
+    {
+      "id": "FPC2",
+      "tense": "future_perfect_continuous",
+      "type": "multiple_choice",
+      "question": "By 6 p.m., they _____ for eight hours.",
+      "options": [
+        "A. will have been driving",
+        "B. drive",
+        "C. drove",
+        "D. have driven"
+      ],
+      "answer": "A. will have been driving",
+      "full_sentence": "By 6 p.m., they will have been driving for eight hours.",
+      "explanation": "Nhấn mạnh thời lượng của quá trình đến mốc tương lai."
+    },
+    {
+      "id": "FPC3",
+      "tense": "future_perfect_continuous",
+      "type": "multiple_choice",
+      "question": "Viết câu dùng Future Perfect Continuous: By next year / we / learn English / for two years.",
+      "answer": "By next year, we will have been learning English for two years.",
+      "full_sentence": "By next year, we will have been learning English for two years.",
+      "explanation": "Will have been + V-ing + for duration + by future time.",
+      "options": [
+        "By next year, we learn English for two years.",
+        "By next year, we will have been learning English for two years.",
+        "By next year, we learned English for two years.",
+        "By next year, we are learning English for two years."
+      ]
+    }
+  ],
+  "mixed_review": {
+    "section": {
+      "title": "MIXED TENSES REVIEW — ÔN TẬP TRỘN 12 THÌ",
+      "requirements": [
+        "36 câu trộn ngẫu nhiên, không ghi tên thì trước câu hỏi.",
+        "12 câu điền dạng đúng của động từ.",
+        "12 câu trắc nghiệm.",
+        "6 câu sửa lỗi sai.",
+        "6 câu tự viết câu.",
+        "Các câu bao phủ cả 12 thì; mục tiêu tối thiểu mỗi thì xuất hiện 3 lần tính trên toàn bộ mục ôn tập.",
+        "Đáp án đặt riêng ở cuối tài liệu, không hiển thị cạnh câu hỏi."
+      ]
+    },
+    "exercises": [
+      {
+        "id": "M01",
+        "type": "multiple_choice",
+        "question": "My father usually _____ (drink) black coffee in the morning.",
+        "answer": "drinks",
+        "tense": "Present Simple",
+        "full_sentence": "My father usually drinks black coffee in the morning.",
+        "explanation": "Usually diễn tả thói quen.",
+        "options": [
+          "drink",
+          "drinks",
+          "is drinking",
+          "drank"
+        ]
+      },
+      {
+        "id": "M02",
+        "type": "multiple_choice",
+        "question": "Please be quiet. I _____ (join) an online meeting now.",
+        "answer": "am joining",
+        "tense": "Present Continuous",
+        "full_sentence": "Please be quiet. I am joining an online meeting now.",
+        "explanation": "Now chỉ hành động đang diễn ra.",
+        "options": [
+          "join",
+          "am joining",
+          "joined",
+          "have joined"
+        ]
+      },
+      {
+        "id": "M03",
+        "type": "multiple_choice",
+        "question": "We _____ (already / complete) the first task.",
+        "answer": "have already completed",
+        "tense": "Present Perfect",
+        "full_sentence": "We have already completed the first task.",
+        "explanation": "Already nhấn mạnh kết quả đến hiện tại.",
+        "options": [
+          "already complete",
+          "have already completed",
+          "already completed",
+          "are already completing"
+        ]
+      },
+      {
+        "id": "M04",
+        "type": "multiple_choice",
+        "question": "She _____ (practice) speaking for an hour and is still practicing.",
+        "answer": "has been practicing",
+        "tense": "Present Perfect Continuous",
+        "full_sentence": "She has been practicing speaking for an hour and is still practicing.",
+        "explanation": "Quá trình kéo dài đến hiện tại.",
+        "options": [
+          "practices",
+          "has been practicing",
+          "practiced",
+          "is practice"
+        ]
+      },
+      {
+        "id": "M05",
+        "type": "multiple_choice",
+        "question": "They _____ (move) to Ho Chi Minh City in 2022.",
+        "answer": "moved",
+        "tense": "Past Simple",
+        "full_sentence": "They moved to Ho Chi Minh City in 2022.",
+        "explanation": "Mốc thời gian quá khứ đã kết thúc.",
+        "options": [
+          "move",
+          "moved",
+          "have moved",
+          "are moving"
+        ]
+      },
+      {
+        "id": "M06",
+        "type": "multiple_choice",
+        "question": "At 7 p.m. yesterday, I _____ (play) badminton.",
+        "answer": "was playing",
+        "tense": "Past Continuous",
+        "full_sentence": "At 7 p.m. yesterday, I was playing badminton.",
+        "explanation": "Đang diễn ra tại một mốc quá khứ.",
+        "options": [
+          "play",
+          "was playing",
+          "played",
+          "am playing"
+        ]
+      },
+      {
+        "id": "M07",
+        "type": "multiple_choice",
+        "question": "The meeting _____ (start) before I arrived.",
+        "answer": "had started",
+        "tense": "Past Perfect",
+        "full_sentence": "The meeting had started before I arrived.",
+        "explanation": "Cuộc họp bắt đầu trước khi tôi đến.",
+        "options": [
+          "starts",
+          "had started",
+          "has started",
+          "was starting"
+        ]
+      },
+      {
+        "id": "M08",
+        "type": "multiple_choice",
+        "question": "He was exhausted because he _____ (work) all night.",
+        "answer": "had been working",
+        "tense": "Past Perfect Continuous",
+        "full_sentence": "He was exhausted because he had been working all night.",
+        "explanation": "Quá trình kéo dài trước trạng thái mệt trong quá khứ.",
+        "options": [
+          "worked",
+          "had been working",
+          "has worked",
+          "was work"
+        ]
+      },
+      {
+        "id": "M09",
+        "type": "multiple_choice",
+        "question": "Don't worry. I _____ (send) you the file tonight.",
+        "answer": "will send",
+        "tense": "Future Simple",
+        "full_sentence": "Don't worry. I will send you the file tonight.",
+        "explanation": "Lời hứa/quyết định về tương lai.",
+        "options": [
+          "send",
+          "will send",
+          "sent",
+          "am sending"
+        ]
+      },
+      {
+        "id": "M10",
+        "type": "multiple_choice",
+        "question": "At noon tomorrow, we _____ (have) lunch with the team.",
+        "answer": "will be having",
+        "tense": "Future Continuous",
+        "full_sentence": "At noon tomorrow, we will be having lunch with the team.",
+        "explanation": "Hành động sẽ đang diễn ra tại mốc tương lai.",
+        "options": [
+          "have",
+          "will be having",
+          "had",
+          "are having"
+        ]
+      },
+      {
+        "id": "M11",
+        "type": "multiple_choice",
+        "question": "By the end of this week, I _____ (finish) the course.",
+        "answer": "will have finished",
+        "tense": "Future Perfect",
+        "full_sentence": "By the end of this week, I will have finished the course.",
+        "explanation": "Hoàn tất trước mốc cuối tuần.",
+        "options": [
+          "finish",
+          "will have finished",
+          "finished",
+          "am finishing"
+        ]
+      },
+      {
+        "id": "M12",
+        "type": "multiple_choice",
+        "question": "By December, she _____ (teach) here for ten years.",
+        "answer": "will have been teaching",
+        "tense": "Future Perfect Continuous",
+        "full_sentence": "By December, she will have been teaching here for ten years.",
+        "explanation": "Nhấn mạnh thời lượng đến mốc tương lai.",
+        "options": [
+          "teaches",
+          "will have been teaching",
+          "taught",
+          "is teaching"
+        ]
+      },
+      {
+        "id": "M13",
+        "type": "multiple_choice",
+        "question": "Listen! Someone _____ at the door.",
+        "options": [
+          "A. knocks",
+          "B. is knocking",
+          "C. knocked",
+          "D. had knocked"
+        ],
+        "answer": "B. is knocking",
+        "tense": "Present Continuous",
+        "full_sentence": "Listen! Someone is knocking at the door.",
+        "explanation": "Listen! cho biết âm thanh đang xảy ra."
+      },
+      {
+        "id": "M14",
+        "type": "multiple_choice",
+        "question": "I _____ that movie twice, so I don't want to watch it again.",
+        "options": [
+          "A. saw",
+          "B. have seen",
+          "C. am seeing",
+          "D. had seen"
+        ],
+        "answer": "B. have seen",
+        "tense": "Present Perfect",
+        "full_sentence": "I have seen that movie twice, so I don't want to watch it again.",
+        "explanation": "Kinh nghiệm tính đến hiện tại."
+      },
+      {
+        "id": "M15",
+        "type": "multiple_choice",
+        "question": "While we _____ home, it started to rain.",
+        "options": [
+          "A. walked",
+          "B. were walking",
+          "C. have walked",
+          "D. will walk"
+        ],
+        "answer": "B. were walking",
+        "tense": "Past Continuous",
+        "full_sentence": "While we were walking home, it started to rain.",
+        "explanation": "Hành động nền đang diễn ra khi sự việc khác xảy ra."
+      },
+      {
+        "id": "M16",
+        "type": "multiple_choice",
+        "question": "By the time the guests arrive, we _____ the room.",
+        "options": [
+          "A. decorated",
+          "B. will have decorated",
+          "C. have decorated yesterday",
+          "D. decorate yesterday"
+        ],
+        "answer": "B. will have decorated",
+        "tense": "Future Perfect",
+        "full_sentence": "By the time the guests arrive, we will have decorated the room.",
+        "explanation": "Việc trang trí sẽ hoàn tất trước khi khách đến."
+      },
+      {
+        "id": "M17",
+        "type": "multiple_choice",
+        "question": "She _____ in this company since 2021.",
+        "options": [
+          "A. works",
+          "B. worked",
+          "C. has worked",
+          "D. will work"
+        ],
+        "answer": "C. has worked",
+        "tense": "Present Perfect",
+        "full_sentence": "She has worked in this company since 2021.",
+        "explanation": "Since + mốc bắt đầu, tình huống kéo dài đến hiện tại."
+      },
+      {
+        "id": "M18",
+        "type": "multiple_choice",
+        "question": "At 9 tomorrow morning, I _____ my dentist.",
+        "options": [
+          "A. see",
+          "B. saw",
+          "C. will be seeing",
+          "D. have seen"
+        ],
+        "answer": "C. will be seeing",
+        "tense": "Future Continuous",
+        "full_sentence": "At 9 tomorrow morning, I will be seeing my dentist.",
+        "explanation": "Hành động dự kiến đang diễn ra tại mốc tương lai."
+      },
+      {
+        "id": "M19",
+        "type": "multiple_choice",
+        "question": "When I got home, my brother _____ dinner already.",
+        "options": [
+          "A. cooks",
+          "B. has cooked",
+          "C. had cooked",
+          "D. will cook"
+        ],
+        "answer": "C. had cooked",
+        "tense": "Past Perfect",
+        "full_sentence": "When I got home, my brother had cooked dinner already.",
+        "explanation": "Bữa tối đã được nấu xong trước khi tôi về."
+      },
+      {
+        "id": "M20",
+        "type": "multiple_choice",
+        "question": "By next April, they _____ together for five years.",
+        "options": [
+          "A. will have been working",
+          "B. worked",
+          "C. are working",
+          "D. have worked yesterday"
+        ],
+        "answer": "A. will have been working",
+        "tense": "Future Perfect Continuous",
+        "full_sentence": "By next April, they will have been working together for five years.",
+        "explanation": "Nhấn mạnh thời lượng tính đến mốc tương lai."
+      },
+      {
+        "id": "M21",
+        "type": "multiple_choice",
+        "question": "I can't talk right now. I _____ a report.",
+        "options": [
+          "A. write",
+          "B. am writing",
+          "C. wrote",
+          "D. had written"
+        ],
+        "answer": "B. am writing",
+        "tense": "Present Continuous",
+        "full_sentence": "I can't talk right now. I am writing a report.",
+        "explanation": "Right now chỉ hành động hiện đang diễn ra."
+      },
+      {
+        "id": "M22",
+        "type": "multiple_choice",
+        "question": "He _____ to work late last night.",
+        "options": [
+          "A. stays",
+          "B. has stayed",
+          "C. stayed",
+          "D. will stay"
+        ],
+        "answer": "C. stayed",
+        "tense": "Past Simple",
+        "full_sentence": "He stayed at work late last night.",
+        "explanation": "Last night là mốc quá khứ đã kết thúc."
+      },
+      {
+        "id": "M23",
+        "type": "multiple_choice",
+        "question": "They _____ for the bus for 40 minutes before it finally arrived.",
+        "options": [
+          "A. waited",
+          "B. had been waiting",
+          "C. have been waiting",
+          "D. will wait"
+        ],
+        "answer": "B. had been waiting",
+        "tense": "Past Perfect Continuous",
+        "full_sentence": "They had been waiting for the bus for 40 minutes before it finally arrived.",
+        "explanation": "Nhấn mạnh thời lượng trước một mốc quá khứ."
+      },
+      {
+        "id": "M24",
+        "type": "multiple_choice",
+        "question": "I think our team _____ the match tomorrow.",
+        "options": [
+          "A. won",
+          "B. has won",
+          "C. will win",
+          "D. had won"
+        ],
+        "answer": "C. will win",
+        "tense": "Future Simple",
+        "full_sentence": "I think our team will win the match tomorrow.",
+        "explanation": "I think thường dùng để nêu dự đoán."
+      },
+      {
+        "id": "M25",
+        "type": "multiple_choice",
+        "question": "Correct the error: She have finished her lunch.",
+        "answer": "She has finished her lunch.",
+        "tense": "Present Perfect",
+        "full_sentence": "She has finished her lunch.",
+        "explanation": "She đi với has.",
+        "options": [
+          "She have finished her lunch.",
+          "She has finished her lunch.",
+          "She has finish her lunch.",
+          "She finished have her lunch."
+        ]
+      },
+      {
+        "id": "M26",
+        "type": "multiple_choice",
+        "question": "Correct the error: We was watching TV at 8 p.m.",
+        "answer": "We were watching TV at 8 p.m.",
+        "tense": "Past Continuous",
+        "full_sentence": "We were watching TV at 8 p.m.",
+        "explanation": "We đi với were.",
+        "options": [
+          "We was watching TV at 8 p.m.",
+          "We were watching TV at 8 p.m.",
+          "We were watch TV at 8 p.m.",
+          "We are watching TV at 8 p.m."
+        ]
+      },
+      {
+        "id": "M27",
+        "type": "multiple_choice",
+        "question": "Correct the error: By tomorrow, I will finished the task.",
+        "answer": "By tomorrow, I will have finished the task.",
+        "tense": "Future Perfect",
+        "full_sentence": "By tomorrow, I will have finished the task.",
+        "explanation": "Future Perfect có cấu trúc will have + V3.",
+        "options": [
+          "By tomorrow, I will finished the task.",
+          "By tomorrow, I will have finished the task.",
+          "By tomorrow, I finished the task.",
+          "By tomorrow, I will finishing the task."
+        ]
+      },
+      {
+        "id": "M28",
+        "type": "multiple_choice",
+        "question": "Correct the error: He had been work for three hours before lunch.",
+        "answer": "He had been working for three hours before lunch.",
+        "tense": "Past Perfect Continuous",
+        "full_sentence": "He had been working for three hours before lunch.",
+        "explanation": "Sau had been dùng V-ing.",
+        "options": [
+          "He had been work for three hours before lunch.",
+          "He had been working for three hours before lunch.",
+          "He has been work for three hours before lunch.",
+          "He was been working for three hours before lunch."
+        ]
+      },
+      {
+        "id": "M29",
+        "type": "multiple_choice",
+        "question": "Correct the error: I am knowing the answer.",
+        "answer": "I know the answer.",
+        "tense": "Present Simple",
+        "full_sentence": "I know the answer.",
+        "explanation": "Know thường là động từ chỉ trạng thái, không dùng tiếp diễn trong nghĩa này.",
+        "options": [
+          "I am knowing the answer.",
+          "I know the answer.",
+          "I am know the answer.",
+          "I have knowing the answer."
+        ]
+      },
+      {
+        "id": "M30",
+        "type": "multiple_choice",
+        "question": "Correct the error: At this time tomorrow, she will study in the library.",
+        "answer": "At this time tomorrow, she will be studying in the library.",
+        "tense": "Future Continuous",
+        "full_sentence": "At this time tomorrow, she will be studying in the library.",
+        "explanation": "Để nhấn mạnh hành động đang diễn ra tại mốc tương lai, dùng will be + V-ing.",
+        "options": [
+          "At this time tomorrow, she will study in the library.",
+          "At this time tomorrow, she will be studying in the library.",
+          "At this time tomorrow, she studies in the library.",
+          "At this time tomorrow, she studied in the library."
+        ]
+      },
+      {
+        "id": "M31",
+        "type": "multiple_choice",
+        "question": "Viết câu Present Simple: My sister / read / before bed / every night.",
+        "answer": "My sister reads before bed every night.",
+        "tense": "Present Simple",
+        "full_sentence": "My sister reads before bed every night.",
+        "explanation": "Every night diễn tả thói quen; my sister + V-s.",
+        "options": [
+          "My sister read before bed every night.",
+          "My sister reads before bed every night.",
+          "My sister is reading before bed every night.",
+          "My sister reading before bed every night."
+        ]
+      },
+      {
+        "id": "M32",
+        "type": "multiple_choice",
+        "question": "Viết câu Present Perfect Continuous: I / practice English / for 30 minutes / and still continue.",
+        "answer": "I have been practicing English for 30 minutes and I am still continuing.",
+        "tense": "Present Perfect Continuous",
+        "full_sentence": "I have been practicing English for 30 minutes, and I am still practicing.",
+        "explanation": "Nhấn mạnh quá trình bắt đầu trước đây và vẫn tiếp tục.",
+        "options": [
+          "I practice English for 30 minutes.",
+          "I have been practicing English for 30 minutes and I am still continuing.",
+          "I practiced English for 30 minutes.",
+          "I am practice English for 30 minutes."
+        ]
+      },
+      {
+        "id": "M33",
+        "type": "multiple_choice",
+        "question": "Viết câu Past Simple: We / play badminton / last Saturday.",
+        "answer": "We played badminton last Saturday.",
+        "tense": "Past Simple",
+        "full_sentence": "We played badminton last Saturday.",
+        "explanation": "Last Saturday là mốc quá khứ đã kết thúc.",
+        "options": [
+          "We play badminton last Saturday.",
+          "We played badminton last Saturday.",
+          "We were play badminton last Saturday.",
+          "We have play badminton last Saturday."
+        ]
+      },
+      {
+        "id": "M34",
+        "type": "multiple_choice",
+        "question": "Viết câu Past Perfect: The train / leave / before we / reach the station.",
+        "answer": "The train had left before we reached the station.",
+        "tense": "Past Perfect + Past Simple",
+        "full_sentence": "The train had left before we reached the station.",
+        "explanation": "Tàu rời đi trước; chúng tôi đến sau.",
+        "options": [
+          "The train left before we reached the station.",
+          "The train had left before we reached the station.",
+          "The train has left before we reached the station.",
+          "The train leaves before we reached the station."
+        ]
+      },
+      {
+        "id": "M35",
+        "type": "multiple_choice",
+        "question": "Viết câu Future Simple để hứa: I / help / you / with your homework / tonight.",
+        "answer": "I will help you with your homework tonight.",
+        "tense": "Future Simple",
+        "full_sentence": "I will help you with your homework tonight.",
+        "explanation": "Will dùng cho lời hứa.",
+        "options": [
+          "I help you with your homework tonight.",
+          "I will help you with your homework tonight.",
+          "I helped you with your homework tonight.",
+          "I am help you with your homework tonight."
+        ]
+      },
+      {
+        "id": "M36",
+        "type": "multiple_choice",
+        "question": "Viết câu Future Perfect: By Friday / they / complete / the project.",
+        "answer": "By Friday, they will have completed the project.",
+        "tense": "Future Perfect",
+        "full_sentence": "By Friday, they will have completed the project.",
+        "explanation": "By Friday là hạn mà dự án sẽ hoàn tất trước hoặc vào thời điểm đó.",
+        "options": [
+          "By Friday, they complete the project.",
+          "By Friday, they will have completed the project.",
+          "By Friday, they completed the project.",
+          "By Friday, they are completing the project."
+        ]
+      }
+    ]
+  },
+  "answer_key": {
+    "tense_specific": "Mỗi câu trong tense_specific_exercises có trường answer, full_sentence và explanation.",
+    "mixed_review": "Mỗi câu trong mixed_review.exercises có trường answer, full_sentence, tense và explanation."
+  },
+  "study_plan": {
+    "daily_steps": [
+      "Đọc công thức và cách dùng một thì.",
+      "Làm 3 câu bài tập riêng của thì đó.",
+      "Ôn lại câu sai và giải thích vì sao sai.",
+      "Khi đã học nhiều thì, làm Mixed Tenses Review mà không xem tên thì."
+    ],
+    "sketchnote_layout": [
+      "Trang 1: Present Simple, Present Continuous, Present Perfect, Present Perfect Continuous.",
+      "Trang 2: Past Simple, Past Continuous, Past Perfect, Past Perfect Continuous.",
+      "Trang 3: Future Simple, Future Continuous, Future Perfect, Future Perfect Continuous.",
+      "Trang 4: 5 quy tắc mở rộng, ký hiệu ngữ pháp, chủ động/bị động.",
+      "Trang 5: So sánh các thì, timeline, mẹo ghi nhớ.",
+      "Trang 6 trở đi: 36 bài tập riêng, 36 bài Mixed Tenses Review, cuối cùng là đáp án."
+    ]
+  }
+}

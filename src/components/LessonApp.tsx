@@ -14,6 +14,7 @@ import { MonthSelector } from "@/components/navigation/MonthSelector";
 import { ProgressBar } from "@/components/stats/ProgressBar";
 import { StatsGrid } from "@/components/stats/StatsGrid";
 import { RoadmapPanel } from "@/components/roadmap/RoadmapPanel";
+import { TensesPanel } from "@/components/tenses/TensesPanel";
 import { useLessonState } from "@/hooks/useLessonState";
 
 export function LessonApp() {
@@ -193,6 +194,8 @@ export function LessonApp() {
       )}
 
       {activeSection === "guide" && <GuidePanel />}
+
+      {activeSection === "tenses" && <TensesPanel />}
     </AppShell>
   );
 }

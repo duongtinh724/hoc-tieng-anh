@@ -3964,6 +3964,603 @@ h3 {
   background: #fffbeb;
 }
 
+.tenses-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.tenses-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.tenses-header h2 {
+  margin: 0 0 4px;
+}
+
+.tenses-header p,
+.tenses-empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.tenses-bulk {
+  display: flex;
+  gap: 8px;
+}
+
+.tenses-bulk button,
+.tense-answer-toggle,
+.tenses-tabs button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 999px;
+  padding: 6px 12px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.tenses-filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.tenses-group {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px;
+  background: var(--surface);
+}
+
+.tenses-group p {
+  margin: 0 0 8px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-dark);
+}
+
+.tenses-group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tenses-group label {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.tenses-group strong,
+.tenses-group small {
+  display: block;
+}
+
+.tenses-group small {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.tenses-extra-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 8px 12px;
+  border: 1.5px solid var(--step-exercise);
+  border-radius: 999px;
+  background: var(--step-exercise-bg);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tenses-extra {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tenses-extra h3 {
+  margin: 0 0 6px;
+}
+
+.tenses-extra > section > p,
+.tenses-extra-rules > li > p {
+  margin: 0 0 10px;
+  color: var(--muted);
+}
+
+.tenses-extra-pairs,
+.tenses-extra-rules {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  counter-reset: extra;
+}
+
+.tenses-extra-pairs > li,
+.tenses-extra-rules > li {
+  counter-increment: extra;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  background: var(--surface);
+}
+
+.tenses-extra-pairs > li:nth-child(5n + 1),
+.tenses-extra-rules > li:nth-child(5n + 1) {
+  border-color: var(--step-vocab);
+  background: var(--step-vocab-bg);
+}
+
+.tenses-extra-pairs > li:nth-child(5n + 2),
+.tenses-extra-rules > li:nth-child(5n + 2) {
+  border-color: var(--step-listen);
+  background: var(--step-listen-bg);
+}
+
+.tenses-extra-pairs > li:nth-child(5n + 3),
+.tenses-extra-rules > li:nth-child(5n + 3) {
+  border-color: var(--step-copy);
+  background: var(--step-copy-bg);
+}
+
+.tenses-extra-pairs > li:nth-child(5n + 4),
+.tenses-extra-rules > li:nth-child(5n + 4) {
+  border-color: var(--step-exercise);
+  background: var(--step-exercise-bg);
+}
+
+.tenses-extra-pairs > li:nth-child(5n + 5),
+.tenses-extra-rules > li:nth-child(5n + 5) {
+  border-color: var(--rule-green-border);
+  background: var(--rule-green-soft);
+}
+
+.tenses-extra-pairs > li > strong,
+.tenses-extra-rules > li > strong {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.tenses-extra-pairs > li > strong::before,
+.tenses-extra-rules > li > strong::before {
+  content: counter(extra) ". ";
+}
+
+.tenses-extra-pairs ul,
+.tenses-extra-rules ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.tenses-extra-pairs ul li,
+.tenses-extra-rules ul li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  align-items: baseline;
+}
+
+.tenses-extra-pairs em,
+.tenses-extra-rules em {
+  color: var(--muted);
+  font-style: normal;
+}
+
+.tenses-extra-rules b {
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.tenses-extra-rules .is-ok b {
+  color: var(--success);
+}
+
+.tenses-extra-rules .is-no b {
+  color: #b91c1c;
+}
+
+.tenses-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tenses-tabs button {
+  flex: 1 1 140px;
+}
+
+.tenses-tabs button.is-active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.tenses-theory {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.tense-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 16px;
+}
+
+.tenses-mindmap {
+  width: 100%;
+  min-width: 0;
+}
+
+.tenses-poster-wide {
+  width: 100%;
+  max-width: 1100px;
+  margin-bottom: 16px;
+}
+
+.tenses-poster {
+  display: block;
+  width: min(100%, 682px);
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  cursor: zoom-in;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.tenses-poster img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.tenses-poster span {
+  display: block;
+  padding: 8px 12px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.tenses-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 16px 16px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background: rgba(15, 23, 42, 0.82);
+}
+
+.tenses-lightbox img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(100vh - 80px);
+  max-height: calc(100dvh - 80px);
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.tenses-lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font: inherit;
+  cursor: pointer;
+  background: #fff;
+}
+
+.tense-card header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.tense-sketch-btn {
+  flex: 0 0 auto;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 12px;
+  background: var(--surface-2);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 650;
+  color: var(--accent-dark);
+  cursor: pointer;
+  margin-bottom: 3px;
+}
+
+.tense-card-toggle {
+  display: flex;
+  flex: 1 1 auto;
+  min-width: 0;
+  align-items: baseline;
+  gap: 12px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+
+.tense-card-toggle em {
+  margin-left: auto;
+  font-style: normal;
+  font-size: 0.8rem;
+  color: var(--accent-dark);
+}
+
+.tense-card.is-open .tense-card-toggle {
+  margin-bottom: 12px;
+}
+
+.tense-card h3,
+.tense-card h4,
+.tenses-practice h3 {
+  margin: 0;
+}
+
+.tense-card header span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.tense-forms {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0 0 12px;
+}
+
+.tense-forms div {
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 10px;
+}
+
+.tense-forms div:nth-child(1) {
+  border-color: var(--rule-green-border);
+  background: var(--rule-green-soft);
+}
+
+.tense-forms div:nth-child(2) {
+  border-color: var(--step-vocab);
+  background: var(--step-vocab-bg);
+}
+
+.tense-forms div:nth-child(3) {
+  border-color: var(--step-listen);
+  background: var(--step-listen-bg);
+}
+
+.tense-forms dt {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin-bottom: 4px;
+}
+
+.tense-forms dd {
+  margin: 0;
+  font-weight: 650;
+}
+
+.tense-block {
+  margin-bottom: 10px;
+}
+
+.tense-uses {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tense-uses li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-sm);
+}
+
+.tense-uses li:nth-child(5n + 1) {
+  border-color: var(--step-vocab);
+  background: var(--step-vocab-bg);
+}
+
+.tense-uses li:nth-child(5n + 2) {
+  border-color: var(--step-listen);
+  background: var(--step-listen-bg);
+}
+
+.tense-uses li:nth-child(5n + 3) {
+  border-color: var(--step-copy);
+  background: var(--step-copy-bg);
+}
+
+.tense-uses li:nth-child(5n + 4) {
+  border-color: var(--step-exercise);
+  background: var(--step-exercise-bg);
+}
+
+.tense-uses li:nth-child(5n + 5) {
+  border-color: var(--rule-green-border);
+  background: var(--rule-green-soft);
+}
+
+.tense-uses span {
+  font-weight: 650;
+}
+
+.tense-uses em {
+  color: var(--muted);
+  font-style: normal;
+}
+
+.tense-markers,
+.tense-example span,
+.tense-answer p {
+  color: var(--muted);
+}
+
+.tense-example {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 8px 0 0;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+
+.tenses-exercise-list {
+  list-style: none;
+  margin: 8px 0 18px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tense-exercise {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 14px;
+}
+
+.tense-exercise-meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.tense-exercise-meta span {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.tense-exercise-meta em {
+  margin-left: auto;
+  font-style: normal;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.tense-question {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.tense-options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 8px;
+}
+
+.tense-option {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.tense-option.is-correct {
+  border-color: #15803d;
+  background: #f0fdf4;
+}
+
+.tense-option.is-wrong {
+  border-color: #b91c1c;
+  background: #fef2f2;
+}
+
+.tense-answer {
+  margin-top: 10px;
+  padding: 10px;
+  background: var(--surface-2);
+  border-radius: var(--radius-sm);
+}
+
+.tense-answer p {
+  margin: 0 0 4px;
+}
+
+@media (max-width: 800px) {
+  .tenses-filters,
+  .tense-forms {
+    grid-template-columns: 1fr;
+  }
+
+  .tenses-header {
+    flex-direction: column;
+  }
+
+  .tenses-tabs button {
+    flex: 1 1 calc(50% - 8px);
+  }
+
+  .tenses-lightbox {
+    align-items: flex-start;
+    padding: 52px 8px 12px;
+  }
+
+  .tenses-lightbox img {
+    max-height: none;
+  }
+}
+
 @media (max-width: 800px) {
   .mindmap {
     grid-template-columns: 1fr;

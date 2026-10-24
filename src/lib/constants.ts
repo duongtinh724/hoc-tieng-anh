@@ -19,6 +19,7 @@ const ALL_MENU_ITEMS = [
   { id: "practice" as const, label: "Luyện tập", icon: "✏️" },
   { id: "review" as const, label: "Plan ôn tập", icon: "🔄" },
   { id: "roadmap" as const, label: "Roadmap", icon: "🗺️" },
+  { id: "tenses" as const, label: "12 thì", icon: "⏱️" },
   { id: "guide" as const, label: "Hướng dẫn", icon: "💡" },
 ] as const;
 
