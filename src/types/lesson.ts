@@ -21,10 +21,17 @@ export interface RuleItem {
   examples?: RuleExample[];
 }
 
+export interface LessonVideo {
+  youtubeId: string;
+  title: string;
+}
+
 export interface DayLesson {
   day: number;
   week: number;
   title: string;
+  /** Video YouTube gắn kèm bài, nếu có. */
+  video?: LessonVideo;
   aim: string;
   rule: string;
   words: WordPair[];

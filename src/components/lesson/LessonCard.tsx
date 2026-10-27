@@ -10,6 +10,7 @@ import { RuleBox } from "@/components/lesson/RuleBox";
 import { CopySection } from "@/components/lesson/CopySection";
 import { TextListSection } from "@/components/lesson/TextListSection";
 import { WordsList } from "@/components/lesson/WordsList";
+import { LessonVideo } from "@/components/lesson/LessonVideo";
 
 interface LessonCardProps {
   month: number;
@@ -59,6 +60,8 @@ export function LessonCard({
           </div>
           <RuleBox rules={getRulesForDay(month, lesson.day, lesson.rule)} />
         </div>
+
+        {lesson.video ? <LessonVideo video={lesson.video} /> : null}
 
         <div className="lesson-steps-grid">
           <LessonStep {...SESSION_STEPS[0]}>
