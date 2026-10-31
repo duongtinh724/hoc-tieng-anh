@@ -77,6 +77,12 @@ export const practiceDay30: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "She studies " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "English" }, { id: "q2-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "Nam goes to " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "school" }, { id: "q3-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q4", parts: [{ kind: "text", value: "She plays " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "football" }, { id: "q4-no", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q5", parts: [{ kind: "text", value: "He " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "goes" }, { id: "q5-no", label: "go" }, { id: "q5-no2", label: "going" }] }, { kind: "text", value: " to school." }] },
+        { id: "q6", parts: [{ kind: "text", value: "She " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "studies" }, { id: "q6-no", label: "study" }, { id: "q6-no2", label: "studying" }] }, { kind: "text", value: " English." }] },
+        { id: "q7", parts: [{ kind: "text", value: "It " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "starts" }, { id: "q7-no", label: "start" }, { id: "q7-no2", label: "starting" }] }, { kind: "text", value: " at 7 a.m." }] },
+        { id: "q8", parts: [{ kind: "text", value: "Nam " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "likes" }, { id: "q8-no", label: "like" }, { id: "q8-no2", label: "liking" }] }, { kind: "text", value: " football." }] },
+        { id: "q9", parts: [{ kind: "text", value: "My mother " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "cooks" }, { id: "q9-no", label: "cook" }, { id: "q9-no2", label: "cooking" }] }, { kind: "text", value: " dinner." }] },
+        { id: "q10", parts: [{ kind: "text", value: "The cat " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "sleeps" }, { id: "q10-no", label: "sleep" }, { id: "q10-no2", label: "sleeping" }] }, { kind: "text", value: " on the chair." }] },
       ],
     },
     {

@@ -246,6 +246,12 @@ export const practiceDay03: PracticeLesson = {
             { kind: "text", value: " math." },
           ],
         },
+        { id: "q5", parts: [{ kind: "text", value: "She " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "goes" }, { id: "q5-no", label: "go" }, { id: "q5-no2", label: "going" }] }, { kind: "text", value: " home at 5." }] },
+        { id: "q6", parts: [{ kind: "text", value: "He " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "likes" }, { id: "q6-no", label: "like" }, { id: "q6-no2", label: "liking" }] }, { kind: "text", value: " football." }] },
+        { id: "q7", parts: [{ kind: "text", value: "It " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "rains" }, { id: "q7-no", label: "rain" }, { id: "q7-no2", label: "raining" }] }, { kind: "text", value: " a lot in summer." }] },
+        { id: "q8", parts: [{ kind: "text", value: "Nam " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "plays" }, { id: "q8-no", label: "play" }, { id: "q8-no2", label: "playing" }] }, { kind: "text", value: " games after school." }] },
+        { id: "q9", parts: [{ kind: "text", value: "My father " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "works" }, { id: "q9-no", label: "work" }, { id: "q9-no2", label: "working" }] }, { kind: "text", value: " in Hanoi." }] },
+        { id: "q10", parts: [{ kind: "text", value: "The bus " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "stops" }, { id: "q10-no", label: "stop" }, { id: "q10-no2", label: "stopping" }] }, { kind: "text", value: " here." }] },
       ],
     },
     {

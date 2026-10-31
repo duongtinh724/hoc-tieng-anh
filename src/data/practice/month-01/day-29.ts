@@ -75,6 +75,12 @@ export const practiceDay29: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "You go to " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "school" }, { id: "q2-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "We play " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "football" }, { id: "q3-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q4", parts: [{ kind: "text", value: "They read " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "books" }, { id: "q4-no", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q5", parts: [{ kind: "text", value: "I " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "study" }, { id: "q5-no", label: "studies" }, { id: "q5-no2", label: "studying" }] }, { kind: "text", value: " English every day." }] },
+        { id: "q6", parts: [{ kind: "text", value: "We " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "play" }, { id: "q6-no", label: "plays" }, { id: "q6-no2", label: "playing" }] }, { kind: "text", value: " football on Sunday." }] },
+        { id: "q7", parts: [{ kind: "text", value: "You " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "live" }, { id: "q7-no", label: "lives" }, { id: "q7-no2", label: "living" }] }, { kind: "text", value: " in Vietnam." }] },
+        { id: "q8", parts: [{ kind: "text", value: "They " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "go" }, { id: "q8-no", label: "goes" }, { id: "q8-no2", label: "going" }] }, { kind: "text", value: " to school." }] },
+        { id: "q9", parts: [{ kind: "text", value: "I " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "like" }, { id: "q9-no", label: "likes" }, { id: "q9-no2", label: "liking" }] }, { kind: "text", value: " music." }] },
+        { id: "q10", parts: [{ kind: "text", value: "We " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "watch" }, { id: "q10-no", label: "watches" }, { id: "q10-no2", label: "watching" }] }, { kind: "text", value: " TV in the evening." }] },
       ],
     },
     {

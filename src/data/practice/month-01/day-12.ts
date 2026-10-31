@@ -81,6 +81,11 @@ export const practiceDay12: PracticeLesson = {
         { id: "q3", parts: [{ kind: "text", value: "That " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "is" }, { id: "q3-no", label: "are" }] }, { kind: "text", value: " a school." }] },
         { id: "q4", parts: [{ kind: "text", value: "Those " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "are" }, { id: "q4-no", label: "is" }] }, { kind: "text", value: " cars." }] },
         { id: "q5", parts: [{ kind: "text", value: "This " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "is" }, { id: "q5-no", label: "are" }] }, { kind: "text", value: " an orange." }] },
+        { id: "q6", parts: [{ kind: "text", value: "These " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "are" }, { id: "q6-no", label: "is" }] }, { kind: "text", value: " pens." }] },
+        { id: "q7", parts: [{ kind: "text", value: "That " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "is" }, { id: "q7-no", label: "are" }] }, { kind: "text", value: " a hospital." }] },
+        { id: "q8", parts: [{ kind: "text", value: "Those " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "are" }, { id: "q8-no", label: "is" }] }, { kind: "text", value: " books." }] },
+        { id: "q9", parts: [{ kind: "text", value: "This " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "is" }, { id: "q9-no", label: "are" }] }, { kind: "text", value: " my bag." }] },
+        { id: "q10", parts: [{ kind: "text", value: "Those " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "are" }, { id: "q10-no", label: "is" }] }, { kind: "text", value: " my friends." }] },
       ],
     },
     {

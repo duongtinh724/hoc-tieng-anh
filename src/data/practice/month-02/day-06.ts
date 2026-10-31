@@ -239,6 +239,12 @@ export const practiceDay06: PracticeLesson = {
             { kind: "text", value: " school start?" },
           ],
         },
+        { id: "q5", parts: [{ kind: "text", value: "Where " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "do" }, { id: "q5-no", label: "does" }, { id: "q5-no2", label: "did" }] }, { kind: "text", value: " you live?" }] },
+        { id: "q6", parts: [{ kind: "text", value: "What " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "does" }, { id: "q6-no", label: "do" }, { id: "q6-no2", label: "is" }] }, { kind: "text", value: " he study?" }] },
+        { id: "q7", parts: [{ kind: "text", value: "When " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "does" }, { id: "q7-no", label: "do" }, { id: "q7-no2", label: "did" }] }, { kind: "text", value: " she get up?" }] },
+        { id: "q8", parts: [{ kind: "text", value: "Why " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "do" }, { id: "q8-no", label: "does" }, { id: "q8-no2", label: "did" }] }, { kind: "text", value: " they learn English?" }] },
+        { id: "q9", parts: [{ kind: "text", value: "How " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "does" }, { id: "q9-no", label: "do" }, { id: "q9-no2", label: "is" }] }, { kind: "text", value: " Nam go to school?" }] },
+        { id: "q10", parts: [{ kind: "text", value: "What time " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "do" }, { id: "q10-no", label: "does" }, { id: "q10-no2", label: "is" }] }, { kind: "text", value: " you have lunch?" }] },
       ],
     },
     {

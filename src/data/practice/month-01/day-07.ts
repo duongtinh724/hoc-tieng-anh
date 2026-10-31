@@ -47,6 +47,16 @@ const questions: QuizQuestion[] = [
   choice("g18", "I am fifteen years ___.", "old", ["from", "live"], "Tuổi: I am … years old.", "grammar"),
   choice("g19", "I ___ in Hanoi.", "live", ["am live", "lives"], "Nơi ở: I live in …", "grammar"),
   choice("g20", "I am ___ Vietnam.", "from", ["live", "name"], "Quê: I am from …", "grammar"),
+  choice("g21", "You ___ my friend.", "are", ["is", "am"], "You đi với are.", "grammar"),
+  choice("g22", "It ___ a cat.", "is", ["are", "am"], "It đi với is.", "grammar"),
+  choice("g23", "___ she a teacher?", "Is", ["Are", "Am"], "She đảo Is lên đầu.", "grammar"),
+  choice("g24", "___ they busy?", "Are", ["Is", "Am"], "They đảo Are lên đầu.", "grammar"),
+  choice("g25", "Is it new? (Yes)", "Yes, it is.", ["Yes, it are.", "Yes, I am."], "Is it…? trả lời Yes, it is.", "grammar"),
+  choice("g26", "Are we ready? (No)", "No, we aren't.", ["No, we isn't.", "No, I aren't."], "Are we…? trả lời No, we aren't.", "grammar"),
+  choice("g27", "I am not a teacher. Đây là câu…", "phủ định", ["câu hỏi", "khẳng định + nơi chốn"], "am not là phủ định của I am.", "grammar"),
+  choice("g28", "She is ___ student.", "a", ["an", "the"], "student bắt đầu bằng phụ âm, dùng a.", "grammar"),
+  choice("g29", "We ___ at school.", "are", ["is", "am"], "We đi với are.", "grammar"),
+  choice("g30", "My name is Nam. Nam là…", "tên", ["nơi ở", "tuổi"], "My name is + tên.", "grammar"),
   choice("l1", "Bạn nghe thấy câu nào?", "He is a student.", ["She is a student.", "They are a student."], "Câu nghe là He is a student.", "listen", { listenText: "He is a student." }),
   choice("l2", "Bạn nghe thấy câu nào?", "I am not tired.", ["I am tired.", "She am not tired."], "Câu nghe có not.", "listen", { listenText: "I am not tired." }),
   choice("l3", "Bạn nghe thấy câu nào?", "Are you happy?", ["Is you happy?", "Are she happy?"], "Câu nghe là Are you happy?", "listen", { listenText: "Are you happy?" }),
@@ -75,8 +85,8 @@ export const practiceDay07: PracticeLesson = {
     {
       type: "quiz",
       title: 'Kiểm tra tuần 1' + "\nKiểm tra",
-      instruction: "25 questions. 30 minutes. 18 correct answers is a pass.\n25 câu, 30 phút. Đúng từ 18 câu là đạt.",
-      passScore: 18,
+      instruction: "40 questions. 30 minutes. 24 correct answers is a pass.\n40 câu, 30 phút. Đúng từ 24 câu là đạt.",
+      passScore: 24,
       timeLimitSeconds: 30 * 60,
       passages: [
         {

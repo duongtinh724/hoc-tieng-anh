@@ -82,6 +82,11 @@ export const practiceDay09: PracticeLesson = {
         { id: "q3", parts: [{ kind: "text", value: "The children " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "are" }, { id: "q3-no", label: "is" }] }, { kind: "text", value: " at home." }] },
         { id: "q4", parts: [{ kind: "text", value: "My friend " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "is" }, { id: "q4-no", label: "are" }] }, { kind: "text", value: " busy." }] },
         { id: "q5", parts: [{ kind: "text", value: "The buses " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "are" }, { id: "q5-no", label: "is" }] }, { kind: "text", value: " full." }] },
+        { id: "q6", parts: [{ kind: "text", value: "The boxes " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "are" }, { id: "q6-no", label: "is" }] }, { kind: "text", value: " heavy." }] },
+        { id: "q7", parts: [{ kind: "text", value: "One baby " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "is" }, { id: "q7-no", label: "are" }] }, { kind: "text", value: " here." }] },
+        { id: "q8", parts: [{ kind: "text", value: "The men " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "are" }, { id: "q8-no", label: "is" }] }, { kind: "text", value: " tall." }] },
+        { id: "q9", parts: [{ kind: "text", value: "The woman " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "is" }, { id: "q9-no", label: "are" }] }, { kind: "text", value: " a teacher." }] },
+        { id: "q10", parts: [{ kind: "text", value: "The people " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "are" }, { id: "q10-no", label: "is" }] }, { kind: "text", value: " kind." }] },
       ],
     },
     {

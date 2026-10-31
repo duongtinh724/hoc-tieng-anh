@@ -239,6 +239,12 @@ export const practiceDay05: PracticeLesson = {
             { kind: "text", value: " eat meat." },
           ],
         },
+        { id: "q5", parts: [{ kind: "text", value: "They " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "don't" }, { id: "q5-no", label: "doesn't" }, { id: "q5-no2", label: "didn't" }] }, { kind: "text", value: " live here." }] },
+        { id: "q6", parts: [{ kind: "text", value: "My mother " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "doesn't" }, { id: "q6-no", label: "don't" }, { id: "q6-no2", label: "didn't" }] }, { kind: "text", value: " drive." }] },
+        { id: "q7", parts: [{ kind: "text", value: "You " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "don't" }, { id: "q7-no", label: "doesn't" }, { id: "q7-no2", label: "not" }] }, { kind: "text", value: " eat fish." }] },
+        { id: "q8", parts: [{ kind: "text", value: "It " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "doesn't" }, { id: "q8-no", label: "don't" }, { id: "q8-no2", label: "didn't" }] }, { kind: "text", value: " work." }] },
+        { id: "q9", parts: [{ kind: "text", value: "Nam " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "doesn't" }, { id: "q9-no", label: "don't" }, { id: "q9-no2", label: "not" }] }, { kind: "text", value: " like coffee." }] },
+        { id: "q10", parts: [{ kind: "text", value: "We " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "don't" }, { id: "q10-no", label: "doesn't" }, { id: "q10-no2", label: "not" }] }, { kind: "text", value: " go out on Monday." }] },
       ],
     },
     {

@@ -77,6 +77,12 @@ export const practiceDay19: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "It is a small " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "bag" }, { id: "q2-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "This is my " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "book" }, { id: "q3-no", label: "pen" }] }, { kind: "text", value: "." }] },
         { id: "q4", parts: [{ kind: "text", value: "That is your " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "pen" }, { id: "q4-no", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q5", parts: [{ kind: "text", value: "This is " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "my" }, { id: "q5-no", label: "I" }, { id: "q5-no2", label: "me" }] }, { kind: "text", value: " book." }] },
+        { id: "q6", parts: [{ kind: "text", value: "That is " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "her" }, { id: "q6-no", label: "she" }, { id: "q6-no2", label: "he" }] }, { kind: "text", value: " bag." }] },
+        { id: "q7", parts: [{ kind: "text", value: "These are " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "our" }, { id: "q7-no", label: "we" }, { id: "q7-no2", label: "us" }] }, { kind: "text", value: " books." }] },
+        { id: "q8", parts: [{ kind: "text", value: "He is a " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "kind" }, { id: "q8-no", label: "kindly" }, { id: "q8-no2", label: "book" }] }, { kind: "text", value: " teacher." }] },
+        { id: "q9", parts: [{ kind: "text", value: "It is a " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "new" }, { id: "q9-no", label: "newly" }, { id: "q9-no2", label: "book" }] }, { kind: "text", value: " pen." }] },
+        { id: "q10", parts: [{ kind: "text", value: "They are " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "happy" }, { id: "q10-no", label: "happily" }, { id: "q10-no2", label: "book" }] }, { kind: "text", value: " students." }] },
       ],
     },
     {

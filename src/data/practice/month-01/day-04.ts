@@ -77,6 +77,12 @@ export const practiceDay04: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "He " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "isn't" }, { id: "q2-no", label: "aren't" }, { id: "q2-no2", label: "am not" }] }, { kind: "text", value: " my brother." }] },
         { id: "q3", parts: [{ kind: "text", value: "They " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "aren't" }, { id: "q3-no", label: "isn't" }, { id: "q3-no2", label: "don't" }] }, { kind: "text", value: " at home." }] },
         { id: "q4", parts: [{ kind: "text", value: "It " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "isn't" }, { id: "q4-no", label: "aren't" }, { id: "q4-no2", label: "am not" }] }, { kind: "text", value: " expensive." }] },
+        { id: "q5", parts: [{ kind: "text", value: "She " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "isn't" }, { id: "q5-no", label: "aren't" }, { id: "q5-no2", label: "am not" }] }, { kind: "text", value: " hungry." }] },
+        { id: "q6", parts: [{ kind: "text", value: "We " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "aren't" }, { id: "q6-no", label: "isn't" }, { id: "q6-no2", label: "am not" }] }, { kind: "text", value: " ready." }] },
+        { id: "q7", parts: [{ kind: "text", value: "You " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "aren't" }, { id: "q7-no", label: "isn't" }, { id: "q7-no2", label: "am not" }] }, { kind: "text", value: " late." }] },
+        { id: "q8", parts: [{ kind: "text", value: "Nam " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "isn't" }, { id: "q8-no", label: "aren't" }, { id: "q8-no2", label: "don't" }] }, { kind: "text", value: " at school." }] },
+        { id: "q9", parts: [{ kind: "text", value: "My friends " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "aren't" }, { id: "q9-no", label: "isn't" }, { id: "q9-no2", label: "am not" }] }, { kind: "text", value: " busy." }] },
+        { id: "q10", parts: [{ kind: "text", value: "I " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "am not" }, { id: "q10-no", label: "isn't" }, { id: "q10-no2", label: "aren't" }] }, { kind: "text", value: " a teacher." }] },
       ],
     },
     {

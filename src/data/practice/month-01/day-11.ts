@@ -61,6 +61,11 @@ export const practiceDay11: PracticeLesson = {
         { id: "q3", parts: [{ kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "—" }, { id: "q3-no", label: "The" }, { id: "q3-no2", label: "A" }] }, { kind: "text", value: " water is important." }] },
         { id: "q4", parts: [{ kind: "text", value: "Please open " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "the" }, { id: "q4-no", label: "a" }, { id: "q4-no2", label: "—" }] }, { kind: "text", value: " window." }] },
         { id: "q5", parts: [{ kind: "text", value: "I like " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "—" }, { id: "q5-no", label: "the" }, { id: "q5-no2", label: "a" }] }, { kind: "text", value: " dogs." }] },
+        { id: "q6", parts: [{ kind: "text", value: "I have " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "an" }, { id: "q6-no", label: "a" }, { id: "q6-no2", label: "—" }] }, { kind: "text", value: " apple." }] },
+        { id: "q7", parts: [{ kind: "text", value: "Please close " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "the" }, { id: "q7-no", label: "a" }, { id: "q7-no2", label: "—" }] }, { kind: "text", value: " door." }] },
+        { id: "q8", parts: [{ kind: "text", value: "I like " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "—" }, { id: "q8-no", label: "a" }, { id: "q8-no2", label: "the" }] }, { kind: "text", value: " music." }] },
+        { id: "q9", parts: [{ kind: "text", value: "This is " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "a" }, { id: "q9-no", label: "an" }, { id: "q9-no2", label: "the" }] }, { kind: "text", value: " book." }] },
+        { id: "q10", parts: [{ kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "The" }, { id: "q10-no", label: "A" }, { id: "q10-no2", label: "—" }] }, { kind: "text", value: " sun is hot." }] },
       ],
     },
     {

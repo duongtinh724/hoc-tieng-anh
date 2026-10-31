@@ -82,6 +82,12 @@ export const practiceDay06: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "I am fifteen " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "years old" }, { id: "q2-no", label: "year" }, { id: "q2-no2", label: "old years" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "I " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "live" }, { id: "q3-no", label: "lives" }, { id: "q3-no2", label: "am live" }] }, { kind: "text", value: " in Hanoi." }] },
         { id: "q4", parts: [{ kind: "text", value: "My family " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "is" }, { id: "q4-no", label: "am" }, { id: "q4-no2", label: "are" }] }, { kind: "text", value: " small." }] },
+        { id: "q5", parts: [{ kind: "text", value: "I am " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "from" }, { id: "q5-no", label: "live" }, { id: "q5-no2", label: "name" }] }, { kind: "text", value: " Vietnam." }] },
+        { id: "q6", parts: [{ kind: "text", value: "My hobby " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "is" }, { id: "q6-no", label: "am" }, { id: "q6-no2", label: "are" }] }, { kind: "text", value: " football." }] },
+        { id: "q7", parts: [{ kind: "text", value: "I am a " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "student" }, { id: "q7-no", label: "school" }, { id: "q7-no2", label: "Hanoi" }] }, { kind: "text", value: "." }] },
+        { id: "q8", parts: [{ kind: "text", value: "I am fifteen years " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "old" }, { id: "q8-no", label: "from" }, { id: "q8-no2", label: "live" }] }, { kind: "text", value: "." }] },
+        { id: "q9", parts: [{ kind: "text", value: "We " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "are" }, { id: "q9-no", label: "is" }, { id: "q9-no2", label: "am" }] }, { kind: "text", value: " friends." }] },
+        { id: "q10", parts: [{ kind: "text", value: "She " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "is" }, { id: "q10-no", label: "am" }, { id: "q10-no2", label: "are" }] }, { kind: "text", value: " my sister." }] },
       ],
     },
     {

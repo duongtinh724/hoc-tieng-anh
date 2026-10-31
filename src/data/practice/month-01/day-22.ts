@@ -77,6 +77,12 @@ export const practiceDay22: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "It is a " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "book" }, { id: "q2-no", label: "pen" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "Who is " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "she?" }, { id: "q3-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q4", parts: [{ kind: "text", value: "She is a " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "teacher" }, { id: "q4-no", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q5", parts: [{ kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "What" }, { id: "q5-no", label: "Who" }, { id: "q5-no2", label: "Where" }] }, { kind: "text", value: " is this?" }] },
+        { id: "q6", parts: [{ kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "Who" }, { id: "q6-no", label: "What" }, { id: "q6-no2", label: "Where" }] }, { kind: "text", value: " is your teacher?" }] },
+        { id: "q7", parts: [{ kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "Where" }, { id: "q7-no", label: "What" }, { id: "q7-no2", label: "Who" }] }, { kind: "text", value: " is the school?" }] },
+        { id: "q8", parts: [{ kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "What" }, { id: "q8-no", label: "Who" }, { id: "q8-no2", label: "Where" }] }, { kind: "text", value: " is your name?" }] },
+        { id: "q9", parts: [{ kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "Who" }, { id: "q9-no", label: "Where" }, { id: "q9-no2", label: "What" }] }, { kind: "text", value: " are they?" }] },
+        { id: "q10", parts: [{ kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "Where" }, { id: "q10-no", label: "Who" }, { id: "q10-no2", label: "What" }] }, { kind: "text", value: " are you from?" }] },
       ],
     },
     {

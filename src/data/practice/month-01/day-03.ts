@@ -80,6 +80,12 @@ export const practiceDay03: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "She is " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "beautiful" }, { id: "q2-no", label: "a home" }, { id: "q2-no2", label: "are" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "We are " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "at home" }, { id: "q3-no", label: "a student" }, { id: "q3-no2", label: "is" }] }, { kind: "text", value: "." }] },
         { id: "q4", parts: [{ kind: "text", value: "They are good " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "friends" }, { id: "q4-no", label: "happy" }, { id: "q4-no2", label: "home" }] }, { kind: "text", value: "." }] },
+        { id: "q5", parts: [{ kind: "text", value: "He is a " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "teacher" }, { id: "q5-no", label: "happy" }, { id: "q5-no2", label: "home" }] }, { kind: "text", value: "." }] },
+        { id: "q6", parts: [{ kind: "text", value: "It is " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "new" }, { id: "q6-no", label: "a student" }, { id: "q6-no2", label: "are" }] }, { kind: "text", value: "." }] },
+        { id: "q7", parts: [{ kind: "text", value: "You are " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "kind" }, { id: "q7-no", label: "a home" }, { id: "q7-no2", label: "is" }] }, { kind: "text", value: "." }] },
+        { id: "q8", parts: [{ kind: "text", value: "Nam is my " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "brother" }, { id: "q8-no", label: "happy" }, { id: "q8-no2", label: "at home" }] }, { kind: "text", value: "." }] },
+        { id: "q9", parts: [{ kind: "text", value: "I am " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "fine" }, { id: "q9-no", label: "a home" }, { id: "q9-no2", label: "are" }] }, { kind: "text", value: "." }] },
+        { id: "q10", parts: [{ kind: "text", value: "They are at " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "school" }, { id: "q10-no", label: "a student" }, { id: "q10-no2", label: "beautiful" }] }, { kind: "text", value: "." }] },
       ],
     },
     {

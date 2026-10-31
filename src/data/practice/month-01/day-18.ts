@@ -77,6 +77,12 @@ export const practiceDay18: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "There are " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "pens" }, { id: "q2-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "There is a " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "bag" }, { id: "q3-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q4", parts: [{ kind: "text", value: "There is a " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "school" }, { id: "q4-no", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q5", parts: [{ kind: "text", value: "There " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "are" }, { id: "q5-no", label: "is" }, { id: "q5-no2", label: "am" }] }, { kind: "text", value: " two books." }] },
+        { id: "q6", parts: [{ kind: "text", value: "There " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "is" }, { id: "q6-no", label: "are" }, { id: "q6-no2", label: "am" }] }, { kind: "text", value: " a pen." }] },
+        { id: "q7", parts: [{ kind: "text", value: "There " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "are" }, { id: "q7-no", label: "is" }, { id: "q7-no2", label: "am" }] }, { kind: "text", value: " many students." }] },
+        { id: "q8", parts: [{ kind: "text", value: "There " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "is" }, { id: "q8-no", label: "are" }, { id: "q8-no2", label: "am" }] }, { kind: "text", value: " a teacher." }] },
+        { id: "q9", parts: [{ kind: "text", value: "There " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "are" }, { id: "q9-no", label: "is" }, { id: "q9-no2", label: "am" }] }, { kind: "text", value: " chairs in the room." }] },
+        { id: "q10", parts: [{ kind: "text", value: "There " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "is" }, { id: "q10-no", label: "are" }, { id: "q10-no2", label: "am" }] }, { kind: "text", value: " a bag on the table." }] },
       ],
     },
     {

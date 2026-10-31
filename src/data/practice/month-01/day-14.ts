@@ -42,6 +42,16 @@ const questions: QuizQuestion[] = [
   choice("g13", "Chọn câu phủ định đúng.", "They aren't students.", ["They isn't students.", "They not are students."], "They dùng aren't.", "grammar"),
   choice("g14", "Chọn câu đúng.", "This is an umbrella.", ["This is a umbrella.", "These is an umbrella."], "umbrella dùng an. This đi với is.", "grammar"),
   choice("g15", "Chọn câu đúng.", "Those are my friends.", ["Those is my friends.", "That are my friends."], "Those đi với are.", "grammar"),
+  choice("g16", "Dạng số nhiều của baby là gì?", "Babies", ["Babys", "Babyes"], "phụ âm + y → ies: babies.", "grammar"),
+  choice("g17", "This is ___ hour.", "an", ["a", "the"], "hour bắt đầu bằng nguyên âm, dùng an.", "grammar"),
+  choice("g18", "That ___ a school.", "is", ["are", "am"], "That đi với is.", "grammar"),
+  choice("g19", "These are ___.", "apples", ["apple", "an apple"], "These đi với danh từ số nhiều.", "grammar"),
+  choice("g20", "I am ___ engineer.", "an", ["a", "the"], "engineer bắt đầu bằng nguyên âm, dùng an.", "grammar"),
+  choice("g21", "The children ___ here.", "are", ["is", "am"], "children là số nhiều, đi với are.", "grammar"),
+  choice("g22", "Chọn câu đúng.", "This is a university.", ["This is an university.", "These is a university."], "university bắt đầu bằng phụ âm /j/, dùng a.", "grammar"),
+  choice("g23", "Please open ___ window.", "the", ["a", "an"], "Cửa sổ cụ thể, đã biết, dùng the.", "grammar"),
+  choice("g24", "I like ___.", "dogs", ["a dogs", "dog"], "Nói chung: I like dogs.", "grammar"),
+  choice("g25", "Are those your books? (Yes)", "Yes, they are.", ["Yes, those is.", "Yes, it is."], "Those / they trả lời bằng they are.", "grammar"),
   choice("l1", "Bạn nghe thấy câu nào?", "He is a doctor.", ["He are a doctor.", "He is an doctor."], "Câu nghe là He is a doctor.", "listen", { listenText: "He is a doctor." }),
   choice("l2", "Bạn nghe thấy câu nào?", "This is an apple.", ["This is a apple.", "These is an apple."], "an apple.", "listen", { listenText: "This is an apple." }),
   choice("l3", "Bạn nghe thấy câu nào?", "The books are new.", ["The books is new.", "A books are new."], "Số nhiều đi với are.", "listen", { listenText: "The books are new." }),
@@ -70,8 +80,8 @@ export const practiceDay14: PracticeLesson = {
     {
       type: "quiz",
       title: 'Kiểm tra tuần 2' + "\nKiểm tra",
-      instruction: "25 questions. 20 minutes. 15 correct answers is a pass.\n25 câu, 20 phút. Đúng từ 15 câu là đạt. 15 câu đầu là bài kiểm tra tuần.",
-      passScore: 15,
+      instruction: "35 questions. 30 minutes. 21 correct answers is a pass.\n35 câu, 30 phút. Đúng từ 21 câu là đạt.",
+      passScore: 21,
       timeLimitSeconds: 30 * 60,
       passages: [
         {

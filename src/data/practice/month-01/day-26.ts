@@ -77,6 +77,12 @@ export const practiceDay26: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "What is " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "this?" }, { id: "q2-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "Who is " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "she?" }, { id: "q3-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q4", parts: [{ kind: "text", value: "Where are " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "they?" }, { id: "q4-no", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q5", parts: [{ kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "Are" }, { id: "q5-no", label: "Is" }, { id: "q5-no2", label: "Am" }] }, { kind: "text", value: " you a student?" }] },
+        { id: "q6", parts: [{ kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "Is" }, { id: "q6-no", label: "Are" }, { id: "q6-no2", label: "Am" }] }, { kind: "text", value: " she at home?" }] },
+        { id: "q7", parts: [{ kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "Do" }, { id: "q7-no", label: "Does" }, { id: "q7-no2", label: "Is" }] }, { kind: "text", value: " you like music?" }] },
+        { id: "q8", parts: [{ kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "Does" }, { id: "q8-no", label: "Do" }, { id: "q8-no2", label: "Is" }] }, { kind: "text", value: " he play football?" }] },
+        { id: "q9", parts: [{ kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "Where" }, { id: "q9-no", label: "What" }, { id: "q9-no2", label: "Who" }] }, { kind: "text", value: " do you live?" }] },
+        { id: "q10", parts: [{ kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "What" }, { id: "q10-no", label: "Where" }, { id: "q10-no2", label: "Who" }] }, { kind: "text", value: " do you study?" }] },
       ],
     },
     {

@@ -75,6 +75,12 @@ export const practiceDay23: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "It is in the " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "morning" }, { id: "q2-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "Why are you " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "sad?" }, { id: "q3-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q4", parts: [{ kind: "text", value: "Because I am " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "tired" }, { id: "q4-no", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q5", parts: [{ kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "When" }, { id: "q5-no", label: "Why" }, { id: "q5-no2", label: "How" }] }, { kind: "text", value: " is your birthday?" }] },
+        { id: "q6", parts: [{ kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "Why" }, { id: "q6-no", label: "When" }, { id: "q6-no2", label: "How" }] }, { kind: "text", value: " are you late?" }] },
+        { id: "q7", parts: [{ kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "How" }, { id: "q7-no", label: "When" }, { id: "q7-no2", label: "Why" }] }, { kind: "text", value: " are you today?" }] },
+        { id: "q8", parts: [{ kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "When" }, { id: "q8-no", label: "How" }, { id: "q8-no2", label: "Why" }] }, { kind: "text", value: " do you study?" }] },
+        { id: "q9", parts: [{ kind: "text", value: "I am tired " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "because" }, { id: "q9-no", label: "when" }, { id: "q9-no2", label: "how" }] }, { kind: "text", value: " I work a lot." }] },
+        { id: "q10", parts: [{ kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "How" }, { id: "q10-no", label: "When" }, { id: "q10-no2", label: "Why" }] }, { kind: "text", value: " old are you?" }] },
       ],
     },
     {

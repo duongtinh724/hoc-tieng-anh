@@ -76,6 +76,12 @@ export const practiceDay25: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "We have class on " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "Monday" }, { id: "q2-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "School is at " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "7" }, { id: "q3-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q4", parts: [{ kind: "text", value: "I am at school in the " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "morning" }, { id: "q4-no", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q5", parts: [{ kind: "text", value: "I get up " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "at" }, { id: "q5-no", label: "in" }, { id: "q5-no2", label: "on" }] }, { kind: "text", value: " 6 a.m." }] },
+        { id: "q6", parts: [{ kind: "text", value: "We study " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "on" }, { id: "q6-no", label: "in" }, { id: "q6-no2", label: "at" }] }, { kind: "text", value: " Monday." }] },
+        { id: "q7", parts: [{ kind: "text", value: "School is " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "in" }, { id: "q7-no", label: "on" }, { id: "q7-no2", label: "at" }] }, { kind: "text", value: " the morning." }] },
+        { id: "q8", parts: [{ kind: "text", value: "I sleep " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "at" }, { id: "q8-no", label: "in" }, { id: "q8-no2", label: "on" }] }, { kind: "text", value: " night." }] },
+        { id: "q9", parts: [{ kind: "text", value: "My birthday is " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "in" }, { id: "q9-no", label: "on" }, { id: "q9-no2", label: "at" }] }, { kind: "text", value: " May." }] },
+        { id: "q10", parts: [{ kind: "text", value: "Class is " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "on" }, { id: "q10-no", label: "in" }, { id: "q10-no2", label: "at" }] }, { kind: "text", value: " Friday." }] },
       ],
     },
     {

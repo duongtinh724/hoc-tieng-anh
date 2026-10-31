@@ -44,6 +44,10 @@ export const practiceDay13: PracticeLesson = {
         { id: "q4", parts: [{ kind: "text", value: "He is " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "a" }, { id: "q4-no", label: "an" }] }, { kind: "text", value: " doctor." }] },
         { id: "q5", parts: [{ kind: "text", value: "They " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "aren't" }, { id: "q5-no", label: "isn't" }] }, { kind: "text", value: " teachers." }] },
         { id: "q6", parts: [{ kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "Is" }, { id: "q6-no", label: "Are" }] }, { kind: "text", value: " this your phone?" }] },
+        { id: "q7", parts: [{ kind: "text", value: "Those " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "are" }, { id: "q7-no", label: "is" }] }, { kind: "text", value: " cars." }] },
+        { id: "q8", parts: [{ kind: "text", value: "I am " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "a" }, { id: "q8-no", label: "an" }] }, { kind: "text", value: " student." }] },
+        { id: "q9", parts: [{ kind: "text", value: "This is " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "an" }, { id: "q9-no", label: "a" }] }, { kind: "text", value: " umbrella." }] },
+        { id: "q10", parts: [{ kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "Are" }, { id: "q10-no", label: "Is" }] }, { kind: "text", value: " these your books?" }] },
       ],
     },
     {

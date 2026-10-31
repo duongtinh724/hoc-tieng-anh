@@ -240,6 +240,12 @@ export const practiceDay01: PracticeLesson = {
             { kind: "text", value: " are happy." },
           ],
         },
+        { id: "q5", parts: [{ kind: "text", value: "My parents are kind. " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "They" }, { id: "q5-no", label: "He" }, { id: "q5-no2", label: "She" }] }, { kind: "text", value: " are kind." }] },
+        { id: "q6", parts: [{ kind: "text", value: "The cat is small. " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "It" }, { id: "q6-no", label: "He" }, { id: "q6-no2", label: "They" }] }, { kind: "text", value: " is small." }] },
+        { id: "q7", parts: [{ kind: "text", value: "Linh is a girl. " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "She" }, { id: "q7-no", label: "He" }, { id: "q7-no2", label: "It" }] }, { kind: "text", value: " is a girl." }] },
+        { id: "q8", parts: [{ kind: "text", value: "My brother is tall. " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "He" }, { id: "q8-no", label: "She" }, { id: "q8-no2", label: "We" }] }, { kind: "text", value: " is tall." }] },
+        { id: "q9", parts: [{ kind: "text", value: "You and I are friends. " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "We" }, { id: "q9-no", label: "They" }, { id: "q9-no2", label: "You" }] }, { kind: "text", value: " are friends." }] },
+        { id: "q10", parts: [{ kind: "text", value: "The students are here. " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "They" }, { id: "q10-no", label: "We" }, { id: "q10-no2", label: "It" }] }, { kind: "text", value: " are here." }] },
       ],
     },
     {

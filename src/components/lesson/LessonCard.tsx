@@ -2,6 +2,8 @@
 
 import type { DayLesson } from "@/types/lesson";
 import { getRulesForDay } from "@/data/curriculum/get-rules";
+import { getDaysForMonth } from "@/data/curriculum";
+import { mixVocabForDay } from "@/lib/vocab-review";
 import { SESSION_STEPS } from "@/lib/lesson-steps";
 import { LessonStep } from "@/components/lesson/LessonStep";
 import { ListenList } from "@/components/lesson/ListenList";
@@ -30,6 +32,7 @@ export function LessonCard({
   onGoToNext,
 }: LessonCardProps) {
   const reviewDay = REVIEW_DAYS.includes(lesson.day);
+  const vocabWords = mixVocabForDay(getDaysForMonth(month), lesson.day, lesson.words);
 
   return (
     <article className="card lesson-card">
@@ -65,7 +68,7 @@ export function LessonCard({
 
         <div className="lesson-steps-grid">
           <LessonStep {...SESSION_STEPS[0]}>
-            <WordsList words={lesson.words} />
+            <WordsList words={vocabWords} />
           </LessonStep>
 
           <LessonStep {...SESSION_STEPS[1]}>

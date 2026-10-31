@@ -74,6 +74,12 @@ export const practiceDay27: PracticeLesson = {
         { id: "q2", parts: [{ kind: "text", value: "I am a " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "student" }, { id: "q2-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "I study at school in the " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "morning" }, { id: "q3-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q4", parts: [{ kind: "text", value: "I have a " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "family" }, { id: "q4-no", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q5", parts: [{ kind: "text", value: "Nam is a " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "student" }, { id: "q5-no", label: "teacher" }, { id: "q5-no2", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q6", parts: [{ kind: "text", value: "He lives in " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "Hanoi" }, { id: "q6-no", label: "school" }, { id: "q6-no2", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q7", parts: [{ kind: "text", value: "He has a " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "book" }, { id: "q7-no", label: "go" }, { id: "q7-no2", label: "are" }] }, { kind: "text", value: "." }] },
+        { id: "q8", parts: [{ kind: "text", value: "His school is " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "big" }, { id: "q8-no", label: "book" }, { id: "q8-no2", label: "go" }] }, { kind: "text", value: "." }] },
+        { id: "q9", parts: [{ kind: "text", value: "He likes " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "English" }, { id: "q9-no", label: "go" }, { id: "q9-no2", label: "are" }] }, { kind: "text", value: "." }] },
+        { id: "q10", parts: [{ kind: "text", value: "They are " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "friends" }, { id: "q10-no", label: "book" }, { id: "q10-no2", label: "go" }] }, { kind: "text", value: "." }] },
       ],
     },
     {

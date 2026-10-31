@@ -85,6 +85,11 @@ export const practiceDay02: PracticeLesson = {
         { id: "q3", parts: [{ kind: "text", value: "I " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "am" }, { id: "q3-no", label: "is" }, { id: "q3-no2", label: "are" }] }, { kind: "text", value: " tired." }] },
         { id: "q4", parts: [{ kind: "text", value: "They " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "are" }, { id: "q4-no", label: "is" }, { id: "q4-no2", label: "am" }] }, { kind: "text", value: " happy." }] },
         { id: "q5", parts: [{ kind: "text", value: "It " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "is" }, { id: "q5-no", label: "are" }, { id: "q5-no2", label: "am" }] }, { kind: "text", value: " new." }] },
+        { id: "q6", parts: [{ kind: "text", value: "She " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "is" }, { id: "q6-no", label: "am" }, { id: "q6-no2", label: "are" }] }, { kind: "text", value: " my sister." }] },
+        { id: "q7", parts: [{ kind: "text", value: "You " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "are" }, { id: "q7-no", label: "is" }, { id: "q7-no2", label: "am" }] }, { kind: "text", value: " late." }] },
+        { id: "q8", parts: [{ kind: "text", value: "Nam " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "is" }, { id: "q8-no", label: "are" }, { id: "q8-no2", label: "am" }] }, { kind: "text", value: " busy." }] },
+        { id: "q9", parts: [{ kind: "text", value: "My parents " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "are" }, { id: "q9-no", label: "is" }, { id: "q9-no2", label: "am" }] }, { kind: "text", value: " at home." }] },
+        { id: "q10", parts: [{ kind: "text", value: "The books " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "are" }, { id: "q10-no", label: "is" }, { id: "q10-no2", label: "am" }] }, { kind: "text", value: " old." }] },
       ],
     },
     {

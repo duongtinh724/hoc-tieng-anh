@@ -234,6 +234,12 @@ export const practiceDay01: PracticeLesson = {
             { kind: "text", value: " football on Sunday." },
           ],
         },
+        { id: "q5", parts: [{ kind: "text", value: "I " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "get up" }, { id: "q5-no", label: "getting up" }, { id: "q5-no2", label: "got up" }] }, { kind: "text", value: " at 6 every day." }] },
+        { id: "q6", parts: [{ kind: "text", value: "The sun " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "rises" }, { id: "q6-no", label: "rise" }, { id: "q6-no2", label: "rising" }] }, { kind: "text", value: " in the east." }] },
+        { id: "q7", parts: [{ kind: "text", value: "We " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "have" }, { id: "q7-no", label: "has" }, { id: "q7-no2", label: "having" }] }, { kind: "text", value: " breakfast at 6:30." }] },
+        { id: "q8", parts: [{ kind: "text", value: "She " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "goes" }, { id: "q8-no", label: "go" }, { id: "q8-no2", label: "going" }] }, { kind: "text", value: " to school every morning." }] },
+        { id: "q9", parts: [{ kind: "text", value: "They " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "don't" }, { id: "q9-no", label: "doesn't" }, { id: "q9-no2", label: "didn't" }] }, { kind: "text", value: " play games on Monday." }] },
+        { id: "q10", parts: [{ kind: "text", value: "He " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "does" }, { id: "q10-no", label: "do" }, { id: "q10-no2", label: "doing" }] }, { kind: "text", value: " his homework after school." }] },
       ],
     },
     {

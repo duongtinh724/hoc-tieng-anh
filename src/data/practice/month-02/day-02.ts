@@ -245,6 +245,12 @@ export const practiceDay02: PracticeLesson = {
             { kind: "text", value: " TV in the evening." },
           ],
         },
+        { id: "q5", parts: [{ kind: "text", value: "I " }, { kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "study" }, { id: "q5-no", label: "studies" }, { id: "q5-no2", label: "studying" }] }, { kind: "text", value: " English." }] },
+        { id: "q6", parts: [{ kind: "text", value: "You " }, { kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "go" }, { id: "q6-no", label: "goes" }, { id: "q6-no2", label: "going" }] }, { kind: "text", value: " to school." }] },
+        { id: "q7", parts: [{ kind: "text", value: "We " }, { kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "like" }, { id: "q7-no", label: "likes" }, { id: "q7-no2", label: "liking" }] }, { kind: "text", value: " music." }] },
+        { id: "q8", parts: [{ kind: "text", value: "They " }, { kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "live" }, { id: "q8-no", label: "lives" }, { id: "q8-no2", label: "living" }] }, { kind: "text", value: " in Hanoi." }] },
+        { id: "q9", parts: [{ kind: "text", value: "I " }, { kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "have" }, { id: "q9-no", label: "has" }, { id: "q9-no2", label: "having" }] }, { kind: "text", value: " breakfast at 6." }] },
+        { id: "q10", parts: [{ kind: "text", value: "We " }, { kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "do" }, { id: "q10-no", label: "does" }, { id: "q10-no2", label: "doing" }] }, { kind: "text", value: " our homework." }] },
       ],
     },
     {

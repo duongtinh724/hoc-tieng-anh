@@ -229,6 +229,12 @@ export const practiceDay04: PracticeLesson = {
             { kind: "text", value: " he go to school?" },
           ],
         },
+        { id: "q5", parts: [{ kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "Do" }, { id: "q5-no", label: "Does" }, { id: "q5-no2", label: "Did" }] }, { kind: "text", value: " we have class today?" }] },
+        { id: "q6", parts: [{ kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "Does" }, { id: "q6-no", label: "Do" }, { id: "q6-no2", label: "Did" }] }, { kind: "text", value: " it rain in summer?" }] },
+        { id: "q7", parts: [{ kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "Do" }, { id: "q7-no", label: "Does" }, { id: "q7-no2", label: "Is" }] }, { kind: "text", value: " your parents live here?" }] },
+        { id: "q8", parts: [{ kind: "select", id: "q8a", correctOptionId: "q8-ok", options: [{ id: "q8-ok", label: "Does" }, { id: "q8-no", label: "Do" }, { id: "q8-no2", label: "Are" }] }, { kind: "text", value: " Nam like English?" }] },
+        { id: "q9", parts: [{ kind: "select", id: "q9a", correctOptionId: "q9-ok", options: [{ id: "q9-ok", label: "Do" }, { id: "q9-no", label: "Does" }, { id: "q9-no2", label: "Did" }] }, { kind: "text", value: " I need a book?" }] },
+        { id: "q10", parts: [{ kind: "select", id: "q10a", correctOptionId: "q10-ok", options: [{ id: "q10-ok", label: "Does" }, { id: "q10-no", label: "Do" }, { id: "q10-no2", label: "Is" }] }, { kind: "text", value: " your sister study here?" }] },
       ],
     },
     {
