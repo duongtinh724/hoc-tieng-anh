@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay08: PracticeLesson = {
-  meta: { ...createPracticeMeta(8, "Danh từ: người, vật, nơi"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(8, "Danh từ (N): người, vật, nơi"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(8, ""),
     vocabulary: [
@@ -20,8 +20,8 @@ export const practiceDay08: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Match the nouns.\nNối danh từ.",
-      instruction: "Match each noun with a picture.\nNối danh từ với ảnh.",
+      title: "Match the nouns.\nNối danh từ (N).",
+      instruction: "Match each noun with a picture.\nNối danh từ (N) với ảnh.",
       words: [
         { id: "w-teacher", label: "teacher" },
         { id: "w-student", label: "student" },
@@ -40,7 +40,7 @@ export const practiceDay08: PracticeLesson = {
     {
       type: "categorize",
       title: "People, things, or places?\nNgười, vật hay nơi?",
-      instruction: "Drag each noun into the right group.\nKéo danh từ vào đúng nhóm.",
+      instruction: "Drag each noun into the right group.\nKéo danh từ (N) vào đúng nhóm.",
       categories: [
         { id: "cat-people", label: "Người" },
         { id: "cat-thing", label: "Vật" },
@@ -60,8 +60,8 @@ export const practiceDay08: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Fill the noun.\nĐiền danh từ.",
-      instruction: "Drag the noun into the blank.\nKéo danh từ vào chỗ trống.",
+      title: "Fill the noun.\nĐiền danh từ (N).",
+      instruction: "Drag the noun into the blank.\nKéo danh từ (N) vào chỗ trống.",
       wordBank: [
         { id: "s1", label: "book" },
         { id: "s2", label: "doctor" },
@@ -79,8 +79,8 @@ export const practiceDay08: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Choose the noun.\nChọn danh từ.",
-      instruction: "Choose the noun that fits the sentence.\nChọn danh từ đúng với câu.",
+      title: "Choose the noun.\nChọn danh từ (N).",
+      instruction: "Choose the noun that fits the sentence.\nChọn danh từ (N) đúng với câu.",
       questions: [
         { id: "q1", parts: [{ kind: "text", value: "I am a " }, { kind: "select", id: "q1a", correctOptionId: "q1-ok", options: [{ id: "q1-ok", label: "student" }, { id: "q1-no", label: "school" }, { id: "q1-no2", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q2", parts: [{ kind: "text", value: "He is a " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "doctor" }, { id: "q2-no", label: "hospital" }, { id: "q2-no2", label: "park" }] }, { kind: "text", value: "." }] },
@@ -112,7 +112,7 @@ export const practiceDay08: PracticeLesson = {
     {
       type: "reading-fill",
       title: "Fill the line.\nĐiền vào dòng.",
-      instruction: "Type the noun.\nGõ danh từ còn thiếu.",
+      instruction: "Type the noun.\nGõ danh từ (N) còn thiếu.",
       passage: "I am a student. He is a doctor. They are teachers. This is a book. This is my school.",
       prompts: [
         { id: "rf1", label: "I am a ___.", correctAnswers: ["student"] },
@@ -136,7 +136,7 @@ export const practiceDay08: PracticeLesson = {
     {
       type: "self-writing",
       title: "Look around you.\nNhìn quanh phòng.",
-      instruction: "Write 5 sentences about things you can see. Use a noun in each sentence.\nViết 5 câu về những gì bạn nhìn thấy. Mỗi câu có một danh từ.",
+      instruction: "Write 5 sentences about things you can see. Use a noun in each sentence.\nViết 5 câu về những gì bạn nhìn thấy. Mỗi câu có một danh từ (N).",
       promptHints: ["This is my phone.", "The table is big.", "My book is here."],
       sampleTitle: "Bài gợi ý",
       sample: "This is my phone.\nThe table is big.\nMy book is here.\nI am a student.\nThis is my school.",

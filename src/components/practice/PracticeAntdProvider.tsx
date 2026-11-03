@@ -24,18 +24,24 @@ export function PracticeAntdProvider({ children }: PracticeAntdProviderProps) {
         theme={{
           algorithm: mode === "dark" ? theme.darkAlgorithm : theme.defaultAlgorithm,
           token: {
-            colorPrimary: "#1e3a8a",
-            colorSuccess: "#16a34a",
-            colorError: "#dc2626",
-            borderRadius: 10,
-            fontFamily: '"Segoe UI", system-ui, -apple-system, sans-serif',
-            boxShadow: "0 4px 14px rgba(15, 23, 42, 0.08)",
-            boxShadowSecondary: "0 2px 8px rgba(15, 23, 42, 0.06)",
+            colorPrimary: "#f05a94",
+            colorSuccess: "#1dc638",
+            colorError: "#ea001b",
+            colorText: mode === "dark" ? "#fff2f7" : "#051d4c",
+            colorLink: "#009ada",
+            borderRadius: 6,
+            fontSize: 14,
+            fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif',
+            controlHeight: 36,
+            boxShadow: "0 4px 14px rgba(5, 29, 76, 0.08)",
+            boxShadowSecondary: "0 2px 8px rgba(5, 29, 76, 0.06)",
           },
           components: {
             Button: {
-              controlHeight: 40,
+              controlHeight: 36,
+              controlHeightLG: 40,
               fontWeight: 600,
+              borderRadius: 6,
             },
             Card: {
               paddingLG: 18,

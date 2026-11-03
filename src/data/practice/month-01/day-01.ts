@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay01: PracticeLesson = {
-  meta: { ...createPracticeMeta(1, "Đại từ nhân xưng"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(1, "Đại từ nhân xưng (Pron)"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(1, ""),
     vocabulary: [
@@ -16,7 +16,7 @@ export const practiceDay01: PracticeLesson = {
       { en: "they", vi: "họ / chúng" },
     ],
     grammarNotes: [
-      "Đại từ thay tên khi làm chủ ngữ: Nam → He, Lan → She.",
+      "Đại từ (Pron) thay tên khi làm chủ ngữ (S): Nam → He, Lan → She.",
       "It = đồ vật, con vật hoặc sự việc.",
       "My brother and I → We. My parents → They.",
     ],
@@ -24,8 +24,8 @@ export const practiceDay01: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Match the pronouns.\nNối đại từ.",
-      instruction: "Match each pronoun with a picture. Tap the picture to see the Vietnamese meaning.\nNối đại từ với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
+      title: "Match the pronouns.\nNối đại từ (Pron).",
+      instruction: "Match each pronoun with a picture. Tap the picture to see the Vietnamese meaning.\nNối đại từ (Pron) với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
         { id: "w-i", label: "I" },
         { id: "w-you", label: "You" },
@@ -90,7 +90,7 @@ export const practiceDay01: PracticeLesson = {
     {
       type: "categorize",
       title: "People or things?\nNgười hay vật?",
-      instruction: "Drag each pronoun into the right group: people, or a thing or animal.\nKéo thả vào đúng nhóm: đại từ chỉ người hoặc chỉ vật/con vật.",
+      instruction: "Drag each pronoun into the right group: people, or a thing or animal.\nKéo thả vào đúng nhóm: đại từ (Pron) chỉ người hoặc chỉ vật/con vật.",
       categories: [
         { id: "cat-people", label: "Chỉ người" },
         { id: "cat-thing", label: "Chỉ vật / con vật" },
@@ -107,8 +107,8 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Fill in the pronoun.\nĐiền đại từ.",
-      instruction: "Read who it is. Drag the pronoun into the blank.\nĐọc đó là ai. Kéo đại từ vào chỗ trống.",
+      title: "Fill in the pronoun.\nĐiền đại từ (Pron).",
+      instruction: "Read who it is. Drag the pronoun into the blank.\nĐọc đó là ai. Kéo đại từ (Pron) vào chỗ trống.",
       wordBank: [
         { id: "s-i", label: "I" },
         { id: "s-he", label: "He" },
@@ -169,8 +169,8 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Choose the correct pronoun.\nChọn đại từ đúng.",
-      instruction: "Choose the pronoun that replaces the name.\nChọn đại từ thay cho tên hoặc cụm từ.",
+      title: "Choose the correct pronoun.\nChọn đại từ (Pron) đúng.",
+      instruction: "Choose the pronoun that replaces the name.\nChọn đại từ (Pron) thay cho tên hoặc cụm từ.",
       questions: [
         {
           id: "q1",
@@ -314,7 +314,7 @@ export const practiceDay01: PracticeLesson = {
     {
       type: "reading-fill",
       title: "Read and fill in.\nĐọc và điền.",
-      instruction: "Read the passage and type the pronoun in the blank on the same line.\nĐọc đoạn văn và điền đại từ vào ô trên cùng một dòng.",
+      instruction: "Read the passage and type the pronoun in the blank on the same line.\nĐọc đoạn văn và điền đại từ (Pron) vào ô trên cùng một dòng.",
       passage:
         "Nam is a student. He is a student. Lan is my friend. She is my friend. My parents are at home. They are at home. The book is new. It is new.",
       prompts: [
@@ -338,7 +338,7 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write sentences with pronouns.\nViết câu với đại từ.",
+      title: "Write sentences with pronouns.\nViết câu với đại từ (Pron).",
       instruction:
         "Write 5 sentences about you and your family. Use I, he, she, we, or they.\nViết 5 câu về bản thân và gia đình. Dùng I, he, she, we hoặc they.",
       promptHints: [

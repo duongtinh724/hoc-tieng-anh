@@ -9,6 +9,7 @@ import { PracticeAntdProvider } from "@/components/practice/PracticeAntdProvider
 import { ScreenRenderer } from "@/components/practice/exercises/ScreenRenderer";
 import { hasPracticeLesson } from "@/data/practice";
 import { usePracticeSession } from "@/hooks/usePracticeSession";
+import { gradeExam } from "@/lib/practice/grade-exam";
 
 interface PracticePageProps {
   month: number;
@@ -39,12 +40,16 @@ export function PracticePage({ month, day, onClose, onComplete, onQuizScore }: P
   useEffect(() => {
     const screen = session.screen;
     const state = session.state;
-    if (!screen || screen.type !== "quiz" || !state?.checked) {
+    if (!screen || !state?.checked || (screen.type !== "quiz" && screen.type !== "exam")) {
       quizRecordedRef.current = false;
       return;
     }
     if (quizRecordedRef.current) return;
     quizRecordedRef.current = true;
+    if (screen.type === "exam") {
+      onQuizScore?.(gradeExam(screen, state).total);
+      return;
+    }
     const correct = screen.questions.filter(
       (question) => state.answers[question.id] === question.correctOptionId,
     ).length;
@@ -93,6 +98,10 @@ export function PracticePage({ month, day, onClose, onComplete, onQuizScore }: P
                 onCheck={session.checkAnswers}
                 quizStarted={quizStarted}
                 onQuizStart={() => setQuizStarted(true)}
+                onReset={() => {
+                  setQuizStarted(false);
+                  session.resetScreen();
+                }}
               />
             </main>
 
@@ -105,7 +114,11 @@ export function PracticePage({ month, day, onClose, onComplete, onQuizScore }: P
               canRevealAnswerKey={session.canRevealAnswerKey}
               isSelfWriting={session.isSelfWriting}
               isQuiz={session.isQuiz}
-              showSubmit={!session.isQuiz || quizStarted || Boolean(session.state.passed)}
+              showSubmit={
+                session.isExam
+                  ? false
+                  : !session.isQuiz || quizStarted || Boolean(session.state.passed)
+              }
               passed={session.state.passed}
               answerKeyRevealed={session.state.answerKeyRevealed}
               showAnswerKey={session.showAnswerKey}

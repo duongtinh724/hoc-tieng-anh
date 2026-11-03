@@ -9,8 +9,7 @@ import { GuidePanel } from "@/components/guide/GuidePanel";
 import { REVIEW_PLAN_ENABLED } from "@/lib/constants";
 import { ReviewPlanPanel } from "@/components/review/ReviewPlanPanel";
 import { LessonCard } from "@/components/lesson/LessonCard";
-import { DayGrid } from "@/components/navigation/DayGrid";
-import { MonthSelector } from "@/components/navigation/MonthSelector";
+import { MonthRail } from "@/components/navigation/MonthRail";
 import { ProgressBar } from "@/components/stats/ProgressBar";
 import { StatsGrid } from "@/components/stats/StatsGrid";
 import { RoadmapPanel } from "@/components/roadmap/RoadmapPanel";
@@ -24,14 +23,13 @@ export function LessonApp() {
     doneDays,
     monthConfig,
     nextDay,
-    visibleDays,
     currentLesson,
     activeSection,
     setActiveSection,
     openPracticeDay,
     setOpenPracticeDay,
-    setMonth,
     setSelectedDay,
+    openLessonDay,
     goToNextDay,
     toggleDayDone,
     recordPracticeCompletion,
@@ -60,31 +58,22 @@ export function LessonApp() {
   const doneCount = doneDays.length;
   const isDone = doneDays.includes(currentLesson.day);
   const sidebar = (
-    <>
-      <MonthSelector selectedMonth={state.month} onSelectMonth={setMonth} />
+    <div className="sidebar-progress">
+      <ProgressBar
+        doneCount={doneCount}
+        totalDays={totalDays}
+        monthTitle={monthConfig.title}
+      />
+    </div>
+  );
 
-      <div className="sidebar-section">
-        <p className="nav-label">Chọn ngày</p>
-        <DayGrid
-          days={visibleDays}
-          selectedDay={state.selectedDay}
-          doneDays={doneDays}
-          onSelectDay={setSelectedDay}
-        />
-      </div>
-
-      <button type="button" className="btn-continue" onClick={goToNextDay}>
-        ▶ Tiếp tục ngày {nextDay}
-      </button>
-
-      <div className="sidebar-progress">
-        <ProgressBar
-          doneCount={doneCount}
-          totalDays={totalDays}
-          monthTitle={monthConfig.title}
-        />
-      </div>
-    </>
+  const monthRail = (
+    <MonthRail
+      selectedMonth={state.month}
+      selectedDay={state.selectedDay}
+      progress={state.progress}
+      onSelectDay={openLessonDay}
+    />
   );
 
   return (
@@ -92,6 +81,7 @@ export function LessonApp() {
       activeSection={activeSection}
       onNavigate={setActiveSection}
       sidebar={sidebar}
+      monthRail={monthRail}
     >
       {activeSection === "overview" && (
         <section className="panel overview-panel">
@@ -131,18 +121,6 @@ export function LessonApp() {
 
       {activeSection === "lesson" && (
         <section className="panel lesson-panel">
-          <div className="lesson-panel-top">
-            <div>
-              <p className="page-eyebrow">
-                {monthConfig.title} · Ngày {currentLesson.day}/{totalDays}
-              </p>
-              <h2 className="lesson-panel-title">Buổi học hôm nay</h2>
-            </div>
-            <button type="button" className="btn-secondary" onClick={goToNextDay}>
-              Ngày {nextDay} →
-            </button>
-          </div>
-
           <LessonCard
             month={state.month}
             lesson={currentLesson}
@@ -186,10 +164,7 @@ export function LessonApp() {
 
       {activeSection === "roadmap" && (
         <RoadmapPanel
-          onOpenDay={(monthId, day) => {
-            if (monthId !== state.month) setMonth(monthId);
-            setSelectedDay(day);
-          }}
+          onOpenDay={openLessonDay}
         />
       )}
 

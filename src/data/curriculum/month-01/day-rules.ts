@@ -12,7 +12,7 @@ function rule(text: string, pairs: [string, string][]): RuleItem {
 
 export const DAY_RULES: Record<number, RuleItem[]> = {
   1: [
-    rule("Đại từ thay tên khi làm chủ ngữ.", [
+    rule("Đại từ (Pron) thay tên khi làm chủ ngữ (S).", [
       ["Nam is a student. → He is a student.", "Nam là học sinh. → Anh ấy là học sinh."],
       ["Lan is my friend. → She is my friend.", "Lan là bạn tôi. → Cô ấy là bạn tôi."],
       ["The book is new. → It is new.", "Quyển sách mới. → Nó mới."],
@@ -35,30 +35,30 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
     ]),
   ],
   3: [
-    rule("Chủ ngữ + am / is / are + phần còn lại", [
+    rule("Chủ ngữ (S) + am / is / are + phần còn lại", [
       ["I am a student.", "Tôi là học sinh."],
       ["She is happy.", "Cô ấy vui."],
       ["They are at home.", "Họ ở nhà."],
     ]),
-    rule("+ danh từ: I am a student.\n+ tính từ: She is happy.\n+ nơi chốn: They are at home.", [
+    rule("+ danh từ (N): I am a student.\n+ tính từ (Adj): She is happy.\n+ nơi chốn: They are at home.", [
       ["He is a doctor.", "Anh ấy là bác sĩ."],
       ["She is beautiful.", "Cô ấy xinh đẹp."],
       ["We are at home.", "Chúng tôi ở nhà."],
     ]),
   ],
   4: [
-    rule("Chủ ngữ + am / is / are + not + phần còn lại\nis not → isn't\nare not → aren't\nam not — không viết tắt", [
+    rule("Chủ ngữ (S) + am / is / are + not + phần còn lại\nis not → isn't\nare not → aren't\nam not — không viết tắt", [
       ["I am not tired.", "Tôi không mệt."],
       ["He isn't a teacher.", "Anh ấy không phải giáo viên."],
       ["They aren't hungry.", "Họ không đói."],
     ]),
-    rule("Không dùng don't hoặc doesn't với to be.", [
+    rule("Không dùng don't hoặc doesn't với to be (V tobe).", [
       ["She isn't at home.", "Cô ấy không ở nhà."],
       ["We aren't busy.", "Chúng tôi không bận."],
     ]),
   ],
   5: [
-    rule("Câu hỏi: Am / Is / Are + chủ ngữ + …?\nYes, + chủ ngữ + am / is / are.\nNo, + chủ ngữ + am / is / are + not.", [
+    rule("Câu hỏi: Am / Is / Are + chủ ngữ (S) + …?\nYes, + chủ ngữ (S) + am / is / are.\nNo, + chủ ngữ (S) + am / is / are + not.", [
       ["Are you happy? — Yes, I am.", "Bạn vui không? — Vâng."],
       ["Is he a student? — No, he isn't.", "Anh ấy là học sinh không? — Không."],
       ["Are they at home? — Yes, they are.", "Họ ở nhà không? — Vâng."],
@@ -82,7 +82,7 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
     ]),
   ],
   7: [
-    rule("Ôn\nI am. He / She / It is. You / We / They are.\nPhủ định: am not, isn't, aren't.\nCâu hỏi: Am / Is / Are + chủ ngữ?", [
+    rule("Ôn\nI am. He / She / It is. You / We / They are.\nPhủ định: am not, isn't, aren't.\nCâu hỏi: Am / Is / Are + chủ ngữ (S)?", [
       ["I am a student.", "Tôi là học sinh."],
       ["She isn't busy.", "Cô ấy không bận."],
       ["Are you a student? — Yes, I am.", "Bạn là học sinh không? — Vâng."],
@@ -93,12 +93,12 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
     ]),
   ],
   8: [
-    rule("Danh từ gọi tên người, vật hoặc nơi.\nNgười: teacher, student, doctor\nVật: book, phone, table\nNơi: school, hospital, park", [
+    rule("Danh từ (N) gọi tên người, vật hoặc nơi.\nNgười: teacher, student, doctor\nVật: book, phone, table\nNơi: school, hospital, park", [
       ["teacher — giáo viên", "người"],
       ["book — quyển sách", "vật"],
       ["school — trường học", "nơi"],
     ]),
-    rule("Chủ ngữ + am / is / are + danh từ", [
+    rule("Chủ ngữ (S) + am / is / are + danh từ (N)", [
       ["I am a student.", "Tôi là học sinh."],
       ["He is a doctor.", "Anh ấy là bác sĩ."],
       ["They are teachers.", "Họ là giáo viên."],
@@ -117,12 +117,12 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
     ]),
   ],
   10: [
-    rule("a / an + danh từ đếm được số ít\na + âm phụ âm: a book, a teacher, a university\nan + âm nguyên âm: an apple, an egg, an hour", [
+    rule("a / an + danh từ (N) đếm được số ít\na + âm phụ âm: a book, a teacher, a university\nan + âm nguyên âm: an apple, an egg, an hour", [
       ["I am a student.", "Tôi là một học sinh."],
       ["This is an apple.", "Đây là một quả táo."],
       ["an hour — h không phát âm", "một giờ"],
     ]),
-    rule("Sai: I am student.\nĐúng: I am a student.\nKhông dùng a/an trước danh từ số nhiều.", [
+    rule("Sai: I am student.\nĐúng: I am a student.\nKhông dùng a/an trước danh từ (N) số nhiều.", [
       ["She is a teacher.", "Cô ấy là một giáo viên."],
       ["books — không nói a books", "những quyển sách"],
     ]),
@@ -132,7 +132,7 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
       ["I have a book. The book is blue.", "Tôi có một quyển sách. Quyển sách màu xanh."],
       ["I have a dog. The dog is small.", "Tôi có một con chó. Con chó nhỏ."],
     ]),
-    rule("Nói chung thì không mạo từ.\nI like + danh từ số nhiều\nDanh từ không đếm được đứng một mình", [
+    rule("Nói chung thì không mạo từ (Art).\nI like + danh từ (N) số nhiều\nDanh từ (N) không đếm được đứng một mình", [
       ["I like dogs.", "Tôi thích chó."],
       ["Water is important.", "Nước rất quan trọng."],
       ["English is useful.", "Tiếng Anh hữu ích."],
@@ -147,7 +147,7 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
     ]),
   ],
   13: [
-    rule("Số ít: He is a teacher.\nSố nhiều: They are students.\nThis / That + is + a/an + danh từ\nThese / Those + are + danh từ số nhiều", [
+    rule("Số ít: He is a teacher.\nSố nhiều: They are students.\nThis / That + is + a/an + danh từ (N)\nThese / Those + are + danh từ (N) số nhiều", [
       ["This is a book.", "Đây là một quyển sách."],
       ["These are books.", "Đây là những quyển sách."],
       ["She is not a doctor.", "Cô ấy không phải bác sĩ."],
@@ -169,7 +169,7 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
       exampleVi: "Tôi học.",
     },
     {
-      text: "Viết câu ngắn: chủ ngữ rồi đến hành động. Chưa thêm -s.",
+      text: "Công thức: chủ ngữ (S) + động từ (V). Chưa thêm -s.",
       example: "You go to school.",
       exampleVi: "Bạn đi học.",
     },
@@ -181,7 +181,7 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
       exampleVi: "Tôi thích nhạc.",
     },
     {
-      text: "Thêm vật sau động từ.",
+      text: "Công thức: chủ ngữ (S) + động từ (V) + tân ngữ (O).",
       example: "We study English.",
       exampleVi: "Chúng tôi học tiếng Anh.",
     },
@@ -217,7 +217,7 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
       exampleVi: "Đó là ngôi nhà to.",
     },
     {
-      text: "Tính từ đứng trước danh từ. my, your, his, her đứng trước danh từ.",
+      text: "Tính từ (Adj) đứng trước danh từ (N). Tính từ sở hữu (Poss. Adj): my, your, his, her đứng trước danh từ (N).",
       example: "It is a small bag.",
       exampleVi: "Đó là cái cặp nhỏ.",
     },
@@ -236,7 +236,7 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
   ],
   21: [
     {
-      text: "Ôn chủ ngữ + động từ, tân ngữ, have/has, There is/are.",
+      text: "Ôn chủ ngữ (S) + động từ (V), tân ngữ (O), have/has, There is/are.",
       example: "I study English.",
       exampleVi: "Tôi học tiếng Anh.",
     },
@@ -301,7 +301,7 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
       exampleVi: "Sách ở đâu?",
     },
     {
-      text: "Từ để hỏi + am/is/are + chủ ngữ.",
+      text: "Từ để hỏi + am/is/are + chủ ngữ (S).",
       example: "What is this?",
       exampleVi: "Đây là cái gì?",
     },
@@ -320,7 +320,7 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
   ],
   28: [
     {
-      text: "Ôn to be, a/an, this/that, have/has, There is, câu hỏi, in/on/at.",
+      text: "Ôn to be (V tobe), a/an, this/that, have/has, There is, câu hỏi, in/on/at.",
       example: "I am a student.",
       exampleVi: "Tôi là học sinh.",
     },
@@ -332,7 +332,7 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
   ],
   29: [
     {
-      text: "I / You / We / They + động từ. I study every day.",
+      text: "I / You / We / They + động từ (V). I study every day.",
       example: "I study every day.",
       exampleVi: "Tôi học mỗi ngày.",
     },

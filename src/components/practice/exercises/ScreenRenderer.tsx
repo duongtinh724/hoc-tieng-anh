@@ -5,6 +5,7 @@ import { DialogueFillExercise } from "@/components/practice/exercises/DialogueFi
 import { DropdownExercise } from "@/components/practice/exercises/DropdownExercise";
 import { DictationExercise } from "@/components/practice/exercises/DictationExercise";
 import { MatchExercise } from "@/components/practice/exercises/MatchExercise";
+import { FoundationExamExercise } from "@/components/practice/exercises/FoundationExamExercise";
 import { QuizExercise } from "@/components/practice/exercises/QuizExercise";
 import { ReadingFillExercise } from "@/components/practice/exercises/ReadingFillExercise";
 import { ReorderExercise } from "@/components/practice/exercises/ReorderExercise";
@@ -30,6 +31,7 @@ interface ScreenRendererProps {
   onCheck: () => void;
   quizStarted: boolean;
   onQuizStart: () => void;
+  onReset: () => void;
 }
 
 function renderExercise(props: ScreenRendererProps) {
@@ -103,6 +105,19 @@ function renderExercise(props: ScreenRendererProps) {
           onExpire={onCheck}
           started={quizStarted}
           onStart={onQuizStart}
+        />
+      );
+    case "exam":
+      return (
+        <FoundationExamExercise
+          config={screen}
+          state={state}
+          onSelect={onAssign}
+          onTextChange={onTextChange}
+          onSubmit={onCheck}
+          started={quizStarted}
+          onStart={onQuizStart}
+          onRetake={props.onReset}
         />
       );
     case "self-writing":

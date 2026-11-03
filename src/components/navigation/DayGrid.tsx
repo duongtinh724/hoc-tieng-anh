@@ -15,6 +15,8 @@ interface DayGridProps {
   selectedDay: number;
   doneDays: number[];
   onSelectDay: (day: number) => void;
+  className?: string;
+  showTooltip?: boolean;
 }
 
 export function DayGrid({
@@ -22,9 +24,11 @@ export function DayGrid({
   selectedDay,
   doneDays,
   onSelectDay,
+  className,
+  showTooltip = true,
 }: DayGridProps) {
   return (
-    <div className="day-grid">
+    <div className={["day-grid", className].filter(Boolean).join(" ")}>
       {days.map((day) => {
         const done = doneDays.includes(day.day);
         const active = selectedDay === day.day;
@@ -36,7 +40,13 @@ export function DayGrid({
             type="button"
             className={`day-cell${active ? " active" : ""}${done ? " done" : ""}${mark ? ` is-${mark.kind}` : ""}`}
             onClick={() => onSelectDay(day.day)}
-            title={mark ? `Ngày ${day.day} — ${mark.label}: ${day.title}` : `Ngày ${day.day}: ${day.title}`}
+            title={
+              showTooltip
+                ? mark
+                  ? `Ngày ${day.day} — ${mark.label}: ${day.title}`
+                  : `Ngày ${day.day}: ${day.title}`
+                : undefined
+            }
             aria-label={`Ngày ${day.day}: ${day.title}${mark ? ` — ${mark.label}` : ""}${done ? " — đã xong" : ""}`}
           >
             <span className="day-cell-num">{day.day}</span>

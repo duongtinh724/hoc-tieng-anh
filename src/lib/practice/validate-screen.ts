@@ -66,6 +66,8 @@ export function getBlankIds(screen: PracticeScreenConfig): string[] {
       return screen.items.map((item) => item.id);
     case "quiz":
       return screen.questions.map((question) => question.id);
+    case "exam":
+      return screen.questions.map((question) => question.id);
     default:
       return [];
   }
@@ -127,6 +129,7 @@ export function isInstantCorrect(
     case "dictation":
       return false;
     case "quiz":
+    case "exam":
       return false;
     default:
       return false;
@@ -156,6 +159,25 @@ export function validateScreen(
       pendingCount: hasContent ? 0 : 1,
       feedback,
       lockedIds: state.checked && hasContent ? [SELF_WRITING_ANSWER_ID] : [],
+    };
+  }
+
+  if (screen.type === "exam") {
+    screen.questions.forEach((question) => {
+      const value = state.answers[question.id];
+      if (!value?.trim()) {
+        feedback[question.id] = state.checked ? "incorrect" : "empty";
+        if (!state.checked) pendingCount += 1;
+        return;
+      }
+      feedback[question.id] = state.checked ? "locked" : "filled";
+    });
+
+    return {
+      allCorrect: state.checked,
+      pendingCount: state.checked ? 0 : pendingCount,
+      feedback,
+      lockedIds: state.checked ? screen.questions.map((question) => question.id) : [],
     };
   }
 

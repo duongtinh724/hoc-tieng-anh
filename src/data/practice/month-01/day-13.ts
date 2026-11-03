@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay13: PracticeLesson = {
-  meta: { ...createPracticeMeta(13, "Danh từ và to be"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(13, "Danh từ (N) và to be (V tobe)"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(13, ""),
     vocabulary: [

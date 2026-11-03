@@ -97,10 +97,10 @@ export function usePracticeSession(month: number, day: number) {
       if (!screen) return;
 
       updateCurrentState((prev) => {
-        if (prev.passed || (screen.type === "quiz" && prev.checked)) return prev;
+        if (prev.passed || ((screen.type === "quiz" || screen.type === "exam") && prev.checked)) return prev;
 
         const instant = isInstantCorrect(screen, itemId, value);
-        const gradedNow = screen.type !== "quiz";
+        const gradedNow = screen.type !== "quiz" && screen.type !== "exam";
         if (gradedNow && instant && prev.feedback[itemId] !== "correct") {
           playCorrectSound();
         } else if (gradedNow && !instant) {
@@ -145,7 +145,7 @@ export function usePracticeSession(month: number, day: number) {
       updateCurrentState((prev) => {
         if (prev.passed) return prev;
 
-        if (screen.type === "self-writing") {
+        if (screen.type === "self-writing" || screen.type === "exam") {
           return {
             ...prev,
             answers: { ...prev.answers, [itemId]: value },
@@ -215,6 +215,20 @@ export function usePracticeSession(month: number, day: number) {
 
   const checkAnswers = useCallback(() => {
     if (!screen) return;
+
+    if (screen.type === "exam") {
+      updateCurrentState((prev) => {
+        if (prev.passed || prev.checked) return prev;
+        playCompleteSound();
+        return {
+          ...prev,
+          checked: true,
+          passed: true,
+          lockedIds: screen.questions.map((question) => question.id),
+        };
+      });
+      return;
+    }
 
     if (screen.type === "dictation") {
       updateCurrentState((prev) => {
@@ -335,14 +349,16 @@ export function usePracticeSession(month: number, day: number) {
   );
 
   const canCheck =
-    screen?.type === "quiz"
+    screen?.type === "quiz" || screen?.type === "exam"
       ? Boolean(state && !state.checked && !state.passed)
       : validation.pendingCount === 0 && !state?.passed;
   const canNext =
     Boolean(state?.passed) && currentScreen < shuffledScreens.length - 1;
   const isSelfWriting = screen?.type === "self-writing";
+  const isExam = screen?.type === "exam";
   const canRevealAnswerKey = Boolean(
     !isSelfWriting &&
+      !isExam &&
       screen?.type !== "dictation" &&
       screen?.type !== "quiz" &&
       state &&
@@ -373,6 +389,7 @@ export function usePracticeSession(month: number, day: number) {
     canRevealAnswerKey,
     isSelfWriting,
     isQuiz: screen?.type === "quiz",
+    isExam,
     allScreensPassed,
     setHintOpen,
     setSelectedWordId,

@@ -2,8 +2,8 @@
   {
     "day": 1,
     "week": 1,
-    "title": "Đại từ nhân xưng",
-    "aim": "Biết 7 đại từ nhân xưng đứng làm chủ ngữ.\nThay tên người, vật hoặc nhóm người bằng đúng đại từ.\nViết được câu ngắn: He is a student. They are at home.",
+    "title": "Đại từ nhân xưng (Pron)",
+    "aim": "Biết 7 đại từ nhân xưng (Pron) đứng làm chủ ngữ (S).\nThay tên người, vật hoặc nhóm người bằng đúng đại từ (Pron).\nViết được câu ngắn: He is a student. They are at home.",
     "rule": "I = tôi (người nói).\nYou = bạn / các bạn (người nghe).\nHe = anh ấy (một người nam).\nShe = cô ấy (một người nữ).\nIt = nó (đồ vật, con vật, sự việc).\nWe = chúng tôi / chúng ta.\nThey = họ / chúng.",
     "words": [
       {
@@ -62,8 +62,8 @@
       }
     ],
     "copy": [
-      "Chép bảng 7 đại từ: từ, nghĩa, dùng để chỉ ai.",
-      "Chép 5 cặp ví dụ: tên hoặc cụm từ → đại từ."
+      "Chép bảng 7 đại từ (Pron): từ, nghĩa, dùng để chỉ ai.",
+      "Chép 5 cặp ví dụ: tên hoặc cụm từ → đại từ (Pron)."
     ],
     "exercise": [
       "Điền I, you, he, she, it, we hoặc they.",
@@ -98,8 +98,8 @@
   {
     "day": 2,
     "week": 1,
-    "title": "To be: am, is, are",
-    "aim": "Chọn đúng am, is hoặc are sau chủ ngữ.\nI đi với am. He, she, it đi với is. You, we, they đi với are.\nNhận ra dạng viết tắt: I'm, she's, they're.",
+    "title": "To be (V tobe): am, is, are",
+    "aim": "Chọn đúng am, is hoặc are sau chủ ngữ (S).\nI đi với am. He, she, it đi với is. You, we, they đi với are.\nNhận ra dạng viết tắt: I'm, she's, they're.",
     "rule": "I + am. I am happy.\nHe / She / It + is. She is tired.\nYou / We / They + are. They are busy.\nViết tắt: I'm, he's, she's, it's, you're, we're, they're.\nMẹo: I — am. He, she, it — is. You, we, they — are.",
     "words": [
       {
@@ -206,9 +206,9 @@
   {
     "day": 3,
     "week": 1,
-    "title": "Câu khẳng định với to be",
-    "aim": "Viết câu khẳng định: chủ ngữ + am/is/are + phần còn lại.\nDùng được 3 kiểu: danh từ, tính từ, nơi chốn.\nDịch được câu khẳng định đơn giản.",
-    "rule": "Chủ ngữ + am/is/are + phần còn lại.\n+ danh từ: I am a student.\n+ tính từ: She is happy.\n+ nơi chốn: They are at home.",
+    "title": "Câu khẳng định với to be (V tobe)",
+    "aim": "Viết câu khẳng định: chủ ngữ (S) + am/is/are + phần còn lại.\nDùng được 3 kiểu: danh từ (N), tính từ (Adj), nơi chốn.\nDịch được câu khẳng định đơn giản.",
+    "rule": "Chủ ngữ (S) + am/is/are + phần còn lại.\n+ danh từ (N): I am a student.\n+ tính từ (Adj): She is happy.\n+ nơi chốn: They are at home.",
     "words": [
       {
         "en": "doctor",
@@ -258,8 +258,8 @@
       }
     ],
     "copy": [
-      "Chép công thức: chủ ngữ + am/is/are + phần còn lại.",
-      "Chép 3 kiểu: + danh từ, + tính từ, + nơi chốn."
+      "Chép công thức: chủ ngữ (S) + am/is/are + phần còn lại.",
+      "Chép 3 kiểu: + danh từ (N), + tính từ (Adj), + nơi chốn."
     ],
     "exercise": [
       "Sắp xếp thành câu.",
@@ -292,9 +292,9 @@
   {
     "day": 4,
     "week": 1,
-    "title": "Câu phủ định với to be",
-    "aim": "Thêm not sau am, is hoặc are để thành câu phủ định.\nDùng isn't và aren't. am not không viết tắt.\nKhông dùng don't hoặc doesn't với to be.",
-    "rule": "Chủ ngữ + am/is/are + not + phần còn lại.\nis not = isn't. are not = aren't.\nam not không có dạng viết tắt thông dụng.\nKhông dùng don't / doesn't với to be.",
+    "title": "Câu phủ định với to be (V tobe)",
+    "aim": "Thêm not sau am, is hoặc are để thành câu phủ định.\nDùng isn't và aren't. am not không viết tắt.\nKhông dùng don't hoặc doesn't với to be (V tobe).",
+    "rule": "Chủ ngữ (S) + am/is/are + not + phần còn lại.\nis not = isn't. are not = aren't.\nam not không có dạng viết tắt thông dụng.\nKhông dùng don't / doesn't với to be (V tobe).",
     "words": [
       {
         "en": "not",
@@ -344,7 +344,7 @@
       }
     ],
     "copy": [
-      "Chép công thức: chủ ngữ + am/is/are + not + phần còn lại.",
+      "Chép công thức: chủ ngữ (S) + am/is/are + not + phần còn lại.",
       "Chép: is not → isn't, are not → aren't, am not không viết tắt."
     ],
     "exercise": [
@@ -384,9 +384,9 @@
   {
     "day": 5,
     "week": 1,
-    "title": "Câu hỏi với to be",
-    "aim": "Đưa am, is hoặc are lên trước chủ ngữ để tạo câu hỏi Yes/No.\nTrả lời ngắn bằng Yes hoặc No.\nAre you…? trả lời bằng I, không dùng you.",
-    "rule": "Am / Is / Are + chủ ngữ + …?\nYes, I am. / No, I'm not.\nYes, he is. / No, he isn't.\nYes, she is. / No, she isn't.\nYes, they are. / No, they aren't.\nAre you…? → trả lời I, không trả lời you.",
+    "title": "Câu hỏi với to be (V tobe)",
+    "aim": "Đưa am, is hoặc are lên trước chủ ngữ (S) để tạo câu hỏi Yes/No.\nTrả lời ngắn bằng Yes hoặc No.\nAre you…? trả lời bằng I, không dùng you.",
+    "rule": "Am / Is / Are + chủ ngữ (S) + …?\nYes, I am. / No, I'm not.\nYes, he is. / No, he isn't.\nYes, she is. / No, she isn't.\nYes, they are. / No, they aren't.\nAre you…? → trả lời I, không trả lời you.",
     "words": [
       {
         "en": "yes",
@@ -436,7 +436,7 @@
       }
     ],
     "copy": [
-      "Chép công thức câu hỏi: Am/Is/Are + chủ ngữ + …?",
+      "Chép công thức câu hỏi: Am/Is/Are + chủ ngữ (S) + …?",
       "Chép 4 cặp trả lời ngắn Yes và No."
     ],
     "exercise": [
@@ -564,16 +564,16 @@
     "day": 7,
     "week": 1,
     "title": "Ôn tuần 1",
-    "aim": "Ôn đại từ, am/is/are, phủ định, câu hỏi và giới thiệu bản thân.\nKhông học từ mới.\nLàm bài kiểm tra tuần 1 và ghi câu sai.",
-    "rule": "I am. He/She/It is. You/We/They are.\nPhủ định: am not, isn't, aren't. Không dùng don't với to be.\nCâu hỏi: Am/Is/Are + chủ ngữ + …?\nAre you…? → Yes, I am. / No, I'm not.",
+    "aim": "Ôn đại từ (Pron), am/is/are, phủ định, câu hỏi và giới thiệu bản thân.\nKhông học từ mới.\nLàm bài kiểm tra tuần 1 và ghi câu sai.",
+    "rule": "I am. He/She/It is. You/We/They are.\nPhủ định: am not, isn't, aren't. Không dùng don't với to be (V tobe).\nCâu hỏi: Am/Is/Are + chủ ngữ (S) + …?\nAre you…? → Yes, I am. / No, I'm not.",
     "words": [
       {
         "en": "I / you / he / she / it / we / they",
-        "vi": "ôn đại từ"
+        "vi": "ôn đại từ (Pron)"
       },
       {
         "en": "am / is / are",
-        "vi": "ôn to be"
+        "vi": "ôn to be (V tobe)"
       },
       {
         "en": "am not / isn't / aren't",
@@ -615,7 +615,7 @@
       }
     ],
     "copy": [
-      "Không chép bài mới. Nhẩm bảng đại từ và am/is/are.",
+      "Không chép bài mới. Nhẩm bảng đại từ (Pron) và am/is/are.",
       "Nhẩm một câu khẳng định, một câu phủ định, một câu hỏi."
     ],
     "exercise": [
@@ -641,8 +641,8 @@
   {
     "day": 8,
     "week": 2,
-    "title": "Danh từ: người, vật, nơi",
-    "aim": "Nhận ra danh từ là tên người, vật hoặc địa điểm.\nXếp danh từ vào 3 nhóm: người, vật, nơi.\nĐặt danh từ sau am/is/are: I am a student.",
+    "title": "Danh từ (N): người, vật, nơi",
+    "aim": "Nhận ra danh từ (N) là tên người, vật hoặc địa điểm.\nXếp danh từ (N) vào 3 nhóm: người, vật, nơi.\nĐặt danh từ (N) sau am/is/are: I am a student.",
     "rule": "Người: teacher, student, doctor.\nVật: book, phone, table.\nĐịa điểm: school, hospital, park.\nI am a student. He is a doctor. They are teachers.",
     "words": [
       {
@@ -742,8 +742,8 @@
   {
     "day": 9,
     "week": 2,
-    "title": "Danh từ số ít và số nhiều",
-    "aim": "Đổi danh từ số ít sang số nhiều: -s, -es, -ies.\nNhớ child → children, man → men, woman → women, person → people.\nSố nhiều đi với are. Số ít đi với is.",
+    "title": "Danh từ (N) số ít và số nhiều",
+    "aim": "Đổi danh từ (N) số ít sang số nhiều: -s, -es, -ies.\nNhớ child → children, man → men, woman → women, person → people.\nSố nhiều đi với are. Số ít đi với is.",
     "rule": "Thêm -s: book → books, student → students.\nThêm -es sau -s, -sh, -ch, -x: bus → buses, box → boxes, class → classes.\nPhụ âm + y → -ies: baby → babies.\nBất quy tắc: child → children, man → men, woman → women, person → people.\nThe book is new. The books are new.",
     "words": [
       {
@@ -802,7 +802,7 @@
       }
     ],
     "copy": [
-      "Chép quy tắc -s, -es, -ies và 4 danh từ bất quy tắc.",
+      "Chép quy tắc -s, -es, -ies và 4 danh từ (N) bất quy tắc.",
       "Chép 3 cặp số ít / số nhiều với is và are."
     ],
     "exercise": [
@@ -855,13 +855,13 @@
   {
     "day": 10,
     "week": 2,
-    "title": "Mạo từ a / an",
+    "title": "Mạo từ (Art) a / an",
     "video": {
       "youtubeId": "EEj_LeERW1U",
       "title": "Video bài 10"
     },
-    "aim": "Dùng a trước âm phụ âm, an trước âm nguyên âm.\nNhìn âm đầu, không chỉ chữ cái: a university, an hour.\nLuôn có a/an trước danh từ đếm được số ít. Không dùng trước số nhiều.",
-    "rule": "a + âm phụ âm: a book, a teacher, a car, a university.\nan + âm nguyên âm: an apple, an egg, an orange, an umbrella, an hour.\nĐúng: I am a student. Sai: I am student.\nKhông dùng a/an trước danh từ số nhiều.",
+    "aim": "Dùng a trước âm phụ âm, an trước âm nguyên âm.\nNhìn âm đầu, không chỉ chữ cái: a university, an hour.\nLuôn có a/an trước danh từ (N) đếm được số ít. Không dùng trước số nhiều.",
+    "rule": "a + âm phụ âm: a book, a teacher, a car, a university.\nan + âm nguyên âm: an apple, an egg, an orange, an umbrella, an hour.\nĐúng: I am a student. Sai: I am student.\nKhông dùng a/an trước danh từ (N) số nhiều.",
     "words": [
       {
         "en": "apple",
@@ -976,8 +976,8 @@
   {
     "day": 11,
     "week": 2,
-    "title": "Mạo từ the",
-    "aim": "Dùng a/an lần đầu, the khi đã biết là vật nào.\nKhông dùng mạo từ khi nói chung: I like dogs.\nKhông dùng mạo từ với water, English khi nói chung.",
+    "title": "Mạo từ (Art) the",
+    "aim": "Dùng a/an lần đầu, the khi đã biết là vật nào.\nKhông dùng mạo từ (Art) khi nói chung: I like dogs.\nKhông dùng mạo từ (Art) với water, English khi nói chung.",
     "rule": "I have a book. The book is blue.\nClose the door.\nNói chung: I like dogs. Water is important. English is useful.\nThe books on the table are mine.",
     "words": [
       {
@@ -1041,10 +1041,10 @@
     ],
     "copy": [
       "Chép cặp: I have a book. The book is blue.",
-      "Chép 3 câu không mạo từ: I like dogs. Water is important. English is useful."
+      "Chép 3 câu không mạo từ (Art): I like dogs. Water is important. English is useful."
     ],
     "exercise": [
-      "Điền a, an, the hoặc — nếu không cần mạo từ.",
+      "Điền a, an, the hoặc — nếu không cần mạo từ (Art).",
       "1. I have ___ cat. ___ cat is black.",
       "2. She is ___ English teacher.",
       "3. ___ water is important for life.",
@@ -1179,8 +1179,8 @@
   {
     "day": 13,
     "week": 2,
-    "title": "Danh từ và to be",
-    "aim": "Ghép danh từ, a/an, this/that và to be trong một câu.\nSố ít dùng a/an và is. Số nhiều dùng are, không dùng a/an.\nViết được câu phủ định và câu hỏi Yes/No.",
+    "title": "Danh từ (N) và to be (V tobe)",
+    "aim": "Ghép danh từ (N), a/an, this/that và to be (V tobe) trong một câu.\nSố ít dùng a/an và is. Số nhiều dùng are, không dùng a/an.\nViết được câu phủ định và câu hỏi Yes/No.",
     "rule": "He is a teacher.\nThey are students.\nThis is a book.\nThese are books.\nShe is not a doctor.\nAre they students?",
     "words": [
       {
@@ -1289,7 +1289,7 @@
     "day": 14,
     "week": 2,
     "title": "Ôn tuần 2",
-    "aim": "Ôn danh từ, số nhiều, a/an/the và this/that/these/those.\nKhông học từ mới.\nLàm bài kiểm tra tuần 2 và ghi câu sai.",
+    "aim": "Ôn danh từ (N), số nhiều, a/an/the và this/that/these/those.\nKhông học từ mới.\nLàm bài kiểm tra tuần 2 và ghi câu sai.",
     "rule": "Người / vật / nơi.\nbook → books, child → children.\na book, an apple, an hour, a university.\nI have a dog. The dog is small. I like dogs.\nThis is / These are. That is / Those are.",
     "words": [
       {
@@ -1298,11 +1298,11 @@
       },
       {
         "en": "a / an",
-        "vi": "ôn mạo từ không xác định"
+        "vi": "ôn mạo từ (Art) không xác định"
       },
       {
         "en": "the",
-        "vi": "ôn mạo từ xác định"
+        "vi": "ôn mạo từ (Art) xác định"
       },
       {
         "en": "this / these",
@@ -1382,8 +1382,8 @@
   {
     "day": 15,
     "week": 3,
-    "title": "Chủ ngữ + động từ",
-    "aim": "Động từ thường là từ chỉ hành động, khác với to be. Câu ngắn nhất là chủ ngữ + động từ: ai làm gì. Ví dụ: I study. Hôm nay chưa thêm -s.",
+    "title": "Chủ ngữ (S) + động từ (V)",
+    "aim": "Động từ (V) thường là từ chỉ hành động, khác với to be (V tobe). Câu ngắn nhất là chủ ngữ (S) + động từ (V): ai làm gì. Ví dụ: I study. Hôm nay chưa thêm -s.",
     "rule": "I study. You go. We play. They read.",
     "words": [
       {
@@ -1434,7 +1434,7 @@
       }
     ],
     "copy": [
-      "Chép công thức chủ ngữ + động từ.",
+      "Chép công thức chủ ngữ (S) + động từ (V).",
       "Chép 6 câu nghe."
     ],
     "exercise": [
@@ -1458,8 +1458,8 @@
   {
     "day": 16,
     "week": 3,
-    "title": "Chủ ngữ + động từ + tân ngữ",
-    "aim": "Tân ngữ là người hoặc vật chịu hành động, đứng sau động từ. Câu trả lời câu hỏi “làm gì với cái gì”. Ví dụ: I like music. Music là tân ngữ.",
+    "title": "Chủ ngữ (S) + động từ (V) + tân ngữ (O)",
+    "aim": "Tân ngữ (O) là người hoặc vật chịu hành động, đứng sau động từ (V). Câu trả lời câu hỏi “làm gì với cái gì”. Ví dụ: I like music. Music là tân ngữ (O).",
     "rule": "I like music. We study English. They play football.",
     "words": [
       {
@@ -1510,7 +1510,7 @@
       }
     ],
     "copy": [
-      "Chép công thức có tân ngữ.",
+      "Chép công thức có tân ngữ (O).",
       "Chép 6 câu nghe."
     ],
     "exercise": [
@@ -1686,8 +1686,8 @@
   {
     "day": 19,
     "week": 3,
-    "title": "Tính từ và tính từ sở hữu",
-    "aim": "Tính từ là từ mô tả danh từ, như to, nhỏ, mới, và đứng trước danh từ. Tính từ sở hữu (my, your, his, her) nói đồ đó của ai, cũng đứng trước danh từ.",
+    "title": "Tính từ (Adj) và tính từ sở hữu (Poss. Adj)",
+    "aim": "Tính từ (Adj) là từ mô tả danh từ (N), như to, nhỏ, mới, và đứng trước danh từ (N). Tính từ sở hữu (Poss. Adj): my, your, his, her nói đồ đó của ai, cũng đứng trước danh từ (N).",
     "rule": "a big house. This is my book. That is your pen.",
     "words": [
       {
@@ -1839,8 +1839,8 @@
     "day": 21,
     "week": 3,
     "title": "Ôn tuần 3",
-    "aim": "Hôm nay không học kiến thức mới. Ôn câu chủ ngữ + động từ, câu có tân ngữ, have/has và there is/there are.",
-    "rule": "Ôn chủ ngữ + động từ, tân ngữ, have/has, There is/are.",
+    "aim": "Hôm nay không học kiến thức mới. Ôn câu chủ ngữ (S) + động từ (V), câu có tân ngữ (O), have/has và there is/there are.",
+    "rule": "Ôn chủ ngữ (S) + động từ (V), tân ngữ (O), have/has, There is/are.",
     "words": [
       {
         "en": "study",
@@ -2066,8 +2066,8 @@
   {
     "day": 24,
     "week": 4,
-    "title": "Giới từ nơi chốn",
-    "aim": "Giới từ nơi chốn là từ nhỏ đứng trước chỗ, nói vật hoặc người ở đâu. Hôm nay: in (trong), on (trên), at (ở), under (dưới).",
+    "title": "Giới từ (Prep) nơi chốn",
+    "aim": "Giới từ (Prep) nơi chốn là từ nhỏ đứng trước chỗ, nói vật hoặc người ở đâu. Hôm nay: in (trong), on (trên), at (ở), under (dưới).",
     "rule": "in the bag. on the bag. at school. under the book.",
     "words": [
       {
@@ -2142,8 +2142,8 @@
   {
     "day": 25,
     "week": 4,
-    "title": "Giới từ thời gian",
-    "aim": "Giới từ thời gian nói việc xảy ra lúc nào. In dùng với buổi (in the morning). On dùng với thứ (on Monday). At dùng với giờ (at 7).",
+    "title": "Giới từ (Prep) thời gian",
+    "aim": "Giới từ (Prep) thời gian nói việc xảy ra lúc nào. In dùng với buổi (in the morning). On dùng với thứ (on Monday). At dùng với giờ (at 7).",
     "rule": "in the morning. on Monday. at 7.",
     "words": [
       {
@@ -2219,7 +2219,7 @@
     "day": 26,
     "week": 4,
     "title": "Trật tự từ trong câu hỏi",
-    "aim": "Câu hỏi có trật tự khác câu kể. Từ để hỏi đứng đầu, rồi am/is/are, rồi chủ ngữ. Ví dụ đúng: Where is the book?",
+    "aim": "Câu hỏi có trật tự khác câu kể. Từ để hỏi đứng đầu, rồi am/is/are, rồi chủ ngữ (S). Ví dụ đúng: Where is the book?",
     "rule": "Where is the book? What is this? Who is she?",
     "words": [
       {
@@ -2372,8 +2372,8 @@
     "day": 28,
     "week": 4,
     "title": "Kiểm tra nền tảng",
-    "aim": "Hôm nay không học kiến thức mới. Kiểm tra lại nền tảng: to be, mạo từ, câu cơ bản, từ để hỏi và giới từ.",
-    "rule": "Ôn to be, a/an, this/that, have/has, There is, câu hỏi, in/on/at.",
+    "aim": "Hôm nay không học kiến thức mới. Kiểm tra lại nền tảng: to be (V tobe), mạo từ (Art), câu cơ bản, từ để hỏi và giới từ (Prep).",
+    "rule": "Ôn to be (V tobe), a/an, this/that, have/has, There is, câu hỏi, in/on/at.",
     "words": [
       {
         "en": "student",
@@ -2448,8 +2448,8 @@
     "day": 29,
     "week": 5,
     "title": "Hiện tại đơn: câu khẳng định",
-    "aim": "Thì hiện tại đơn dùng để nói việc mình thường làm, việc lặp lại. Với I, you, we, they, động từ giữ nguyên, không thêm -s. Ví dụ: I study every day.",
-    "rule": "I / You / We / They + động từ. I study every day.",
+    "aim": "Thì hiện tại đơn dùng để nói việc mình thường làm, việc lặp lại. Với I, you, we, they, động từ (V) giữ nguyên, không thêm -s. Ví dụ: I study every day.",
+    "rule": "I / You / We / They + động từ (V). I study every day.",
     "words": [
       {
         "en": "every day",
@@ -2499,7 +2499,7 @@
       }
     ],
     "copy": [
-      "Chép: I, you, we, they + động từ.",
+      "Chép: I, you, we, they + động từ (V).",
       "Chép 6 câu nghe."
     ],
     "exercise": [
@@ -2524,7 +2524,7 @@
     "day": 30,
     "week": 5,
     "title": "He, she, it thêm -s",
-    "aim": "Khi chủ ngữ là he, she hoặc it, động từ ở hiện tại đơn thêm -s hoặc -es. Ví dụ: He likes music. She studies English. I like không thêm -s.",
+    "aim": "Khi chủ ngữ (S) là he, she hoặc it, động từ (V) ở hiện tại đơn thêm -s hoặc -es. Ví dụ: He likes music. She studies English. I like không thêm -s.",
     "rule": "He likes music. She studies English. I like music không thêm -s.",
     "words": [
       {

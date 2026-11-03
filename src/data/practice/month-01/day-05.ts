@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay05: PracticeLesson = {
-  meta: { ...createPracticeMeta(5, "Câu hỏi với to be"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(5, "Câu hỏi với to be (V tobe)"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(5, ""),
     vocabulary: [
@@ -38,7 +38,7 @@ export const practiceDay05: PracticeLesson = {
       type: "dictation",
       title: "Make a question.\nĐặt câu hỏi.",
       instruction:
-        "Read the sentence. Write a Yes/No question. Put am, is, or are before the subject.\nĐọc câu khẳng định. Viết câu hỏi Yes/No. Đưa am, is hoặc are lên trước chủ ngữ.",
+        "Read the sentence. Write a Yes/No question. Put am, is, or are before the subject.\nĐọc câu khẳng định. Viết câu hỏi Yes/No. Đưa am, is hoặc are lên trước chủ ngữ (S).",
       promptLabel: "Câu khẳng định",
       inputPlaceholder: "Viết câu hỏi",
       doneMessage: "Bạn đã đặt xong các câu hỏi. Bấm Tiếp.",
@@ -131,7 +131,7 @@ export const practiceDay05: PracticeLesson = {
     {
       type: "self-writing",
       title: "Ask and answer.\nHỏi và trả lời.",
-      instruction: "Write 3 Yes/No questions with to be, and a short answer for each.\nViết 3 câu hỏi Yes/No với to be, mỗi câu kèm một câu trả lời ngắn.",
+      instruction: "Write 3 Yes/No questions with to be (V tobe), and a short answer for each.\nViết 3 câu hỏi Yes/No với to be (V tobe), mỗi câu kèm một câu trả lời ngắn.",
       promptHints: ["Are you busy? Yes, I am.", "Is she tired? No, she isn't.", "Are they at home? Yes, they are."],
       sampleTitle: "Bài gợi ý",
       sample: "Are you busy? Yes, I am.\nIs she tired? No, she isn't.\nAre they at home? Yes, they are.",

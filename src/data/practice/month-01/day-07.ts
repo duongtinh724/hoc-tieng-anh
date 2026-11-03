@@ -35,9 +35,9 @@ const questions: QuizQuestion[] = [
   choice("g6", "I ___ happy.", "am", ["is", "are"], "I đi với am.", "grammar"),
   choice("g7", "She ___ tired.", "is", ["am", "are"], "She đi với is.", "grammar"),
   choice("g8", "They ___ busy.", "are", ["is", "am"], "They đi với are.", "grammar"),
-  choice("g9", "He is a doctor. Đây là câu…", "khẳng định + danh từ", ["phủ định", "câu hỏi"], "He is a doctor nói anh ấy là ai.", "grammar"),
+  choice("g9", "He is a doctor. Đây là câu…", "khẳng định + danh từ (N)", ["phủ định", "câu hỏi"], "He is a doctor nói anh ấy là ai.", "grammar"),
   choice("g10", "We are at home. at home là…", "nơi chốn", ["câu hỏi", "phủ định"], "at home nói ở đâu.", "grammar"),
-  choice("g11", "I ___ sad.", "am not", ["isn't", "don't"], "I dùng am not. Không dùng don't với to be.", "grammar"),
+  choice("g11", "I ___ sad.", "am not", ["isn't", "don't"], "I dùng am not. Không dùng don't với to be (V tobe).", "grammar"),
   choice("g12", "She ___ busy.", "isn't", ["aren't", "am not"], "She is not viết tắt isn't.", "grammar"),
   choice("g13", "They ___ hungry.", "aren't", ["isn't", "am not"], "They are not viết tắt aren't.", "grammar"),
   choice("g14", "___ you happy?", "Are", ["Is", "Am"], "You đảo Are lên đầu.", "grammar"),
@@ -74,7 +74,7 @@ export const practiceDay07: PracticeLesson = {
   hints: {
     rules: getRulesForDay(7, ""),
     vocabulary: [
-      { en: "am / is / are", vi: "to be" },
+      { en: "am / is / are", vi: "to be (V tobe)" },
       { en: "isn't / aren't", vi: "phủ định" },
       { en: "yes / no", vi: "trả lời ngắn" },
       { en: "name", vi: "tên" },

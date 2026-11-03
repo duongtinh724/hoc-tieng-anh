@@ -13,6 +13,7 @@ import { CopySection } from "@/components/lesson/CopySection";
 import { TextListSection } from "@/components/lesson/TextListSection";
 import { WordsList } from "@/components/lesson/WordsList";
 import { LessonVideo } from "@/components/lesson/LessonVideo";
+import { splitAim } from "@/lib/aim";
 
 interface LessonCardProps {
   month: number;
@@ -52,13 +53,9 @@ export function LessonCard({
           <div className="aim-box">
             <span className="aim-label">Mục tiêu hôm nay</span>
             <ul className="aim-list">
-              {lesson.aim
-                .split("\n")
-                .map((line) => line.trim())
-                .filter(Boolean)
-                .map((line) => (
-                  <li key={line}>{line}</li>
-                ))}
+              {splitAim(lesson.aim).map((line, index) => (
+                <li key={`${index}-${line}`}>{line}</li>
+              ))}
             </ul>
           </div>
           <RuleBox rules={getRulesForDay(month, lesson.day, lesson.rule)} />

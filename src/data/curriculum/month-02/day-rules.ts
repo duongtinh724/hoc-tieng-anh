@@ -7,24 +7,24 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
     { text: "Dấu hiệu: every day, always, usually, sometimes.", example: "She usually reads books." },
   ],
   2: [
-    { text: "I / You / We / They + V (nguyên mẫu).", example: "I study. They play." },
-    { text: "Không thêm -s với 4 đại từ này.", example: "We live in Bắc Ninh." },
+    { text: "I / You / We / They + động từ (V) nguyên mẫu.", example: "I study. They play." },
+    { text: "Không thêm -s với 4 đại từ (Pron) này.", example: "We live in Bắc Ninh." },
   ],
   3: [
-    { text: "He / She / It + V-s.", example: "He goes. She studies." },
+    { text: "He / She / It + động từ (V-s).", example: "He goes. She studies." },
     { text: "Quy tắc -es: watch → watches, go → goes.", example: "She watches TV." },
     { text: "study → studies (-y đổi thành -ies).", example: "He studies English." },
   ],
   4: [
-    { text: "Do + I/you/we/they + V.", example: "Do you study?" },
-    { text: "Does + he/she/it + V (V không -s).", example: "Does she like music?" },
+    { text: "Do + I/you/we/they + động từ (V).", example: "Do you study?" },
+    { text: "Does + he/she/it + động từ (V) (không thêm -s).", example: "Does she like music?" },
   ],
   5: [
-    { text: "I/You/We/They + don't + V.", example: "I don't like coffee." },
-    { text: "He/She/It + doesn't + V.", example: "She doesn't play games." },
+    { text: "I/You/We/They + don't + động từ (V).", example: "I don't like coffee." },
+    { text: "He/She/It + doesn't + động từ (V).", example: "She doesn't play games." },
   ],
   6: [
-    { text: "Wh- + do/does + S + V?", example: "What do you study?" },
+    { text: "Wh- + do/does + chủ ngữ (S) + động từ (V)?", example: "What do you study?" },
     { text: "Where does she live?", example: "She lives in Bắc Ninh." },
   ],
   7: [
@@ -32,27 +32,27 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
     { text: "Sai nhiều → ôn ngày 3, 4, 5.", example: "Chép lại câu đúng 2 lần." },
   ],
   8: [
-    { text: "Present Continuous = am/is/are + V-ing.", example: "I am studying now." },
+    { text: "Present Continuous = am/is/are + động từ (V-ing).", example: "I am studying now." },
     { text: "Dùng khi đang làm NGAY BÂY GIỜ.", example: "She is reading at the moment." },
   ],
   9: [
-    { text: "I am + V-ing.", example: "I am doing my homework." },
+    { text: "I am + động từ (V-ing).", example: "I am doing my homework." },
     { text: "V-ing: write → writing, run → running.", example: "I am writing in my notebook." },
   ],
   10: [
-    { text: "He / She / It + is + V-ing.", example: "He is studying." },
+    { text: "He / She / It + is + động từ (V-ing).", example: "He is studying." },
     { text: "She is cooking dinner.", example: "Cô ấy đang nấu bữa tối." },
   ],
   11: [
-    { text: "You / We / They + are + V-ing.", example: "They are playing games." },
+    { text: "You / We / They + are + động từ (V-ing).", example: "They are playing games." },
     { text: "We are learning English.", example: "Chúng tôi đang học tiếng Anh." },
   ],
   12: [
-    { text: "Phủ định: am not / isn't / aren't + V-ing.", example: "She isn't studying." },
+    { text: "Phủ định: am not / isn't / aren't + động từ (V-ing).", example: "She isn't studying." },
     { text: "They aren't playing.", example: "Họ không đang chơi." },
   ],
   13: [
-    { text: "Am/Is/Are + S + V-ing?", example: "Are you studying?" },
+    { text: "Am/Is/Are + chủ ngữ (S) + động từ (V-ing)?", example: "Are you studying?" },
     { text: "What is she doing?", example: "She is cooking." },
   ],
   14: [
@@ -72,15 +72,15 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
     { text: "come → came, get → got, have → had, do → did.", example: "I went to school." },
   ],
   18: [
-    { text: "I/He/She/It → was.", example: "I was tired." },
+    { text: "Động từ to be (V tobe) quá khứ: I/He/She/It → was.", example: "I was tired." },
     { text: "You/We/They → were.", example: "They were happy." },
   ],
   19: [
-    { text: "Did + S + V (nguyên mẫu)? — mọi chủ ngữ.", example: "Did you study?" },
+    { text: "Did + chủ ngữ (S) + động từ (V) nguyên mẫu? — mọi chủ ngữ (S).", example: "Did you study?" },
     { text: "Trả lời: Yes, I did. / No, I didn't.", example: "Did she go? — Yes, she did." },
   ],
   20: [
-    { text: "S + didn't + V (nguyên mẫu).", example: "I didn't study." },
+    { text: "Chủ ngữ (S) + didn't + động từ (V) nguyên mẫu.", example: "I didn't study." },
     { text: "She didn't go to school.", example: "Cô ấy không đi học." },
   ],
   21: [
@@ -88,19 +88,19 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
     { text: "Sai nhiều → ôn ngày 16, 17, 18.", example: "Chép lại câu đúng 2 lần." },
   ],
   22: [
-    { text: "Will + V = tương lai.", example: "I will study tomorrow." },
+    { text: "Will + động từ (V) = tương lai.", example: "I will study tomorrow." },
     { text: "Quyết định lúc nói hoặc dự đoán.", example: "It will rain." },
   ],
   23: [
     { text: "Won't = will not.", example: "I won't go." },
-    { text: "S + won't + V.", example: "She won't study tonight." },
+    { text: "Chủ ngữ (S) + won't + động từ (V).", example: "She won't study tonight." },
   ],
   24: [
-    { text: "Will + S + V?", example: "Will you study?" },
+    { text: "Will + chủ ngữ (S) + động từ (V)?", example: "Will you study?" },
     { text: "What will you do?", example: "I will study English." },
   ],
   25: [
-    { text: "Be going to + V = kế hoạch đã định.", example: "I am going to study tonight." },
+    { text: "Be going to + động từ (V) = kế hoạch đã định.", example: "I am going to study tonight." },
     { text: "She is going to visit her friend.", example: "Cô ấy sắp thăm bạn." },
   ],
   26: [

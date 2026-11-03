@@ -7,8 +7,8 @@ export const practiceDay04: PracticeLesson = {
   hints: {
     rules: getRulesForDay(4, ""),
     vocabulary: [
-      { en: "do", vi: "trợ động từ (I/you/we/they)" },
-      { en: "does", vi: "trợ động từ (he/she/it)" },
+      { en: "do", vi: "trợ động từ (Aux) (I/you/we/they)" },
+      { en: "does", vi: "trợ động từ (Aux) (he/she/it)" },
       { en: "help", vi: "giúp" },
       { en: "know", vi: "biết" },
       { en: "want", vi: "muốn" },
@@ -16,8 +16,8 @@ export const practiceDay04: PracticeLesson = {
       { en: "understand", vi: "hiểu" },
     ],
     grammarNotes: [
-      "Do + I/you/we/they + V.",
-      "Does + he/she/it + V (V không có -s).",
+      "Do + I/you/we/they + động từ (V).",
+      "Does + he/she/it + động từ (V) (không thêm -s).",
       "Do you study? · Does she like music?",
     ],
   },
@@ -35,14 +35,14 @@ export const practiceDay04: PracticeLesson = {
       pairs: [
         {
           id: "p-do",
-          imageAlt: "trợ động từ (I/you/we/they)",
-          label: "trợ động từ (I/you/we/they)",
+          imageAlt: "trợ động từ (Aux) (I/you/we/they)",
+          label: "trợ động từ (Aux) (I/you/we/they)",
           correctWordId: "w-do",
         },
         {
           id: "p-does",
-          imageAlt: "trợ động từ (he/she/it)",
-          label: "trợ động từ (he/she/it)",
+          imageAlt: "trợ động từ (Aux) (he/she/it)",
+          label: "trợ động từ (Aux) (he/she/it)",
           correctWordId: "w-does",
         },
         {

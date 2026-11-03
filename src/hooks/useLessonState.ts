@@ -175,6 +175,23 @@ export function useLessonState() {
     setActiveSection("lesson");
   }, []);
 
+  const openLessonDay = useCallback((month: number, day: number) => {
+    const config = getMonthConfig(month);
+    if (config.status !== "available") return;
+
+    const found = getDayByNumber(month, day);
+    if (!found) return;
+
+    setState((prev) => ({
+      ...prev,
+      month,
+      selectedDay: found.day,
+      week: found.week,
+      activeSection: "lesson",
+      openPracticeDay: null,
+    }));
+  }, []);
+
   const goToNextDay = useCallback(() => {
     setState((prev) => {
       const done = getDoneDays(prev);
@@ -262,6 +279,7 @@ export function useLessonState() {
     setMonth,
     setWeek,
     setSelectedDay,
+    openLessonDay,
     goToNextDay,
     toggleDayDone,
     recordPracticeCompletion,

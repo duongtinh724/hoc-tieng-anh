@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay02: PracticeLesson = {
-  meta: { ...createPracticeMeta(2, "To be: am, is, are"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(2, "To be (V tobe): am, is, are"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(2, ""),
     vocabulary: [
@@ -40,7 +40,7 @@ export const practiceDay02: PracticeLesson = {
     {
       type: "categorize",
       title: "am, is, or are?\nam, is hay are?",
-      instruction: "Drag each subject into the right verb.\nKéo chủ ngữ vào đúng động từ to be.",
+      instruction: "Drag each subject into the right verb.\nKéo chủ ngữ (S) vào đúng động từ to be (V tobe).",
       categories: [
         { id: "cat-am", label: "am" },
         { id: "cat-is", label: "is" },
@@ -78,7 +78,7 @@ export const practiceDay02: PracticeLesson = {
     {
       type: "dropdown",
       title: "Choose am, is, or are.\nChọn am, is hoặc are.",
-      instruction: "Choose the correct verb.\nChọn động từ đúng.",
+      instruction: "Choose the correct verb.\nChọn động từ (V) đúng.",
       questions: [
         { id: "q1", parts: [{ kind: "text", value: "He " }, { kind: "select", id: "q1a", correctOptionId: "q1-ok", options: [{ id: "q1-ok", label: "is" }, { id: "q1-no", label: "am" }, { id: "q1-no2", label: "are" }] }, { kind: "text", value: " tall." }] },
         { id: "q2", parts: [{ kind: "text", value: "We " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "are" }, { id: "q2-no", label: "is" }, { id: "q2-no2", label: "am" }] }, { kind: "text", value: " students." }] },

@@ -70,6 +70,8 @@ export function shuffleScreen(screen: PracticeScreenConfig): PracticeScreenConfi
           options: shuffleArray(question.options),
         })),
       };
+    case "exam":
+      return screen;
     default:
       return screen;
   }

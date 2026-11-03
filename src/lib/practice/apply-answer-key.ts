@@ -102,6 +102,8 @@ export function applyAnswerKey(
         answers[question.id] = question.correctOptionId;
       });
       break;
+    case "exam":
+      break;
   }
 
   return {

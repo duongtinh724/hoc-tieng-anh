@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay02: PracticeLesson = {
-  meta: { ...createPracticeMeta(2, "I / You / We / They + động từ", 2), totalScreens: 9 },
+  meta: { ...createPracticeMeta(2, "I / You / We / They + động từ (V)", 2), totalScreens: 9 },
   hints: {
     rules: getRulesForDay(2, ""),
     vocabulary: [
@@ -16,7 +16,7 @@ export const practiceDay02: PracticeLesson = {
       { en: "watch", vi: "xem" },
     ],
     grammarNotes: [
-      "I / You / We / They + V (nguyên mẫu, không thêm -s).",
+      "I / You / We / They + động từ (V) nguyên mẫu, không thêm -s.",
       "I live in Bắc Ninh. · You work hard.",
       "We study English. · They play football.",
     ],
@@ -24,7 +24,7 @@ export const practiceDay02: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Match the verbs (1).\nNối động từ (1).",
+      title: "Match the verbs (1).\nNối động từ (V) (1).",
       instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-live", label: "live" },
@@ -61,7 +61,7 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "match",
-      title: "Match the verbs (2).\nNối động từ (2).",
+      title: "Match the verbs (2).\nNối động từ (V) (2).",
       instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-drink", label: "drink" },
@@ -91,11 +91,11 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Subject or verb?\nChủ ngữ hay động từ?",
-      instruction: "Drag each word into I/You/We/They or the base verb.\nKéo từ vào đúng nhóm: I/You/We/They hoặc động từ nguyên mẫu.",
+      title: "Subject or verb?\nChủ ngữ (S) hay động từ (V)?",
+      instruction: "Drag each word into I/You/We/They or the base verb.\nKéo từ vào đúng nhóm: I/You/We/They hoặc động từ (V) nguyên mẫu.",
       categories: [
         { id: "cat-subj", label: "I / You / We / They" },
-        { id: "cat-verb", label: "Động từ (nguyên mẫu)" },
+        { id: "cat-verb", label: "Động từ (V) nguyên mẫu" },
       ],
       items: [
         { id: "c-i", label: "I", correctCategoryId: "cat-subj" },
@@ -111,8 +111,8 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Fill in the base verb.\nĐiền động từ nguyên mẫu.",
-      instruction: "Drag the verb into the blank. The subject is I, You, We, or They.\nKéo động từ vào chỗ trống. Chủ ngữ là I, You, We hoặc They.",
+      title: "Fill in the base verb.\nĐiền động từ (V) nguyên mẫu.",
+      instruction: "Drag the verb into the blank. The subject is I, You, We, or They.\nKéo động từ (V) vào chỗ trống. Chủ ngữ (S) là I, You, We hoặc They.",
       wordBank: [
         { id: "s-live", label: "live" },
         { id: "s-work", label: "work" },
@@ -174,8 +174,8 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Choose the correct verb.\nChọn động từ đúng.",
-      instruction: "Complete the sentence: I / You / We / They + base verb.\nHoàn thành câu với I / You / We / They + động từ nguyên mẫu.",
+      title: "Choose the correct verb.\nChọn động từ (V) đúng.",
+      instruction: "Complete the sentence: I / You / We / They + base verb.\nHoàn thành câu với I / You / We / They + động từ (V) nguyên mẫu.",
       questions: [
         {
           id: "q1",
@@ -257,7 +257,7 @@ export const practiceDay02: PracticeLesson = {
       type: "reorder",
       title: "Order the dialogue.\nSắp xếp hội thoại.",
       instruction:
-        "Put the lines in order. Each line uses I, You, We, or They + a base verb.\nSắp xếp các câu theo đúng thứ tự hội thoại. Mỗi câu có I, You, We hoặc They + động từ nguyên mẫu.",
+        "Put the lines in order. Each line uses I, You, We, or They + a base verb.\nSắp xếp các câu theo đúng thứ tự hội thoại. Mỗi câu có I, You, We hoặc They + động từ (V) nguyên mẫu.",
       fixedFirst: true,
       lines: [
         { id: "r1", text: "Nam: I live in Bắc Ninh." },
@@ -272,7 +272,7 @@ export const practiceDay02: PracticeLesson = {
       type: "reading-fill",
       title: "Nam's day.\nMột ngày của Nam.",
       instruction:
-        "Read the passage and fill in a verb (live, work, play, eat, drink, read, watch).\nĐọc đoạn văn và điền động từ (live, work, play, eat, drink, read, watch).",
+        "Read the passage and fill in a verb (live, work, play, eat, drink, read, watch).\nĐọc đoạn văn và điền động từ (V) (live, work, play, eat, drink, read, watch).",
       passage:
         "Nam and his friends talk about daily life. I live in Bắc Ninh. You work hard at school. We study and read English every day. They play football after class. I eat breakfast at 6 and drink water. In the evening we watch TV together. I, you, we, they — all use the base verb, no -s.",
       prompts: [

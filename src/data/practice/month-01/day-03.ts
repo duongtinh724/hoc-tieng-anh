@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay03: PracticeLesson = {
-  meta: { ...createPracticeMeta(3, "Câu khẳng định với to be"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(3, "Câu khẳng định với to be (V tobe)"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(3, ""),
     vocabulary: [
@@ -36,11 +36,11 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "Noun, adjective, or place?\nDanh từ, tính từ hay nơi chốn?",
+      title: "Noun, adjective, or place?\nDanh từ (N), tính từ (Adj) hay nơi chốn?",
       instruction: "Drag each sentence into the right group.\nKéo câu vào đúng nhóm.",
       categories: [
-        { id: "cat-noun", label: "+ danh từ" },
-        { id: "cat-adj", label: "+ tính từ" },
+        { id: "cat-noun", label: "+ danh từ (N)" },
+        { id: "cat-adj", label: "+ tính từ (Adj)" },
         { id: "cat-place", label: "+ nơi chốn" },
       ],
       items: [

@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay09: PracticeLesson = {
-  meta: { ...createPracticeMeta(9, "Danh từ số ít và số nhiều"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(9, "Danh từ (N) số ít và số nhiều"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(9, ""),
     vocabulary: [
@@ -39,7 +39,7 @@ export const practiceDay09: PracticeLesson = {
     {
       type: "categorize",
       title: "Singular or plural?\nSố ít hay số nhiều?",
-      instruction: "Drag each noun into singular or plural.\nKéo danh từ vào số ít hoặc số nhiều.",
+      instruction: "Drag each noun into singular or plural.\nKéo danh từ (N) vào số ít hoặc số nhiều.",
       categories: [
         { id: "cat-one", label: "Số ít" },
         { id: "cat-many", label: "Số nhiều" },
@@ -57,7 +57,7 @@ export const practiceDay09: PracticeLesson = {
     {
       type: "dictation",
       title: "Write the plural.\nViết số nhiều.",
-      instruction: "Read the singular noun. Write the plural.\nĐọc danh từ số ít. Viết dạng số nhiều.",
+      instruction: "Read the singular noun. Write the plural.\nĐọc danh từ (N) số ít. Viết dạng số nhiều.",
       promptLabel: "Số ít",
       inputPlaceholder: "Viết số nhiều",
       doneMessage: "Bạn đã viết xong các dạng số nhiều. Bấm Tiếp.",
@@ -75,7 +75,7 @@ export const practiceDay09: PracticeLesson = {
     {
       type: "dropdown",
       title: "is or are?\nis hay are?",
-      instruction: "A plural noun goes with are.\nDanh từ số nhiều đi với are.",
+      instruction: "A plural noun goes with are.\nDanh từ (N) số nhiều đi với are.",
       questions: [
         { id: "q1", parts: [{ kind: "text", value: "The book " }, { kind: "select", id: "q1a", correctOptionId: "q1-ok", options: [{ id: "q1-ok", label: "is" }, { id: "q1-no", label: "are" }] }, { kind: "text", value: " new." }] },
         { id: "q2", parts: [{ kind: "text", value: "The students " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "are" }, { id: "q2-no", label: "is" }] }, { kind: "text", value: " happy." }] },
@@ -119,7 +119,7 @@ export const practiceDay09: PracticeLesson = {
     {
       type: "sentence-drag",
       title: "Change to plural.\nĐổi sang số nhiều.",
-      instruction: "Drag the plural noun into the blank.\nKéo danh từ số nhiều vào chỗ trống.",
+      instruction: "Drag the plural noun into the blank.\nKéo danh từ (N) số nhiều vào chỗ trống.",
       wordBank: [
         { id: "s1", label: "books" },
         { id: "s2", label: "students" },
@@ -136,7 +136,7 @@ export const practiceDay09: PracticeLesson = {
     {
       type: "self-writing",
       title: "Count and describe.\nĐếm và mô tả.",
-      instruction: "Write 5 sentences. Use both singular and plural nouns.\nViết 5 câu. Có cả danh từ số ít và số nhiều.",
+      instruction: "Write 5 sentences. Use both singular and plural nouns.\nViết 5 câu. Có cả danh từ (N) số ít và số nhiều.",
       promptHints: ["One book, two books.", "The book is new.", "The books are new."],
       sampleTitle: "Bài gợi ý",
       sample: "The book is new.\nThe books are old.\nThe student is tall.\nThe students are happy.\nThe children are here.",

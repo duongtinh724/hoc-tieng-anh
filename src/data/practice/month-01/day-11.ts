@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay11: PracticeLesson = {
-  meta: { ...createPracticeMeta(11, "Mạo từ the"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(11, "Mạo từ (Art) the"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(11, ""),
     vocabulary: [
@@ -36,11 +36,11 @@ export const practiceDay11: PracticeLesson = {
     },
     {
       type: "categorize",
-      title: "the or no article?\nthe hay không mạo từ?",
+      title: "the or no article?\nthe hay không mạo từ (Art)?",
       instruction: "Drag each phrase into the right group.\nKéo cụm từ vào đúng nhóm.",
       categories: [
         { id: "cat-the", label: "Dùng the" },
-        { id: "cat-zero", label: "Không mạo từ" },
+        { id: "cat-zero", label: "Không mạo từ (Art)" },
       ],
       items: [
         { id: "c-1", label: "The book is blue.", correctCategoryId: "cat-the" },
@@ -54,7 +54,7 @@ export const practiceDay11: PracticeLesson = {
     {
       type: "dropdown",
       title: "a, an, the, or nothing?\na, an, the hay không?",
-      instruction: "Choose a, an, the, or — if no article is needed.\nChọn a, an, the, hoặc — nếu không cần mạo từ.",
+      instruction: "Choose a, an, the, or — if no article is needed.\nChọn a, an, the, hoặc — nếu không cần mạo từ (Art).",
       questions: [
         { id: "q1", parts: [{ kind: "text", value: "I have " }, { kind: "select", id: "q1a", correctOptionId: "q1-ok", options: [{ id: "q1-ok", label: "a" }, { id: "q1-no", label: "the" }, { id: "q1-no2", label: "—" }] }, { kind: "text", value: " cat." }] },
         { id: "q2", parts: [{ kind: "text", value: "The cat is black. She is " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "an" }, { id: "q2-no", label: "a" }, { id: "q2-no2", label: "—" }] }, { kind: "text", value: " English teacher." }] },
@@ -103,7 +103,7 @@ export const practiceDay11: PracticeLesson = {
     {
       type: "reading-fill",
       title: "Fill the line.\nĐiền vào dòng.",
-      instruction: "Type a, an, the, or - if no article is needed.\nGõ a, an, the, hoặc - nếu không cần mạo từ.",
+      instruction: "Type a, an, the, or - if no article is needed.\nGõ a, an, the, hoặc - nếu không cần mạo từ (Art).",
       passage: "I have a cat. The cat is black. Water is important. I like dogs. English is useful.",
       prompts: [
         { id: "rf1", label: "I have ___ cat.", correctAnswers: ["a"] },
@@ -127,7 +127,7 @@ export const practiceDay11: PracticeLesson = {
     {
       type: "self-writing",
       title: "Two sentences, then a like.\nHai câu, rồi một sở thích.",
-      instruction: "Write 5 sentences. Use a, an, the, and one sentence with no article.\nViết 5 câu. Có a, an, the, và một câu không mạo từ.",
+      instruction: "Write 5 sentences. Use a, an, the, and one sentence with no article.\nViết 5 câu. Có a, an, the, và một câu không mạo từ (Art).",
       promptHints: ["I have a bag.", "The bag is black.", "I like books.", "English is interesting."],
       sampleTitle: "Bài gợi ý",
       sample: "I have a bag.\nThe bag is black.\nThis is an apple.\nI like books.\nEnglish is interesting.",

@@ -53,7 +53,9 @@ export function PracticeMenuPanel({
             day.day,
           );
           const tier = getPracticeCompletionTier(completionCount);
-          const isQuiz = practice?.screens.some((screen) => screen.type === "quiz") ?? false;
+          const isQuiz =
+            practice?.screens.some((screen) => screen.type === "quiz" || screen.type === "exam") ??
+            false;
           const isTest = /kiểm tra/i.test(day.title);
           const isReview = /^ôn/i.test(day.title);
           const quizScore = quizScores[`${monthConfig.id}-${day.day}`];

@@ -16,8 +16,8 @@ export const practiceDay05: PracticeLesson = {
       { en: "prefer", vi: "thích hơn" },
     ],
     grammarNotes: [
-      "I/You/We/They + don't + V.",
-      "He/She/It + doesn't + V (V nguyên mẫu).",
+      "I/You/We/They + don't + động từ (V).",
+      "He/She/It + doesn't + động từ (V) nguyên mẫu.",
       "I don't like coffee. · She doesn't play games.",
     ],
   },

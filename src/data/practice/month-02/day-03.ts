@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay03: PracticeLesson = {
-  meta: { ...createPracticeMeta(3, "He / She / It + động từ -s", 2), totalScreens: 9 },
+  meta: { ...createPracticeMeta(3, "He / She / It + động từ (V) -s", 2), totalScreens: 9 },
   hints: {
     rules: getRulesForDay(3, ""),
     vocabulary: [
@@ -16,7 +16,7 @@ export const practiceDay03: PracticeLesson = {
       { en: "teaches", vi: "dạy (he/she/it)" },
     ],
     grammarNotes: [
-      "He / She / It + V-s.",
+      "He / She / It + động từ (V-s).",
       "watch → watches, go → goes, study → studies.",
       "He goes to school. · She studies English.",
     ],
@@ -24,7 +24,7 @@ export const practiceDay03: PracticeLesson = {
   screens: [
     {
       type: "match",
-      title: "Match -s verbs (1).\nNối động từ -s (1).",
+      title: "Match -s verbs (1).\nNối động từ (V) -s (1).",
       instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-goes", label: "goes" },
@@ -61,7 +61,7 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "match",
-      title: "Match -s verbs (2).\nNối động từ -s (2).",
+      title: "Match -s verbs (2).\nNối động từ (V) -s (2).",
       instruction: "Match the English word with its meaning.\nNối từ tiếng Anh với nghĩa tiếng Việt.",
       words: [
         { id: "w-plays", label: "plays" },
@@ -92,7 +92,7 @@ export const practiceDay03: PracticeLesson = {
     {
       type: "categorize",
       title: "Base verb or -s/-es?\nNguyên mẫu hay -s/-es?",
-      instruction: "Drag each verb into the right group.\nKéo động từ vào đúng nhóm.",
+      instruction: "Drag each verb into the right group.\nKéo động từ (V) vào đúng nhóm.",
       categories: [
         { id: "cat-base", label: "Nguyên mẫu (I/You/We/They)" },
         { id: "cat-s", label: "He/She/It (+ -s/-es)" },
@@ -112,8 +112,8 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "sentence-drag",
-      title: "Fill in the -s/-es verb.\nĐiền động từ -s/-es.",
-      instruction: "Drag the correct verb into the blank. The subject is He, She, or It.\nKéo động từ đúng vào chỗ trống. Chủ ngữ là He, She hoặc It.",
+      title: "Fill in the -s/-es verb.\nĐiền động từ (V) -s/-es.",
+      instruction: "Drag the correct verb into the blank. The subject is He, She, or It.\nKéo động từ (V) đúng vào chỗ trống. Chủ ngữ (S) là He, She hoặc It.",
       wordBank: [
         { id: "s-goes", label: "goes" },
         { id: "s-studies", label: "studies" },
@@ -175,8 +175,8 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "dropdown",
-      title: "Choose the correct -s verb.\nChọn động từ -s đúng.",
-      instruction: "Complete the sentence: He / She / It + verb-s.\nHoàn thành câu với He / She / It + V-s.",
+      title: "Choose the correct -s verb.\nChọn động từ (V) -s đúng.",
+      instruction: "Complete the sentence: He / She / It + verb-s.\nHoàn thành câu với He / She / It + động từ (V-s).",
       questions: [
         {
           id: "q1",
@@ -258,7 +258,7 @@ export const practiceDay03: PracticeLesson = {
       type: "reorder",
       title: "Order the dialogue.\nSắp xếp hội thoại.",
       instruction:
-        "Put the lines in order. The dialogue uses He / She + verb-s.\nSắp xếp các câu theo đúng thứ tự hội thoại về He / She + động từ -s.",
+        "Put the lines in order. The dialogue uses He / She + verb-s.\nSắp xếp các câu theo đúng thứ tự hội thoại về He / She + động từ (V) -s.",
       fixedFirst: true,
       lines: [
         { id: "r1", text: "Nam: He goes to school." },
@@ -273,7 +273,7 @@ export const practiceDay03: PracticeLesson = {
       type: "reading-fill",
       title: "He and She.\nHe và She.",
       instruction:
-        "Read the passage and fill in a verb (goes, studies, watches, likes, plays, works, teaches).\nĐọc đoạn văn và điền động từ (goes, studies, watches, likes, plays, works, teaches).",
+        "Read the passage and fill in a verb (goes, studies, watches, likes, plays, works, teaches).\nĐọc đoạn văn và điền động từ (V) (goes, studies, watches, likes, plays, works, teaches).",
       passage:
         "Lan talks about her friends. He goes to school every day. She studies English with Nam. My teacher teaches math and English. He watches TV at night. She likes music and plays football on Sunday. It often rains in summer. Remember: he, she, it → verb + s or es.",
       prompts: [
@@ -350,7 +350,7 @@ export const practiceDay03: PracticeLesson = {
       type: "self-writing",
       title: "Write He / She + -s sentences.\nViết câu He / She + -s.",
       instruction:
-        "Write 3 sentences with He or She + a verb ending in -s/-es.\nViết 3 câu với He hoặc She + động từ có -s/-es (goes, studies, watches, likes, plays, teaches).",
+        "Write 3 sentences with He or She + a verb ending in -s/-es.\nViết 3 câu với He hoặc She + động từ (V) có -s/-es (goes, studies, watches, likes, plays, teaches).",
       promptHints: [
         "He goes to school.",
         "She studies English.",

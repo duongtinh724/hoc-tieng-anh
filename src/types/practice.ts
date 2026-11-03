@@ -243,6 +243,68 @@ export interface SelfWritingExerciseConfig {
   sample: string;
 }
 
+export type ExamQuestionKind =
+  | "multiple_choice"
+  | "error_correction"
+  | "reading"
+  | "transformation"
+  | "writing";
+
+export interface ExamChoice {
+  id: string;
+  label: string;
+}
+
+export interface ExamQuestion {
+  id: string;
+  number: number;
+  kind: ExamQuestionKind;
+  prompt: string;
+  /** Extra line under the prompt, such as a source sentence. */
+  source?: string;
+  points: number;
+  topic: string;
+  options?: ExamChoice[];
+  passageId?: string;
+}
+
+export interface ExamSection {
+  id: string;
+  title: string;
+  instruction: string;
+  /** What this part tests, shown on the start page. */
+  purpose: string;
+  maxScore: number;
+  questionIds: string[];
+}
+
+export interface ExamPassage {
+  id: string;
+  title: string;
+  paragraphs: string[];
+}
+
+export interface ExamAnswerKey {
+  /** Option id, accepted sentences, or writing marker. */
+  answers: Record<string, string | string[]>;
+  explanations: Record<string, string>;
+}
+
+export interface ExamExerciseConfig {
+  type: "exam";
+  title: string;
+  subtitle: string;
+  level: string;
+  instruction: string;
+  timeLimitSeconds: number;
+  maxScore: number;
+  passScore: number;
+  sections: ExamSection[];
+  passages: ExamPassage[];
+  questions: ExamQuestion[];
+  key: ExamAnswerKey;
+}
+
 export type PracticeScreenConfig =
   | MatchExerciseConfig
   | DialogueFillExerciseConfig
@@ -254,7 +316,8 @@ export type PracticeScreenConfig =
   | ExtendedReadingExerciseConfig
   | DictationExerciseConfig
   | QuizExerciseConfig
-  | SelfWritingExerciseConfig;
+  | SelfWritingExerciseConfig
+  | ExamExerciseConfig;
 
 export interface PracticeLesson {
   meta: PracticeLessonMeta;

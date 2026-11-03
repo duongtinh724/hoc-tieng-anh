@@ -16,7 +16,7 @@ export const practiceDay06: PracticeLesson = {
       { en: "exercise", vi: "tập thể dục" },
     ],
     grammarNotes: [
-      "Wh- + do/does + S + V?",
+      "Wh- + do/does + chủ ngữ (S) + động từ (V)?",
       "What do you study? · Where does she live?",
       "How often do you exercise? · What time does school start?",
     ],

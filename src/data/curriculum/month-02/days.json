@@ -90,9 +90,9 @@
   {
     "day": 2,
     "week": 1,
-    "title": "I / You / We / They + động từ",
-    "aim": "Chia đúng động từ nguyên mẫu với I, you, we, they.",
-    "rule": "I / You / We / They + V (nguyên mẫu, không thêm -s). Ví dụ: I study. You work. We play. They like music.",
+    "title": "I / You / We / They + động từ (V)",
+    "aim": "Chia đúng động từ (V) nguyên mẫu với I, you, we, they.",
+    "rule": "I / You / We / They + động từ (V) nguyên mẫu, không thêm -s. Ví dụ: I study. You work. We play. They like music.",
     "words": [
       {
         "en": "live",
@@ -150,7 +150,7 @@
       }
     ],
     "copy": [
-      "Viết bảng: I/You/We/They + V (nguyên mẫu).",
+      "Viết bảng: I/You/We/They + động từ (V) nguyên mẫu.",
       "Chép 6 câu nghe. Đọc to 3 vòng."
     ],
     "exercise": [
@@ -178,9 +178,9 @@
   {
     "day": 3,
     "week": 1,
-    "title": "He / She / It + động từ -s",
-    "aim": "Thêm -s/-es vào động từ khi chủ ngữ là he, she, it.",
-    "rule": "He / She / It + V-s. Quy tắc: thêm -s (play → plays). Đuôi -s/-sh/-ch/-x/-o: thêm -es (watch → watches, go → goes). Đuôi -y (có nguyên âm trước): đổi y→ies (study → studies).",
+    "title": "He / She / It + động từ (V) -s",
+    "aim": "Thêm -s/-es vào động từ (V) khi chủ ngữ (S) là he, she, it.",
+    "rule": "He / She / It + động từ (V-s). Quy tắc: thêm -s (play → plays). Đuôi -s/-sh/-ch/-x/-o: thêm -es (watch → watches, go → goes). Đuôi -y (có nguyên âm trước): đổi y→ies (study → studies).",
     "words": [
       {
         "en": "goes",
@@ -268,15 +268,15 @@
     "week": 1,
     "title": "Do / Does",
     "aim": "Dùng do/does trong câu hỏi và phủ định Present Simple.",
-    "rule": "Do + I/you/we/they + V. Does + he/she/it + V (V không có -s). Ví dụ: Do you study? Does she like music? Does he go to school?",
+    "rule": "Do + I/you/we/they + động từ (V). Does + he/she/it + động từ (V) (không thêm -s). Ví dụ: Do you study? Does she like music? Does he go to school?",
     "words": [
       {
         "en": "do",
-        "vi": "trợ động từ (I/you/we/they)"
+        "vi": "trợ động từ (Aux) (I/you/we/they)"
       },
       {
         "en": "does",
-        "vi": "trợ động từ (he/she/it)"
+        "vi": "trợ động từ (Aux) (he/she/it)"
       },
       {
         "en": "help",
@@ -326,7 +326,7 @@
       }
     ],
     "copy": [
-      "Viết bảng: Do + I/you/we/they + V · Does + he/she/it + V.",
+      "Viết bảng: Do + I/you/we/they + động từ (V) · Does + he/she/it + động từ (V).",
       "Chép 6 câu hỏi nghe."
     ],
     "exercise": [
@@ -356,7 +356,7 @@
     "week": 1,
     "title": "Don't / Doesn't",
     "aim": "Làm câu phủ định Present Simple với don't và doesn't.",
-    "rule": "I/You/We/They + don't + V. He/She/It + doesn't + V (V nguyên mẫu). Ví dụ: I don't like coffee. She doesn't play games.",
+    "rule": "I/You/We/They + don't + động từ (V). He/She/It + doesn't + động từ (V) nguyên mẫu. Ví dụ: I don't like coffee. She doesn't play games.",
     "words": [
       {
         "en": "don't",
@@ -414,7 +414,7 @@
       }
     ],
     "copy": [
-      "Viết bảng: don't / doesn't + V (nguyên mẫu).",
+      "Viết bảng: don't / doesn't + động từ (V) nguyên mẫu.",
       "Chép 6 câu phủ định nghe."
     ],
     "exercise": [
@@ -444,7 +444,7 @@
     "week": 1,
     "title": "Câu hỏi Present Simple",
     "aim": "Đặt câu hỏi Wh- với do/does trong Present Simple.",
-    "rule": "Wh- + do/does + S + V? Ví dụ: What do you study? Where does she live? When do they play? How often do you exercise?",
+    "rule": "Wh- + do/does + chủ ngữ (S) + động từ (V)? Ví dụ: What do you study? Where does she live? When do they play? How often do you exercise?",
     "words": [
       {
         "en": "how often",
@@ -502,7 +502,7 @@
       }
     ],
     "copy": [
-      "Viết mẫu: Wh- + do/does + S + V?",
+      "Viết mẫu: Wh- + do/does + chủ ngữ (S) + động từ (V)?",
       "Chép 6 câu hỏi nghe. Trả lời 2 câu bằng miệng."
     ],
     "exercise": [
@@ -569,7 +569,7 @@
       "Không chép bài mới. Làm thẳng vào vở kiểm tra."
     ],
     "exercise": [
-      "A. Chia động từ (8 điểm): 1. I ___ English.  2. She ___ to school.  3. They ___ football.  4. He ___ TV.",
+      "A. Chia động từ (V) (8 điểm): 1. I ___ English.  2. She ___ to school.  3. They ___ football.  4. He ___ TV.",
       "5. We ___ in Bắc Ninh.  6. It ___ a lot.  7. My teacher ___ math.  8. I ___ breakfast at 6.",
       "B. Do/Does/Don't/Doesn't (6 điểm): 9. ___ you study?  10. ___ she like music?  11. I ___ like coffee.  12. He ___ eat meat.",
       "C. Câu hỏi + trả lời (4 điểm): 13. What do you study? → trả lời  14. Where does Nam live? → trả lời",
@@ -587,9 +587,9 @@
   {
     "day": 8,
     "week": 2,
-    "title": "Present Continuous: am/is/are + V-ing",
-    "aim": "Hiểu cấu trúc am/is/are + V-ing và khi nào dùng.",
-    "rule": "Present Continuous = đang làm gì đó NGAY BÂY GIỜ hoặc quanh thời điểm nói. Cấu trúc: am/is/are + V-ing. Dấu hiệu: now, at the moment, right now.",
+    "title": "Present Continuous: am/is/are + động từ (V-ing)",
+    "aim": "Hiểu cấu trúc am/is/are + động từ (V-ing) và khi nào dùng.",
+    "rule": "Present Continuous = đang làm gì đó NGAY BÂY GIỜ hoặc quanh thời điểm nói. Cấu trúc: am/is/are + động từ (V-ing). Dấu hiệu: now, at the moment, right now.",
     "words": [
       {
         "en": "now",
@@ -647,7 +647,7 @@
       }
     ],
     "copy": [
-      "Viết bảng: am/is/are + V-ing. Ghi dấu hiệu: now, at the moment.",
+      "Viết bảng: am/is/are + động từ (V-ing). Ghi dấu hiệu: now, at the moment.",
       "Chép 6 câu nghe."
     ],
     "exercise": [
@@ -676,8 +676,8 @@
     "day": 9,
     "week": 2,
     "title": "I am doing...",
-    "aim": "Dùng I am + V-ing để nói việc mình đang làm.",
-    "rule": "I am + V-ing. Quy tắc V-ing: thêm -ing (play → playing). Đuôi -e: bỏ e (make → making). Đuôi ngắn gấp đôi: run → running, sit → sitting.",
+    "aim": "Dùng I am + động từ (V-ing) để nói việc mình đang làm.",
+    "rule": "I am + động từ (V-ing). Quy tắc V-ing: thêm -ing (play → playing). Đuôi -e: bỏ e (make → making). Đuôi ngắn gấp đôi: run → running, sit → sitting.",
     "words": [
       {
         "en": "am doing",
@@ -736,7 +736,7 @@
     ],
     "copy": [
       "Viết quy tắc V-ing: play→playing, write→writing, run→running.",
-      "Chép 6 câu I am + V-ing."
+      "Chép 6 câu I am + động từ (V-ing)."
     ],
     "exercise": [
       "1. I ___ ___ my homework.",
@@ -764,8 +764,8 @@
     "day": 10,
     "week": 2,
     "title": "He is doing...",
-    "aim": "Dùng is + V-ing với he, she, it.",
-    "rule": "He/She/It + is + V-ing. Ví dụ: He is studying. She is cooking. It is raining. Chú ý: is không đổi, chỉ V thêm -ing.",
+    "aim": "Dùng is + động từ (V-ing) với he, she, it.",
+    "rule": "He/She/It + is + động từ (V-ing). Ví dụ: He is studying. She is cooking. It is raining. Chú ý: is không đổi, chỉ V thêm -ing.",
     "words": [
       {
         "en": "is doing",
@@ -823,7 +823,7 @@
       }
     ],
     "copy": [
-      "Viết bảng: He/She/It + is + V-ing.",
+      "Viết bảng: He/She/It + is + động từ (V-ing).",
       "Chép 6 câu nghe."
     ],
     "exercise": [
@@ -852,8 +852,8 @@
     "day": 11,
     "week": 2,
     "title": "They are doing...",
-    "aim": "Dùng are + V-ing với you, we, they.",
-    "rule": "You/We/They + are + V-ing. Ví dụ: We are studying. They are playing. You are listening.",
+    "aim": "Dùng are + động từ (V-ing) với you, we, they.",
+    "rule": "You/We/They + are + động từ (V-ing). Ví dụ: We are studying. They are playing. You are listening.",
     "words": [
       {
         "en": "are doing",
@@ -911,7 +911,7 @@
       }
     ],
     "copy": [
-      "Viết bảng: You/We/They + are + V-ing.",
+      "Viết bảng: You/We/They + are + động từ (V-ing).",
       "Chép 6 câu nghe."
     ],
     "exercise": [
@@ -940,8 +940,8 @@
     "day": 12,
     "week": 2,
     "title": "Phủ định Present Continuous",
-    "aim": "Làm câu phủ định với am not / isn't / aren't + V-ing.",
-    "rule": "Phủ định: am not / is not (isn't) / are not (aren't) + V-ing. Ví dụ: I am not sleeping. She isn't studying. They aren't playing.",
+    "aim": "Làm câu phủ định với am not / isn't / aren't + động từ (V-ing).",
+    "rule": "Phủ định: am not / is not (isn't) / are not (aren't) + động từ (V-ing). Ví dụ: I am not sleeping. She isn't studying. They aren't playing.",
     "words": [
       {
         "en": "isn't",
@@ -999,7 +999,7 @@
       }
     ],
     "copy": [
-      "Viết bảng phủ định: am not / isn't / aren't + V-ing.",
+      "Viết bảng phủ định: am not / isn't / aren't + động từ (V-ing).",
       "Chép 6 câu phủ định nghe."
     ],
     "exercise": [
@@ -1029,7 +1029,7 @@
     "week": 2,
     "title": "Câu hỏi Present Continuous",
     "aim": "Đặt câu hỏi Yes/No và Wh- với Present Continuous.",
-    "rule": "Yes/No: Am/Is/Are + S + V-ing? Wh-: What + am/is/are + S + V-ing? Ví dụ: Are you studying? What is she doing?",
+    "rule": "Yes/No: Am/Is/Are + chủ ngữ (S) + động từ (V-ing)? Wh-: What + am/is/are + chủ ngữ (S) + động từ (V-ing)? Ví dụ: Are you studying? What is she doing?",
     "words": [
       {
         "en": "What are you doing?",
@@ -1087,7 +1087,7 @@
       }
     ],
     "copy": [
-      "Viết mẫu: Am/Is/Are + S + V-ing? · What + am/is/are + S + V-ing?",
+      "Viết mẫu: Am/Is/Are + chủ ngữ (S) + động từ (V-ing)? · What + am/is/are + chủ ngữ (S) + động từ (V-ing)?",
       "Chép 6 câu hỏi nghe."
     ],
     "exercise": [
@@ -1154,7 +1154,7 @@
       "Không chép. Làm bài kiểm tra vào vở."
     ],
     "exercise": [
-      "A. Chọn PS hoặc PC, chia động từ (8 điểm):",
+      "A. Chọn PS hoặc PC, chia động từ (V) (8 điểm):",
       "1. I ___ English every day. (study)  2. I ___ English now. (study)  3. She ___ to school every day. (go)  4. She ___ to school now. (go)",
       "B. Phủ định PC (4 điểm): 5. He is working. →  6. They are playing. →",
       "C. Câu hỏi (4 điểm): 7. ___ you studying?  8. What ___ she ___? (do)  9. Trả lời: Are you free? (No, I am studying.)  10. Trả lời: What is he doing?",
@@ -1260,8 +1260,8 @@
   {
     "day": 16,
     "week": 3,
-    "title": "Động từ có quy tắc: -ed",
-    "aim": "Chia động từ có quy tắc sang dạng quá khứ với -ed.",
+    "title": "Động từ (V) có quy tắc: -ed",
+    "aim": "Chia động từ (V) có quy tắc sang dạng quá khứ với -ed.",
     "rule": "Regular verbs: thêm -ed. play → played, work → worked. Đuôi -e: thêm d (live → lived). Đuôi ngắn gấp đôi: stop → stopped. -y (có phụ âm): study → studied.",
     "words": [
       {
@@ -1343,13 +1343,13 @@
       "7 cleaned",
       "8 mẫu: I played football. I studied English."
     ],
-    "recall": "Nói 3 động từ quá khứ: played, worked, studied."
+    "recall": "Nói 3 động từ (V) quá khứ: played, worked, studied."
   },
   {
     "day": 17,
     "week": 3,
-    "title": "Động từ bất quy tắc",
-    "aim": "Học 7 động từ bất quy tắc thường gặp trong đề thi.",
+    "title": "Động từ (V) bất quy tắc",
+    "aim": "Học 7 động từ (V) bất quy tắc thường gặp trong đề thi.",
     "rule": "Irregular verbs: không thêm -ed, đổi dạng. go→went, eat→ate, see→saw, come→came, get→got, have→had, do→did. Phải học thuộc.",
     "words": [
       {
@@ -1431,14 +1431,14 @@
       "7 đúng nếu nối đủ 3 cặp",
       "8 mẫu: I went to school. She ate breakfast."
     ],
-    "recall": "Đọc to bảng 7 cặp động từ bất quy tắc không nhìn vở."
+    "recall": "Đọc to bảng 7 cặp động từ (V) bất quy tắc không nhìn vở."
   },
   {
     "day": 18,
     "week": 3,
     "title": "Was / Were",
-    "aim": "Dùng was/were (quá khứ của am/is/are) trong Past Simple.",
-    "rule": "I/He/She/It → was. You/We/They → were. Phủ định: wasn't / weren't. Ví dụ: I was tired. They were happy. She was at home.",
+    "aim": "Dùng was/were (quá khứ của động từ to be (V tobe): am/is/are) trong Past Simple.",
+    "rule": "Động từ to be (V tobe) quá khứ: I/He/She/It → was. You/We/They → were. Phủ định: wasn't / weren't. Ví dụ: I was tired. They were happy. She was at home.",
     "words": [
       {
         "en": "was",
@@ -1525,12 +1525,12 @@
     "day": 19,
     "week": 3,
     "title": "Did",
-    "aim": "Dùng did trong câu hỏi Past Simple (mọi chủ ngữ).",
-    "rule": "Câu hỏi: Did + S + V (nguyên mẫu)? Did dùng cho TẤT CẢ chủ ngữ. Ví dụ: Did you study? Did she go? Did they play?",
+    "aim": "Dùng did trong câu hỏi Past Simple (mọi chủ ngữ (S)).",
+    "rule": "Câu hỏi: Did + chủ ngữ (S) + động từ (V) nguyên mẫu? Did dùng cho TẤT CẢ chủ ngữ (S). Ví dụ: Did you study? Did she go? Did they play?",
     "words": [
       {
         "en": "did",
-        "vi": "trợ động từ quá khứ (hỏi)"
+        "vi": "trợ động từ (Aux) quá khứ (hỏi)"
       },
       {
         "en": "Did you...?",
@@ -1584,7 +1584,7 @@
       }
     ],
     "copy": [
-      "Viết mẫu: Did + S + V (nguyên mẫu)?",
+      "Viết mẫu: Did + chủ ngữ (S) + động từ (V) nguyên mẫu?",
       "Chép 6 câu hỏi nghe."
     ],
     "exercise": [
@@ -1613,8 +1613,8 @@
     "day": 20,
     "week": 3,
     "title": "Didn't",
-    "aim": "Làm câu phủ định Past Simple với didn't + V.",
-    "rule": "Phủ định: S + didn't + V (nguyên mẫu). didn't = did not. Ví dụ: I didn't study. She didn't go. They didn't play.",
+    "aim": "Làm câu phủ định Past Simple với didn't + động từ (V).",
+    "rule": "Phủ định: Chủ ngữ (S) + didn't + động từ (V) nguyên mẫu. didn't = did not. Ví dụ: I didn't study. She didn't go. They didn't play.",
     "words": [
       {
         "en": "didn't",
@@ -1672,7 +1672,7 @@
       }
     ],
     "copy": [
-      "Viết mẫu: S + didn't + V (nguyên mẫu).",
+      "Viết mẫu: Chủ ngữ (S) + didn't + động từ (V) nguyên mẫu.",
       "Chép 6 câu phủ định nghe."
     ],
     "exercise": [
@@ -1739,7 +1739,7 @@
       "Không chép. Làm bài kiểm tra vào vở."
     ],
     "exercise": [
-      "A. Chia động từ quá khứ (8 điểm): 1. I ___ English. (study)  2. She ___ to school. (go)  3. They ___ football. (play)  4. He ___ TV. (watch)",
+      "A. Chia động từ (V) quá khứ (8 điểm): 1. I ___ English. (study)  2. She ___ to school. (go)  3. They ___ football. (play)  4. He ___ TV. (watch)",
       "5. We ___ a film. (see)  6. I ___ breakfast. (eat)  7. She ___ home. (come)  8. They ___ in Hanoi. (live)",
       "B. Was/Were (4 điểm): 9. I ___ tired.  10. They ___ happy.  11. She ___ at home.  12. We ___ late.",
       "C. Did/Didn't (4 điểm): 13. ___ you study?  14. I ___ go. (phủ định)  15. Trả lời: Did she go? (Yes)  16. Trả lời: Did they play? (No)",
@@ -1758,8 +1758,8 @@
     "day": 22,
     "week": 4,
     "title": "Will — tương lai",
-    "aim": "Dùng will + V để nói về tương lai (quyết định tức thì, dự đoán).",
-    "rule": "Will + V (nguyên mẫu) = sẽ làm. Dùng cho: quyết định lúc nói (I'll help you), dự đoán (It will rain). Tất cả chủ ngữ dùng will.",
+    "aim": "Dùng will + động từ (V) để nói về tương lai (quyết định tức thì, dự đoán).",
+    "rule": "Will + động từ (V) nguyên mẫu = sẽ làm. Dùng cho: quyết định lúc nói (I'll help you), dự đoán (It will rain). Tất cả chủ ngữ (S) dùng will.",
     "words": [
       {
         "en": "will",
@@ -1817,7 +1817,7 @@
       }
     ],
     "copy": [
-      "Viết bảng: will + V (mọi chủ ngữ). Dấu hiệu: tomorrow, next..., soon.",
+      "Viết bảng: will + động từ (V) (mọi chủ ngữ (S)). Dấu hiệu: tomorrow, next..., soon.",
       "Chép 6 câu nghe."
     ],
     "exercise": [
@@ -1847,7 +1847,7 @@
     "week": 4,
     "title": "Won't — phủ định will",
     "aim": "Làm câu phủ định tương lai với won't (will not).",
-    "rule": "Won't = will not. S + won't + V. Ví dụ: I won't go. She won't study. They won't play.",
+    "rule": "Won't = will not. Chủ ngữ (S) + won't + động từ (V). Ví dụ: I won't go. She won't study. They won't play.",
     "words": [
       {
         "en": "won't",
@@ -1905,7 +1905,7 @@
       }
     ],
     "copy": [
-      "Viết mẫu: S + won't + V.",
+      "Viết mẫu: Chủ ngữ (S) + won't + động từ (V).",
       "Chép 6 câu phủ định nghe."
     ],
     "exercise": [
@@ -1935,7 +1935,7 @@
     "week": 4,
     "title": "Câu hỏi với will",
     "aim": "Đặt câu hỏi Yes/No và Wh- với will.",
-    "rule": "Yes/No: Will + S + V? Wh-: What/When/Where + will + S + V? Ví dụ: Will you study? What will you do?",
+    "rule": "Yes/No: Will + chủ ngữ (S) + động từ (V)? Wh-: What/When/Where + will + chủ ngữ (S) + động từ (V)? Ví dụ: Will you study? What will you do?",
     "words": [
       {
         "en": "Will you...?",
@@ -1993,7 +1993,7 @@
       }
     ],
     "copy": [
-      "Viết mẫu: Will + S + V? · What will + S + V?",
+      "Viết mẫu: Will + chủ ngữ (S) + động từ (V)? · What will + chủ ngữ (S) + động từ (V)?",
       "Chép 6 câu hỏi nghe."
     ],
     "exercise": [
@@ -2022,8 +2022,8 @@
     "day": 25,
     "week": 4,
     "title": "Be going to",
-    "aim": "Dùng be going to + V cho kế hoạch đã định trước.",
-    "rule": "Be going to + V = dự định/kế hoạch. I am going to study. She is going to visit. They are going to play. Khác will: going to = đã có kế hoạch.",
+    "aim": "Dùng be going to + động từ (V) cho kế hoạch đã định trước.",
+    "rule": "Be going to + động từ (V) = dự định/kế hoạch. I am going to study. She is going to visit. They are going to play. Khác will: going to = đã có kế hoạch.",
     "words": [
       {
         "en": "going to",
@@ -2081,7 +2081,7 @@
       }
     ],
     "copy": [
-      "Viết bảng: am/is/are + going to + V.",
+      "Viết bảng: am/is/are + going to + động từ (V).",
       "Chép 6 câu nghe."
     ],
     "exercise": [
@@ -2257,7 +2257,7 @@
       }
     ],
     "copy": [
-      "Viết mẫu: am/is/are + V-ing + thời gian tương lai.",
+      "Viết mẫu: am/is/are + động từ (V-ing) + thời gian tương lai.",
       "Chép 6 câu nghe."
     ],
     "exercise": [
@@ -2287,7 +2287,7 @@
     "week": 4,
     "title": "Ôn tuần 4 — Future",
     "aim": "Ôn will, won't, going to, PC for future. Không từ mới.",
-    "rule": "Ôn 4 cách nói tương lai: will, won't, going to, am/is/are + V-ing + future time. Mục tiêu: ≥ 16/20 ý trước ngày 29–30.",
+    "rule": "Ôn 4 cách nói tương lai: will, won't, going to, am/is/are + động từ (V-ing) + future time. Mục tiêu: ≥ 16/20 ý trước ngày 29–30.",
     "words": [
       {
         "en": "Ôn ngày 22–27",
@@ -2382,7 +2382,7 @@
       "Làm bài tập trước, không chép hết 30 câu."
     ],
     "exercise": [
-      "Điền hoặc chia động từ (30 câu, 1 điểm/câu):",
+      "Điền hoặc chia động từ (V) (30 câu, 1 điểm/câu):",
       "1. I ___ English every day.  2. She ___ to school.  3. They ___ football on Sunday.  4. He ___ TV every night.",
       "5. ___ you study?  6. ___ she like music?  7. I ___ like coffee.  8. He ___ eat meat.",
       "9. I ___ ___ now. (study)  10. She ___ ___ a book.  11. They ___ ___ football.  12. ___ you studying?",
@@ -2444,7 +2444,7 @@
       "Không chép. Làm bài vào một trang mới."
     ],
     "exercise": [
-      "A. Chia động từ — chọn thì đúng (10 điểm):",
+      "A. Chia động từ (V) — chọn thì đúng (10 điểm):",
       "1. I ___ English every day. (study)  2. She ___ ___ now. (read)  3. They ___ football yesterday. (play)",
       "4. He ___ to school every day. (go)  5. We ___ tired yesterday. (be)  6. I ___ study tomorrow.",
       "7. ___ you study? (PS)  8. ___ you studying? (PC)  9. ___ she go yesterday?  10. I ___ like coffee.",

@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay10: PracticeLesson = {
-  meta: { ...createPracticeMeta(10, "Mạo từ a / an"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(10, "Mạo từ (Art) a / an"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(10, ""),
     vocabulary: [
@@ -37,7 +37,7 @@ export const practiceDay10: PracticeLesson = {
     {
       type: "categorize",
       title: "a or an?\na hay an?",
-      instruction: "Listen to the first sound. Drag the noun into a or an.\nNghe âm đầu. Kéo danh từ vào a hoặc an.",
+      instruction: "Listen to the first sound. Drag the noun into a or an.\nNghe âm đầu. Kéo danh từ (N) vào a hoặc an.",
       categories: [
         { id: "cat-a", label: "a" },
         { id: "cat-an", label: "an" },
