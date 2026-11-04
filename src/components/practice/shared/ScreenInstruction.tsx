@@ -1,31 +1,25 @@
-import { Typography } from "antd";
-
 interface ScreenInstructionProps {
   title: string;
   instruction: string;
 }
 
-function BilingualText({ text }: { text: string }) {
-  const [english, ...rest] = text.split("\n");
-  const vietnamese = rest.join(" ").trim();
-
-  return (
-    <span className="practice-bilingual">
-      <span className="practice-bilingual-en">{english}</span>
-      {vietnamese ? <span className="practice-bilingual-vi">{vietnamese}</span> : null}
-    </span>
-  );
+function viLine(text: string): string {
+  const parts = text
+    .split("\n")
+    .map((part) => part.trim())
+    .filter(Boolean);
+  if (parts.length >= 2) return parts.slice(1).join(" ");
+  return parts[0] ?? "";
 }
 
 export function ScreenInstruction({ title, instruction }: ScreenInstructionProps) {
+  const heading = viLine(title);
+  const detail = viLine(instruction);
+
   return (
-    <div className="practice-screen-instruction">
-      <Typography.Title level={3} style={{ marginBottom: 4 }}>
-        <BilingualText text={title} />
-      </Typography.Title>
-      <Typography.Paragraph type="secondary" style={{ marginBottom: 20 }}>
-        <BilingualText text={instruction} />
-      </Typography.Paragraph>
-    </div>
+    <header className="practice-screen-instruction">
+      <h3>{heading}</h3>
+      {detail && detail !== heading ? <p>{detail}</p> : null}
+    </header>
   );
 }

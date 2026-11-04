@@ -130,7 +130,7 @@ button {
   color: var(--muted);
 }
 
-/* ── Announcement ticker ── */
+/* ── App shell & sidebar ── */
 
 .app-wrapper {
   height: 100vh;
@@ -140,52 +140,6 @@ button {
   flex-direction: column;
   overflow: hidden;
 }
-
-.announcement-ticker {
-  flex-shrink: 0;
-  overflow: hidden;
-  background: linear-gradient(90deg, #e04882, #f05a94, #e04882);
-  color: #fff;
-  border-bottom: 1px solid #e04882;
-}
-
-.announcement-track {
-  display: flex;
-  width: max-content;
-  animation: announcement-scroll 35s linear infinite;
-}
-
-.announcement-text {
-  padding: 9px 0;
-  padding-right: 4rem;
-  font-size: 0.84rem;
-  font-weight: 600;
-  white-space: nowrap;
-  letter-spacing: 0.01em;
-}
-
-@keyframes announcement-scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .announcement-track {
-    animation: none;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .announcement-text:last-child {
-    display: none;
-  }
-}
-
-/* ── App shell & sidebar ── */
 
 .app-shell {
   flex: 1;
@@ -2524,11 +2478,6 @@ h3 {
     overflow: hidden;
   }
 
-  .announcement-text {
-    font-size: 0.78rem;
-    padding: 8px 0;
-  }
-
   .app-shell {
     grid-template-columns: 1fr;
     grid-template-rows: auto minmax(0, 1fr);
@@ -2678,6 +2627,8 @@ h3 {
   position: fixed;
   inset: 0;
   z-index: 200;
+  width: 100%;
+  height: 100dvh;
   background: var(--bg);
 }
 
@@ -3070,36 +3021,23 @@ h3 {
   border-color: var(--accent);
 }
 
-.practice-screen-instruction h2 {
-  margin: 0 0 6px;
-  font-size: 1.35rem;
-  font-weight: 600;
+.practice-screen-instruction {
+  margin: 0 0 14px;
 }
 
-.practice-screen-instruction p {
-  margin: 0 0 20px;
-  color: var(--muted);
-  font-size: 0.95rem;
-}
-
-.practice-bilingual {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.practice-bilingual-en {
+.practice-screen-instruction h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.3;
   color: var(--text);
 }
 
-.practice-screen-instruction p .practice-bilingual-en {
+.practice-screen-instruction p {
+  margin: 4px 0 0;
   color: var(--muted);
-}
-
-.practice-bilingual-vi {
-  color: var(--muted);
-  font-size: 0.82em;
-  font-weight: 500;
+  font-size: 0.84rem;
+  line-height: 1.4;
 }
 
 .practice-dictation {
@@ -4055,6 +3993,12 @@ h3 {
 
   .practice-header {
     grid-template-columns: 1fr auto;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .practice-header-brand {
+    display: none;
   }
 
   .practice-header-center {
@@ -4062,14 +4006,114 @@ h3 {
     order: 3;
   }
 
+  .practice-breadcrumb {
+    display: none;
+  }
+
+  .practice-progress-dots {
+    margin: 0;
+    gap: 6px;
+  }
+
+  .practice-main {
+    padding: 12px 12px 16px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .practice-screen-instruction {
+    margin-bottom: 8px;
+  }
+
+  .practice-screen-instruction h3 {
+    font-size: 0.95rem;
+  }
+
+  .practice-screen-instruction p {
+    font-size: 0.78rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .practice-match-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .practice-match-visual,
+  .practice-match-placeholder,
+  .practice-match-flip-inner {
+    aspect-ratio: 1 / 1;
+  }
+
   .practice-footer {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+    gap: 6px;
   }
 
   .practice-footer-left,
   .practice-footer-right,
   .practice-footer-center {
+    min-width: 0;
+  }
+
+  .practice-footer-left {
+    flex: 0 0 auto;
+    gap: 4px;
+    justify-content: flex-start;
+  }
+
+  .practice-footer-center {
+    flex: 1 1 auto;
     justify-content: center;
+    gap: 0;
+  }
+
+  .practice-footer-right {
+    flex: 0 1 auto;
+    justify-content: flex-end;
+  }
+
+  .practice-footer .ant-btn {
+    height: 32px;
+    padding-inline: 8px;
+    font-size: 13px;
+  }
+
+  .practice-footer .ant-btn-lg {
+    height: 32px;
+    font-size: 13px;
+    padding-inline: 10px;
+  }
+
+  .practice-footer .ant-btn-icon-only {
+    width: 32px;
+    padding-inline: 0;
+  }
+
+  .practice-footer-center .ant-btn {
+    width: 28px;
+    min-width: 28px;
+    padding-inline: 0;
+  }
+
+  .practice-footer-right .ant-space {
+    flex-wrap: nowrap;
+  }
+
+  .practice-footer-right .ant-btn {
+    white-space: nowrap;
+  }
+
+  .practice-pagination {
+    min-width: 42px;
+    font-size: 0.82rem;
   }
 
   .practice-split-layout,

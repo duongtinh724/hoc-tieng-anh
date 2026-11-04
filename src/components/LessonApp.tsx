@@ -161,20 +161,6 @@ export function LessonApp() {
         />
       )}
 
-      {openPracticeDay !== null && (
-        <PracticePage
-          month={state.month}
-          day={openPracticeDay}
-          onClose={() => setOpenPracticeDay(null)}
-          onComplete={() =>
-            recordPracticeCompletion(state.month, openPracticeDay)
-          }
-          onQuizScore={(score) =>
-            recordQuizScore(state.month, openPracticeDay, score)
-          }
-        />
-      )}
-
       {REVIEW_PLAN_ENABLED && activeSection === "review" && (
         <ReviewPlanPanel
           doneDays={doneDays}
@@ -206,6 +192,19 @@ export function LessonApp() {
         />
       )}
     </AppShell>
+    {openPracticeDay !== null ? (
+      <PracticePage
+        month={state.month}
+        day={openPracticeDay}
+        onClose={() => setOpenPracticeDay(null)}
+        onComplete={() =>
+          recordPracticeCompletion(state.month, openPracticeDay)
+        }
+        onQuizScore={(score) =>
+          recordQuizScore(state.month, openPracticeDay, score)
+        }
+      />
+    ) : null}
     {todayReview.open && todayReview.review ? (
       <TodayReviewModal
         review={todayReview.review}

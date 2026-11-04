@@ -28,10 +28,6 @@ export const MENU_ITEMS = REVIEW_PLAN_ENABLED
   ? ALL_MENU_ITEMS
   : ALL_MENU_ITEMS.filter((item) => item.id !== "review");
 
-export const ANNOUNCEMENT_MESSAGES = [
-  "Hãy duy trì thói quen học tiếng Anh 30 phút mỗi ngày... Đừng quên nha Huy!!! hihi^^",
-];
-
 export const GUIDE_STEPS = [
   {
     time: "0–10 phút",

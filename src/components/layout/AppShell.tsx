@@ -2,7 +2,6 @@
 
 import { useState, type ReactNode } from "react";
 import type { AppSection } from "@/types/lesson";
-import { AnnouncementTicker } from "@/components/layout/AnnouncementTicker";
 import { SidebarNav } from "@/components/navigation/SidebarNav";
 import { TodayReviewBell } from "@/components/review/TodayReviewBell";
 
@@ -34,7 +33,6 @@ export function AppShell({
 
   return (
     <div className="app-wrapper">
-      <AnnouncementTicker />
       <div className="app-shell">
         <header className="mobile-header">
           <button
