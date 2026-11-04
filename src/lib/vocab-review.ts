@@ -1,7 +1,7 @@
 import type { WordPair } from "@/types/lesson";
 
 /** Ngày sau buổi học từ mới thì từ đó được nhắc lại. */
-const REVIEW_AFTER_DAYS = [1, 3, 7];
+export const REVIEW_AFTER_DAYS = [1, 3, 7] as const;
 const MAX_REVIEW_WORDS = 3;
 
 function shuffleWithSeed<T>(items: T[], seed: number): T[] {

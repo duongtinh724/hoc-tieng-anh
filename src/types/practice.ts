@@ -271,7 +271,9 @@ export interface ExamQuestion {
 export interface ExamSection {
   id: string;
   title: string;
+  titleVi: string;
   instruction: string;
+  instructionVi: string;
   /** What this part tests, shown on the start page. */
   purpose: string;
   maxScore: number;

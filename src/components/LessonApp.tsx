@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { PracticeMenuPanel } from "@/components/practice/PracticeMenuPanel";
 import { PracticePage } from "@/components/practice/PracticePage";
 import { getTotalDays } from "@/data/days";
@@ -8,12 +9,16 @@ import { PageHeader } from "@/components/layout/PageHeader";
 import { GuidePanel } from "@/components/guide/GuidePanel";
 import { REVIEW_PLAN_ENABLED } from "@/lib/constants";
 import { ReviewPlanPanel } from "@/components/review/ReviewPlanPanel";
+import { TodayReviewModal } from "@/components/review/TodayReviewModal";
+import { useTodayReview } from "@/hooks/useTodayReview";
+import { todayReviewBadge } from "@/lib/today-review";
 import { LessonCard } from "@/components/lesson/LessonCard";
 import { MonthRail } from "@/components/navigation/MonthRail";
 import { ProgressBar } from "@/components/stats/ProgressBar";
 import { StatsGrid } from "@/components/stats/StatsGrid";
 import { RoadmapPanel } from "@/components/roadmap/RoadmapPanel";
 import { TensesPanel } from "@/components/tenses/TensesPanel";
+import { VocabPanel } from "@/components/vocab/VocabPanel";
 import { useLessonState } from "@/hooks/useLessonState";
 
 export function LessonApp() {
@@ -30,6 +35,8 @@ export function LessonApp() {
     setOpenPracticeDay,
     setSelectedDay,
     openLessonDay,
+    openVocabDay,
+    vocabDay,
     goToNextDay,
     toggleDayDone,
     recordPracticeCompletion,
@@ -37,7 +44,15 @@ export function LessonApp() {
     quizScores,
     recordQuizScore,
   } = useLessonState();
+  const [vocabDue, setVocabDue] = useState(false);
   const totalDays = getTotalDays(state.month);
+  const todayReview = useTodayReview({
+    month: state.month,
+    nextDay,
+    selectedDay: state.selectedDay,
+    doneDays,
+    ready: hydrated,
+  });
 
   if (!hydrated) {
     return (
@@ -72,16 +87,22 @@ export function LessonApp() {
       selectedMonth={state.month}
       selectedDay={state.selectedDay}
       progress={state.progress}
-      onSelectDay={openLessonDay}
+      onSelectDay={(month, day) => {
+        if (activeSection === "vocab") openVocabDay(month, day);
+        else openLessonDay(month, day);
+      }}
     />
   );
 
   return (
+    <>
     <AppShell
       activeSection={activeSection}
       onNavigate={setActiveSection}
       sidebar={sidebar}
       monthRail={monthRail}
+      reviewCount={todayReviewBadge(todayReview.review)}
+      onOpenReview={() => todayReview.openReview()}
     >
       {activeSection === "overview" && (
         <section className="panel overview-panel">
@@ -171,6 +192,32 @@ export function LessonApp() {
       {activeSection === "guide" && <GuidePanel />}
 
       {activeSection === "tenses" && <TensesPanel />}
+
+      {activeSection === "vocab" && (
+        <VocabPanel
+          month={state.month}
+          monthTitle={monthConfig.title}
+          studyDay={vocabDay}
+          onOpenDay={(day) => openVocabDay(state.month, day)}
+          onBack={() => openVocabDay(state.month, null)}
+          onOpenLesson={(day) => openLessonDay(state.month, day)}
+          startDue={vocabDue}
+          onDueConsumed={() => setVocabDue(false)}
+        />
+      )}
     </AppShell>
+    {todayReview.open && todayReview.review ? (
+      <TodayReviewModal
+        review={todayReview.review}
+        onClose={() => todayReview.setOpen(false)}
+        onOpenLesson={openLessonDay}
+        onOpenVocabDue={() => {
+          setVocabDue(true);
+          setActiveSection("vocab");
+        }}
+        onStartToday={goToNextDay}
+      />
+    ) : null}
+    </>
   );
 }

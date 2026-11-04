@@ -45,8 +45,11 @@ function applyUrlView(raw: LessonState): LessonState {
       ? lessonDay
       : null;
 
+  const vocabDay =
+    page === "vocab" && typeof lessonDay === "number" ? lessonDay : page === "vocab" ? null : (raw.vocabDay ?? null);
+
   const selectedDay =
-    page === "lesson" && typeof lessonDay === "number"
+    (page === "lesson" || page === "vocab") && typeof lessonDay === "number"
       ? lessonDay
       : raw.selectedDay;
   const found = getDayByNumber(month, selectedDay);
@@ -58,6 +61,7 @@ function applyUrlView(raw: LessonState): LessonState {
     week: found?.week ?? raw.week,
     activeSection: openPracticeDay !== null ? "practice" : page,
     openPracticeDay,
+    vocabDay,
   };
 }
 
@@ -103,7 +107,11 @@ export function useLessonState() {
       page: state.openPracticeDay ? "practice" : (state.activeSection ?? "lesson"),
       lesson:
         state.openPracticeDay ??
-        (state.activeSection === "lesson" ? state.selectedDay : null),
+        (state.activeSection === "vocab"
+          ? state.vocabDay ?? null
+          : state.activeSection === "lesson"
+            ? state.selectedDay
+            : null),
     });
   }, [state, hydrated]);
 
@@ -141,6 +149,7 @@ export function useLessonState() {
       ...prev,
       activeSection: section,
       openPracticeDay: section === "practice" ? prev.openPracticeDay : null,
+      vocabDay: section === "vocab" ? null : prev.vocabDay,
     }));
   }, []);
 
@@ -188,6 +197,30 @@ export function useLessonState() {
       selectedDay: found.day,
       week: found.week,
       activeSection: "lesson",
+      openPracticeDay: null,
+      vocabDay: null,
+    }));
+  }, []);
+
+  const openVocabDay = useCallback((month: number, day: number | null) => {
+    if (day === null) {
+      setState((prev) => ({ ...prev, activeSection: "vocab", vocabDay: null, openPracticeDay: null }));
+      return;
+    }
+
+    const config = getMonthConfig(month);
+    if (config.status !== "available") return;
+
+    const found = getDayByNumber(month, day);
+    if (!found) return;
+
+    setState((prev) => ({
+      ...prev,
+      month,
+      selectedDay: found.day,
+      week: found.week,
+      activeSection: "vocab",
+      vocabDay: found.day,
       openPracticeDay: null,
     }));
   }, []);
@@ -280,6 +313,8 @@ export function useLessonState() {
     setWeek,
     setSelectedDay,
     openLessonDay,
+    openVocabDay,
+    vocabDay: state.vocabDay ?? null,
     goToNextDay,
     toggleDayDone,
     recordPracticeCompletion,

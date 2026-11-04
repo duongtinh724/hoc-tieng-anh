@@ -1,6 +1,7 @@
 import type { WordPair } from "@/types/lesson";
 import { getOxfordDictionaryUrl, isSingleEnglishWord } from "@/lib/dictionary";
 import { speakEnglish } from "@/lib/speech";
+import { getIpa } from "@/lib/vocab-ipa";
 
 interface WordsListProps {
   words: WordPair[];
@@ -19,6 +20,7 @@ export function WordsList({ words }: WordsListProps) {
         <tbody>
           {words.map((word) => {
             const canOpenDictionary = isSingleEnglishWord(word.en);
+            const ipa = getIpa(word.en);
 
             return (
               <tr key={word.en}>
@@ -32,19 +34,22 @@ export function WordsList({ words }: WordsListProps) {
                     >
                       🔊
                     </button>
-                    {canOpenDictionary ? (
-                      <a
-                        href={getOxfordDictionaryUrl(word.en)}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="vocab-dict-link"
-                        title="Tra Oxford Learner's Dictionary (mở tab mới)"
-                      >
-                        {word.en}
-                      </a>
-                    ) : (
-                      <span className="vocab-word-text">{word.en}</span>
-                    )}
+                    <span className="vocab-en-text">
+                      {canOpenDictionary ? (
+                        <a
+                          href={getOxfordDictionaryUrl(word.en)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="vocab-dict-link"
+                          title="Tra Oxford Learner's Dictionary (mở tab mới)"
+                        >
+                          {word.en}
+                        </a>
+                      ) : (
+                        <span className="vocab-word-text">{word.en}</span>
+                      )}
+                      {ipa ? <span className="vocab-ipa">{ipa}</span> : null}
+                    </span>
                   </div>
                 </td>
                 <td className="vi">{word.vi}</td>

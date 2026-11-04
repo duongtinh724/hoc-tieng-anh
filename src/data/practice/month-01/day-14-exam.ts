@@ -214,7 +214,9 @@ export const day14Exam: ExamExerciseConfig = {
     {
       id: "part-1",
       title: "PART I – MULTIPLE CHOICE",
+      titleVi: "Trắc nghiệm",
       instruction: "Choose the correct answer A, B, C, or D.",
+      instructionVi: "Chọn đáp án đúng A, B, C hoặc D.",
       purpose:
         "Câu 1–12. Chọn một đáp án. Ôn am/is/are, số nhiều, a/an/the và this/that/these/those.",
       maxScore: 3,
@@ -223,7 +225,9 @@ export const day14Exam: ExamExerciseConfig = {
     {
       id: "part-2",
       title: "PART II – ERROR IDENTIFICATION AND CORRECTION",
+      titleVi: "Tìm lỗi và sửa câu",
       instruction: "Each sentence contains ONE grammatical mistake. Identify the mistake and write the corrected sentence.",
+      instructionVi: "Mỗi câu có MỘT lỗi ngữ pháp. Tìm lỗi rồi viết lại câu đúng.",
       purpose:
         "Câu 13–16. Mỗi câu có một lỗi. Viết lại câu đúng. Ôn to be (V tobe) và a/an.",
       maxScore: 2,
@@ -232,7 +236,9 @@ export const day14Exam: ExamExerciseConfig = {
     {
       id: "part-3",
       title: "PART III – READING COMPREHENSION",
+      titleVi: "Đọc hiểu",
       instruction: "Read the passage and choose the correct answer.",
+      instructionVi: "Đọc đoạn văn rồi chọn đáp án đúng.",
       purpose:
         "Câu 17–21. Đọc đoạn văn rồi chọn đáp án. Ôn giới thiệu bản thân và đọc hiểu ngắn.",
       maxScore: 2,
@@ -241,7 +247,9 @@ export const day14Exam: ExamExerciseConfig = {
     {
       id: "part-4",
       title: "PART IV – SENTENCE TRANSFORMATION",
+      titleVi: "Viết lại câu",
       instruction: "Rewrite each sentence according to the requirement. Do not change its original meaning.",
+      instructionVi: "Viết lại mỗi câu theo yêu cầu. Không đổi nghĩa gốc.",
       purpose:
         "Câu 22–26. Viết lại câu: phủ định, câu hỏi, số nhiều, chủ ngữ (S) They, trả lời ngắn.",
       maxScore: 2,
@@ -250,8 +258,10 @@ export const day14Exam: ExamExerciseConfig = {
     {
       id: "part-5",
       title: "PART V – WRITING",
+      titleVi: "Viết đoạn",
       instruction:
         "Write a short paragraph of 40–60 words to introduce yourself. Use the basic structures from Days 1–13.",
+      instructionVi: "Viết một đoạn 40–60 từ giới thiệu bản thân. Dùng cấu trúc đã học ở Ngày 1–13.",
       purpose:
         "Câu 27. Viết 40–60 từ giới thiệu bản thân: tên, tuổi, quê, nơi ở, gia đình, sở thích.",
       maxScore: 1,

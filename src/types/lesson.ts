@@ -73,9 +73,11 @@ export interface LessonState {
   activeSection?: AppSection;
   /** Ngày đang mở màn luyện tập full-screen. null = không mở. */
   openPracticeDay?: number | null;
+  /** Ngày đang học từ vựng. null = trang danh sách. */
+  vocabDay?: number | null;
 }
 
-export type AppSection = "overview" | "lesson" | "practice" | "review" | "guide" | "roadmap" | "tenses";
+export type AppSection = "overview" | "lesson" | "practice" | "review" | "guide" | "roadmap" | "tenses" | "vocab";
 
 export type StepVariant = "vocab" | "listen" | "copy" | "exercise" | "recall";
 

@@ -32,6 +32,10 @@ function formatScore(value: number): string {
   return value.toFixed(2).replace(/\.00$/, "").replace(/(\.\d)0$/, "$1");
 }
 
+function ExamVi({ text }: { text: string }) {
+  return <span className="exam-vi"> ({text})</span>;
+}
+
 export function FoundationExamExercise({
   config,
   state,
@@ -139,10 +143,16 @@ export function FoundationExamExercise({
             {config.sections.map((section) => (
               <li key={section.id}>
                 <strong>
-                  {section.title}
+                  <span>
+                    {section.title}
+                    <ExamVi text={section.titleVi} />
+                  </span>
                   <em>{formatScore(section.maxScore)} points</em>
                 </strong>
-                <span>{section.instruction}</span>
+                <span>
+                  {section.instruction}
+                  <ExamVi text={section.instructionVi} />
+                </span>
                 <p>{section.purpose}</p>
               </li>
             ))}
@@ -230,8 +240,14 @@ export function FoundationExamExercise({
           return (
             <section key={section.id} className="exam-part">
               <header className="exam-section-head">
-                <h3>{section.title}</h3>
-                <p>{section.instruction}</p>
+                <h3>
+                  {section.title}
+                  <ExamVi text={section.titleVi} />
+                </h3>
+                <p>
+                  {section.instruction}
+                  <ExamVi text={section.instructionVi} />
+                </p>
                 <small>{formatScore(section.maxScore)} points</small>
               </header>
               {passage ? (

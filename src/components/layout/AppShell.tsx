@@ -4,6 +4,7 @@ import { useState, type ReactNode } from "react";
 import type { AppSection } from "@/types/lesson";
 import { AnnouncementTicker } from "@/components/layout/AnnouncementTicker";
 import { SidebarNav } from "@/components/navigation/SidebarNav";
+import { TodayReviewBell } from "@/components/review/TodayReviewBell";
 
 interface AppShellProps {
   activeSection: AppSection;
@@ -11,6 +12,8 @@ interface AppShellProps {
   sidebar: ReactNode;
   monthRail: ReactNode;
   children: ReactNode;
+  reviewCount?: number;
+  onOpenReview?: () => void;
 }
 
 export function AppShell({
@@ -19,8 +22,15 @@ export function AppShell({
   sidebar,
   monthRail,
   children,
+  reviewCount = 0,
+  onOpenReview,
 }: AppShellProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  function openReview() {
+    setMobileOpen(false);
+    onOpenReview?.();
+  }
 
   return (
     <div className="app-wrapper">
@@ -36,6 +46,7 @@ export function AppShell({
             ☰
           </button>
           <span className="mobile-title">Học tiếng Anh</span>
+          {onOpenReview ? <TodayReviewBell count={reviewCount} onClick={openReview} /> : null}
         </header>
 
         {mobileOpen ? (
@@ -52,10 +63,15 @@ export function AppShell({
             <span className="brand-icon" aria-hidden="true">
               📚
             </span>
-            <div>
+            <div className="sidebar-brand-text">
               <strong>Học tiếng Anh</strong>
               <span>30 phút mỗi ngày</span>
             </div>
+            {onOpenReview ? (
+              <span className="sidebar-review-bell">
+                <TodayReviewBell count={reviewCount} onClick={openReview} />
+              </span>
+            ) : null}
           </div>
 
           <SidebarNav
