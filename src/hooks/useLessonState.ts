@@ -129,6 +129,15 @@ export function useLessonState() {
   const doneDays = getDoneDays(state);
   const monthConfig = getMonthConfig(state.month);
 
+  const setActiveSection = useCallback((section: AppSection) => {
+    setState((prev) => ({
+      ...prev,
+      activeSection: section,
+      openPracticeDay: section === "practice" ? prev.openPracticeDay : null,
+      vocabDay: section === "vocab" ? null : prev.vocabDay,
+    }));
+  }, []);
+
   const setMonth = useCallback((month: number) => {
     const config = getMonthConfig(month);
     if (config.status !== "available") return;
@@ -142,16 +151,7 @@ export function useLessonState() {
       return { ...prev, month, selectedDay };
     });
     setActiveSection("lesson");
-  }, []);
-
-  const setActiveSection = useCallback((section: AppSection) => {
-    setState((prev) => ({
-      ...prev,
-      activeSection: section,
-      openPracticeDay: section === "practice" ? prev.openPracticeDay : null,
-      vocabDay: section === "vocab" ? null : prev.vocabDay,
-    }));
-  }, []);
+  }, [setActiveSection]);
 
   const setOpenPracticeDay = useCallback((day: number | null) => {
     setState((prev) => ({
@@ -182,7 +182,7 @@ export function useLessonState() {
       };
     });
     setActiveSection("lesson");
-  }, []);
+  }, [setActiveSection]);
 
   const openLessonDay = useCallback((month: number, day: number) => {
     const config = getMonthConfig(month);
@@ -237,7 +237,7 @@ export function useLessonState() {
       };
     });
     setActiveSection("lesson");
-  }, []);
+  }, [setActiveSection]);
 
   const recordPracticeCompletion = useCallback((month: number, day: number) => {
     const key = getPracticeCompletionKey(month, day);

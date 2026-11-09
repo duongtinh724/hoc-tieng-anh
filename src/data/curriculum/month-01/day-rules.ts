@@ -216,9 +216,9 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
       example: "It is a big house.",
       exampleVi: "Đó là ngôi nhà to.",
       examples: [
-        ["a beautiful girl", "một cô gái xinh đẹp"],
-        ["The house is big.", "Ngôi nhà to."],
-        ["He seems tired.", "Anh ấy có vẻ mệt."],
+        { en: "a beautiful girl", vi: "một cô gái xinh đẹp" },
+        { en: "The house is big.", vi: "Ngôi nhà to." },
+        { en: "He seems tired.", vi: "Anh ấy có vẻ mệt." },
       ],
     },
     {
@@ -239,8 +239,8 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
       },
       note: "Không đứng một mình.\nThis is my book. (Đúng)\nThis book is my. (Sai)",
       examples: [
-        ["This is my book.", "Đây là sách của tôi."],
-        ["That is your pen.", "Kia là bút của bạn."],
+        { en: "This is my book.", vi: "Đây là sách của tôi." },
+        { en: "That is your pen.", vi: "Kia là bút của bạn." },
       ],
     },
   ],
