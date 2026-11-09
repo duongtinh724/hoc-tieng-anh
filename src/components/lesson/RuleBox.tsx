@@ -29,6 +29,11 @@ export function RuleBox({ rules }: RuleBoxProps) {
       <ol className="rule-list">
         {rules.map((item, index) => {
           const isOpen = !!openItems[index];
+          const examples = item.examples?.length
+            ? item.examples
+            : !item.detail && !item.table && item.example
+              ? [{ en: item.example, vi: item.exampleVi }]
+              : [];
 
           return (
             <li
@@ -50,10 +55,31 @@ export function RuleBox({ rules }: RuleBoxProps) {
 
               {isOpen ? (
                 <div className="rule-item-panel">
-                  {(item.examples?.length
-                    ? item.examples
-                    : [{ en: item.example, vi: item.exampleVi }]
-                  ).map((example) => (
+                  {item.detail ? <p className="rule-item-detail">{item.detail}</p> : null}
+                  {item.table ? (
+                    <div className="rule-table-wrap">
+                      <table className="rule-table">
+                        <thead>
+                          <tr>
+                            {item.table.headers.map((header) => (
+                              <th key={header}>{header}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {item.table.rows.map((row) => (
+                            <tr key={row.join("-")}>
+                              {row.map((cell, cellIndex) => (
+                                <td key={`${row[0]}-${cellIndex}`}>{cell}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  ) : null}
+                  {item.note ? <p className="rule-item-note">{item.note}</p> : null}
+                  {examples.map((example) => (
                     <div key={example.en} className="rule-item-example">
                       <p>
                         <span className="rule-example-label">Ví dụ:</span> {example.en}

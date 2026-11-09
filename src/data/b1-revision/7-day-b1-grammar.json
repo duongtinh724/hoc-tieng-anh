@@ -1,0 +1,5224 @@
+{
+  "metadata": {
+    "title": "7-Day B1 Grammar Revision",
+    "language": "vi",
+    "target_level": "A2-B1 (B1 priority)",
+    "scope": "Grammar only",
+    "source": "User-provided Master Prompt: 7-Day B1 Grammar Revision",
+    "days": 7,
+    "questions_total": 210,
+    "notes": [
+      "Giữ nguyên 7 ngày và số lượng câu hỏi theo curriculum người dùng cung cấp.",
+      "Mỗi chủ điểm có định nghĩa, công thức, cách dùng, tín hiệu, ví dụ dịch nghĩa, lỗi thường gặp và so sánh.",
+      "Ngân hàng câu hỏi có kèm đáp án và giải thích để dùng cho chế độ chấm bài. Nếu triển khai bài kiểm tra cho người học, ẩn correct_answer và explanation cho đến khi nộp bài.",
+      "Một câu Sentence Transformation ở Day 7 được gắn quality_flag do phương án tương đương chưa bảo toàn hoàn toàn quan hệ nguyên nhân-kết quả; cần chỉnh trước khi dùng làm bài thi chấm điểm."
+    ]
+  },
+  "scoring": {
+    "excellent": "90-100%",
+    "good": "80-89%",
+    "needs_improvement": "65-79%",
+    "weak": "Below 65%",
+    "formula": "correct_answers / 30 * 100",
+    "disclaimer": "Thang đánh giá nội bộ, không phải chứng nhận CEFR."
+  },
+  "progress_template": [
+    {
+      "day": 1,
+      "topic": "Tenses",
+      "score": null,
+      "status": "Not started"
+    },
+    {
+      "day": 2,
+      "topic": "Verb Forms & Modal Verbs",
+      "score": null,
+      "status": "Not started"
+    },
+    {
+      "day": 3,
+      "topic": "Nouns, Articles & Pronouns",
+      "score": null,
+      "status": "Not started"
+    },
+    {
+      "day": 4,
+      "topic": "Adjectives, Adverbs & Comparison",
+      "score": null,
+      "status": "Not started"
+    },
+    {
+      "day": 5,
+      "topic": "Passive Voice & Reported Speech",
+      "score": null,
+      "status": "Not started"
+    },
+    {
+      "day": 6,
+      "topic": "Conditionals & Relative Clauses",
+      "score": null,
+      "status": "Not started"
+    },
+    {
+      "day": 7,
+      "topic": "Prepositions & Sentence Structures",
+      "score": null,
+      "status": "Not started"
+    }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "title": "Tenses",
+      "objectives": [
+        "Hiểu cấu trúc và cách dùng",
+        "Nhận biết lỗi thường gặp",
+        "Vận dụng trong ngữ cảnh A2–B1"
+      ],
+      "topics": [
+        {
+          "id": "day1_topic1",
+          "name": "Present Simple",
+          "name_vi": "Thì hiện tại đơn",
+          "definition": "Diễn tả thói quen, sự thật, trạng thái tương đối ổn định và lịch trình cố định.",
+          "formula": "S + V(s/es); S + do/does not + V; Do/Does + S + V?; S + am/is/are (+ not).",
+          "usage": "Daily routines, general truths, permanent situations, timetables.",
+          "time_expressions_or_signals": [
+            "always",
+            "usually",
+            "often",
+            "sometimes",
+            "rarely",
+            "never",
+            "every day",
+            "once a week"
+          ],
+          "examples": [
+            {
+              "en": "She works from Monday to Friday.",
+              "vi": "Cô ấy làm việc từ thứ Hai đến thứ Sáu."
+            }
+          ],
+          "common_mistakes": [
+            "He work here → He works here."
+          ],
+          "comparison": "Present Continuous: thói quen/ổn định đối lập với hành động đang diễn ra/tạm thời."
+        },
+        {
+          "id": "day1_topic2",
+          "name": "Present Continuous",
+          "name_vi": "Thì hiện tại tiếp diễn",
+          "definition": "Diễn tả hành động đang xảy ra, tình huống tạm thời, sự thay đổi hoặc kế hoạch đã sắp xếp.",
+          "formula": "S + am/is/are + V-ing; S + am/is/are not + V-ing; Am/Is/Are + S + V-ing?",
+          "usage": "Actions happening now, temporary situations, changing situations, arranged future plans.",
+          "time_expressions_or_signals": [
+            "now",
+            "right now",
+            "at the moment",
+            "currently",
+            "these days"
+          ],
+          "examples": [
+            {
+              "en": "I am studying English at the moment.",
+              "vi": "Tôi đang học tiếng Anh lúc này."
+            }
+          ],
+          "common_mistakes": [
+            "I am work → I am working."
+          ],
+          "comparison": "Present Simple: thói quen hoặc sự thật; một số stative verbs thường không dùng tiếp diễn."
+        },
+        {
+          "id": "day1_topic3",
+          "name": "Past Simple",
+          "name_vi": "Thì quá khứ đơn",
+          "definition": "Diễn tả hành động hoặc trạng thái đã xảy ra và kết thúc trong quá khứ.",
+          "formula": "S + V2/ed; S + did not + V; Did + S + V?; was/were (với BE).",
+          "usage": "Completed past actions, past habits, a sequence of past events.",
+          "time_expressions_or_signals": [
+            "yesterday",
+            "last week",
+            "ago",
+            "in 2020",
+            "when I was young"
+          ],
+          "examples": [
+            {
+              "en": "We visited Thailand last year.",
+              "vi": "Chúng tôi đã thăm Thái Lan năm ngoái."
+            }
+          ],
+          "common_mistakes": [
+            "Did you went? → Did you go?"
+          ],
+          "comparison": "Present Perfect: quá khứ đơn có thời điểm đã kết thúc; Present Perfect nhấn liên hệ hiện tại."
+        },
+        {
+          "id": "day1_topic4",
+          "name": "Past Continuous",
+          "name_vi": "Thì quá khứ tiếp diễn",
+          "definition": "Diễn tả hành động đang diễn ra tại một thời điểm trong quá khứ hoặc làm bối cảnh cho hành động khác.",
+          "formula": "S + was/were + V-ing; S + was/were not + V-ing; Was/Were + S + V-ing?",
+          "usage": "An action in progress at a past time; background action interrupted by another event; two simultaneous actions.",
+          "time_expressions_or_signals": [
+            "at 9 p.m. yesterday",
+            "while",
+            "when",
+            "all evening"
+          ],
+          "examples": [
+            {
+              "en": "I was watching TV when my friend called.",
+              "vi": "Tôi đang xem TV thì bạn tôi gọi."
+            }
+          ],
+          "common_mistakes": [
+            "I was watch TV → I was watching TV."
+          ],
+          "comparison": "Past Simple: sự kiện hoàn tất; Past Continuous: hành động đang diễn ra làm nền."
+        },
+        {
+          "id": "day1_topic5",
+          "name": "Present Perfect",
+          "name_vi": "Thì hiện tại hoàn thành",
+          "definition": "Diễn tả trải nghiệm, kết quả hiện tại, hành động vừa xảy ra hoặc tình huống bắt đầu trong quá khứ còn liên quan hiện tại.",
+          "formula": "S + have/has + V3; S + have/has not + V3; Have/Has + S + V3?",
+          "usage": "Life experiences, present result, recent events, unfinished time periods, states continuing to now.",
+          "time_expressions_or_signals": [
+            "ever",
+            "never",
+            "already",
+            "yet",
+            "just",
+            "recently",
+            "so far",
+            "since",
+            "for"
+          ],
+          "examples": [
+            {
+              "en": "I have visited Thailand twice.",
+              "vi": "Tôi đã đến Thái Lan hai lần."
+            }
+          ],
+          "common_mistakes": [
+            "I have seen him yesterday → I saw him yesterday."
+          ],
+          "comparison": "Past Simple dùng với mốc quá khứ đã kết thúc; Present Perfect không thường đi với yesterday/last year."
+        },
+        {
+          "id": "day1_topic6",
+          "name": "Present Perfect Continuous",
+          "name_vi": "Thì hiện tại hoàn thành tiếp diễn",
+          "definition": "Nhấn mạnh quá trình hoặc khoảng thời gian của hành động bắt đầu trong quá khứ và còn tiếp diễn hoặc vừa mới kết thúc.",
+          "formula": "S + have/has been + V-ing; S + have/has not been + V-ing; Have/Has + S + been + V-ing?",
+          "usage": "Emphasises duration, ongoing activity, or visible recent activity.",
+          "time_expressions_or_signals": [
+            "for",
+            "since",
+            "all day",
+            "lately",
+            "recently",
+            "how long"
+          ],
+          "examples": [
+            {
+              "en": "She has been learning English for six months.",
+              "vi": "Cô ấy đã học tiếng Anh được sáu tháng."
+            }
+          ],
+          "common_mistakes": [
+            "She has learning → She has been learning."
+          ],
+          "comparison": "Present Perfect thường nhấn kết quả/số lượng; dạng Continuous nhấn quá trình/thời lượng."
+        },
+        {
+          "id": "day1_topic7",
+          "name": "Past Perfect",
+          "name_vi": "Thì quá khứ hoàn thành",
+          "definition": "Diễn tả hành động xảy ra trước một hành động hoặc thời điểm khác trong quá khứ.",
+          "formula": "S + had + V3; S + had not + V3; Had + S + V3?",
+          "usage": "An earlier past action before another past event or past reference time.",
+          "time_expressions_or_signals": [
+            "before",
+            "after",
+            "by the time",
+            "already",
+            "never"
+          ],
+          "examples": [
+            {
+              "en": "The train had left before we arrived.",
+              "vi": "Tàu đã rời đi trước khi chúng tôi đến."
+            }
+          ],
+          "common_mistakes": [
+            "When I arrived, he has left → he had left."
+          ],
+          "comparison": "Past Simple kể sự kiện quá khứ; Past Perfect làm rõ sự kiện xảy ra trước."
+        },
+        {
+          "id": "day1_topic8",
+          "name": "Future Simple",
+          "name_vi": "Thì tương lai đơn",
+          "definition": "Diễn tả quyết định tức thời, dự đoán, lời hứa, đề nghị hoặc sự kiện tương lai.",
+          "formula": "S + will + V; S + will not + V; Will + S + V?",
+          "usage": "Instant decisions, predictions, promises, offers, future facts.",
+          "time_expressions_or_signals": [
+            "tomorrow",
+            "next week",
+            "soon",
+            "I think",
+            "probably"
+          ],
+          "examples": [
+            {
+              "en": "I will help you with the report.",
+              "vi": "Tôi sẽ giúp bạn làm báo cáo."
+            }
+          ],
+          "common_mistakes": [
+            "I will to call → I will call."
+          ],
+          "comparison": "Be going to thường diễn tả dự định đã có hoặc dự đoán có bằng chứng."
+        },
+        {
+          "id": "day1_topic9",
+          "name": "Be going to",
+          "name_vi": "Cấu trúc be going to",
+          "definition": "Diễn tả dự định đã có trước thời điểm nói hoặc dự đoán dựa trên dấu hiệu hiện tại.",
+          "formula": "S + am/is/are going to + V; S + am/is/are not going to + V; Am/Is/Are + S + going to + V?",
+          "usage": "Prior plans and evidence-based predictions.",
+          "time_expressions_or_signals": [
+            "tonight",
+            "next weekend",
+            "look!",
+            "be careful!"
+          ],
+          "examples": [
+            {
+              "en": "Look at those clouds. It is going to rain.",
+              "vi": "Nhìn những đám mây kia kìa. Trời sắp mưa."
+            }
+          ],
+          "common_mistakes": [
+            "She going to travel → She is going to travel."
+          ],
+          "comparison": "Will thường là quyết định tức thời/dự đoán chung; going to là dự định trước hoặc có bằng chứng."
+        },
+        {
+          "id": "day1_topic10",
+          "name": "Future Continuous",
+          "name_vi": "Thì tương lai tiếp diễn",
+          "definition": "Diễn tả hành động sẽ đang diễn ra tại một thời điểm cụ thể trong tương lai.",
+          "formula": "S + will be + V-ing; S + will not be + V-ing; Will + S + be + V-ing?",
+          "usage": "An action in progress at a specified future time; polite enquiries about plans.",
+          "time_expressions_or_signals": [
+            "this time tomorrow",
+            "at 8 tomorrow",
+            "this time next week"
+          ],
+          "examples": [
+            {
+              "en": "This time tomorrow, I will be flying to Singapore.",
+              "vi": "Giờ này ngày mai, tôi sẽ đang bay đến Singapore."
+            }
+          ],
+          "common_mistakes": [
+            "I will be work → I will be working."
+          ],
+          "comparison": "Future Simple nói hành động/sự kiện; Future Continuous nhấn quá trình tại một thời điểm tương lai."
+        },
+        {
+          "id": "day1_topic11",
+          "name": "Tense Contrast",
+          "name_vi": "Phân biệt các thì",
+          "definition": "Chọn thì theo mốc thời gian, trạng thái hoàn tất, quá trình và quan hệ giữa các sự kiện.",
+          "formula": "Xác định: when? (mốc thời gian), finished? (đã kết thúc), duration? (thời lượng), before/after? (trình tự).",
+          "usage": "Contrast the main tense pairs in meaningful contexts.",
+          "time_expressions_or_signals": [
+            "depends on context: yesterday",
+            "since",
+            "while",
+            "by the time",
+            "now"
+          ],
+          "examples": [
+            {
+              "en": "I have worked here for two years, but I worked in Hanoi before that.",
+              "vi": "Tôi đã làm ở đây hai năm, nhưng trước đó tôi làm việc ở Hà Nội."
+            }
+          ],
+          "common_mistakes": [
+            "Chọn thì chỉ dựa vào một từ khóa mà bỏ qua ngữ cảnh."
+          ],
+          "comparison": "So sánh cả thời điểm nói, mốc thời gian và ý nghĩa người nói muốn nhấn mạnh."
+        }
+      ],
+      "assessment": {
+        "question_count": 30,
+        "difficulty_distribution_target": {
+          "easy": 9,
+          "medium": 15,
+          "hard": 6
+        },
+        "questions": [
+          {
+            "id": "d1q01",
+            "topic": "Present Simple",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "My colleague _____ the weekly report every Friday.",
+            "options": {
+              "A": "prepare",
+              "B": "prepares",
+              "C": "is prepare",
+              "D": "preparing"
+            },
+            "correct_answer": "B",
+            "explanation": "He/she/it + V-s.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q02",
+            "topic": "Present Simple",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "_____ your team use TypeScript?",
+            "options": {
+              "A": "Do",
+              "B": "Does",
+              "C": "Is",
+              "D": "Are"
+            },
+            "correct_answer": "A",
+            "explanation": "Your team is treated as plural here; use Do + subject + base verb.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q03",
+            "topic": "Present Simple",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "She doesn't _____ coffee after 6 p.m.",
+            "options": {
+              "A": "drinks",
+              "B": "drinking",
+              "C": "drink",
+              "D": "to drink"
+            },
+            "correct_answer": "C",
+            "explanation": "After doesn't, use the base verb.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q04",
+            "topic": "Present Continuous",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "Please be quiet. The baby _____.",
+            "options": {
+              "A": "sleeps",
+              "B": "is sleeping",
+              "C": "sleep",
+              "D": "has slept"
+            },
+            "correct_answer": "B",
+            "explanation": "An action happening now uses am/is/are + V-ing.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q05",
+            "topic": "Present Continuous",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I _____ with my cousin this week while my apartment is repaired.",
+            "options": {
+              "A": "stay",
+              "B": "stayed",
+              "C": "am staying",
+              "D": "have stayed"
+            },
+            "correct_answer": "C",
+            "explanation": "A temporary situation around now uses Present Continuous.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q06",
+            "topic": "Present Continuous",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "Why _____ you _____ at your phone? The meeting is starting.",
+            "options": {
+              "A": "do / look",
+              "B": "are / looking",
+              "C": "have / looked",
+              "D": "did / look"
+            },
+            "correct_answer": "B",
+            "explanation": "Use the present continuous for an action happening now.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q07",
+            "topic": "Past Simple",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "We _____ the client yesterday.",
+            "options": {
+              "A": "meet",
+              "B": "have met",
+              "C": "met",
+              "D": "were meeting"
+            },
+            "correct_answer": "C",
+            "explanation": "Yesterday is a finished past time; use Past Simple.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q08",
+            "topic": "Past Simple",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "She _____ her first job in 2022.",
+            "options": {
+              "A": "starts",
+              "B": "has started",
+              "C": "started",
+              "D": "had started"
+            },
+            "correct_answer": "C",
+            "explanation": "A specific finished time in the past takes Past Simple.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q09",
+            "topic": "Past Simple",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Did they _____ the email last night?",
+            "options": {
+              "A": "sent",
+              "B": "send",
+              "C": "sending",
+              "D": "sends"
+            },
+            "correct_answer": "B",
+            "explanation": "After did, use the base verb.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q10",
+            "topic": "Past Continuous",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "At 9 p.m. last night, I _____ for my exam.",
+            "options": {
+              "A": "studied",
+              "B": "was studying",
+              "C": "have studied",
+              "D": "am studying"
+            },
+            "correct_answer": "B",
+            "explanation": "An action in progress at a specific past time uses was/were + V-ing.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q11",
+            "topic": "Past Continuous",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "I was cooking when the phone _____.",
+            "options": {
+              "A": "rings",
+              "B": "rang",
+              "C": "was ringing",
+              "D": "has rung"
+            },
+            "correct_answer": "B",
+            "explanation": "The longer background action is Past Continuous; the interrupting event is Past Simple.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q12",
+            "topic": "Past Continuous",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "While we _____, it started to rain.",
+            "options": {
+              "A": "walked",
+              "B": "were walking",
+              "C": "have walked",
+              "D": "are walking"
+            },
+            "correct_answer": "B",
+            "explanation": "While commonly introduces an action in progress in the past.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q13",
+            "topic": "Present Perfect",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "I _____ that film three times.",
+            "options": {
+              "A": "saw",
+              "B": "have seen",
+              "C": "had seen",
+              "D": "am seeing"
+            },
+            "correct_answer": "B",
+            "explanation": "Life experience without a finished time uses Present Perfect.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q14",
+            "topic": "Present Perfect",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "She _____ her homework, so she can relax now.",
+            "options": {
+              "A": "finished",
+              "B": "has finished",
+              "C": "was finishing",
+              "D": "finishes"
+            },
+            "correct_answer": "B",
+            "explanation": "The completed action has a result in the present.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q15",
+            "topic": "Present Perfect",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "We _____ here since 2021.",
+            "options": {
+              "A": "live",
+              "B": "lived",
+              "C": "have lived",
+              "D": "are living"
+            },
+            "correct_answer": "C",
+            "explanation": "Since + starting point with a continuing situation commonly takes Present Perfect.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q16",
+            "topic": "Present Perfect",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Have you _____ tried sushi?",
+            "options": {
+              "A": "ever",
+              "B": "yesterday",
+              "C": "ago",
+              "D": "last"
+            },
+            "correct_answer": "A",
+            "explanation": "Ever is common in Present Perfect questions about experience.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q17",
+            "topic": "Present Perfect Continuous",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "He _____ for two hours, and he is still working.",
+            "options": {
+              "A": "works",
+              "B": "has worked",
+              "C": "has been working",
+              "D": "worked"
+            },
+            "correct_answer": "C",
+            "explanation": "Emphasis is on the ongoing activity and its duration.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q18",
+            "topic": "Present Perfect Continuous",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Your clothes are wet. _____ you _____ in the rain?",
+            "options": {
+              "A": "Did / walk",
+              "B": "Have / been walking",
+              "C": "Are / walk",
+              "D": "Had / walked"
+            },
+            "correct_answer": "B",
+            "explanation": "A recent activity with visible present evidence can use Present Perfect Continuous.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q19",
+            "topic": "Past Perfect",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "By the time we arrived, the film _____.",
+            "options": {
+              "A": "started",
+              "B": "has started",
+              "C": "had started",
+              "D": "was starting"
+            },
+            "correct_answer": "C",
+            "explanation": "The film started before another past event; use Past Perfect.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q20",
+            "topic": "Past Perfect",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "She couldn't open the file because she _____ the password.",
+            "options": {
+              "A": "forgot",
+              "B": "has forgotten",
+              "C": "had forgotten",
+              "D": "forgets"
+            },
+            "correct_answer": "C",
+            "explanation": "Forgetting happened before the later past situation.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q21",
+            "topic": "Future Simple",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The phone is ringing. I _____ it.",
+            "options": {
+              "A": "answer",
+              "B": "am answering yesterday",
+              "C": "will answer",
+              "D": "answered"
+            },
+            "correct_answer": "C",
+            "explanation": "A decision made at the moment of speaking uses will.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q22",
+            "topic": "Future Simple",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I promise I _____ your secret.",
+            "options": {
+              "A": "don't tell",
+              "B": "won't tell",
+              "C": "am not telling yesterday",
+              "D": "haven't told"
+            },
+            "correct_answer": "B",
+            "explanation": "Will is used for promises.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q23",
+            "topic": "Be going to",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Look at the dark clouds. It _____.",
+            "options": {
+              "A": "will raining",
+              "B": "is going to rain",
+              "C": "rains",
+              "D": "has rained"
+            },
+            "correct_answer": "B",
+            "explanation": "Evidence now supports a prediction with be going to.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q24",
+            "topic": "Be going to",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "We _____ a new laptop next month; we've already chosen the model.",
+            "options": {
+              "A": "buy",
+              "B": "bought",
+              "C": "are going to buy",
+              "D": "have bought"
+            },
+            "correct_answer": "C",
+            "explanation": "A prior plan/intention uses be going to.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q25",
+            "topic": "Future Continuous",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "This time tomorrow, we _____ to Hanoi.",
+            "options": {
+              "A": "drive",
+              "B": "will be driving",
+              "C": "will drive yesterday",
+              "D": "have driven"
+            },
+            "correct_answer": "B",
+            "explanation": "An action in progress at a specified future time uses will be + V-ing.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q26",
+            "topic": "Future Continuous",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "At 10 a.m. tomorrow, _____ you _____ the presentation?",
+            "options": {
+              "A": "will / be giving",
+              "B": "do / give",
+              "C": "have / given",
+              "D": "are / give"
+            },
+            "correct_answer": "A",
+            "explanation": "Future Continuous forms questions with will + subject + be + V-ing.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q27",
+            "topic": "Tense Contrast",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I _____ him last Monday, but I _____ him since then.",
+            "options": {
+              "A": "have seen / didn't see",
+              "B": "saw / haven't seen",
+              "C": "saw / didn't see",
+              "D": "had seen / don't see"
+            },
+            "correct_answer": "B",
+            "explanation": "Last Monday is finished; since then connects the period to now.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q28",
+            "topic": "Tense Contrast",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "When I got home, my family _____ dinner.",
+            "options": {
+              "A": "has already eaten",
+              "B": "had already eaten",
+              "C": "already eats",
+              "D": "is already eating"
+            },
+            "correct_answer": "B",
+            "explanation": "Eating happened before I got home.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q29",
+            "topic": "Tense Contrast",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "She _____ English for three years and still studies every day.",
+            "options": {
+              "A": "has been learning",
+              "B": "learned yesterday",
+              "C": "is learn",
+              "D": "had learn"
+            },
+            "correct_answer": "A",
+            "explanation": "The duration continues to now and emphasizes the learning process.",
+            "quality_flag": null
+          },
+          {
+            "id": "d1q30",
+            "topic": "Tense Contrast",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "I think our team _____ the match, but we need to practise.",
+            "options": {
+              "A": "is going win",
+              "B": "will win",
+              "C": "won yesterday",
+              "D": "has winning"
+            },
+            "correct_answer": "B",
+            "explanation": "A prediction/opinion with I think commonly uses will.",
+            "quality_flag": null
+          }
+        ],
+        "answer_key_included": true
+      }
+    },
+    {
+      "day": 2,
+      "title": "Verb Forms & Modal Verbs",
+      "objectives": [
+        "Hiểu cấu trúc và cách dùng",
+        "Nhận biết lỗi thường gặp",
+        "Vận dụng trong ngữ cảnh A2–B1"
+      ],
+      "topics": [
+        {
+          "id": "day2_topic1",
+          "name": "Gerunds (V-ing)",
+          "name_vi": "Danh động từ",
+          "definition": "V-ing có chức năng như danh từ, thường đứng sau một số động từ, giới từ hoặc làm chủ ngữ.",
+          "formula": "Verb + V-ing; Preposition + V-ing; V-ing + verb (as subject).",
+          "usage": "After verbs such as enjoy, avoid, finish; after prepositions; as subject.",
+          "time_expressions_or_signals": [
+            "enjoy",
+            "avoid",
+            "finish",
+            "mind",
+            "suggest",
+            "after",
+            "before",
+            "interested in"
+          ],
+          "examples": [
+            {
+              "en": "I enjoy playing badminton.",
+              "vi": "Tôi thích chơi cầu lông."
+            }
+          ],
+          "common_mistakes": [
+            "I enjoy to play → I enjoy playing."
+          ],
+          "comparison": "Infinitive follows verbs such as want, decide, hope."
+        },
+        {
+          "id": "day2_topic2",
+          "name": "Infinitives (to + V)",
+          "name_vi": "Động từ nguyên mẫu có to",
+          "definition": "Dùng sau một số động từ, tính từ hoặc để diễn tả mục đích.",
+          "formula": "Verb + to V; adjective + to V; to V (purpose).",
+          "usage": "After want, decide, hope, plan, need; after adjectives; to express purpose.",
+          "time_expressions_or_signals": [
+            "want",
+            "decide",
+            "hope",
+            "plan",
+            "need",
+            "would like"
+          ],
+          "examples": [
+            {
+              "en": "She decided to study abroad.",
+              "vi": "Cô ấy quyết định đi du học."
+            }
+          ],
+          "common_mistakes": [
+            "She decided studying → She decided to study."
+          ],
+          "comparison": "Một số động từ theo sau bởi V-ing, một số theo sau bởi to V; cần học theo verb pattern."
+        },
+        {
+          "id": "day2_topic3",
+          "name": "Bare Infinitives",
+          "name_vi": "Động từ nguyên mẫu không to",
+          "definition": "Dùng sau modal verbs và một số động từ đặc biệt như make/let trong cấu trúc chủ động.",
+          "formula": "Modal + V; make/let + object + V; help + object + (to) V.",
+          "usage": "After can, must, should, will; make/let someone do something.",
+          "time_expressions_or_signals": [
+            "can",
+            "must",
+            "should",
+            "let",
+            "make"
+          ],
+          "examples": [
+            {
+              "en": "My manager let me leave early.",
+              "vi": "Quản lý cho phép tôi về sớm."
+            }
+          ],
+          "common_mistakes": [
+            "Let me to go → Let me go."
+          ],
+          "comparison": "Ở thể bị động với make: be made to do."
+        },
+        {
+          "id": "day2_topic4",
+          "name": "Verb Patterns",
+          "name_vi": "Các mẫu động từ",
+          "definition": "Một số động từ đi với V-ing, một số đi với to V, object + to V hoặc object + bare V.",
+          "formula": "Verb + V-ing / to V / object + to V / object + bare V.",
+          "usage": "Choose the complement required by the main verb.",
+          "time_expressions_or_signals": [
+            "enjoy doing",
+            "want to do",
+            "ask someone to do",
+            "make someone do"
+          ],
+          "examples": [
+            {
+              "en": "They asked me to check the document.",
+              "vi": "Họ yêu cầu tôi kiểm tra tài liệu."
+            }
+          ],
+          "common_mistakes": [
+            "They suggested me to go → They suggested going / suggested that I go."
+          ],
+          "comparison": "Stop/remember/try có thể đổi nghĩa tùy V-ing hay to V."
+        },
+        {
+          "id": "day2_topic5",
+          "name": "Can / Could / Be able to",
+          "name_vi": "Khả năng và sự cho phép",
+          "definition": "Can/could diễn tả khả năng, yêu cầu hoặc sự cho phép; be able to linh hoạt theo nhiều thì.",
+          "formula": "S + can/could + V; S + be able to + V; modal + not + V; modal + S + V?",
+          "usage": "Ability, permission, requests, general and specific ability.",
+          "time_expressions_or_signals": [
+            "can",
+            "could",
+            "be able to"
+          ],
+          "examples": [
+            {
+              "en": "I can solve this problem, but I couldn't solve it yesterday.",
+              "vi": "Tôi có thể giải quyết vấn đề này, nhưng hôm qua tôi đã không thể."
+            }
+          ],
+          "common_mistakes": [
+            "She can to swim → She can swim."
+          ],
+          "comparison": "Be able to dùng được ở dạng tương lai/hoàn thành; could thường nói khả năng chung trong quá khứ."
+        },
+        {
+          "id": "day2_topic6",
+          "name": "Must / Have to / Need to",
+          "name_vi": "Sự bắt buộc và cần thiết",
+          "definition": "Diễn tả nghĩa vụ hoặc sự cần thiết; must thường thể hiện quan điểm/nghĩa vụ mạnh của người nói, have to thường do quy định/hoàn cảnh.",
+          "formula": "must + V; have/has to + V; need/needs to + V; don't/doesn't have to + V.",
+          "usage": "Obligation, rules, necessity.",
+          "time_expressions_or_signals": [
+            "must",
+            "have to",
+            "need to"
+          ],
+          "examples": [
+            {
+              "en": "Employees have to wear an ID badge.",
+              "vi": "Nhân viên phải đeo thẻ nhận diện."
+            }
+          ],
+          "common_mistakes": [
+            "He have to work → He has to work."
+          ],
+          "comparison": "Mustn't = bị cấm; don't have to = không cần thiết."
+        },
+        {
+          "id": "day2_topic7",
+          "name": "Should / Ought to / Had better",
+          "name_vi": "Lời khuyên",
+          "definition": "Đưa ra lời khuyên, điều nên làm; had better thường mạnh hơn và hàm ý hậu quả nếu không làm.",
+          "formula": "should/ought to + V; had better + V; had better not + V.",
+          "usage": "Advice, recommendations, warnings.",
+          "time_expressions_or_signals": [
+            "should",
+            "ought to",
+            "had better"
+          ],
+          "examples": [
+            {
+              "en": "You should back up your files regularly.",
+              "vi": "Bạn nên sao lưu tệp thường xuyên."
+            }
+          ],
+          "common_mistakes": [
+            "You should to rest → You should rest."
+          ],
+          "comparison": "Had better không có to; ought to có to."
+        },
+        {
+          "id": "day2_topic8",
+          "name": "Possibility Modals",
+          "name_vi": "Modal verbs chỉ khả năng",
+          "definition": "May, might, could diễn tả khả năng; must có thể diễn tả suy luận chắc chắn.",
+          "formula": "may/might/could + V; must + V (strong deduction); can't + V (impossibility).",
+          "usage": "Possibility, deduction, uncertainty.",
+          "time_expressions_or_signals": [
+            "perhaps",
+            "maybe",
+            "possibly",
+            "surely"
+          ],
+          "examples": [
+            {
+              "en": "She might be in a meeting.",
+              "vi": "Có thể cô ấy đang họp."
+            }
+          ],
+          "common_mistakes": [
+            "She might is busy → She might be busy."
+          ],
+          "comparison": "Mustn’t thường là cấm đoán, không phải phủ định của suy luận must; suy luận phủ định thường dùng can't."
+        },
+        {
+          "id": "day2_topic9",
+          "name": "Mustn't vs Don't have to",
+          "name_vi": "Cấm đoán vs không cần thiết",
+          "definition": "Mustn't nghĩa là không được phép; don't have to nghĩa là không bắt buộc.",
+          "formula": "mustn't + V; don't/doesn't have to + V.",
+          "usage": "Prohibition versus lack of necessity.",
+          "time_expressions_or_signals": [
+            "mustn't",
+            "don't have to",
+            "needn't"
+          ],
+          "examples": [
+            {
+              "en": "You mustn't share your password. You don't have to come early.",
+              "vi": "Bạn không được chia sẻ mật khẩu. Bạn không cần đến sớm."
+            }
+          ],
+          "common_mistakes": [
+            "You don't have to park here (nếu muốn nói cấm) → You mustn't park here."
+          ],
+          "comparison": "Phân biệt nghĩa cấm và không cần."
+        },
+        {
+          "id": "day2_topic10",
+          "name": "Was/Were able to vs Could",
+          "name_vi": "Khả năng trong quá khứ",
+          "definition": "Could thường nói khả năng chung; was/were able to thường nhấn mạnh đã thực hiện thành công một việc cụ thể.",
+          "formula": "could + V; was/were able to + V.",
+          "usage": "Past general ability versus successful achievement on a particular occasion.",
+          "time_expressions_or_signals": [
+            "when I was young",
+            "managed to",
+            "was able to"
+          ],
+          "examples": [
+            {
+              "en": "Despite the delay, we were able to finish the project.",
+              "vi": "Mặc dù bị trì hoãn, chúng tôi vẫn hoàn thành được dự án."
+            }
+          ],
+          "common_mistakes": [
+            "We could finish the one difficult task (không phải lúc nào cũng sai, nhưng thường kém rõ nghĩa thành công cụ thể) → were able to finish."
+          ],
+          "comparison": "Could dùng tự nhiên với khả năng chung hoặc động từ chỉ giác quan/nhận thức."
+        }
+      ],
+      "assessment": {
+        "question_count": 30,
+        "difficulty_distribution_target": {
+          "easy": 9,
+          "medium": 15,
+          "hard": 6
+        },
+        "questions": [
+          {
+            "id": "d2q01",
+            "topic": "Gerunds (V-ing)",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "I avoid _____ my phone during meetings.",
+            "options": {
+              "A": "check",
+              "B": "to check",
+              "C": "checking",
+              "D": "checked"
+            },
+            "correct_answer": "C",
+            "explanation": "Avoid is followed by a gerund.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q02",
+            "topic": "Gerunds (V-ing)",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "She is interested in _____ web design.",
+            "options": {
+              "A": "learn",
+              "B": "learning",
+              "C": "to learning",
+              "D": "learned"
+            },
+            "correct_answer": "B",
+            "explanation": "A preposition is followed by a noun or gerund.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q03",
+            "topic": "Gerunds (V-ing)",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "_____ regularly can improve your concentration.",
+            "options": {
+              "A": "Exercise",
+              "B": "Exercising",
+              "C": "To exercising",
+              "D": "Exercised"
+            },
+            "correct_answer": "B",
+            "explanation": "A gerund can function as the subject.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q04",
+            "topic": "Gerunds (V-ing)",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Would you mind _____ the window?",
+            "options": {
+              "A": "open",
+              "B": "to open",
+              "C": "opening",
+              "D": "opened"
+            },
+            "correct_answer": "C",
+            "explanation": "Mind is followed by V-ing.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q05",
+            "topic": "Infinitives (To + V)",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "They hope _____ the project by Friday.",
+            "options": {
+              "A": "finish",
+              "B": "finishing",
+              "C": "to finish",
+              "D": "finished"
+            },
+            "correct_answer": "C",
+            "explanation": "Hope is followed by to-infinitive.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q06",
+            "topic": "Infinitives (To + V)",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I need _____ a new password.",
+            "options": {
+              "A": "create",
+              "B": "creating",
+              "C": "to create",
+              "D": "created"
+            },
+            "correct_answer": "C",
+            "explanation": "Need + to-infinitive.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q07",
+            "topic": "Infinitives (To + V)",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "He went to the shop _____ some milk.",
+            "options": {
+              "A": "buy",
+              "B": "buying",
+              "C": "to buy",
+              "D": "bought"
+            },
+            "correct_answer": "C",
+            "explanation": "To-infinitive can express purpose.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q08",
+            "topic": "Infinitives (To + V)",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "We decided _____ the earlier train.",
+            "options": {
+              "A": "take",
+              "B": "taking",
+              "C": "to take",
+              "D": "taken"
+            },
+            "correct_answer": "C",
+            "explanation": "Decide is followed by to-infinitive.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q09",
+            "topic": "Bare Infinitives",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "You must _____ your seat belt.",
+            "options": {
+              "A": "wear",
+              "B": "to wear",
+              "C": "wearing",
+              "D": "wore"
+            },
+            "correct_answer": "A",
+            "explanation": "Modal verbs are followed by the bare infinitive.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q10",
+            "topic": "Bare Infinitives",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The teacher made us _____ the exercise again.",
+            "options": {
+              "A": "to do",
+              "B": "doing",
+              "C": "do",
+              "D": "did"
+            },
+            "correct_answer": "C",
+            "explanation": "Make + object + bare infinitive in active voice.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q11",
+            "topic": "Verb Patterns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "She suggested _____ a short break.",
+            "options": {
+              "A": "to take",
+              "B": "take",
+              "C": "taking",
+              "D": "taken"
+            },
+            "correct_answer": "C",
+            "explanation": "Suggest is commonly followed by V-ing.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q12",
+            "topic": "Verb Patterns",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "My manager asked me _____ the figures.",
+            "options": {
+              "A": "check",
+              "B": "checking",
+              "C": "to check",
+              "D": "checked"
+            },
+            "correct_answer": "C",
+            "explanation": "Ask + object + to-infinitive.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q13",
+            "topic": "Verb Patterns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I stopped _____ some water on my way home.",
+            "options": {
+              "A": "buy",
+              "B": "to buy",
+              "C": "buying",
+              "D": "bought"
+            },
+            "correct_answer": "B",
+            "explanation": "Stop to do means pause another activity in order to do this.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q14",
+            "topic": "Verb Patterns",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "He stopped _____ because it was unhealthy.",
+            "options": {
+              "A": "smoke",
+              "B": "to smoke",
+              "C": "smoking",
+              "D": "smoked"
+            },
+            "correct_answer": "C",
+            "explanation": "Stop doing means quit the activity.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q15",
+            "topic": "Can / Could / Be able to",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "When I was six, I _____ swim very well.",
+            "options": {
+              "A": "can",
+              "B": "could",
+              "C": "am able",
+              "D": "will"
+            },
+            "correct_answer": "B",
+            "explanation": "Could expresses general ability in the past.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q16",
+            "topic": "Can / Could / Be able to",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "After several attempts, she _____ open the locked door.",
+            "options": {
+              "A": "could",
+              "B": "was able to",
+              "C": "can",
+              "D": "is able"
+            },
+            "correct_answer": "B",
+            "explanation": "Was able to emphasizes success in a specific past situation.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q17",
+            "topic": "Can / Could / Be able to",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "_____ you help me carry this box?",
+            "options": {
+              "A": "Could",
+              "B": "Must",
+              "C": "Should to",
+              "D": "Have"
+            },
+            "correct_answer": "A",
+            "explanation": "Could is a polite request.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q18",
+            "topic": "Must / Have to / Need to",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "You _____ show your ID before entering the building. It is a rule.",
+            "options": {
+              "A": "has to",
+              "B": "have to",
+              "C": "must to",
+              "D": "need"
+            },
+            "correct_answer": "B",
+            "explanation": "Have to expresses an external rule; subject you takes have.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q19",
+            "topic": "Must / Have to / Need to",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "I _____ finish this today because the deadline is tomorrow.",
+            "options": {
+              "A": "need to",
+              "B": "needs",
+              "C": "must to",
+              "D": "have"
+            },
+            "correct_answer": "A",
+            "explanation": "Need to + base verb expresses necessity.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q20",
+            "topic": "Must / Have to / Need to",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "All visitors _____ sign in at reception.",
+            "options": {
+              "A": "has to",
+              "B": "have to",
+              "C": "having to",
+              "D": "must to"
+            },
+            "correct_answer": "B",
+            "explanation": "Plural subject visitors takes have to.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q21",
+            "topic": "Should / Ought to / Had better",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "You look exhausted. You _____ get some rest.",
+            "options": {
+              "A": "should",
+              "B": "should to",
+              "C": "had better to",
+              "D": "ought"
+            },
+            "correct_answer": "A",
+            "explanation": "Should + base verb gives advice.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q22",
+            "topic": "Should / Ought to / Had better",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "We _____ leave now, or we'll miss the train.",
+            "options": {
+              "A": "had better",
+              "B": "had better to",
+              "C": "ought",
+              "D": "should to"
+            },
+            "correct_answer": "A",
+            "explanation": "Had better + base verb gives strong advice/warning.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q23",
+            "topic": "Should / Ought to / Had better",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "You _____ apologise for the mistake.",
+            "options": {
+              "A": "ought",
+              "B": "ought to",
+              "C": "ought for",
+              "D": "oughting"
+            },
+            "correct_answer": "B",
+            "explanation": "Ought to is followed by the base verb.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q24",
+            "topic": "May / Might / Could / Must (Possibility)",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "The lights are off. They _____ be asleep.",
+            "options": {
+              "A": "must",
+              "B": "can't to",
+              "C": "mustn't",
+              "D": "should to"
+            },
+            "correct_answer": "A",
+            "explanation": "Must + base verb expresses a strong logical deduction.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q25",
+            "topic": "May / Might / Could / Must (Possibility)",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I'm not sure, but the meeting _____ finish early.",
+            "options": {
+              "A": "must",
+              "B": "might",
+              "C": "has to",
+              "D": "ought"
+            },
+            "correct_answer": "B",
+            "explanation": "Might expresses possibility/uncertainty.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q26",
+            "topic": "May / Might / Could / Must (Possibility)",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "That _____ be John's car; he is overseas.",
+            "options": {
+              "A": "must",
+              "B": "can't",
+              "C": "has to",
+              "D": "should"
+            },
+            "correct_answer": "B",
+            "explanation": "Can't expresses a strong negative deduction.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q27",
+            "topic": "Mustn't vs Don't have to",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "You _____ use your phone during the exam. It is prohibited.",
+            "options": {
+              "A": "don't have to",
+              "B": "mustn't",
+              "C": "needn't",
+              "D": "could"
+            },
+            "correct_answer": "B",
+            "explanation": "Mustn't expresses prohibition.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q28",
+            "topic": "Mustn't vs Don't have to",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "You _____ bring food; lunch is provided.",
+            "options": {
+              "A": "mustn't",
+              "B": "don't have to",
+              "C": "can't",
+              "D": "shouldn't"
+            },
+            "correct_answer": "B",
+            "explanation": "Don't have to means it is not necessary.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q29",
+            "topic": "Was/Were able to vs Could",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "When she was a child, she _____ speak two languages.",
+            "options": {
+              "A": "could",
+              "B": "was able to yesterday only",
+              "C": "can",
+              "D": "will"
+            },
+            "correct_answer": "A",
+            "explanation": "Could describes general past ability.",
+            "quality_flag": null
+          },
+          {
+            "id": "d2q30",
+            "topic": "Was/Were able to vs Could",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Despite the heavy traffic, we _____ arrive before 9.",
+            "options": {
+              "A": "could",
+              "B": "were able to",
+              "C": "can",
+              "D": "are able to"
+            },
+            "correct_answer": "B",
+            "explanation": "Was/were able to emphasizes successful achievement on this occasion.",
+            "quality_flag": null
+          }
+        ],
+        "answer_key_included": true
+      }
+    },
+    {
+      "day": 3,
+      "title": "Nouns, Articles & Pronouns",
+      "objectives": [
+        "Hiểu cấu trúc và cách dùng",
+        "Nhận biết lỗi thường gặp",
+        "Vận dụng trong ngữ cảnh A2–B1"
+      ],
+      "topics": [
+        {
+          "id": "day3_topic1",
+          "name": "Countable / Uncountable Nouns",
+          "name_vi": "Danh từ đếm được/không đếm được",
+          "definition": "Danh từ đếm được có dạng số ít/số nhiều; danh từ không đếm được thường không có dạng số nhiều thông thường.",
+          "formula": "a/an + singular countable noun; number + plural noun; uncountable noun (no a/an).",
+          "usage": "Talk about quantities and noun number accurately.",
+          "time_expressions_or_signals": [
+            "a book",
+            "books",
+            "water",
+            "information",
+            "advice",
+            "furniture"
+          ],
+          "examples": [
+            {
+              "en": "I need some information about the course.",
+              "vi": "Tôi cần một vài thông tin về khóa học."
+            }
+          ],
+          "common_mistakes": [
+            "an advice → some advice / a piece of advice."
+          ],
+          "comparison": "Một số danh từ không đếm được trong tiếng Anh có thể đếm được trong ngôn ngữ khác."
+        },
+        {
+          "id": "day3_topic2",
+          "name": "Articles: A / An / The / Zero",
+          "name_vi": "Mạo từ",
+          "definition": "A/an giới thiệu danh từ đếm được số ít chưa xác định; the chỉ đối tượng xác định; zero article dùng trong nhiều trường hợp nói chung.",
+          "formula": "a + consonant sound; an + vowel sound; the + specific noun; Ø + plural/uncountable nouns in general.",
+          "usage": "First mention, specific reference, general statements, unique items.",
+          "time_expressions_or_signals": [
+            "a",
+            "an",
+            "the; no article"
+          ],
+          "examples": [
+            {
+              "en": "I bought a book. The book is about history.",
+              "vi": "Tôi mua một quyển sách. Quyển sách đó nói về lịch sử."
+            }
+          ],
+          "common_mistakes": [
+            "I have a breakfast → I have breakfast."
+          ],
+          "comparison": "A/an dựa trên âm đầu, không chỉ chữ cái; the phụ thuộc tính xác định."
+        },
+        {
+          "id": "day3_topic3",
+          "name": "Quantifiers",
+          "name_vi": "Từ chỉ lượng",
+          "definition": "Much/many/a lot of/few/little diễn tả số lượng tùy danh từ đếm được hoặc không đếm được.",
+          "formula": "many + plural countable; much + uncountable; a lot of + both; a few + plural; a little + uncountable.",
+          "usage": "Ask and describe quantity.",
+          "time_expressions_or_signals": [
+            "many",
+            "much",
+            "a lot of",
+            "a few",
+            "few",
+            "a little",
+            "little"
+          ],
+          "examples": [
+            {
+              "en": "There isn't much time, but we have a few options.",
+              "vi": "Không có nhiều thời gian, nhưng chúng ta có một vài lựa chọn."
+            }
+          ],
+          "common_mistakes": [
+            "much people → many people."
+          ],
+          "comparison": "A few/a little mang nghĩa có một ít; few/little mang nghĩa gần như không đủ."
+        },
+        {
+          "id": "day3_topic4",
+          "name": "Some / Any / No",
+          "name_vi": "Từ hạn định chỉ lượng",
+          "definition": "Some thường dùng trong câu khẳng định và lời mời/đề nghị; any thường dùng trong câu hỏi/phủ định; no đứng trước danh từ mang nghĩa không có.",
+          "formula": "some + plural/uncountable; any + plural/uncountable; no + noun.",
+          "usage": "Quantity, offers, questions, negatives.",
+          "time_expressions_or_signals": [
+            "some",
+            "any",
+            "no"
+          ],
+          "examples": [
+            {
+              "en": "Would you like some tea?",
+              "vi": "Bạn có muốn uống chút trà không?"
+            }
+          ],
+          "common_mistakes": [
+            "I don't have no time → I don't have any time / I have no time."
+          ],
+          "comparison": "Any cũng có thể dùng trong câu khẳng định với nghĩa bất kỳ."
+        },
+        {
+          "id": "day3_topic5",
+          "name": "Personal & Possessive Pronouns",
+          "name_vi": "Đại từ nhân xưng/sở hữu",
+          "definition": "Đại từ chủ ngữ làm chủ ngữ; đại từ tân ngữ làm tân ngữ; tính từ sở hữu đứng trước danh từ; đại từ sở hữu thay cho cụm sở hữu.",
+          "formula": "I/me/my/mine; he/him/his; she/her/hers; we/us/our/ours; they/them/their/theirs.",
+          "usage": "Avoid repeating nouns and show possession.",
+          "time_expressions_or_signals": [
+            "I",
+            "me",
+            "my",
+            "mine",
+            "they",
+            "them",
+            "their",
+            "theirs"
+          ],
+          "examples": [
+            {
+              "en": "This is my laptop; that one is theirs.",
+              "vi": "Đây là máy tính của tôi; cái kia là của họ."
+            }
+          ],
+          "common_mistakes": [
+            "This is their → This is theirs (khi không có danh từ theo sau)."
+          ],
+          "comparison": "Their + noun; theirs đứng độc lập."
+        },
+        {
+          "id": "day3_topic6",
+          "name": "Reflexive Pronouns",
+          "name_vi": "Đại từ phản thân",
+          "definition": "Dùng khi chủ ngữ và tân ngữ cùng chỉ một người/vật hoặc để nhấn mạnh.",
+          "formula": "myself, yourself, himself, herself, itself, ourselves, yourselves, themselves.",
+          "usage": "Reflexive meaning and emphasis.",
+          "time_expressions_or_signals": [
+            "by myself",
+            "teach yourself",
+            "hurt himself"
+          ],
+          "examples": [
+            {
+              "en": "She taught herself to code.",
+              "vi": "Cô ấy tự học lập trình."
+            }
+          ],
+          "common_mistakes": [
+            "She taught her → She taught herself (nếu chính cô ấy tự học)."
+          ],
+          "comparison": "By myself có thể mang nghĩa một mình/tự mình."
+        },
+        {
+          "id": "day3_topic7",
+          "name": "Demonstratives",
+          "name_vi": "Đại từ/từ hạn định chỉ định",
+          "definition": "This/that dùng với danh từ số ít; these/those dùng với danh từ số nhiều; this/these thường gần, that/those thường xa.",
+          "formula": "this + singular; that + singular; these + plural; those + plural.",
+          "usage": "Point to people or things by distance or context.",
+          "time_expressions_or_signals": [
+            "this",
+            "that",
+            "these",
+            "those"
+          ],
+          "examples": [
+            {
+              "en": "These shoes are more comfortable than those.",
+              "vi": "Đôi giày này thoải mái hơn những đôi kia."
+            }
+          ],
+          "common_mistakes": [
+            "This books → These books."
+          ],
+          "comparison": "Động từ và danh từ phải hòa hợp số ít/số nhiều."
+        },
+        {
+          "id": "day3_topic8",
+          "name": "Indefinite Pronouns",
+          "name_vi": "Đại từ bất định",
+          "definition": "Someone/anyone/no one, something/anything/nothing... nói về người/vật không xác định.",
+          "formula": "some- usually affirmative; any- questions/negatives; no- negative meaning; every- all members.",
+          "usage": "Refer to unspecified people, things or places.",
+          "time_expressions_or_signals": [
+            "someone",
+            "anyone",
+            "nobody",
+            "something",
+            "anything",
+            "everywhere"
+          ],
+          "examples": [
+            {
+              "en": "Nobody knows the answer.",
+              "vi": "Không ai biết câu trả lời."
+            }
+          ],
+          "common_mistakes": [
+            "Nobody don't know → Nobody knows."
+          ],
+          "comparison": "Các đại từ kết thúc bằng -one/-body/-thing thường đi với động từ số ít."
+        }
+      ],
+      "assessment": {
+        "question_count": 30,
+        "difficulty_distribution_target": {
+          "easy": 9,
+          "medium": 15,
+          "hard": 6
+        },
+        "questions": [
+          {
+            "id": "d3q01",
+            "topic": "Countable / Uncountable Nouns",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "How _____ pieces of advice did he give you?",
+            "options": {
+              "A": "much",
+              "B": "many",
+              "C": "little",
+              "D": "any"
+            },
+            "correct_answer": "B",
+            "explanation": "Pieces is a plural countable noun.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q02",
+            "topic": "Countable / Uncountable Nouns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "There isn't _____ information on the website.",
+            "options": {
+              "A": "many",
+              "B": "a few",
+              "C": "much",
+              "D": "several"
+            },
+            "correct_answer": "C",
+            "explanation": "Information is uncountable.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q03",
+            "topic": "Countable / Uncountable Nouns",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "We bought two _____ of bread.",
+            "options": {
+              "A": "loaves",
+              "B": "bread",
+              "C": " breads",
+              "D": " breads"
+            },
+            "correct_answer": "A",
+            "explanation": "Loaf has the plural loaves; bread is uncountable.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q04",
+            "topic": "Countable / Uncountable Nouns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The furniture _____ very expensive.",
+            "options": {
+              "A": "are",
+              "B": "is",
+              "C": "were",
+              "D": "have"
+            },
+            "correct_answer": "B",
+            "explanation": "Furniture is an uncountable singular noun.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q05",
+            "topic": "Articles: A / An / The / Zero Article",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "She is _____ honest person.",
+            "options": {
+              "A": "a",
+              "B": "an",
+              "C": "the",
+              "D": "—"
+            },
+            "correct_answer": "B",
+            "explanation": "Honest begins with a vowel sound.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q06",
+            "topic": "Articles: A / An / The / Zero Article",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I usually have _____ breakfast at 7.",
+            "options": {
+              "A": "a",
+              "B": "an",
+              "C": "the",
+              "D": "—"
+            },
+            "correct_answer": "D",
+            "explanation": "Meals are often used without an article when speaking generally.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q07",
+            "topic": "Articles: A / An / The / Zero Article",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "Can you close _____ window next to you?",
+            "options": {
+              "A": "a",
+              "B": "an",
+              "C": "the",
+              "D": "—"
+            },
+            "correct_answer": "C",
+            "explanation": "The identifies a specific, known window.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q08",
+            "topic": "Articles: A / An / The / Zero Article",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "He wants to become _____ engineer.",
+            "options": {
+              "A": "a",
+              "B": "an",
+              "C": "the",
+              "D": "—"
+            },
+            "correct_answer": "B",
+            "explanation": "Engineer begins with a vowel sound.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q09",
+            "topic": "Articles: A / An / The / Zero Article",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "_____ children need enough sleep.",
+            "options": {
+              "A": "A",
+              "B": "An",
+              "C": "The",
+              "D": "—"
+            },
+            "correct_answer": "D",
+            "explanation": "Plural countable nouns take zero article for general statements.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q10",
+            "topic": "Much / Many / A lot of / Few / Little",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "How _____ students are in your class?",
+            "options": {
+              "A": "much",
+              "B": "many",
+              "C": "little",
+              "D": "any"
+            },
+            "correct_answer": "B",
+            "explanation": "Students is plural countable.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q11",
+            "topic": "Much / Many / A lot of / Few / Little",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "We have very _____ time, so let's start now.",
+            "options": {
+              "A": "few",
+              "B": "many",
+              "C": "little",
+              "D": "a few"
+            },
+            "correct_answer": "C",
+            "explanation": "Time is uncountable; little means not much.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q12",
+            "topic": "Much / Many / A lot of / Few / Little",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "There are _____ chairs left, so everyone can sit down.",
+            "options": {
+              "A": "a few",
+              "B": "little",
+              "C": "much",
+              "D": "a little"
+            },
+            "correct_answer": "A",
+            "explanation": "A few means some, enough to be useful.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q13",
+            "topic": "Much / Many / A lot of / Few / Little",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "She doesn't drink _____ water during the day.",
+            "options": {
+              "A": "many",
+              "B": "few",
+              "C": "much",
+              "D": "a few"
+            },
+            "correct_answer": "C",
+            "explanation": "Water is uncountable.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q14",
+            "topic": "Much / Many / A lot of / Few / Little",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I have _____ work to do this afternoon.",
+            "options": {
+              "A": "many",
+              "B": "a lot of",
+              "C": "few",
+              "D": "several"
+            },
+            "correct_answer": "B",
+            "explanation": "A lot of works with uncountable work.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q15",
+            "topic": "Some / Any / No",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Would you like _____ coffee?",
+            "options": {
+              "A": "any",
+              "B": "some",
+              "C": "no",
+              "D": "many"
+            },
+            "correct_answer": "B",
+            "explanation": "Some is common in offers.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q16",
+            "topic": "Some / Any / No",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "There aren't _____ clean cups.",
+            "options": {
+              "A": "some",
+              "B": "no",
+              "C": "any",
+              "D": "much"
+            },
+            "correct_answer": "C",
+            "explanation": "Any is used in negative sentences.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q17",
+            "topic": "Some / Any / No",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "We have _____ reason to worry; everything is ready.",
+            "options": {
+              "A": "no",
+              "B": "any",
+              "C": "many",
+              "D": "a"
+            },
+            "correct_answer": "A",
+            "explanation": "No + noun means not any.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q18",
+            "topic": "Subject / Object / Possessive Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "This message is for Sarah and _____.",
+            "options": {
+              "A": "I",
+              "B": "me",
+              "C": "my",
+              "D": "mine"
+            },
+            "correct_answer": "B",
+            "explanation": "Object pronoun me follows the preposition for.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q19",
+            "topic": "Subject / Object / Possessive Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "That isn't our car. _____ is blue.",
+            "options": {
+              "A": "Our",
+              "B": "Ours",
+              "C": "We",
+              "D": "Us"
+            },
+            "correct_answer": "B",
+            "explanation": "Ours is a possessive pronoun used without a noun.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q20",
+            "topic": "Subject / Object / Possessive Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Tom and Anna said _____ would join us later.",
+            "options": {
+              "A": "them",
+              "B": "their",
+              "C": "they",
+              "D": "theirs"
+            },
+            "correct_answer": "C",
+            "explanation": "They is the subject pronoun.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q21",
+            "topic": "Subject / Object / Possessive Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "This message is for Sarah and _____.",
+            "options": {
+              "A": "I",
+              "B": "me",
+              "C": "my",
+              "D": "mine"
+            },
+            "correct_answer": "B",
+            "explanation": "Object pronoun me follows the preposition for.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q22",
+            "topic": "Reflexive Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "He cut _____ while preparing dinner.",
+            "options": {
+              "A": "him",
+              "B": "his",
+              "C": "himself",
+              "D": "he"
+            },
+            "correct_answer": "C",
+            "explanation": "The subject and object refer to the same person.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q23",
+            "topic": "Reflexive Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "I completed the whole task by _____.",
+            "options": {
+              "A": "me",
+              "B": "my",
+              "C": "myself",
+              "D": "mine"
+            },
+            "correct_answer": "C",
+            "explanation": "By myself means alone/without help.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q24",
+            "topic": "Demonstratives",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "_____ books over there belong to the library.",
+            "options": {
+              "A": "This",
+              "B": "That",
+              "C": "These",
+              "D": "Those"
+            },
+            "correct_answer": "D",
+            "explanation": "Those refers to plural things at a distance.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q25",
+            "topic": "Demonstratives",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I like _____ jacket I'm wearing.",
+            "options": {
+              "A": "these",
+              "B": "those",
+              "C": "this",
+              "D": "them"
+            },
+            "correct_answer": "C",
+            "explanation": "This refers to one nearby item.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q26",
+            "topic": "Indefinite Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "_____ has left a bag at reception. We don't know who.",
+            "options": {
+              "A": "Someone",
+              "B": "Anyone",
+              "C": "Nothing",
+              "D": "Everywhere"
+            },
+            "correct_answer": "A",
+            "explanation": "Someone is used for an unspecified person in an affirmative statement.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q27",
+            "topic": "Indefinite Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "I looked everywhere, but I couldn't find _____.",
+            "options": {
+              "A": "something",
+              "B": "anything",
+              "C": "nothing",
+              "D": "someone"
+            },
+            "correct_answer": "B",
+            "explanation": "Anything is common in negative clauses.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q28",
+            "topic": "Indefinite Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "_____ in the office knows how to use this printer.",
+            "options": {
+              "A": "Nobody",
+              "B": "Anybody",
+              "C": "No one don't",
+              "D": "Everyone"
+            },
+            "correct_answer": "D",
+            "explanation": "Everyone takes a singular verb and means all people.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q29",
+            "topic": "Indefinite Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "There is _____ in the fridge; it is completely empty.",
+            "options": {
+              "A": "something",
+              "B": "anything",
+              "C": "nothing",
+              "D": "someone"
+            },
+            "correct_answer": "C",
+            "explanation": "Nothing means not anything.",
+            "quality_flag": null
+          },
+          {
+            "id": "d3q30",
+            "topic": "Indefinite Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Did _____ call while I was out?",
+            "options": {
+              "A": "someone",
+              "B": "anyone",
+              "C": "no one",
+              "D": "everyone"
+            },
+            "correct_answer": "B",
+            "explanation": "Anyone is common in questions.",
+            "quality_flag": null
+          }
+        ],
+        "answer_key_included": true
+      }
+    },
+    {
+      "day": 4,
+      "title": "Adjectives, Adverbs & Comparison",
+      "objectives": [
+        "Hiểu cấu trúc và cách dùng",
+        "Nhận biết lỗi thường gặp",
+        "Vận dụng trong ngữ cảnh A2–B1"
+      ],
+      "topics": [
+        {
+          "id": "day4_topic1",
+          "name": "Adjectives",
+          "name_vi": "Tính từ",
+          "definition": "Tính từ mô tả đặc điểm của danh từ hoặc đại từ; thường đứng trước danh từ hoặc sau linking verbs.",
+          "formula": "adjective + noun; subject + linking verb + adjective.",
+          "usage": "Describe people, things, feelings and states.",
+          "time_expressions_or_signals": [
+            "beautiful",
+            "useful",
+            "tired",
+            "expensive"
+          ],
+          "examples": [
+            {
+              "en": "The new application is useful.",
+              "vi": "Ứng dụng mới rất hữu ích."
+            }
+          ],
+          "common_mistakes": [
+            "She looks beautifully → She looks beautiful."
+          ],
+          "comparison": "Sau be, seem, look, feel, become thường dùng adjective khi mô tả chủ ngữ."
+        },
+        {
+          "id": "day4_topic2",
+          "name": "Adverbs",
+          "name_vi": "Trạng từ",
+          "definition": "Trạng từ bổ nghĩa cho động từ, tính từ, trạng từ khác hoặc cả câu.",
+          "formula": "verb + adverb; adverb + adjective; adverb + adverb.",
+          "usage": "Describe how, when, where, how often or to what degree.",
+          "time_expressions_or_signals": [
+            "quickly",
+            "carefully",
+            "often",
+            "very",
+            "yesterday"
+          ],
+          "examples": [
+            {
+              "en": "He explained the problem clearly.",
+              "vi": "Anh ấy giải thích vấn đề một cách rõ ràng."
+            }
+          ],
+          "common_mistakes": [
+            "He speaks clear → He speaks clearly."
+          ],
+          "comparison": "Không phải mọi trạng từ đều có -ly; fast, hard, well là các dạng đặc biệt."
+        },
+        {
+          "id": "day4_topic3",
+          "name": "Adjective vs Adverb",
+          "name_vi": "Tính từ và trạng từ",
+          "definition": "Chọn tính từ để mô tả danh từ/chủ ngữ; chọn trạng từ để bổ nghĩa cho hành động.",
+          "formula": "adjective + noun / linking verb + adjective; action verb + adverb.",
+          "usage": "Distinguish description of a person/thing from manner of action.",
+          "time_expressions_or_signals": [
+            "good/well",
+            "careful/carefully",
+            "fast/fast"
+          ],
+          "examples": [
+            {
+              "en": "She is a careful driver and drives carefully.",
+              "vi": "Cô ấy là người lái xe cẩn thận và lái xe một cách cẩn thận."
+            }
+          ],
+          "common_mistakes": [
+            "She sings beautiful → She sings beautifully."
+          ],
+          "comparison": "Good thường là adjective; well thường là adverb, nhưng well cũng có thể là adjective nghĩa khỏe."
+        },
+        {
+          "id": "day4_topic4",
+          "name": "Comparatives",
+          "name_vi": "So sánh hơn",
+          "definition": "So sánh hai người/vật/sự việc.",
+          "formula": "short adjective + -er + than; more + long adjective + than; irregular forms.",
+          "usage": "Compare two items.",
+          "time_expressions_or_signals": [
+            "bigger than",
+            "more useful than",
+            "better than"
+          ],
+          "examples": [
+            {
+              "en": "This route is shorter than the other one.",
+              "vi": "Tuyến đường này ngắn hơn tuyến đường kia."
+            }
+          ],
+          "common_mistakes": [
+            "more easier → easier."
+          ],
+          "comparison": "Chú ý gấp đôi phụ âm, bỏ -y thành -ier và dạng bất quy tắc."
+        },
+        {
+          "id": "day4_topic5",
+          "name": "Superlatives",
+          "name_vi": "So sánh nhất",
+          "definition": "Diễn tả mức cao nhất/thấp nhất trong một nhóm.",
+          "formula": "the + adjective-est; the most + long adjective; irregular forms.",
+          "usage": "Identify the top or bottom degree in a group.",
+          "time_expressions_or_signals": [
+            "the biggest",
+            "the most interesting",
+            "the best"
+          ],
+          "examples": [
+            {
+              "en": "It is the most expensive phone in the shop.",
+              "vi": "Đó là chiếc điện thoại đắt nhất cửa hàng."
+            }
+          ],
+          "common_mistakes": [
+            "the most fastest → the fastest."
+          ],
+          "comparison": "Thường dùng the trước so sánh nhất; cần nêu nhóm so sánh phù hợp."
+        },
+        {
+          "id": "day4_topic6",
+          "name": "As ... as",
+          "name_vi": "So sánh bằng/không bằng",
+          "definition": "Diễn tả hai đối tượng ngang bằng hoặc không ngang bằng về một đặc điểm.",
+          "formula": "as + adjective/adverb + as; not as/so + adjective/adverb + as.",
+          "usage": "Compare equality or lack of equality.",
+          "time_expressions_or_signals": [
+            "as tall as",
+            "as quickly as",
+            "not as expensive as"
+          ],
+          "examples": [
+            {
+              "en": "My laptop is as fast as yours.",
+              "vi": "Máy tính của tôi nhanh bằng máy tính của bạn."
+            }
+          ],
+          "common_mistakes": [
+            "as taller as → as tall as."
+          ],
+          "comparison": "Không dùng dạng so sánh hơn trong cấu trúc as...as."
+        },
+        {
+          "id": "day4_topic7",
+          "name": "Too / Enough",
+          "name_vi": "Quá / đủ",
+          "definition": "Too diễn tả vượt quá mức cần thiết; enough diễn tả đủ mức cần thiết.",
+          "formula": "too + adjective/adverb; adjective/adverb + enough; enough + noun; too much/many + noun.",
+          "usage": "Explain excess or sufficiency.",
+          "time_expressions_or_signals": [
+            "too tired",
+            "old enough",
+            "enough time",
+            "too many"
+          ],
+          "examples": [
+            {
+              "en": "The room is too small for ten people.",
+              "vi": "Căn phòng quá nhỏ cho mười người."
+            }
+          ],
+          "common_mistakes": [
+            "enough strong → strong enough."
+          ],
+          "comparison": "Enough đứng trước danh từ nhưng sau adjective/adverb."
+        },
+        {
+          "id": "day4_topic8",
+          "name": "So / Such",
+          "name_vi": "Quá... đến nỗi",
+          "definition": "So nhấn mạnh tính từ/trạng từ; such nhấn mạnh cụm danh từ.",
+          "formula": "so + adjective/adverb + that; such + (a/an) + adjective + noun + that.",
+          "usage": "Show a result caused by an extreme degree.",
+          "time_expressions_or_signals": [
+            "so tired that",
+            "such a useful tool that"
+          ],
+          "examples": [
+            {
+              "en": "It was such a difficult task that we needed help.",
+              "vi": "Đó là một nhiệm vụ khó đến mức chúng tôi cần giúp đỡ."
+            }
+          ],
+          "common_mistakes": [
+            "so a difficult task → such a difficult task."
+          ],
+          "comparison": "So + adjective; such + noun phrase."
+        },
+        {
+          "id": "day4_topic9",
+          "name": "-ed / -ing Adjectives",
+          "name_vi": "Tính từ đuôi -ed/-ing",
+          "definition": "-ed thường mô tả cảm xúc của người; -ing mô tả điều/người gây ra cảm xúc.",
+          "formula": "person + be + -ed; thing/person causing feeling + be + -ing.",
+          "usage": "Describe feelings versus the cause of feelings.",
+          "time_expressions_or_signals": [
+            "bored/boring",
+            "interested/interesting",
+            "tired/tiring"
+          ],
+          "examples": [
+            {
+              "en": "I am interested in the interesting course.",
+              "vi": "Tôi hứng thú với khóa học thú vị đó."
+            }
+          ],
+          "common_mistakes": [
+            "The lesson was bored → The lesson was boring."
+          ],
+          "comparison": "Người cảm thấy -ed; sự vật gây cảm giác thường dùng -ing."
+        }
+      ],
+      "assessment": {
+        "question_count": 30,
+        "difficulty_distribution_target": {
+          "easy": 9,
+          "medium": 15,
+          "hard": 6
+        },
+        "questions": [
+          {
+            "id": "d4q01",
+            "topic": "Adjectives",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "We need a _____ solution to this problem.",
+            "options": {
+              "A": "practical",
+              "B": "practically",
+              "C": "practice",
+              "D": "practised"
+            },
+            "correct_answer": "A",
+            "explanation": "An adjective modifies the noun solution.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q02",
+            "topic": "Adjectives",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The soup smells _____.",
+            "options": {
+              "A": "deliciously",
+              "B": "delicious",
+              "C": "delight",
+              "D": "deliciousness"
+            },
+            "correct_answer": "B",
+            "explanation": "Smell is a linking verb here; use an adjective.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q03",
+            "topic": "Adjectives",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "She bought a _____ bag for work.",
+            "options": {
+              "A": "leather black",
+              "B": "black leather",
+              "C": "blackly leather",
+              "D": "leatherly black"
+            },
+            "correct_answer": "B",
+            "explanation": "Adjectives generally precede the noun; colour commonly comes before material.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q04",
+            "topic": "Adverbs",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "Please drive _____. The road is wet.",
+            "options": {
+              "A": "careful",
+              "B": "carefully",
+              "C": "carefulness",
+              "D": "more careful"
+            },
+            "correct_answer": "B",
+            "explanation": "An adverb modifies the verb drive.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q05",
+            "topic": "Adverbs",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "He _____ forgets his keys; it happens almost every day.",
+            "options": {
+              "A": "often",
+              "B": "careful",
+              "C": "good",
+              "D": "lately"
+            },
+            "correct_answer": "A",
+            "explanation": "Often is an adverb of frequency.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q06",
+            "topic": "Adverbs",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "The team worked _____ to meet the deadline.",
+            "options": {
+              "A": "hard",
+              "B": "hardly",
+              "C": "hardness",
+              "D": "harderly"
+            },
+            "correct_answer": "A",
+            "explanation": "Hard means with effort; hardly means almost not.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q07",
+            "topic": "Adjective vs Adverb",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "She speaks English very _____.",
+            "options": {
+              "A": "good",
+              "B": "well",
+              "C": "best",
+              "D": "betterly"
+            },
+            "correct_answer": "B",
+            "explanation": "Well is the adverb modifying speaks.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q08",
+            "topic": "Adjective vs Adverb",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The children looked _____ after the long trip.",
+            "options": {
+              "A": "tired",
+              "B": "tiredly",
+              "C": "tiring",
+              "D": "tire"
+            },
+            "correct_answer": "A",
+            "explanation": "Look is a linking verb; use adjective tired.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q09",
+            "topic": "Adjective vs Adverb",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "He is a _____ driver, and he drives _____.",
+            "options": {
+              "A": "carefully / careful",
+              "B": "careful / carefully",
+              "C": "careful / careful",
+              "D": "carefully / carefully"
+            },
+            "correct_answer": "B",
+            "explanation": "Careful modifies driver; carefully modifies drives.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q10",
+            "topic": "Adjective vs Adverb",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The new software works _____.",
+            "options": {
+              "A": "perfect",
+              "B": "perfectly",
+              "C": "perfection",
+              "D": "more perfect"
+            },
+            "correct_answer": "B",
+            "explanation": "An adverb modifies the verb works.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q11",
+            "topic": "Comparative",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "This exercise is _____ than the previous one.",
+            "options": {
+              "A": "easy",
+              "B": "easier",
+              "C": "easiest",
+              "D": "more easier"
+            },
+            "correct_answer": "B",
+            "explanation": "Short adjective ending in consonant + y changes y to ier.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q12",
+            "topic": "Comparative",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "A train is usually _____ than a bus for this journey.",
+            "options": {
+              "A": "fast",
+              "B": "faster",
+              "C": "fastest",
+              "D": "more fast"
+            },
+            "correct_answer": "B",
+            "explanation": "Use adjective + -er for this short adjective.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q13",
+            "topic": "Comparative",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The new version is _____ useful than the old one.",
+            "options": {
+              "A": "most",
+              "B": "more",
+              "C": "much",
+              "D": "many"
+            },
+            "correct_answer": "B",
+            "explanation": "Use more + long adjective + than.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q14",
+            "topic": "Comparative",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "My commute is _____ than it was last year.",
+            "options": {
+              "A": "bad",
+              "B": "worse",
+              "C": "worst",
+              "D": "more bad"
+            },
+            "correct_answer": "B",
+            "explanation": "Bad has the irregular comparative worse.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q15",
+            "topic": "Superlative",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "That was the _____ meal I've had this year.",
+            "options": {
+              "A": "good",
+              "B": "better",
+              "C": "best",
+              "D": "most good"
+            },
+            "correct_answer": "C",
+            "explanation": "Good has the irregular superlative best.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q16",
+            "topic": "Superlative",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "This is _____ building in the area.",
+            "options": {
+              "A": "tall",
+              "B": "taller",
+              "C": "the tallest",
+              "D": "most tall"
+            },
+            "correct_answer": "C",
+            "explanation": "Use the + -est for a short adjective.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q17",
+            "topic": "Superlative",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "It is one of _____ useful apps on my phone.",
+            "options": {
+              "A": "more",
+              "B": "most",
+              "C": "the most",
+              "D": "the more"
+            },
+            "correct_answer": "C",
+            "explanation": "One of the + superlative + plural noun.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q18",
+            "topic": "As ... as",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "My sister is _____ tall _____ I am.",
+            "options": {
+              "A": "as / as",
+              "B": "so / than",
+              "C": "more / as",
+              "D": "as / than"
+            },
+            "correct_answer": "A",
+            "explanation": "Equality uses as + adjective + as.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q19",
+            "topic": "As ... as",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "This route is not _____ expensive _____ the highway.",
+            "options": {
+              "A": "as / as",
+              "B": "more / than",
+              "C": "so / than",
+              "D": "as / than"
+            },
+            "correct_answer": "A",
+            "explanation": "Not as + adjective + as expresses a lower degree.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q20",
+            "topic": "As ... as",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "He can run as _____ as his brother.",
+            "options": {
+              "A": "quick",
+              "B": "quickly",
+              "C": "quicker",
+              "D": "quickest"
+            },
+            "correct_answer": "B",
+            "explanation": "An adverb modifies the verb run.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q21",
+            "topic": "Too / Enough",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The coffee is _____ hot to drink now.",
+            "options": {
+              "A": "enough",
+              "B": "too",
+              "C": "very enough",
+              "D": "such"
+            },
+            "correct_answer": "B",
+            "explanation": "Too + adjective + to-infinitive indicates excess.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q22",
+            "topic": "Too / Enough",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "She isn't old _____ to drive.",
+            "options": {
+              "A": "too",
+              "B": "enough",
+              "C": "so",
+              "D": "such"
+            },
+            "correct_answer": "B",
+            "explanation": "Adjective + enough.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q23",
+            "topic": "Too / Enough",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "We don't have _____ chairs for everyone.",
+            "options": {
+              "A": "chairs enough",
+              "B": "too",
+              "C": "enough",
+              "D": "enough of"
+            },
+            "correct_answer": "C",
+            "explanation": "Enough + plural noun.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q24",
+            "topic": "Too / Enough",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The bag is _____ heavy for me to carry.",
+            "options": {
+              "A": "too",
+              "B": "enough",
+              "C": "many",
+              "D": "such"
+            },
+            "correct_answer": "A",
+            "explanation": "Too + adjective + for someone + to V.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q25",
+            "topic": "So / Such",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "It was _____ cold that we stayed inside.",
+            "options": {
+              "A": "such",
+              "B": "so",
+              "C": "too a",
+              "D": "enough"
+            },
+            "correct_answer": "B",
+            "explanation": "So + adjective + that.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q26",
+            "topic": "So / Such",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "They are _____ friendly people that everyone likes them.",
+            "options": {
+              "A": "so",
+              "B": "such",
+              "C": "too",
+              "D": "enough"
+            },
+            "correct_answer": "B",
+            "explanation": "Such + adjective + plural noun + that.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q27",
+            "topic": "So / Such",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "It was _____ an interesting talk that I took notes.",
+            "options": {
+              "A": "so",
+              "B": "such",
+              "C": "too",
+              "D": "very"
+            },
+            "correct_answer": "B",
+            "explanation": "Such + a/an + adjective + singular noun + that.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q28",
+            "topic": "-ed / -ing Adjectives",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "I was _____ by the documentary.",
+            "options": {
+              "A": "interesting",
+              "B": "interested",
+              "C": "interest",
+              "D": "interests"
+            },
+            "correct_answer": "B",
+            "explanation": "Interested describes the person's feeling.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q29",
+            "topic": "-ed / -ing Adjectives",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The documentary was very _____.",
+            "options": {
+              "A": "interested",
+              "B": "interesting",
+              "C": "interestingly",
+              "D": "interest"
+            },
+            "correct_answer": "B",
+            "explanation": "Interesting describes what causes the feeling.",
+            "quality_flag": null
+          },
+          {
+            "id": "d4q30",
+            "topic": "-ed / -ing Adjectives",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "The long journey was _____.",
+            "options": {
+              "A": "tired",
+              "B": "tiring",
+              "C": "tire",
+              "D": "tiredly"
+            },
+            "correct_answer": "B",
+            "explanation": "Tiring describes something that causes tiredness.",
+            "quality_flag": null
+          }
+        ],
+        "answer_key_included": true
+      }
+    },
+    {
+      "day": 5,
+      "title": "Passive Voice & Reported Speech",
+      "objectives": [
+        "Hiểu cấu trúc và cách dùng",
+        "Nhận biết lỗi thường gặp",
+        "Vận dụng trong ngữ cảnh A2–B1"
+      ],
+      "topics": [
+        {
+          "id": "day5_topic1",
+          "name": "Passive Present Simple",
+          "name_vi": "Bị động hiện tại đơn",
+          "definition": "Dùng khi người/vật chịu tác động quan trọng hơn người thực hiện.",
+          "formula": "am/is/are + V3/ed.",
+          "usage": "General processes, routines, facts where the doer is unknown/unimportant.",
+          "time_expressions_or_signals": [
+            "is made",
+            "are used",
+            "is delivered"
+          ],
+          "examples": [
+            {
+              "en": "These products are made in Vietnam.",
+              "vi": "Những sản phẩm này được sản xuất tại Việt Nam."
+            }
+          ],
+          "common_mistakes": [
+            "The products make in Vietnam → are made."
+          ],
+          "comparison": "Chủ ngữ mới phải hòa hợp với am/is/are."
+        },
+        {
+          "id": "day5_topic2",
+          "name": "Passive Past Simple",
+          "name_vi": "Bị động quá khứ đơn",
+          "definition": "Diễn tả hành động bị tác động đã hoàn tất trong quá khứ.",
+          "formula": "was/were + V3/ed.",
+          "usage": "Completed past actions with focus on receiver/result.",
+          "time_expressions_or_signals": [
+            "was built",
+            "were invited",
+            "last year"
+          ],
+          "examples": [
+            {
+              "en": "The bridge was built in 2010.",
+              "vi": "Cây cầu được xây dựng vào năm 2010."
+            }
+          ],
+          "common_mistakes": [
+            "The bridge built in 2010 → was built."
+          ],
+          "comparison": "Dùng was/were theo chủ ngữ; động từ ở V3."
+        },
+        {
+          "id": "day5_topic3",
+          "name": "Passive Present Perfect",
+          "name_vi": "Bị động hiện tại hoàn thành",
+          "definition": "Nhấn mạnh kết quả hiện tại của hành động đã được thực hiện.",
+          "formula": "have/has been + V3/ed.",
+          "usage": "Completed action with present relevance; doer unknown/unimportant.",
+          "time_expressions_or_signals": [
+            "has been completed",
+            "have been sent",
+            "already"
+          ],
+          "examples": [
+            {
+              "en": "The report has been sent to the manager.",
+              "vi": "Báo cáo đã được gửi cho quản lý."
+            }
+          ],
+          "common_mistakes": [
+            "The report has sent → has been sent."
+          ],
+          "comparison": "Không bỏ been trong cấu trúc bị động hoàn thành."
+        },
+        {
+          "id": "day5_topic4",
+          "name": "Passive Future",
+          "name_vi": "Bị động tương lai",
+          "definition": "Diễn tả việc sẽ được thực hiện trong tương lai.",
+          "formula": "will be + V3/ed; am/is/are going to be + V3/ed.",
+          "usage": "Future actions where receiver is the focus.",
+          "time_expressions_or_signals": [
+            "will be announced",
+            "next week"
+          ],
+          "examples": [
+            {
+              "en": "The results will be announced tomorrow.",
+              "vi": "Kết quả sẽ được công bố vào ngày mai."
+            }
+          ],
+          "common_mistakes": [
+            "The results will announced → will be announced."
+          ],
+          "comparison": "Sau will be dùng V3."
+        },
+        {
+          "id": "day5_topic5",
+          "name": "Passive with Modals",
+          "name_vi": "Bị động với động từ khuyết thiếu",
+          "definition": "Diễn tả nghĩa vụ/khả năng/khuyên bảo mà chủ ngữ nhận tác động.",
+          "formula": "modal + be + V3/ed.",
+          "usage": "Rules, advice, possibility in passive form.",
+          "time_expressions_or_signals": [
+            "must be done",
+            "can be used",
+            "should be checked"
+          ],
+          "examples": [
+            {
+              "en": "Passwords must be changed regularly.",
+              "vi": "Mật khẩu phải được thay đổi thường xuyên."
+            }
+          ],
+          "common_mistakes": [
+            "must changed → must be changed."
+          ],
+          "comparison": "Sau modal dùng be + V3."
+        },
+        {
+          "id": "day5_topic6",
+          "name": "Active vs Passive",
+          "name_vi": "Chủ động và bị động",
+          "definition": "Chủ động nhấn người thực hiện; bị động nhấn người/vật chịu tác động.",
+          "formula": "Active: S + V + O; Passive: O + be + V3 (+ by + agent).",
+          "usage": "Choose focus based on context; omit by-agent if unknown/unimportant.",
+          "time_expressions_or_signals": [
+            "by",
+            "is produced",
+            "was repaired"
+          ],
+          "examples": [
+            {
+              "en": "The team fixed the bug. The bug was fixed by the team.",
+              "vi": "Nhóm đã sửa lỗi. Lỗi đã được nhóm sửa."
+            }
+          ],
+          "common_mistakes": [
+            "The bug fixed by team → The bug was fixed by the team."
+          ],
+          "comparison": "Chỉ chuyển sang bị động khi động từ có tân ngữ phù hợp."
+        },
+        {
+          "id": "day5_topic7",
+          "name": "Reported Statements",
+          "name_vi": "Câu tường thuật dạng câu kể",
+          "definition": "Tường thuật lại lời nói; thường lùi thì khi động từ tường thuật ở quá khứ và ngữ cảnh yêu cầu.",
+          "formula": "said (that) + clause; told + object + (that) + clause.",
+          "usage": "Report statements and information.",
+          "time_expressions_or_signals": [
+            "said that",
+            "told me that"
+          ],
+          "examples": [
+            {
+              "en": "She said that she was busy.",
+              "vi": "Cô ấy nói rằng cô ấy đang bận."
+            }
+          ],
+          "common_mistakes": [
+            "She said me → She told me / She said to me."
+          ],
+          "comparison": "Lùi thì không phải lúc nào cũng bắt buộc nếu sự thật vẫn đúng hoặc ngữ cảnh không yêu cầu."
+        },
+        {
+          "id": "day5_topic8",
+          "name": "Reported Questions",
+          "name_vi": "Câu tường thuật dạng câu hỏi",
+          "definition": "Tường thuật câu hỏi bằng trật tự câu khẳng định, không đảo trợ động từ.",
+          "formula": "asked + if/whether + subject + verb; asked + wh-word + subject + verb.",
+          "usage": "Report yes/no and wh-questions.",
+          "time_expressions_or_signals": [
+            "asked if",
+            "wanted to know",
+            "where",
+            "why"
+          ],
+          "examples": [
+            {
+              "en": "He asked me where I lived.",
+              "vi": "Anh ấy hỏi tôi sống ở đâu."
+            }
+          ],
+          "common_mistakes": [
+            "He asked where did I live → where I lived."
+          ],
+          "comparison": "Không dùng dấu hỏi/đảo ngữ trong mệnh đề tường thuật."
+        },
+        {
+          "id": "day5_topic9",
+          "name": "Say vs Tell",
+          "name_vi": "Phân biệt say và tell",
+          "definition": "Say thường không cần tân ngữ chỉ người ngay sau; tell thường cần người nghe.",
+          "formula": "say + (that) clause; say something to someone; tell + someone + (that) clause.",
+          "usage": "Report speech with correct object pattern.",
+          "time_expressions_or_signals": [
+            "say",
+            "tell",
+            "say to",
+            "tell me"
+          ],
+          "examples": [
+            {
+              "en": "He told me that the meeting was cancelled.",
+              "vi": "Anh ấy nói với tôi cuộc họp đã bị hủy."
+            }
+          ],
+          "common_mistakes": [
+            "He told that... → He said that... / He told me that..."
+          ],
+          "comparison": "Tell someone; say something (to someone)."
+        },
+        {
+          "id": "day5_topic10",
+          "name": "Time / Place Changes",
+          "name_vi": "Thay đổi thời gian/nơi chốn",
+          "definition": "Đổi đại từ, trạng từ thời gian/nơi chốn theo góc nhìn và thời điểm tường thuật.",
+          "formula": "now→then; today→that day; tomorrow→the next day; here→there; this→that (when context requires).",
+          "usage": "Adjust references when reporting from a different time/place.",
+          "time_expressions_or_signals": [
+            "yesterday",
+            "tomorrow",
+            "here",
+            "this week"
+          ],
+          "examples": [
+            {
+              "en": "She said, “I will come tomorrow.” → She said she would come the next day.",
+              "vi": "Cô ấy nói: “Ngày mai tôi sẽ đến.” → Cô ấy nói rằng hôm sau cô ấy sẽ đến."
+            }
+          ],
+          "common_mistakes": [
+            "Giữ tomorrow khi thời điểm tường thuật vẫn là hôm trước ngày mai."
+          ],
+          "comparison": "Thay đổi phụ thuộc ngữ cảnh, không đổi máy móc."
+        },
+        {
+          "id": "day5_topic11",
+          "name": "Reported Commands",
+          "name_vi": "Câu mệnh lệnh tường thuật",
+          "definition": "Tường thuật yêu cầu/mệnh lệnh bằng tell/ask + object + (not) to-infinitive.",
+          "formula": "told/asked + object + (not) to + V.",
+          "usage": "Report instructions, requests and prohibitions.",
+          "time_expressions_or_signals": [
+            "told me to",
+            "asked us not to"
+          ],
+          "examples": [
+            {
+              "en": "The teacher told us to open our books.",
+              "vi": "Giáo viên bảo chúng tôi mở sách."
+            }
+          ],
+          "common_mistakes": [
+            "The teacher told us open → told us to open."
+          ],
+          "comparison": "Mệnh lệnh phủ định dùng not to V."
+        }
+      ],
+      "assessment": {
+        "question_count": 30,
+        "difficulty_distribution_target": {
+          "easy": 9,
+          "medium": 15,
+          "hard": 6
+        },
+        "questions": [
+          {
+            "id": "d5q01",
+            "topic": "Passive Present Simple",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "Coffee _____ in many countries.",
+            "options": {
+              "A": "grows",
+              "B": "is grown",
+              "C": "is growing",
+              "D": "grew"
+            },
+            "correct_answer": "B",
+            "explanation": "Present Simple passive: am/is/are + V3.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q02",
+            "topic": "Passive Present Simple",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "These emails _____ every morning.",
+            "options": {
+              "A": "send",
+              "B": "are sent",
+              "C": "sent",
+              "D": "are sending"
+            },
+            "correct_answer": "B",
+            "explanation": "Plural subject takes are + V3.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q03",
+            "topic": "Passive Present Simple",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "English _____ in many international companies.",
+            "options": {
+              "A": "uses",
+              "B": "is used",
+              "C": "used",
+              "D": "is using"
+            },
+            "correct_answer": "B",
+            "explanation": "The language receives the action: is used.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q04",
+            "topic": "Passive Past Simple",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "The new library _____ in 2018.",
+            "options": {
+              "A": "built",
+              "B": "was built",
+              "C": "is built",
+              "D": "has built"
+            },
+            "correct_answer": "B",
+            "explanation": "Past Simple passive: was/were + V3.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q05",
+            "topic": "Passive Past Simple",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The invitations _____ last week.",
+            "options": {
+              "A": "sent",
+              "B": "were sent",
+              "C": "are sent",
+              "D": "have sent"
+            },
+            "correct_answer": "B",
+            "explanation": "Plural subject + were + V3.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q06",
+            "topic": "Passive Past Simple",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "My laptop _____ yesterday.",
+            "options": {
+              "A": "repaired",
+              "B": "was repaired",
+              "C": "is repairing",
+              "D": "has repair"
+            },
+            "correct_answer": "B",
+            "explanation": "A completed past action uses was + V3.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q07",
+            "topic": "Passive Present Perfect",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The documents _____ already _____.",
+            "options": {
+              "A": "have / signed",
+              "B": "have been / signed",
+              "C": "were / sign",
+              "D": "has been / sign"
+            },
+            "correct_answer": "B",
+            "explanation": "Present Perfect passive: have/has been + V3.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q08",
+            "topic": "Passive Present Perfect",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The website _____ recently _____.",
+            "options": {
+              "A": "has / updated",
+              "B": "has been / updated",
+              "C": "was / update",
+              "D": "is / updating"
+            },
+            "correct_answer": "B",
+            "explanation": "Website is singular: has been + V3.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q09",
+            "topic": "Passive Future",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The winner _____ tomorrow.",
+            "options": {
+              "A": "will announce",
+              "B": "will be announced",
+              "C": "is announced yesterday",
+              "D": "will announced"
+            },
+            "correct_answer": "B",
+            "explanation": "Future passive: will be + V3.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q10",
+            "topic": "Passive Future",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The new rules _____ next month.",
+            "options": {
+              "A": "are introduce",
+              "B": "will be introduced",
+              "C": "will introduced",
+              "D": "introduced"
+            },
+            "correct_answer": "B",
+            "explanation": "Will be + V3 forms the future passive.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q11",
+            "topic": "Passive with Modals",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "All applications must _____ by Friday.",
+            "options": {
+              "A": "submit",
+              "B": "be submitted",
+              "C": "been submitted",
+              "D": "be submitting"
+            },
+            "correct_answer": "B",
+            "explanation": "Modal passive: modal + be + V3.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q12",
+            "topic": "Passive with Modals",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "This tool can _____ for data analysis.",
+            "options": {
+              "A": "use",
+              "B": "be used",
+              "C": "been use",
+              "D": "be using"
+            },
+            "correct_answer": "B",
+            "explanation": "Can be + V3.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q13",
+            "topic": "Active vs Passive",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "Choose the correct passive form: “The team checks the code.”",
+            "options": {
+              "A": "The code checks the team.",
+              "B": "The code is checked by the team.",
+              "C": "The code was check.",
+              "D": "The team is checked by the code."
+            },
+            "correct_answer": "B",
+            "explanation": "Object becomes subject; use is + V3.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q14",
+            "topic": "Active vs Passive",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Which sentence focuses on the person doing the action?",
+            "options": {
+              "A": "The report was written yesterday.",
+              "B": "The window was broken.",
+              "C": "The developer fixed the bug.",
+              "D": "The files were deleted."
+            },
+            "correct_answer": "C",
+            "explanation": "The active sentence names the doer as subject.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q15",
+            "topic": "Reported Statements",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "“I am tired,” she said. → She said that she _____ tired.",
+            "options": {
+              "A": "is",
+              "B": "was",
+              "C": "has been",
+              "D": "will be"
+            },
+            "correct_answer": "B",
+            "explanation": "With a past reporting verb, am commonly backshifts to was.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q16",
+            "topic": "Reported Statements",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "“We have finished,” they said. → They said they _____ finished.",
+            "options": {
+              "A": "have",
+              "B": "had",
+              "C": "are",
+              "D": "will"
+            },
+            "correct_answer": "B",
+            "explanation": "Present Perfect commonly backshifts to Past Perfect.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q17",
+            "topic": "Reported Statements",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "“I will call you,” he said. → He said he _____ call me.",
+            "options": {
+              "A": "will",
+              "B": "would",
+              "C": "can",
+              "D": "has"
+            },
+            "correct_answer": "B",
+            "explanation": "Will commonly changes to would.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q18",
+            "topic": "Reported Statements",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "“I work here,” Tom said. → Tom said that he _____ there.",
+            "options": {
+              "A": "worked",
+              "B": "works yesterday",
+              "C": "is work",
+              "D": "has work"
+            },
+            "correct_answer": "A",
+            "explanation": "Present Simple commonly backshifts to Past Simple; here changes to there when needed.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q19",
+            "topic": "Reported Questions",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "“Where do you live?” she asked me. → She asked me where I _____.",
+            "options": {
+              "A": "do I live",
+              "B": "did I live",
+              "C": "lived",
+              "D": "live"
+            },
+            "correct_answer": "C",
+            "explanation": "Reported wh-question uses statement word order.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q20",
+            "topic": "Reported Questions",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "“Are you busy?” he asked. → He asked _____ I was busy.",
+            "options": {
+              "A": "that",
+              "B": "what",
+              "C": "if",
+              "D": "where"
+            },
+            "correct_answer": "C",
+            "explanation": "Yes/no reported questions use if or whether.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q21",
+            "topic": "Reported Questions",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "“What time does the train leave?” → He asked what time the train _____.",
+            "options": {
+              "A": "does leave",
+              "B": "left",
+              "C": "did leave",
+              "D": "leaves yesterday"
+            },
+            "correct_answer": "B",
+            "explanation": "Backshift and statement word order: the train left.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q22",
+            "topic": "Reported Questions",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "“Did you call me?” she asked. → She asked whether I _____ her.",
+            "options": {
+              "A": "called",
+              "B": "had called",
+              "C": "do call",
+              "D": "have call"
+            },
+            "correct_answer": "B",
+            "explanation": "Past Simple commonly backshifts to Past Perfect.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q23",
+            "topic": "Say vs Tell",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "He _____ me that the shop was closed.",
+            "options": {
+              "A": "said",
+              "B": "told",
+              "C": "spoke",
+              "D": "talked"
+            },
+            "correct_answer": "B",
+            "explanation": "Tell is followed by an object: told me.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q24",
+            "topic": "Say vs Tell",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "She _____ that she was ready.",
+            "options": {
+              "A": "told",
+              "B": "said",
+              "C": "told to",
+              "D": "says me"
+            },
+            "correct_answer": "B",
+            "explanation": "Say can be followed by a that-clause without an object.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q25",
+            "topic": "Say vs Tell",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "He said _____ me that he was sorry.",
+            "options": {
+              "A": "to",
+              "B": "at",
+              "C": "for",
+              "D": "with"
+            },
+            "correct_answer": "A",
+            "explanation": "Say to someone is possible; tell someone does not take to.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q26",
+            "topic": "Time / Place Changes",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "“I will finish this tomorrow,” she said. → She said she would finish it _____.",
+            "options": {
+              "A": "tomorrow",
+              "B": "the day before",
+              "C": "the next day",
+              "D": "yesterday"
+            },
+            "correct_answer": "C",
+            "explanation": "Tomorrow commonly changes to the next day.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q27",
+            "topic": "Time / Place Changes",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "“I live here,” he said. → He said he lived _____.",
+            "options": {
+              "A": "here",
+              "B": "there",
+              "C": "this",
+              "D": "now"
+            },
+            "correct_answer": "B",
+            "explanation": "Here commonly changes to there when the viewpoint changes.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q28",
+            "topic": "Time / Place Changes",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "“I saw her yesterday,” he said. → He said he had seen her _____.",
+            "options": {
+              "A": "tomorrow",
+              "B": "the previous day",
+              "C": "next week",
+              "D": "today"
+            },
+            "correct_answer": "B",
+            "explanation": "Yesterday commonly changes to the previous day/the day before.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q29",
+            "topic": "Reported Commands",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "“Close the door,” the teacher said to us. → The teacher told us _____ the door.",
+            "options": {
+              "A": "close",
+              "B": "closing",
+              "C": "to close",
+              "D": "closed"
+            },
+            "correct_answer": "C",
+            "explanation": "Tell + object + to-infinitive.",
+            "quality_flag": null
+          },
+          {
+            "id": "d5q30",
+            "topic": "Reported Commands",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "“Don't touch the screen,” she said. → She told me _____ the screen.",
+            "options": {
+              "A": "not touch",
+              "B": "to not touching",
+              "C": "not to touch",
+              "D": "don't touch"
+            },
+            "correct_answer": "C",
+            "explanation": "Negative reported command: told + object + not to V.",
+            "quality_flag": null
+          }
+        ],
+        "answer_key_included": true
+      }
+    },
+    {
+      "day": 6,
+      "title": "Conditionals & Relative Clauses",
+      "objectives": [
+        "Hiểu cấu trúc và cách dùng",
+        "Nhận biết lỗi thường gặp",
+        "Vận dụng trong ngữ cảnh A2–B1"
+      ],
+      "topics": [
+        {
+          "id": "day6_topic1",
+          "name": "Zero Conditional",
+          "name_vi": "Câu điều kiện loại 0",
+          "definition": "Diễn tả sự thật, quy luật hoặc kết quả luôn đúng khi điều kiện xảy ra.",
+          "formula": "If + Present Simple, Present Simple.",
+          "usage": "Facts, rules, general truths.",
+          "time_expressions_or_signals": [
+            "if",
+            "when",
+            "whenever"
+          ],
+          "examples": [
+            {
+              "en": "If you heat ice, it melts.",
+              "vi": "Nếu bạn làm nóng đá, nó tan chảy."
+            }
+          ],
+          "common_mistakes": [
+            "If you will heat ice → If you heat ice."
+          ],
+          "comparison": "Hai mệnh đề thường dùng hiện tại đơn."
+        },
+        {
+          "id": "day6_topic2",
+          "name": "First Conditional",
+          "name_vi": "Câu điều kiện loại 1",
+          "definition": "Diễn tả tình huống tương lai có khả năng xảy ra và kết quả có thể xảy ra.",
+          "formula": "If + Present Simple, will + V.",
+          "usage": "Realistic future possibility and likely result.",
+          "time_expressions_or_signals": [
+            "if",
+            "unless",
+            "tomorrow",
+            "later"
+          ],
+          "examples": [
+            {
+              "en": "If it rains, we will stay at home.",
+              "vi": "Nếu trời mưa, chúng tôi sẽ ở nhà."
+            }
+          ],
+          "common_mistakes": [
+            "If it will rain → If it rains."
+          ],
+          "comparison": "Không dùng will trong mệnh đề if thông thường."
+        },
+        {
+          "id": "day6_topic3",
+          "name": "Second Conditional",
+          "name_vi": "Câu điều kiện loại 2",
+          "definition": "Diễn tả tình huống giả định/không có thật hoặc ít có khả năng ở hiện tại/tương lai.",
+          "formula": "If + Past Simple, would + V.",
+          "usage": "Unreal or unlikely present/future situations; imaginary advice.",
+          "time_expressions_or_signals": [
+            "if I were",
+            "would",
+            "could"
+          ],
+          "examples": [
+            {
+              "en": "If I had more time, I would learn another language.",
+              "vi": "Nếu có nhiều thời gian hơn, tôi sẽ học thêm một ngôn ngữ."
+            }
+          ],
+          "common_mistakes": [
+            "If I would have time → If I had time."
+          ],
+          "comparison": "Were thường dùng với mọi chủ ngữ trong giả định trang trọng: If I were you."
+        },
+        {
+          "id": "day6_topic4",
+          "name": "Unless",
+          "name_vi": "Unless = if...not",
+          "definition": "Unless diễn tả điều kiện phủ định, tương đương if...not trong nhiều trường hợp.",
+          "formula": "Unless + affirmative clause, main clause; = If + negative clause.",
+          "usage": "State a condition that must be met to avoid a result.",
+          "time_expressions_or_signals": [
+            "unless",
+            "if not"
+          ],
+          "examples": [
+            {
+              "en": "Unless you hurry, you will miss the bus.",
+              "vi": "Nếu bạn không nhanh lên, bạn sẽ lỡ xe buýt."
+            }
+          ],
+          "common_mistakes": [
+            "Unless you don't hurry → Unless you hurry."
+          ],
+          "comparison": "Tránh phủ định kép; không dùng unless với nghĩa nếu không mà lại thêm not."
+        },
+        {
+          "id": "day6_topic5",
+          "name": "When / As soon as",
+          "name_vi": "Mệnh đề thời gian tương lai",
+          "definition": "Trong mệnh đề thời gian nói về tương lai, dùng hiện tại đơn thay vì will theo quy tắc thông thường.",
+          "formula": "When/As soon as + Present Simple, will + V.",
+          "usage": "Future events linked by time sequence.",
+          "time_expressions_or_signals": [
+            "when",
+            "as soon as",
+            "before",
+            "after",
+            "until"
+          ],
+          "examples": [
+            {
+              "en": "I'll call you as soon as I arrive.",
+              "vi": "Tôi sẽ gọi bạn ngay khi tôi đến."
+            }
+          ],
+          "common_mistakes": [
+            "as soon as I will arrive → as soon as I arrive."
+          ],
+          "comparison": "Will nằm ở mệnh đề chính, không nằm trong mệnh đề thời gian."
+        },
+        {
+          "id": "day6_topic6",
+          "name": "Relative Pronouns",
+          "name_vi": "Đại từ quan hệ",
+          "definition": "Who, which, that, whose nối mệnh đề bổ nghĩa cho danh từ.",
+          "formula": "person: who/that; thing: which/that; possession: whose.",
+          "usage": "Identify or add information about a person or thing.",
+          "time_expressions_or_signals": [
+            "who",
+            "which",
+            "that",
+            "whose"
+          ],
+          "examples": [
+            {
+              "en": "The woman who works here is my aunt.",
+              "vi": "Người phụ nữ làm việc ở đây là dì tôi."
+            }
+          ],
+          "common_mistakes": [
+            "The woman which works here → who works here."
+          ],
+          "comparison": "That không dùng trong non-defining relative clauses."
+        },
+        {
+          "id": "day6_topic7",
+          "name": "Relative Adverbs",
+          "name_vi": "Trạng từ quan hệ",
+          "definition": "Where, when, why nối mệnh đề quan hệ chỉ nơi chốn, thời gian, lý do.",
+          "formula": "place + where; time + when; reason + why.",
+          "usage": "Give place, time or reason information.",
+          "time_expressions_or_signals": [
+            "where",
+            "when",
+            "why"
+          ],
+          "examples": [
+            {
+              "en": "This is the café where we first met.",
+              "vi": "Đây là quán cà phê nơi chúng tôi gặp nhau lần đầu."
+            }
+          ],
+          "common_mistakes": [
+            "the café which we met → the café where we met / which we visited."
+          ],
+          "comparison": "Where thay cho at/in which tùy cấu trúc; không dùng where nếu thiếu quan hệ địa điểm phù hợp."
+        },
+        {
+          "id": "day6_topic8",
+          "name": "Defining Relative Clauses",
+          "name_vi": "Mệnh đề quan hệ xác định",
+          "definition": "Cung cấp thông tin thiết yếu để xác định danh từ; không dùng dấu phẩy.",
+          "formula": "noun + who/which/that/whose/where + clause.",
+          "usage": "Identify exactly which person or thing is meant.",
+          "time_expressions_or_signals": [
+            "who",
+            "which",
+            "that",
+            "whose"
+          ],
+          "examples": [
+            {
+              "en": "The files that you sent are useful.",
+              "vi": "Những tệp mà bạn gửi rất hữu ích."
+            }
+          ],
+          "common_mistakes": [
+            "The files, that you sent, → bỏ dấu phẩy trong defining clause."
+          ],
+          "comparison": "Có thể lược bỏ đại từ quan hệ làm tân ngữ trong defining clause."
+        },
+        {
+          "id": "day6_topic9",
+          "name": "Non-defining Relative Clauses",
+          "name_vi": "Mệnh đề quan hệ không xác định",
+          "definition": "Bổ sung thông tin thêm; danh từ đã xác định; dùng dấu phẩy và không dùng that.",
+          "formula": "noun, who/which/whose/where + clause,",
+          "usage": "Add extra, non-essential information.",
+          "time_expressions_or_signals": [
+            "commas",
+            "who",
+            "which",
+            "whose"
+          ],
+          "examples": [
+            {
+              "en": "My laptop, which I bought last year, is still working well.",
+              "vi": "Máy tính của tôi, chiếc mà tôi mua năm ngoái, vẫn hoạt động tốt."
+            }
+          ],
+          "common_mistakes": [
+            "My laptop, that I bought... → which I bought..."
+          ],
+          "comparison": "Không dùng that; không lược bỏ đại từ quan hệ trong mệnh đề này."
+        }
+      ],
+      "assessment": {
+        "question_count": 30,
+        "difficulty_distribution_target": {
+          "easy": 9,
+          "medium": 15,
+          "hard": 6
+        },
+        "questions": [
+          {
+            "id": "d6q01",
+            "topic": "Zero Conditional",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "If you heat water to 100°C at sea level, it _____.",
+            "options": {
+              "A": "boiled",
+              "B": "boils",
+              "C": "will boiling",
+              "D": "would boil"
+            },
+            "correct_answer": "B",
+            "explanation": "Zero conditional uses present simple in both clauses.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q02",
+            "topic": "Zero Conditional",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "If people don't sleep enough, they often _____ tired.",
+            "options": {
+              "A": "feel",
+              "B": "will felt",
+              "C": "felt",
+              "D": "are feeling yesterday"
+            },
+            "correct_answer": "A",
+            "explanation": "General result: present simple.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q03",
+            "topic": "Zero Conditional",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "Plants die if they _____ enough water.",
+            "options": {
+              "A": "won't get",
+              "B": "don't get",
+              "C": "didn't got",
+              "D": "not get"
+            },
+            "correct_answer": "B",
+            "explanation": "If-clause in zero conditional uses present simple.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q04",
+            "topic": "First Conditional",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "If it _____ tomorrow, we'll cancel the picnic.",
+            "options": {
+              "A": "rain",
+              "B": "rains",
+              "C": "will rain",
+              "D": "rained"
+            },
+            "correct_answer": "B",
+            "explanation": "If + Present Simple, will + base verb.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q05",
+            "topic": "First Conditional",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I'll send you the file when I _____ back at my desk.",
+            "options": {
+              "A": "will be",
+              "B": "am",
+              "C": "was",
+              "D": "would be"
+            },
+            "correct_answer": "B",
+            "explanation": "Future time clause uses present simple.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q06",
+            "topic": "First Conditional",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "If you study regularly, you _____ your results.",
+            "options": {
+              "A": "improve",
+              "B": "improved",
+              "C": "will improve",
+              "D": "would improved"
+            },
+            "correct_answer": "C",
+            "explanation": "Main clause of first conditional uses will + V.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q07",
+            "topic": "First Conditional",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Unless we leave now, we _____ the bus.",
+            "options": {
+              "A": "miss",
+              "B": "missed",
+              "C": "will miss",
+              "D": "would miss"
+            },
+            "correct_answer": "C",
+            "explanation": "Unless means if not; likely future result uses will.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q08",
+            "topic": "Second Conditional",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "If I _____ more confident, I would speak more in meetings.",
+            "options": {
+              "A": "am",
+              "B": "was/were",
+              "C": "will be",
+              "D": "have been"
+            },
+            "correct_answer": "B",
+            "explanation": "Second conditional: if + past simple, would + V.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q09",
+            "topic": "Second Conditional",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "If she had a car, she _____ to work.",
+            "options": {
+              "A": "drives",
+              "B": "will drive",
+              "C": "would drive",
+              "D": "drove tomorrow"
+            },
+            "correct_answer": "C",
+            "explanation": "Would + base verb gives the hypothetical result.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q10",
+            "topic": "Second Conditional",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "If I were you, I _____ the instructions again.",
+            "options": {
+              "A": "read",
+              "B": "will read",
+              "C": "would read",
+              "D": "am reading"
+            },
+            "correct_answer": "C",
+            "explanation": "If I were you is a common hypothetical advice pattern.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q11",
+            "topic": "Second Conditional",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "They would travel more if they _____ more money.",
+            "options": {
+              "A": "have",
+              "B": "had",
+              "C": "will have",
+              "D": "has"
+            },
+            "correct_answer": "B",
+            "explanation": "If-clause takes past simple.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q12",
+            "topic": "Unless",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "You won't pass _____ you study.",
+            "options": {
+              "A": "unless",
+              "B": "if",
+              "C": "because",
+              "D": "although"
+            },
+            "correct_answer": "A",
+            "explanation": "Unless you study = if you do not study.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q13",
+            "topic": "Unless",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Unless he _____ now, he'll be late.",
+            "options": {
+              "A": "leaves",
+              "B": "will leave",
+              "C": "left",
+              "D": "leaving"
+            },
+            "correct_answer": "A",
+            "explanation": "Unless-clause uses present simple for a future condition.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q14",
+            "topic": "Unless",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "We can't start _____ everyone is here.",
+            "options": {
+              "A": "unless",
+              "B": "because of",
+              "C": "despite",
+              "D": "so"
+            },
+            "correct_answer": "A",
+            "explanation": "Unless means except if/if not; here start only if everyone is here.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q15",
+            "topic": "When / As soon as",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I'll text you as soon as I _____.",
+            "options": {
+              "A": "will arrive",
+              "B": "arrive",
+              "C": "arrived",
+              "D": "would arrive"
+            },
+            "correct_answer": "B",
+            "explanation": "Use present simple in future time clauses.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q16",
+            "topic": "When / As soon as",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "When the meeting _____, we'll discuss the budget.",
+            "options": {
+              "A": "will end",
+              "B": "ends",
+              "C": "ended",
+              "D": "ending"
+            },
+            "correct_answer": "B",
+            "explanation": "When-clause referring to future uses present simple.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q17",
+            "topic": "Relative Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The man _____ helped me was very kind.",
+            "options": {
+              "A": "which",
+              "B": "who",
+              "C": "whose",
+              "D": "where"
+            },
+            "correct_answer": "B",
+            "explanation": "Who refers to a person as subject.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q18",
+            "topic": "Relative Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The laptop _____ I bought is already slow.",
+            "options": {
+              "A": "who",
+              "B": "where",
+              "C": "which",
+              "D": "whose"
+            },
+            "correct_answer": "C",
+            "explanation": "Which refers to a thing.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q19",
+            "topic": "Relative Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "That's the woman _____ son is in my class.",
+            "options": {
+              "A": "who",
+              "B": "whose",
+              "C": "which",
+              "D": "where"
+            },
+            "correct_answer": "B",
+            "explanation": "Whose shows possession.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q20",
+            "topic": "Relative Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Is this the book _____ you recommended?",
+            "options": {
+              "A": "who",
+              "B": "where",
+              "C": "that",
+              "D": "whose"
+            },
+            "correct_answer": "C",
+            "explanation": "That can refer to a thing in a defining relative clause.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q21",
+            "topic": "Relative Pronouns",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The company _____ office is near the station is hiring.",
+            "options": {
+              "A": "which",
+              "B": "whose",
+              "C": "where",
+              "D": "who"
+            },
+            "correct_answer": "B",
+            "explanation": "Whose can show possession for organisations/things.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q22",
+            "topic": "Relative Adverbs",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "This is the town _____ my father grew up.",
+            "options": {
+              "A": "when",
+              "B": "where",
+              "C": "why",
+              "D": "who"
+            },
+            "correct_answer": "B",
+            "explanation": "Where refers to a place.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q23",
+            "topic": "Relative Adverbs",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "I remember the day _____ we first met.",
+            "options": {
+              "A": "where",
+              "B": "why",
+              "C": "when",
+              "D": "whose"
+            },
+            "correct_answer": "C",
+            "explanation": "When refers to a time.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q24",
+            "topic": "Relative Adverbs",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Do you know the reason _____ she left early?",
+            "options": {
+              "A": "where",
+              "B": "which",
+              "C": "why",
+              "D": "who"
+            },
+            "correct_answer": "C",
+            "explanation": "Why refers to a reason.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q25",
+            "topic": "Defining Relative Clauses",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "Employees _____ arrive late must inform their manager.",
+            "options": {
+              "A": "which",
+              "B": "who",
+              "C": "where",
+              "D": "whose"
+            },
+            "correct_answer": "B",
+            "explanation": "Who refers to people in a defining clause.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q26",
+            "topic": "Defining Relative Clauses",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The app _____ we use at work is easy to learn.",
+            "options": {
+              "A": "who",
+              "B": "where",
+              "C": "that",
+              "D": "whose"
+            },
+            "correct_answer": "C",
+            "explanation": "That can refer to a thing in a defining clause.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q27",
+            "topic": "Defining Relative Clauses",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The person _____ you called is my supervisor.",
+            "options": {
+              "A": "which",
+              "B": "whose",
+              "C": "who",
+              "D": "where"
+            },
+            "correct_answer": "C",
+            "explanation": "Who can be the object of a defining relative clause.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q28",
+            "topic": "Non-defining Relative Clauses",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "My brother, _____ lives in Hanoi, is visiting us.",
+            "options": {
+              "A": "that",
+              "B": "who",
+              "C": "where",
+              "D": "what"
+            },
+            "correct_answer": "B",
+            "explanation": "Non-defining clause about a person uses who; not that.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q29",
+            "topic": "Non-defining Relative Clauses",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "The office, _____ was renovated last year, looks modern.",
+            "options": {
+              "A": "that",
+              "B": "which",
+              "C": "who",
+              "D": "where"
+            },
+            "correct_answer": "B",
+            "explanation": "Which is used for things in non-defining clauses.",
+            "quality_flag": null
+          },
+          {
+            "id": "d6q30",
+            "topic": "Non-defining Relative Clauses",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "Ms Lee, _____ team won the award, thanked everyone.",
+            "options": {
+              "A": "who",
+              "B": "whose",
+              "C": "which",
+              "D": "where"
+            },
+            "correct_answer": "B",
+            "explanation": "Whose shows possession; non-defining clause is set off by commas.",
+            "quality_flag": null
+          }
+        ],
+        "answer_key_included": true
+      }
+    },
+    {
+      "day": 7,
+      "title": "Prepositions & Sentence Structures",
+      "objectives": [
+        "Hiểu cấu trúc và cách dùng",
+        "Nhận biết lỗi thường gặp",
+        "Vận dụng trong ngữ cảnh A2–B1"
+      ],
+      "topics": [
+        {
+          "id": "day7_topic1",
+          "name": "Prepositions of Time: In / On / At",
+          "name_vi": "Giới từ thời gian",
+          "definition": "In dùng với khoảng thời gian rộng; on với ngày/ngày cụ thể; at với giờ và một số thời điểm cố định.",
+          "formula": "in + months/years/seasons/parts of day; on + days/dates; at + clock times.",
+          "usage": "Locate events in time.",
+          "time_expressions_or_signals": [
+            "in July",
+            "in 2026",
+            "on Monday",
+            "at 7 p.m."
+          ],
+          "examples": [
+            {
+              "en": "The meeting starts at 9 a.m. on Monday.",
+              "vi": "Cuộc họp bắt đầu lúc 9 giờ sáng thứ Hai."
+            }
+          ],
+          "common_mistakes": [
+            "at Monday → on Monday."
+          ],
+          "comparison": "Một số cụm cố định: at night, in the morning, on Monday morning."
+        },
+        {
+          "id": "day7_topic2",
+          "name": "Prepositions of Place",
+          "name_vi": "Giới từ chỉ vị trí",
+          "definition": "Giới từ chỉ vị trí tương đối giữa người/vật và địa điểm.",
+          "formula": "in (inside/area); on (surface); at (point/location); under, above, between, next to.",
+          "usage": "Describe where something is.",
+          "time_expressions_or_signals": [
+            "in",
+            "on",
+            "at",
+            "under",
+            "between",
+            "opposite"
+          ],
+          "examples": [
+            {
+              "en": "The keys are on the table.",
+              "vi": "Chìa khóa ở trên bàn."
+            }
+          ],
+          "common_mistakes": [
+            "The keys are in the table (nếu không ở bên trong ngăn bàn) → on the table."
+          ],
+          "comparison": "In nhấn bên trong/khu vực; at nhấn điểm/địa điểm."
+        },
+        {
+          "id": "day7_topic3",
+          "name": "Prepositions of Movement",
+          "name_vi": "Giới từ chỉ chuyển động",
+          "definition": "Diễn tả hướng hoặc đường di chuyển.",
+          "formula": "to (destination); into (enter); across (from one side to another); through (inside and out).",
+          "usage": "Describe movement and routes.",
+          "time_expressions_or_signals": [
+            "to",
+            "into",
+            "across",
+            "through",
+            "along",
+            "past"
+          ],
+          "examples": [
+            {
+              "en": "We walked through the tunnel.",
+              "vi": "Chúng tôi đi bộ xuyên qua đường hầm."
+            }
+          ],
+          "common_mistakes": [
+            "walked across the tunnel (nếu ý là đi bên trong) → through the tunnel."
+          ],
+          "comparison": "Across nhấn băng qua bề mặt/khoảng; through nhấn đi bên trong."
+        },
+        {
+          "id": "day7_topic4",
+          "name": "For / Since / During / While",
+          "name_vi": "Giới từ/liên từ thời gian",
+          "definition": "For chỉ khoảng thời gian; since chỉ mốc bắt đầu; during + danh từ; while + mệnh đề.",
+          "formula": "for + duration; since + starting point; during + noun; while + subject + verb.",
+          "usage": "Describe duration, starting point and simultaneous events.",
+          "time_expressions_or_signals": [
+            "for two hours",
+            "since Monday",
+            "during the meeting",
+            "while I was working"
+          ],
+          "examples": [
+            {
+              "en": "I've lived here for three years.",
+              "vi": "Tôi đã sống ở đây được ba năm."
+            }
+          ],
+          "common_mistakes": [
+            "since three years → for three years."
+          ],
+          "comparison": "Since + mốc; for + khoảng; during + noun phrase; while + clause."
+        },
+        {
+          "id": "day7_topic5",
+          "name": "Conjunctions",
+          "name_vi": "Liên từ",
+          "definition": "Nối từ, cụm từ hoặc mệnh đề để thể hiện quan hệ ý nghĩa.",
+          "formula": "and (addition); but (contrast); or (choice); so (result); because (reason).",
+          "usage": "Connect ideas logically.",
+          "time_expressions_or_signals": [
+            "and",
+            "but",
+            "or",
+            "so",
+            "because"
+          ],
+          "examples": [
+            {
+              "en": "I was tired, so I went to bed early.",
+              "vi": "Tôi mệt nên đã đi ngủ sớm."
+            }
+          ],
+          "common_mistakes": [
+            "Because I was tired, so I slept → Because I was tired, I slept / I was tired, so I slept."
+          ],
+          "comparison": "Không dùng because và so cùng để nối cùng một quan hệ nguyên nhân-kết quả trong cấu trúc cơ bản."
+        },
+        {
+          "id": "day7_topic6",
+          "name": "Although / Despite / However",
+          "name_vi": "Tương phản",
+          "definition": "Although nối mệnh đề; despite đi với danh từ/V-ing; however là trạng từ liên kết câu.",
+          "formula": "although + clause; despite + noun/V-ing; despite the fact that + clause; sentence. However, sentence.",
+          "usage": "Show contrast or unexpected result.",
+          "time_expressions_or_signals": [
+            "although",
+            "despite",
+            "however",
+            "nevertheless"
+          ],
+          "examples": [
+            {
+              "en": "Although it was raining, we went out.",
+              "vi": "Mặc dù trời mưa, chúng tôi vẫn ra ngoài."
+            }
+          ],
+          "common_mistakes": [
+            "Despite it was raining → Despite the rain / Despite the fact that it was raining."
+          ],
+          "comparison": "However thường cần dấu câu phù hợp; despite không trực tiếp đi với mệnh đề đầy đủ."
+        },
+        {
+          "id": "day7_topic7",
+          "name": "Too / Either / So / Neither",
+          "name_vi": "Đồng tình với ý kiến",
+          "definition": "So/neither dùng đảo trợ động từ với chủ ngữ mới; too/either thường đặt cuối câu.",
+          "formula": "So + auxiliary/be/modal + subject; Neither + auxiliary/be/modal + subject; too (affirmative); either (negative).",
+          "usage": "Agree with positive or negative statements.",
+          "time_expressions_or_signals": [
+            "So do I",
+            "Neither can I",
+            "me too",
+            "me neither"
+          ],
+          "examples": [
+            {
+              "en": "I don't like spicy food. Neither do I.",
+              "vi": "Tôi không thích đồ ăn cay. Tôi cũng vậy."
+            }
+          ],
+          "common_mistakes": [
+            "Neither I do → Neither do I."
+          ],
+          "comparison": "Chọn trợ động từ phù hợp với thì/động từ của câu trước."
+        },
+        {
+          "id": "day7_topic8",
+          "name": "Question Tags",
+          "name_vi": "Câu hỏi đuôi",
+          "definition": "Câu hỏi ngắn cuối câu để xác nhận thông tin hoặc tìm sự đồng tình.",
+          "formula": "positive statement + negative tag; negative statement + positive tag.",
+          "usage": "Check information and invite confirmation.",
+          "time_expressions_or_signals": [
+            "isn't it?",
+            "don't you?",
+            "did they?"
+          ],
+          "examples": [
+            {
+              "en": "You work here, don't you?",
+              "vi": "Bạn làm việc ở đây, phải không?"
+            }
+          ],
+          "common_mistakes": [
+            "You are tired, are you? → You are tired, aren't you?"
+          ],
+          "comparison": "Đại từ trong tag phải thay chủ ngữ; trợ động từ phải phù hợp."
+        },
+        {
+          "id": "day7_topic9",
+          "name": "Wish",
+          "name_vi": "Cấu trúc wish",
+          "definition": "Wish + Past Simple diễn tả mong muốn trái với hiện tại.",
+          "formula": "S + wish(es) + subject + Past Simple; were có thể dùng cho mọi chủ ngữ trong văn phong trang trọng.",
+          "usage": "Express unreal present wishes or dissatisfaction.",
+          "time_expressions_or_signals": [
+            "I wish",
+            "if only"
+          ],
+          "examples": [
+            {
+              "en": "I wish I had more free time.",
+              "vi": "Tôi ước mình có nhiều thời gian rảnh hơn."
+            }
+          ],
+          "common_mistakes": [
+            "I wish I have more time → I wish I had more time."
+          ],
+          "comparison": "Wish + past simple nói hiện tại; wish + past perfect nói tiếc nuối quá khứ."
+        },
+        {
+          "id": "day7_topic10",
+          "name": "Sentence Transformation",
+          "name_vi": "Viết lại câu",
+          "definition": "Viết lại câu giữ nguyên nghĩa bằng cấu trúc tương đương, không thay đổi thông tin cốt lõi.",
+          "formula": "Common patterns: because ↔ because of; although ↔ despite; too ↔ not ... enough; active ↔ passive; if ... not ↔ unless.",
+          "usage": "Rephrase accurately using target grammar.",
+          "time_expressions_or_signals": [
+            "because of",
+            "despite",
+            "enough",
+            "unless",
+            "passive"
+          ],
+          "examples": [
+            {
+              "en": "The box is too heavy for me to lift. → The box isn't light enough for me to lift.",
+              "vi": "Cái hộp quá nặng để tôi nhấc. → Cái hộp không đủ nhẹ để tôi nhấc."
+            }
+          ],
+          "common_mistakes": [
+            "Thay cấu trúc nhưng làm thay đổi mức độ hoặc chủ thể."
+          ],
+          "comparison": "Kiểm tra nghĩa, thì, chủ ngữ, phủ định và cấu trúc đi kèm."
+        }
+      ],
+      "assessment": {
+        "question_count": 30,
+        "difficulty_distribution_target": {
+          "easy": 9,
+          "medium": 15,
+          "hard": 6
+        },
+        "questions": [
+          {
+            "id": "d7q01",
+            "topic": "Prepositions of Time: In / On / At",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The conference starts _____ 8:30 a.m.",
+            "options": {
+              "A": "in",
+              "B": "on",
+              "C": "at",
+              "D": "by"
+            },
+            "correct_answer": "C",
+            "explanation": "At is used with clock times.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q02",
+            "topic": "Prepositions of Time: In / On / At",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "My birthday is _____ November.",
+            "options": {
+              "A": "at",
+              "B": "on",
+              "C": "in",
+              "D": "by"
+            },
+            "correct_answer": "C",
+            "explanation": "In is used with months.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q03",
+            "topic": "Prepositions of Time: In / On / At",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "We have English class _____ Sunday.",
+            "options": {
+              "A": "in",
+              "B": "on",
+              "C": "at",
+              "D": "for"
+            },
+            "correct_answer": "B",
+            "explanation": "On is used with days.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q04",
+            "topic": "Prepositions of Time: In / On / At",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I usually read _____ the evening.",
+            "options": {
+              "A": "at",
+              "B": "on",
+              "C": "in",
+              "D": "by"
+            },
+            "correct_answer": "C",
+            "explanation": "In the evening is the usual expression.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q05",
+            "topic": "Prepositions of Place",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The children are playing _____ the garden.",
+            "options": {
+              "A": "at",
+              "B": "in",
+              "C": "on",
+              "D": "to"
+            },
+            "correct_answer": "B",
+            "explanation": "In indicates inside an area.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q06",
+            "topic": "Prepositions of Place",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "There is a picture _____ the wall.",
+            "options": {
+              "A": "in",
+              "B": "at",
+              "C": "on",
+              "D": "into"
+            },
+            "correct_answer": "C",
+            "explanation": "On is used for a surface.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q07",
+            "topic": "Prepositions of Place",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "The bank is _____ the supermarket and the post office.",
+            "options": {
+              "A": "between",
+              "B": "through",
+              "C": "under",
+              "D": "into"
+            },
+            "correct_answer": "A",
+            "explanation": "Between is used for a position separating two items.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q08",
+            "topic": "Prepositions of Movement",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "The cat jumped _____ the box.",
+            "options": {
+              "A": "into",
+              "B": "across",
+              "C": "through",
+              "D": "at"
+            },
+            "correct_answer": "A",
+            "explanation": "Into expresses movement from outside to inside.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q09",
+            "topic": "Prepositions of Movement",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "We walked _____ the road to reach the park.",
+            "options": {
+              "A": "through",
+              "B": "across",
+              "C": "into",
+              "D": "under"
+            },
+            "correct_answer": "B",
+            "explanation": "Across means from one side to the other.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q10",
+            "topic": "For / Since / During / While",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I've worked here _____ 2023.",
+            "options": {
+              "A": "for",
+              "B": "since",
+              "C": "during",
+              "D": "while"
+            },
+            "correct_answer": "B",
+            "explanation": "Since is followed by a starting point.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q11",
+            "topic": "For / Since / During / While",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "We waited _____ two hours.",
+            "options": {
+              "A": "since",
+              "B": "during",
+              "C": "for",
+              "D": "while"
+            },
+            "correct_answer": "C",
+            "explanation": "For is followed by a duration.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q12",
+            "topic": "For / Since / During / While",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I fell asleep _____ the film.",
+            "options": {
+              "A": "while",
+              "B": "during",
+              "C": "since",
+              "D": "for"
+            },
+            "correct_answer": "B",
+            "explanation": "During is followed by a noun phrase.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q13",
+            "topic": "For / Since / During / While",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "I listened to music while I _____ dinner.",
+            "options": {
+              "A": "cook",
+              "B": "was cooking",
+              "C": "cooked tomorrow",
+              "D": "am cook"
+            },
+            "correct_answer": "B",
+            "explanation": "While is followed by a clause; Past Continuous shows an ongoing past action.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q14",
+            "topic": "Conjunctions",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I wanted to go out, _____ it was raining heavily.",
+            "options": {
+              "A": "because",
+              "B": "but",
+              "C": "so",
+              "D": "or"
+            },
+            "correct_answer": "B",
+            "explanation": "But connects contrasting ideas.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q15",
+            "topic": "Conjunctions",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "You can take the bus _____ walk to the station.",
+            "options": {
+              "A": "or",
+              "B": "because",
+              "C": "although",
+              "D": "so"
+            },
+            "correct_answer": "A",
+            "explanation": "Or presents a choice.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q16",
+            "topic": "Conjunctions",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "She was ill, _____ she stayed at home.",
+            "options": {
+              "A": "but",
+              "B": "so",
+              "C": "although",
+              "D": "because of"
+            },
+            "correct_answer": "B",
+            "explanation": "So introduces a result.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q17",
+            "topic": "Although / Despite / However",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "_____ the traffic was heavy, we arrived on time.",
+            "options": {
+              "A": "Despite",
+              "B": "Although",
+              "C": "However",
+              "D": "Because of"
+            },
+            "correct_answer": "B",
+            "explanation": "Although is followed by a clause.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q18",
+            "topic": "Although / Despite / However",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "Despite _____ tired, he finished the report.",
+            "options": {
+              "A": "he was",
+              "B": "being",
+              "C": "although",
+              "D": "was"
+            },
+            "correct_answer": "B",
+            "explanation": "Despite is followed by a noun or V-ing.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q19",
+            "topic": "Although / Despite / However",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "It was expensive. _____, I decided to buy it.",
+            "options": {
+              "A": "Although",
+              "B": "Despite",
+              "C": "However",
+              "D": "Because"
+            },
+            "correct_answer": "C",
+            "explanation": "However links contrasting sentences.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q20",
+            "topic": "Although / Despite / However",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "_____ the rain, the match continued.",
+            "options": {
+              "A": "Although",
+              "B": "Despite",
+              "C": "However",
+              "D": "Because"
+            },
+            "correct_answer": "B",
+            "explanation": "Despite is followed by a noun phrase.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q21",
+            "topic": "Too / Either / So / Neither",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "“I love classical music.” “_____.”",
+            "options": {
+              "A": "So do I",
+              "B": "Neither do I",
+              "C": "So am I",
+              "D": "I don't too"
+            },
+            "correct_answer": "A",
+            "explanation": "Positive agreement with a normal verb: So + do + subject.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q22",
+            "topic": "Too / Either / So / Neither",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "“I can't swim.” “_____.”",
+            "options": {
+              "A": "So can I",
+              "B": "Neither can I",
+              "C": "Neither do I",
+              "D": "So I can't"
+            },
+            "correct_answer": "B",
+            "explanation": "Negative agreement repeats the modal: Neither + can + subject.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q23",
+            "topic": "Too / Either / So / Neither",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "“I'm tired.” “_____.”",
+            "options": {
+              "A": "So do I",
+              "B": "So am I",
+              "C": "Neither am I",
+              "D": "I am too not"
+            },
+            "correct_answer": "B",
+            "explanation": "BE in the original statement is repeated in the inversion.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q24",
+            "topic": "Question Tags",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "You have finished the task, _____?",
+            "options": {
+              "A": "haven't you",
+              "B": "don't you",
+              "C": "didn't you",
+              "D": "aren't you"
+            },
+            "correct_answer": "A",
+            "explanation": "Positive present perfect statement takes negative tag have you.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q25",
+            "topic": "Question Tags",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "She isn't coming, _____?",
+            "options": {
+              "A": "is she",
+              "B": "isn't she",
+              "C": "does she",
+              "D": "will she"
+            },
+            "correct_answer": "A",
+            "explanation": "Negative statement takes positive tag.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q26",
+            "topic": "Question Tags",
+            "type": "multiple_choice",
+            "difficulty": "hard",
+            "question": "They went home early, _____?",
+            "options": {
+              "A": "do they",
+              "B": "didn't they",
+              "C": "weren't they",
+              "D": "haven't they"
+            },
+            "correct_answer": "B",
+            "explanation": "Past Simple went takes did in the tag.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q27",
+            "topic": "Wish",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "I wish I _____ more free time.",
+            "options": {
+              "A": "have",
+              "B": "had",
+              "C": "will have",
+              "D": "am having"
+            },
+            "correct_answer": "B",
+            "explanation": "Wish + past simple expresses an unreal present wish.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q28",
+            "topic": "Wish",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "He wishes he _____ closer to his office.",
+            "options": {
+              "A": "lives",
+              "B": "lived",
+              "C": "will live",
+              "D": "has lived"
+            },
+            "correct_answer": "B",
+            "explanation": "Wish + past simple refers to an unreal present situation.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q29",
+            "topic": "Sentence Transformation",
+            "type": "multiple_choice",
+            "difficulty": "easy",
+            "question": "\"Because it was raining, we stayed inside.\" Choose the sentence with the same meaning.",
+            "options": {
+              "A": "Because of the rain, we stayed inside.",
+              "B": "Despite the rain, we stayed inside.",
+              "C": "Although the rain, we stayed inside.",
+              "D": "However the rain, we stayed inside."
+            },
+            "correct_answer": "A",
+            "explanation": "Because + clause can become because of + noun phrase. Both sentences express the same reason and result.",
+            "quality_flag": null
+          },
+          {
+            "id": "d7q30",
+            "topic": "Sentence Transformation",
+            "type": "multiple_choice",
+            "difficulty": "medium",
+            "question": "“You must not park here.” Choose the closest equivalent.",
+            "options": {
+              "A": "You don't have to park here.",
+              "B": "You are allowed to park here.",
+              "C": "You are not allowed to park here.",
+              "D": "You needn't park here."
+            },
+            "correct_answer": "C",
+            "explanation": "Must not expresses prohibition; not allowed to preserves the meaning.",
+            "quality_flag": null
+          }
+        ],
+        "answer_key_included": true
+      }
+    }
+  ]
+}

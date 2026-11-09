@@ -18,6 +18,7 @@ import { ProgressBar } from "@/components/stats/ProgressBar";
 import { StatsGrid } from "@/components/stats/StatsGrid";
 import { RoadmapPanel } from "@/components/roadmap/RoadmapPanel";
 import { TensesPanel } from "@/components/tenses/TensesPanel";
+import { B1RevisionPanel } from "@/components/b1/B1RevisionPanel";
 import { VocabPanel } from "@/components/vocab/VocabPanel";
 import { useLessonState } from "@/hooks/useLessonState";
 
@@ -178,6 +179,8 @@ export function LessonApp() {
       {activeSection === "guide" && <GuidePanel />}
 
       {activeSection === "tenses" && <TensesPanel />}
+
+      {activeSection === "b1" && <B1RevisionPanel />}
 
       {activeSection === "vocab" && (
         <VocabPanel

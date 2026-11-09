@@ -212,14 +212,36 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
   ],
   19: [
     {
-      text: "a big house. This is my book. That is your pen.",
+      text: "Vị trí 1: trước danh từ (N) — a big house\nVị trí 2: sau to be (V tobe) — She is happy.\nVị trí 3: sau look / seem / feel — She looks happy.",
       example: "It is a big house.",
       exampleVi: "Đó là ngôi nhà to.",
+      examples: [
+        ["a beautiful girl", "một cô gái xinh đẹp"],
+        ["The house is big.", "Ngôi nhà to."],
+        ["He seems tired.", "Anh ấy có vẻ mệt."],
+      ],
     },
     {
-      text: "Tính từ (Adj) đứng trước danh từ (N). Tính từ sở hữu (Poss. Adj): my, your, his, her đứng trước danh từ (N).",
-      example: "It is a small bag.",
-      exampleVi: "Đó là cái cặp nhỏ.",
+      text: "Poss. Adj đứng trước danh từ (N): my, your, his, her, its, our, their.",
+      example: "This is my book.",
+      exampleVi: "Đây là sách của tôi.",
+      table: {
+        headers: ["Đại từ nhân xưng", "Tính từ sở hữu", "Nghĩa"],
+        rows: [
+          ["I", "my", "của tôi"],
+          ["You", "your", "của bạn"],
+          ["He", "his", "của anh ấy"],
+          ["She", "her", "của cô ấy"],
+          ["It", "its", "của nó"],
+          ["We", "our", "của chúng tôi"],
+          ["They", "their", "của họ"],
+        ],
+      },
+      note: "Không đứng một mình.\nThis is my book. (Đúng)\nThis book is my. (Sai)",
+      examples: [
+        ["This is my book.", "Đây là sách của tôi."],
+        ["That is your pen.", "Kia là bút của bạn."],
+      ],
     },
   ],
   20: [

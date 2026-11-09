@@ -38,10 +38,42 @@ export function HintDrawer({ open, hints, onClose }: HintDrawerProps) {
             {hints.rules.map((rule) => {
               const examples = rule.examples?.length
                 ? rule.examples
-                : [{ en: rule.example, vi: rule.exampleVi }];
+                : !rule.detail && !rule.table && rule.example
+                  ? [{ en: rule.example, vi: rule.exampleVi }]
+                  : [];
               return (
                 <li key={rule.text}>
                   <strong style={{ whiteSpace: "pre-line" }}>{rule.text}</strong>
+                  {rule.detail ? (
+                    <Typography.Paragraph style={{ whiteSpace: "pre-line", margin: "8px 0" }}>
+                      {rule.detail}
+                    </Typography.Paragraph>
+                  ) : null}
+                  {rule.table ? (
+                    <table className="rule-table">
+                      <thead>
+                        <tr>
+                          {rule.table.headers.map((header) => (
+                            <th key={header}>{header}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {rule.table.rows.map((row) => (
+                          <tr key={row.join("-")}>
+                            {row.map((cell, cellIndex) => (
+                              <td key={`${row[0]}-${cellIndex}`}>{cell}</td>
+                            ))}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  ) : null}
+                  {rule.note ? (
+                    <Typography.Paragraph type="secondary" style={{ whiteSpace: "pre-line" }}>
+                      {rule.note}
+                    </Typography.Paragraph>
+                  ) : null}
                   {examples.map((example) => (
                     <Typography.Paragraph key={example.en} type="secondary" style={{ marginBottom: 4 }}>
                       Ví dụ: {example.en}

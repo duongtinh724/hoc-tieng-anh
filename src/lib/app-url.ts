@@ -1,6 +1,16 @@
 import type { AppSection } from "@/types/lesson";
 
-const PAGES: AppSection[] = ["overview", "lesson", "practice", "review", "guide", "roadmap", "tenses", "vocab"];
+const PAGES: AppSection[] = [
+  "overview",
+  "lesson",
+  "practice",
+  "review",
+  "guide",
+  "roadmap",
+  "tenses",
+  "vocab",
+  "b1",
+];
 
 export interface AppUrlView {
   month?: number;

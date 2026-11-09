@@ -58,7 +58,7 @@ export function LessonCard({
               ))}
             </ul>
           </div>
-          <RuleBox rules={getRulesForDay(month, lesson.day, lesson.rule)} />
+          <RuleBox key={lesson.day} rules={getRulesForDay(month, lesson.day, lesson.rule)} />
         </div>
 
         {lesson.video ? <LessonVideo video={lesson.video} /> : null}

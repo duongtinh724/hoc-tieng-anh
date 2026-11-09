@@ -13,12 +13,21 @@ export interface RuleExample {
   vi?: string;
 }
 
+export interface RuleTable {
+  headers: string[];
+  rows: string[][];
+}
+
 export interface RuleItem {
   text: string;
   example: string;
   exampleVi?: string;
   /** Ví dụ thêm. `example` vẫn là ví dụ đầu. */
   examples?: RuleExample[];
+  /** Giải thích hiện khi mở quy tắc (giữ xuống dòng). */
+  detail?: string;
+  table?: RuleTable;
+  note?: string;
 }
 
 export interface LessonVideo {
@@ -77,7 +86,16 @@ export interface LessonState {
   vocabDay?: number | null;
 }
 
-export type AppSection = "overview" | "lesson" | "practice" | "review" | "guide" | "roadmap" | "tenses" | "vocab";
+export type AppSection =
+  | "overview"
+  | "lesson"
+  | "practice"
+  | "review"
+  | "guide"
+  | "roadmap"
+  | "tenses"
+  | "vocab"
+  | "b1";
 
 export type StepVariant = "vocab" | "listen" | "copy" | "exercise" | "recall";
 
