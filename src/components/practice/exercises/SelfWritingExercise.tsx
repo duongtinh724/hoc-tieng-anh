@@ -37,7 +37,7 @@ export function SelfWritingExercise({
           value={value}
           disabled={submitted}
           onChange={(event) => onChange(event.target.value)}
-          placeholder="Viết vài câu tiếng Anh về bản thân bạn..."
+          placeholder="Viết 3–5 câu tiếng Anh về bạn và gia đình — dùng từ và ngữ pháp bài hôm nay..."
           autoSize={{ minRows: 8, maxRows: 16 }}
           className="practice-self-writing-textarea"
         />

@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay22: PracticeLesson = {
-  meta: { ...createPracticeMeta(22, "What, who, where"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(22, "What, who, where"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(22, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay22: PracticeLesson = {
       { en: "school", vi: "trường" },
       { en: "here", vi: "ở đây" },
       { en: "friend", vi: "bạn" },
-    ],
+    ]
   },
   screens: [
     {
@@ -35,23 +35,6 @@ export const practiceDay22: PracticeLesson = {
       ],
     },
     {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
-      items: [
-        { id: "c-1", label: "What is this?", correctCategoryId: "cat-a" },
-        { id: "c-2", label: "It is a book.", correctCategoryId: "cat-a" },
-        { id: "c-3", label: "Who is she?", correctCategoryId: "cat-a" },
-        { id: "c-4", label: "She is a teacher.", correctCategoryId: "cat-a" },
-        { id: "c-5", label: "Where is the book?", correctCategoryId: "cat-a" },
-        { id: "c-x", label: "I like music.", correctCategoryId: "cat-b" },
-      ],
-    },
-    {
       type: "sentence-drag",
       title: "Fill the sentence.\nĐiền vào câu.",
       instruction: "Drag a word into the blank.\nKéo từ vào chỗ trống.",
@@ -65,7 +48,7 @@ export const practiceDay22: PracticeLesson = {
         { id: "sd1", parts: [{ kind: "text", value: "What " }, { kind: "blank", id: "b1", correctWordId: "s1" }, { kind: "text", value: " this?." }] },
         { id: "sd2", parts: [{ kind: "text", value: "It " }, { kind: "blank", id: "b2", correctWordId: "s2" }, { kind: "text", value: " a book." }] },
         { id: "sd3", parts: [{ kind: "text", value: "Who " }, { kind: "blank", id: "b3", correctWordId: "s3" }, { kind: "text", value: " she?." }] },
-        { id: "sd4", parts: [{ kind: "text", value: "She " }, { kind: "blank", id: "b4", correctWordId: "s4" }, { kind: "text", value: " a teacher." }] },
+        { id: "sd4", parts: [{ kind: "text", value: "She " }, { kind: "blank", id: "b4", correctWordId: "s4" }, { kind: "text", value: " my friend." }] },
       ],
     },
     {
@@ -76,7 +59,7 @@ export const practiceDay22: PracticeLesson = {
         { id: "q1", parts: [{ kind: "text", value: "What is " }, { kind: "select", id: "q1a", correctOptionId: "q1-ok", options: [{ id: "q1-ok", label: "this?" }, { id: "q1-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q2", parts: [{ kind: "text", value: "It is a " }, { kind: "select", id: "q2a", correctOptionId: "q2-ok", options: [{ id: "q2-ok", label: "book" }, { id: "q2-no", label: "pen" }] }, { kind: "text", value: "." }] },
         { id: "q3", parts: [{ kind: "text", value: "Who is " }, { kind: "select", id: "q3a", correctOptionId: "q3-ok", options: [{ id: "q3-ok", label: "she?" }, { id: "q3-no", label: "book" }] }, { kind: "text", value: "." }] },
-        { id: "q4", parts: [{ kind: "text", value: "She is a " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "teacher" }, { id: "q4-no", label: "book" }] }, { kind: "text", value: "." }] },
+        { id: "q4", parts: [{ kind: "text", value: "She is my " }, { kind: "select", id: "q4a", correctOptionId: "q4-ok", options: [{ id: "q4-ok", label: "friend" }, { id: "q4-no", label: "book" }] }, { kind: "text", value: "." }] },
         { id: "q5", parts: [{ kind: "select", id: "q5a", correctOptionId: "q5-ok", options: [{ id: "q5-ok", label: "What" }, { id: "q5-no", label: "Who" }, { id: "q5-no2", label: "Where" }] }, { kind: "text", value: " is this?" }] },
         { id: "q6", parts: [{ kind: "select", id: "q6a", correctOptionId: "q6-ok", options: [{ id: "q6-ok", label: "Who" }, { id: "q6-no", label: "What" }, { id: "q6-no2", label: "Where" }] }, { kind: "text", value: " is your teacher?" }] },
         { id: "q7", parts: [{ kind: "select", id: "q7a", correctOptionId: "q7-ok", options: [{ id: "q7-ok", label: "Where" }, { id: "q7-no", label: "What" }, { id: "q7-no2", label: "Who" }] }, { kind: "text", value: " is the school?" }] },
@@ -96,20 +79,20 @@ export const practiceDay22: PracticeLesson = {
         { id: "sen-1", label: "Câu 1", lines: [{ id: "s10", text: "What" }, { id: "s11", text: "is" }, { id: "s12", text: "this?" }], correctOrder: ["s10", "s11", "s12"] },
         { id: "sen-2", label: "Câu 2", lines: [{ id: "s20", text: "It" }, { id: "s21", text: "is" }, { id: "s22", text: "a" }, { id: "s23", text: "book" }], correctOrder: ["s20", "s21", "s22", "s23"] },
         { id: "sen-3", label: "Câu 3", lines: [{ id: "s30", text: "Who" }, { id: "s31", text: "is" }, { id: "s32", text: "she?" }], correctOrder: ["s30", "s31", "s32"] },
-        { id: "sen-4", label: "Câu 4", lines: [{ id: "s40", text: "She" }, { id: "s41", text: "is" }, { id: "s42", text: "a" }, { id: "s43", text: "teacher" }], correctOrder: ["s40", "s41", "s42", "s43"] },
-        { id: "sen-5", label: "Câu 5", lines: [{ id: "s50", text: "Where" }, { id: "s51", text: "is" }, { id: "s52", text: "the" }, { id: "s53", text: "book?" }], correctOrder: ["s50", "s51", "s52", "s53"] },
+        { id: "sen-4", label: "Câu 4", lines: [{ id: "s40", text: "She" }, { id: "s41", text: "is" }, { id: "s42", text: "my" }, { id: "s43", text: "friend" }], correctOrder: ["s40", "s41", "s42", "s43"] },
+        { id: "sen-5", label: "Câu 5", lines: [{ id: "s50", text: "Where" }, { id: "s51", text: "do" }, { id: "s52", text: "you" }, { id: "s53", text: "live?" }], correctOrder: ["s50", "s51", "s52", "s53"] },
       ],
     },
     {
       type: "reading-fill",
       title: "Fill the line.\nĐiền vào dòng.",
       instruction: "Type the missing word.\nGõ từ còn thiếu.",
-      passage: "What is this? It is a book. Who is she? She is a teacher. Where is the book?",
+      passage: "What is this? It is a book. Who is she? She is my friend. Where do you live? I live here.",
       prompts: [
         { id: "rf1", label: "What ___ this?.", correctAnswers: ["is"] },
         { id: "rf2", label: "It ___ a book.", correctAnswers: ["is"] },
         { id: "rf3", label: "Who ___ she?.", correctAnswers: ["is"] },
-        { id: "rf4", label: "She ___ a teacher.", correctAnswers: ["is"] },
+        { id: "rf4", label: "She ___ my friend.", correctAnswers: ["is"] },
       ],
     },
     {
@@ -120,17 +103,22 @@ export const practiceDay22: PracticeLesson = {
         { id: "dic-1", text: "What is this?", hint: "Đây là cái gì?" },
         { id: "dic-2", text: "It is a book.", hint: "Nó là quyển sách." },
         { id: "dic-3", text: "Who is she?", hint: "Cô ấy là ai?" },
-        { id: "dic-4", text: "She is a teacher.", hint: "Cô ấy là giáo viên." },
-        { id: "dic-5", text: "Where is the book?", hint: "Quyển sách ở đâu?" },
+        { id: "dic-4", text: "She is my friend.", hint: "Cô ấy là bạn tôi." },
+        { id: "dic-5", text: "Where do you live?", hint: "Bạn sống ở đâu?" },
+        { id: "dic-6", text: "I live here.", hint: "Tôi sống ở đây." },
       ],
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\nViết 3 câu về bạn.",
-      promptHints: ["What is this?"],
+      title: "Ask about you and your things.\nHỏi về bạn và đồ vật.",
+      instruction: "Write 4 sentences: 2 Wh- questions (What / Who / Where) and 2 short answers about you or family.\nViết 4 câu: 2 câu hỏi What / Who / Where và 2 câu trả lời ngắn về bạn hoặc gia đình.",
+      promptHints: [
+        "What is this? It is my book.",
+        "Who is she? She is my sister.",
+        "Where do you live? I live in Hanoi."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "What is this?\nIt is a book.\nWho is she?\nShe is a teacher.",
+      sample: "What is this? It is my book.\nWho is he? He is my father.\nWhere is my school? It is here.\nI live here with my family.",
     },
   ],
 };

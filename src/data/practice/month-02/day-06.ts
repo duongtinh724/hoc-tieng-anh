@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay06: PracticeLesson = {
-  meta: { ...createPracticeMeta(6, "Câu hỏi Present Simple", 2), totalScreens: 9 },
+  meta: { ...createPracticeMeta(6, "Câu hỏi Present Simple", 2), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(6, ""),
     vocabulary: [
@@ -87,24 +87,6 @@ export const practiceDay06: PracticeLesson = {
           label: "tập thể dục",
           correctWordId: "w-exercise",
         },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Do or Does in Wh- questions?\nDo hay Does trong câu hỏi Wh-?",
-      instruction: "Drag each question into do or does.\nKéo câu hỏi vào đúng nhóm do hoặc does.",
-      categories: [
-        { id: "cat-do", label: "Wh- + do + ..." },
-        { id: "cat-does", label: "Wh- + does + ..." },
-      ],
-      items: [
-        { id: "c-q1", label: "What do you study?", correctCategoryId: "cat-do" },
-        { id: "c-q2", label: "When do they play football?", correctCategoryId: "cat-do" },
-        { id: "c-q3", label: "How often do you exercise?", correctCategoryId: "cat-do" },
-        { id: "c-q4", label: "Where does she live?", correctCategoryId: "cat-does" },
-        { id: "c-q5", label: "What time does school start?", correctCategoryId: "cat-does" },
-        { id: "c-q6", label: "Why does he study English?", correctCategoryId: "cat-does" },
-        { id: "c-q7", label: "What time does school finish?", correctCategoryId: "cat-does" },
       ],
     },
     {
@@ -344,20 +326,15 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write Wh- questions.\nViết câu hỏi Wh-.",
-      instruction:
-        "Write 3 Wh- questions with do/does: What..., Where..., or How often...\nViết 3 câu hỏi Wh- với do/does: What..., Where... hoặc How often...",
+      title: "Wh- questions about you.\nCâu hỏi Wh- về bạn.",
+      instruction: "Write 3 Wh- questions with do/does about you or family, then answer each in one sentence.\nViết 3 câu hỏi Wh- với do/does về bạn hoặc gia đình, mỗi câu kèm một câu trả lời.",
       promptHints: [
-        "What do you study?",
-        "Where does she live?",
-        "When do they play football?",
-        "What time does school start?",
-        "How often do you exercise?",
-        "Why does he study English?",
+        "What do you study? I study English.",
+        "Where does your father work?",
+        "How often do you play sport?"
       ],
       sampleTitle: "Bài gợi ý",
-      sample:
-        "What do you study?\nWhere does Nam live?\nHow often do you exercise?",
+      sample: "What do you study? I study English.\nWhere does your mother work? She works at a hospital.\nHow often do you play football? I play twice a week.",
     },
   ],
 };

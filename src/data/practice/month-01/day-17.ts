@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay17: PracticeLesson = {
-  meta: { ...createPracticeMeta(17, "Have / has"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(17, "Have / has"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(17, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay17: PracticeLesson = {
       { en: "bag", vi: "cặp" },
       { en: "friend", vi: "bạn" },
       { en: "brother", vi: "anh hoặc em trai" },
-    ],
+    ]
   },
   screens: [
     {
@@ -32,23 +32,6 @@ export const practiceDay17: PracticeLesson = {
         { id: "p-bag", imageUrl: "/images/practice/nouns-photo/bag.jpg", imageAlt: "cặp", label: "cặp", correctWordId: "w-bag" },
         { id: "p-friend", imageUrl: "/images/practice/tobe/friend.jpg", imageAlt: "bạn", label: "bạn", correctWordId: "w-friend" },
         { id: "p-brother", imageUrl: "/images/practice/tobe/brother.jpg", imageAlt: "anh hoặc em trai", label: "anh hoặc em trai", correctWordId: "w-brother" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
-      items: [
-        { id: "c-1", label: "I have a book.", correctCategoryId: "cat-b" },
-        { id: "c-2", label: "You have a pen.", correctCategoryId: "cat-b" },
-        { id: "c-3", label: "She has a bag.", correctCategoryId: "cat-b" },
-        { id: "c-4", label: "He has a brother.", correctCategoryId: "cat-b" },
-        { id: "c-5", label: "We have friends.", correctCategoryId: "cat-b" },
-        { id: "c-y", label: "I am a student.", correctCategoryId: "cat-a" },
       ],
     },
     {
@@ -126,11 +109,16 @@ export const practiceDay17: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\nViết 3 câu về bạn.",
-      promptHints: ["I have a book."],
+      title: "What you and family have.\nBạn và gia đình có gì.",
+      instruction: "Write 4 sentences with have / has. Use: book, pen, bag, friend, brother.\nViết 4 câu có have / has về đồ bạn và người thân có.",
+      promptHints: [
+        "I have a book.",
+        "My father has a car.",
+        "We have a house.",
+        "She has a sister."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "I have a book.\nYou have a pen.\nShe has a bag.\nHe has a brother.",
+      sample: "I have a book and a pen.\nMy father has a motorbike.\nWe have a small house.\nShe has a cat.",
     },
   ],
 };

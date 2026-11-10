@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay04: PracticeLesson = {
-  meta: { ...createPracticeMeta(4, "Do / Does", 2), totalScreens: 9 },
+  meta: { ...createPracticeMeta(4, "Do / Does", 2), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(4, ""),
     vocabulary: [
@@ -87,24 +87,6 @@ export const practiceDay04: PracticeLesson = {
           label: "hiểu",
           correctWordId: "w-understand",
         },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Do or Does?\nDo hay Does?",
-      instruction: "Drag each question into Do or Does.\nKéo câu hỏi vào đúng nhóm Do hoặc Does.",
-      categories: [
-        { id: "cat-do", label: "Do + I/you/we/they" },
-        { id: "cat-does", label: "Does + he/she/it" },
-      ],
-      items: [
-        { id: "c-q1", label: "Do you study English?", correctCategoryId: "cat-do" },
-        { id: "c-q2", label: "Do they play football?", correctCategoryId: "cat-do" },
-        { id: "c-q3", label: "Do you need help?", correctCategoryId: "cat-do" },
-        { id: "c-q4", label: "Do we understand?", correctCategoryId: "cat-do" },
-        { id: "c-q5", label: "Does she like music?", correctCategoryId: "cat-does" },
-        { id: "c-q6", label: "Does he go to school?", correctCategoryId: "cat-does" },
-        { id: "c-q7", label: "Does she understand?", correctCategoryId: "cat-does" },
       ],
     },
     {
@@ -332,20 +314,15 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write Do / Does questions.\nViết câu hỏi Do / Does.",
-      instruction:
-        "Write 3 questions: 2 with Do, 1 with Does. You can use study, like, play, go, need, or understand.\nViết 3 câu hỏi: 2 câu với Do, 1 câu với Does. Có thể dùng study, like, play, go, need, understand.",
+      title: "Do / Does questions about family.\nCâu hỏi Do / Does về gia đình.",
+      instruction: "Write 3 questions and short answers about you or family: 2 with Do, 1 with Does.\nViết 3 câu hỏi và trả lời ngắn về bạn hoặc gia đình: 2 câu Do, 1 câu Does.",
       promptHints: [
-        "Do you study English?",
-        "Do they play football?",
-        "Does she like music?",
-        "Does he go to school?",
-        "Do you need help?",
-        "Does she understand?",
+        "Do you study English? Yes, I do.",
+        "Do your parents work? Yes, they do.",
+        "Does your sister like music? Yes, she does."
       ],
       sampleTitle: "Bài gợi ý",
-      sample:
-        "Do you study English?\nDo they play football?\nDoes she like music?",
+      sample: "Do you study English every day? Yes, I do.\nDo your friends play football? Yes, they do.\nDoes your mother like cooking? Yes, she does.",
     },
   ],
 };

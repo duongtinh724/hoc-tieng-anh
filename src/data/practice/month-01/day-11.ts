@@ -3,16 +3,19 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay11: PracticeLesson = {
-  meta: { ...createPracticeMeta(11, "Mạo từ (Art) the"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(11, "Mạo từ (Art) the"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(11, ""),
     vocabulary: [
-      { en: "the", vi: "cái đã biết" },
+      { en: "the", vi: "cái / người đã biết" },
       { en: "dog", vi: "con chó" },
       { en: "water", vi: "nước" },
       { en: "door", vi: "cánh cửa" },
       { en: "window", vi: "cửa sổ" },
-    ],
+      { en: "table", vi: "cái bàn" },
+      { en: "cat", vi: "con mèo" },
+      { en: "useful", vi: "hữu ích" },
+    ]
   },
   screens: [
     {
@@ -20,35 +23,24 @@ export const practiceDay11: PracticeLesson = {
       title: "Match the words.\nNối từ.",
       instruction: "Match each word with a picture.\nNối từ với ảnh.",
       words: [
-        { id: "w-book", label: "book" },
-        { id: "w-cat", label: "cat" },
+        { id: "w-the", label: "the" },
+        { id: "w-dog", label: "dog" },
         { id: "w-water", label: "water" },
-        { id: "w-bag", label: "bag" },
-        { id: "w-house", label: "house" },
+        { id: "w-door", label: "door" },
+        { id: "w-window", label: "window" },
+        { id: "w-table", label: "table" },
+        { id: "w-cat", label: "cat" },
+        { id: "w-useful", label: "useful" },
       ],
       pairs: [
-        { id: "p-book", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "sách", label: "sách", correctWordId: "w-book" },
-        { id: "p-cat", imageUrl: "/images/practice/tobe/cat.jpg", imageAlt: "mèo", label: "mèo", correctWordId: "w-cat" },
-        { id: "p-water", imageUrl: "/images/practice/objects/water.jpg", imageAlt: "nước", label: "nước", correctWordId: "w-water" },
-        { id: "p-bag", imageUrl: "/images/practice/nouns-photo/bag.jpg", imageAlt: "cặp", label: "cặp", correctWordId: "w-bag" },
-        { id: "p-house", imageUrl: "/images/practice/nouns-photo/house.jpg", imageAlt: "nhà", label: "nhà", correctWordId: "w-house" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "the or no article?\nthe hay không mạo từ (Art)?",
-      instruction: "Drag each phrase into the right group.\nKéo cụm từ vào đúng nhóm.",
-      categories: [
-        { id: "cat-the", label: "Dùng the" },
-        { id: "cat-zero", label: "Không mạo từ (Art)" },
-      ],
-      items: [
-        { id: "c-1", label: "The book is blue.", correctCategoryId: "cat-the" },
-        { id: "c-2", label: "The dog is small.", correctCategoryId: "cat-the" },
-        { id: "c-3", label: "Open the window.", correctCategoryId: "cat-the" },
-        { id: "c-4", label: "I like dogs.", correctCategoryId: "cat-zero" },
-        { id: "c-5", label: "Water is important.", correctCategoryId: "cat-zero" },
-        { id: "c-6", label: "English is useful.", correctCategoryId: "cat-zero" },
+        { id: "p-the", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "cái / người đã biết", label: "cái / người đã biết", correctWordId: "w-the" },
+        { id: "p-dog", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "con chó", label: "con chó", correctWordId: "w-dog" },
+        { id: "p-water", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "nước", label: "nước", correctWordId: "w-water" },
+        { id: "p-door", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "cánh cửa", label: "cánh cửa", correctWordId: "w-door" },
+        { id: "p-window", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "cửa sổ", label: "cửa sổ", correctWordId: "w-window" },
+        { id: "p-table", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "cái bàn", label: "cái bàn", correctWordId: "w-table" },
+        { id: "p-cat", imageUrl: "/images/practice/tobe/cat.jpg", imageAlt: "con mèo", label: "con mèo", correctWordId: "w-cat" },
+        { id: "p-useful", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "hữu ích", label: "hữu ích", correctWordId: "w-useful" },
       ],
     },
     {
@@ -126,11 +118,16 @@ export const practiceDay11: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Two sentences, then a like.\nHai câu, rồi một sở thích.",
-      instruction: "Write 5 sentences. Use a, an, the, and one sentence with no article.\nViết 5 câu. Có a, an, the, và một câu không mạo từ (Art).",
-      promptHints: ["I have a bag.", "The bag is black.", "I like books.", "English is interesting."],
+      title: "Write about your school things.\nViết về đồ học.",
+      instruction: "Write 4 sentences with a, an, or the about your bag, books, and school.\nViết 4 câu có a, an, the về cặp, sách và trường.",
+      promptHints: [
+        "I have a bag.",
+        "The bag is black.",
+        "I like English.",
+        "The school is big."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "I have a bag.\nThe bag is black.\nThis is an apple.\nI like books.\nEnglish is interesting.",
+      sample: "I have a bag.\nThe bag is black.\nI study at the school.\nEnglish is interesting.",
     },
   ],
 };

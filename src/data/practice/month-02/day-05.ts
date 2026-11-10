@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay05: PracticeLesson = {
-  meta: { ...createPracticeMeta(5, "Don't / Doesn't", 2), totalScreens: 9 },
+  meta: { ...createPracticeMeta(5, "Don't / Doesn't", 2), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(5, ""),
     vocabulary: [
@@ -87,24 +87,6 @@ export const practiceDay05: PracticeLesson = {
           label: "thích hơn",
           correctWordId: "w-prefer",
         },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Don't or Doesn't?\nDon't hay Doesn't?",
-      instruction: "Drag each negative sentence into the right group.\nKéo câu phủ định vào đúng nhóm.",
-      categories: [
-        { id: "cat-dont", label: "don't (I/you/we/they)" },
-        { id: "cat-doesnt", label: "doesn't (he/she/it)" },
-      ],
-      items: [
-        { id: "c-q1", label: "I don't like coffee.", correctCategoryId: "cat-dont" },
-        { id: "c-q2", label: "We don't watch TV much.", correctCategoryId: "cat-dont" },
-        { id: "c-q3", label: "They don't study on Sunday.", correctCategoryId: "cat-dont" },
-        { id: "c-q4", label: "You don't enjoy games.", correctCategoryId: "cat-dont" },
-        { id: "c-q5", label: "She doesn't play games.", correctCategoryId: "cat-doesnt" },
-        { id: "c-q6", label: "He doesn't eat meat.", correctCategoryId: "cat-doesnt" },
-        { id: "c-q7", label: "Nam doesn't go to bed late.", correctCategoryId: "cat-doesnt" },
       ],
     },
     {
@@ -341,20 +323,16 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write negative sentences.\nViết câu phủ định.",
-      instruction:
-        "Write 3 negative sentences: 2 with don't, 1 with doesn't. You can add never.\nViết 3 câu phủ định: 2 câu với don't, 1 câu với doesn't. Có thể thêm never.",
+      title: "Negative sentences about habits.\nCâu phủ định về thói quen.",
+      instruction: "Write 4 sentences: what you or family don't / doesn't do (don't like, doesn't eat…).\nViết 4 câu phủ định về thói quen bạn hoặc gia đình (don't / doesn't).",
       promptHints: [
         "I don't like coffee.",
-        "She doesn't play games.",
+        "My sister doesn't play games.",
         "We don't watch TV much.",
-        "He doesn't eat meat.",
-        "They don't study on Sunday.",
-        "I never go to bed late.",
+        "He doesn't eat fast food."
       ],
       sampleTitle: "Bài gợi ý",
-      sample:
-        "I don't like coffee.\nWe don't watch TV much.\nShe doesn't play games.",
+      sample: "I don't like coffee.\nMy sister doesn't play computer games.\nWe don't watch TV on weekdays.\nMy father doesn't eat much at night.",
     },
   ],
 };

@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay16: PracticeLesson = {
-  meta: { ...createPracticeMeta(16, "Chủ ngữ (S) + động từ (V) + tân ngữ (O)"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(16, "Chủ ngữ (S) + động từ (V) + tân ngữ (O)"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(16, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay16: PracticeLesson = {
       { en: "football", vi: "bóng đá" },
       { en: "rice", vi: "cơm" },
       { en: "water", vi: "nước" },
-    ],
+    ]
   },
   screens: [
     {
@@ -30,25 +30,8 @@ export const practiceDay16: PracticeLesson = {
         { id: "p-music", imageUrl: "/images/practice/objects/music.jpg", imageAlt: "nhạc", label: "nhạc", correctWordId: "w-music" },
         { id: "p-english", imageUrl: "/images/practice/objects/english.jpg", imageAlt: "tiếng Anh", label: "tiếng Anh", correctWordId: "w-english" },
         { id: "p-football", imageUrl: "/images/practice/objects/football.jpg", imageAlt: "bóng đá", label: "bóng đá", correctWordId: "w-football" },
-        { id: "p-rice", imageUrl: "/images/practice/objects/rice.jpg", imageAlt: "cơm", label: "cơm", correctWordId: "w-rice" },
-        { id: "p-water", imageUrl: "/images/practice/objects/water.jpg", imageAlt: "nước", label: "nước", correctWordId: "w-water" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
-      items: [
-        { id: "c-1", label: "I like music.", correctCategoryId: "cat-b" },
-        { id: "c-2", label: "We study English.", correctCategoryId: "cat-b" },
-        { id: "c-3", label: "They play football.", correctCategoryId: "cat-b" },
-        { id: "c-4", label: "I eat rice.", correctCategoryId: "cat-b" },
-        { id: "c-5", label: "You drink water.", correctCategoryId: "cat-b" },
-        { id: "c-y", label: "I am a student.", correctCategoryId: "cat-a" },
+        { id: "p-rice", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "cơm", label: "cơm", correctWordId: "w-rice" },
+        { id: "p-water", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "nước", label: "nước", correctWordId: "w-water" },
       ],
     },
     {
@@ -126,11 +109,16 @@ export const practiceDay16: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\nViết 3 câu về bạn.",
-      promptHints: ["I like music."],
+      title: "Write S + V + O sentences.\nViết câu S + V + O.",
+      instruction: "Write 4 sentences S + V + O about you and family (I like music. My mother cooks rice.).\nViết 4 câu S + V + O về bạn và gia đình.",
+      promptHints: [
+        "I like music.",
+        "My mother cooks rice.",
+        "We study English.",
+        "They play football."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "I like music.\nWe study English.\nThey play football.\nI eat rice.",
+      sample: "I like music.\nMy mother cooks rice.\nWe study English.\nThey watch TV.",
     },
   ],
 };

@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay18: PracticeLesson = {
-  meta: { ...createPracticeMeta(18, "There is / There are"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(18, "There is / There are"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(18, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay18: PracticeLesson = {
       { en: "bag", vi: "cặp" },
       { en: "school", vi: "trường" },
       { en: "house", vi: "nhà" },
-    ],
+    ]
   },
   screens: [
     {
@@ -32,23 +32,6 @@ export const practiceDay18: PracticeLesson = {
         { id: "p-bag", imageUrl: "/images/practice/nouns-photo/bag.jpg", imageAlt: "cặp", label: "cặp", correctWordId: "w-bag" },
         { id: "p-school", imageUrl: "/images/practice/nouns-photo/school.jpg", imageAlt: "trường", label: "trường", correctWordId: "w-school" },
         { id: "p-house", imageUrl: "/images/practice/nouns-photo/house.jpg", imageAlt: "nhà", label: "nhà", correctWordId: "w-house" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
-      items: [
-        { id: "c-1", label: "There is a book.", correctCategoryId: "cat-a" },
-        { id: "c-2", label: "There are pens.", correctCategoryId: "cat-a" },
-        { id: "c-3", label: "There is a bag.", correctCategoryId: "cat-a" },
-        { id: "c-4", label: "There is a school.", correctCategoryId: "cat-a" },
-        { id: "c-5", label: "There are books.", correctCategoryId: "cat-a" },
-        { id: "c-x", label: "I like music.", correctCategoryId: "cat-b" },
       ],
     },
     {
@@ -126,11 +109,16 @@ export const practiceDay18: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\nViết 3 câu về bạn.",
-      promptHints: ["There is a book."],
+      title: "Describe your home.\nMô tả ngôi nhà.",
+      instruction: "Write 4 sentences with There is / There are about your room or house.\nViết 4 câu There is / There are về phòng hoặc nhà bạn.",
+      promptHints: [
+        "There is a bed in my room.",
+        "There are two books.",
+        "There is a tree.",
+        "There are four people in my family."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "There is a book.\nThere are pens.\nThere is a bag.\nThere is a school.",
+      sample: "There is a desk in my room.\nThere are many books.\nThere is a small garden.\nThere are four people in my family.",
     },
   ],
 };

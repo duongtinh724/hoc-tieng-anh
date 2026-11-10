@@ -16,6 +16,6 @@ export function createPracticeMeta(
       { label: `Tháng ${month}` },
       { label: `Ngày ${day}` },
     ],
-    totalScreens: 8,
+    totalScreens: 7,
   };
 }

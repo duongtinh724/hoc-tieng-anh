@@ -104,7 +104,7 @@ import {{ createPracticeMeta }} from "@/data/practice/shared";
 import type {{ PracticeLesson }} from "@/types/practice";
 
 export const practiceDay{n:02d}: PracticeLesson = {{
-  meta: {{ ...createPracticeMeta({n}, {esc(title)}), totalScreens: 8 }},
+  meta: {{ ...createPracticeMeta({n}, {esc(title)}), totalScreens: 7 }},
   hints: {{ rules: getRulesForDay({n}, "") }},
   screens: [
     {{
@@ -116,18 +116,6 @@ export const practiceDay{n:02d}: PracticeLesson = {{
       ],
       pairs: [
 {match_pairs}
-      ],
-    }},
-    {{
-      type: "categorize",
-      title: "Sort the words.\\nPhân loại từ.",
-      instruction: "Drag each word into a group.\\nKéo từ vào một nhóm.",
-      categories: [
-        {{ id: "cat-a", label: "Có am / is / are" }},
-        {{ id: "cat-b", label: "Không có am / is / are" }},
-      ],
-      items: [
-{cat_items}
       ],
     }},
     {{
@@ -179,8 +167,8 @@ export const practiceDay{n:02d}: PracticeLesson = {{
     }},
     {{
       type: "self-writing",
-      title: "Write about you.\\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\\nViết 3 câu về bạn.",
+      title: "Write about you and your family.\\nViết về bạn và gia đình.",
+      instruction: "Write 4 sentences about you and your family. Use today's words and grammar from the lesson.\\nViết 4 câu về bạn và gia đình. Dùng từ và ngữ pháp bài học hôm nay.",
       promptHints: [{esc(listen[0]["en"])}],
       sampleTitle: "Bài gợi ý",
       sample: {esc(chr(10).join(item["en"] for item in listen[:4]))},

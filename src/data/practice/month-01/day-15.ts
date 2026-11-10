@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay15: PracticeLesson = {
-  meta: { ...createPracticeMeta(15, "Chủ ngữ (S) + động từ (V)"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(15, "Chủ ngữ (S) + động từ (V)"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(15, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay15: PracticeLesson = {
       { en: "play", vi: "chơi" },
       { en: "read", vi: "đọc" },
       { en: "work", vi: "làm việc" },
-    ],
+    ]
   },
   screens: [
     {
@@ -32,23 +32,6 @@ export const practiceDay15: PracticeLesson = {
         { id: "p-play", imageUrl: "/images/practice/verbs/play.jpg", imageAlt: "chơi", label: "chơi", correctWordId: "w-play" },
         { id: "p-read", imageUrl: "/images/practice/verbs/read.jpg", imageAlt: "đọc", label: "đọc", correctWordId: "w-read" },
         { id: "p-work", imageUrl: "/images/practice/verbs/work.jpg", imageAlt: "làm việc", label: "làm việc", correctWordId: "w-work" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
-      items: [
-        { id: "c-1", label: "I study.", correctCategoryId: "cat-b" },
-        { id: "c-2", label: "You go to school.", correctCategoryId: "cat-b" },
-        { id: "c-3", label: "We play football.", correctCategoryId: "cat-b" },
-        { id: "c-4", label: "They read.", correctCategoryId: "cat-b" },
-        { id: "c-5", label: "I work.", correctCategoryId: "cat-b" },
-        { id: "c-y", label: "I am a student.", correctCategoryId: "cat-a" },
       ],
     },
     {
@@ -126,11 +109,16 @@ export const practiceDay15: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\nViết 3 câu về bạn.",
-      promptHints: ["I study."],
+      title: "Write about daily actions.\nViết việc hằng ngày.",
+      instruction: "Write 4 sentences about what you and your family do. Use verbs: study, go, play, read, work.\nViết 4 câu về việc bạn và gia đình làm. Dùng động từ (V): study, go, play, eat…",
+      promptHints: [
+        "I study.",
+        "My brother plays football.",
+        "We eat rice.",
+        "They read books."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "I study.\nYou go to school.\nWe play football.\nThey read.",
+      sample: "I study English.\nMy brother plays football.\nWe eat dinner together.\nThey read in the evening.",
     },
   ],
 };

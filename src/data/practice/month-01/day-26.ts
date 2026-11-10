@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay26: PracticeLesson = {
-  meta: { ...createPracticeMeta(26, "Trật tự từ trong câu hỏi"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(26, "Trật tự từ trong câu hỏi"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(26, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay26: PracticeLesson = {
       { en: "student", vi: "học sinh" },
       { en: "here", vi: "ở đây" },
       { en: "school", vi: "trường" },
-    ],
+    ]
   },
   screens: [
     {
@@ -35,37 +35,20 @@ export const practiceDay26: PracticeLesson = {
       ],
     },
     {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
-      items: [
-        { id: "c-1", label: "Where is the book?", correctCategoryId: "cat-a" },
-        { id: "c-2", label: "What is this?", correctCategoryId: "cat-a" },
-        { id: "c-3", label: "Who is she?", correctCategoryId: "cat-a" },
-        { id: "c-4", label: "Where are they?", correctCategoryId: "cat-a" },
-        { id: "c-5", label: "What are these?", correctCategoryId: "cat-a" },
-        { id: "c-x", label: "I like music.", correctCategoryId: "cat-b" },
-      ],
-    },
-    {
       type: "sentence-drag",
       title: "Fill the sentence.\nĐiền vào câu.",
       instruction: "Drag a word into the blank.\nKéo từ vào chỗ trống.",
       wordBank: [
-        { id: "s1", label: "is" },
-        { id: "s2", label: "is" },
+        { id: "s1", label: "Are" },
+        { id: "s2", label: "Is" },
         { id: "s3", label: "is" },
         { id: "s4", label: "are" },
       ],
       sentences: [
-        { id: "sd1", parts: [{ kind: "text", value: "Where " }, { kind: "blank", id: "b1", correctWordId: "s1" }, { kind: "text", value: " the book?." }] },
-        { id: "sd2", parts: [{ kind: "text", value: "What " }, { kind: "blank", id: "b2", correctWordId: "s2" }, { kind: "text", value: " this?." }] },
-        { id: "sd3", parts: [{ kind: "text", value: "Who " }, { kind: "blank", id: "b3", correctWordId: "s3" }, { kind: "text", value: " she?." }] },
-        { id: "sd4", parts: [{ kind: "text", value: "Where " }, { kind: "blank", id: "b4", correctWordId: "s4" }, { kind: "text", value: " they?." }] },
+        { id: "sd1", parts: [{ kind: "blank", id: "b1", correctWordId: "s1" }, { kind: "text", value: " you a student?." }] },
+        { id: "sd2", parts: [{ kind: "blank", id: "b2", correctWordId: "s2" }, { kind: "text", value: " she a teacher?." }] },
+        { id: "sd3", parts: [{ kind: "text", value: "What " }, { kind: "blank", id: "b3", correctWordId: "s3" }, { kind: "text", value: " your name?." }] },
+        { id: "sd4", parts: [{ kind: "text", value: "How " }, { kind: "blank", id: "b4", correctWordId: "s4" }, { kind: "text", value: " you?." }] },
       ],
     },
     {
@@ -93,23 +76,23 @@ export const practiceDay26: PracticeLesson = {
       lines: [],
       correctOrder: [],
       sentences: [
-        { id: "sen-1", label: "Câu 1", lines: [{ id: "s10", text: "Where" }, { id: "s11", text: "is" }, { id: "s12", text: "the" }, { id: "s13", text: "book?" }], correctOrder: ["s10", "s11", "s12", "s13"] },
-        { id: "sen-2", label: "Câu 2", lines: [{ id: "s20", text: "What" }, { id: "s21", text: "is" }, { id: "s22", text: "this?" }], correctOrder: ["s20", "s21", "s22"] },
-        { id: "sen-3", label: "Câu 3", lines: [{ id: "s30", text: "Who" }, { id: "s31", text: "is" }, { id: "s32", text: "she?" }], correctOrder: ["s30", "s31", "s32"] },
-        { id: "sen-4", label: "Câu 4", lines: [{ id: "s40", text: "Where" }, { id: "s41", text: "are" }, { id: "s42", text: "they?" }], correctOrder: ["s40", "s41", "s42"] },
-        { id: "sen-5", label: "Câu 5", lines: [{ id: "s50", text: "What" }, { id: "s51", text: "are" }, { id: "s52", text: "these?" }], correctOrder: ["s50", "s51", "s52"] },
+        { id: "sen-1", label: "Câu 1", lines: [{ id: "s10", text: "Are" }, { id: "s11", text: "you" }, { id: "s12", text: "a" }, { id: "s13", text: "student?" }], correctOrder: ["s10", "s11", "s12", "s13"] },
+        { id: "sen-2", label: "Câu 2", lines: [{ id: "s20", text: "Is" }, { id: "s21", text: "she" }, { id: "s22", text: "a" }, { id: "s23", text: "teacher?" }], correctOrder: ["s20", "s21", "s22", "s23"] },
+        { id: "sen-3", label: "Câu 3", lines: [{ id: "s30", text: "What" }, { id: "s31", text: "is" }, { id: "s32", text: "your" }, { id: "s33", text: "name?" }], correctOrder: ["s30", "s31", "s32", "s33"] },
+        { id: "sen-4", label: "Câu 4", lines: [{ id: "s40", text: "How" }, { id: "s41", text: "are" }, { id: "s42", text: "you?" }], correctOrder: ["s40", "s41", "s42"] },
+        { id: "sen-5", label: "Câu 5", lines: [{ id: "s50", text: "Where" }, { id: "s51", text: "is" }, { id: "s52", text: "my" }, { id: "s53", text: "book?" }], correctOrder: ["s50", "s51", "s52", "s53"] },
       ],
     },
     {
       type: "reading-fill",
       title: "Fill the line.\nĐiền vào dòng.",
       instruction: "Type the missing word.\nGõ từ còn thiếu.",
-      passage: "Where is the book? What is this? Who is she? Where are they? What are these?",
+      passage: "Are you a student? Is she a teacher? What is your name? How are you? Where is my book? Yes, I am.",
       prompts: [
-        { id: "rf1", label: "Where ___ the book?.", correctAnswers: ["is"] },
-        { id: "rf2", label: "What ___ this?.", correctAnswers: ["is"] },
-        { id: "rf3", label: "Who ___ she?.", correctAnswers: ["is"] },
-        { id: "rf4", label: "Where ___ they?.", correctAnswers: ["are"] },
+        { id: "rf1", label: "___ you a student?.", correctAnswers: ["Are"] },
+        { id: "rf2", label: "___ she a teacher?.", correctAnswers: ["Is"] },
+        { id: "rf3", label: "What ___ your name?.", correctAnswers: ["is"] },
+        { id: "rf4", label: "How ___ you?.", correctAnswers: ["are"] },
       ],
     },
     {
@@ -117,20 +100,26 @@ export const practiceDay26: PracticeLesson = {
       title: "Translate into English.\nDịch sang tiếng Anh.",
       instruction: "Read the Vietnamese sentence and write it in English.\nĐọc câu tiếng Việt rồi viết câu tiếng Anh.",
       items: [
-        { id: "dic-1", text: "Where is the book?", hint: "Sách ở đâu?" },
-        { id: "dic-2", text: "What is this?", hint: "Đây là cái gì?" },
-        { id: "dic-3", text: "Who is she?", hint: "Cô ấy là ai?" },
-        { id: "dic-4", text: "Where are they?", hint: "Họ ở đâu?" },
-        { id: "dic-5", text: "What are these?", hint: "Đây là những cái gì?" },
+        { id: "dic-1", text: "Are you a student?", hint: "Bạn là học sinh phải không?" },
+        { id: "dic-2", text: "Is she a teacher?", hint: "Cô ấy là giáo viên phải không?" },
+        { id: "dic-3", text: "What is your name?", hint: "Bạn tên gì?" },
+        { id: "dic-4", text: "How are you?", hint: "Bạn khỏe không?" },
+        { id: "dic-5", text: "Where is my book?", hint: "Sách của tôi ở đâu?" },
+        { id: "dic-6", text: "Yes, I am.", hint: "Vâng, tôi là." },
       ],
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\nViết 3 câu về bạn.",
-      promptHints: ["Where is the book?"],
+      title: "Questions about you and family.\nCâu hỏi về bạn và gia đình.",
+      instruction: "Write 4 questions and answers: use Are / Is / What / How / Where about you or a family member.\nViết 4 cặp hỏi–đáp: Are / Is / What / How / Where về bạn hoặc người thân.",
+      promptHints: [
+        "Are you a student? Yes, I am.",
+        "What is your name?",
+        "How is your mother?",
+        "Where is my book?"
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "Where is the book?\nWhat is this?\nWho is she?\nWhere are they?",
+      sample: "Are you a student? Yes, I am.\nIs your sister at home? Yes, she is.\nWhat is your father's name?\nHow are your parents? They are fine.",
     },
   ],
 };

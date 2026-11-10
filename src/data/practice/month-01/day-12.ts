@@ -3,17 +3,17 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay12: PracticeLesson = {
-  meta: { ...createPracticeMeta(12, "This, that, these, those"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(12, "This, that, these, those"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(12, ""),
     vocabulary: [
       { en: "this", vi: "này — một, gần" },
       { en: "that", vi: "kia — một, xa" },
-      { en: "these", vi: "những cái này" },
-      { en: "those", vi: "những cái kia" },
+      { en: "these", vi: "những cái này — nhiều, gần" },
+      { en: "those", vi: "những cái kia — nhiều, xa" },
       { en: "pen", vi: "bút" },
       { en: "chair", vi: "ghế" },
-    ],
+    ]
   },
   screens: [
     {
@@ -21,35 +21,20 @@ export const practiceDay12: PracticeLesson = {
       title: "Match the words.\nNối từ.",
       instruction: "Match each word with a picture.\nNối từ với ảnh.",
       words: [
+        { id: "w-this", label: "this" },
+        { id: "w-that", label: "that" },
+        { id: "w-these", label: "these" },
+        { id: "w-those", label: "those" },
         { id: "w-pen", label: "pen" },
-        { id: "w-book", label: "book" },
-        { id: "w-books", label: "books" },
-        { id: "w-school", label: "school" },
-        { id: "w-bag", label: "bag" },
+        { id: "w-chair", label: "chair" },
       ],
       pairs: [
+        { id: "p-this", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "này — một, gần", label: "này — một, gần", correctWordId: "w-this" },
+        { id: "p-that", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "kia — một, xa", label: "kia — một, xa", correctWordId: "w-that" },
+        { id: "p-these", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "những cái này — nhiều, gần", label: "những cái này — nhiều, gần", correctWordId: "w-these" },
+        { id: "p-those", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "những cái kia — nhiều, xa", label: "những cái kia — nhiều, xa", correctWordId: "w-those" },
         { id: "p-pen", imageUrl: "/images/practice/nouns-photo/pen.jpg", imageAlt: "bút", label: "bút", correctWordId: "w-pen" },
-        { id: "p-book", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "sách", label: "một quyển sách", correctWordId: "w-book" },
-        { id: "p-books", imageUrl: "/images/practice/objects/books.jpg", imageAlt: "nhiều sách", label: "nhiều sách", correctWordId: "w-books" },
-        { id: "p-school", imageUrl: "/images/practice/nouns-photo/school.jpg", imageAlt: "trường", label: "trường", correctWordId: "w-school" },
-        { id: "p-bag", imageUrl: "/images/practice/nouns-photo/bag.jpg", imageAlt: "cặp", label: "cặp", correctWordId: "w-bag" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Near or far? One or many?\nGần hay xa? Một hay nhiều?",
-      instruction: "Drag each word into the right group.\nKéo từ vào đúng nhóm.",
-      categories: [
-        { id: "cat-one-near", label: "Một, gần" },
-        { id: "cat-one-far", label: "Một, xa" },
-        { id: "cat-many-near", label: "Nhiều, gần" },
-        { id: "cat-many-far", label: "Nhiều, xa" },
-      ],
-      items: [
-        { id: "c-this", label: "this", correctCategoryId: "cat-one-near" },
-        { id: "c-that", label: "that", correctCategoryId: "cat-one-far" },
-        { id: "c-these", label: "these", correctCategoryId: "cat-many-near" },
-        { id: "c-those", label: "those", correctCategoryId: "cat-many-far" },
+        { id: "p-chair", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "ghế", label: "ghế", correctWordId: "w-chair" },
       ],
     },
     {
@@ -128,11 +113,16 @@ export const practiceDay12: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Point and say.\nChỉ và nói.",
-      instruction: "Write 6 sentences with this, that, these, and those.\nViết 6 câu có this, that, these và those.",
-      promptHints: ["This is a pen.", "That is a school.", "These are books.", "Those are cars."],
+      title: "Point at home.\nChỉ đồ ở nhà.",
+      instruction: "Write 4 sentences with this, that, these, those about things and people at home.\nViết 4 câu có this, that, these, those về đồ và người ở nhà.",
+      promptHints: [
+        "This is my pen.",
+        "That is my house.",
+        "These are my books.",
+        "Those are my friends."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "This is a pen.\nThat is a car.\nThese are books.\nThose are chairs.\nThis is an apple.\nThese are my friends.",
+      sample: "This is my pen.\nThat is our house.\nThese are my books.\nThose are my classmates.",
     },
   ],
 };

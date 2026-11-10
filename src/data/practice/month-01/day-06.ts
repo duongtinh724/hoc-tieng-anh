@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay06: PracticeLesson = {
-  meta: { ...createPracticeMeta(6, "Giới thiệu bản thân"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(6, "Giới thiệu bản thân"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(6, ""),
     vocabulary: [
@@ -15,7 +15,7 @@ export const practiceDay06: PracticeLesson = {
       { en: "hobby", vi: "sở thích" },
       { en: "job", vi: "công việc" },
       { en: "friendly", vi: "thân thiện" },
-    ],
+    ]
   },
   screens: [
     {
@@ -24,34 +24,23 @@ export const practiceDay06: PracticeLesson = {
       instruction: "Match each word with a picture.\nNối từ với ảnh.",
       words: [
         { id: "w-name", label: "name" },
+        { id: "w-years-old", label: "years old" },
+        { id: "w-from", label: "from" },
+        { id: "w-live", label: "live" },
         { id: "w-family", label: "family" },
-        { id: "w-school", label: "school" },
-        { id: "w-student", label: "student" },
-        { id: "w-home", label: "home" },
+        { id: "w-hobby", label: "hobby" },
+        { id: "w-job", label: "job" },
+        { id: "w-friendly", label: "friendly" },
       ],
       pairs: [
         { id: "p-name", imageUrl: "/images/practice/tobe/name.jpg", imageAlt: "tên", label: "tên", correctWordId: "w-name" },
+        { id: "p-years-old", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "tuổi", label: "tuổi", correctWordId: "w-years-old" },
+        { id: "p-from", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "đến từ", label: "đến từ", correctWordId: "w-from" },
+        { id: "p-live", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "sống", label: "sống", correctWordId: "w-live" },
         { id: "p-family", imageUrl: "/images/practice/tobe/family.jpg", imageAlt: "gia đình", label: "gia đình", correctWordId: "w-family" },
-        { id: "p-school", imageUrl: "/images/practice/nouns-photo/school.jpg", imageAlt: "trường", label: "trường", correctWordId: "w-school" },
-        { id: "p-student", imageUrl: "/images/practice/nouns-photo/student.jpg", imageAlt: "học sinh", label: "học sinh", correctWordId: "w-student" },
-        { id: "p-home", imageUrl: "/images/practice/nouns-photo/house.jpg", imageAlt: "nhà", label: "nhà", correctWordId: "w-home" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Which pattern?\nMẫu nào?",
-      instruction: "Drag each phrase into the right pattern.\nKéo cụm từ vào đúng mẫu câu.",
-      categories: [
-        { id: "cat-name", label: "My name is …" },
-        { id: "cat-be", label: "I am …" },
-        { id: "cat-live", label: "I live in …" },
-      ],
-      items: [
-        { id: "c-1", label: "Nam", correctCategoryId: "cat-name" },
-        { id: "c-2", label: "fifteen years old", correctCategoryId: "cat-be" },
-        { id: "c-3", label: "a student", correctCategoryId: "cat-be" },
-        { id: "c-4", label: "from Vietnam", correctCategoryId: "cat-be" },
-        { id: "c-5", label: "Hanoi", correctCategoryId: "cat-live" },
+        { id: "p-hobby", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "sở thích", label: "sở thích", correctWordId: "w-hobby" },
+        { id: "p-job", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "công việc", label: "công việc", correctWordId: "w-job" },
+        { id: "p-friendly", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "thân thiện", label: "thân thiện", correctWordId: "w-friendly" },
       ],
     },
     {
@@ -131,11 +120,17 @@ export const practiceDay06: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Introduce yourself.\nGiới thiệu bản thân.",
-      instruction: "Write 4 sentences about you: name, age, where you live, and that you are a student.\nViết 4 câu về bạn: tên, tuổi, nơi ở, và bạn là học sinh.",
-      promptHints: ["My name is …", "I am … years old.", "I live in …", "I am a student."],
+      title: "Introduce yourself and your family.\nGiới thiệu bạn và gia đình.",
+      instruction: "Write 4–5 sentences: your name, age, where you live, student, and one sentence about your family.\nViết 4–5 câu: tên, tuổi, nơi ở, học sinh, và một câu về gia đình.",
+      promptHints: [
+        "My name is Nam.",
+        "I am 15 years old.",
+        "I live in Hanoi.",
+        "I am a student.",
+        "I have a small family."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "My name is Nam.\nI am fifteen years old.\nI live in Hanoi.\nI am a student.",
+      sample: "My name is Nam.\nI am 15 years old.\nI live in Hanoi with my family.\nI am a student.\nMy family is happy.",
     },
   ],
 };

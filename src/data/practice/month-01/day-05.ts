@@ -12,7 +12,7 @@ export const practiceDay05: PracticeLesson = {
       { en: "happy", vi: "vui" },
       { en: "busy", vi: "bận" },
       { en: "ready", vi: "sẵn sàng" },
-    ],
+    ]
   },
   screens: [
     {
@@ -24,14 +24,14 @@ export const practiceDay05: PracticeLesson = {
         { id: "w-no", label: "no" },
         { id: "w-happy", label: "happy" },
         { id: "w-busy", label: "busy" },
-        { id: "w-question", label: "question" },
+        { id: "w-ready", label: "ready" },
       ],
       pairs: [
-        { id: "p-yes", imageUrl: "/images/practice/tobe/yes.jpg", imageAlt: "vâng", label: "vâng", correctWordId: "w-yes" },
-        { id: "p-no", imageUrl: "/images/practice/tobe/no.jpg", imageAlt: "không", label: "không", correctWordId: "w-no" },
+        { id: "p-yes", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "vâng", label: "vâng", correctWordId: "w-yes" },
+        { id: "p-no", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "không", label: "không", correctWordId: "w-no" },
         { id: "p-happy", imageUrl: "/images/practice/adjectives/happy.jpg", imageAlt: "vui", label: "vui", correctWordId: "w-happy" },
         { id: "p-busy", imageUrl: "/images/practice/tobe/busy.jpg", imageAlt: "bận", label: "bận", correctWordId: "w-busy" },
-        { id: "p-question", imageUrl: "/images/practice/tobe/question.jpg", imageAlt: "câu hỏi", label: "câu hỏi", correctWordId: "w-question" },
+        { id: "p-ready", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "sẵn sàng", label: "sẵn sàng", correctWordId: "w-ready" },
       ],
     },
     {
@@ -130,11 +130,15 @@ export const practiceDay05: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Ask and answer.\nHỏi và trả lời.",
-      instruction: "Write 3 Yes/No questions with to be (V tobe), and a short answer for each.\nViết 3 câu hỏi Yes/No với to be (V tobe), mỗi câu kèm một câu trả lời ngắn.",
-      promptHints: ["Are you busy? Yes, I am.", "Is she tired? No, she isn't.", "Are they at home? Yes, they are."],
+      title: "Ask about you and your family.\nHỏi về bạn và gia đình.",
+      instruction: "Write 3 Yes/No questions with am / is / are, then short answers. Ask about you or your family.\nViết 3 câu hỏi Yes/No với am / is / are, kèm câu trả lời ngắn. Hỏi về bạn hoặc gia đình.",
+      promptHints: [
+        "Are you a student? Yes, I am.",
+        "Is your mother at home? Yes, she is.",
+        "Are your parents busy? No, they aren't."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "Are you busy? Yes, I am.\nIs she tired? No, she isn't.\nAre they at home? Yes, they are.",
+      sample: "Are you a student? Yes, I am.\nIs your sister at school? Yes, she is.\nAre they tired? No, they aren't.",
     },
   ],
 };

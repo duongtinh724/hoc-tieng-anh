@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay19: PracticeLesson = {
-  meta: { ...createPracticeMeta(19, "Tính từ (Adj) và tính từ sở hữu (Poss. Adj)"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(19, "Tính từ (Adj) và tính từ sở hữu (Poss. Adj)"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(19, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay19: PracticeLesson = {
       { en: "good", vi: "tốt" },
       { en: "new", vi: "mới" },
       { en: "old", vi: "cũ" },
-    ],
+    ]
   },
   screens: [
     {
@@ -32,23 +32,6 @@ export const practiceDay19: PracticeLesson = {
         { id: "p-good", imageUrl: "/images/practice/adjectives/good.jpg", imageAlt: "tốt", label: "tốt", correctWordId: "w-good" },
         { id: "p-new", imageUrl: "/images/practice/adjectives/new.jpg", imageAlt: "mới", label: "mới", correctWordId: "w-new" },
         { id: "p-old", imageUrl: "/images/practice/adjectives/old.jpg", imageAlt: "cũ", label: "cũ", correctWordId: "w-old" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
-      items: [
-        { id: "c-1", label: "It is a big house.", correctCategoryId: "cat-a" },
-        { id: "c-2", label: "It is a small bag.", correctCategoryId: "cat-a" },
-        { id: "c-3", label: "This is my book.", correctCategoryId: "cat-a" },
-        { id: "c-4", label: "That is your pen.", correctCategoryId: "cat-a" },
-        { id: "c-5", label: "His bag is new.", correctCategoryId: "cat-a" },
-        { id: "c-x", label: "I like music.", correctCategoryId: "cat-b" },
       ],
     },
     {
@@ -126,11 +109,16 @@ export const practiceDay19: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\nViết 3 câu về bạn.",
-      promptHints: ["It is a big house."],
+      title: "Describe people and things.\nMô tả người và đồ.",
+      instruction: "Write 4 sentences with adjectives and my/your/his/her. Use: big, small, good, new, old.\nViết 4 câu có tính từ (Adj) và my/your/his/her. Dùng: big, small, good, new, old.",
+      promptHints: [
+        "My house is big.",
+        "His bag is new.",
+        "Her school is old.",
+        "This is my book."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "It is a big house.\nIt is a small bag.\nThis is my book.\nThat is your pen.",
+      sample: "My house is big.\nHis bag is new.\nHer school is old.\nThis is my good pen.",
     },
   ],
 };

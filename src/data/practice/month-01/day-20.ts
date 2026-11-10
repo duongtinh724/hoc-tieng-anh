@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay20: PracticeLesson = {
-  meta: { ...createPracticeMeta(20, "Gia đình, trường, nhà"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(20, "Gia đình, trường, nhà"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(20, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay20: PracticeLesson = {
       { en: "mother", vi: "mẹ" },
       { en: "school", vi: "trường" },
       { en: "house", vi: "nhà" },
-    ],
+    ]
   },
   screens: [
     {
@@ -32,22 +32,6 @@ export const practiceDay20: PracticeLesson = {
         { id: "p-mother", imageUrl: "/images/practice/tobe/mother.jpg", imageAlt: "mẹ", label: "mẹ", correctWordId: "w-mother" },
         { id: "p-school", imageUrl: "/images/practice/nouns-photo/school.jpg", imageAlt: "trường", label: "trường", correctWordId: "w-school" },
         { id: "p-house", imageUrl: "/images/practice/nouns-photo/house.jpg", imageAlt: "nhà", label: "nhà", correctWordId: "w-house" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
-      items: [
-        { id: "c-1", label: "I have a family.", correctCategoryId: "cat-b" },
-        { id: "c-2", label: "He is my father.", correctCategoryId: "cat-a" },
-        { id: "c-3", label: "She is my mother.", correctCategoryId: "cat-a" },
-        { id: "c-4", label: "I study at school.", correctCategoryId: "cat-b" },
-        { id: "c-5", label: "There is a house.", correctCategoryId: "cat-a" },
       ],
     },
     {
@@ -125,11 +109,17 @@ export const practiceDay20: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\nViết 3 câu về bạn.",
-      promptHints: ["I have a family."],
+      title: "Write about family, school, home.\nViết về gia đình, trường, nhà.",
+      instruction: "Write 4 sentences about your family, school, and house. Use: family, father, mother, school, house.\nViết 4 câu về gia đình, trường và nhà. Dùng: family, father, mother, school, house.",
+      promptHints: [
+        "I have a family.",
+        "He is my father.",
+        "She is my mother.",
+        "I study at school.",
+        "We live in a house."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "I have a family.\nHe is my father.\nShe is my mother.\nI study at school.",
+      sample: "I have a happy family.\nHe is my father.\nShe is my mother.\nWe live in a small house near school.",
     },
   ],
 };

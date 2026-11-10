@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay02: PracticeLesson = {
-  meta: { ...createPracticeMeta(2, "To be (V tobe): am, is, are"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(2, "To be (V tobe): am, is, are"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(2, ""),
     vocabulary: [
@@ -15,7 +15,7 @@ export const practiceDay02: PracticeLesson = {
       { en: "thirsty", vi: "khát" },
       { en: "ready", vi: "sẵn sàng" },
       { en: "fine", vi: "khỏe, ổn" },
-    ],
+    ]
   },
   screens: [
     {
@@ -28,32 +28,19 @@ export const practiceDay02: PracticeLesson = {
         { id: "w-tired", label: "tired" },
         { id: "w-busy", label: "busy" },
         { id: "w-hungry", label: "hungry" },
+        { id: "w-thirsty", label: "thirsty" },
+        { id: "w-ready", label: "ready" },
+        { id: "w-fine", label: "fine" },
       ],
       pairs: [
-        { id: "p-happy", imageUrl: "/images/practice/adjectives/happy.jpg", imageAlt: "vui", label: "vui", correctWordId: "w-happy" },
+        { id: "p-happy", imageUrl: "/images/practice/adjectives/happy.jpg", imageAlt: "vui vẻ", label: "vui vẻ", correctWordId: "w-happy" },
         { id: "p-sad", imageUrl: "/images/practice/adjectives/sad.jpg", imageAlt: "buồn", label: "buồn", correctWordId: "w-sad" },
         { id: "p-tired", imageUrl: "/images/practice/tobe/tired.jpg", imageAlt: "mệt", label: "mệt", correctWordId: "w-tired" },
         { id: "p-busy", imageUrl: "/images/practice/tobe/busy.jpg", imageAlt: "bận", label: "bận", correctWordId: "w-busy" },
-        { id: "p-hungry", imageUrl: "/images/practice/objects/rice.jpg", imageAlt: "đói", label: "đói", correctWordId: "w-hungry" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "am, is, or are?\nam, is hay are?",
-      instruction: "Drag each subject into the right verb.\nKéo chủ ngữ (S) vào đúng động từ to be (V tobe).",
-      categories: [
-        { id: "cat-am", label: "am" },
-        { id: "cat-is", label: "is" },
-        { id: "cat-are", label: "are" },
-      ],
-      items: [
-        { id: "c-i", label: "I", correctCategoryId: "cat-am" },
-        { id: "c-he", label: "He", correctCategoryId: "cat-is" },
-        { id: "c-she", label: "She", correctCategoryId: "cat-is" },
-        { id: "c-it", label: "It", correctCategoryId: "cat-is" },
-        { id: "c-you", label: "You", correctCategoryId: "cat-are" },
-        { id: "c-we", label: "We", correctCategoryId: "cat-are" },
-        { id: "c-they", label: "They", correctCategoryId: "cat-are" },
+        { id: "p-hungry", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "đói", label: "đói", correctWordId: "w-hungry" },
+        { id: "p-thirsty", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "khát", label: "khát", correctWordId: "w-thirsty" },
+        { id: "p-ready", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "sẵn sàng", label: "sẵn sàng", correctWordId: "w-ready" },
+        { id: "p-fine", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "khỏe, ổn", label: "khỏe, ổn", correctWordId: "w-fine" },
       ],
     },
     {
@@ -134,11 +121,17 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences with am, is, or are. Use happy, tired, busy, hungry, or fine.\nViết 3 câu có am, is hoặc are. Dùng happy, tired, busy, hungry hoặc fine.",
-      promptHints: ["I am fine.", "She is tired.", "They are busy."],
+      title: "Write about you and your family.\nViết về bạn và gia đình.",
+      instruction: "Write 4 sentences with am, is, or are. Say how you and your family feel or are (happy, tired, busy, fine…). Use: happy, sad, tired, busy, hungry.\nViết 4 câu có am, is, are. Nói bạn và người thân thế nào (vui, mệt, bận…). Dùng từ: happy, sad, tired, fine, student, teacher.",
+      promptHints: [
+        "I am fine.",
+        "My mother is tired.",
+        "My father is busy.",
+        "We are happy.",
+        "They are at school."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "I am fine.\nShe is tired.\nThey are busy.",
+      sample: "I am fine.\nMy mother is tired.\nMy father is busy.\nWe are happy.",
     },
   ],
 };

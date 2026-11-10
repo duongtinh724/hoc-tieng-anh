@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay01: PracticeLesson = {
-  meta: { ...createPracticeMeta(1, "Present Simple là gì", 2), totalScreens: 9 },
+  meta: { ...createPracticeMeta(1, "Present Simple là gì", 2), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(1, ""),
     vocabulary: [
@@ -87,24 +87,6 @@ export const practiceDay01: PracticeLesson = {
           label: "thói quen hàng ngày",
           correctWordId: "w-routine",
         },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Frequency or idea?\nTần suất hay khái niệm?",
-      instruction: "Drag each word into the right group.\nKéo từ vào đúng nhóm.",
-      categories: [
-        { id: "cat-freq", label: "Tần suất (frequency)" },
-        { id: "cat-concept", label: "Khái niệm" },
-      ],
-      items: [
-        { id: "c-every", label: "every day", correctCategoryId: "cat-freq" },
-        { id: "c-always", label: "always", correctCategoryId: "cat-freq" },
-        { id: "c-usually", label: "usually", correctCategoryId: "cat-freq" },
-        { id: "c-sometimes", label: "sometimes", correctCategoryId: "cat-freq" },
-        { id: "c-often", label: "often", correctCategoryId: "cat-freq" },
-        { id: "c-habit", label: "habit", correctCategoryId: "cat-concept" },
-        { id: "c-routine", label: "routine", correctCategoryId: "cat-concept" },
       ],
     },
     {
@@ -336,19 +318,16 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write Present Simple sentences.\nViết câu Present Simple.",
-      instruction:
-        "Write 3 sentences about Nam's habits. Use every day, usually, or sometimes.\nViết 3 câu về thói quen của Nam, dùng every day, usually hoặc sometimes.",
+      title: "Write about habits.\nViết về thói quen.",
+      instruction: "Write 4 sentences about your and your family's habits. Use every day, usually, sometimes, often.\nViết 4 câu về thói quen của bạn và gia đình. Dùng every day, usually, sometimes, often.",
       promptHints: [
         "I study English every day.",
         "I usually get up at 6.",
-        "She sometimes reads books.",
-        "They play football on Sunday.",
-        "School starts at 7 a.m.",
+        "My mother sometimes cooks.",
+        "We often play football."
       ],
       sampleTitle: "Bài gợi ý",
-      sample:
-        "I study English every day.\nI usually get up at 6.\nShe sometimes reads books.",
+      sample: "I study English every day.\nI usually get up at 6 a.m.\nMy sister sometimes reads books.\nWe play football on Sunday.",
     },
   ],
 };

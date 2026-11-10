@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay03: PracticeLesson = {
-  meta: { ...createPracticeMeta(3, "He / She / It + động từ (V) -s", 2), totalScreens: 9 },
+  meta: { ...createPracticeMeta(3, "He / She / It + động từ (V) -s", 2), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(3, ""),
     vocabulary: [
@@ -87,27 +87,6 @@ export const practiceDay03: PracticeLesson = {
           label: "dạy (he/she/it)",
           correctWordId: "w-teaches",
         },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Base verb or -s/-es?\nNguyên mẫu hay -s/-es?",
-      instruction: "Drag each verb into the right group.\nKéo động từ (V) vào đúng nhóm.",
-      categories: [
-        { id: "cat-base", label: "Nguyên mẫu (I/You/We/They)" },
-        { id: "cat-s", label: "He/She/It (+ -s/-es)" },
-      ],
-      items: [
-        { id: "c-go", label: "go", correctCategoryId: "cat-base" },
-        { id: "c-goes", label: "goes", correctCategoryId: "cat-s" },
-        { id: "c-study", label: "study", correctCategoryId: "cat-base" },
-        { id: "c-studies", label: "studies", correctCategoryId: "cat-s" },
-        { id: "c-watch", label: "watch", correctCategoryId: "cat-base" },
-        { id: "c-watches", label: "watches", correctCategoryId: "cat-s" },
-        { id: "c-play", label: "play", correctCategoryId: "cat-base" },
-        { id: "c-plays", label: "plays", correctCategoryId: "cat-s" },
-        { id: "c-teach", label: "teach", correctCategoryId: "cat-base" },
-        { id: "c-teaches", label: "teaches", correctCategoryId: "cat-s" },
       ],
     },
     {
@@ -348,20 +327,16 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write He / She + -s sentences.\nViết câu He / She + -s.",
-      instruction:
-        "Write 3 sentences with He or She + a verb ending in -s/-es.\nViết 3 câu với He hoặc She + động từ (V) có -s/-es (goes, studies, watches, likes, plays, teaches).",
+      title: "He / She in your family.\nHe / She trong gia đình.",
+      instruction: "Write 4 sentences about your father, mother, brother, or sister. He/She + verb with -s or -es.\nViết 4 câu về bố, mẹ, anh/chị/em: He/She + động tủ (V) có -s/-es.",
       promptHints: [
-        "He goes to school.",
+        "He goes to work.",
         "She studies English.",
-        "He watches TV at night.",
-        "She likes music.",
-        "He plays football on Sunday.",
-        "My teacher teaches English.",
+        "He likes football.",
+        "She watches TV at night."
       ],
       sampleTitle: "Bài gợi ý",
-      sample:
-        "He goes to school.\nShe studies English.\nHe plays football on Sunday.",
+      sample: "My father goes to work every day.\nMy mother studies English.\nMy brother likes football.\nShe watches TV at night.",
     },
   ],
 };

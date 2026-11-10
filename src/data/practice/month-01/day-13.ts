@@ -3,15 +3,16 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay13: PracticeLesson = {
-  meta: { ...createPracticeMeta(13, "Danh từ (N) và to be (V tobe)"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(13, "Danh từ (N) và to be (V tobe)"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(13, ""),
     vocabulary: [
       { en: "a / an", vi: "một — số ít" },
+      { en: "the", vi: "đã xác định" },
       { en: "this / that", vi: "một vật" },
       { en: "these / those", vi: "nhiều vật" },
-      { en: "aren't", vi: "không phải" },
-    ],
+      { en: "aren't", vi: "không phải (số nhiều)" },
+    ]
   },
   screens: [
     {
@@ -19,18 +20,18 @@ export const practiceDay13: PracticeLesson = {
       title: "Match the words.\nNối từ.",
       instruction: "Match each word with a picture.\nNối từ với ảnh.",
       words: [
-        { id: "w-teacher", label: "teacher" },
-        { id: "w-student", label: "student" },
-        { id: "w-book", label: "book" },
-        { id: "w-books", label: "books" },
-        { id: "w-school", label: "school" },
+        { id: "w-a-an", label: "a / an" },
+        { id: "w-the", label: "the" },
+        { id: "w-this-that", label: "this / that" },
+        { id: "w-these-those", label: "these / those" },
+        { id: "w-aren-t", label: "aren't" },
       ],
       pairs: [
-        { id: "p-teacher", imageUrl: "/images/practice/nouns-photo/teacher.jpg", imageAlt: "giáo viên", label: "giáo viên", correctWordId: "w-teacher" },
-        { id: "p-student", imageUrl: "/images/practice/nouns-photo/student.jpg", imageAlt: "học sinh", label: "học sinh", correctWordId: "w-student" },
-        { id: "p-book", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "sách", label: "sách", correctWordId: "w-book" },
-        { id: "p-books", imageUrl: "/images/practice/objects/books.jpg", imageAlt: "nhiều sách", label: "nhiều sách", correctWordId: "w-books" },
-        { id: "p-school", imageUrl: "/images/practice/nouns-photo/school.jpg", imageAlt: "trường", label: "trường", correctWordId: "w-school" },
+        { id: "p-a-an", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "một — số ít", label: "một — số ít", correctWordId: "w-a-an" },
+        { id: "p-the", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "đã xác định", label: "đã xác định", correctWordId: "w-the" },
+        { id: "p-this-that", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "một vật", label: "một vật", correctWordId: "w-this-that" },
+        { id: "p-these-those", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "nhiều vật", label: "nhiều vật", correctWordId: "w-these-those" },
+        { id: "p-aren-t", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "không phải (số nhiều)", label: "không phải (số nhiều)", correctWordId: "w-aren-t" },
       ],
     },
     {
@@ -85,23 +86,6 @@ export const practiceDay13: PracticeLesson = {
       ],
     },
     {
-      type: "categorize",
-      title: "Singular or plural?\nSố ít hay số nhiều?",
-      instruction: "Drag each sentence into the right group.\nKéo câu vào đúng nhóm.",
-      categories: [
-        { id: "cat-one", label: "Số ít + is" },
-        { id: "cat-many", label: "Số nhiều + are" },
-      ],
-      items: [
-        { id: "c-1", label: "He is a teacher.", correctCategoryId: "cat-one" },
-        { id: "c-2", label: "This is a book.", correctCategoryId: "cat-one" },
-        { id: "c-3", label: "That is a school.", correctCategoryId: "cat-one" },
-        { id: "c-4", label: "They are students.", correctCategoryId: "cat-many" },
-        { id: "c-5", label: "These are books.", correctCategoryId: "cat-many" },
-        { id: "c-6", label: "Those are cars.", correctCategoryId: "cat-many" },
-      ],
-    },
-    {
       type: "reading-fill",
       title: "Fill the line.\nĐiền vào dòng.",
       instruction: "Type the missing word.\nGõ từ còn thiếu.",
@@ -128,11 +112,16 @@ export const practiceDay13: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Mix the patterns.\nGhép các mẫu câu.",
-      instruction: "Write 6 sentences: one with a or an, one with the, one with this or that, one with these or those, one negative, and one question.\nViết 6 câu: một câu có a hoặc an, một câu có the, một câu this hoặc that, một câu these hoặc those, một câu phủ định, một câu hỏi.",
-      promptHints: ["This is a book.", "The book is new.", "These are chairs.", "She is not a doctor.", "Are they students?"],
+      title: "Mix patterns about family.\nGhép mẫu câu về gia đình.",
+      instruction: "Write 4 sentences: use this/that or these/those, one with the, and one question about family.\nViết 4 câu: có this/that hoặc these/those, một câu có the, một câu hỏi về gia đình.",
+      promptHints: [
+        "This is my book.",
+        "The book is new.",
+        "These are my parents.",
+        "Are they at home?"
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "This is a book.\nThe book is new.\nThat is a school.\nThese are my books.\nShe is not a doctor.\nAre they students?",
+      sample: "This is my book.\nThe book is on the table.\nThese are my parents.\nAre they at home?",
     },
   ],
 };

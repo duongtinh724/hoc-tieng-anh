@@ -3,16 +3,19 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay10: PracticeLesson = {
-  meta: { ...createPracticeMeta(10, "Mạo từ (Art) a / an"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(10, "Mạo từ (Art) a / an"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(10, ""),
     vocabulary: [
-      { en: "a book", vi: "một quyển sách" },
-      { en: "an apple", vi: "một quả táo" },
-      { en: "an hour", vi: "một giờ" },
-      { en: "a university", vi: "một trường đại học" },
-      { en: "an umbrella", vi: "một chiếc ô" },
-    ],
+      { en: "apple", vi: "quả táo" },
+      { en: "egg", vi: "quả trứng" },
+      { en: "orange", vi: "quả cam" },
+      { en: "umbrella", vi: "cái ô" },
+      { en: "hour", vi: "giờ" },
+      { en: "university", vi: "trường đại học" },
+      { en: "car", vi: "ô tô" },
+      { en: "engineer", vi: "kỹ sư" },
+    ]
   },
   screens: [
     {
@@ -20,38 +23,24 @@ export const practiceDay10: PracticeLesson = {
       title: "Match the words.\nNối từ.",
       instruction: "Match each word with a picture.\nNối từ với ảnh.",
       words: [
-        { id: "w-book", label: "book" },
-        { id: "w-pen", label: "pen" },
-        { id: "w-bag", label: "bag" },
-        { id: "w-student", label: "student" },
-        { id: "w-school", label: "school" },
+        { id: "w-apple", label: "apple" },
+        { id: "w-egg", label: "egg" },
+        { id: "w-orange", label: "orange" },
+        { id: "w-umbrella", label: "umbrella" },
+        { id: "w-hour", label: "hour" },
+        { id: "w-university", label: "university" },
+        { id: "w-car", label: "car" },
+        { id: "w-engineer", label: "engineer" },
       ],
       pairs: [
-        { id: "p-book", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "sách", label: "sách", correctWordId: "w-book" },
-        { id: "p-pen", imageUrl: "/images/practice/nouns-photo/pen.jpg", imageAlt: "bút", label: "bút", correctWordId: "w-pen" },
-        { id: "p-bag", imageUrl: "/images/practice/nouns-photo/bag.jpg", imageAlt: "cặp", label: "cặp", correctWordId: "w-bag" },
-        { id: "p-student", imageUrl: "/images/practice/nouns-photo/student.jpg", imageAlt: "học sinh", label: "học sinh", correctWordId: "w-student" },
-        { id: "p-school", imageUrl: "/images/practice/nouns-photo/school.jpg", imageAlt: "trường", label: "trường", correctWordId: "w-school" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "a or an?\na hay an?",
-      instruction: "Listen to the first sound. Drag the noun into a or an.\nNghe âm đầu. Kéo danh từ (N) vào a hoặc an.",
-      categories: [
-        { id: "cat-a", label: "a" },
-        { id: "cat-an", label: "an" },
-      ],
-      items: [
-        { id: "c-book", label: "book", correctCategoryId: "cat-a" },
-        { id: "c-teacher", label: "teacher", correctCategoryId: "cat-a" },
-        { id: "c-car", label: "car", correctCategoryId: "cat-a" },
-        { id: "c-university", label: "university", correctCategoryId: "cat-a" },
-        { id: "c-apple", label: "apple", correctCategoryId: "cat-an" },
-        { id: "c-egg", label: "egg", correctCategoryId: "cat-an" },
-        { id: "c-umbrella", label: "umbrella", correctCategoryId: "cat-an" },
-        { id: "c-hour", label: "hour", correctCategoryId: "cat-an" },
-        { id: "c-english", label: "English teacher", correctCategoryId: "cat-an" },
+        { id: "p-apple", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "quả táo", label: "quả táo", correctWordId: "w-apple" },
+        { id: "p-egg", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "quả trứng", label: "quả trứng", correctWordId: "w-egg" },
+        { id: "p-orange", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "quả cam", label: "quả cam", correctWordId: "w-orange" },
+        { id: "p-umbrella", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "cái ô", label: "cái ô", correctWordId: "w-umbrella" },
+        { id: "p-hour", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "giờ", label: "giờ", correctWordId: "w-hour" },
+        { id: "p-university", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "trường đại học", label: "trường đại học", correctWordId: "w-university" },
+        { id: "p-car", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "ô tô", label: "ô tô", correctWordId: "w-car" },
+        { id: "p-engineer", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "kỹ sư", label: "kỹ sư", correctWordId: "w-engineer" },
       ],
     },
     {
@@ -135,11 +124,16 @@ export const practiceDay10: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Describe things.\nMô tả đồ vật.",
-      instruction: "Write 5 sentences with a or an. Example: This is a book. This is an apple.\nViết 5 câu có a hoặc an. Ví dụ: This is a book. This is an apple.",
-      promptHints: ["This is a book.", "This is an apple.", "I am a student."],
+      title: "Describe your things.\nMô tả đồ của bạn.",
+      instruction: "Write 4 sentences with a / an about things you or your family have.\nViết 4 câu có a / an về đồ bạn hoặc gia đình có.",
+      promptHints: [
+        "I have a bag.",
+        "She has an apple.",
+        "He is a student.",
+        "This is a book."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "This is a book.\nThis is an apple.\nIt is a chair.\nI am a student.\nHe is an engineer.",
+      sample: "I have a bag.\nMy sister has an eraser.\nMy father is a teacher.\nThis is a pen.",
     },
   ],
 };

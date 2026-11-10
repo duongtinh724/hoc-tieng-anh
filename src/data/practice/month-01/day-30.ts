@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay30: PracticeLesson = {
-  meta: { ...createPracticeMeta(30, "He, she, it thêm -s"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(30, "He, she, it thêm -s"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(30, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay30: PracticeLesson = {
       { en: "go", vi: "đi" },
       { en: "play", vi: "chơi" },
       { en: "read", vi: "đọc" },
-    ],
+    ]
   },
   screens: [
     {
@@ -32,23 +32,6 @@ export const practiceDay30: PracticeLesson = {
         { id: "p-go", imageUrl: "/images/practice/verbs/go.jpg", imageAlt: "đi", label: "đi", correctWordId: "w-go" },
         { id: "p-play", imageUrl: "/images/practice/verbs/play.jpg", imageAlt: "chơi", label: "chơi", correctWordId: "w-play" },
         { id: "p-read", imageUrl: "/images/practice/verbs/read.jpg", imageAlt: "đọc", label: "đọc", correctWordId: "w-read" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
-      items: [
-        { id: "c-1", label: "He likes music.", correctCategoryId: "cat-b" },
-        { id: "c-2", label: "She studies English.", correctCategoryId: "cat-b" },
-        { id: "c-3", label: "Nam goes to school.", correctCategoryId: "cat-b" },
-        { id: "c-4", label: "She plays football.", correctCategoryId: "cat-b" },
-        { id: "c-5", label: "He reads books.", correctCategoryId: "cat-b" },
-        { id: "c-y", label: "I am a student.", correctCategoryId: "cat-a" },
       ],
     },
     {
@@ -126,11 +109,16 @@ export const practiceDay30: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\nViết 3 câu về bạn.",
-      promptHints: ["He likes music."],
+      title: "He / She in your family.\nHe / She trong gia đình.",
+      instruction: "Write 4 sentences about your father, mother, or sister with verbs + -s: like, study, go, play, read.\nViết 4 câu về bố, mẹ hoặc chị/em với động tủ (V) thêm -s: like, study, go, play, read.",
+      promptHints: [
+        "My father likes music.",
+        "My mother studies English.",
+        "My sister plays football.",
+        "He reads books every day."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "He likes music.\nShe studies English.\nNam goes to school.\nShe plays football.",
+      sample: "My father likes music.\nMy mother studies English.\nMy sister plays football.\nShe goes to school every day.",
     },
   ],
 };

@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay03: PracticeLesson = {
-  meta: { ...createPracticeMeta(3, "Câu khẳng định với to be (V tobe)"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(3, "Câu khẳng định với to be (V tobe)"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(3, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay03: PracticeLesson = {
       { en: "at home", vi: "ở nhà" },
       { en: "good", vi: "tốt" },
       { en: "friend", vi: "bạn" },
-    ],
+    ]
   },
   screens: [
     {
@@ -20,36 +20,18 @@ export const practiceDay03: PracticeLesson = {
       title: "Match the words.\nNối từ.",
       instruction: "Match each word with a picture.\nNối từ với ảnh.",
       words: [
-        { id: "w-student", label: "student" },
-        { id: "w-home", label: "home" },
-        { id: "w-friend", label: "friend" },
-        { id: "w-happy", label: "happy" },
+        { id: "w-doctor", label: "doctor" },
+        { id: "w-beautiful", label: "beautiful" },
+        { id: "w-at-home", label: "at home" },
         { id: "w-good", label: "good" },
+        { id: "w-friend", label: "friend" },
       ],
       pairs: [
-        { id: "p-student", imageUrl: "/images/practice/nouns-photo/student.jpg", imageAlt: "học sinh", label: "học sinh", correctWordId: "w-student" },
-        { id: "p-home", imageUrl: "/images/practice/nouns-photo/house.jpg", imageAlt: "nhà", label: "nhà", correctWordId: "w-home" },
-        { id: "p-friend", imageUrl: "/images/practice/tobe/friend.jpg", imageAlt: "bạn", label: "bạn", correctWordId: "w-friend" },
-        { id: "p-happy", imageUrl: "/images/practice/adjectives/happy.jpg", imageAlt: "vui", label: "vui", correctWordId: "w-happy" },
+        { id: "p-doctor", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "bác sĩ", label: "bác sĩ", correctWordId: "w-doctor" },
+        { id: "p-beautiful", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "xinh đẹp", label: "xinh đẹp", correctWordId: "w-beautiful" },
+        { id: "p-at-home", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "ở nhà", label: "ở nhà", correctWordId: "w-at-home" },
         { id: "p-good", imageUrl: "/images/practice/adjectives/good.jpg", imageAlt: "tốt", label: "tốt", correctWordId: "w-good" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Noun, adjective, or place?\nDanh từ (N), tính từ (Adj) hay nơi chốn?",
-      instruction: "Drag each sentence into the right group.\nKéo câu vào đúng nhóm.",
-      categories: [
-        { id: "cat-noun", label: "+ danh từ (N)" },
-        { id: "cat-adj", label: "+ tính từ (Adj)" },
-        { id: "cat-place", label: "+ nơi chốn" },
-      ],
-      items: [
-        { id: "c-1", label: "I am a student.", correctCategoryId: "cat-noun" },
-        { id: "c-2", label: "He is a doctor.", correctCategoryId: "cat-noun" },
-        { id: "c-3", label: "She is happy.", correctCategoryId: "cat-adj" },
-        { id: "c-4", label: "She is beautiful.", correctCategoryId: "cat-adj" },
-        { id: "c-5", label: "We are at home.", correctCategoryId: "cat-place" },
-        { id: "c-6", label: "They are at home.", correctCategoryId: "cat-place" },
+        { id: "p-friend", imageUrl: "/images/practice/tobe/friend.jpg", imageAlt: "bạn", label: "bạn", correctWordId: "w-friend" },
       ],
     },
     {
@@ -129,11 +111,17 @@ export const practiceDay03: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write affirmative sentences.\nViết câu khẳng định.",
-      instruction: "Write 5 affirmative sentences about you, your family, or your friends.\nViết 5 câu khẳng định về bản thân, gia đình hoặc bạn bè.",
-      promptHints: ["I am a student.", "She is happy.", "They are at home."],
+      title: "Write about you and your family.\nViết về bạn và gia đình.",
+      instruction: "Write 4 affirmative sentences with am / is / are about you, your brother/sister, or parents.\nViết 4 câu khẳng định với am / is / are về bạn, anh/chị/em, bố mẹ.",
+      promptHints: [
+        "I am a student.",
+        "He is my brother.",
+        "She is my friend.",
+        "We are at home.",
+        "They are teachers."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "I am a student.\nHe is a doctor.\nShe is happy.\nWe are at home.\nThey are good friends.",
+      sample: "I am a student.\nHe is my brother.\nShe is my mother.\nWe are at home.",
     },
   ],
 };

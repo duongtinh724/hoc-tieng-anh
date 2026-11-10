@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay08: PracticeLesson = {
-  meta: { ...createPracticeMeta(8, "Danh từ (N): người, vật, nơi"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(8, "Danh từ (N): người, vật, nơi"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(8, ""),
     vocabulary: [
@@ -15,7 +15,7 @@ export const practiceDay08: PracticeLesson = {
       { en: "school", vi: "trường học" },
       { en: "hospital", vi: "bệnh viện" },
       { en: "park", vi: "công viên" },
-    ],
+    ]
   },
   screens: [
     {
@@ -25,37 +25,22 @@ export const practiceDay08: PracticeLesson = {
       words: [
         { id: "w-teacher", label: "teacher" },
         { id: "w-student", label: "student" },
+        { id: "w-doctor", label: "doctor" },
         { id: "w-book", label: "book" },
+        { id: "w-phone", label: "phone" },
         { id: "w-school", label: "school" },
-        { id: "w-house", label: "house" },
+        { id: "w-hospital", label: "hospital" },
+        { id: "w-park", label: "park" },
       ],
       pairs: [
         { id: "p-teacher", imageUrl: "/images/practice/nouns-photo/teacher.jpg", imageAlt: "giáo viên", label: "giáo viên", correctWordId: "w-teacher" },
         { id: "p-student", imageUrl: "/images/practice/nouns-photo/student.jpg", imageAlt: "học sinh", label: "học sinh", correctWordId: "w-student" },
-        { id: "p-book", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "sách", label: "sách", correctWordId: "w-book" },
-        { id: "p-school", imageUrl: "/images/practice/nouns-photo/school.jpg", imageAlt: "trường", label: "trường", correctWordId: "w-school" },
-        { id: "p-house", imageUrl: "/images/practice/nouns-photo/house.jpg", imageAlt: "nhà", label: "nhà", correctWordId: "w-house" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "People, things, or places?\nNgười, vật hay nơi?",
-      instruction: "Drag each noun into the right group.\nKéo danh từ (N) vào đúng nhóm.",
-      categories: [
-        { id: "cat-people", label: "Người" },
-        { id: "cat-thing", label: "Vật" },
-        { id: "cat-place", label: "Địa điểm" },
-      ],
-      items: [
-        { id: "c-teacher", label: "teacher", correctCategoryId: "cat-people" },
-        { id: "c-doctor", label: "doctor", correctCategoryId: "cat-people" },
-        { id: "c-student", label: "student", correctCategoryId: "cat-people" },
-        { id: "c-phone", label: "phone", correctCategoryId: "cat-thing" },
-        { id: "c-table", label: "table", correctCategoryId: "cat-thing" },
-        { id: "c-car", label: "car", correctCategoryId: "cat-thing" },
-        { id: "c-park", label: "park", correctCategoryId: "cat-place" },
-        { id: "c-school", label: "school", correctCategoryId: "cat-place" },
-        { id: "c-hospital", label: "hospital", correctCategoryId: "cat-place" },
+        { id: "p-doctor", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "bác sĩ", label: "bác sĩ", correctWordId: "w-doctor" },
+        { id: "p-book", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "quyển sách", label: "quyển sách", correctWordId: "w-book" },
+        { id: "p-phone", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "điện thoại", label: "điện thoại", correctWordId: "w-phone" },
+        { id: "p-school", imageUrl: "/images/practice/nouns-photo/school.jpg", imageAlt: "trường học", label: "trường học", correctWordId: "w-school" },
+        { id: "p-hospital", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "bệnh viện", label: "bệnh viện", correctWordId: "w-hospital" },
+        { id: "p-park", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "công viên", label: "công viên", correctWordId: "w-park" },
       ],
     },
     {
@@ -135,11 +120,16 @@ export const practiceDay08: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Look around you.\nNhìn quanh phòng.",
-      instruction: "Write 5 sentences about things you can see. Use a noun in each sentence.\nViết 5 câu về những gì bạn nhìn thấy. Mỗi câu có một danh từ (N).",
-      promptHints: ["This is my phone.", "The table is big.", "My book is here."],
+      title: "Describe your room and family.\nMô tả phòng và gia đình.",
+      instruction: "Write 4 sentences about things at home and people. Use nouns: teacher, student, doctor, book, phone.\nViết 4 câu về đồ vật ở nhà và người. Dùng danh từ (N): book, pen, bag, school, house…",
+      promptHints: [
+        "This is my book.",
+        "My bag is on the table.",
+        "My father is a teacher.",
+        "Our house is small."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "This is my phone.\nThe table is big.\nMy book is here.\nI am a student.\nThis is my school.",
+      sample: "This is my book.\nMy pen is in the bag.\nMy father works at a school.\nOur house is small.",
     },
   ],
 };

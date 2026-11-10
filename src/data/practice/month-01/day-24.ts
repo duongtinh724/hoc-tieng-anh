@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay24: PracticeLesson = {
-  meta: { ...createPracticeMeta(24, "Giới từ (Prep) nơi chốn"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(24, "Giới từ (Prep) nơi chốn"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(24, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay24: PracticeLesson = {
       { en: "school", vi: "trường" },
       { en: "house", vi: "nhà" },
       { en: "pen", vi: "bút" },
-    ],
+    ]
   },
   screens: [
     {
@@ -35,37 +35,20 @@ export const practiceDay24: PracticeLesson = {
       ],
     },
     {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
-      items: [
-        { id: "c-1", label: "The pen is in the bag.", correctCategoryId: "cat-a" },
-        { id: "c-2", label: "The book is on the bag.", correctCategoryId: "cat-a" },
-        { id: "c-3", label: "I am at school.", correctCategoryId: "cat-a" },
-        { id: "c-4", label: "The pen is under the book.", correctCategoryId: "cat-a" },
-        { id: "c-5", label: "She is at home.", correctCategoryId: "cat-a" },
-        { id: "c-x", label: "I like music.", correctCategoryId: "cat-b" },
-      ],
-    },
-    {
       type: "sentence-drag",
       title: "Fill the sentence.\nĐiền vào câu.",
       instruction: "Drag a word into the blank.\nKéo từ vào chỗ trống.",
       wordBank: [
-        { id: "s1", label: "pen" },
-        { id: "s2", label: "book" },
-        { id: "s3", label: "am" },
-        { id: "s4", label: "pen" },
+        { id: "s1", label: "on" },
+        { id: "s2", label: "am" },
+        { id: "s3", label: "in" },
+        { id: "s4", label: "at" },
       ],
       sentences: [
-        { id: "sd1", parts: [{ kind: "text", value: "The " }, { kind: "blank", id: "b1", correctWordId: "s1" }, { kind: "text", value: " is in the bag." }] },
-        { id: "sd2", parts: [{ kind: "text", value: "The " }, { kind: "blank", id: "b2", correctWordId: "s2" }, { kind: "text", value: " is on the bag." }] },
-        { id: "sd3", parts: [{ kind: "text", value: "I " }, { kind: "blank", id: "b3", correctWordId: "s3" }, { kind: "text", value: " at school." }] },
-        { id: "sd4", parts: [{ kind: "text", value: "The " }, { kind: "blank", id: "b4", correctWordId: "s4" }, { kind: "text", value: " is under the book." }] },
+        { id: "sd1", parts: [{ kind: "text", value: "The book is " }, { kind: "blank", id: "b1", correctWordId: "s1" }, { kind: "text", value: " the table." }] },
+        { id: "sd2", parts: [{ kind: "text", value: "I " }, { kind: "blank", id: "b2", correctWordId: "s2" }, { kind: "text", value: " at home." }] },
+        { id: "sd3", parts: [{ kind: "text", value: "The pen is " }, { kind: "blank", id: "b3", correctWordId: "s3" }, { kind: "text", value: " the bag." }] },
+        { id: "sd4", parts: [{ kind: "text", value: "I am " }, { kind: "blank", id: "b4", correctWordId: "s4" }, { kind: "text", value: " school." }] },
       ],
     },
     {
@@ -93,23 +76,23 @@ export const practiceDay24: PracticeLesson = {
       lines: [],
       correctOrder: [],
       sentences: [
-        { id: "sen-1", label: "Câu 1", lines: [{ id: "s10", text: "The" }, { id: "s11", text: "pen" }, { id: "s12", text: "is" }, { id: "s13", text: "in" }, { id: "s14", text: "the" }, { id: "s15", text: "bag" }], correctOrder: ["s10", "s11", "s12", "s13", "s14", "s15"] },
-        { id: "sen-2", label: "Câu 2", lines: [{ id: "s20", text: "The" }, { id: "s21", text: "book" }, { id: "s22", text: "is" }, { id: "s23", text: "on" }, { id: "s24", text: "the" }, { id: "s25", text: "bag" }], correctOrder: ["s20", "s21", "s22", "s23", "s24", "s25"] },
-        { id: "sen-3", label: "Câu 3", lines: [{ id: "s30", text: "I" }, { id: "s31", text: "am" }, { id: "s32", text: "at" }, { id: "s33", text: "school" }], correctOrder: ["s30", "s31", "s32", "s33"] },
-        { id: "sen-4", label: "Câu 4", lines: [{ id: "s40", text: "The" }, { id: "s41", text: "pen" }, { id: "s42", text: "is" }, { id: "s43", text: "under" }, { id: "s44", text: "the" }, { id: "s45", text: "book" }], correctOrder: ["s40", "s41", "s42", "s43", "s44", "s45"] },
-        { id: "sen-5", label: "Câu 5", lines: [{ id: "s50", text: "She" }, { id: "s51", text: "is" }, { id: "s52", text: "at" }, { id: "s53", text: "home" }], correctOrder: ["s50", "s51", "s52", "s53"] },
+        { id: "sen-1", label: "Câu 1", lines: [{ id: "s10", text: "The" }, { id: "s11", text: "book" }, { id: "s12", text: "is" }, { id: "s13", text: "on" }, { id: "s14", text: "the" }, { id: "s15", text: "table" }], correctOrder: ["s10", "s11", "s12", "s13", "s14", "s15"] },
+        { id: "sen-2", label: "Câu 2", lines: [{ id: "s20", text: "I" }, { id: "s21", text: "am" }, { id: "s22", text: "at" }, { id: "s23", text: "home" }], correctOrder: ["s20", "s21", "s22", "s23"] },
+        { id: "sen-3", label: "Câu 3", lines: [{ id: "s30", text: "The" }, { id: "s31", text: "pen" }, { id: "s32", text: "is" }, { id: "s33", text: "in" }, { id: "s34", text: "the" }, { id: "s35", text: "bag" }], correctOrder: ["s30", "s31", "s32", "s33", "s34", "s35"] },
+        { id: "sen-4", label: "Câu 4", lines: [{ id: "s40", text: "I" }, { id: "s41", text: "am" }, { id: "s42", text: "at" }, { id: "s43", text: "school" }], correctOrder: ["s40", "s41", "s42", "s43"] },
+        { id: "sen-5", label: "Câu 5", lines: [{ id: "s50", text: "The" }, { id: "s51", text: "pen" }, { id: "s52", text: "is" }, { id: "s53", text: "under" }, { id: "s54", text: "the" }, { id: "s55", text: "book" }], correctOrder: ["s50", "s51", "s52", "s53", "s54", "s55"] },
       ],
     },
     {
       type: "reading-fill",
       title: "Fill the line.\nĐiền vào dòng.",
       instruction: "Type the missing word.\nGõ từ còn thiếu.",
-      passage: "The pen is in the bag. The book is on the bag. I am at school. The pen is under the book. She is at home.",
+      passage: "The book is on the table. I am at home. The pen is in the bag. I am at school. The pen is under the book. There is a tree in front of my house.",
       prompts: [
-        { id: "rf1", label: "The ___ is in the bag.", correctAnswers: ["pen"] },
-        { id: "rf2", label: "The ___ is on the bag.", correctAnswers: ["book"] },
-        { id: "rf3", label: "I ___ at school.", correctAnswers: ["am"] },
-        { id: "rf4", label: "The ___ is under the book.", correctAnswers: ["pen"] },
+        { id: "rf1", label: "The book is ___ the table.", correctAnswers: ["on"] },
+        { id: "rf2", label: "I ___ at home.", correctAnswers: ["am"] },
+        { id: "rf3", label: "The pen is ___ the bag.", correctAnswers: ["in"] },
+        { id: "rf4", label: "I am ___ school.", correctAnswers: ["at"] },
       ],
     },
     {
@@ -117,20 +100,26 @@ export const practiceDay24: PracticeLesson = {
       title: "Translate into English.\nDịch sang tiếng Anh.",
       instruction: "Read the Vietnamese sentence and write it in English.\nĐọc câu tiếng Việt rồi viết câu tiếng Anh.",
       items: [
-        { id: "dic-1", text: "The pen is in the bag.", hint: "Bút ở trong cặp." },
-        { id: "dic-2", text: "The book is on the bag.", hint: "Sách ở trên cặp." },
-        { id: "dic-3", text: "I am at school.", hint: "Tôi ở trường." },
-        { id: "dic-4", text: "The pen is under the book.", hint: "Bút ở dưới sách." },
-        { id: "dic-5", text: "She is at home.", hint: "Cô ấy ở nhà." },
+        { id: "dic-1", text: "The book is on the table.", hint: "Quyển sách ở trên bàn." },
+        { id: "dic-2", text: "I am at home.", hint: "Tôi đang ở nhà." },
+        { id: "dic-3", text: "The pen is in the bag.", hint: "Bút ở trong cặp." },
+        { id: "dic-4", text: "I am at school.", hint: "Tôi ở trường." },
+        { id: "dic-5", text: "The pen is under the book.", hint: "Bút ở dưới sách." },
+        { id: "dic-6", text: "There is a tree in front of my house.", hint: "Có một cái cây phía trước nhà tôi." },
       ],
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\nViết 3 câu về bạn.",
-      promptHints: ["The pen is in the bag."],
+      title: "Where things are at home.\nĐồ ở đâu trong nhà.",
+      instruction: "Write 4 sentences with in, on, at, under about your room, bag, or family. Use: bag, book, school, house, pen.\nViết 4 câu có in, on, at, under về phòng, cặp hoặc gia đình.",
+      promptHints: [
+        "My book is on the table.",
+        "I am at home.",
+        "The pen is in my bag.",
+        "I am at school."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "The pen is in the bag.\nThe book is on the bag.\nI am at school.\nThe pen is under the book.",
+      sample: "My book is on the table.\nI am at home with my family.\nThe pen is in my bag.\nMy father is at work.",
     },
   ],
 };

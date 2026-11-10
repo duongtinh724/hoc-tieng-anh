@@ -3,23 +3,18 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay01: PracticeLesson = {
-  meta: { ...createPracticeMeta(1, "Đại từ nhân xưng (Pron)"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(1, "Đại từ nhân xưng (Pron)"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(1, ""),
     vocabulary: [
       { en: "I", vi: "tôi — người nói" },
-      { en: "you", vi: "bạn / các bạn" },
+      { en: "you", vi: "bạn / các bạn — người nghe" },
       { en: "he", vi: "anh ấy — một người nam" },
       { en: "she", vi: "cô ấy — một người nữ" },
       { en: "it", vi: "nó — đồ vật, con vật, sự việc" },
       { en: "we", vi: "chúng tôi / chúng ta" },
       { en: "they", vi: "họ / chúng" },
-    ],
-    grammarNotes: [
-      "Đại từ (Pron) thay tên khi làm chủ ngữ (S): Nam → He, Lan → She.",
-      "It = đồ vật, con vật hoặc sự việc.",
-      "My brother and I → We. My parents → They.",
-    ],
+    ]
   },
   screens: [
     {
@@ -28,81 +23,21 @@ export const practiceDay01: PracticeLesson = {
       instruction: "Match each pronoun with a picture. Tap the picture to see the Vietnamese meaning.\nNối đại từ (Pron) với ảnh. Bấm ảnh để xem nghĩa tiếng Việt.",
       words: [
         { id: "w-i", label: "I" },
-        { id: "w-you", label: "You" },
-        { id: "w-he", label: "He" },
-        { id: "w-she", label: "She" },
-        { id: "w-it", label: "It" },
-        { id: "w-we", label: "We" },
-        { id: "w-they", label: "They" },
+        { id: "w-you", label: "you" },
+        { id: "w-he", label: "he" },
+        { id: "w-she", label: "she" },
+        { id: "w-it", label: "it" },
+        { id: "w-we", label: "we" },
+        { id: "w-they", label: "they" },
       ],
       pairs: [
-        {
-          id: "p-i",
-          imageUrl: "/images/practice/pronouns/i.jpg",
-          imageAlt: "tôi",
-          label: "tôi",
-          correctWordId: "w-i",
-        },
-        {
-          id: "p-you",
-          imageUrl: "/images/practice/pronouns/you.jpg",
-          imageAlt: "bạn",
-          label: "bạn",
-          correctWordId: "w-you",
-        },
-        {
-          id: "p-he",
-          imageUrl: "/images/practice/pronouns/he.jpg",
-          imageAlt: "anh ấy",
-          label: "anh ấy",
-          correctWordId: "w-he",
-        },
-        {
-          id: "p-she",
-          imageUrl: "/images/practice/pronouns/she.jpg",
-          imageAlt: "cô ấy",
-          label: "cô ấy",
-          correctWordId: "w-she",
-        },
-        {
-          id: "p-it",
-          imageUrl: "/images/practice/pronouns/it.jpg",
-          imageAlt: "nó (vật, con vật)",
-          label: "nó (vật, con vật)",
-          correctWordId: "w-it",
-        },
-        {
-          id: "p-we",
-          imageUrl: "/images/practice/pronouns/we.jpg",
-          imageAlt: "chúng tôi",
-          label: "chúng tôi",
-          correctWordId: "w-we",
-        },
-        {
-          id: "p-they",
-          imageUrl: "/images/practice/pronouns/they.jpg",
-          imageAlt: "họ",
-          label: "họ",
-          correctWordId: "w-they",
-        },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "People or things?\nNgười hay vật?",
-      instruction: "Drag each pronoun into the right group: people, or a thing or animal.\nKéo thả vào đúng nhóm: đại từ (Pron) chỉ người hoặc chỉ vật/con vật.",
-      categories: [
-        { id: "cat-people", label: "Chỉ người" },
-        { id: "cat-thing", label: "Chỉ vật / con vật" },
-      ],
-      items: [
-        { id: "c-i", label: "I", correctCategoryId: "cat-people" },
-        { id: "c-you", label: "You", correctCategoryId: "cat-people" },
-        { id: "c-he", label: "He", correctCategoryId: "cat-people" },
-        { id: "c-she", label: "She", correctCategoryId: "cat-people" },
-        { id: "c-we", label: "We", correctCategoryId: "cat-people" },
-        { id: "c-they", label: "They", correctCategoryId: "cat-people" },
-        { id: "c-it", label: "It", correctCategoryId: "cat-thing" },
+        { id: "p-i", imageUrl: "/images/practice/pronouns/i.jpg", imageAlt: "tôi — người nói", label: "tôi — người nói", correctWordId: "w-i" },
+        { id: "p-you", imageUrl: "/images/practice/pronouns/you.jpg", imageAlt: "bạn / các bạn — người nghe", label: "bạn / các bạn — người nghe", correctWordId: "w-you" },
+        { id: "p-he", imageUrl: "/images/practice/pronouns/he.jpg", imageAlt: "anh ấy — một người nam", label: "anh ấy — một người nam", correctWordId: "w-he" },
+        { id: "p-she", imageUrl: "/images/practice/pronouns/she.jpg", imageAlt: "cô ấy — một người nữ", label: "cô ấy — một người nữ", correctWordId: "w-she" },
+        { id: "p-it", imageUrl: "/images/practice/pronouns/it.jpg", imageAlt: "nó — đồ vật, con vật, sự việc", label: "nó — đồ vật, con vật, sự việc", correctWordId: "w-it" },
+        { id: "p-we", imageUrl: "/images/practice/pronouns/we.jpg", imageAlt: "chúng tôi / chúng ta", label: "chúng tôi / chúng ta", correctWordId: "w-we" },
+        { id: "p-they", imageUrl: "/images/practice/pronouns/they.jpg", imageAlt: "họ / chúng", label: "họ / chúng", correctWordId: "w-they" },
       ],
     },
     {
@@ -338,18 +273,17 @@ export const practiceDay01: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write sentences with pronouns.\nViết câu với đại từ (Pron).",
-      instruction:
-        "Write 5 sentences about you and your family. Use I, he, she, we, or they.\nViết 5 câu về bản thân và gia đình. Dùng I, he, she, we hoặc they.",
+      title: "Write about you and your family.\nViết về bạn và gia đình.",
+      instruction: "Write 4–5 sentences about you and your family. Use pronouns (I, he, she, we, they) and words from today: I, you, he, she, it.\nViết 4–5 câu về bạn và gia đình. Dùng đại từ (Pron) I, he, she, we, they và từ hôm nay (I, you, he, she, it, we, they).",
       promptHints: [
         "I am a student.",
-        "He is my brother.",
-        "She is my friend.",
-        "We are happy.",
-        "They are at home.",
+        "My father is at work. He is busy.",
+        "My mother is kind. She is at home.",
+        "My sister and I are happy. We are students.",
+        "My parents are tired. They are at home."
       ],
       sampleTitle: "Bài gợi ý",
-      sample: "I am a student.\nHe is my brother.\nShe is my friend.\nWe are happy.\nThey are at home.",
+      sample: "I am a student.\nMy father is at work. He is busy.\nMy mother is at home. She is kind.\nMy parents are happy. They love me.",
     },
   ],
 };

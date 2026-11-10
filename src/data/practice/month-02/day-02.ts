@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay02: PracticeLesson = {
-  meta: { ...createPracticeMeta(2, "I / You / We / They + động từ (V)", 2), totalScreens: 9 },
+  meta: { ...createPracticeMeta(2, "I / You / We / They + động từ (V)", 2), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(2, ""),
     vocabulary: [
@@ -87,26 +87,6 @@ export const practiceDay02: PracticeLesson = {
           label: "xem",
           correctWordId: "w-watch",
         },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Subject or verb?\nChủ ngữ (S) hay động từ (V)?",
-      instruction: "Drag each word into I/You/We/They or the base verb.\nKéo từ vào đúng nhóm: I/You/We/They hoặc động từ (V) nguyên mẫu.",
-      categories: [
-        { id: "cat-subj", label: "I / You / We / They" },
-        { id: "cat-verb", label: "Động từ (V) nguyên mẫu" },
-      ],
-      items: [
-        { id: "c-i", label: "I", correctCategoryId: "cat-subj" },
-        { id: "c-you", label: "You", correctCategoryId: "cat-subj" },
-        { id: "c-we", label: "We", correctCategoryId: "cat-subj" },
-        { id: "c-they", label: "They", correctCategoryId: "cat-subj" },
-        { id: "c-live", label: "live", correctCategoryId: "cat-verb" },
-        { id: "c-work", label: "work", correctCategoryId: "cat-verb" },
-        { id: "c-play", label: "play", correctCategoryId: "cat-verb" },
-        { id: "c-eat", label: "eat", correctCategoryId: "cat-verb" },
-        { id: "c-read", label: "read", correctCategoryId: "cat-verb" },
       ],
     },
     {
@@ -347,20 +327,16 @@ export const practiceDay02: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write I / You / We / They sentences.\nViết câu I / You / We / They.",
-      instruction:
-        "Write 4 sentences: I ..., You ..., We ..., They ... Use live, work, play, eat, read, or watch.\nViết 4 câu: I ..., You ..., We ..., They ... (dùng live, work, play, eat, read hoặc watch).",
+      title: "I / We + verb about family.\nI / We + động từ về gia đình.",
+      instruction: "Write 4 sentences with I / you / we / they + verb (no -s). Use: live, work, play, eat, drink.\nViết 4 câu I / you / we / they + động tủ (V) nguyên mẫu về bạn và gia đình.",
       promptHints: [
-        "I live in Bắc Ninh.",
-        "You work hard.",
-        "We study English.",
+        "I live in Hanoi.",
+        "We work hard.",
         "They play football.",
-        "I eat breakfast at 6.",
-        "We watch TV in the evening.",
+        "I eat rice every day."
       ],
       sampleTitle: "Bài gợi ý",
-      sample:
-        "I live in Bắc Ninh.\nYou work hard.\nWe study English.\nThey play football.",
+      sample: "I live in Hanoi with my family.\nWe study English.\nThey play football on Sunday.\nI drink water after sport.",
     },
   ],
 };

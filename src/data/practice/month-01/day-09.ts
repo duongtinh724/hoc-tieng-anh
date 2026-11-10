@@ -3,18 +3,18 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay09: PracticeLesson = {
-  meta: { ...createPracticeMeta(9, "Danh từ (N) số ít và số nhiều"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(9, "Danh từ (N) số ít và số nhiều"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(9, ""),
     vocabulary: [
-      { en: "books", vi: "những quyển sách" },
-      { en: "buses", vi: "những xe buýt" },
-      { en: "babies", vi: "những em bé" },
-      { en: "children", vi: "trẻ em" },
-      { en: "men", vi: "những người đàn ông" },
-      { en: "women", vi: "những người phụ nữ" },
-      { en: "people", vi: "mọi người" },
-    ],
+      { en: "book / books", vi: "một / nhiều sách" },
+      { en: "bus / buses", vi: "xe buýt" },
+      { en: "baby / babies", vi: "em bé" },
+      { en: "child / children", vi: "trẻ em" },
+      { en: "man / men", vi: "đàn ông" },
+      { en: "woman / women", vi: "phụ nữ" },
+      { en: "person / people", vi: "người / mọi người" },
+    ]
   },
   screens: [
     {
@@ -22,36 +22,22 @@ export const practiceDay09: PracticeLesson = {
       title: "One or many?\nMột hay nhiều?",
       instruction: "Match the word with the picture.\nNối từ với ảnh.",
       words: [
-        { id: "w-book", label: "book" },
-        { id: "w-books", label: "books" },
-        { id: "w-student", label: "student" },
-        { id: "w-children", label: "children" },
-        { id: "w-school", label: "school" },
+        { id: "w-book-books", label: "book / books" },
+        { id: "w-bus-buses", label: "bus / buses" },
+        { id: "w-baby-babies", label: "baby / babies" },
+        { id: "w-child-children", label: "child / children" },
+        { id: "w-man-men", label: "man / men" },
+        { id: "w-woman-women", label: "woman / women" },
+        { id: "w-person-people", label: "person / people" },
       ],
       pairs: [
-        { id: "p-book", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "một quyển sách", label: "một quyển sách", correctWordId: "w-book" },
-        { id: "p-books", imageUrl: "/images/practice/objects/books.jpg", imageAlt: "nhiều sách", label: "nhiều sách", correctWordId: "w-books" },
-        { id: "p-student", imageUrl: "/images/practice/nouns-photo/student.jpg", imageAlt: "học sinh", label: "một học sinh", correctWordId: "w-student" },
-        { id: "p-children", imageUrl: "/images/practice/tobe/children.jpg", imageAlt: "trẻ em", label: "trẻ em", correctWordId: "w-children" },
-        { id: "p-school", imageUrl: "/images/practice/nouns-photo/school.jpg", imageAlt: "trường", label: "trường", correctWordId: "w-school" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Singular or plural?\nSố ít hay số nhiều?",
-      instruction: "Drag each noun into singular or plural.\nKéo danh từ (N) vào số ít hoặc số nhiều.",
-      categories: [
-        { id: "cat-one", label: "Số ít" },
-        { id: "cat-many", label: "Số nhiều" },
-      ],
-      items: [
-        { id: "c-book", label: "book", correctCategoryId: "cat-one" },
-        { id: "c-child", label: "child", correctCategoryId: "cat-one" },
-        { id: "c-man", label: "man", correctCategoryId: "cat-one" },
-        { id: "c-books", label: "books", correctCategoryId: "cat-many" },
-        { id: "c-children", label: "children", correctCategoryId: "cat-many" },
-        { id: "c-men", label: "men", correctCategoryId: "cat-many" },
-        { id: "c-people", label: "people", correctCategoryId: "cat-many" },
+        { id: "p-book-books", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "một / nhiều sách", label: "một / nhiều sách", correctWordId: "w-book-books" },
+        { id: "p-bus-buses", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "xe buýt", label: "xe buýt", correctWordId: "w-bus-buses" },
+        { id: "p-baby-babies", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "em bé", label: "em bé", correctWordId: "w-baby-babies" },
+        { id: "p-child-children", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "trẻ em", label: "trẻ em", correctWordId: "w-child-children" },
+        { id: "p-man-men", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "đàn ông", label: "đàn ông", correctWordId: "w-man-men" },
+        { id: "p-woman-women", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "phụ nữ", label: "phụ nữ", correctWordId: "w-woman-women" },
+        { id: "p-person-people", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "người / mọi người", label: "người / mọi người", correctWordId: "w-person-people" },
       ],
     },
     {
@@ -135,11 +121,16 @@ export const practiceDay09: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Count and describe.\nĐếm và mô tả.",
-      instruction: "Write 5 sentences. Use both singular and plural nouns.\nViết 5 câu. Có cả danh từ (N) số ít và số nhiều.",
-      promptHints: ["One book, two books.", "The book is new.", "The books are new."],
+      title: "Count things at home.\nĐếm đồ ở nhà.",
+      instruction: "Write 4 sentences with singular and plural nouns about your family’s things.\nViết 4 câu có danh từ số ít và số nhiều về đồ của gia đình.",
+      promptHints: [
+        "I have one book.",
+        "We have two pens.",
+        "My parents have three bags.",
+        "The students are in class."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "The book is new.\nThe books are old.\nThe student is tall.\nThe students are happy.\nThe children are here.",
+      sample: "I have one book.\nWe have two pens.\nMy books are new.\nThe students are happy.",
     },
   ],
 };

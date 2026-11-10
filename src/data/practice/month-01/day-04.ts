@@ -3,16 +3,16 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay04: PracticeLesson = {
-  meta: { ...createPracticeMeta(4, "Câu phủ định với to be (V tobe)"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(4, "Câu phủ định với to be (V tobe)"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(4, ""),
     vocabulary: [
       { en: "not", vi: "không" },
-      { en: "isn't", vi: "không (he / she / it)" },
-      { en: "aren't", vi: "không (you / we / they)" },
+      { en: "isn't", vi: "không phải / không (số ít)" },
+      { en: "aren't", vi: "không phải / không (số nhiều, you)" },
       { en: "late", vi: "muộn, trễ" },
       { en: "expensive", vi: "đắt" },
-    ],
+    ]
   },
   screens: [
     {
@@ -21,36 +21,17 @@ export const practiceDay04: PracticeLesson = {
       instruction: "Match each word with a picture.\nNối từ với ảnh.",
       words: [
         { id: "w-not", label: "not" },
-        { id: "w-sad", label: "sad" },
-        { id: "w-tired", label: "tired" },
-        { id: "w-busy", label: "busy" },
-        { id: "w-home", label: "home" },
+        { id: "w-isn-t", label: "isn't" },
+        { id: "w-aren-t", label: "aren't" },
+        { id: "w-late", label: "late" },
+        { id: "w-expensive", label: "expensive" },
       ],
       pairs: [
-        { id: "p-not", imageUrl: "/images/practice/tobe/not.jpg", imageAlt: "không", label: "không", correctWordId: "w-not" },
-        { id: "p-sad", imageUrl: "/images/practice/adjectives/sad.jpg", imageAlt: "buồn", label: "buồn", correctWordId: "w-sad" },
-        { id: "p-tired", imageUrl: "/images/practice/tobe/tired.jpg", imageAlt: "mệt", label: "mệt", correctWordId: "w-tired" },
-        { id: "p-busy", imageUrl: "/images/practice/tobe/busy.jpg", imageAlt: "bận", label: "bận", correctWordId: "w-busy" },
-        { id: "p-home", imageUrl: "/images/practice/nouns-photo/house.jpg", imageAlt: "nhà", label: "nhà", correctWordId: "w-home" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "am not, isn't, or aren't?\nam not, isn't hay aren't?",
-      instruction: "Drag each sentence into the right negative form.\nKéo câu vào đúng dạng phủ định.",
-      categories: [
-        { id: "cat-am", label: "am not" },
-        { id: "cat-is", label: "isn't" },
-        { id: "cat-are", label: "aren't" },
-      ],
-      items: [
-        { id: "c-1", label: "I ___ tired.", correctCategoryId: "cat-am" },
-        { id: "c-2", label: "I ___ sad.", correctCategoryId: "cat-am" },
-        { id: "c-3", label: "He ___ a teacher.", correctCategoryId: "cat-is" },
-        { id: "c-4", label: "She ___ at home.", correctCategoryId: "cat-is" },
-        { id: "c-5", label: "It ___ new.", correctCategoryId: "cat-is" },
-        { id: "c-6", label: "We ___ busy.", correctCategoryId: "cat-are" },
-        { id: "c-7", label: "They ___ hungry.", correctCategoryId: "cat-are" },
+        { id: "p-not", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "không", label: "không", correctWordId: "w-not" },
+        { id: "p-isn-t", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "không phải / không (số ít)", label: "không phải / không (số ít)", correctWordId: "w-isn-t" },
+        { id: "p-aren-t", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "không phải / không (số nhiều, you)", label: "không phải / không (số nhiều, you)", correctWordId: "w-aren-t" },
+        { id: "p-late", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "muộn, trễ", label: "muộn, trễ", correctWordId: "w-late" },
+        { id: "p-expensive", imageUrl: "/images/practice/nouns-photo/book.jpg", imageAlt: "đắt", label: "đắt", correctWordId: "w-expensive" },
       ],
     },
     {
@@ -131,11 +112,16 @@ export const practiceDay04: PracticeLesson = {
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you. At least one sentence uses isn't or aren't about another person.\nViết 3 câu về bản thân. Ít nhất một câu dùng isn't hoặc aren't để nói về người khác.",
-      promptHints: ["I am not tired.", "He isn't a teacher.", "They aren't hungry."],
+      title: "Write about you and your family.\nViết về bạn và gia đình.",
+      instruction: "Write 4 sentences: 2 about you (I am not…), 2 about family with isn't / aren't.\nViết 4 câu: 2 về bạn (I am not…), 2 về người thân với isn't / aren't.",
+      promptHints: [
+        "I am not tired.",
+        "I am not sad.",
+        "My father isn't at home.",
+        "My sisters aren't at school."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "I am not tired.\nHe isn't a teacher.\nThey aren't hungry.",
+      sample: "I am not tired.\nI am not angry.\nMy father isn't at home.\nMy friends aren't busy.",
     },
   ],
 };

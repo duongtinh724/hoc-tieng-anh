@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay23: PracticeLesson = {
-  meta: { ...createPracticeMeta(23, "When, why, how"), totalScreens: 8 },
+  meta: { ...createPracticeMeta(23, "When, why, how"), totalScreens: 7 },
   hints: {
     rules: getRulesForDay(23, ""),
     vocabulary: [
@@ -12,7 +12,7 @@ export const practiceDay23: PracticeLesson = {
       { en: "tired", vi: "mệt" },
       { en: "class", vi: "lớp" },
       { en: "happy", vi: "vui" },
-    ],
+    ]
   },
   screens: [
     {
@@ -20,33 +20,18 @@ export const practiceDay23: PracticeLesson = {
       title: "Match the words.\nNối từ.",
       instruction: "Match each word with a picture.\nNối từ với ảnh.",
       words: [
+        { id: "w-morning", label: "morning" },
         { id: "w-sad", label: "sad" },
         { id: "w-tired", label: "tired" },
         { id: "w-class", label: "class" },
         { id: "w-happy", label: "happy" },
       ],
       pairs: [
+        { id: "p-morning", imageUrl: "/images/practice/grammar/morning.jpg", imageAlt: "buổi sáng", label: "buổi sáng", correctWordId: "w-morning" },
         { id: "p-sad", imageUrl: "/images/practice/adjectives/sad.jpg", imageAlt: "buồn", label: "buồn", correctWordId: "w-sad" },
         { id: "p-tired", imageUrl: "/images/practice/tobe/tired.jpg", imageAlt: "mệt", label: "mệt", correctWordId: "w-tired" },
         { id: "p-class", imageUrl: "/images/practice/tobe/class.jpg", imageAlt: "lớp", label: "lớp", correctWordId: "w-class" },
         { id: "p-happy", imageUrl: "/images/practice/adjectives/happy.jpg", imageAlt: "vui", label: "vui", correctWordId: "w-happy" },
-      ],
-    },
-    {
-      type: "categorize",
-      title: "Sort the words.\nPhân loại từ.",
-      instruction: "Drag each word into a group.\nKéo từ vào một nhóm.",
-      categories: [
-        { id: "cat-a", label: "Có am / is / are" },
-        { id: "cat-b", label: "Không có am / is / are" },
-      ],
-      items: [
-        { id: "c-1", label: "When is the class?", correctCategoryId: "cat-a" },
-        { id: "c-2", label: "It is in the morning.", correctCategoryId: "cat-a" },
-        { id: "c-3", label: "Why are you sad?", correctCategoryId: "cat-a" },
-        { id: "c-4", label: "Because I am tired.", correctCategoryId: "cat-a" },
-        { id: "c-5", label: "How are you?", correctCategoryId: "cat-a" },
-        { id: "c-x", label: "I like music.", correctCategoryId: "cat-b" },
       ],
     },
     {
@@ -120,15 +105,20 @@ export const practiceDay23: PracticeLesson = {
         { id: "dic-3", text: "Why are you sad?", hint: "Sao bạn buồn?" },
         { id: "dic-4", text: "Because I am tired.", hint: "Vì tôi mệt." },
         { id: "dic-5", text: "How are you?", hint: "Bạn khỏe không?" },
+        { id: "dic-6", text: "I am fine, thank you.", hint: "Tôi khỏe, cảm ơn." },
       ],
     },
     {
       type: "self-writing",
-      title: "Write about you.\nViết về bạn.",
-      instruction: "Write 3 sentences about you.\nViết 3 câu về bạn.",
-      promptHints: ["When is the class?"],
+      title: "Ask about feelings and time.\nHỏi cảm xúc và thời gian.",
+      instruction: "Write 4 sentences with When / Why / How about you or family. Use: morning, sad, tired, class, happy.\nViết 4 câu When / Why / How về bạn hoặc gia đình.",
+      promptHints: [
+        "When is your class? It is in the morning.",
+        "Why are you tired? Because I study a lot.",
+        "How is your mother? She is fine."
+      ],
       sampleTitle: "Bài gợi ý",
-      sample: "When is the class?\nIt is in the morning.\nWhy are you sad?\nBecause I am tired.",
+      sample: "When is your English class? It is in the morning.\nWhy are you sad? Because I am tired.\nHow are you? I am fine.\nHow is your father? He is busy.",
     },
   ],
 };
