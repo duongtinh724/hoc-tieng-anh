@@ -13,6 +13,7 @@ import {
   STORAGE_KEY,
 } from "@/lib/constants";
 import { hasPracticeLesson } from "@/data/practice";
+import { isPracticeSessionOpen } from "@/lib/practice/practice-unlock";
 import { readAppUrl, writeAppUrl } from "@/lib/app-url";
 import { getPracticeCompletionKey } from "@/lib/practice/progress";
 import type { AppSection, LessonState } from "@/types/lesson";
@@ -41,7 +42,8 @@ function applyUrlView(raw: LessonState): LessonState {
   const openPracticeDay =
     page === "practice" &&
     typeof lessonDay === "number" &&
-    hasPracticeLesson(month, lessonDay)
+    hasPracticeLesson(month, lessonDay) &&
+    isPracticeSessionOpen(month, lessonDay)
       ? lessonDay
       : null;
 
@@ -154,11 +156,16 @@ export function useLessonState() {
   }, [setActiveSection]);
 
   const setOpenPracticeDay = useCallback((day: number | null) => {
-    setState((prev) => ({
-      ...prev,
-      activeSection: "practice",
-      openPracticeDay: day,
-    }));
+    setState((prev) => {
+      if (day !== null && !isPracticeSessionOpen(prev.month, day)) {
+        return { ...prev, activeSection: "practice", openPracticeDay: null };
+      }
+      return {
+        ...prev,
+        activeSection: "practice",
+        openPracticeDay: day,
+      };
+    });
   }, []);
 
   const setWeek = useCallback((week: number) => {

@@ -7,6 +7,7 @@ import {
   getPracticeCompletionTier,
   getPracticeCompletionTooltip,
 } from "@/lib/practice/progress";
+import { isPracticeSessionOpen } from "@/lib/practice/practice-unlock";
 import type { MonthConfig } from "@/types/lesson";
 
 interface PracticeMenuPanelProps {
@@ -43,8 +44,12 @@ export function PracticeMenuPanel({
 
       <ul className="practice-day-list">
         {days.map((day) => {
-          const available = hasPracticeLesson(monthConfig.id, day.day);
-          const practice = available
+          const hasPractice = hasPracticeLesson(monthConfig.id, day.day);
+          const sessionOpen = hasPractice
+            ? isPracticeSessionOpen(monthConfig.id, day.day)
+            : false;
+          const canStart = hasPractice && sessionOpen;
+          const practice = hasPractice
             ? getPracticeLesson(monthConfig.id, day.day)
             : null;
           const completionCount = getPracticeCompletionCount(
@@ -65,8 +70,8 @@ export function PracticeMenuPanel({
             <li key={day.day}>
               <button
                 type="button"
-                className={`practice-day-card${available ? "" : " is-unavailable"}${hasQuizScore ? " practice-day-card--done" : ""}${tier !== "none" ? ` practice-day-card--${tier}` : ""}`}
-                disabled={!available}
+                className={`practice-day-card${canStart ? "" : " is-unavailable"}${hasQuizScore ? " practice-day-card--done" : ""}${tier !== "none" ? ` practice-day-card--${tier}` : ""}`}
+                disabled={!canStart}
                 title={
                   isTest
                     ? `Ngày kiểm tra: ${day.title}`
@@ -74,7 +79,9 @@ export function PracticeMenuPanel({
                       ? `Ngày ôn tập: ${day.title}`
                       : day.title
                 }
-                onClick={() => onStartPractice(day.day)}
+                onClick={() => {
+                  if (canStart) onStartPractice(day.day);
+                }}
               >
                 <span className="practice-day-card-num">Ngày {day.day}</span>
                 <span className="practice-day-card-body">
@@ -84,11 +91,13 @@ export function PracticeMenuPanel({
                     {isReview ? <span className="day-kind-tag is-review">↻ Ôn tập</span> : null}
                   </strong>
                   <span className="practice-day-card-meta">
-                    {available
-                      ? isQuiz
-                        ? `${practice?.meta.title ?? day.title} · 30 câu`
-                        : `${practice?.meta.title ?? day.title} · 8 bài`
-                      : "Sắp có"}
+                    {!hasPractice
+                      ? "Sắp có"
+                      : !sessionOpen
+                        ? "Chưa mở"
+                        : isQuiz
+                          ? `${practice?.meta.title ?? day.title} · đề kiểm tra`
+                          : `${practice?.meta.title ?? day.title} · 8 bài`}
                   </span>
                 </span>
                 {hasQuizScore ? (
@@ -97,7 +106,7 @@ export function PracticeMenuPanel({
                   >
                     {Number.isInteger(quizScore) ? quizScore : quizScore.toFixed(1)}/10
                   </span>
-                ) : available && completionCount > 0 ? (
+                ) : canStart && completionCount > 0 ? (
                   <span
                     className={`practice-completion-badge practice-completion-badge--${tier}`}
                     title={getPracticeCompletionTooltip(completionCount)}
@@ -110,8 +119,10 @@ export function PracticeMenuPanel({
                       {getPracticeCompletionTooltip(completionCount)}
                     </span>
                   </span>
-                ) : available ? (
+                ) : canStart ? (
                   <span className="practice-day-card-action">Bắt đầu →</span>
+                ) : hasPractice && !sessionOpen ? (
+                  <span className="practice-day-card-meta">Chưa mở</span>
                 ) : null}
               </button>
             </li>

@@ -266,6 +266,10 @@ export interface ExamQuestion {
   topic: string;
   options?: ExamChoice[];
   passageId?: string;
+  /** Optional auto-marking rubric for writing questions. */
+  writingRubric?: "intro" | "family";
+  writingWordRange?: { min: number; max: number };
+  writingPlaceholder?: string;
 }
 
 export interface ExamSection {

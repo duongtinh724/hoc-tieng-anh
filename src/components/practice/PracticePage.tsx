@@ -10,6 +10,10 @@ import { ScreenRenderer } from "@/components/practice/exercises/ScreenRenderer";
 import { hasPracticeLesson } from "@/data/practice";
 import { usePracticeSession } from "@/hooks/usePracticeSession";
 import { gradeExam } from "@/lib/practice/grade-exam";
+import {
+  isPracticeSessionOpen,
+  PRACTICE_LOCKED_MESSAGE,
+} from "@/lib/practice/practice-unlock";
 
 interface PracticePageProps {
   month: number;
@@ -20,6 +24,7 @@ interface PracticePageProps {
 }
 
 export function PracticePage({ month, day, onClose, onComplete, onQuizScore }: PracticePageProps) {
+  const locked = hasPracticeLesson(month, day) && !isPracticeSessionOpen(month, day);
   const session = usePracticeSession(month, day);
   const completionRecordedRef = useRef(false);
   const quizRecordedRef = useRef(false);
@@ -59,7 +64,19 @@ export function PracticePage({ month, day, onClose, onComplete, onQuizScore }: P
 
   return (
     <PracticeAntdProvider>
-      {!hasPracticeLesson(month, day) || !session.lesson || !session.screen || !session.state ? (
+      {locked ? (
+        <div className="practice-overlay">
+          <Result
+            status="warning"
+            title={PRACTICE_LOCKED_MESSAGE}
+            extra={
+              <Button type="primary" onClick={onClose}>
+                Quay lại
+              </Button>
+            }
+          />
+        </div>
+      ) : !hasPracticeLesson(month, day) || !session.lesson || !session.screen || !session.state ? (
         <div className="practice-overlay">
           <Result
             status="info"

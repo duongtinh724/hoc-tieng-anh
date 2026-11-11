@@ -22,6 +22,7 @@ export interface ExamWritingBreakdown {
   structure: number;
   length: number;
   notes: string[];
+  rubric?: "intro" | "family";
 }
 
 export interface ExamSectionScore {
@@ -76,6 +77,78 @@ function matchesAccepted(value: string, accepted: string[]): boolean {
 
 function roundScore(value: number): number {
   return Math.round(value * 100) / 100;
+}
+
+/** Month 01 Week 3 — family / school / house (max 2.0). */
+function gradeFamilyWriting(text: string): { earned: number; breakdown: ExamWritingBreakdown } {
+  const notes: string[] = [];
+  const lower = text.toLowerCase();
+  const words = countWords(text);
+  const sentences = text
+    .split(/[.!?]+/)
+    .map((item) => item.trim())
+    .filter(Boolean).length;
+
+  let info = 0.5;
+  const topicHits = [
+    /family|father|mother|sister|brother|parents/.test(lower),
+    /school|study|class|teacher|student/.test(lower),
+    /house|home|room|bedroom/.test(lower),
+  ].filter(Boolean).length;
+  if (sentences < 4) {
+    info = sentences >= 2 ? 0.25 : 0;
+    notes.push("Nên viết 4–5 câu về gia đình, trường và nhà.");
+  } else if (topicHits < 2) {
+    info = 0.35;
+    notes.push("Thêm ý về gia đình, trường học hoặc ngôi nhà.");
+  }
+
+  const beErrors = [
+    /\bi is\b/,
+    /\bi are\b/,
+    /\bthey is\b/,
+    /\bwe is\b/,
+    /\bshe are\b/,
+    /\bhe are\b/,
+  ].filter((pattern) => pattern.test(lower)).length;
+  let toBe = 0.5;
+  if (beErrors > 0) {
+    toBe = Math.max(0, 0.5 - beErrors * 0.15);
+    notes.push("Kiểm tra chủ ngữ và động từ (I am, she is, they are…).");
+  }
+
+  let articles = 0.5;
+  const grammarHits = [
+    /\bhave\b|\bhas\b/.test(lower),
+    /\bthere is\b|\bthere are\b/.test(lower),
+    /\bmy\b|\bhis\b|\bher\b|\bour\b|\btheir\b/.test(lower),
+  ].filter(Boolean).length;
+  if (grammarHits < 2) {
+    articles = grammarHits === 1 ? 0.25 : 0;
+    notes.push("Dùng have/has, there is/there are hoặc tính từ sở hữu (my, his…).");
+  }
+
+  let structure = 0.5;
+  if (words < 12) {
+    structure = 0.2;
+    notes.push("Câu còn quá ngắn — thêm vài từ cho rõ nghĩa.");
+  } else if (sentences < 3) {
+    structure = 0.3;
+  }
+
+  const earned = roundScore(info + toBe + articles + structure);
+  return {
+    earned,
+    breakdown: {
+      info,
+      toBe,
+      articles,
+      structure,
+      length: 0,
+      notes,
+      rubric: "family",
+    },
+  };
 }
 
 function gradeWriting(text: string): { earned: number; breakdown: ExamWritingBreakdown } {
@@ -156,12 +229,15 @@ function gradeWriting(text: string): { earned: number; breakdown: ExamWritingBre
   const earned = roundScore(info + toBe + articles + structure + length);
   return {
     earned,
-    breakdown: { info, toBe, articles, structure, length, notes },
+    breakdown: { info, toBe, articles, structure, length, notes, rubric: "intro" },
   };
 }
 
 function displayCorrectAnswer(question: ExamQuestion, raw: string | string[] | undefined): string {
   if (question.kind === "writing") {
+    if (question.writingRubric === "family") {
+      return "4–5 câu về gia đình, trường và nhà (have/has, there is/are, my…).";
+    }
     return "Đoạn 40–60 từ: tên, tuổi, quê, nơi ở, gia đình, sở thích.";
   }
   if (question.options && typeof raw === "string") {
@@ -181,10 +257,16 @@ export function gradeExam(config: ExamExerciseConfig, state: ScreenState): ExamG
 
     if (!unanswered) {
       if (question.kind === "writing") {
-        const graded = gradeWriting(rawAnswer);
+        const graded =
+          question.writingRubric === "family"
+            ? gradeFamilyWriting(rawAnswer)
+            : gradeWriting(rawAnswer);
         writing = graded.breakdown;
-        earned = graded.earned;
-        correct = earned >= 0.7;
+        earned =
+          question.writingRubric === "family"
+            ? graded.earned
+            : roundScore(graded.earned * question.points);
+        correct = earned >= question.points * 0.6;
       } else if (question.options && typeof key === "string") {
         correct = rawAnswer === key;
         earned = correct ? question.points : 0;

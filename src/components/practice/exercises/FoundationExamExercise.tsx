@@ -123,11 +123,11 @@ export function FoundationExamExercise({
           <ul className="exam-intro-meta">
             <li>
               <span>Duration</span>
-              <strong>40 minutes</strong>
+              <strong>{Math.round(config.timeLimitSeconds / 60)} minutes</strong>
             </li>
             <li>
               <span>Questions</span>
-              <strong>27</strong>
+              <strong>{config.questions.length}</strong>
             </li>
             <li>
               <span>Maximum score</span>
@@ -333,7 +333,9 @@ function QuestionCard({
   onTextChange: (questionId: string, value: string) => void;
 }) {
   const words = countWords(value);
-  const wordState = words >= 40 && words <= 60 ? "is-ok" : words > 0 ? "is-warn" : "";
+  const minWords = question.writingWordRange?.min ?? 40;
+  const maxWords = question.writingWordRange?.max ?? 60;
+  const wordState = words >= minWords && words <= maxWords ? "is-ok" : words > 0 ? "is-warn" : "";
 
   return (
     <article
@@ -371,10 +373,13 @@ function QuestionCard({
             value={value}
             disabled={disabled}
             onChange={(event) => onTextChange(question.id, event.target.value)}
-            placeholder="My name is Nam. I am 15 years old. I am from Vietnam..."
+            placeholder={
+              question.writingPlaceholder ??
+              "My name is Nam. I am 15 years old. I am from Vietnam..."
+            }
           />
           <p className={`exam-wordcount ${wordState}`}>
-            {words} words · 40–60 required
+            {words} words · {minWords}–{maxWords} suggested
           </p>
         </div>
       ) : (
@@ -454,11 +459,22 @@ function ExamResults({
             This score follows a fixed checklist. A teacher can still adjust it later. It is not AI marking.
           </p>
           <ul>
-            <li>Personal information: {formatScore(grade.writing.info)} / 0.25</li>
-            <li>Pronouns and verb to be: {formatScore(grade.writing.toBe)} / 0.25</li>
-            <li>Nouns and articles: {formatScore(grade.writing.articles)} / 0.20</li>
-            <li>Sentence structure: {formatScore(grade.writing.structure)} / 0.20</li>
-            <li>Length 40–60 words: {formatScore(grade.writing.length)} / 0.10</li>
+            {grade.writing.rubric === "family" ? (
+              <>
+                <li>Số câu + đúng chủ đề: {formatScore(grade.writing.info)} / 0.5</li>
+                <li>Chủ ngữ và động từ: {formatScore(grade.writing.toBe)} / 0.5</li>
+                <li>have/has, there is/are, sở hữu: {formatScore(grade.writing.articles)} / 0.5</li>
+                <li>Trật tự từ và từ vựng: {formatScore(grade.writing.structure)} / 0.5</li>
+              </>
+            ) : (
+              <>
+                <li>Personal information: {formatScore(grade.writing.info)} / 0.25</li>
+                <li>Pronouns and verb to be: {formatScore(grade.writing.toBe)} / 0.25</li>
+                <li>Nouns and articles: {formatScore(grade.writing.articles)} / 0.20</li>
+                <li>Sentence structure: {formatScore(grade.writing.structure)} / 0.20</li>
+                <li>Length 40–60 words: {formatScore(grade.writing.length)} / 0.10</li>
+              </>
+            )}
           </ul>
           {grade.writing.notes.length > 0 ? (
             <ul className="exam-notes">
