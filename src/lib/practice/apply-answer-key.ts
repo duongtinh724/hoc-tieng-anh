@@ -92,6 +92,15 @@ export function applyAnswerKey(
         answers[prompt.id] = prompt.correctAnswers[0];
       });
       break;
+    case "reading-comprehension":
+      screen.questions.forEach((question) => {
+        if (question.kind === "choice") {
+          answers[question.id] = question.correctOptionId;
+        } else {
+          answers[question.id] = question.correctAnswers[0];
+        }
+      });
+      break;
     case "dictation":
       screen.items.forEach((item) => {
         answers[item.id] = item.text;

@@ -58,6 +58,15 @@ export function shuffleScreen(screen: PracticeScreenConfig): PracticeScreenConfi
         ...screen,
         prompts: shuffleArray(screen.prompts),
       };
+    case "reading-comprehension":
+      return {
+        ...screen,
+        questions: shuffleArray(screen.questions).map((question) =>
+          question.kind === "choice"
+            ? { ...question, options: shuffleArray(question.options) }
+            : question,
+        ),
+      };
     case "self-writing":
       return screen.promptHints
         ? { ...screen, promptHints: shuffleArray(screen.promptHints) }

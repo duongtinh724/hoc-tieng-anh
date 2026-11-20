@@ -590,44 +590,71 @@ export const DAY_RULES: Record<number, RuleItem[]> = {
   ],
   29: [
     {
-      text: "Hiện tại đơn (Present Simple) nói thói quen, sự thật, sở thích.",
-      example: "I get up at 6 a.m.",
-      exampleVi: "Tôi thức dậy lúc 6 giờ.",
-      examples: [
-        { en: "I get up at 6 a.m.", vi: "Thói quen: Tôi thức dậy lúc 6 giờ." },
-        { en: "She goes to school every day.", vi: "Thói quen: Cô ấy đi học mỗi ngày." },
-        { en: "The sun rises in the east.", vi: "Sự thật: Mặt trời mọc ở hướng Đông." },
-        { en: "I like English.", vi: "Sở thích: Tôi thích tiếng Anh." },
-        { en: "He loves football.", vi: "Sở thích: Cậu ấy thích bóng đá." },
-      ],
-    },
-    {
-      text: "To be (V tobe): S + am / is / are + …\nI am · He/She/It is · You/We/They are",
-      example: "I am a student.",
-      exampleVi: "Tôi là học sinh.",
+      text: "THÌ HIỆN TẠI ĐƠN (Present Simple) — dùng khi nào?",
+      example: "I study every day.",
+      exampleVi: "Tôi học mỗi ngày.",
+      detail:
+        "Hiện tại đơn (Present Simple) là thì nói về hiện tại theo kiểu «luôn luôn / thường xuyên», không chỉ đúng một lần.\n" +
+        "Hôm nay học câu khẳng định (A1): nêu điều đúng, quen thuộc, hoặc sự thật — không phủ định, không hỏi.",
       table: {
-        headers: ["Tiếng Anh", "Tiếng Việt"],
+        headers: ["Dùng để", "Ví dụ", "Từ gợi ý (hay đi kèm)"],
         rows: [
-          ["I am a student.", "Tôi là học sinh."],
-          ["She is beautiful.", "Cô ấy xinh đẹp."],
-          ["He is a teacher.", "Anh ấy là giáo viên."],
-          ["They are happy.", "Họ vui vẻ."],
-          ["We are friends.", "Chúng tôi là bạn bè."],
+          ["Thói quen hằng ngày", "I get up at 6 a.m.", "every day, every morning, at 7 o'clock"],
+          ["Sự việc lặp đi lặp lại", "We go to school.", "always, usually, often, sometimes"],
+          ["Sự thật hiển nhiên", "The sun rises in the east.", "luôn đúng, không phụ thuộc ngày nào"],
+          ["Sở thích, cảm xúc", "I like English. They are happy.", "like, love, hate · happy, sad, tired"],
         ],
       },
-      note: "To be (V tobe) đi với danh từ, tính từ hoặc nơi chốn.\nI am a student. (danh từ)\nShe is happy. (tính từ)\nThey are at school. (nơi chốn)",
+      examples: [
+        { en: "I get up at 6 a.m.", vi: "Thói quen mỗi ngày." },
+        { en: "She goes to school every day.", vi: "Việc lặp lại (she → goes; học kỹ ngày 30)." },
+        { en: "The sun rises in the east.", vi: "Sự thật luôn đúng." },
+        { en: "I like English.", vi: "Sở thích (động từ thường)." },
+        { en: "They are happy.", vi: "Cảm xúc (dùng to be)." },
+      ],
+      note:
+        "Nhiều câu Present Simple dùng every day, always, usually… nhưng không bắt buộc phải có.\n" +
+        "To be (am/is/are) và động từ thường (study, play…) đều thuộc hiện tại đơn — phân biệt ở quy tắc 2 và 3.",
     },
     {
-      text: "Động từ thường (V): I / You / We / They + V nguyên mẫu",
+      text: "Câu khẳng định (A1) — Nhóm 1: To be (V tobe)\nS + am / is / are + …",
+      example: "I am a student.",
+      exampleVi: "Tôi là học sinh.",
+      detail:
+        "Dùng khi nói ai là gì, ở đâu, cảm thấy thế nào.\n" +
+        "I → am · He / She / It → is · You / We / They → are.",
+      table: {
+        headers: ["Chủ ngữ (S)", "To be", "Ví dụ"],
+        rows: [
+          ["I", "am", "I am a student."],
+          ["He / She / It", "is", "She is happy."],
+          ["You / We / They", "are", "They are at school."],
+        ],
+      },
+      examples: [
+        { en: "I am a student.", vi: "Danh từ: tôi là học sinh." },
+        { en: "She is beautiful.", vi: "Tính từ: cô ấy xinh đẹp." },
+        { en: "They are at school.", vi: "Nơi chốn: họ ở trường." },
+      ],
+      note: "Không nhầm với động từ thường: I am happy. (đúng) — I happy. (sai).",
+    },
+    {
+      text: "Câu khẳng định (A1) — Nhóm 2: Động từ thường (V)\nI / You / We / They + V (nguyên mẫu)",
       example: "I play football.",
       exampleVi: "Tôi chơi bóng đá.",
+      detail:
+        "Dùng cho hành động, sở thích: học, chơi, đi, thích…\n" +
+        "Chủ ngữ I / You / We / They: động từ (V) **không** thêm -s.",
       examples: [
         { en: "I play football.", vi: "Tôi chơi bóng đá." },
         { en: "You like music.", vi: "Bạn thích nhạc." },
         { en: "We study English.", vi: "Chúng tôi học tiếng Anh." },
         { en: "They go to school.", vi: "Họ đi học." },
+        { en: "I study every day.", vi: "Thói quen + every day." },
       ],
-      note: "He / She / It + V-s. Ví dụ: She goes to school every day. Học kỹ ngày 30.",
+      note:
+        "He / She / It + V-s/es (She studies. He goes.) — học chi tiết **ngày 30**.\n" +
+        "Công thức tóm tắt: S + am/is/are + … HOẶC S + V (I/You/We/They).",
     },
   ],
   30: [

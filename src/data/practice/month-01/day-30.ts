@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay30: PracticeLesson = {
-  meta: { ...createPracticeMeta(30, "He, she, it thêm -s"), totalScreens: 7 },
+  meta: { ...createPracticeMeta(30, "He, she, it thêm -s"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(30, ""),
     vocabulary: [
@@ -93,6 +93,78 @@ export const practiceDay30: PracticeLesson = {
         { id: "rf2", label: "She ___ English.", correctAnswers: ["studies"] },
         { id: "rf3", label: "Nam ___ to school.", correctAnswers: ["goes"] },
         { id: "rf4", label: "She ___ football.", correctAnswers: ["plays"] },
+      ],
+    },
+    {
+      type: "reading-comprehension",
+      title: "Read the passage.\nĐọc hiểu.",
+      instruction:
+        "Read the passage. Notice he / she / it + verb-s.\nĐọc đoạn văn. Chú ý he / she / it + động tủ -s.",
+      passageTitle: "Lan's family",
+      passage:
+        "My name is Lan. I am a student. My brother Nam is fifteen. He likes music and reads books every evening.\n\n" +
+        "My mother studies English at home. She goes to the market on Sunday. I play football with my friends after school. My father works in a big school.",
+      questions: [
+        {
+          id: "rc1",
+          kind: "choice",
+          prompt: "What does Nam like?",
+          options: [
+            { id: "rc1-a", label: "Football" },
+            { id: "rc1-b", label: "Music" },
+            { id: "rc1-c", label: "English only" },
+            { id: "rc1-d", label: "The market" },
+          ],
+          correctOptionId: "rc1-b",
+          explanation: "He likes music.",
+        },
+        {
+          id: "rc2",
+          kind: "choice",
+          prompt: "What does Nam read every evening?",
+          options: [
+            { id: "rc2-a", label: "Books" },
+            { id: "rc2-b", label: "Football" },
+            { id: "rc2-c", label: "Music" },
+            { id: "rc2-d", label: "English lessons" },
+          ],
+          correctOptionId: "rc2-a",
+          explanation: "He … reads books every evening.",
+        },
+        {
+          id: "rc3",
+          kind: "choice",
+          prompt: "When does Lan's mother go to the market?",
+          options: [
+            { id: "rc3-a", label: "Every evening" },
+            { id: "rc3-b", label: "On Sunday" },
+            { id: "rc3-c", label: "After school" },
+            { id: "rc3-d", label: "Every morning" },
+          ],
+          correctOptionId: "rc3-b",
+          explanation: "She goes to the market on Sunday.",
+        },
+        {
+          id: "rc4",
+          kind: "choice",
+          prompt: "What does Lan play after school?",
+          options: [
+            { id: "rc4-a", label: "Books" },
+            { id: "rc4-b", label: "Music" },
+            { id: "rc4-c", label: "Football" },
+            { id: "rc4-d", label: "English" },
+          ],
+          correctOptionId: "rc4-c",
+          explanation: "I play football with my friends after school.",
+        },
+        {
+          id: "rc5",
+          kind: "text",
+          prompt: "What does Lan's mother study? (short answer)",
+          correctAnswers: ["She studies English.", "English", "She studies English at home."],
+          alternatives: ["Studies English"],
+          explanation: "My mother studies English at home.",
+        },
       ],
     },
     {

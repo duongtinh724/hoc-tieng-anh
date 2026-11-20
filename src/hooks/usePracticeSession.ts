@@ -277,6 +277,7 @@ export function usePracticeSession(month: number, day: number) {
         screen.type === "reorder" ||
         screen.type === "reading-fill" ||
         screen.type === "extended-reading" ||
+        screen.type === "reading-comprehension" ||
         screen.type === "quiz"
       ) {
         playWrongSound();

@@ -3,7 +3,7 @@ import { createPracticeMeta } from "@/data/practice/shared";
 import type { PracticeLesson } from "@/types/practice";
 
 export const practiceDay29: PracticeLesson = {
-  meta: { ...createPracticeMeta(29, "Hiện tại đơn: câu khẳng định"), totalScreens: 7 },
+  meta: { ...createPracticeMeta(29, "Hiện tại đơn: câu khẳng định"), totalScreens: 8 },
   hints: {
     rules: getRulesForDay(29, ""),
     vocabulary: [
@@ -93,6 +93,78 @@ export const practiceDay29: PracticeLesson = {
         { id: "rf2", label: "I ___ every day.", correctAnswers: ["study"] },
         { id: "rf3", label: "I ___ football.", correctAnswers: ["play"] },
         { id: "rf4", label: "You ___ music.", correctAnswers: ["like"] },
+      ],
+    },
+    {
+      type: "reading-comprehension",
+      title: "Read the passage.\nĐọc hiểu.",
+      instruction:
+        "Read the passage carefully. Answer every question.\nĐọc kỹ đoạn văn rồi trả lời hết các câu.",
+      passageTitle: "My school days",
+      passage:
+        "My name is Nam. I am fifteen years old. I am a student. I study English every day. After school, I play football with my friends.\n\n" +
+        "My sister is in grade eight. She likes music and reads books at home. We go to school together every morning. My mother is a teacher. They are happy.",
+      questions: [
+        {
+          id: "rc1",
+          kind: "choice",
+          prompt: "How old is Nam?",
+          options: [
+            { id: "rc1-a", label: "Thirteen years old." },
+            { id: "rc1-b", label: "Fourteen years old." },
+            { id: "rc1-c", label: "Fifteen years old." },
+            { id: "rc1-d", label: "Sixteen years old." },
+          ],
+          correctOptionId: "rc1-c",
+          explanation: "Đoạn văn viết I am fifteen years old.",
+        },
+        {
+          id: "rc2",
+          kind: "choice",
+          prompt: "What does Nam do every day?",
+          options: [
+            { id: "rc2-a", label: "He plays football only." },
+            { id: "rc2-b", label: "He studies English." },
+            { id: "rc2-c", label: "He reads books." },
+            { id: "rc2-d", label: "He teaches English." },
+          ],
+          correctOptionId: "rc2-b",
+          explanation: "Câu I study English every day.",
+        },
+        {
+          id: "rc3",
+          kind: "choice",
+          prompt: "What does Nam play after school?",
+          options: [
+            { id: "rc3-a", label: "Music" },
+            { id: "rc3-b", label: "Books" },
+            { id: "rc3-c", label: "Football" },
+            { id: "rc3-d", label: "English" },
+          ],
+          correctOptionId: "rc3-c",
+          explanation: "After school, I play football with my friends.",
+        },
+        {
+          id: "rc4",
+          kind: "choice",
+          prompt: "Who likes music?",
+          options: [
+            { id: "rc4-a", label: "Nam" },
+            { id: "rc4-b", label: "His sister" },
+            { id: "rc4-c", label: "His mother" },
+            { id: "rc4-d", label: "His friends" },
+          ],
+          correctOptionId: "rc4-b",
+          explanation: "My sister … She likes music.",
+        },
+        {
+          id: "rc5",
+          kind: "text",
+          prompt: "What do Nam and his sister do every morning? (short answer)",
+          correctAnswers: ["They go to school.", "They go to school", "We go to school together."],
+          alternatives: ["Go to school", "go to school together"],
+          explanation: "We go to school together every morning.",
+        },
       ],
     },
     {

@@ -7,6 +7,7 @@ import { DictationExercise } from "@/components/practice/exercises/DictationExer
 import { MatchExercise } from "@/components/practice/exercises/MatchExercise";
 import { FoundationExamExercise } from "@/components/practice/exercises/FoundationExamExercise";
 import { QuizExercise } from "@/components/practice/exercises/QuizExercise";
+import { ReadingComprehensionExercise } from "@/components/practice/exercises/ReadingComprehensionExercise";
 import { ReadingFillExercise } from "@/components/practice/exercises/ReadingFillExercise";
 import { ReorderExercise } from "@/components/practice/exercises/ReorderExercise";
 import { SelfWritingExercise } from "@/components/practice/exercises/SelfWritingExercise";
@@ -91,6 +92,15 @@ function renderExercise(props: ScreenRendererProps) {
     case "extended-reading":
       return (
         <ReadingFillExercise config={screen} state={state} onChange={onTextChange} />
+      );
+    case "reading-comprehension":
+      return (
+        <ReadingComprehensionExercise
+          config={screen}
+          state={state}
+          onSelect={onAssign}
+          onTextChange={onTextChange}
+        />
       );
     case "dictation":
       return (

@@ -7,6 +7,7 @@ import { SELF_WRITING_ANSWER_ID } from "@/lib/practice/self-writing";
 import type {
   ItemState,
   PracticeScreenConfig,
+  ReadingComprehensionQuestion,
   ScreenState,
   ScreenValidation,
 } from "@/types/practice";
@@ -26,6 +27,17 @@ export function matchesDictation(value: string, expected: string): boolean {
 function matchesAny(value: string, options: string[]): boolean {
   const normalized = normalize(value);
   return options.some((option) => normalize(option) === normalized);
+}
+
+export function isReadingComprehensionCorrect(
+  question: ReadingComprehensionQuestion,
+  value: string,
+): boolean {
+  if (question.kind === "choice") {
+    return value === question.correctOptionId;
+  }
+  const options = [...question.correctAnswers, ...(question.alternatives ?? [])];
+  return matchesAny(value, options);
 }
 
 export function getBlankIds(screen: PracticeScreenConfig): string[] {
@@ -60,6 +72,8 @@ export function getBlankIds(screen: PracticeScreenConfig): string[] {
     case "reading-fill":
     case "extended-reading":
       return screen.prompts.map((prompt) => prompt.id);
+    case "reading-comprehension":
+      return screen.questions.map((question) => question.id);
     case "self-writing":
       return [SELF_WRITING_ANSWER_ID];
     case "dictation":
@@ -123,6 +137,11 @@ export function isInstantCorrect(
       if (!prompt) return false;
       const options = [...prompt.correctAnswers, ...(prompt.alternatives ?? [])];
       return matchesAny(value, options);
+    }
+    case "reading-comprehension": {
+      const question = screen.questions.find((entry) => entry.id === itemId);
+      if (!question) return false;
+      return isReadingComprehensionCorrect(question, value);
     }
     case "self-writing":
       return itemId === SELF_WRITING_ANSWER_ID && value.trim().length > 0;
@@ -200,6 +219,35 @@ export function validateScreen(
 
     return {
       allCorrect: state.checked && correctCount >= passScore,
+      pendingCount: state.checked ? 0 : pendingCount,
+      feedback,
+      lockedIds,
+    };
+  }
+
+  if (screen.type === "reading-comprehension") {
+    screen.questions.forEach((question) => {
+      const value = (state.answers[question.id] ?? "").trim();
+      if (!value) {
+        feedback[question.id] = "empty";
+        if (!state.checked) pendingCount += 1;
+        return;
+      }
+      const correct = isReadingComprehensionCorrect(question, value);
+      if (state.checked) {
+        feedback[question.id] = correct ? "correct" : "incorrect";
+      } else {
+        feedback[question.id] = "filled";
+      }
+    });
+
+    const allCorrect = screen.questions.every((question) => {
+      const value = (state.answers[question.id] ?? "").trim();
+      return value.length > 0 && isReadingComprehensionCorrect(question, value);
+    });
+
+    return {
+      allCorrect: state.checked && allCorrect,
       pendingCount: state.checked ? 0 : pendingCount,
       feedback,
       lockedIds,

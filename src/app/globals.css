@@ -3876,6 +3876,59 @@ h3 {
   align-items: center;
 }
 
+.practice-exercise--reading-comp .practice-reading-layout {
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+}
+
+.practice-reading-comp-passage-title {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.practice-reading-comp-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.practice-reading-comp-question.is-correct {
+  border-left: 3px solid #22c55e;
+  padding-left: 10px;
+}
+
+.practice-reading-comp-question.is-incorrect {
+  border-left: 3px solid #ef4444;
+  padding-left: 10px;
+}
+
+.practice-reading-comp-prompt {
+  margin: 0 0 10px;
+  line-height: 1.55;
+}
+
+.practice-reading-comp-options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.practice-reading-comp-input {
+  max-width: 420px;
+}
+
+.practice-reading-comp-key {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
 .practice-inline-sentence {
   display: flex;
   flex-wrap: wrap;

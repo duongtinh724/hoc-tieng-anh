@@ -177,6 +177,36 @@ export interface ExtendedReadingExerciseConfig {
   prompts: ReadingPrompt[];
 }
 
+export interface ReadingComprehensionChoice {
+  id: string;
+  kind: "choice";
+  prompt: string;
+  options: QuizOption[];
+  correctOptionId: string;
+  explanation: string;
+}
+
+export interface ReadingComprehensionText {
+  id: string;
+  kind: "text";
+  prompt: string;
+  correctAnswers: string[];
+  alternatives?: string[];
+  explanation: string;
+}
+
+export type ReadingComprehensionQuestion = ReadingComprehensionChoice | ReadingComprehensionText;
+
+export interface ReadingComprehensionExerciseConfig {
+  type: "reading-comprehension";
+  title: string;
+  instruction: string;
+  passageTitle?: string;
+  /** Một đoạn hoặc nhiều đoạn (xuống dòng \\n\\n trong string). */
+  passage: string;
+  questions: ReadingComprehensionQuestion[];
+}
+
 export interface QuizOption {
   id: string;
   label: string;
@@ -320,6 +350,7 @@ export type PracticeScreenConfig =
   | ReorderExerciseConfig
   | ReadingFillExerciseConfig
   | ExtendedReadingExerciseConfig
+  | ReadingComprehensionExerciseConfig
   | DictationExerciseConfig
   | QuizExerciseConfig
   | SelfWritingExerciseConfig
